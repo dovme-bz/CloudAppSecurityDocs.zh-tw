@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
+ms.openlocfilehash: c7e6f441932135ca20d4c6747c5e4ab7eb58331f
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
   
 Cloud App Security 利用雲端提供者提供的 API，每個服務都有自己的架構和 API 限制。 Cloud App Security 使用服務來使 API 的使用達到最佳化，並且確保最佳的效能。 Cloud App Security 引擎會考慮服務加諸於 API 的不同限制 (例如節流、API 限制、動態時間調整 API 範圍等)，而利用允許的容量。 某些作業，例如掃描租用戶中的所有檔案，需要大量的 API，因此會分散在較長的時間。 請預期某些原則會執行長達幾個小時或幾天。  
-  
-**ExpressRoute**  
-  
-Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
-如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
   
 ## <a name="how-it-works"></a>運作方式  
 Cloud App Security 部署時具有系統管理員權限，能夠完整存取您環境中的所有物件。  
@@ -121,14 +116,20 @@ App 連線程式流程如下所示︰
 |ServiceNow|Eureka 與更新版本|管理員 +RestAPI 角色|  
 |Salesforce||系統管理員|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
+如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
+  
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
