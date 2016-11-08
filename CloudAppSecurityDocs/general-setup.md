@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 
 
 ---
@@ -38,7 +38,7 @@ ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
   
 -   若要執行 Cloud App Security 入口網站，請使用 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新) 或 Apple Safari (最新)。  
   
--   **ExpressRoute**  
+-   ExpressRoute  
   
      Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
     如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
@@ -103,9 +103,10 @@ ms.openlocfilehash: 1b131e3918a7623995656f03ba98aca698e3b0c9
 > [!NOTE] 
 > 每個電話號碼每天透過簡訊傳送的警示數目上限是 10。 請注意，會根據 UTC 時區來計算日期。 
   
-     ![notification settings](./media/notification-settings.png "notification settings")  
+  ![通知設定](./media/notification-settings.png "notification settings")  
   
-     When you are done, click **Save**.  
+  
+3. 完成時按一下 [儲存]。  
   
 ##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> 根據您的需求組織資料  
 若要輕鬆找出已知的 IP 位址，例如您的實體辦公室 IP 位址，您需要設定 IP 位址範圍，讓您能標記並適當地分類，以及自訂記錄檔和警示顯示與調查的方式。   
@@ -251,6 +252,6 @@ Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
