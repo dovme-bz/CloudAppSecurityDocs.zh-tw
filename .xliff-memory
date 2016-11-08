@@ -517,8 +517,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:01:59.3513427Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f.5bd4c72f8245d4eb349dba0c40bb3969e30a51c7.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.zh-tw.xlf",
+      "LocXliffCommit": "0b944f00f9fec442638bd240ec0c4184c90f73ca"
     },
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md.d02a7a4d318828b8ca41c896f49dbf59f5873a9e.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md",

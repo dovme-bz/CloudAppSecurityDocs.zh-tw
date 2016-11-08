@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "6e5387709f971d301bf88261a78913bf659129c8",
-  "LastTranslatedCommit": "208f1e2966da828eb329c4d34ec7efe2a9653fc8",
+  "LastTranslatedCommit": "ffe2254ca824fd23ec309a2c824cbefa647b587f",
   "LastTansformerVersion": null,
   "Items": {
     "401801da8a4439b3dc0cf5c2f150c72e169a6d16": {
@@ -6647,14 +6647,14 @@
       "HandoffPriority": "ht",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "ffe2254ca824fd23ec309a2c824cbefa647b587f",
+      "TargetFilePath": "CloudAppSecurityDocs\\general-setup.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.zh-tw.xlf",
+      "HandbackFileCommit": "0b944f00f9fec442638bd240ec0c4184c90f73ca",
+      "HandbackDateTime": "2016-11-08T08:26:56.6599457Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-11-08T08:26:56.6599457Z",
       "ArchiveFilePath": "ol-archive\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.zh-tw.xlf",
       "ArchiveFileCommit": "e5a5ae75aaab29233a8f9982c22530cf7687b5c1",
       "ArchiveFileDateTime": "2016-11-03T13:01:59.3357172Z",
