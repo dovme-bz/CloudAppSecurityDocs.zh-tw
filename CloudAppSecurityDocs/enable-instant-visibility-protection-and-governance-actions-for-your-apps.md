@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: c7e6f441932135ca20d4c6747c5e4ab7eb58331f
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -66,10 +66,9 @@ App 連線程式流程如下所示︰
      能夠移除權杖。  
   
 下表列出，針對雲端應用程式，應用程式連接器支援的功能︰  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**列出帳戶**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**群組**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**權限**|✔|✔|提供者不支援|✔|✔|✔|✔||  
@@ -130,6 +129,6 @@ Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://
    
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

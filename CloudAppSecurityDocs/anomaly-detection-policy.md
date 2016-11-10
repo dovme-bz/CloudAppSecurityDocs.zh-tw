@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: bd612cfcecae2eb9c5a81d59250585fb9f4adb01
+ms.sourcegitcommit: 002e0b82296162ee13fa378c4641cc8f21547237
+ms.openlocfilehash: ca51d36a6d899124d3d4eb84ded1972ad9c8bab4
 
 
 ---
@@ -69,12 +69,13 @@ Cloud App Security 有 7 天的初始學習期間，在此期間，不會將任�
   
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Nov16_HO2-->
 
 
