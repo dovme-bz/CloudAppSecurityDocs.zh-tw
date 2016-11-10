@@ -11852,9 +11852,9 @@
       "ArchiveFileCommit": "5fe78e4e9194c7710c6cd13acba2bf1123a6903d",
       "ArchiveFileDateTime": "2016-11-10T01:25:05.2346909Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.zh-tw.xlf",
+      "BilingualFileCommit": "22fc9e8c6fbbb19715e2154c455f657da363a5c5",
+      "BilingualDateTime": "2016-11-10T02:16:53.6382748Z",
       "BilingualException": null
     },
     "e67fecd17b26314720a34691f83464c59a244ea6": {
@@ -12982,9 +12982,9 @@
       "ArchiveFileCommit": "5fe78e4e9194c7710c6cd13acba2bf1123a6903d",
       "ArchiveFileDateTime": "2016-11-10T01:25:05.2346909Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\anomaly-detection-policy.dd2b5dd1893cc80c78ec83f5577ce52762e7088f.zh-tw.xlf",
+      "BilingualFileCommit": "22fc9e8c6fbbb19715e2154c455f657da363a5c5",
+      "BilingualDateTime": "2016-11-10T02:16:53.6382748Z",
       "BilingualException": null
     },
     "6f4a84503654560407fdaabd68577ad3d864ac8d": {
