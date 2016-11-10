@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 
 
 ---
@@ -48,17 +48,16 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
 記錄檔處理完成之後，您會收到一封已完成處理的通知電子郵件。 
   
 9. 入口網站上方的狀態列會顯示通知橫幅，以更新記錄檔的處理狀態。  
-  
 ![處理記錄檔的功能表列](./media/processing-log-file-menu-bar.png) 
-  
-     After the logs are uploaded successfully, you should see a notification letting you know that the log file processing completed successfully.  
    
-10. 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 [Cloud Discovery settings] (Cloud Discovery 設定)。   
+10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 [Cloud Discovery settings] (Cloud Discovery 設定)。   
   
      ![探索設定索引標籤](./media/discovery-settings-tab.png)
 11. 接下來，依序選取 [管理快照集報告] 和您的快照集報告。
  
 ![快照集報告的管理](./media/snapshot-report-managment.png)
+
+  
       
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
@@ -69,6 +68,6 @@ ms.openlocfilehash: 669d1c1942e8c7e930cd2421e9b56821eff04d12
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

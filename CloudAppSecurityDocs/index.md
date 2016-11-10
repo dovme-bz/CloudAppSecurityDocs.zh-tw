@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
+ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
 
 ---
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>一般設定</h3>
-                    <p>執行 Cloud App Security 的基本設定步驟。</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>設定 Cloud Discovery</h3>
                     <p>使用 Cloud Discovery 功能，取得組織中雲端應用程式使用和 Shadow IT 的可見度。</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>設定自動記錄上傳</h3>
-                    <p>設定 Cloud Discovery 連續報告的自動記錄上傳。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>在客體叢集部署</p>
-                </div>
-                <p class="description column-two-thirds">啟用 API 連線增強可見度並推出原則，以治理您的應用程式。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>啟用 API 連接器</h3>
-                    <p>啟用 API 連接器，以取得應用程式的增強可見度，包括 Office 365、Google Apps、Box、Dropbox 和其他項目。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>將 Office 365 連線至 Cloud App Security</h3>
-                    <p>使用 App 連線程式 API，將 Cloud App Security 連線至您現有的 Microsoft Office 365 帳戶。</p>
+                    <h3>連線應用程式</h3>
+                    <p>將雲端應用程式連接至 Cloud App Security 以提高可見度和控制權。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>使用原則來控制雲端應用程式</h3>
-                    <p>設定原則，以控制和治理您組織的雲端使用。</p>
+                    <p>設定原則來監視及治理組織中的雲端應用程式使用方式。</p>
                   </a>
                 </li>
               </ul>
@@ -241,6 +203,6 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

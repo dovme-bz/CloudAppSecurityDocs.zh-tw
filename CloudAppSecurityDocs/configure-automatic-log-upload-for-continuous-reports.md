@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 046cc96c15f76e4196c60f9864c835f4e6595dfa
 
 
 ---
@@ -37,8 +37,7 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
   
 記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟每隔 20 分鐘接收一次，然後將檔案上傳到 Cloud App Security。  記錄收集器的虛擬機器適用於 Hyper-V (VHD 格式) 和 VMware Hypervisor (OVF 格式)，且需要 250 GB 磁碟空間、2 個 CPU 和 4 GB RAM。 
      
-  
-     The log collector VHD image can be downloaded and run on Azure servers.  
+記錄收集器 VHD 影像可以下載到 Azure 伺服器上執行。  
   
 2.  請移至自動上傳設定頁面上︰  
     在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon") 和 [Cloud Discovery 設定]，然後選取 [自動上傳記錄] 索引標籤。  
@@ -81,8 +80,8 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
 1.  開啟 Hyper-V 管理員。  
   
 2.  依序選取 [新增] 和 [虛擬機器]，然後按一下 [下一步]。  
-  
-             ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ 
+![探索 hyperv 虛擬機器](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  為新的虛擬機器**命名**，例如 CloudAppSecurityLogCollector01，然後按一下 [下一步]。  
   
@@ -97,8 +96,7 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
 8.  選擇 [使用現有的虛擬硬碟]並選取包含在下載之 ZIP 檔案中的 .**vhd** 檔案。  
   
 9.  按 [下一步]  ，然後按一下 [完成] 。  
-  
-             The machine will be added to your Hyper-V environment.  
+    電腦即新增至您的 Hyper-V 環境。  
   
 9. 按一下 [虛擬機器] 資料表中的機器，然後按一下 [啟動]。   
   
@@ -121,7 +119,6 @@ sudo network_config
 ```
 sudo collector_config <access token>
 ```
-
 3. 輸入您的主控台網域，例如︰
 
 ```
@@ -129,33 +126,29 @@ contoso.portal.cloudappsecurity.com
 ```
 
 在您登入 Cloud App Security 入口網站之後，這項資訊會顯示在 URL 中。 
- 
 
-4. 輸入您要設定的記錄收集器名稱，例如︰
-
-**CloudAppSecurityLogCollector01** 或上圖的 **NewYork**。
- 
-8.  從入口網站匯入記錄收集器的組態，如下所示︰  
+4. 輸入您要設定的記錄收集器名稱，例如：**CloudAppSecurityLogCollector01**或上圖中的 **NewYork**。
+5.  從入口網站匯入記錄收集器的組態，如下所示︰  
   
-      1.  使用入口網站提供給您的互動式管理認證，透過 SSH 登入記錄收集器。  
+      a.  使用入口網站提供給您的互動式管理認證，透過 SSH 登入記錄收集器。  
   
-       2.  使用 **sudo collector_config \<access token>** 命令中提供給您的存取權杖，執行收集器設定公用程式。  
+      b.  使用 **sudo collector_config \<access token>** 命令中提供給您的存取權杖，執行收集器設定公用程式。  
   
-             輸入您的主控台網域，例如︰  
+             Enter your console domain, for example:  
   
              **contoso.portal.cloudappsecurity.com ** 
   
-             輸入您要設定的記錄收集器名稱，例如︰  
+             Enter the name of the log collector you want to configure, for example:  
   
              **CloudAppSecurityLogCollector01**  
   
-5.  設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰  
+6.  設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰  
   
      `London Zscaler - Destination path: 614`  
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-6.  使用治理記錄來確認記錄檔是否定期上傳至入口網站。  
+7.  使用治理記錄來確認記錄檔是否定期上傳至入口網站。  
   
 ## <a name="log-collector-performance"></a>記錄收集器效能
 記錄收集器可以處理的記錄檔容量，每小時最多 50 GB。
@@ -166,7 +159,15 @@ contoso.portal.cloudappsecurity.com
 
 記錄收集器有內建的安全機制，會監視記錄檔到達的速率，並與上傳速率相比較。 如果網路擁塞，記錄收集器就會開始卸除記錄檔。 如果您的安裝程式通常每小時超過 50 GB，建議您將流量分割至多個記錄收集器。
 
+## <a name="see-also"></a>另請參閱  
+[使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
+    
+      
+  
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Oct16_HO5-->
 
 

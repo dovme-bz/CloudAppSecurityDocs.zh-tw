@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>版本資訊
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security 版本 83
+發行日期：2016 年 10 月 30 日
+
+**新功能**
+-   為了簡化[活動記錄](activity-filters.md)和[檔案記錄](file-filters.md)中的篩選功能，而合併了相似的篩選條件。 使用活動篩選條件：[活動物件]、[IP 位址] 和 [使用者]。 使用檔案篩選條件 [共同作業者] 準確尋找您需要的內容。
+-   從活動記錄下拉式清單中，在 [來源] 下按一下 [檢視未經處理資料] 的連結，下載用來產生活動記錄的未經處理資料，以更進一步向下切入應用程式事件。 
+-   新增 Okta 中額外登入活動的支援。 [私人預覽]
+-   新增 Salesforce 中額外登入活動的支援。 
+
+**改善**
+-   改進 Cloud Discovery 快照集報告的可用性及疑難排解。
+-   改進警示清單中，對多個應用程式發出的警示可見度。
+-   改進建立新 Cloud Discovery 連續報告時的可用性。
+-   改進治理記錄的可用性。
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security 版本 82
 發行日期：2016 年 10 月 9 日
@@ -198,6 +215,6 @@ ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
