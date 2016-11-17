@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
 4.  若要設定觸發此原則的動作或其他計量，請使用 [活動篩選]。  
   
 5.  在 [活動比對參數] 下，選取是單一活動符合篩選條件時觸發原則違規，還是偵測到指定數目的 [重複的活動] 時才偵測到違規。  
-    如果您選擇 [重複的活動]，請設定會觸發警示的活動︰活動的數目、時間範圍，以及計入使用者在特定應用程式中的違規，還是同一使用者在任何應用程式中的違規。  
+    若您選擇 [重複的活動]，可以設定 [每一應用程式的群組相符活動]。 僅當重複的活動發生在同一應用程式 (例如從 Box 下載 5 次) 時，才會觸發原則比對。  
   
 6.  設定找到相符項目時應該採取的 [動作]。  
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
