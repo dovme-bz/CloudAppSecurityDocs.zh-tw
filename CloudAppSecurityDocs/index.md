@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
-ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
+ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
+ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
     <section id="hero-content">
       <h1>Cloud App Security 文件</h1>
       <h2>了解如何設定和使用 Cloud App Security，讓組織可以利用雲端應用程式的優勢，同時透過改良的活動可見度與加強的保護，來控管公司的重要資料。 </h2>
-      <h3>Cloud App Security 的新手？ <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">前往產品網站&rarr;</a></h3>
+      <h3>Cloud App Security 的新手？ <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">前往產品網站&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備開始進行了嗎？</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">立即購買</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">立即購買</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -195,14 +195,14 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
         <aside class="alert alert-social">
       <p>保持 Cloud App Security 的最新資訊 <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">官方 Cloud App Security 網站</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security 的輔助支援</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">官方 Cloud App Security 網站</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security 的輔助支援</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
