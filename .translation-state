@@ -11744,9 +11744,9 @@
       "ArchiveFileCommit": "5fe78e4e9194c7710c6cd13acba2bf1123a6903d",
       "ArchiveFileDateTime": "2016-11-10T01:25:05.2346909Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf",
+      "BilingualFileCommit": "90a4dcf85e4a56ebee302e63387f5b66428ee6ce",
+      "BilingualDateTime": "2016-11-18T07:13:17.8030743Z",
       "BilingualException": null
     },
     "1fda4411d17acf90338263df9df147ed0075881c": {
@@ -11816,9 +11816,9 @@
       "ArchiveFileCommit": "5fe78e4e9194c7710c6cd13acba2bf1123a6903d",
       "ArchiveFileDateTime": "2016-11-10T01:25:05.2346909Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.zh-tw.xlf",
+      "BilingualFileCommit": "90a4dcf85e4a56ebee302e63387f5b66428ee6ce",
+      "BilingualDateTime": "2016-11-18T07:13:17.8030743Z",
       "BilingualException": null
     },
     "3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5": {
@@ -12910,9 +12910,9 @@
       "ArchiveFileCommit": "5fe78e4e9194c7710c6cd13acba2bf1123a6903d",
       "ArchiveFileDateTime": "2016-11-10T01:25:05.2346909Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.zh-tw.xlf",
+      "BilingualFileCommit": "90a4dcf85e4a56ebee302e63387f5b66428ee6ce",
+      "BilingualDateTime": "2016-11-18T07:13:17.8030743Z",
       "BilingualException": null
     },
     "e66cc36b7ff2591c9eff2b7399e7aba7304fd960": {
