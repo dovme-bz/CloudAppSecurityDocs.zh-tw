@@ -2,9 +2,6 @@
   "92507e352a88cd0c5ff4a7bc9f66b94defd864ff": [
     "CloudAppSecurityDocs\\activity-filters.md"
   ],
-  "59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a": [
-    "CloudAppSecurityDocs\\activity-filters.md"
-  ],
   "ca51d36a6d899124d3d4eb84ded1972ad9c8bab4": [
     "CloudAppSecurityDocs\\anomaly-detection-policy.md"
   ],
@@ -18,9 +15,6 @@
     "CloudAppSecurityDocs\\cloud-discovery-policies.md"
   ],
   "c6103fffd99295eb37ad575680b4169cbbac42df": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
-  "046cc96c15f76e4196c60f9864c835f4e6595dfa": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
   "4b9ab028bb45f77513217dd3784cefc73e984962": [
@@ -852,9 +846,6 @@
     "CloudAppSecurityDocs\\set-up-cloud-discovery.md"
   ],
   "93dc54bc2e38d880561c15a0f167f8246e1a6741": [
-    "CloudAppSecurityDocs\\TOC.md"
-  ],
-  "5488120792de84065932030030cbaad10743dfc1": [
     "CloudAppSecurityDocs\\TOC.md"
   ],
   "7446c3eb17befdf473c8841a0d92524c029f67df": [
