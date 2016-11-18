@@ -30,12 +30,14 @@
 ### [檔案](file-filters.md)
 ### [活動](activity-filters.md)
 ### [警示](monitor-alerts.md)
+### [Azure 資訊保護整合](azip-integration.md)
 ## [控制](control.md)
-## [治理動作](governance-actions.md)
+### [管理應用程式權限](manage-app-permissions.md)
+## [治理記錄](governance-actions.md)
 # [疑難排解](troubleshooting.md)
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

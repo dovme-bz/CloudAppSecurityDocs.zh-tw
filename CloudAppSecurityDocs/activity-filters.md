@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 
 ---
@@ -86,6 +86,7 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
 您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供下列您可以對檔案執行的額外動作：
 
 - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
+- 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
 - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
 - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
 - 位置：按一下位置用 Bing 地圖服務檢視位置。
@@ -129,6 +130,6 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
