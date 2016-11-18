@@ -750,8 +750,8 @@
 * Archive Datetime: 2016-11-17 01:27:09
 * Handback File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/e954fd20f73a19da393e0c0cab7393c2db7443b5/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf)
 * Handback Datetime: 2016-11-18 11:32:08
-* Bilingual File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/d8707615804eaca8f89551d4b8e93b5cb19d05ec/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-17 09:54:30
+* Bilingual File: [manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/e954fd20f73a19da393e0c0cab7393c2db7443b5/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/manage-app-permissions.4e9e0a90857ca7ea9657170a841d43edc5129d8a.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-18 11:33:44
 * [Back to Top](#report-top)
 
 ##### <a name='53f98a5fdbf84c20c0efe94e935738a95f7d2e3b36'></a> Source: [CloudAppSecurityDocs\media\access-from-o365.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/access-from-o365.png)
