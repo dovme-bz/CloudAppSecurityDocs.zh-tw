@@ -73,7 +73,7 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2.  按一下 [Manage continuous report] (管理連續報告) 索引標籤。  
+2.  按一下 **「Manage continuous report」** (管理連續報告) 索引標籤。  
   
 3.  按一下 [建立報告] 按鈕。  
   

@@ -140,7 +140,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
          ![google29](./media/google29.png "google29")  
   
-17. 在 [Enabled APIs (啟用的 API)] 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪，然後選取 [設定] 索引標籤。  
+17. 在 **「Enabled APIs」** (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪，然後選取 [設定] 索引標籤。  
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
   
