@@ -18,7 +18,7 @@
       "ArchivedDateTime": "2016-10-29T00:54:16.3441416Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\4b9ab028bb45f77513217dd3784cefc73e984962.9a073313ebea6dfb0c5de79c0b7311df7ee2ad49.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\connect-aws-to-microsoft-cloud-app-security.2e0aa10f1eb614bfeb960cd771cc3d1eb94e2fb5.zh-tw.xlf",
-      "LocXliffCommit": "facf2a7b316ccb222a983c2a3ca8b5e7ed16e1d8"
+      "LocXliffCommit": "f8bec62c17cb0eefc8f6493d8506ffc67dc92dd9"
     },
     "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md.1204aaf5394bc68758e880f1a223ad229b391783.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md",
@@ -118,7 +118,7 @@
       "ArchivedDateTime": "2016-10-29T00:54:16.2972666Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ea1854d6bf32e01afe6183409b68ded32ee37dd1.dbf3564913ee371fec75e3559f3ac9776a6da39a.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\content-inspection.6d59b72cee1c900e0dd6e415b73590b948c6b657.zh-tw.xlf",
-      "LocXliffCommit": "facf2a7b316ccb222a983c2a3ca8b5e7ed16e1d8"
+      "LocXliffCommit": "f8bec62c17cb0eefc8f6493d8506ffc67dc92dd9"
     },
     "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md.90d99a91ffd477f870aeb71c580b8c1c5f1088a8.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\troubleshooting-cloud-discovery.md",
@@ -368,7 +368,7 @@
       "ArchivedDateTime": "2016-10-29T00:54:16.3441416Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\849408f84e2a80022623c11f7951e921a95625b6.b884a8d59e190d25e3b1939395313c32caeaac44.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf",
-      "LocXliffCommit": "facf2a7b316ccb222a983c2a3ca8b5e7ed16e1d8"
+      "LocXliffCommit": "f8bec62c17cb0eefc8f6493d8506ffc67dc92dd9"
     },
     "CloudAppSecurityDocs\\TOC.md.13714b66177be672ee275d2e3bf7dbe9e3aceac7.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\TOC.md",
