@@ -558,8 +558,8 @@
 * Archive Datetime: 2016-11-03 13:01:59
 * Handback File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/fd92a4f9db7d85e98549cf83493c21c3491c8295/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
 * Handback Datetime: 2016-11-21 15:45:49
-* Bilingual File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/484bfcb40f83e6d33fc87199001f64c5e4a6c238/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-10 11:20:40
+* Bilingual File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/fd92a4f9db7d85e98549cf83493c21c3491c8295/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-21 15:46:49
 * [Back to Top](#report-top)
 
 ##### <a name='d07f8cfebd5654036078d474656a6e73e24d93d023'></a> Source: [CloudAppSecurityDocs\daily-activities-to-protect-your-cloud-environment.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/42cd06942ef90bc40a191bc12ddc12a18388430d/CloudAppSecurityDocs/daily-activities-to-protect-your-cloud-environment.md)
