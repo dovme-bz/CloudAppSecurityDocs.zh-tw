@@ -359,8 +359,8 @@
       "ArchiveFileDateTime": "2016-10-29T00:54:16.2660367Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.zh-tw.xlf",
-      "BilingualFileCommit": "facf2a7b316ccb222a983c2a3ca8b5e7ed16e1d8",
-      "BilingualDateTime": "2016-11-07T18:59:22.5809073Z",
+      "BilingualFileCommit": "b15706d7a604f50d8c20d2ad1fff6c85abade41d",
+      "BilingualDateTime": "2016-11-21T13:20:11.5765801Z",
       "BilingualException": null
     },
     "25adba6d9c2586d3fed162673008cd4212e22401": {
@@ -6190,8 +6190,8 @@
       "ArchiveFileDateTime": "2016-10-29T00:54:16.2660367Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.zh-tw.xlf",
-      "BilingualFileCommit": "facf2a7b316ccb222a983c2a3ca8b5e7ed16e1d8",
-      "BilingualDateTime": "2016-11-07T18:59:22.5809073Z",
+      "BilingualFileCommit": "b15706d7a604f50d8c20d2ad1fff6c85abade41d",
+      "BilingualDateTime": "2016-11-21T13:20:11.5765801Z",
       "BilingualException": null
     },
     "77468efb5d4cb62f560c11e624545fc8abe8c99e": {
