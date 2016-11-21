@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "39ee60ac34e2cb86393ccacdef494841a9b9db50",
-  "LastTranslatedCommit": "017890f3e7e054d9025c260cf1ca80e9985ea60a",
+  "LastTranslatedCommit": "667d70c6a9e6c4c90b8a265de596a58f60035f88",
   "LastTansformerVersion": null,
   "Items": {
     "401801da8a4439b3dc0cf5c2f150c72e169a6d16": {
@@ -6501,14 +6501,14 @@
       "HandoffPriority": "ht",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "f1735d7de9a6f30813b8b55fcb921c3884935aa8",
+      "TargetFileCommit": "667d70c6a9e6c4c90b8a265de596a58f60035f88",
       "TargetFilePath": "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf",
-      "HandbackFileCommit": "484bfcb40f83e6d33fc87199001f64c5e4a6c238",
-      "HandbackDateTime": "2016-11-10T11:19:46.0340512Z",
+      "HandbackFileCommit": "fd92a4f9db7d85e98549cf83493c21c3491c8295",
+      "HandbackDateTime": "2016-11-21T15:45:49.5570579Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-11-10T11:19:46.0340512Z",
+      "UpdatedDateTime": "2016-11-21T15:45:49.5570579Z",
       "ArchiveFilePath": "ol-archive\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf",
       "ArchiveFileCommit": "e5a5ae75aaab29233a8f9982c22530cf7687b5c1",
       "ArchiveFileDateTime": "2016-11-03T13:01:59.3357172Z",

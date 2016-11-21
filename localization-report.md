@@ -550,14 +550,14 @@
 
 ##### <a name='650bf424d77f6cbcf11e24058ec54278cfd579f522'></a> Source: [CloudAppSecurityDocs\create-snapshot-cloud-discovery-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/create-snapshot-cloud-discovery-reports.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [CloudAppSecurityDocs\create-snapshot-cloud-discovery-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.zh-tw/blob/f1735d7de9a6f30813b8b55fcb921c3884935aa8/CloudAppSecurityDocs/create-snapshot-cloud-discovery-reports.md)
+* Target File: [CloudAppSecurityDocs\create-snapshot-cloud-discovery-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.zh-tw/blob/667d70c6a9e6c4c90b8a265de596a58f60035f88/CloudAppSecurityDocs/create-snapshot-cloud-discovery-reports.md)
 * Handoff File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/970ab17f5b7e948d16e91e615241f4ddde0b8cd3/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
 * Handoff Datetime: 2016-10-31 20:00:18
 * Handoff Reason: Include
 * Archive File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/e5a5ae75aaab29233a8f9982c22530cf7687b5c1/ol-archive/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
 * Archive Datetime: 2016-11-03 13:01:59
-* Handback File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/484bfcb40f83e6d33fc87199001f64c5e4a6c238/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
-* Handback Datetime: 2016-11-10 11:19:46
+* Handback File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/fd92a4f9db7d85e98549cf83493c21c3491c8295/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
+* Handback Datetime: 2016-11-21 15:45:49
 * Bilingual File: [create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/484bfcb40f83e6d33fc87199001f64c5e4a6c238/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf)
 * Bilingual Datetime: 2016-11-10 11:20:40
 * [Back to Top](#report-top)

@@ -488,7 +488,7 @@
       "ArchivedDateTime": "2016-11-03T13:01:59.3357172Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\650bf424d77f6cbcf11e24058ec54278cfd579f5.16905bc8f82044f99a3fba3cd94e4549eae9814e.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.zh-tw.xlf",
-      "LocXliffCommit": "484bfcb40f83e6d33fc87199001f64c5e4a6c238"
+      "LocXliffCommit": "fd92a4f9db7d85e98549cf83493c21c3491c8295"
     },
     "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md.2adf52a53577676c6d4b6dea37e98d2ae327989c.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md",
