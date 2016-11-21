@@ -37,13 +37,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
      ![AWS 建立使用者](./media/aws-create-user.png "AWS create user")  
   
-4.  為 Cloud App Security 建立新的使用者，並確定勾選 [Generate an access key for each user] (為每個使用者產生存取金鑰) 核取方塊。  
+4.  為 Cloud App Security 建立新的使用者，並確定勾選 **「Generate an access key for each user」** (為每個使用者產生存取金鑰) 核取方塊。  
   
 5.  按一下 [Download Credentials (下載認證)] 。  
   
      ![aws 下載認證](./media/aws-dl-cred.png "aws dl cred")  
   
-6.  在 [使用權限] 索引標籤上，按一下 [Attach Policy] (附加原則)。  
+6.  在 [使用權限] 索引標籤上，按一下 **「Attach Policy」** (附加原則)。  
   
      ![aws 附加使用者原則](./media/aws-attach-user-policy.png "aws attach user policy")  
   
