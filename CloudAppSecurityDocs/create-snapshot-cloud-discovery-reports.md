@@ -50,7 +50,7 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 9. 入口網站上方的狀態列會顯示通知橫幅，以更新記錄檔的處理狀態。  
 ![處理記錄檔的功能表列](./media/processing-log-file-menu-bar.png) 
    
-10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 [Cloud Discovery settings] (Cloud Discovery 設定)。   
+10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 **「Cloud Discovery settings」** (Cloud Discovery 設定)。   
   
      ![探索設定索引標籤](./media/discovery-settings-tab.png)
 11. 接下來，依序選取 [管理快照集報告] 和您的快照集報告。
