@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>版本資訊
+
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security 版本 84
+發行日期 2016 年 11 月 13 日
+
+**新功能**
+-   Cloud App Security 現可支援 Microsoft Azure 資訊保護，包括強化的整合及自動佈建。 您可以使用 [標記安全分類] 篩選檔案及設定檔案原則，然後設定您想要檢視的分類標籤。 標籤也會指出類別是由貴組織的人員還是其他租用戶 (外部) 的人員所設定。 您也可以根據 Azure 資訊保護分類標籤設定活動原則，並啟用自動掃描 Office 365 的分類標籤。 如需如何利用此絕佳新功能的詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。
+ 
+**改善**
+-   已改善 Cloud App Security 的活動記錄︰ 
+   -    安全性與相容性中心內的 Office 365 事件現已與 Cloud App Security 整合，且會出現在 **[活動記錄]** 中。
+   -    Cloud App Security 的所有活動都在 Cloud App Security 活動記錄中作為管理活動註冊。
+-   為了協助您調查與檔案相關的警示，如今您可在每個源自檔案原則的警示中，檢視相符檔案所執行的活動清單。
+-   異常偵測引擎中的不可能移動演算法已有改善，可替小型的租用戶提供更佳的支援。 
+ 
+**微幅改善**
+-   **活動匯出限制**提升至 10,000。 
+-   如今您會在 Cloud Discovery 手動記錄上傳程序中建立**快照集報告**時，接收到精確的處理記錄所需時間預估。 
+-   在檔案原則中，**[移除共同作業者]** 治理動作現可在群組中使用。
+-   **[應用程式權限]** 頁面有微幅改善。 
+-   超過 10,000 個使用者授與連接至 Office 365 的應用程式權限時，清單載入速度即會變慢。 此問題已修正。
+-   已將其他屬性新增至與付款卡片產業相關的**應用程式目錄**。
+
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security 版本 83
 發行日期：2016 年 10 月 30 日
@@ -215,6 +238,6 @@ ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

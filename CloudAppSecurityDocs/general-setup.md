@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
+ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
+ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
 
 
 ---
@@ -37,11 +37,6 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 -   若要設定 Cloud App Security，您必須是 Azure Active Directory 或 Office 365 的全域管理員、規範管理員或安全性系統管理員。 請務必了解，獲指派管理員角色的使用者將會在您組織已訂閱的所有雲端應用程式都擁有相同的權限，而不論您是在 Office 365 入口網站、Azure 傳統入口網站，還是使用 Windows PowerShell 的 Azure AD 模組來指派角色。 如需詳細資訊，請參閱[在 Office 365 中指派管理員角色](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)和[在 Azure Active Directory 中指派管理員角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。  
   
 -   若要執行 Cloud App Security 入口網站，請使用 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新) 或 Apple Safari (最新)。  
-  
--   ExpressRoute  
-  
-     Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/)。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
-    如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
   
 ## <a name="set-up-the-portal"></a>設定入口網站  
   
@@ -91,7 +86,7 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
   
 ![管理管理員存取權](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a> 自訂管理設定  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> 自訂管理設定  
 若要將您的喜好設定設定為 Cloud App Security 的管理員，請在入口網站功能表列中按一下您的名稱，然後選取 [使用者設定] 來進行下列設定︰  
   
 1.  按一下 [帳戶設定]。 這裡，您可以自訂入口網站語言以供自己檢視。 您可以將它設定為以預設語言顯示入口網站，或者自行設定不同的語言。  
@@ -108,7 +103,7 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
   
 3. 完成時按一下 [儲存]。  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> 根據您的需求組織資料  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> 根據您的需求組織資料  
 若要輕鬆找出已知的 IP 位址，例如您的實體辦公室 IP 位址，您需要設定 IP 位址範圍，讓您能標記並適當地分類，以及自訂記錄檔和警示顯示與調查的方式。   
 每個 IP 範圍群組可根據預先設定的 IP 類別清單來分類，或是以您自己建立的 IP 標記加以標記。 此外，此設定可讓您根據您的內部網路知識，覆寫公用地理位置資訊。  
   
@@ -152,7 +147,7 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
   
      ![newipaddress 範圍](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a> 個人化您的體驗  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> 將您的體驗個人化  
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
   
 ![郵件設定功能表](./media/mail-setting-menu.png "mail setting menu")  
@@ -241,9 +236,14 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
      然後按一下 [傳送測試電子郵件]，傳送測試電子郵件給自己，以查看您所建立範本的範例。  
      電子郵件將傳送至您用來登入入口網站的帳戶。 在測試電子郵件中，您將能夠看到中繼資料欄位、範本、電子郵件主旨、電子郵件內文中的標題，以及內容。  
   
-## <a name="single-signon"></a>單一登入  
+## <a name="single-sign-on"></a>單一登入  
 Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和授權相關的活動。 如需如何管理單一登入的相關資訊，請參閱 [Azure Active Directory 同盟相容性清單：可用來實作單一登入的協力廠商身分識別提供者](https://msdn.microsoft.com/library/azure/jj679342.aspx)。  
-  
+
+
+> [!NOTE] 
+> 若您使用 ExpressRoute，Cloud App Security 會在 Azure 中部署並與 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) 完全整合。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
+    如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
+    
 ## <a name="see-also"></a>另請參閱  
 [設定 Cloud Discovery](set-up-cloud-discovery.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
@@ -252,6 +252,6 @@ Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和�
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
