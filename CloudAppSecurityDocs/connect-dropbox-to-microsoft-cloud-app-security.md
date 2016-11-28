@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
 
 
 ---
@@ -28,13 +28,13 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>如何將 Dropbox 連接至 Cloud App Security  
   
-1.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+1.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 Dropbox 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [Dropbox]。  
+2.  在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕，再按一下 [Dropbox]。  
   
      ![連接 dropbox](./media/connect-dropbox.png "connect dropbox")  
   
-3.  在 Dropbox 設定頁面的 [API] 索引標籤中，輸入管理員帳戶的電子郵件地址。  
+3.  在快顯視窗中，輸入系統管理員帳戶的電子郵件地址。  
   
 4.  按一下 [產生連結]。  
   
@@ -63,6 +63,6 @@ ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

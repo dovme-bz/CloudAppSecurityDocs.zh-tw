@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
 
 
 ---
@@ -96,13 +96,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
     3.  請針對所有區域重複步驟 11，但任何其他地區請不要設定 [Include global services (包含全域服務)]。  
   
-11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-12. 在 AWS 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [AWS]。  
+12. 在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕，再按一下 [AWS]。  
   
      ![連接 AWS](./media/connect-aws.png "connect AWS")  
   
-13. 在 Amazon Web Services 設定頁面中，將 CSV 檔案的**存取金鑰**和**秘密金鑰**貼入 [API] 頁面的欄位中，然後按一下 [更新存取金鑰]。  
+13. 在快顯中，將 CSV 檔案的**存取金鑰**及**祕密金鑰**貼入 API 網頁中的欄位，然後按一下 [更新存取金鑰]。  
   
 14. 請按一下 [測試 API] 確定連線成功。  
   
@@ -118,6 +118,6 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

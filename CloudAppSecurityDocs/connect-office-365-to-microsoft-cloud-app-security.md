@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 1565d094f9cbce883ce9bb5300ee5e1f7752d4dd
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 >- 您必須開啟每個使用者信箱的 Exchange 信箱稽核記錄功能，才能記錄 Exchange Online 中的使用者活動，請參閱 [Exchange 信箱活動](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。
 >- 如果已啟用 Office 應用程式，則特定 Office 應用程式中也會建立屬於 Office 365 的群組。好比說，如果已啟用 SharePoint，則 SharePoint 中也會建立 Office 365 群組。
  
-1.  在 Office 365 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 按鈕並選取 [Office 365]。  
+1.  在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕然後選取 [Office 365]。  
 
 2.  在 Office 365 快顯視窗中，按一下 [連線至 Office 365]。
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

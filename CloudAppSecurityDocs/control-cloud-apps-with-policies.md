@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
+ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
+ms.openlocfilehash: df5d9b927e3cb51d2b8a2910329cfc4824c168b0
 
 
 ---
@@ -36,7 +36,6 @@ ms.openlocfilehash: 36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4
 |![異常偵測原則圖示](./media/anomaly_detection_policy.png)|異常偵測原則|異常偵測原則可讓您根據您在此處設定的風險因素，尋找雲端中的不尋常活動，在發生不同於組織基準或使用者一般活動的狀況時發出警示。|  
 |![Cloud Discovery 原則圖示](./media/discovery_policy.png)|應用程式探索原則|應用程式探索原則可讓您設定警示，在您的組織內偵測到新的應用程式時通知您。|  
 |![異常偵測原則圖示](./media/anomaly_detection_policy.png)|Cloud Discovery 異常偵測原則|Cloud Discovery 異常偵測原則會查看您用於探索雲端應用程式的記錄檔，並搜尋不尋常的發生事件。 例如，某位使用者從未使用過 Dropbox，突然上傳 600 GB 到 Dropbox，或是在特定應用程式上的交易比起平日超出許多。|  
-|![欄位原則圖示](./media/field_policy.png)|欄位原則|欄位原則可讓您掃描雲端應用程式是否有雲端環境中的欄位，其中可能包含敏感性資料，例如貼文、聊天訊息、描述及長文字欄位。|  
 |![檔案原則圖示](./media/file_policy.png)|檔案原則|檔案原則可讓您掃描雲端應用程式是否有指定的檔案/檔案類型 (共用、與外部網域共用) 及資料 (專屬資訊、PII、信用卡資訊等)，並可套用治理動作至檔案 (治理動作依據特定雲端應用程式而異)。|  
   
 ## <a name="identifying-risk"></a>識別風險  
@@ -54,7 +53,7 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
   
      監視組態變更，包括遠端組態管理。  
   
--   **Cloud Discovery︰**您的組織是否正在使用未獲批准的新應用程式？ 您是否有正在使用您不了解之 Shadow IT 應用程式的問題？  
+-   **Cloud Discovery︰**您的組織是否正在使用新的應用程式？ 您是否有正在使用您不了解之 Shadow IT 應用程式的問題？  
   
      根據法規與業界認證及最佳做法，為各個雲端應用程式的整體風險評等，  
     讓您能夠監視每個雲端應用程式的使用者人數、活動、流量及  
@@ -156,6 +155,6 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
   
          ![okta 權杖值](./media/okta-token-value.png "okta token value")  
   
-3.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+3.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-4.  在 Okta 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 按鈕，然後按一下 [Okta]。  
+4.  在 **App 連線程式網頁**中，依序按一下 [連線到應用程式] 按鈕及 [Okta]。  
   
      ![連接 okta](./media/connect-okta.png "connect okta")  
   
-5.  在 [API] 頁面的 [網域] 欄位中，輸入您的 Okta 網域並將權杖貼到 [權杖] 欄位。  
+5.  在開啟的快顯中，於 [網域] 欄位內輸入您的 Okta 網域，並將您的權杖貼入 [權杖] 欄位。  
   
 6.  按一下 [連線] 在 Cloud App Security 中建立 Okta 的權杖。  
   
@@ -73,6 +73,6 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

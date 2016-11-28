@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
 
  ![進階檔案記錄篩選條件](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a> 檔案篩選器 
+###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a>檔案篩選器 
  
 Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如：存取層級、檔案類型) 來監視任何檔案類型。 
  
@@ -97,45 +97,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 ![套用篩選器](./media/apply-to-filter.png "apply to filter")  
   
-### <a name="governance-actions"></a>治理動作  
-  
--   通知  
-  
-    -   警示 – 系統可以觸發警示，並根據嚴重性層級，透過電子郵件和文字訊息來傳播警示。  
-  
-    -   使用者電子郵件通知 – 您可自訂電子郵件訊息，並將其傳送給所有違規的檔案擁有者。  
-  
-    -   CC 管理員 – 也可以根據使用者的目錄整合，將電子郵件通知傳送給違反原則之人員的管理員。  
-  
--   通知特定使用者 – 將接收這些通知的電子郵件地址特定清單。  
-  
--   通知上一位檔案編輯者 – 將通知傳送給上一位修改檔案的人員。  
-  
--   應用程式中的治理動作  
-  
-     每個應用程式皆可強制執行細微的動作；特定動作因應用程式的術語而異。  
-  
-    -   變更共用  
-  
-        -   移除公用共用 – 僅允許具名共同作業者進行存取’；例如：移除 Google Apps 的公用存取權與移除 Box 的直接共用連結。  
-  
-        -   移除外部使用者 – 只允許公司使用者進行存取。  
-  
-        -   私人使用 – 只有擁有者可以存取檔案，並會移除所有的共用。  
-  
-        -   移除共同作業者 – 從檔案中移除特定的共同作業者。  
-  
-    -   隔離  
-  
-        -   置入使用者隔離中 – 將檔案移至使用者控制的隔離資料夾中，以允許自助式服務。  
-  
-        -   置入系統管理隔離中 – 將檔案移至系統管理員磁碟的隔離中，而且必須由系統管理員核准。  
-  
--   資源回收筒 – 將檔案移至 [資源回收筒] 資料夾。
-  
-![policy_create 警示](./media/policy_create-alerts.png "policy_create alerts")  
-  
- 
+
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -144,6 +106,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

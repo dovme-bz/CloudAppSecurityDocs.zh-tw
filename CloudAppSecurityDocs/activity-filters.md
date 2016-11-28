@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
+ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
 
 
 ---
@@ -68,7 +68,10 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 -   已註冊的 ISP – 執行活動的來源 ISP。   
 
--  來源 - 依據從中偵測到活動的來源搜尋，例如應用程式連接器。 
+-  來源 - 依據偵測到其中有活動的來源進行搜尋。 來源可以是下列任一項：
+  - App 連線程式 - 直接來自應用程式 API 連接器之記錄。
+  - App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
+  
 
 -   使用者 - 執行活動的使用者，可使用網域、群組、名稱或組織進行篩選。 若要篩選不具特定使用者的活動，您可以使用 ‘is not set’ 運算子。  
     -   使用者網域 - 搜尋特定使用者網域。
@@ -130,6 +133,6 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

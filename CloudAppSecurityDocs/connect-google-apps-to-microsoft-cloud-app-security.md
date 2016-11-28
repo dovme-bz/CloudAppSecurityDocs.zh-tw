@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>將 Google Apps 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Google Apps 帳戶。  
+本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Google Apps 帳戶。
+
+  
   
 ## <a name="configure-google-apps"></a>設定 Google Apps  
   
@@ -218,13 +220,13 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 ## <a name="configure-cloud-app-security"></a>設定 Cloud App Security  
   
-1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 Google Apps 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 並選取 [Google Apps]。  
+2.  在 **App 連線程式**網頁中，按一下 [連線到應用程式]，然後選取 [Google Apps]。  
   
      ![連接 google apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  在 Google Apps 的設定頁面中填入下列資訊︰  
+3.  在快顯畫面填寫下列內容：  
   
      ![Cloud App Security 中的 Google Apps 設定](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

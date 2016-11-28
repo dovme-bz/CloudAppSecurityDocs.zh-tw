@@ -1,11 +1,11 @@
 ---
-title: "治理記錄 | Microsoft Docs"
-description: "本主題列出並描述可在 Cloud App Security 中採用的所有治理動作。"
+title: "治理 | Microsoft 文件"
+description: "本主題列出並描述可在 Cloud App Security 中採用的所有治理動作，以及追蹤其所有動作的記錄訊息。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,15 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759c4e09af65ce54c2e3ecaa2f1fccd2fded91d1
-ms.openlocfilehash: e67fecd17b26314720a34691f83464c59a244ea6
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
 
 
 ---
 
-# <a name="governance-log"></a>治理記錄
+# <a name="governance"></a>治理
+
+## <a name="governance-log"></a>治理記錄
 治理記錄會為每個設定執行 Cloud App Security 的工作提供一筆狀態記錄 (包括手動和自動工作)。 這些工作包含您在原則中設定的工作、在檔案和使用者上設定的治理動作，以及您設定 Cloud App Security 採取的任何其他動作。 治理記錄也會提供這些動作成敗的相關資訊。 您可以選擇重試或還原治理記錄中的一些治理動作。 
 
 下列是 Cloud App Security 入口網站可讓您採取的完整動作清單。 如**位置**欄位中所述，整個主控台中有多處可以進行這些動作。 每項採取的治理動作都會列於治理記錄中。
@@ -68,7 +70,46 @@ ms.openlocfilehash: e67fecd17b26314720a34691f83464c59a244ea6
 |設定 > 雲端探索設定 > 手動上傳記錄檔/自動上傳記錄檔|雲端探索|剖析雲端探索資料|已剖析所有記錄資料的通知。|探索|
 
 
-
+## <a name="governance-actions"></a>治理動作  
+可以在特定檔案、使用者或從特定原則採用下列治理動作。
+  
+-   通知  
+  
+    -   警示 – 系統可以觸發警示，並根據嚴重性層級，透過電子郵件和文字訊息來傳播警示。  
+  
+    -   使用者電子郵件通知 – 您可自訂電子郵件訊息，並將其傳送給所有違規的檔案擁有者。  
+  
+    -   CC 管理員 – 也可以根據使用者的目錄整合，將電子郵件通知傳送給違反原則之人員的管理員。  
+  
+-   通知特定使用者 – 將接收這些通知的電子郵件地址特定清單。  
+  
+-   通知上一位檔案編輯者 – 將通知傳送給上一位修改檔案的人員。  
+  
+-   應用程式中的治理動作  
+  
+     每個應用程式皆可強制執行細微的動作；特定動作因應用程式的術語而異。  
+  
+    -   變更共用  
+  
+        -   移除公用共用 – 僅允許具名共同作業者進行存取’；例如：移除 Google Apps 的公用存取權與移除 Box 的直接共用連結。  
+  
+        -   移除外部使用者 – 只允許公司使用者進行存取。  
+  
+        -   私人使用 – 只有擁有者可以存取檔案，並會移除所有的共用。  
+  
+        -   移除共同作業者 – 從檔案中移除特定的共同作業者。  
+  
+    -   隔離  
+  
+        -   置入使用者隔離中 – 將檔案移至使用者控制的隔離資料夾中，以允許自助式服務。  
+  
+        -   置入系統管理隔離中 – 將檔案移至系統管理員磁碟的隔離中，而且必須由系統管理員核准。  
+  
+-   資源回收筒 – 將檔案移至 [資源回收筒] 資料夾。
+  
+![policy_create 警示](./media/policy_create-alerts.png "policy_create alerts")  
+  
+ 
 
 
 
@@ -82,6 +123,6 @@ ms.openlocfilehash: e67fecd17b26314720a34691f83464c59a244ea6
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

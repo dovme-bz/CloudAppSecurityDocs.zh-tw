@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
   
 1.  請移至自動上傳設定頁面上︰  
-    在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon") 和 [Cloud Discovery 設定]，然後選取 [自動上傳記錄] 索引標籤。  
+    在 Cloud App Security 入口網站中，依序按一下設定圖示![設定圖示](./media/settings-icon.png "settings icon")和**記錄收集器**，然後選取 [記錄收集器] 索引標籤。  
   
 3.  為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰  
   
@@ -77,7 +77,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 4.  按一下 Hyper-V 或 VMWare，以**下載**新的記錄收集器虛擬機器，並使用您在入口網站接收到的密碼解壓縮檔案。  
   
-### <a name="step-2-onpremises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
+### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 
 > [!NOTE] 
 > 下列步驟描述 Hyper-V 中的部署。 VM Hypervisor 的部署步驟有些不同。  
@@ -114,7 +114,7 @@ sudo network_config
 
 此時，您的記錄收集器應已連接網路，並能夠連線至 Cloud App Security 入口網站。  
 
-### <a name="step-3-onpremises-configuration-of-the-log-collection"></a>步驟 3 – 記錄集合的內部部署設定 
+### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>步驟 3 – 記錄集合的內部部署設定 
 當第一次登入記錄收集器並從入口網站匯入記錄收集器的設定時，步驟如下： 
 
 1.  使用入口網站提供給您的互動式管理認證，透過 SSH 登入記錄收集器。 (如果這是您第一次登入主控台，您必須變更密碼，並在變更密碼之後，再次登入。 如果您使用終端機工作階段，可能需要重新啟動終端機工作階段。 )
@@ -133,7 +133,7 @@ sudo network_config
   
       d. 輸入您要設定的記錄收集器名稱，例如︰``` CloudAppSecurityLogCollector01  ```
 
-### <a name="step-4-onpremises-configuration-of-your-network-appliances"></a>步驟 4 - 網路設備的內部部署設定
+### <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>步驟 4 - 網路設備的內部部署設定
 
 設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰  
   
@@ -141,7 +141,7 @@ sudo network_config
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-### <a name="step-5-verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 5 - 確認已在 Cloud App Security 入口網站中部署成功
+### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 5 - 確認已在 Cloud App Security 入口網站中部署成功
 
 移至 [治理記錄] 並確認記錄檔會定期被上傳到入口網站。  
   
@@ -158,6 +158,6 @@ sudo network_config
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 38f87fce6925b380c5b02e1c5ae4daa83d4d45a2
 
 
 ---
@@ -36,13 +36,13 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
      ![servicenow 帳戶](./media/servicenow-account.png "servicenow account")  
   
-4.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+4.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-5.  在 ServiceNow 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [ServiceNow]。  
+5.  在 **App 連線程式**網頁中，依序按一下 [連線到應用程式] 按鈕及 [ServiceNow]。  
   
      ![連接 servicenow](./media/connect-servicenow.png "connect servicenow")  
   
-6.  在 ServiceNow 設定頁面上，[API] 索引標籤的適當方塊中，加入 ServiceNow 的使用者名稱、密碼和執行個體 URL。  
+6.  在快顯中，於適當的方塊內新增您的 ServiceNow 使用者名稱、密碼及執行個體 URL。  
   
 7.  按一下 [連線] 。  
   
@@ -62,6 +62,6 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
+ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
          ![salesforce 管理使用者設定檔](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。  
+    -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。 這是用於 Cloud App Security 服務帳戶的設定檔，可設定 App 連線程式。  
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
     5.  按一下 **[儲存]**。  
   
-4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [已連線的應用程式]。  
   
-5.  在 Box 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [Salesforce]。  
+5.  在 **App 連線程式**網頁中，按一下 [連線應用程式] 按鈕，再按一下 [Salesforce]。  
   
      ![連接 salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
+ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
+ms.openlocfilehash: 156be8b048c12e5db0a4b1118314c0b600ded24a
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
 
 若要存取 [應用程式權限] 索引標籤：
 
-1. 在 Cloud App Security 入口網站中，按一下 [調查]，然後從 [獲批准的應用程式] 下方，選擇 [Office 365]。 
+1. 在 Cloud App Security 入口網站中，按一下 [調查]，然後在 [連線應用程式]下方，選取 [Office 365]。 
 > [!Note]
 > 您必須先將 Cloud App Security 連接到 Office 365，才能使用應用程式權限。
 
@@ -115,6 +115,6 @@ ms.openlocfilehash: 9a139df8dd337bf3c3feb17c44a22fdc45476c3f
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: ed0701c4513f9501e0b2e5a7b0b7931f5d76a628
+ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
+ms.openlocfilehash: 24498fd5935ab8919231c284ca41b00ffb27e769
 
 
 ---
@@ -74,9 +74,9 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
   
 6.  如為 Box、SharePoint、Dropbox、OneDrive，您可以對應用程式或特定資料夾中的所有檔案強制使用檔案原則。 在 [Apply to (套用至)] 下選取 [選取的資料夾] 或 [all files excluding selected folders (排除所選資料夾以外的所有檔案)]，您會被重新導向來登入雲端應用程式，然後新增相關的資料夾。  
   
-7.  選取 [內容檢查方法]。 內建的 DLP 可讓您依檔案內容篩選檔案。 若要掃描檔案內容，請接著選取 [內建 DLP]。 只要啟用內容檢查，您就可以選擇使用預設的運算式，或搜尋其他自訂的運算式，作為子字串或您自己的規則運算式。  
+7.  選取 [內容檢查方法]。 內建的 DLP 可讓您依檔案內容篩選檔案。 若要掃描檔案內容，請接著選取 [內建 DLP]。 啟用內容檢查之後，即可選擇使用預設的運算式，或搜尋其他自訂的運算式，作為子字串或是您自己的[規則運算式](working-with-the-regex-engine.md)。  
     此外，您也可以指定規則運算式，從結果中排除檔案。 如果您有要從原則中排除的內部分類關鍵字標準，這會非常有用。  
-    此外，您可以決定想要先比對的內容違規最小數目，再將檔案視為違規。 例如，如果您希望在發現內容中至少有 10 個信用卡號碼的檔案時接獲警示，您可以選擇 10。  
+    您可以決定設定要至少比對到多少次內容違規數，才將該檔案視為違規。 例如，如果您希望在發現內容中至少有 10 個信用卡號碼的檔案時接獲警示，您可以選擇 10。  
     根據所選運算式比對內容時，您可以選擇遮罩違規通知和記錄檔中的相符項目。 一旦選取，違規文字就會置換成 "X" 字元。 請記住，數字會置換成 “#” 字元，且不再儲存於 Cloud App Security 內。  
   
 8.  選擇您想要 Cloud App Security 在偵測到相符項目時採取的 [治理] 動作。  
@@ -125,6 +125,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

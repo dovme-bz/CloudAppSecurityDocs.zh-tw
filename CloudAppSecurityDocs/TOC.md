@@ -16,14 +16,6 @@
 ### [將 Okta 連線至 Microsoft Cloud App Security](connect-okta-to-microsoft-cloud-app-security.md)
 ### [將 ServiceNow 連線至 Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [將 Salesforce 連線至 Microsoft Cloud App Security](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)
-### [Cloud Discovery 原則](cloud-discovery-policies.md)
-#### [Cloud Discovery 異常偵測原則](cloud-discovery-anomaly-detection-policy.md)
-### [使用者活動原則](user-activity-policies.md)
-#### [異常偵測原則](anomaly-detection-policy.md)
-### [資料保護原則](data-protection-policies.md)
-#### [內容檢查](content-inspection.md)
-#### [使用 RegEx 引擎](working-with-the-regex-engine.md)
 # [使用](daily-activities-to-protect-your-cloud-environment.md)
 ## [調查](investigate.md)
 ### [內建報告參考資料](built-in-report-reference.md)
@@ -32,12 +24,20 @@
 ### [警示](monitor-alerts.md)
 ### [Azure 資訊保護整合](azip-integration.md)
 ## [控制](control.md)
+### [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)
+#### [Cloud Discovery 原則](cloud-discovery-policies.md)
+##### [Cloud Discovery 異常偵測原則](cloud-discovery-anomaly-detection-policy.md)
+#### [使用者活動原則](user-activity-policies.md)
+##### [異常偵測原則](anomaly-detection-policy.md)
+#### [資料保護原則](data-protection-policies.md)
+##### [內容檢查](content-inspection.md)
+##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
 ### [管理應用程式權限](manage-app-permissions.md)
-## [治理記錄](governance-actions.md)
+## [治理](governance-actions.md)
 # [疑難排解](troubleshooting.md)
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
