@@ -38,7 +38,7 @@ ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
   
          ![box 應用程式](./media/box-apps.png "box apps")  
   
-    -   如果選取 **「Unpublished Applications」** (未發行的應用程式)，請在 [Except for] (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
+    -   如果選取 **「Unpublished Applications」** (未發行的應用程式)，請在 「Except for」 (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
   
          ![box 設定除外](./media/box-settings-except-for.png "box settings except for")  
   
