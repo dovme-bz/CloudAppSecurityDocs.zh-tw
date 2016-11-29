@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a0b71a03c932ea529000d7545faf8849d99fcb6d
-ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -97,34 +97,9 @@ ms.openlocfilehash: 342d9fcc84f9fb4b250578b653578403a06605f1
 
 ![活動下拉式清單](./media/activity-drawer.png "activity drawer")  
   
+如需可用的治理動作清單，請參閱[活動比對參數](governance-actions.md#activity-match-parameters)。
 
 
-## <a name="activity-match-parameters"></a>活動比對參數  
-指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  
-[活動比對參數] 是預設設定，其會在單一活動符合所有活動篩選條件時引發相符事件。   
-您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
-  
-### <a name="actions"></a>[動作]  
-通知  
-  
--   警示 – 系統可以觸發警示，並根據嚴重性層級，透過電子郵件和文字訊息來傳播警示。  
-  
--   使用者電子郵件通知 – 您可自訂電子郵件訊息，並將其傳送給所有違規的檔案擁有者。  
-  
--   CC 管理員 – 也可以根據使用者的目錄整合，將電子郵件通知傳送給違反原則之人員的管理員。  
-  
--   通知其他使用者 – 將接收這些通知的電子郵件地址特定清單。  
-  
-應用程式中的治理動作  
-  
--   每個應用程式皆可強制執行細微的動作；特定動作視應用程式的術語而異。  
-  
--   暫時停止使用者的權限 – 暫時停止使用者的應用程式權限。  
-  
--   撤銷密碼 – 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
-  
-     ![活動原則 ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
