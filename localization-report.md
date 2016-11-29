@@ -305,8 +305,8 @@
 * Archive Datetime: 2016-11-28 21:24:09
 * Handback File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/bd20e15c40fd3868044a0d8ee8cd6baac1cdb77d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf)
 * Handback Datetime: 2016-11-29 09:40:32
-* Bilingual File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/2063a8b27e38edd94a5b3e62cb400bf82306d9f7/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-28 06:42:10
+* Bilingual File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/bd20e15c40fd3868044a0d8ee8cd6baac1cdb77d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-29 09:41:20
 * [Back to Top](#report-top)
 
 ##### <a name='ca51d36a6d899124d3d4eb84ded1972ad9c8bab45'></a> Source: [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/002e0b82296162ee13fa378c4641cc8f21547237/CloudAppSecurityDocs/anomaly-detection-policy.md)
