@@ -988,7 +988,7 @@
       "ArchivedDateTime": "2016-11-24T01:31:35.7031819Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6.c113b0af4df9e7c4e94b3f570ce85b0ce2e9b17e.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.zh-tw\\live\\ht\\connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf",
-      "LocXliffCommit": "2063a8b27e38edd94a5b3e62cb400bf82306d9f7"
+      "LocXliffCommit": "cd04519c348a979b4cd056e18d80586ba48560c4"
     },
     "CloudAppSecurityDocs\\release-notes.md.b7c20cdb20db2198bcd16d86f99c55b03dcc849f.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\release-notes.md",
