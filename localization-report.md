@@ -432,8 +432,8 @@
 * Current Target File: [CloudAppSecurityDocs\connect-box-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.zh-tw/blob/7404ff26ce97194e93e077212edadc97c460cb00/CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md)
 * Current Handback File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/cd04519c348a979b4cd056e18d80586ba48560c4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
 * Current Handback Datetime: 2016-11-29 13:55:23
-* Bilingual File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/2063a8b27e38edd94a5b3e62cb400bf82306d9f7/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-28 06:42:10
+* Bilingual File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/cd04519c348a979b4cd056e18d80586ba48560c4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
+* Bilingual Datetime: 2016-11-29 13:56:14
 * [Back to Top](#report-top)
 
 ##### <a name='a2b9a7e9cf254c52465922af4b0e3a0256e60c5d13'></a> Source: [CloudAppSecurityDocs\connect-dropbox-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/6beb9041b338406fb5b16f4bd045dbdc4592c6d9/CloudAppSecurityDocs/connect-dropbox-to-microsoft-cloud-app-security.md)
