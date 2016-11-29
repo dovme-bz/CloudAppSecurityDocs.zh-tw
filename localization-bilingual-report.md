@@ -1,31 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [CloudAppSecurityDocs\connect-box-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/6beb9041b338406fb5b16f4bd045dbdc4592c6d9/CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md) | HandedOffSuccess | [Details](#4aa741a90e356d440598eb9302dbd49f3b445c6c12)
 
 ## Item Details
-##### <a name='4aa741a90e356d440598eb9302dbd49f3b445c6c12'></a> Source: [CloudAppSecurityDocs\connect-box-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/6beb9041b338406fb5b16f4bd045dbdc4592c6d9/CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md)
-* Status: HandedOffSuccess
-* Target File: 
-* Handoff File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/65eeb08785a13f3994780e7252e902624260a821/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
-* Handoff Datetime: 2016-11-28 20:43:01
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\connect-box-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.zh-tw/blob/7404ff26ce97194e93e077212edadc97c460cb00/CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md)
-* Current Handback File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/cd04519c348a979b4cd056e18d80586ba48560c4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
-* Current Handback Datetime: 2016-11-29 13:55:23
-* Bilingual File: [connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/cd04519c348a979b4cd056e18d80586ba48560c4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.zh-tw/live/ht/connect-box-to-microsoft-cloud-app-security.82c39b5ca41da383e588f730f655cba858b4d64d.zh-tw.xlf)
-* Bilingual Datetime: 2016-11-29 13:56:14
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
