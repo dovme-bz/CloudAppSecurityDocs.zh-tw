@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: af3585cbf123ba826efbdb79339c84a2dcb740c8
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: af3585cbf123ba826efbdb79339c84a2dcb740c8
 
 將會顯示下列警示類型。 
 
-## <a name="builtin-alerts"></a>內建警示
+## <a name="built-in-alerts"></a>內建警示
 
 |警示名稱|AlertID|描述|
 |----|----|----|
@@ -56,12 +56,12 @@ ms.openlocfilehash: af3585cbf123ba826efbdb79339c84a2dcb740c8
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
