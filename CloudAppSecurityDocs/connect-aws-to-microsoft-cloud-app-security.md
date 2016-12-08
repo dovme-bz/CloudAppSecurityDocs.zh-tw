@@ -1,5 +1,5 @@
 ---
-title: "將 AWS 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 AWS | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 AWS 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -98,7 +98,7 @@ ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
   
 11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-12. 在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕，再按一下 [AWS]。  
+12. 在 [App 連線程式] 頁面中，依序按一下加號及 [AWS]。  
   
      ![連接 AWS](./media/connect-aws.png "connect AWS")  
   
@@ -118,6 +118,6 @@ ms.openlocfilehash: d78f324cc8fba6c45a49c1260c157fb4f4feaab7
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

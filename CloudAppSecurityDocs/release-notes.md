@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,34 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
 
 
 ---
 
 # <a name="release-notes"></a>版本資訊
 
+
+## <a name="cloud-app-security-release-85"></a>Cloud App Security 版本 85
+發行日期 2016 年 11 月 27 日
+
+**新功能**
+- 已區別獲批准應用程式及連線應用程式。 「獲批准」及「待批准」現在是標籤，可套用至探索到的應用程式及應用程式目錄中的任何應用程式。 連線應用程式是您使用 API 連接器連線的應用程式，以便有更深入的可見度及控制。 您現在可以將應用程式標記為「獲批准」或「待批准」，或在可用的情況下使用 App 連線程式將其連線。 
+ 
+- 作為此變更的一部份，[獲批准的應用程式] 頁面已由重新設計過的 [連線應用程式] 頁面取代，顯現出關於連接器的狀態資料。 
+ 
+- 記錄檔收集器在 [來源] 下的 [設定] 功能表內的線路中更容易存取。 
+- 建立活動原則篩選時，您可以藉由在相同使用者對相同目標物件執行時選擇忽略重複的活動以減少誤判，例如，相同人員多次嘗試下載相同的檔案將不會觸發警示。 
+- 已改善 [活動] 下拉式清單。 現在，當您按一下 [活動] 下拉式清單中的 [活動物件] 時，您可以向下切入以取得更多資訊。
+
+**改善**
+- 已改善異常偵測引擎，包括不可能的移動警示，且現在可以在警示描述中看到 IP 資訊。
+- 已改善複雜的篩選，能夠多次新增相同的篩選來微調篩選的結果。 
+- 已分隔 Dropbox 中的檔案及資料夾活動，使可見度更佳。 
+  
+**錯誤修正**
+- 已修正系統警示機制中會建立誤判的 Bug。
 
 ## <a name="cloud-app-security-release-84"></a>Cloud App Security 版本 84
 發行日期 2016 年 11 月 13 日
@@ -238,6 +258,6 @@ ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

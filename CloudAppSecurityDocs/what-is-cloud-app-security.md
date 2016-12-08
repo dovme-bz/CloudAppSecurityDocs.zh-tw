@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是�
 |-------|---|:---|
 |![探索](./media/discovery-icon.png)|探索|揭露影子 IT 與 Cloud App Security。 探索雲端環境中的應用程式、活動、使用者、資料及檔案，以取得可見度。 探索連接至您雲端的協力廠商應用程式。|
 |![調查](./media/investigate-icon.png)|調查|使用雲端鑑識工具深入探索具風險的應用程式、特定使用者及您網路中的檔案，以調查您的雲端應用程式。 在雲端所收集的資料中尋找模式。 產生報告來監視您的雲端。|
-|![控制](./media/protect-icon.png)|控制|設定原則及警示，以盡最大可能控制網路雲端流量並降低風險。 使用 Cloud App Security，將使用者移轉至獲批准的安全雲端應用程式替代方案。|
+|![控制](./media/control-icon.png)|控制|設定原則及警示，以盡最大可能控制網路雲端流量並降低風險。 使用 Cloud App Security，將使用者移轉至獲批准的安全雲端應用程式替代方案。|
 |![保護](./media/protect-icon.png)|保護|您可使用 Cloud App Security 以批准或不批准應用程式、強制執行資料外洩防護、控制權限與共用，以及產生自訂報告與警示。|
 
 
@@ -50,11 +50,11 @@ Cloud App Security 可整合您雲端的可見度，
 ![Cloud App Security 架構](./media/architecture.png)  
 
 > [!NOTE]  
-> 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 在 Cloud App Security 資料庫中，僅會儲存已識別出的檔案記錄與違規中繼資料。 您的資料不會儲存在 Cloud App Security 資料庫中。 如需資料保留的詳細資訊，請參閱[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
+> 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 您的資料不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。如需資料保留的詳細資訊，請參閱我們的[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)以及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
 Cloud App Security 如下保留資料︰
 >- 活動記錄：180 天
 >- 探索資料：90 天
->- 警示：無限制
+>- 警示︰180 天
 
 Cloud App Security 從這些來源收集資料後，即會對資料執行複雜的分析。 它會立即提醒您有異常活動，並讓您深入了解您的雲端環境。 您可以在 Cloud App Security 中設定原則，並使用該原則保護雲端環境中的所有項目。  
 
@@ -87,6 +87,6 @@ Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

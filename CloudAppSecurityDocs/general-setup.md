@@ -1,11 +1,11 @@
 ---
-title: "一般設定 | Microsoft Docs"
-description: "本主題提供啟動並執行 Cloud App Security 的前幾個步驟。"
+title: "自訂入口網站 |Microsoft Docs"
+description: "本主題提供自訂入口網站的第一個步驟。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,39 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
-ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>一般設定
-下列程序提供您設定 [!INCLUDE[Adallom1](./includes/adallom1_md.md)] 以使用雲端環境的指示。  
-  
-## <a name="prerequisites"></a>必要條件  
-  
--   組織必須擁有 Cloud App Security 的授權，才能使用該產品。 如需詳細資訊，請參閱[如何購買 Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) 並查看[授權資源](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)。  
-  
-     如需租用戶啟用支援，請參閱[連絡商務用 Office 365 支援人員 - 系統管理協助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。  
-  
-> [!NOTE] 
-> Cloud App Security 不需要 Office 365 授權。  
-  
--   您購買 Cloud App Security 授權之後，會收到一封電子郵件，其中附有啟用資訊和 Cloud App Security 入口網站的連結。  
-  
--   若要設定 Cloud App Security，您必須是 Azure Active Directory 或 Office 365 的全域管理員、規範管理員或安全性系統管理員。 請務必了解，獲指派管理員角色的使用者將會在您組織已訂閱的所有雲端應用程式都擁有相同的權限，而不論您是在 Office 365 入口網站、Azure 傳統入口網站，還是使用 Windows PowerShell 的 Azure AD 模組來指派角色。 如需詳細資訊，請參閱[在 Office 365 中指派管理員角色](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)和[在 Azure Active Directory 中指派管理員角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。  
-  
--   若要執行 Cloud App Security 入口網站，請使用 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新) 或 Apple Safari (最新)。  
+# <a name="customize-the-portal"></a>自訂入口網站
+下列程序會指示您自訂 Cloud App Security 入口網站。
   
 ## <a name="set-up-the-portal"></a>設定入口網站  
   
-1.  若要存取 Cloud App Security 入口網站，請前往 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)。  
-  
-     或者，您可以透過 **Office 365 系統管理中心**存取入口網站，方法是依序按一下系統管理中心圖示 ![O365 系統管理中心圖示](./media/o365-admin-centers-icon.png "O365 admin centers icon") 和 [Cloud App Security]。  
-  
-     ![從 O365 存取](./media/access-from-o365.png "Access from O365")  
-  
-2.  在 Cloud App Security 入口網站的功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon")，然後選取 [一般設定] 設定下列項目︰  
+1.  在 Cloud App Security 入口網站的功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon")，然後選取 [一般設定] 設定下列項目︰  
   
 3.  **組織詳細資料**  
   
@@ -252,6 +231,6 @@ Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和�
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

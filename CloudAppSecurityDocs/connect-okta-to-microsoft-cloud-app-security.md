@@ -1,5 +1,5 @@
 ---
-title: "將 Okta 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Okta | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Okta 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -51,7 +51,7 @@ ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
   
 3.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-4.  在 **App 連線程式網頁**中，依序按一下 [連線到應用程式] 按鈕及 [Okta]。  
+4.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Okta]。  
   
      ![連接 okta](./media/connect-okta.png "connect okta")  
   
@@ -73,6 +73,6 @@ ms.openlocfilehash: f5f355a42321e4467ce3ef487c48508522a286ab
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

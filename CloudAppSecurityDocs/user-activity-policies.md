@@ -1,11 +1,11 @@
 ---
-title: "使用者活動原則 | Microsoft Docs"
-description: "本主題提供用於建立和使用使用者活動原則的指示。"
+title: "活動原則 | Microsoft Docs"
+description: "本主題提供建立及使用活動原則的指示。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,14 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>使用者活動原則
-活動原則可讓您運用應用程式提供者 API 強制執行各種自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。  
+# <a name="activity-policies"></a>活動原則
+活動原則可讓您利用應用程式提供者的 API，強制執行各種不同的自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。  
   
 設定活動偵測原則之後，就會開始產生警示 - 只有建立原則之後發生的活動才會產生警示。
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

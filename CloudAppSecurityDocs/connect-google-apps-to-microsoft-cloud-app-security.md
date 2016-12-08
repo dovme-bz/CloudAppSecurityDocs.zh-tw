@@ -1,11 +1,11 @@
 ---
-title: "將 Google Apps 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Google Apps | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Google Apps 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
@@ -222,7 +222,7 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
 1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 **App 連線程式**網頁中，按一下 [連線到應用程式]，然後選取 [Google Apps]。  
+2.  在 [連線應用程式] 頁面中，按一下加號並選取 [Google Apps]。  
   
      ![連接 google apps](./media/connect-google-apps.png "connect google apps")  
   
@@ -266,6 +266,6 @@ ms.openlocfilehash: f5329d2cb2a95f59079b8a5797d24d444a9d94b5
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

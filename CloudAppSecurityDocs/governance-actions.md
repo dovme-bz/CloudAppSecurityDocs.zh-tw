@@ -1,5 +1,5 @@
 ---
-title: "治理 | Microsoft 文件"
+title: "治理 | Microsoft Docs"
 description: "本主題列出並描述可在 Cloud App Security 中採用的所有治理動作，以及追蹤其所有動作的記錄訊息。"
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 43069f7a9f91dc34f4ce3ebb52ca399441bbb1f1
 
 
 ---
 
-# <a name="governance"></a>治理
+# <a name="govern"></a>治理
 
 ## <a name="governance-log"></a>治理記錄
 治理記錄會為每個設定執行 Cloud App Security 的工作提供一筆狀態記錄 (包括手動和自動工作)。 這些工作包含您在原則中設定的工作、在檔案和使用者上設定的治理動作，以及您設定 Cloud App Security 採取的任何其他動作。 治理記錄也會提供這些動作成敗的相關資訊。 您可以選擇重試或還原治理記錄中的一些治理動作。 
@@ -70,7 +70,7 @@ ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
 |設定 > 雲端探索設定 > 手動上傳記錄檔/自動上傳記錄檔|雲端探索|剖析雲端探索資料|已剖析所有記錄資料的通知。|探索|
 
 
-## <a name="governance-actions"></a>治理動作  
+## <a name="file-governance-actions"></a>檔案治理動作  
 可以在特定檔案、使用者或從特定原則採用下列治理動作。
   
 -   通知  
@@ -110,8 +110,40 @@ ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
 ![policy_create 警示](./media/policy_create-alerts.png "policy_create alerts")  
   
  
+## <a name="activity-match-parameters"></a>活動比對參數  
+指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  
+[活動比對參數] 是預設設定，其會在單一活動符合所有活動篩選條件時引發相符事件。   
+您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
+  
+### <a name="actions"></a>[動作]  
+通知  
+  
+-   警示 – 系統可以觸發警示，並根據嚴重性層級，透過電子郵件和文字訊息來傳播警示。  
+  
+-   使用者電子郵件通知 – 您可自訂電子郵件訊息，並將其傳送給所有違規的檔案擁有者。  
+  
+-   CC 管理員 – 也可以根據使用者的目錄整合，將電子郵件通知傳送給違反原則之人員的管理員。  
+  
+-   通知其他使用者 – 將接收這些通知的電子郵件地址特定清單。  
+  
+應用程式中的治理動作  
+  
+-   每個應用程式皆可強制執行細微的動作；特定動作視應用程式的術語而異。  
+  
+-   暫時停止使用者的權限 – 暫時停止使用者的應用程式權限。  
+  
+-   撤銷密碼 – 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
+  
+     ![活動原則 ref6](./media/activity-policy-ref6.png "activity policy ref6")  
+  
 
+## <a name="governance-conflicts"></a>治理衝突
 
+建立多個原則之後，可能會出現多個原則中的治理動作重疊的狀況。 在此案例中，Cloud App Security 會如下所述處理治理動作：
+
+- 若兩個原則包含彼此包含的動作 (例如，**設為私人**包含**移除外部共用**)，Cloud App Security 將會解決衝突，並強制執行更強大的動作。
+- 如果其中的動作完全無關 (例如**通知擁有者**和**設為私用**)， 則這兩個動作皆會執行。
+- 如果動作彼此衝突，(例如**變更擁有者為使用者 A** 和**變更擁有者為使用者 B**)，則每個相符項目可能會產生不同的結果。 建議您變更原則以避免發生衝突，因為這些衝突可能會導致磁碟機出現有害且很難偵測得到的變更。
 
 
 
@@ -123,6 +155,6 @@ ms.openlocfilehash: d1b13f6c3cf3a466296285e53fddbc4faffbb359
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

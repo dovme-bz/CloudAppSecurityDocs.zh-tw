@@ -1,5 +1,5 @@
 ---
-title: "將 ServiceNow 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 ServiceNow | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 ServiceNow 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 38f87fce6925b380c5b02e1c5ae4daa83d4d45a2
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -38,7 +38,7 @@ ms.openlocfilehash: 38f87fce6925b380c5b02e1c5ae4daa83d4d45a2
   
 4.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-5.  在 **App 連線程式**網頁中，依序按一下 [連線到應用程式] 按鈕及 [ServiceNow]。  
+5.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [ServiceNow]。  
   
      ![連接 servicenow](./media/connect-servicenow.png "connect servicenow")  
   
@@ -62,6 +62,6 @@ ms.openlocfilehash: 38f87fce6925b380c5b02e1c5ae4daa83d4d45a2
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

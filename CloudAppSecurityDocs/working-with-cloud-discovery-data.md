@@ -1,5 +1,5 @@
 ---
-title: "使用 Cloud Discovery 資料 | Microsoft Docs"
+title: "自訂 Cloud Discovery | Microsoft Docs"
 description: "本主題提供如何使用 Cloud Discovery 資料的指示，包括使用應用程式風險分數。"
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9bf05e43966ff39dacc58a082c7b8eb3627eda
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
 
 
 ---
 
-# <a name="working-with-cloud-discovery-data"></a>使用 Cloud Discovery 資料
+# <a name="customize-cloud-discovery"></a>自訂 Cloud Discovery
 ## <a name="review-the-cloud-discovery-dashboard"></a>檢閱 Cloud Discovery 儀表板
 
 Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中使用雲端應用程式。 它概述正在使用的應用程式種類、未解決的警示以及組織中應用程式的風險層級。 它也會示範誰是最上層應用程式使用者，並提供 App Headquarter 位置圖。 「Cloud Discovery 儀表板」具有許多用於篩選資料的選項，可讓您根據最感興趣的項目來產生特定檢視，並且提供容易了解的圖形，讓您一目瞭然。
@@ -126,12 +126,12 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "為您的應用程式提供立即可見度、保護及治理動作 | Microsoft Docs"
-description: "本主題描述啟用組織雲端中應用程式之 API 連接器的程序。"
+title: "連接應用程式 | Microsoft Docs"
+description: "本主題描述使用 API 連接器將應用程式連接到您組織的雲端應用程式之過程。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
-ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
 
 
 ---
 
-# <a name="enable-instant-visibility-protection-and-governance-actions-for-your-apps"></a>為您的應用程式提供立即可見度、保護及治理動作
+# <a name="connect-apps"></a>連線應用程式 
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
   
 Cloud App Security 利用雲端提供者提供的 API，每個服務都有自己的架構和 API 限制。 Cloud App Security 使用服務來使 API 的使用達到最佳化，並且確保最佳的效能。 Cloud App Security 引擎會考慮服務加諸於 API 的不同限制 (例如節流、API 限制、動態時間調整 API 範圍等)，而利用允許的容量。 某些作業，例如掃描租用戶中的所有檔案，需要大量的 API，因此會分散在較長的時間。 請預期某些原則會執行長達幾個小時或幾天。  
@@ -97,6 +97,8 @@ App 連線程式流程如下所示︰
 -   針對主控台：  
   
      104.42.231.28  
+
+- 對於您要連接到 Cloud App Security API 整合的每個應用程式，建議您建立專用於 Cloud App Security 的管理服務帳戶。  
   
 > [!NOTE]  
 >  若要在 URL 和 IP 位址變更時取得更新，請訂閱 RSS，如 [Office 365 URL 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中所述。  
@@ -129,6 +131,6 @@ Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://
    
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Azure Inforamtion Protection 整合 | Microsoft Docs"
+title: "Azure 資訊保護整合 | Microsoft Docs"
 description: "本文提供如何在 Cloud App Security 中使用 Azure Information Protection 標籤，提升您對組織之雲端應用程式的控制程度。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,21 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
 
 
 ---
 
-# <a name="azure-information-protection-integration---private-preview"></a>Azure Information Protection 整合 - **非公開預覽版**
+# <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
-Cloud App Security 讓您調查檔案，並依據 Azure Information Protection 檔案標籤設定原則，提升您監視及控制雲端上敏感性資料的能力。 若要達到此目的，請在 Cloud App Security 中設定原則，指定在掃描檔案時須啟用內容檢查功能。 此外，Cloud App Security 非公開預覽版的另一項功能是允許您為機密檔案相關的活動觸發警示。 Azure Information Protection 整合可以讓您：
+Cloud App Security 讓您調查檔案，並依據 Azure Information Protection 檔案標籤設定原則，提升您監視及控制雲端上敏感性資料的能力。 若要達到此目的，請在 Cloud App Security 中設定原則，指定在掃描檔案時須啟用內容檢查功能。 此外，您可對與分類檔案相關的活動觸發警示。 Azure Information Protection 整合可以讓您：
 -   量化敏感性資料在不同雲端應用程式的揭露程度。
 -   針對您連線之雲端程式違規上傳機密資料的情事建立原則與警示，或隔離/封鎖敏感性資料，避免這類資料外洩。
 -   調查稽核記錄，並修復違反原則的檔案 
 
-> [!NOTE] 除非有檔案原則指定在掃描檔案時，須啟用內容檢查，否則在掃描檔案時，預設只會掃描標籤。 若不要使用檔案原則，而只要掃描所有檔案中的標籤，可啟用自動掃描。
+> [!NOTE] 
+> 除非有檔案原則指定在掃描檔案時，須啟用內容檢查，否則在掃描檔案時，預設只會掃描標籤。 若不要使用檔案原則，而只要掃描所有檔案中的標籤，可啟用自動掃描。
 
 ## <a name="terminology-overview"></a>術語概觀
 -   Azure Information Protection 分類標籤 - 為組織中的檔案新增屬性，可以是自動新增，也可以依據原則、手動新增，或由使用者設定。
@@ -62,6 +63,13 @@ Cloud App Security 讓您調查檔案，並依據 Azure Information Protection �
 或者，對於標記任何檔案標籤的檔案：
 
 ![檔案標記所有的篩選](./media/azip-file-tags-all-filter.png)
+
+## <a name="how-it-works"></a>運作方式
+您將 Cloud App Security 連接至 Azure 資訊保護後，Cloud App Security 就會如下所述掃描檔案：
+1. 擷取您租用戶所使用的所有分類標籤清單。 每隔一小時會執行一次，使清單維持最新狀態。
+2. 掃描檔案是否有分類標籤。 這有兩種進行方式︰a. 內容依據檔案原則需掃瞄的檔案，也將新增至分類標籤的掃描佇列。
+    b. 若要將所有檔案都新增至掃瞄佇列而不設定檔案原則，請啟動自動掃描 (如下所示)，這將會掃描所有新檔案或修改過的檔案。
+3. 除非您選取 [Ignore Azure Information Protection classification labels from other tenants] (略過其他租用戶的 Azure 資訊保護分類標籤) 核取方塊 (如下所示)，否則外部標籤只會在顯示於特定檔案上時，才會新增至分類標籤清單。
 
 ## <a name="enable-automatic-scan"></a>啟用自動掃描
 若要在 Office 365 中自動掃描新檔案的檔案標籤：
@@ -119,6 +127,6 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3c342e019dfca316ee89f68de60886d848abdb17
-ms.openlocfilehash: f65d64b240eb26f13a70143f5fb84a4f84f4cb6d
+ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
+ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
 
 ---
@@ -38,7 +38,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 
 以下是可套用的檔案篩選器清單。 大部分的篩選器皆支援多個值與 NOT，以提供可在建立原則時使用的強大工具。  
 > [!NOTE] 
-> 使用原則篩選器時，**Contains** 將只搜尋完整文字 – 以逗點、句點、空格或底線隔開。 例如，如果您搜尋 **malware** 或 **virus**，它會找到 virus_malware_file.exe，但不會找到 malwarevirusfile.exe。 如果您搜尋 **malware.exe**，則會找到檔名中有 malware 或 exe 的所有檔案；如果您搜尋 **"malware.exe"** (加上引號)，將只會找到包含確切 "malware.exe" 的檔案。  **Equals** 僅會搜尋完整字串；例如，如果您搜尋 **malware.exe**，它會找到 malware.exe，但不會找到 malware.exe.txt。 
+> 使用檔案原則篩選時，**Contains** 僅會搜尋完整字組 – 以逗點、點、空格或底線分隔進行搜尋。 將字組括以引號即有類似 AND 的功能，例如若您搜尋**"malware"** **"virus"**，即會尋找 virus_malware_file.exe，但不會尋找 malwarevirusfile.exe 或是 malware.exe。 字組間的空格功能類似 OR，例如若您搜尋 **malware** **virus**，即會尋找所有名稱中有 malware 或 virus 的檔案，所以會同時尋找 malware-virus.exe 及 virus.exe。   **Equals** 僅會搜尋完整字串；例如，如果您搜尋 **malware.exe**，它會找到 malware.exe，但不會找到 malware.exe.txt。 
 
 -   存取層級 – 共用存取層級；公開、外部、內部或私人。  如需外部檔案的詳細資訊，請參閱[一般設定、設定入口網站](getting-started-with-cloud-app-security.md)。內部檔案是指您在內部網域 (透過[一般設定](General-setup.md)來設定) 內使用的任何檔案。 外部檔案是指儲存在您所設定之內部網域以外的任何檔案。 共用檔案為具有私人以上之共用層級的檔案，包括內部共用 (在您的內部網域中共用的檔案)、外部共用 (在您的內部網域之外共用的檔案)、以連結公用 (可與任何人透過連結共用的檔案) 和公用 (可在網際網路上搜尋找到的檔案) 檔案。 
 
@@ -67,7 +67,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 -   檔案識別碼 – 搜尋特定的檔案識別碼；這是一項進階功能，可讓您獨立於某些高價值檔案的擁有者/位置/名稱，來追蹤檔案。  
   
--   檔案名稱 – 雲端應用程式中定義的檔案名稱或名稱的子字串；例如，名稱中含有密碼的所有檔案。  
+-   檔案名稱 – 雲端應用程式中定義的檔案名稱或名稱的子字串；例如，名稱中含有密碼的所有檔案。   
   
 -   檔案標記 - 搜尋具有 Azure 資訊保護所設定之特定標記的檔案。 這需要與 Azure 資訊保護整合。
 
@@ -97,6 +97,19 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 ![套用篩選器](./media/apply-to-filter.png "apply to filter")  
   
+## <a name="working-with-the-file-drawer"></a>使用檔案抽屜
+
+您可以透過按一下檔案記錄中的檔案本身，檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：
+
+- URL：帶您前往檔案位置。
+- 檔案識別碼：按一下 [檔案識別碼] 即可開啟快顯，其中內含檔案的未經處理檔案詳細資料，包括檔案識別碼及加密金鑰。
+- 擁有者：按一下 [擁有者] 即可檢視此檔案擁有者的使用者頁面。
+- 相符的原則：按一下 [相符的原則] 連結即可查看此檔案符合的原則清單。
+- 分類標籤：按一下 [分類標籤] 即可檢視此檔案中的 Azure 資訊保護分類標籤清單。 您接著可以依據符合此標籤的所有檔案進行篩選。    
+
+![檔案抽屜](./media/file-drawer.png "File drawer")  
+  
+如需可用的治理動作清單，請參閱[檔案治理動作](governance-actions.md#file-governance-actions)。
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
@@ -106,6 +119,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

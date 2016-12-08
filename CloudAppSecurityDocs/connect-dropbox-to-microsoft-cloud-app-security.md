@@ -1,5 +1,5 @@
 ---
-title: "將 Dropbox 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Dropbox | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Dropbox 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
   
 1.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕，再按一下 [Dropbox]。  
+2.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Dropbox]。  
   
      ![連接 dropbox](./media/connect-dropbox.png "connect dropbox")  
   
@@ -63,6 +63,6 @@ ms.openlocfilehash: e6c450215330f2b4cb1f52156aa5f80653d522fc
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

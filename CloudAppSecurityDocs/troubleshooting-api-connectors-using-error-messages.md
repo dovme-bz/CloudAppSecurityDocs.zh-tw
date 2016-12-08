@@ -1,11 +1,11 @@
 ---
-title: "使用錯誤訊息為 API 連接器進行疑難排解 | Microsoft Docs"
-description: "本主題提供 API 連接器錯誤訊息和其解決建議的清單。"
+title: "使用錯誤訊息為 App 連線程式疑難排解 | Microsoft Docs"
+description: "本主題提供 API App 連線程式的錯誤訊息清單，及各項錯誤的解決方法建議。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,15 +14,20 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
 
 
 ---
 
-# <a name="troubleshooting-api-connectors-using-error-messages"></a>使用錯誤訊息為 API 連接器進行疑難排解
+
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>使用錯誤訊息為 App 連線程式疑難排解
+
+嘗試使用 API App 連線程式連接雲端應用程式後，App 連線程式的對話方塊中會出現 App 連線程式的錯誤。
+
+
 |錯誤訊息|相關應用程式|描述|解決方法|
-|----|----|----|----|
+|----|----|----|------------|
 |HttpRequestFailure: 伺服器傳回: 400 錯誤的要求: {"error":{"code":"AF20012","message":"系統中不正確地設定所指定的租用戶識別碼 (這裡是 Tenant_ID)。"|Office 365 |找不到指派的 Office 365 授權。 |將至少一個 Office 365 授權指派給您的租用戶。| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"重新整理權杖無效"}|方塊|Box 重新整理權杖無效|再次遵循將 Box 連線至 Cloud App Security 的程序。|
 |BoxRestException︰ 無法剖析回應。|方塊|內部錯誤|再按一下 [立即測試] 連結，以測試與 Box 的連線。|
@@ -53,12 +58,12 @@ ms.openlocfilehash: 61492a0126bff93c2a61d5d1317784ca96687df7
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

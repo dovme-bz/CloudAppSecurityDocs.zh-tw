@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: 2a079813677020b1181648394c818edd5f294786
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
   
 1.  請移至自動上傳設定頁面上︰  
-    在 Cloud App Security 入口網站中，依序按一下設定圖示![設定圖示](./media/settings-icon.png "settings icon")和**記錄收集器**，然後選取 [記錄收集器] 索引標籤。  
+    在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon") 以及 [記錄收集器]。  
   
 3.  為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰  
   
@@ -158,6 +158,6 @@ sudo network_config
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

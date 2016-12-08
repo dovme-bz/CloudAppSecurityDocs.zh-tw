@@ -1,5 +1,5 @@
 ---
-title: "將 Box 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Box | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Box 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb
-ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
   
 2.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-3.  在 **App 連線程式**網頁中，按一下 [連線到應用程式] 按鈕然後選取 [方塊]。  
+3.  在 [App 連線程式] 頁面中，按一下加號按鈕並選取 [Box]。  
   
      ![連接 box](./media/connect-box.png "connect box")  
   
@@ -77,6 +77,6 @@ ms.openlocfilehash: 1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee6
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

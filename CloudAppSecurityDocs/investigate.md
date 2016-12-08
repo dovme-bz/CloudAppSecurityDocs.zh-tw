@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
 |應用程式儀表板：協力廠商應用程式|向下切入目前部署的協力廠商應用程式內，例如 Google 應用程式並為其定義原則|  
 |使用者儀表板|完整的雲端使用者設定檔概觀，包括群組、位置、最近的活動、相關警示及所用瀏覽器|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> 批准或未批准應用程式  
-了解您雲端的第一個步驟是批准應用程式。 批准應用程式之後，您就可以篩選未批准的應用程式，開始移轉同類型的已批准應用程式。  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>將應用程式標記為「獲批准」或「待批准」  
+若要了解您的雲端，其中一項重要步驟就是將應用程式標記為「獲批准」或「待批准」。 批准應用程式之後，您就可以篩選未批准的應用程式，開始移轉同類型的已批准應用程式。  
 
--   在 Cloud App Security 主控台中，依序選擇 **[探索]** 及 **[探索儀表板]**。  
+-   在 [Cloud App Security] 主控台中，移至 [應用程式目錄] 或是 [探索到的應用程式]。  
 
--   在探索到的應用程式清單中，於您要批准的應用程式出現的資料列中，選擇資料列結尾的三個點 ![批准三個點](./media/sanction-three-dots.png "Sanction three dots")，然後選取 **[標示為已許可]**。  
+-   在應用程式清單中，於您要批准的應用程式出現的資料列上，選擇資料列結尾的三個點![標記為獲批准點](./media/sanction-three-dots.png "Tag as sanctioned dots")，然後選擇 [標記為獲批准]。  
 
-     ![標示為已許可](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![標記為獲批准](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  建議您為每個想要使用 Cloud App Security API 整合監視的應用程式，建立 Cloud App Security 專用的管理服務帳戶。  
 
 ## <a name="use-the-investigation-tools"></a>使用調查工具  
 
@@ -160,6 +158,6 @@ ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

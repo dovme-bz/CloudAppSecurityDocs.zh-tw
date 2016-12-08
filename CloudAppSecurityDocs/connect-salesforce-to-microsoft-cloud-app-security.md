@@ -1,5 +1,5 @@
 ---
-title: "將 Salesforce 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Salesforce | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Salesforce 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6637aaaa34c855cfd6070e9420428d19087e0aa7
-ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -72,9 +72,9 @@ ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
   
     5.  按一下 **[儲存]**。  
   
-4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [已連線的應用程式]。  
+4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-5.  在 **App 連線程式**網頁中，按一下 [連線應用程式] 按鈕，再按一下 [Salesforce]。  
+5.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Salesforce]。  
   
      ![連接 salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ ms.openlocfilehash: 9a076831c8d93e3af34541b3e881181d829bf348
   
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
