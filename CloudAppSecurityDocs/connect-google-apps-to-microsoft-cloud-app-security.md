@@ -1,5 +1,5 @@
 ---
-title: "連接 Google Apps | Microsoft Docs"
+title: "連線 Google Apps | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Google Apps 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -53,7 +53,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
      ![google5](./media/google5.png "google5")  
   
-6.  按一下 [Google API] 索引標籤，啟用下列 API (如果 [Popular APIs] (熱門 API) 清單未列出 API，請使用搜尋列)：  
+6.  按一下 [Google API] 索引標籤，啟用下列 API (如果 「Popular APIs」 (熱門 API) 清單未列出 API，請使用搜尋列)：  
   
      ![google8](./media/google8.png "google8")  
   
@@ -108,7 +108,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
      ![google22](./media/google22.png "google22")  
   
-13. 選取 [Enable Google Apps Domain-wide Delegation] (啟用 Google Apps 全網域委派) 核取方塊，然後按一下 [儲存]。  
+13. 選取 「Enable Google Apps Domain-wide Delegation」 (啟用 Google Apps 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
      ![google24](./media/google24.png "google24")  
   
@@ -222,7 +222,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 [連線應用程式] 頁面中，按一下加號並選取 [Google Apps]。  
+2.  在**連線應用程式**網頁中，按一下 [加號] 然後選取 [Google Apps]。  
   
      ![連接 google apps](./media/connect-google-apps.png "connect google apps")  
   
