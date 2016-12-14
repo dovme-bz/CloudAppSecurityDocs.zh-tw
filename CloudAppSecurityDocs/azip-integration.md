@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
+ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
+ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
 
 
 ---
@@ -72,9 +72,10 @@ Cloud App Security 讓您調查檔案，並依據 Azure Information Protection �
 3. 除非您選取 [Ignore Azure Information Protection classification labels from other tenants] (略過其他租用戶的 Azure 資訊保護分類標籤) 核取方塊 (如下所示)，否則外部標籤只會在顯示於特定檔案上時，才會新增至分類標籤清單。
 
 ## <a name="enable-automatic-scan"></a>啟用自動掃描
-若要在 Office 365 中自動掃描新檔案的檔案標籤：
+自動掃描可以在 Office 365 檔案搜尋 Azure 資訊保護分類標籤，而不需要建立一個原則。 如果您的 Cloud App Security 具有獨立授權，才能使用這項功能。
+自動掃描新檔案的檔案標籤：
 
-1. 在 Office 365 中，前往 [一般設定] 頁面。
+1. 在 Cloud App Security 中，移至 [一般設定] 頁面。
 2. 在 Azure 安全性設定下，選取 [自動掃描檔案的 Azure Information Protection 分類標籤]。 啟用之後，不只是依據檔案原則需要掃描內容的檔案，所有新增到 Office 365 的檔案中都會掃描檔案標籤。
 
 ![啟用 Azure Information Protection](./media/enable-azip.png)
@@ -83,16 +84,16 @@ Cloud App Security 讓您調查檔案，並依據 Azure Information Protection �
 ## <a name="internal-and-external-tags"></a>內部及外部標籤
 Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其他組織所定義的外部分類標籤。 
 
-若要忽略分類標籤，請從 **Auzre 安全性設定**中選取 [Ignore Azure Information Protection classification labels from other tenants] (忽略其他租用戶的 Azure Information Protection 分類標籤) 。
+若要忽略分類標籤，請在 Cloud App Security 入口網站，從 [Auzre 安全性設定] 下的 [一般設定]，選取 [Ignore Azure Information Protection classification labels from other tenants (忽略其他租用戶的 Azure 資訊保護分類標籤)]。
  
 ![忽略標籤](./media/azip-ignore.png)
 
 > [!Note]
 > 若是使用測試租用戶工作，建議不要忽略分類標籤，如此才能測試您從其他租用戶收到的檔案。
 
-![Cloud App Security 中的 Azure Information Protection 標籤](./media/azip-tags-in-cas.png)
+![Cloud App Security 中的 Azure 資訊保護標籤](./media/azip-tags-in-cas.png)
 
-## <a name="use-azure-information-protection-tags-to-apply-control"></a>使用 Azure Information Protection 標籤套用控制
+## <a name="use-azure-information-protection-tags-to-apply-control"></a>使用 Azure 資訊保護標籤套用控制
 在 Cloud App Security 建立檔案原則，可偵測不當共用的檔案，以及已標示標籤，但近期曾修改過的檔案。 
 
 **原則 #1 - 在 Box 上對外共用機密資料： **
@@ -114,7 +115,7 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 您也可以為這些原則選擇設定警示、使用者通知或立即採取行動。
 深入了解[管理動作](governance-actions.md)。
 
-深入了解 [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) 及查看 Azure Information Protection [ 快速入門教學課程](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)。
+深入了解 [Azure 資訊保護](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)及查看 Azure 資訊保護[快速入門教學課程](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)。
 
   
 
@@ -127,6 +128,6 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
