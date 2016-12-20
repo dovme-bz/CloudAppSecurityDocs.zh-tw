@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
 
 -   已註冊的 ISP – 執行活動的來源 ISP。   
 
--  來源 - 依據從中偵測到活動的來源搜尋，例如應用程式連接器。 
+-  來源 - 依據偵測到其中有活動的來源進行搜尋。 來源可以是下列任一項：
+  - App 連線程式 - 直接來自應用程式 API 連接器之記錄。
+  - App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
+  
 
 -   使用者 - 執行活動的使用者，可使用網域、群組、名稱或組織進行篩選。 若要篩選不具特定使用者的活動，您可以使用 ‘is not set’ 運算子。  
     -   使用者網域 - 搜尋特定使用者網域。
@@ -86,6 +89,7 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
 您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供下列您可以對檔案執行的額外動作：
 
 - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
+- 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
 - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
 - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
 - 位置：按一下位置用 Bing 地圖服務檢視位置。
@@ -93,34 +97,9 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
 
 ![活動下拉式清單](./media/activity-drawer.png "activity drawer")  
   
+如需可用的治理動作清單，請參閱[活動比對參數](governance-actions.md#activity-match-parameters)。
 
 
-## <a name="activity-match-parameters"></a>活動比對參數  
-指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  
-[活動比對參數] 是預設設定，其會在單一活動符合所有活動篩選條件時引發相符事件。   
-您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
-  
-### <a name="actions"></a>[動作]  
-通知  
-  
--   警示 – 系統可以觸發警示，並根據嚴重性層級，透過電子郵件和文字訊息來傳播警示。  
-  
--   使用者電子郵件通知 – 您可自訂電子郵件訊息，並將其傳送給所有違規的檔案擁有者。  
-  
--   CC 管理員 – 也可以根據使用者的目錄整合，將電子郵件通知傳送給違反原則之人員的管理員。  
-  
--   通知其他使用者 – 將接收這些通知的電子郵件地址特定清單。  
-  
-應用程式中的治理動作  
-  
--   每個應用程式皆可強制執行細微的動作；特定動作視應用程式的術語而異。  
-  
--   暫時停止使用者的權限 – 暫時停止使用者的應用程式權限。  
-  
--   撤銷密碼 – 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
-  
-     ![活動原則 ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +108,6 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 

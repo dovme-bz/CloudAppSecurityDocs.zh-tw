@@ -1,11 +1,11 @@
 ---
-title: "將 Google Apps 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連線 Google Apps | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Google Apps 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>將 Google Apps 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Google Apps 帳戶。  
+本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Google Apps 帳戶。
+
+  
   
 ## <a name="configure-google-apps"></a>設定 Google Apps  
   
@@ -51,7 +53,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
      ![google5](./media/google5.png "google5")  
   
-6.  按一下 [Google API] 索引標籤，啟用下列 API (如果 [Popular APIs] (熱門 API) 清單未列出 API，請使用搜尋列)：  
+6.  按一下 [Google API] 索引標籤，啟用下列 API (如果 「Popular APIs」 (熱門 API) 清單未列出 API，請使用搜尋列)：  
   
      ![google8](./media/google8.png "google8")  
   
@@ -106,7 +108,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
      ![google22](./media/google22.png "google22")  
   
-13. 選取 [Enable Google Apps Domain-wide Delegation] (啟用 Google Apps 全網域委派) 核取方塊，然後按一下 [儲存]。  
+13. 選取 「Enable Google Apps Domain-wide Delegation」 (啟用 Google Apps 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
      ![google24](./media/google24.png "google24")  
   
@@ -140,7 +142,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
          ![google29](./media/google29.png "google29")  
   
-17. 在 [Enabled APIs (啟用的 API)] 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪，然後選取 [設定] 索引標籤。  
+17. 在 **「Enabled APIs」** (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪，然後選取 [設定] 索引標籤。  
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
   
@@ -218,13 +220,13 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 ## <a name="configure-cloud-app-security"></a>設定 Cloud App Security  
   
-1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 Google Apps 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 並選取 [Google Apps]。  
+2.  在**連線應用程式**網頁中，按一下 [加號] 然後選取 [Google Apps]。  
   
      ![連接 google apps](./media/connect-google-apps.png "connect google apps")  
   
-3.  在 Google Apps 的設定頁面中填入下列資訊︰  
+3.  在快顯畫面填寫下列內容：  
   
      ![Cloud App Security 中的 Google Apps 設定](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

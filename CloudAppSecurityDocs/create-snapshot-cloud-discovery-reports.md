@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
+ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
+ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
   
 4.  選取您要上傳記錄檔的 [資料來源]。  
   
-5.  選擇您想要上傳的**流量記錄檔**。 一次最多可以上傳 20 個檔案。  
+5.  選擇您想要上傳的**流量記錄檔**。 一次最多可以上傳 20 個檔案。 亦支援壓縮檔及 ZIP 壓縮檔案。  
   
 6.  按一下 [建立]。  
   
@@ -50,7 +50,7 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
 9. 入口網站上方的狀態列會顯示通知橫幅，以更新記錄檔的處理狀態。  
 ![處理記錄檔的功能表列](./media/processing-log-file-menu-bar.png) 
    
-10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 [Cloud Discovery settings] (Cloud Discovery 設定)。   
+10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 **「Cloud Discovery settings」** (Cloud Discovery 設定)。   
   
      ![探索設定索引標籤](./media/discovery-settings-tab.png)
 11. 接下來，依序選取 [管理快照集報告] 和您的快照集報告。
@@ -68,6 +68,6 @@ ms.openlocfilehash: 650bf424d77f6cbcf11e24058ec54278cfd579f5
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

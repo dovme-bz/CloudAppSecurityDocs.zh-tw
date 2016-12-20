@@ -1,5 +1,5 @@
 ---
-title: "將 AWS 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 AWS | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 AWS 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -37,13 +37,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
      ![AWS 建立使用者](./media/aws-create-user.png "AWS create user")  
   
-4.  為 Cloud App Security 建立新的使用者，並確定勾選 [Generate an access key for each user] (為每個使用者產生存取金鑰) 核取方塊。  
+4.  為 Cloud App Security 建立新的使用者，並確定勾選 **「Generate an access key for each user」** (為每個使用者產生存取金鑰) 核取方塊。  
   
 5.  按一下 [Download Credentials (下載認證)] 。  
   
      ![aws 下載認證](./media/aws-dl-cred.png "aws dl cred")  
   
-6.  在 [使用權限] 索引標籤上，按一下 [Attach Policy] (附加原則)。  
+6.  在 [使用權限] 索引標籤上，按一下 **「Attach Policy」** (附加原則)。  
   
      ![aws 附加使用者原則](./media/aws-attach-user-policy.png "aws attach user policy")  
   
@@ -96,13 +96,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
     3.  請針對所有區域重複步驟 11，但任何其他地區請不要設定 [Include global services (包含全域服務)]。  
   
-11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-12. 在 AWS 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [AWS]。  
+12. 在 [App 連線程式] 頁面中，依序按一下加號及 [AWS]。  
   
      ![連接 AWS](./media/connect-aws.png "connect AWS")  
   
-13. 在 Amazon Web Services 設定頁面中，將 CSV 檔案的**存取金鑰**和**秘密金鑰**貼入 [API] 頁面的欄位中，然後按一下 [更新存取金鑰]。  
+13. 在快顯中，將 CSV 檔案的**存取金鑰**及**祕密金鑰**貼入 API 網頁中的欄位，然後按一下 [更新存取金鑰]。  
   
 14. 請按一下 [測試 API] 確定連線成功。  
   
@@ -118,6 +118,6 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

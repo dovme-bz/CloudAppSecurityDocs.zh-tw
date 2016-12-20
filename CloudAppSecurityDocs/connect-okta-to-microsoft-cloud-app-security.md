@@ -1,5 +1,5 @@
 ---
-title: "將 Okta 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Okta | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Okta 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: c11e133f78c3973006c3e70dd1ccd719f7b639aa
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: c11e133f78c3973006c3e70dd1ccd719f7b639aa
   
          ![okta 權杖值](./media/okta-token-value.png "okta token value")  
   
-3.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+3.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-4.  在 Okta 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 按鈕，然後按一下 [Okta]。  
+4.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Okta]。  
   
      ![連接 okta](./media/connect-okta.png "connect okta")  
   
-5.  在 [API] 頁面的 [網域] 欄位中，輸入您的 Okta 網域並將權杖貼到 [權杖] 欄位。  
+5.  在開啟的快顯中，於 [網域] 欄位內輸入您的 Okta 網域，並將您的權杖貼入 [權杖] 欄位。  
   
 6.  按一下 [連線] 在 Cloud App Security 中建立 Okta 的權杖。  
   
@@ -73,6 +73,6 @@ ms.openlocfilehash: c11e133f78c3973006c3e70dd1ccd719f7b639aa
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "將 Box 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Box | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Box 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -38,20 +38,20 @@ ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
   
          ![box 應用程式](./media/box-apps.png "box apps")  
   
-    -   如果選取 [Unpublished Applications] (未發行的應用程式)，請在 [Except for] (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
+    -   如果選取 **「Unpublished Applications」** (未發行的應用程式)，請在 「Except for」 (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
   
          ![box 設定除外](./media/box-settings-except-for.png "box settings except for")  
   
     > [!NOTE]  
     >  如果您是現有的 Adallom 客戶，而主控台 URL 是供 Adallom 非供 Cloud App Security 使用，請使用這個應用程式序號︰bwahmilhdlpbqy2ongkl119o3lrkoshc。  
   
-2.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+2.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-3.  在 Box 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或按一下 [連線到應用程式] 按鈕並選取 [Box]。  
+3.  在 [App 連線程式] 頁面中，按一下加號按鈕並選取 [Box]。  
   
      ![連接 box](./media/connect-box.png "connect box")  
   
-4.  在 [Box settings (Box 設定)] 頁面的 [API] 索引標籤上，按一下 [連入此連結]。  
+4.  在 [方塊設定] 快顯中，按一下 [連入此連結]。  
   
 5.  這會開啟 Box 的登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Box 應用程式。  
   
@@ -77,6 +77,6 @@ ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

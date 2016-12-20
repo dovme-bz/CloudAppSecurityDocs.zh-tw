@@ -1,5 +1,5 @@
 ---
-title: "將 Salesforce 連接至 Microsoft Cloud App Security | Microsoft Docs"
+title: "連接 Salesforce | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Salesforce 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
@@ -10,12 +10,12 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
+ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
   
          ![salesforce 管理使用者設定檔](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。  
+    -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。 這是用於 Cloud App Security 服務帳戶的設定檔，可設定 App 連線程式。  
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
   
     5.  按一下 **[儲存]**。  
   
-4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [獲批准的應用程式]。  
+4.  在 Cloud App Security 主控台中，依序按一下 [調查] 和 [連線應用程式]。  
   
-5.  在 Box 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [Salesforce]。  
+5.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Salesforce]。  
   
      ![連接 salesforce](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ ms.openlocfilehash: 03dc58139a6739f5cc4294c1913ed8b6a720a9d2
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO5-->
 
 
