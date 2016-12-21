@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
+ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
+ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
 
 
 ---
@@ -42,25 +42,25 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
     -   在 [管理使用者] 下，移至 [設定檔] 頁面。  
   
-         ![salesforce 管理使用者設定檔](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![salesforce 管理使用者設定檔](./media/salesforce-manageusers-profiles.png "salesforce 管理使用者設定檔")  
   
     -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。 這是用於 Cloud App Security 服務帳戶的設定檔，可設定 App 連線程式。  
   
-         ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce edit profile")  
+         ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce 編輯設定檔")  
   
     -   請確定您已選取 [API Enabled (已啟用 API)] 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
   
-         ![salesforce api 已啟用](./media/salesforce-api-enabled.png "salesforce api enabled")  
+         ![salesforce api 已啟用](./media/salesforce-api-enabled.png "salesforce api 已啟用")  
   
 3.  如果您的組織已啟用 **Salesforce CRM 內容**，請確定目前的系統管理帳戶也有啟用它。  
   
     1.  移至您的 Salesforce 設定頁面。  
   
-         ![salesforce 設定](./media/salesforce-setup.png "salesforce setup")  
+         ![salesforce 安裝程式](./media/salesforce-setup.png "salesforce 安裝程式")  
   
     2.  從側邊功能表上，選取 [管理使用者]，然後按一下 [使用者]。  
   
-         ![salesforce 功能表使用者](./media/salesforce-menu-users.png "salesforce menu users")  
+         ![salesforce 功能表使用者](./media/salesforce-menu-users.png "salesforce 功能表使用者")  
   
     3.  將目前的系統管理使用者選取為專屬的 Cloud App Security 使用者。  
   
@@ -68,7 +68,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
          如果未選取，請按一下 [編輯] 然後核取此核取方塊。  
   
-         ![salesforce crm 內容使用者](./media/salesforce-crm-content-user.png "salesforce crm content user")  
+         ![salesforce crm 內容使用者](./media/salesforce-crm-content-user.png "salesforce crm 內容使用者")  
   
     5.  按一下 **[儲存]**。  
   
@@ -76,13 +76,13 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
 5.  在 [App 連線程式] 頁面中，依序按一下加號按鈕及 [Salesforce]。  
   
-     ![連接 salesforce](./media/connect-salesforce.png "connect salesforce")  
+     ![連接 salesforce](./media/connect-salesforce.png "連接 salesforce")  
   
 6.  取決於您想要安裝哪一個執行個體，在 [Salesforce 設定] 頁面的 [API] 索引標籤中，按一下 [連入此連結]。  
   
 7.  這會開啟 Salesforce 登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Salesforce 應用程式。  
   
-     ![salesforce 登入](./media/salesforce-logon.png "salesforce logon")  
+     ![salesforce 登入](./media/salesforce-logon.png "salesforce 登入")  
   
 8.  Salesforce 會詢問您是否要允許 Cloud App Security 存取小組資訊和活動記錄檔，並允許其以任何小組成員的身分執行任何活動。 若要進行，請按一下 [允許]。  
   
@@ -95,7 +95,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
      測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [完成]。  
   
   
-連接 SalesForce 之後，您將會收到下列「事件」：自連線起的觸發程序、連線前 60 天的登入事件與設定稽核線索、EventMonitoring 30 天前或 1 天前的事件 (根據您的 SalesForce EventMonitoring 授權而定)。
+連接 Salesforce 之後，您將會收到下列「事件」：自連線起的觸發程序、連線前 60 天的登入事件與設定稽核線索、EventMonitoring 30 天前或 1 天前的事件 (根據您的 Salesforce EventMonitoring 授權而定)。
   
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

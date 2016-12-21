@@ -14,8 +14,8 @@ ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37661b255147b3f43c5bfd8b5f6459bd4c25ac95
-ms.openlocfilehash: f6ba051dfbf443509323844c6327e18cde1ec29e
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
 
 
 ---
@@ -115,7 +115,7 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
   
 2.  使用頁面頂端的篩選器將搜尋結果限為可疑區域，例如在 [活動記錄] 頁面中，按一下 [活動]，然後選取 [管理員登入]。 接著，在 [IP 位址]，選取 [類別] 並將值設為不包含您為已辨識的網域建立的 IP 位址類別，例如您的系統管理員、公司及 VPN IP 位址。  
   
-     ![](./media/create-file-from-investigation.png)  
+     ![從調查建立檔案](./media/create-file-from-investigation.png)  
   
 3.  在主控台的右上角，按一下 [從搜尋新增原則]![](./media/new-policy-from-search-button.png)。  
   
@@ -142,7 +142,19 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
 >   
 >  [Cloud Discovery 原則](cloud-discovery-policies.md)  
   
+## <a name="enable-and-disable-policies"></a>啟用和停用原則
 
+建立原則之後，您可以啟用或停用它。 這可避免在建立原則後，為了停止它而刪除原則。 相反地，若因故想要停止原則，只要停用它，直到您選擇再次啟用它為止。
+
+- 若要啟用原則，請在 [原則] 頁面上按一下您想要啟用的原則資料列結尾的三個點，然後選取 [啟用]。 
+
+![啟用原則](./media/enable-policy.png)
+
+- 若要停用原則，請在 [原則] 頁面上按一下您想要停用的原則資料列結尾的三個點，然後選取 [停用]。
+
+![停用原則](./media/disable-policy.png)
+
+新原則建立之後，預設啟用。
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
@@ -151,6 +163,6 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
