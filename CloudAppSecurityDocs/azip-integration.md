@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ Cloud App Security 讓您調查檔案，並依據 Azure Information Protection �
 自動掃描新檔案的檔案標籤：
 
 1. 在 Cloud App Security 中，移至 [一般設定] 頁面。
-2. 在 Azure 安全性設定下，選取 [自動掃描檔案的 Azure Information Protection 分類標籤]。 啟用之後，不只是依據檔案原則需要掃描內容的檔案，所有新增到 Office 365 的檔案中都會掃描檔案標籤。
+2. 在 Azure 資訊保護下，選取 [Automatically scan files for Azure Information Protection classification labels] (自動掃描檔案尋找 Azure 資訊保護分類標籤)。 啟用之後，不只是依據檔案原則需要掃描內容的檔案，所有新增到 Office 365 的檔案中都會掃描檔案標籤。
 
 ![啟用 Azure Information Protection](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> 自動掃描要再次修改後，才會掃描現有的檔案。 若要掃描現有的 Azure 資訊保護分類標籤檔案，請建立不含任何篩選器的新**檔案原則**，勾選 [內容檢查] 選項並儲存原則。
 
 ## <a name="internal-and-external-tags"></a>內部及外部標籤
 Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其他組織所定義的外部分類標籤。 
@@ -128,6 +130,6 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

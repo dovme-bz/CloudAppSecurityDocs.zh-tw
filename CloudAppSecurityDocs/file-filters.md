@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,24 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
-ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 
 
 ---
 
 # <a name="files"></a>檔案
+
+
+Cloud App Security 讓您可從連接的應用程式看見所有檔案，以提供資料保護。 當您使用 App 連線程式連接 Cloud App Security 與應用程式後，Cloud App Security 會掃描所有的檔案，例如，儲存在 OneDrive 和 Salesforce 的所有檔案。 然後，Cloud App Security 每次修改都會重新掃描每個檔案，修改的部分可以是內容、中繼資料或共用權限。 掃描的時間取決於儲存在應用程式中的檔案數目。 使用 [檔案] 頁面全面掌控資料，有利於了解您應該建立哪些原則。 您也可以使用 [檔案] 頁面篩選檔案，調查雲端應用程式中儲存的資料類型。 
+
+例如，您可以使用 [檔案] 頁面保護標示為**機密**的外部共用檔案，方法如下︰將 Office 365、Google Apps、Box、Dropbox 或 Salesforce 連接到 Cloud App Security 後，您可與 Azure 資訊保護整合。 然後，在 [檔案] 頁面中，篩選出標示**機密**的檔案。 如果看到有組織外部共用的**機密**檔案，您可以建立檔案原則，偵測套用了不當存取層級的**機密**檔案，並且為它們套用自動控管動作，例如 [置入使用者隔離中]，將檔案隔離並防止組織資料遺失。
+
+ ![機密檔案篩選器](media/file-filter-confidential.png)
+
+再舉一例，您可以使用 [檔案] 頁面保護使用未授權網域或個人帳戶共用的檔案︰將 Office 365、Google Apps、Box 或 Dropbox 連接到 Cloud App Security 後，在 [檔案] 頁面中，篩選出存取層級為**內部**或**私用**的檔案。 如果看到有使用外部網域或個人帳戶共用的**機密**檔案，您可以建立檔案原則，偵測套用了不當存取層級的**機密**檔案，按一下 [從搜尋新增原則] 並且為它們套用自動控管動作，例如 [移除外部使用者]，防止組織資料遺失。
+
+ ![未經授權的檔案篩選器](media/file-filter-unauth.png)
 
 您可以篩選檔案記錄，進而找到特定檔案。 基本篩選條件提供您絕佳的工具以開始篩選檔案。
 
@@ -38,7 +49,11 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 
 以下是可套用的檔案篩選器清單。 大部分的篩選器皆支援多個值與 NOT，以提供可在建立原則時使用的強大工具。  
 > [!NOTE] 
-> 使用檔案原則篩選時，**Contains** 僅會搜尋完整字組 – 以逗點、點、空格或底線分隔進行搜尋。 將字組括以引號即有類似 AND 的功能，例如若您搜尋**"malware"** **"virus"**，即會尋找 virus_malware_file.exe，但不會尋找 malwarevirusfile.exe 或是 malware.exe。 字組間的空格功能類似 OR，例如若您搜尋 **malware** **virus**，即會尋找所有名稱中有 malware 或 virus 的檔案，所以會同時尋找 malware-virus.exe 及 virus.exe。   **Equals** 僅會搜尋完整字串；例如，如果您搜尋 **malware.exe**，它會找到 malware.exe，但不會找到 malware.exe.txt。 
+> 使用檔案原則篩選時，**Contains** 僅會搜尋**完整字組** – 以逗點、點、空格或底線分隔進行搜尋。 
+> - 字組間的空格功能類似 OR，例如若您搜尋 **malware** **virus**，即會尋找所有名稱中有 malware 或 virus 的檔案，所以會同時尋找 malware-virus.exe 及 virus.exe。  
+> - 如果想要搜尋字串，請用引號括住文字。 此功能類似 AND，例如：如果搜尋 **"malware"** **"virus"**，即會尋找 virus_malware_file.exe，但不會尋找 malwarevirusfile.exe 或是 malware.exe。 不過，它會搜尋完整字串。 如果搜尋 **"malware virus"**，不會尋找 **"virus"** 或 **"virus_malware"**。
+
+>**Equals** 僅會搜尋完整字串；例如，如果您搜尋 **malware.exe**，它會找到 malware.exe，但不會找到 malware.exe.txt。 
 
 -   存取層級 – 共用存取層級；公開、外部、內部或私人。  如需外部檔案的詳細資訊，請參閱[一般設定、設定入口網站](getting-started-with-cloud-app-security.md)。內部檔案是指您在內部網域 (透過[一般設定](General-setup.md)來設定) 內使用的任何檔案。 外部檔案是指儲存在您所設定之內部網域以外的任何檔案。 共用檔案為具有私人以上之共用層級的檔案，包括內部共用 (在您的內部網域中共用的檔案)、外部共用 (在您的內部網域之外共用的檔案)、以連結公用 (可與任何人透過連結共用的檔案) 和公用 (可在網際網路上搜尋找到的檔案) 檔案。 
 
@@ -74,7 +89,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 -   檔案類型 – Cloud App Security 會接收來自服務的兩個 MIME 類型，並掃描檔案以判斷真正的檔案類型。 請注意，這項掃描適用於資料掃描相關的檔案 (文件、影像、簡報、試算表、文字檔和 zip/封存檔)。 依據檔案/資料夾類型進行篩選，例如 ... 的所有資料夾或 ... 的所有試算表檔案。
 
 
- ![policy_file 篩選器垃圾桶](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file 篩選器垃圾桶](./media/policy_file-filters-trash.png "policy_file 篩選器垃圾桶")  
 
   
 -   在垃圾桶中 – 排除/包含 Trash 資料夾中的檔案。 這些檔案可能仍受共用，並會造成風險。  
@@ -95,7 +110,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 您也可以將 **[Apply to (套用至)]** 篩選條件設為 [所有檔案]、 [選取的資料夾] 或 [All files excluding selected folders (選取的資料夾以外的所有檔案)]，然後選取相關檔案或資料夾，即可設定針對特定檔案執行原則。  
   
-![套用篩選器](./media/apply-to-filter.png "apply to filter")  
+![套用至篩選器](./media/apply-to-filter.png "套用至篩選器")  
   
 ## <a name="working-with-the-file-drawer"></a>使用檔案抽屜
 
@@ -107,7 +122,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 - 相符的原則：按一下 [相符的原則] 連結即可查看此檔案符合的原則清單。
 - 分類標籤：按一下 [分類標籤] 即可檢視此檔案中的 Azure 資訊保護分類標籤清單。 您接著可以依據符合此標籤的所有檔案進行篩選。    
 
-![檔案抽屜](./media/file-drawer.png "File drawer")  
+![隱藏式檔案選單](./media/file-drawer.png "隱藏式檔案選單")  
   
 如需可用的治理動作清單，請參閱[檔案治理動作](governance-actions.md#file-governance-actions)。
 
@@ -119,6 +134,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

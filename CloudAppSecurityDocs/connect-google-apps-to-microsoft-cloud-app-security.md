@@ -164,7 +164,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
         -   **隱私權原則 URL**：http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   在 [OAuth 2.0 scopes] (OAuth 2.0 範圍) 下方，輸入下列項目 (每行 1 項， 並按 Enter 確認)：  
+    -   在 [OAuth 2.0 scopes (OAuth 2.0 範圍)] 下方，輸入下列項目 (每行 1 項， 並按 Enter 確認)：  
   
         -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
@@ -30,13 +30,9 @@ Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是�
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 的架構  
 
-|       |   |   |
-|-------|---|:---|
-|![探索](./media/discovery-icon.png)|探索|揭露影子 IT 與 Cloud App Security。 探索雲端環境中的應用程式、活動、使用者、資料及檔案，以取得可見度。 探索連接至您雲端的協力廠商應用程式。|
-|![調查](./media/investigate-icon.png)|調查|使用雲端鑑識工具深入探索具風險的應用程式、特定使用者及您網路中的檔案，以調查您的雲端應用程式。 在雲端所收集的資料中尋找模式。 產生報告來監視您的雲端。|
-|![控制](./media/control-icon.png)|控制|設定原則及警示，以盡最大可能控制網路雲端流量並降低風險。 使用 Cloud App Security，將使用者移轉至獲批准的安全雲端應用程式替代方案。|
-|![保護](./media/protect-icon.png)|保護|您可使用 Cloud App Security 以批准或不批准應用程式、強制執行資料外洩防護、控制權限與共用，以及產生自訂報告與警示。|
 
+**Cloud Discovery** 會探索貴組織所有的雲端使用狀況。 影子 IT 報告和控制項：從所有裝置探索您網路中的所有雲端應用程式；調查及深入了解特定應用程式、使用者、來源 IP 位址和其他；透過封鎖、制裁及保護應用程式來管理與控制雲端使用量。風險評估：了解 13,000 多種雲端應用程式的雲端風險；以 60 多種安全性和相容性風險因素為基礎。有風險的雲端使用警示：取得異常的使用者使用模式、新的應用程式和趨勢應用程式的相關警示。**資訊保護**監視與控制雲端中的資料。 查看雲端內容；查看包括共用層級和敏感度等級內容；量化曝光度和風險；偵測存取您資料的所有協力廠商應用程式；強制執行 DLP 原則與控制共用；使用細緻的 DLP 原則管理雲端資料；運用 Microsoft 和協力廠商 DLP 引擎取得分類。警示和調查；識別原則違規；調查事件和相關活動；自動修復，包括隔離和權限移除。**威脅保護**偵測異常的使用與安全性事件。 設定原則及警示，以盡最大可能控制網路雲端流量並降低風險。 使用 Cloud App Security，將使用者移轉至獲批准的安全雲端應用程式替代方案。
+行為分析︰立即偵測可疑活動；以 20 多種風險因素為基礎的異常偵測引擎。進階調查：進階事件調查工具；使用者、檔案、活動及位置樞紐分析表；根據您的發現自訂偵測。威脅情報；運用 Microsoft 領先群倫的威脅情報摘要；由 Microsoft 全客戶群數以兆計的訊號架構的獨特見解。
 
 ## <a name="architecture"></a>架構  
 
@@ -50,7 +46,7 @@ Cloud App Security 可整合您雲端的可見度，
 ![Cloud App Security 架構](./media/architecture.png)  
 
 > [!NOTE]  
-> 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 您的資料不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。如需資料保留的詳細資訊，請參閱我們的[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)以及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
+> 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。如需資料保留的詳細資訊，請參閱我們的[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)以及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
 Cloud App Security 如下保留資料︰
 >- 活動記錄：180 天
 >- 探索資料：90 天
@@ -87,6 +83,6 @@ Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
