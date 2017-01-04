@@ -14,8 +14,8 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 12d9ef74f923c430fbfb547635786dc4c4300499
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 21edb17ac01d7f54cab9b7b2ced838752a916c1e
 
 
 ---
@@ -76,7 +76,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
 7.  選取 [內容檢查方法]。 內建的 DLP 可讓您依檔案內容篩選檔案。 若要掃描檔案內容，請接著選取 [內建 DLP]。 啟用內容檢查之後，即可選擇使用預設的運算式，或搜尋其他自訂的運算式，作為子字串或是您自己的[規則運算式](working-with-the-regex-engine.md)。  
     此外，您也可以指定規則運算式，從結果中排除檔案。 如果您有要從原則中排除的內部分類關鍵字標準，這會非常有用。  
     您可以決定設定要至少比對到多少次內容違規數，才將該檔案視為違規。 例如，如果您希望在發現內容中至少有 10 個信用卡號碼的檔案時接獲警示，您可以選擇 10。  
-    根據所選運算式比對內容時，您可以選擇遮罩違規通知和記錄檔中的相符項目。 一旦選取，違規文字就會置換成 "X" 字元。 請記住，數字會置換成 “#” 字元，且不再儲存於 Cloud App Security 內。  
+    根據所選運算式比對內容時，您可以選擇遮罩違規通知和記錄檔中的相符項目。 一旦選取，違規文字就會置換成 "X" 字元。 請記住，數字會置換成 “#” 字元，且不再儲存於 Cloud App Security 內。  您也可以選擇取消遮罩違規的最後 4 個字元。 違規預設全部遮罩，且出現在顯示違規前後 40 個字元的內容中。 此選項會取消遮罩違規本身的最後 4 個字元。
   
 8.  選擇您想要 Cloud App Security 在偵測到相符項目時採取的 [治理] 動作。  
   
@@ -88,7 +88,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
 >   
 >  如需指引，您可以使用 [篩選器] 區段中的 [Edit and preview results (編輯和預覽結果)] 按鈕。  
   
-![檔案原則編輯和預覽結果](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![檔案原則編輯及預覽結果](./media/file-policy-edit-and-preview-results.png "檔案原則編輯及預覽結果")  
   
 10. 若要檢視檔案原則相符項目以及可能會違反原則的檔案，請依序按一下 [控制] 和 [原則]。 使用頂端的 [類型] 篩選器，將結果篩選為僅顯示檔案原則。 如需每個原則的相符項目詳細資訊，請按一下某項原則。 如此即會顯示原則的「立即相符」檔案。 按一下 [歷程記錄] 索引標籤，查看最早至 6 個月前符合原則的檔案歷程記錄。     
   
@@ -101,12 +101,10 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
   
 -   檔案篩選 – 可讓您根據中繼資料建立非常細微的條件。  
   
--   內容檢查 – 可讓您根據 DLP 引擎結果縮小原則。  
+-   內容檢查 – 可讓您根據 DLP 引擎結果縮小原則。 您可以納入自訂運算式或預設運算式。 也可以設定排除項目，以及選擇相符項目數。 您也可以使用匿名為使用者名稱加上遮罩。 
   
 -   動作 – 此原則提供一組可在找到違規時自動套用的治理動作。  這些動作又細分成共同作業的動作、安全性動作和調查動作。
 
-![檔案治理的下拉式清單](./media/file-governance-drop-down.png)
-  
 -   Extensions  
   
     > [!NOTE]  
@@ -124,6 +122,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

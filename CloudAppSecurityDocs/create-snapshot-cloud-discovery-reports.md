@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>建立 Cloud Discovery 快照集報告
 請務必手動上傳記錄檔，讓 Cloud App Security 剖析過後再嘗試使用自動記錄收集器。
+如果還沒有記錄檔，而您想要查看記錄檔應有的外觀範例，請依照下列程序，下載範例記錄檔查看記錄檔應有的外觀。
+
 
 若要建立快照集報告：
   
@@ -29,19 +31,22 @@ ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
   
 2.  在 Cloud App Security 入口網站中，依序按一下 [探索] 和 [建立新的快照集報告]。  
   
-     ![建立新的快照集報告](./media/create-new-snapshot-report.png)
+   ![建立新的快照集報告](./media/create-new-snapshot-report.png)
      
-      
 3.  輸入**報告名稱**和**描述**。
   
+     ![新的快照集報告](./media/new-snapshot-report.png) 
+
 4.  選取您要上傳記錄檔的 [資料來源]。  
   
+5. 請驗證記錄檔格式，確定它已根據您可以下載的範例正確格式化。 按一下 [檢視並驗證]，再按一下 [Download sample log] (下載範例記錄檔)。 然後比較您的記錄檔與範例提供的內容，確認二者相容。 
+
+ ![驗證記錄檔格式](./media/cloud-discovery-snapshot-verify.png)  
+
 5.  選擇您想要上傳的**流量記錄檔**。 一次最多可以上傳 20 個檔案。 亦支援壓縮檔及 ZIP 壓縮檔案。  
   
 6.  按一下 [建立]。  
-  
-     ![新的快照集報告](./media/new-snapshot-report.png) 
-  
+
 7.  上傳完成之後，狀態訊息會出現在畫面的右上角，告訴您已成功上傳記錄檔。  
   
 8.  上傳記錄檔之後，需要一些時間進行剖析和分析。  
@@ -68,6 +73,6 @@ ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
