@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 
 ---
@@ -30,9 +30,11 @@ Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是�
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 的架構  
 
-
-**Cloud Discovery** 會探索貴組織所有的雲端使用狀況。 影子 IT 報告和控制項：從所有裝置探索您網路中的所有雲端應用程式；調查及深入了解特定應用程式、使用者、來源 IP 位址和其他；透過封鎖、制裁及保護應用程式來管理與控制雲端使用量。風險評估：了解 13,000 多種雲端應用程式的雲端風險；以 60 多種安全性和相容性風險因素為基礎。有風險的雲端使用警示：取得異常的使用者使用模式、新的應用程式和趨勢應用程式的相關警示。**資訊保護**監視與控制雲端中的資料。 查看雲端內容；查看包括共用層級和敏感度等級內容；量化曝光度和風險；偵測存取您資料的所有協力廠商應用程式；強制執行 DLP 原則與控制共用；使用細緻的 DLP 原則管理雲端資料；運用 Microsoft 和協力廠商 DLP 引擎取得分類。警示和調查；識別原則違規；調查事件和相關活動；自動修復，包括隔離和權限移除。**威脅保護**偵測異常的使用與安全性事件。 設定原則及警示，以盡最大可能控制網路雲端流量並降低風險。 使用 Cloud App Security，將使用者移轉至獲批准的安全雲端應用程式替代方案。
-行為分析︰立即偵測可疑活動；以 20 多種風險因素為基礎的異常偵測引擎。進階調查：進階事件調查工具；使用者、檔案、活動及位置樞紐分析表；根據您的發現自訂偵測。威脅情報；運用 Microsoft 領先群倫的威脅情報摘要；由 Microsoft 全客戶群數以兆計的訊號架構的獨特見解。
+- **Cloud Discovery**：探索組織中的所有雲端使用，包含 Shadow IT 報告以及控制和風險評估。
+    
+- **資料保護**︰透過取得可見度、強制執行 DLP 原則、警示和調查，以監視和控制雲端中的資料。 
+    
+- **威脅保護**︰偵測異常使用和安全性事件。 使用行為分析和進階調查工具來降低風險，以及設定原則和警示，以盡最大可能控制網路雲端流量。
 
 ## <a name="architecture"></a>架構  
 
@@ -83,6 +85,6 @@ Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

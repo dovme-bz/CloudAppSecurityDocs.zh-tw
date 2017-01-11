@@ -6,6 +6,7 @@
 ## [部署 Cloud Discovery](set-up-cloud-discovery.md)
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](configure-automatic-log-upload-for-continuous-reports.md)
+### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
 ### [自訂 Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [檔案](file-filters.md)
 ### [活動](activity-filters.md)
 ### [警示](monitor-alerts.md)
-### [Azure 資訊保護整合](azip-integration.md)
 ## [控制](control.md)
 ### [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)
 #### [Cloud Discovery 原則](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
 ### [管理應用程式權限](manage-app-permissions.md)
 ## [治理](governance-actions.md)
+## 整合
+### [Azure 資訊保護整合](azip-integration.md)
+### [SIEM 整合](siem.md)
 # [疑難排解](troubleshooting.md)
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 ## [為內容檢查進行疑難排解](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,21 +14,24 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
-ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
 
 
 ---
 # <a name="activities"></a>活動
-Cloud App Security 為提供資料保護，讓您可從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 您可以根據活動建立原則，然後定義想要收到的警示項目。 您也可以搜尋對特定檔案執行的活動。 我們取得的每項活動的活動與資訊類型，是根據應用程式和應用程式可以提供的資料種類而定。 
+Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 您可以篩選 [活動記錄]，進而找到特定活動。 您可以根據活動建立原則，然後定義想要收到的警示項目並採取動作。 您也可以搜尋對特定檔案執行的活動。 我們取得之每項活動的活動與資訊類型，都是取決於應用程式以及應用程式可提供的資料種類。 
 
-例如，您可以使用**活動**記錄尋找貴組織中使用過期作業系統或瀏覽器的使用者，方法如下：當您在 [活動記錄] 頁面上將 Office 365、Google Apps、Box、Dropbox、Okta、Amazon Web Services 或 Salesforce 連接到 Cloud App Security 之後，請使用進階篩選器並選取 [使用者代理程式標籤]。 然後選取 [過期的瀏覽器] 或 [過期的作業系統]。 如果看到有組織外部共用的**機密**檔案，您可以按一下 [從搜尋新增原則] 建立活動原則，偵測過期的瀏覽器與作業系統並自動通知使用者。
+例如，您可以使用 [活動記錄] 尋找組織中使用過期作業系統或瀏覽器的使用者，方法如下：當您在 [活動記錄] 頁面上將應用程式連接到 Cloud App Security 之後，請使用進階篩選，並選取 [User agent tag] (使用者代理程式標記)。 然後選取 [過期的瀏覽器] 或 [過期的作業系統]。
 
- ![過期的瀏覽器活動範例](media/activity-outdated-example.png)
+ ![過期的瀏覽器活動範例](media/activity-example-outdated.png)
+
+如果您想要檢查是否有在組織外部存取的**機密**檔案，請設定 [Activity object] (活動物件) 篩選條件來搜尋 [Classification label] (分類標籤)，然後選取 [機密] 標籤。 設定 [IP 位址] 篩選條件來搜尋 [類別]，並排除正式 IP 位址 (您可以在 [設定] 功能表中設定 IP 類別)。 您可以按一下 [New policy from search] (從搜尋新增原則)，根據您所定義的篩選條件來建立活動原則，並自動通知使用者。
+
+ ![活動機密檔案外部範例](media/activity-example-ip.png)
 
  
-
-您可以篩選活動記錄，進而找到特定活動。 基本篩選條件提供您絕佳的工具以開始篩選活動。
+基本篩選條件提供您絕佳的工具以開始篩選活動。
 
  ![基本活動記錄篩選條件](media/activity-log-filter-basic.png)
 
@@ -66,9 +69,21 @@ Cloud App Security 為提供資料保護，讓您可從連接的應用程式看�
   
 -   IP 位址 - 執行活動來源的原始 IP 位址、類別或標記。  
     - 原始 IP 位址 - 可讓您搜尋在原始 IP 位址上執行或由其執行的活動，條件包括等於、不等於或開頭是否為特定順序，或是否為經過設定的原始 IP 位址。 
-    - IP 類別 - 執行活動的來源 IP 位址類別；例如，來自系統管理 IP 位址範圍的所有活動。 如需 IP 類別的詳細資訊，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。  
-    - IP 標記 - 執行活動的來源 IP 位址標記；例如，來自匿名 Proxy IP 位址的所有活動。 如需 IP 標籤的詳細資訊，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。
-  
+    - IP 類別 - 執行活動的來源 IP 位址類別；例如，來自系統管理 IP 位址範圍的所有活動。 類別需要設定成包含相關 IP 位址，但 "Risky" 類別除外，這種類別是預先設定的類別，並且包含兩個 IP 標記 - 匿名 Proxy 和 Tor。 若要了解如何設定 IP 類別，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。  
+    - IP 標記 - 執行活動的來源 IP 位址標記；例如，來自匿名 Proxy IP 位址的所有活動。 Cloud App Security 建立一組不可設定的內建 IP 標記。 此外，您可以設定專屬 IP 標記。 如需設定專屬 IP 標記的詳細資訊，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。
+   內建 IP 標記包含：
+    - Microsoft 應用程式 (其中的 14 個)
+    - 匿名 Proxy
+    - 殭屍網路
+    - Darknet 掃描 IP
+    - 惡意程式碼 C&C 伺服器
+    - Remote Connectivity Analyzer
+    - Sattelite 提供者
+    - 智慧型 Proxy 和存取 Proxy (故意省略)
+    - Tor 結束節點
+    - Zscaler
+
+
 -   模擬活動 – 僅搜尋以其他使用者名稱所執行的活動。  
 
 -   位置 – 執行活動的來源國家/地區。  
@@ -106,7 +121,7 @@ Cloud App Security 為提供資料保護，讓您可從連接的應用程式看�
 
 ![隱藏式活動選單](./media/activity-drawer.png "隱藏式活動選單")  
   
-如需可用的治理動作清單，請參閱[活動比對參數](governance-actions.md#activity-match-parameters)。
+如需可用的治理動作清單，請參閱[活動治理動作](governance-actions.md#activity-governance-actions)。
 
 
 ## <a name="see-also"></a>另請參閱  
@@ -117,6 +132,6 @@ Cloud App Security 為提供資料保護，讓您可從連接的應用程式看�
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 
