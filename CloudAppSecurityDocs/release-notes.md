@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
+ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
 
 
 ---
 
 # <a name="release-notes"></a>版本資訊
+
+## <a name="cloud-app-security-release-87"></a>Cloud App Security 版本 87
+發行日期：2016 年 12 月 25 日
+
+**新功能**
+-   我們正在推出[資料匿名](cloud-discovery-anonymizer.md)，讓您可以享受 Cloud Discovery，同時保護使用者隱私權。 資料匿名是透過加密使用者名稱資訊來執行。
+-   我們正在推出將封鎖指令碼從 Cloud App Security 匯出到其他應用裝置的能力。 這個指令碼可讓您透過封鎖流向待批准應用程式的流量，輕鬆地減少影子 IT。 下列項目現在可以使用這個選項： 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   已新增檔案治理動作，可讓您刪除已針對檔案或資料夾所設定的任何唯一權限，來強制檔案繼承父系的權限。 這個檔案治理動作可讓您變更檔案或資料夾的權限繼承自父資料夾。 
+-   已新增稱為「外部」的使用者群組。 這是 Cloud App Security 預先設定的預設使用者群組，內含不屬於您內部網域的所有使用者。 您可以使用這個使用者群組作為篩選條件，例如，您可以找到外部使用者所執行的活動。
+-   Cloud Discovery 功能現在支援 Sophos Cyberoam 應用裝置。
+ 
+**錯誤修正**
+-   SPO 和 OD4B 檔案已透過「內部」而非「私人」形式顯示在 [檔案] 原則報告和 [檔案] 頁面中。 這已更正。
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Cloud App Security 版本 86
+發行日期：2016 年 12 月 13 日
+
+**新功能**
+- 所有 Cloud App Security 獨立授權都可讓您透過一般設定來啟用 Azure 資訊保護掃描，而不需要建立原則。 
+ 
+**改善**
+- 您現在可以在檔案篩選中將 "or" 用於檔案名稱，並在 MIME 類型篩選中用於檔案和原則。 這會啟用這類案例：使用 PII 建立原則時，輸入“passport” 或 “driver” 這個字，它將會比對檔名中具有 “passport” 或 “driver” 的任何檔案。 
+- 根據預設，執行 DLP 內容檢查原則時，會遮罩所產生違規中的資料。 您現在可以取消遮罩違規的最後 4 個字元。 
+
+**微幅改善**
+- 新 Office 365 (Exchange) 信箱相關事件必須處理轉送規則，以及新增和移除委派信箱權限。
+- 新事件，可在 Azure Active Directory 中稽核將同意授與新的應用程式。 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Cloud App Security 版本 85
@@ -258,6 +295,6 @@ ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ App 連線程式流程如下所示︰
 |**使用者活動**|✔*|✔|✔|✔ - 需要 Google Unlimited|部分|Salesforce Shield 予以支援|✔|不適用|  
 |**管理活動**|✔|✔|✔|✔|部分|✔|✔|✔|  
 |**定期掃描檔案**|✔|✔|不適用|✔|✔|✔|✔|敬請期待|  
-|**接近即時的檔案掃描**|敬請期待|✔|不適用|✔ - 需要 Google Unlimited|||敬請期待||  
+|**接近即時的檔案掃描**|✔|✔|不適用|✔ - 需要 Google Unlimited|||敬請期待||  
 |**共用控制權**|✔|✔|不適用|✔|不適用||✔||  
 |**隔離**|✔|✔|不適用|敬請期待|||敬請期待||  
 |**檢視應用程式權限**|✔|提供者不支援|不適用|✔||✔|提供者不支援||  
 |**撤銷應用程式權限**|✔||不適用|✔||✔|不適用||  
   
-\* Office 365 App 連線程式包含 Exchange Online 管理活動。 若要新增 Exchange Online 的使用者活動，您必須分別部署 Exchange Online 連接器。  
   
 ## <a name="prerequisites"></a>必要條件  
 對於某些應用程式，可能需要將下列 IP 位址新增至允許清單，讓 Cloud App Security 能收集記錄檔，並提供 Cloud App Security 主控台的存取權︰  
@@ -131,6 +130,6 @@ Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
+ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
+ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
 
 
 ---
@@ -23,17 +23,17 @@ ms.openlocfilehash: 9f180b0697fbf990534670050c555800d7ba83fb
 # <a name="files"></a>檔案
 
 
-Cloud App Security 讓您可從連接的應用程式看見所有檔案，以提供資料保護。 當您使用 App 連線程式連接 Cloud App Security 與應用程式後，Cloud App Security 會掃描所有的檔案，例如，儲存在 OneDrive 和 Salesforce 的所有檔案。 然後，Cloud App Security 每次修改都會重新掃描每個檔案，修改的部分可以是內容、中繼資料或共用權限。 掃描的時間取決於儲存在應用程式中的檔案數目。 使用 [檔案] 頁面全面掌控資料，有利於了解您應該建立哪些原則。 您也可以使用 [檔案] 頁面篩選檔案，調查雲端應用程式中儲存的資料類型。 
+Cloud App Security 讓您可從連接的應用程式看見所有檔案，以提供資料保護。 當您使用 App 連線程式連接 Cloud App Security 與應用程式後，Cloud App Security 會掃描所有的檔案，例如，儲存在 OneDrive 和 Salesforce 的所有檔案。 然後，Cloud App Security 每次修改都會重新掃描每個檔案，修改的部分可以是內容、中繼資料或共用權限。 掃描的時間取決於儲存在應用程式中的檔案數目。 您也可以使用 [檔案] 頁面篩選檔案，調查雲端應用程式中儲存的資料類型。 
 
-例如，您可以使用 [檔案] 頁面保護標示為**機密**的外部共用檔案，方法如下︰將 Office 365、Google Apps、Box、Dropbox 或 Salesforce 連接到 Cloud App Security 後，您可與 Azure 資訊保護整合。 然後，在 [檔案] 頁面中，篩選出標示**機密**的檔案。 如果看到有組織外部共用的**機密**檔案，您可以建立檔案原則，偵測套用了不當存取層級的**機密**檔案，並且為它們套用自動控管動作，例如 [置入使用者隔離中]，將檔案隔離並防止組織資料遺失。
+例如，您可以使用 [檔案] 頁面保護標示為**機密**的外部共用檔案，方法如下︰將應用程式連接到 Cloud App Security 之後，即可與 Azure 資訊保護整合。 然後，在 [檔案] 頁面中，篩選出標示**機密**的檔案。 如果透過篩選 [共同作業者] 篩選條件來排除網域，看到有組織外部共用的**機密**檔案，您可以建立檔案原則，偵測已套用不當存取層級的**機密**檔案，並且為它們套用自動治理動作 (例如 [Remove external collaborators] (移除外部共同作業者) 和 [Send policy-match digest to file owner] (將原則相符摘要傳送給擁有者))，防止組織資料遺失。
 
  ![機密檔案篩選器](media/file-filter-confidential.png)
 
-再舉一例，您可以使用 [檔案] 頁面保護使用未授權網域或個人帳戶共用的檔案︰將 Office 365、Google Apps、Box 或 Dropbox 連接到 Cloud App Security 後，在 [檔案] 頁面中，篩選出存取層級為**內部**或**私用**的檔案。 如果看到有使用外部網域或個人帳戶共用的**機密**檔案，您可以建立檔案原則，偵測套用了不當存取層級的**機密**檔案，按一下 [從搜尋新增原則] 並且為它們套用自動控管動作，例如 [移除外部使用者]，防止組織資料遺失。
+以下是如何利用 [檔案] 頁面的另一個範例。 確定您的組織中沒有在過去 6 個月未修改過的公開或外部共用檔案：將應用程式連接到 Cloud App Security 之後，請在 [檔案] 頁面中篩選出檔案，而檔案的存取層級為 [外部] 或 [公開]，並將 [上次修改時間] 日期設定為 6 個月之前。 您可以建立檔案原則來偵測這些過時的公用檔案，方法是按一下 [New policy from search] (從搜尋新增原則)，並且為它們套用自動治理動作 (例如 [移除外部使用者])，防止組織資料遺失。
 
- ![未經授權的檔案篩選器](media/file-filter-unauth.png)
+ ![篩選過時外部檔案](media/file-example-stale-external.png)
 
-您可以篩選檔案記錄，進而找到特定檔案。 基本篩選條件提供您絕佳的工具以開始篩選檔案。
+基本篩選條件提供您絕佳的工具以開始篩選檔案。
 
  ![基本檔案記錄篩選條件](media/file-log-filter-basic.png)
 
@@ -134,6 +134,6 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "連線 Google Apps | Microsoft Docs"
+title: "連接 Google Apps | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Google Apps 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
@@ -35,7 +35,8 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 3.  在 [新增專案] 畫面中︰  
   
-    1.  將專案命名為 **Cloud App Security for Google**。  
+    1.  如下命名您的專案︰</br>
+    **Cloud App Security for Google** 
   
     2.  選取是否要訂閱更新。  
   
@@ -70,7 +71,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
     -   Gmail API  
   
-         ![google11 警告](./media/google11-warning.png "google11 warning")  
+         ![google11 警告](./media/google11-warning.png "google11 警告")  
   
 7.  您應該會有 5 個 [Enabled APIs (啟用的 API)]：  
   
@@ -102,7 +103,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 11. 在 [認證] 索引標籤上，按一下最右側的 [管理服務帳戶]。  
   
-     ![google apps 認證服務帳戶](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![Google Apps 認證服務帳戶](./media/google-apps-credentials-service-account.png "Google Apps 認證服務帳戶")  
   
 12. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
   
@@ -118,7 +119,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 15. 按一下 Google 雲端平台旁邊的三條水平線來開啟 Google 功能表，然後選取 [API manager (API 管理員)]。  
   
-     ![google 功能表](./media/google-menu.png "google menu")  
+     ![Google 功能表](./media/google-menu.png "Google 功能表")  
   
      選取 [Enabled APIs (啟用的 API)]。  
   
@@ -208,7 +209,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 18. 從控制項清單選取 [安全性]。 如果沒看到這個選項，請從頁面底部的灰色列中選取 [其他控制項]，然後選取 [安全性]。  
   
-     ![google apps 安全性](./media/google-apps-security.png "google apps security")  
+     ![Google Apps 安全性](./media/google-apps-security.png "Google Apps 安全性")  
   
 19. 選擇 [API 參考]。  
   
@@ -216,19 +217,19 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 20. 選取 [Enable API Access (啟用 API 存取)]，然後按一下 [儲存變更]。  
   
-     ![google api 存取](./media/google-api-access.png "google api access")  
+     ![google api access](./media/google-api-access.png "google api access")  
   
 ## <a name="configure-cloud-app-security"></a>設定 Cloud App Security  
   
 1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在**連線應用程式**網頁中，按一下 [加號] 然後選取 [Google Apps]。  
+2.  在 [連線應用程式] 頁面中，按一下加號並選取 [Google Apps]。  
   
-     ![連接 google apps](./media/connect-google-apps.png "connect google apps")  
+     ![連接 Google Apps](./media/connect-google-apps.png "連接 Google Apps")  
   
 3.  在快顯畫面填寫下列內容：  
   
-     ![Cloud App Security 中的 Google Apps 設定](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+     ![Cloud App Security 中的 Google Apps 設定](./media/google-apps-configuration-in-cloud-app-security.png "Cloud App Security 中的 Google Apps 設定")  
   
     1.  您在步驟 14 中複製的 **Google 服務帳戶電子郵件地址**。  
   
@@ -244,7 +245,7 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
     7.  [連入此連結] 連接到 Google Apps。 這會開啟 Google Apps，並要求您授與 Cloud App Security 存取權。  
   
-         ![Google Apps 授權要求](./media/google-apps-authorization-request.png "Google Apps authorization request")  
+         ![Google Apps 授權要求](./media/google-apps-authorization-request.png "Google Apps 授權要求")  
   
     8.  按一下 [測試 API] 確定連線成功。  
   
@@ -266,6 +267,6 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

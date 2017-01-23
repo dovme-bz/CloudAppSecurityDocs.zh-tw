@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
+ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
 
 
 ---
@@ -28,6 +28,10 @@ Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個
 3.  Cloud App Security 雲端分析師團隊進行的連續分析 (適用於靜止加密這類屬性)。
 4.  客戶型修訂要求 (根據雲端應用程式目錄變更的客戶提交要求)。 所有要求都是由雲端分析師團隊所檢閱，並根據其發現的項目進行更新。
   
+## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
+
+Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄檔上傳至 Cloud App Security 入口網站之後，會妥善處理記錄檔，並將所有使用者名稱資訊取代為加密使用者名稱。 如此一來，所有雲端活動都會保持匿名。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>快照集和連續風險評估報告 
 
 您可以產生兩種類型的報告： 
@@ -50,7 +54,7 @@ Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個
 >[!NOTE]
 >連續報告資料是一天分析兩次。
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>使用 Cloud Discovery 的流量記錄
+## <a name="using-traffic-logs-for--cloud-discovery"></a>使用 Cloud Discovery 的流量記錄
 Cloud Discovery 利用流量記錄中的資料。 記錄越詳細，可見度就越好。 Cloud Discovery 需要具有下列屬性的 Web 流量資料︰
 - 交易日期
 - 來源 IP
@@ -86,6 +90,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto 系列防火牆
 - Sophos SG
+- Sophos Cyberoam
 - Squid (一般)
 - Squid (原生)
 - Websense - 網站安全性解決方案 - 調查詳細資料報告 (CSV)
@@ -119,8 +124,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Zscaler|**是**|否|**是**|否|**是**|否|
 
 
- 
-如需詳細資訊，請參閱本主題中的 
+## <a name="see-also"></a>另請參閱
  
 [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +135,6 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

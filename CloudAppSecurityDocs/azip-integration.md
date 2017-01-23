@@ -69,14 +69,14 @@ Cloud App Security 讓您調查檔案，並依據 Azure Information Protection �
 1. 擷取您租用戶所使用的所有分類標籤清單。 每隔一小時會執行一次，使清單維持最新狀態。
 2. 掃描檔案是否有分類標籤。 這有兩種進行方式︰a. 內容依據檔案原則需掃瞄的檔案，也將新增至分類標籤的掃描佇列。
     b. 若要將所有檔案都新增至掃瞄佇列而不設定檔案原則，請啟動自動掃描 (如下所示)，這將會掃描所有新檔案或修改過的檔案。
-3. 除非您選取 [Ignore Azure Information Protection classification labels from other tenants] (略過其他租用戶的 Azure 資訊保護分類標籤) 核取方塊 (如下所示)，否則外部標籤只會在顯示於特定檔案上時，才會新增至分類標籤清單。
+3. 除非您選取 「Ignore Azure Information Protection classification labels from other tenants」 (略過其他租用戶的 Azure 資訊保護分類標籤) 核取方塊 (如下所示)，否則外部標籤只會在顯示於特定檔案上時，才會新增至分類標籤清單。
 
 ## <a name="enable-automatic-scan"></a>啟用自動掃描
 自動掃描可以在 Office 365 檔案搜尋 Azure 資訊保護分類標籤，而不需要建立一個原則。 如果您的 Cloud App Security 具有獨立授權，才能使用這項功能。
 自動掃描新檔案的檔案標籤：
 
 1. 在 Cloud App Security 中，移至 [一般設定] 頁面。
-2. 在 Azure 資訊保護下，選取 [Automatically scan files for Azure Information Protection classification labels] (自動掃描檔案尋找 Azure 資訊保護分類標籤)。 啟用之後，不只是依據檔案原則需要掃描內容的檔案，所有新增到 Office 365 的檔案中都會掃描檔案標籤。
+2. 在 Azure 資訊保護下，選取 「Automatically scan files for Azure Information Protection classification labels」 (自動掃描檔案尋找 Azure 資訊保護分類標籤)。 啟用之後，不只是依據檔案原則需要掃描內容的檔案，所有新增到 Office 365 的檔案中都會掃描檔案標籤。
 
 ![啟用 Azure Information Protection](./media/enable-azip.png)
 
