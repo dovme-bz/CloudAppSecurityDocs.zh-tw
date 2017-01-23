@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
-ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
+ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
+ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 
 
 ---
@@ -82,7 +82,7 @@ ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
   
 3. 完成時按一下 [儲存]。  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> 根據您的需求組織資料  
+##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> 設定 IP 範圍  
 若要輕鬆找出已知的 IP 位址，例如您的實體辦公室 IP 位址，您需要設定 IP 位址範圍，讓您能標記並適當地分類，以及自訂記錄檔和警示顯示與調查的方式。   
 每個 IP 範圍群組可根據預先設定的 IP 類別清單來分類，或是以您自己建立的 IP 標記加以標記。 此外，此設定可讓您根據您的內部網路知識，覆寫公用地理位置資訊。  
   
@@ -104,9 +104,7 @@ ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
   
 4.  輸入 [已註冊的 ISP]。 這會覆寫您活動中的資料  
   
-5.  若要**標記**來自這些 IP 位址的活動，請輸入標記。 在方塊中輸入文字即可建立標記。 您已經設定標記之後，就可以從清單中選擇它，輕鬆地將它新增到其他 IP 範圍。 您可以為每個範圍新增任意數量的 IP 標記。 建立原則時，可以使用 IP 標記。  
-  
-     內建的 Cloud App Security **IP 標記**會針對高風險的位址而設定，並且會經常更新。 這些標記包含匿名 Proxy、衛星提供者、Tor 結束節點，以及 Cloud App Security Proxy 網路。 您看不到這些內建標記。  
+5.  若要**標記**來自這些 IP 位址的活動，請輸入標記。 在方塊中輸入文字即可建立標記。 您已經設定標記之後，就可以從清單中選擇它，輕鬆地將它新增到其他 IP 範圍。 您可以為每個範圍新增任意數量的 IP 標記。 建立原則時，可以使用 IP 標記。  除了您設定的 IP 標記之外，Cloud App Security 具有不可設定的內建標記。 您可以在 [IP 標記篩選](activity-filters.md)下看到標記清單。  
   
 6.  **IP 類別**可用來輕鬆地辨識來自有趣 IP 位址的活動。 類別可在入口網站取得，但需要使用者設定才能決定哪些 IP 位址會包含在每個類別中，「風險」類別除外，它包含兩個 IP 標記 - 匿名 Proxy 和 Tor。  
   
@@ -232,6 +230,6 @@ Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和�
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 

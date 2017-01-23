@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
+ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
+ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
 
 
 ---
@@ -47,9 +47,9 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 
 若要存取 Cloud App Security 入口網站，請前往 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)。  
   
-或者，您可以透過 **Office 365 系統管理中心**存取入口網站，方法是依序按一下系統管理中心圖示 ![O365 系統管理中心圖示](./media/o365-admin-centers-icon.png "O365 admin centers icon") 和 [Cloud App Security]。  
+或者，您可以透過 **Office 365 系統管理中心**存取入口網站，方法是依序按一下系統管理中心圖示 ![O365 系統管理中心圖示](./media/o365-admin-centers-icon.png "O365 系統管理中心圖示") 和 [Cloud App Security]。  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![從 O365 存取](./media/access-from-o365.png "從 O365 存取")  
   
 
 
@@ -167,6 +167,6 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

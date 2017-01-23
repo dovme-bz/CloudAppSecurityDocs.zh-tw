@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 2.  按一下 [建立原則]，然後選取 [活動原則]。  
   
-     ![活動原則功能表](./media/activity-policy-menu.png "activity policy menu")  
+     ![活動原則功能表](./media/activity-policy-menu.png "活動原則功能表")  
   
 3.  為您的原則命名並描述，如果希望，也可以範本為依據；如需原則範本的詳細資訊，請參閱 [Control cloud apps with policies](control-cloud-apps-with-policies.md) (使用原則控制雲端應用程式)。  
   
@@ -54,13 +54,13 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
      在 [活動篩選] 欄位下方，設定觸發警示的參數。  
   
-     ![多個失敗登入嘗試原則範例](./media/multiple-failed-log-on-attempts-policy-example.png "multiple failed log on attempts policy example")  
+     ![多個失敗登入嘗試原則範例](./media/multiple-failed-log-on-attempts-policy-example.png "多個失敗登入嘗試原則範例")  
   
 -   高下載率  
   
      您可以設定原則，以便在非預期或無法定性層級的下載活動出現時，收到警示。 若要設定類似的原則，請在 [速率] 參數下，選擇觸發警示的參數。  
   
-     ![高下載率範例](./media/high-download-rate-example.png "high download rate example")  
+     ![高下載率範例](./media/high-download-rate-example.png "高下載率範例")  
   
 ## <a name="anomaly-detection"></a>異常偵測  
 在組織受到 Cloud App Security 保護之後，所有雲端活動都會根據各種預先定義的風險因素進行評分。 Cloud App Security 會查看雲端上每位使用者的工作階段，然後考量您在此處設定的風險因素以警示您有不同於組織基準的事故發生，或不同於使用者一般活動的事故發生。 異常偵測原則頁面可讓您設定及自訂風險評分程序中要考慮的風險因素系列。 原則可以針對不同的使用者、位置和組織單位以不同的方式來執行。 例如，您可以建立一項原則，在您的 IT 小組成員從辦公室外部進行活動時發出警示。  
@@ -71,7 +71,7 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 2.  按一下 [建立原則] ，然後選取 [異常偵測] 原則。  
   
-     ![異常偵測原則功能表](./media/anomaly-detection-policy-menu.png "Anomaly detection policy menu")  
+     ![異常偵測原則功能表](./media/anomaly-detection-policy-menu.png "異常偵測原則功能表")  
   
 3.  填寫該原則的名稱和描述，然後繼續填寫 [活動篩選] 欄位，這裡可以選擇您要套用原則的活動。  
   
@@ -109,7 +109,7 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
      敏感度值會決定平均每 1000 位使用者觸發多少每週警示。  
   
-     ![異常偵測 IP](./media/anomaly-detection-ips.png "anomaly detection IPs")  
+     ![異常偵測 IP](./media/anomaly-detection-ips.png "異常偵測 IP")  
   
 8.  按一下 [建立]。  
  
@@ -122,7 +122,9 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 -   活動篩選 – 可讓您根據中繼資料建立非常細微的條件。  
   
--   活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  
+-   活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  [Activity match parameters] (活動比對參數) 預設會在單一活動符合所有活動篩選時引發相符事件。   
+您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
+  
   
 -   動作 – 此原則提供一組可在偵測到違規時自動套用的治理動作。  
 ## <a name="see-also"></a>另請參閱  
@@ -133,6 +135,6 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
+ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
+ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
 
 
 ---
@@ -60,7 +60,7 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 3.  此外，您可以在分數計算中設定特定值為無法使用或不適用。 包含時，N/A 值對計算的分數有負比重。  
   
-     ![分數](./media/score.png "score")  
+     ![分數](./media/score.png "分數")  
   
 ## <a name="manage-continuous-reports"></a>管理連續報告  
 監視組織的 Cloud Discovery 記錄資料時，自訂連續報告提供更細微的資訊。 透過建立自訂報告，即可能篩選特定地理位置、網路和網站或組織單位。 Cloud Discovery 報告選擇器預設只會顯示下列報告︰  
@@ -98,7 +98,7 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 4.  新增使用者別名或 IP 位址。 我們建議您加入為何排除使用者或 IP 位址的相關資訊。  
   
-     ![排除使用者](./media/exclude-user.png "exclude user")  
+     ![排除使用者](./media/exclude-user.png "排除使用者")  
   
 ## <a name="deleting-cloud-discovery-data"></a>刪除 Cloud Discovery 資料  
 有數個原因讓您想要刪除 Cloud Discovery 資料。 我們建議您有下列情況時刪除︰  
@@ -119,11 +119,14 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 3.  按一下 [刪除] 按鈕。  
   
-     ![刪除資料](./media/delete-data.png "delete data")  
+     ![刪除資料](./media/delete-data.png "刪除資料")  
   
     > [!NOTE]  
     >  刪除程序需要幾分鐘，不會立即完成。  
 
+
+
+ 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -132,6 +135,6 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 
