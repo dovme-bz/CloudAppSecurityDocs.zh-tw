@@ -1,11 +1,11 @@
 ---
-title: "活動 | Microsoft Docs"
+title: "雲端應用程式活動的可視性 | Microsoft Docs"
 description: "本主題提供可套用至活動原則的活動、篩選和比對參數清單。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 3/6/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 7ad577c4b6222d96c21f51dd4023f10a9c402c55
-
-
+ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
+ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+translationtype: HT
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 您可以篩選 [活動記錄]，進而找到特定活動。 您可以根據活動建立原則，然後定義想要收到的警示項目並採取動作。 您也可以搜尋對特定檔案執行的活動。 我們取得之每項活動的活動與資訊類型，都是取決於應用程式以及應用程式可提供的資料種類。 
@@ -42,12 +40,13 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 ## <a name="activity-filters"></a>活動篩選
 以下是可套用的活動篩選清單。 大部分的篩選器皆支援多個值與 NOT，以提供可在建立原則時使用的強大工具。  
   
--   活動識別碼 - 依據識別碼，僅搜尋特定活動。 若您要將 MCAS 連接到 SIEM (使用 SIEM 代理程式)，並進一步調查 MCAS 入口網站中的警示時，就非常適合使用此篩選。  
+-   活動識別碼 - 依據識別碼，僅搜尋特定活動。 若您要將 Cloud App Security 連線到 SIEM (使用 SIEM 代理程式)，並進一步調查 Cloud App Security 入口網站中的警示時，就非常適合使用此篩選。  
   
 -   活動物件 – 搜尋活動執行對象物件。 此篩選器適用於檔案、資料夾、使用者或應用程式物件。
     - 活動物件識別碼 - 物件 (檔案、資料夾、使用者或應用程式識別碼) 的識別碼。
     - 檔案、資料夾或網站 URL - 讓您能夠選取開頭為特定字串的檔案、資料夾和 URL。
     - 目標物件 (檔案/資料夾) - 可讓您選取特定檔案或資料夾。 
+    - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 
     
 -   活動類型 - 搜尋應用程式活動。
 
@@ -72,7 +71,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
     - IP 類別 - 執行活動的來源 IP 位址類別；例如，來自系統管理 IP 位址範圍的所有活動。 類別需要設定成包含相關 IP 位址，但 "Risky" 類別除外，這種類別是預先設定的類別，並且包含兩個 IP 標記 - 匿名 Proxy 和 Tor。 若要了解如何設定 IP 類別，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。  
     - IP 標記 - 執行活動的來源 IP 位址標記；例如，來自匿名 Proxy IP 位址的所有活動。 Cloud App Security 建立一組不可設定的內建 IP 標記。 此外，您可以設定專屬 IP 標記。 如需設定專屬 IP 標記的詳細資訊，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。
    內建 IP 標記包含：
-    - Microsoft 應用程式 (其中的 14 個)
+    - Microsoft 應用程式 (其中的&14; 個)
     - 匿名 Proxy
     - 殭屍網路
     - Darknet 掃描 IP
@@ -93,15 +92,19 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 -   已註冊的 ISP – 執行活動的來源 ISP。   
 
 -  來源 - 依據偵測到其中有活動的來源進行搜尋。 來源可以是下列任一項：
-  - App 連線程式 - 直接來自應用程式 API 連接器之記錄。
-  - App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
+  -    App 連線程式 - 直接來自應用程式 API 連接器之記錄。
+  -    App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
   
 
 -   使用者 - 執行活動的使用者，可使用網域、群組、名稱或組織進行篩選。 若要篩選不具特定使用者的活動，您可以使用 ‘is not set’ 運算子。  
     -   使用者網域 - 搜尋特定使用者網域。
-    -   使用者群組 - Cloud App Security 自動從雲端應用程式匯入的特定使用者群組，例如 Office 365 系統管理員所執行的所有活動。
-    -   使用者名稱 - 搜尋特定的使用者名稱。
     -   使用者組織 – 執行活動之使用者所屬的組織單位，例如 EMEA_marketing 使用者所執行的所有活動。  
+    -   使用者群組 - 可從連線應用程式匯入的特定使用者群組，例如 Office 365 管理員。  
+    -   使用者名稱 - 搜尋特定的使用者名稱。 若要查看特定使用者群組中的使用者清單，請在 [活動] 選單中按一下使用者群組的名稱。 這會帶您前往 [帳戶] 頁面，其中列出群組中的所有使用者。 您可以從該處向下鑽研群組中特定使用者的帳戶詳細資料。
+       -  您可以使用 [作為] 篩選並選取使用者角色，進一步篩選 [使用者群組] 和 [使用者名稱] 篩選。角色可以是下列任一項：
+            - 僅活動對象 - 這表示選取的使用者或使用者群組未執行待查明的活動，他們是活動的對象
+            - 僅活動執行者 - 這表示使用者或使用者群組執行了活動
+            - 任何角色 - 這表示使用者或使用者群組與活動有關，而可能是執行活動的人或活動的對象
 
 -   使用者代理程式 – 執行活動的來源使用者代理程式。  
   
@@ -130,8 +133,3 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
