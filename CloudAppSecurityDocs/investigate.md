@@ -1,11 +1,11 @@
 ---
-title: "調查 | Microsoft Docs"
+title: "調查 Cloud App Security 的雲端應用程式風險和可疑活動 | Microsoft Docs"
 description: "本主題概述使用 Cloud App Security 調查警示、問題及可疑活動的程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="investigate"></a>調查
-當 Cloud App Security 在雲端環境上執行之後，您需要學習及調查如何使用 Cloud App Security 的工具深入了解雲端環境中發生的一切。 然後根據特定的環境及其使用狀況，您可以找出必要需求，保護貴組織免於風險威脅。  
+當 Cloud App Security 在雲端環境上執行之後，您需要學習及調查如何使用 Cloud App Security 的工具深入了解雲端環境中發生的一切。 然後根據特定的環境及其使用狀況，您可以找出必要需求，保護貴組織免於風險威脅。
 
 本文說明如何執行深入探討調查，以深入了解雲端環境。  
 
@@ -34,17 +31,17 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 |應用程式儀表板：整體|每個位置的應用程式使用情況、每數個使用者的使用量圖形概觀|  
 |應用程式儀表板：見解|儲存在應用程式的資料分析，依檔案類型及檔案共用層級細分|  
 |應用程式儀表板：檔案|向下切入檔案內，能夠根據擁有者、共用層級等進行篩選，以及執行治理動作 (例如隔離)|  
-|應用程式儀表板：協力廠商應用程式|向下切入目前部署的協力廠商應用程式內，例如 Google 應用程式並為其定義原則|  
+|應用程式儀表板：協力廠商應用程式|向下切入目前部署的協力廠商應用程式 (例如 G Suite) 並為其定義原則|  
 |使用者儀表板|完整的雲端使用者設定檔概觀，包括群組、位置、最近的活動、相關警示及所用瀏覽器|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a>將應用程式標記為「獲批准」或「待批准」  
+##  <a name="sanctionapp"></a>將應用程式標記為「獲批准」或「待批准」  
 若要了解您的雲端，其中一項重要步驟就是將應用程式標記為「獲批准」或「待批准」。 批准應用程式之後，您就可以篩選未批准的應用程式，開始移轉同類型的已批准應用程式。  
 
 -   在 [Cloud App Security] 主控台中，移至 [應用程式目錄] 或是 [探索到的應用程式]。  
 
--   在應用程式清單中，於您要批准的應用程式出現的資料列上，選擇資料列結尾的三個點![標記為獲批准點](./media/sanction-three-dots.png "Tag as sanctioned dots")，然後選擇 [標記為獲批准]。  
+-   在應用程式清單中，於您要標記為獲批准的應用程式出現的資料列上，選擇資料列結尾的三個點 ![標記為獲批准點](./media/sanction-three-dots.png "標記為獲批准點")，然後選擇 [Mark as sanctioned] (標示為獲批准)。  
 
-     ![標記為獲批准](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![標記為獲批准](./media/mark-as-sanctioned.png "標記為獲批准")  
 
 
 ## <a name="use-the-investigation-tools"></a>使用調查工具  
@@ -85,7 +82,7 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 4.  請移至 [調查]，然後選取一個應用程式。 應用程式儀表板隨即開啟，並提供資訊及深入見解。 您可以使用上方的索引標籤檢查下列項目︰  
 
-     ![應用程式儀表板](./media/investigate-app.png "investigate app")  
+     ![應用程式儀表板](./media/investigate-app.png "調查應用程式")  
 
     -   您的使用者使用何種裝置連接到應用程式？  
 
@@ -135,7 +132,7 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 5.  選擇 **[活動篩選]** 下的 [+] 新增篩選。 向下捲動到 **[IP 標記]**，然後選擇 **[匿名]** 及 **[Tor]**。  
 
-     ![具風險 IP 的範例原則](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![具風險 IP 的範例原則](./media/example-policy-risky-ips.png "具風險 IP 範例原則")  
 
 現在原則已就位，但您卻嚇然發現收到違反原則的警示。  
 
@@ -155,9 +152,3 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 如需了解如何控制貴組織的雲端應用程式，請參閱[控制項](control.md)。   
 如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。  
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

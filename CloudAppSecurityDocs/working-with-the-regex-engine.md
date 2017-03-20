@@ -1,11 +1,11 @@
 ---
-title: "使用 RegEx 引擎 | Microsoft Docs"
+title: "使用 RegEx 引擎進行內容檢查原則 | Microsoft Docs"
 description: "本主題提供在 Cloud App Security 原則中使用 RegEx 進行模式比對的指示。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: c386cbbdadaf97297e6d876cdac9f7d3e2142b73
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>使用 RegEx 引擎
  
 Cloud App Security 的內容檢查原則會利用 RegEx 進行模式比對。 您可以將內容檢查與檔案原則一起套用。 若要測試規則運算式，您可以使用下列網站：  
@@ -67,8 +64,3 @@ Cloud App Security 的內容檢查原則會利用 RegEx 進行模式比對。 �
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

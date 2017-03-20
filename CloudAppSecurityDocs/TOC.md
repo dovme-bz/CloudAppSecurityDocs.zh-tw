@@ -1,23 +1,27 @@
-# [了解並探索](what-is-cloud-app-security.md)
+# 了解並探索
 ## [什麼是 CAS？](what-is-cloud-app-security.md)
 ## [版本資訊](release-notes.md)
-# [部署](getting-started-with-cloud-app-security.md)
+# 在客體叢集部署
+## [開始使用](getting-started-with-cloud-app-security.md)
 ## [自訂入口網站](general-setup.md)
+### [使用者群組](user-groups.md)
+### [IP 標籤和範圍](ip-tags.md)
 ## [部署 Cloud Discovery](set-up-cloud-discovery.md)
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](configure-automatic-log-upload-for-continuous-reports.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
-### [自訂 Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
-### [連接 Google Apps](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [連線 G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [連接 Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [連接 AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [連接 Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [連接 Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [連接 ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [連接 Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [使用](daily-activities-to-protect-your-cloud-environment.md)
+# 用法
+## [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)
+## [使用 Cloud Discovery](working-with-cloud-discovery-data.md)
 ## [調查](investigate.md)
 ### [內建報告參考資料](built-in-report-reference.md)
 ### [檔案](file-filters.md)
@@ -28,20 +32,18 @@
 #### [Cloud Discovery 原則](cloud-discovery-policies.md)
 ##### [Cloud Discovery 異常偵測原則](cloud-discovery-anomaly-detection-policy.md)
 #### [活動原則](user-activity-policies.md)
-##### [異常偵測原則](anomaly-detection-policy.md)
+#### [異常偵測原則](anomaly-detection-policy.md)
 #### [檔案原則](data-protection-policies.md)
 ##### [內容檢查](content-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
+#### [原則範本參考](policy-template-reference.md)
 ### [管理應用程式權限](manage-app-permissions.md)
-## [治理](governance-actions.md)
+### [治理連線的應用程式](governance-actions.md)
+### [治理探索到的應用程式](governance-discovery.md)
 ## 整合
 ### [Azure 資訊保護整合](azip-integration.md)
 ### [SIEM 整合](siem.md)
-# [疑難排解](troubleshooting.md)
+# 疑難排解
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 ## [為內容檢查進行疑難排解](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO1-->
-
-

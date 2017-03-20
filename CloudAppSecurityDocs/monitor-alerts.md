@@ -1,11 +1,11 @@
 ---
-title: "監視警示 | Microsoft Docs"
+title: "在 Cloud App Security 中使用警示 | Microsoft Docs"
 description: "本主題提供所有警示的清單和描述。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
-
-
+ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-# <a name="monitor-alerts"></a>監視警示
+# <a name="alerts"></a>警示
 檢視警示：
 
 在 Cloud App Security 入口網站中，按一下 [警示]。
@@ -37,7 +34,7 @@ ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
 |----|----|----|
 |新增位置|ALERT_GEOLOCATION_NEW_COUNTRY|在掃描開始 (最多 6 個月) 後偵測到新位置。 這只會對整個組織的每個國家 (地區) 顯示一次。 |
 |新增管理使用者|ALERT_ADMIN_USER|偵測到特定應用程式的新管理員 – 這可以是某個應用程式中之管理員但現在是另一個應用程式中之管理員的人員。 此警示與特定管理員類型相關，因此會在每次變更管理員類型時顯示。 如果使用者遺失後再次取得管理員權限，則會顯示此警示。|
-|非使用中帳戶|ALERT_ZOMBIE_USER|如果每個應用程式的使用者未作用 60 天；例如，如果有人使用 Box 但未接觸 Google Apps 60 天，則使用者在 Google Apps 中視為非作用中。 標記已新增至這些使用者，因此您可以搜尋非作用中帳戶。|
+|非使用中帳戶|ALERT_ZOMBIE_USER|如果單一個應用程式的使用者未使用 60 天；例如，如果有人使用 Box 但未接觸 G Suite 60 天，則使用者在 G Suite 中視為非使用中。 標記已新增至這些使用者，因此您可以搜尋非作用中帳戶。|
 |未預期的管理員位置|ALERT_NEW_ADMIN_LOCATION|在掃描開始 (最多 6 個月) 後偵測到系統管理員的新位置。 這只會對您組織之任何管理員的每個國家 (地區) 顯示一次。 |
 |遭盜用的帳戶|ALERT_COMPROMISED_ACCOUNT|如果應用程式中發生中斷，並且發行中斷帳戶清單，則 Cloud App Security 會下載清單，並將它與您的使用者清單進行比較 (包括內部使用者、外部使用者和個人帳戶)。 |
 
@@ -60,8 +57,3 @@ ms.openlocfilehash: ee4b4e7a43603654eb415ff225a4ae3d8b139383
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
