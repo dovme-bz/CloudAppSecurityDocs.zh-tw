@@ -1,11 +1,11 @@
 ---
-title: "使用原則來控制雲端應用程式 | Microsoft Docs"
+title: "在 Cloud App Security 中建立原則以控制雲端應用程式使用情況 | Microsoft Docs"
 description: "本主題提供的資訊說明如何使用與設定原則，以控制雲端應用程式的使用方式。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
-ms.openlocfilehash: fcf5a37aa18ca7dd6fbb61c3e6100214048deeed
-
-
+ms.openlocfilehash: e913b589babc66ef5aff5f05af9fb5de22f308d1
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>使用原則來控制雲端應用程式
 
@@ -161,8 +159,3 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
