@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: f4cf027220a7f4329a72d662f6ccf4d9ab02ede4
-
-
+ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>可保護雲端環境的日常活動
 啟動並執行 Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
 
@@ -36,7 +33,7 @@ Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
 建議您每日檢查儀表板，查看被觸發的新警示。 這也是監督雲端環境健全狀況並了解整個雲端環境的好位置。  
 
-![Cloud App Security 儀表板](./media/dashboard.png "dashboard")  
+![Cloud App Security 儀表板](./media/dashboard.png "儀表板")  
 
 ## <a name="handle-your-alerts"></a>處理警示  
 警示是更深入了解雲端環境的切入點。 建議您根據您的發現建立新原則。 例如，您可能會看到系統管理員從格陵蘭登入，而您組織中從未有人曾從格陵蘭登入。 您可以建立一項原則，在系統管理員帳戶用來從該位置登入時，自動加以暫時停權。  
@@ -47,7 +44,7 @@ Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
      儀表板的本區段提供完整的可見度，讓您掌握任何可疑的活動或違反您所建立原則的情形， 並可協助保護您為雲端環境所定義的安全性狀態。  
 
-     ![警示](./media/alerts.png "alerts")  
+     ![警示](./media/alerts.png "警示")  
 
 2.   您必須調查每個警示，並判斷違規的性質和所需之回應。  
 
@@ -109,11 +106,11 @@ Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
      如果原則設定為尋找相容性缺口，而有人將信用卡號碼儲存在 OneDrive 的檔案中，原則中就會有相符項目。  
 
-     ![PCI 相符項目](./media/pci-matches.png "pci matches")  
+     ![PCI 相符項目](./media/pci-matches.png "PCI 相符項目")  
 
 -   選取相符項目，查看違反原則的實際檔案。  
 
-     ![PCI 內容相符項](./media/pci-content-matches.png "pci content matches")  
+     ![PCI 內容相符項目](./media/pci-content-matches.png "PCI 內容相符項目")  
 
      您可以選取檔案本身以取得檔案的相關資訊。  
 
@@ -121,15 +118,9 @@ Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
      您可以按一下 **[相符項目]**，查看實際的信用卡號碼。  
 
-     ![內容相符項 ccn](./media/content-matches-ccn.png "content matches ccn")  
+     ![內容相符項目 ccn](./media/content-matches-ccn.png "內容相符項目 ccn")  
 
 ## <a name="next-steps"></a>接下來的步驟  
 如需如何調查警示的詳細資訊，請參閱[調查](investigate.md)。  
 如需技術支援，請前往 [Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

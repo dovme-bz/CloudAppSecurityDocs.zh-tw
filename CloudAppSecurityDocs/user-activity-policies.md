@@ -1,11 +1,11 @@
 ---
-title: "活動原則 | Microsoft Docs"
+title: "在 Cloud App Security 中建立原則以控制活動 | Microsoft Docs"
 description: "本主題提供建立及使用活動原則的指示。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
-
-
+ms.openlocfilehash: 0f12bb57f06efb0cb0860e7aae898e2bde87d2f2
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="activity-policies"></a>活動原則
 活動原則可讓您利用應用程式提供者的 API，強制執行各種不同的自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。  
   
@@ -62,57 +59,6 @@ ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
   
      ![高下載率範例](./media/high-download-rate-example.png "高下載率範例")  
   
-## <a name="anomaly-detection"></a>異常偵測  
-在組織受到 Cloud App Security 保護之後，所有雲端活動都會根據各種預先定義的風險因素進行評分。 Cloud App Security 會查看雲端上每位使用者的工作階段，然後考量您在此處設定的風險因素以警示您有不同於組織基準的事故發生，或不同於使用者一般活動的事故發生。 異常偵測原則頁面可讓您設定及自訂風險評分程序中要考慮的風險因素系列。 原則可以針對不同的使用者、位置和組織單位以不同的方式來執行。 例如，您可以建立一項原則，在您的 IT 小組成員從辦公室外部進行活動時發出警示。  
-  
-設定異常偵測原則︰  
-  
-1.  在主控台中，依序按一下 [控制] 和 [原則]。  
-  
-2.  按一下 [建立原則] ，然後選取 [異常偵測] 原則。  
-  
-     ![異常偵測原則功能表](./media/anomaly-detection-policy-menu.png "異常偵測原則功能表")  
-  
-3.  填寫該原則的名稱和描述，然後繼續填寫 [活動篩選] 欄位，這裡可以選擇您要套用原則的活動。  
-  
-4.  為您的原則命名並描述，如果希望，也可以範本為依據；如需原則範本的詳細資訊，請參閱 [Control cloud apps with policies](control-cloud-apps-with-policies.md) (使用原則控制雲端應用程式)。  
-  
-5.  若要將原則套用到雲端環境的所有活動，請選取 [所有受監視的活動]。 若要限制特定類型的活動原則，請選擇 [選取的活動]。 按一下 [新增篩選] 並設定適當的參數，藉以篩選活動。 例如，若只要針對 Salesforce 管理員所執行的活動執行原則，請選擇這個使用者標籤。  
-  
-6.  在此欄位下設定 [風險因素]。 您可以選擇計算風險分數時，要考慮的風險系列。 在資料列右側，您可以使用 [開啟/關閉] 按鈕來啟用和停用各種風險。 此外，為得到更細微的資料，您可以選擇對活動啟用每一個特定的風險系列。  
-  
-     風險因素如下︰  
-  
-    -   **登入失敗**︰使用者是否嘗試登入並在短時間內失敗多次？  
-  
-    -   **管理活動**︰管理員是否使用特殊權限帳戶從不尋常的位置或在奇怪的時間登入？  
-  
-    -   **非使用中帳戶**︰某個一段時間不使用的帳戶是否突然開始活動？  
-  
-    -   **位置**︰是否有異常、 可疑或新位置的活動？  
-  
-    -   **不可能的旅遊**︰是否有從丹佛登入的使用者，十分鐘後又從巴黎登入？  
-  
-    -   **裝置和使用者代理程式**︰是否有來自無法辨識或不受管理的裝置活動？  
-  
-     您可以使用這些參數來定義複雜的案例，例如，將辦公室 IP 範圍從風險因素排除不進行異常偵測，然後建立特定的 "office IP" 標籤，從考量的參數中篩選此範圍。 接著將您建立的範圍從管理活動異常偵測中排除︰  
-  
-    -   在 [風險類型] 內尋找 [管理活動]。  
-  
-    -   將 [Apply to (套用至)] 變更為 [選取的活動]。  
-  
-    -   在 [活動篩選] 下，將 [Apply to (套用至)] 設為 [選取的活動]，然後在 [Activities matching all of the following (與下列所有項目相符的活動)] 下，將 [系統管理活動] 選擇為 [True]。  
-  
-    -   按一下 **+** 圖示，然後依序選取 [IP tag does not equal (IP 標籤不等於)] 和 [Office IP] 標籤。  
-  
-7.  在 [敏感度] 下，選取您想要收到警示的頻率。  
-  
-     敏感度值會決定平均每 1000 位使用者觸發多少每週警示。  
-  
-     ![異常偵測 IP](./media/anomaly-detection-ips.png "異常偵測 IP")  
-  
-8.  按一下 [建立]。  
- 
   
 ## <a name="activity-policy-reference"></a>活動原則參考  
 本節提供原則的參考詳細資訊，並說明每種原則類型和您可以針對每項原則設定的欄位。  
@@ -122,7 +68,7 @@ ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
   
 -   活動篩選 – 可讓您根據中繼資料建立非常細微的條件。  
   
--   活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  [Activity match parameters] (活動比對參數) 預設會在單一活動符合所有活動篩選時引發相符事件。   
+-   活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  「Activity match parameters」(活動比對參數) 預設會在單一活動符合所有活動篩選時引發相符事件。   
 您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
   
   
@@ -133,8 +79,3 @@ ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-
