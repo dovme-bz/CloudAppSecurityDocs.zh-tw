@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/13/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e31fd5f40aa432fd149cef0b5923818247aed326
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
@@ -24,7 +24,7 @@ Cloud App Security 可讓您調查檔案，並依據 Azure Information Protectio
 將 Azure Information Protection 整合到 Cloud App Security，即可利用這兩個服務的完整功能，以及保護雲端中的檔案，包括︰
 - 在集中位置檢視所有分類檔案的能力
 - 根據分類層級執行調查以及量化雲端應用程式上敏感性資料暴露的能力
-- 建立原則以確定正在正確處理分類檔案的能力
+- 建立原則以確認正確處理分類檔案的能力
 
 > [!NOTE] 
 > 若要能夠執行此功能，除了需要 Cloud App Security 授權之外，也需要 Azure Information Protection Premium P1 或 P2 的授權。 當這項兩種授權準備就緒之後，Cloud App Security 便會從 Azure Information Protection 服務同步組織標籤。
@@ -86,7 +86,8 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 
 ![Cloud App Security 中的 Azure 資訊保護標籤](./media/azip-tags-in-cas.png)
 
-**原則 #1 - 在 Box 上對外共用機密資料： **
+> ![Note] 當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
+> **原則 #1 - 在 Box 上對外共用機密資料：**
 
 1.    建立檔案原則。
 2.    設定原則的名稱、嚴重性及類別。

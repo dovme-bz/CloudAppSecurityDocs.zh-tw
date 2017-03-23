@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="control"></a>控制
@@ -64,7 +64,7 @@ Cloud App Security 服務類別目錄可協助您尋找適用於組織的替代�
 
 2.   使用 [類別] 下方的 [生產力] 來篩選應用程式。  
 
-3.   針對每個使用中的應用程式，查看 **[分數]** 以了解它是否安全，以及不安全的原因。  
+3.   針對每個使用中的應用程式，查看 [分數] 以了解它是否安全，以及不安全的原因。  
 
 4.   如果您決定要為整個組織購買企業授權，建議您同時查看 **[使用者]** 資料行。 您可在做決定前，於該處查看最受您使用者歡迎的項目、其是否受信任，以及其具備哪些安全性功能。  
 

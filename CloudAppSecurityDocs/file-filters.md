@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="files"></a>檔案
@@ -111,10 +111,10 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 ## <a name="working-with-the-file-drawer"></a>使用檔案抽屜
 
-您可以透過按一下檔案記錄中的檔案本身，檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：
+您可以按一下檔案記錄中的檔案本身，以檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：
 
 - URL：帶您前往檔案位置。
-- 檔案識別碼：按一下 [檔案識別碼] 即可開啟快顯，其中內含檔案的未經處理檔案詳細資料，包括檔案識別碼及加密金鑰。
+- 檔案識別碼：按一下 [檔案識別碼] 即可開啟快顯視窗，其中包含檔案的未經處理檔案詳細資料，包括檔案識別碼及加密金鑰。
 - 擁有者：按一下 [擁有者] 即可檢視此檔案擁有者的使用者頁面。
 - 相符的原則：按一下 [相符的原則] 連結即可查看此檔案符合的原則清單。
 - 分類標籤：按一下 [分類標籤] 即可檢視此檔案中的 Azure 資訊保護分類標籤清單。 您接著可以依據符合此標籤的所有檔案進行篩選。    

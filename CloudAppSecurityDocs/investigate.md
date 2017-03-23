@@ -1,11 +1,11 @@
 ---
-title: "調查 Cloud App Security 的雲端應用程式風險和可疑活動 | Microsoft Docs"
+title: "使用 Cloud App Security 調查雲端應用程式的風險和可疑活動 | Microsoft Docs"
 description: "本主題概述使用 Cloud App Security 調查警示、問題及可疑活動的程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>調查
@@ -79,6 +79,8 @@ translationtype: HT
     -   是否有解聘人員仍可存取應用程式，並可利用該存取來竊取資訊？  
 
     -   您要撤銷使用者的特定應用程式權限，或需要特定使用者執行多重要素驗證嗎？  
+    
+    -   您也可以向下切入使用者的帳戶，方法是按一下使用者帳戶資料列結尾的齒輪並選取要採取的動作，例如 [暫停使用者] 或 [移除使用者的共同作業]。 如果使用者是從 Azure Active Directory 匯入，您也可以按一下 [Azure AD 帳戶設定] 輕鬆存取進階使用者管理功能，例如群組管理、MFA、有關使用者登入的詳細資訊，以及封鎖登入的能力。
 
 4.  請移至 [調查]，然後選取一個應用程式。 應用程式儀表板隨即開啟，並提供資訊及深入見解。 您可以使用上方的索引標籤檢查下列項目︰  
 
@@ -113,7 +115,7 @@ translationtype: HT
     -   是否有已使用但不符合貴組織原則的雲端應用程式？  
 
 ## <a name="use-reports-to-investigate-risk"></a>使用報告調查風險  
-開始嘗試取得雲端環境的控制權時，您要根據希望找到的項目進行某些假設，因您還不清楚您的雲端狀況。 您要根據這些假設建立原則。
+當您開始嘗試控制雲端環境時，會根據預期來進行某些假設，因為您還不清楚雲端狀況。 您要根據這些假設建立原則。
 
 雲端環境執行 Cloud App Security 後，您便可使用內建報告 (及自訂報告) 查看您的雲端狀況。 以此為基礎，再次調整您的原則將例外狀況納入，進而降低原則攔截到的誤判量。  
 

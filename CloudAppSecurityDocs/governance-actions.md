@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9797791f11e1329167252f713ecc0698572d2134
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
@@ -103,10 +103,10 @@ translationtype: HT
 **位置**|**目標目的類型**|**治理動作**|**描述**|**相關的連接器** 
 ---------|---------|---------|---------|---------
 |帳戶|檔案|移除使用者的共同作業|移除特定使用者對於所有檔案的所有共同作業 - 對於有人離開公司時很實用。|Box、G Suite|
-|帳戶|帳戶|恢復使用者的權限|恢復使用者的權限|G Suite、Box、Office|
+|帳戶|帳戶|恢復使用者的權限|恢復使用者的權限|G Suite、Box、Office、Salesforce|
 |帳戶|帳戶|帳戶設定|帶您前往特定應用程式 (例如，進入 Salesforce) 中的 [帳戶設定] 頁面。|所有應用程式 - OneDrive 與 SharePoint 設定從 Office 內設定。|
 |帳戶 |檔案|移轉所有檔案擁有權|您可以針對一個帳戶，將某位使用者的檔案全部移轉為由您所選的一位新的人員擁有。 先前的擁有者會成為編輯者。 移轉擁有權之後，admin@gtest1.adallom.com 會成為編輯者，且再也無法變更共用設定。 新的擁有者會收到電子郵件通知，告知擁有權已變更。|G Suite|
-|帳戶、活動原則|帳戶|暫時停止使用者的權限|將使用者設定為沒有任何存取權也無法登入 - 如果使用者在此設定情況下登入，會立即將其鎖住。|G Suite、Box、Office|
+|帳戶、活動原則|帳戶|暫時停止使用者的權限|將使用者設定為沒有任何存取權也無法登入 - 如果使用者在此設定情況下登入，會立即將其鎖住。|G Suite、Box、Office、Salesforce|
 |活動原則、帳戶|帳戶|撤銷密碼|撤銷使用者帳戶的密碼 - 例如，設定活動原則在登入嘗試失敗 10 後撤銷密碼。|G Suite|
 |活動原則、帳戶|帳戶|撤銷系統管理員權限|撤銷系統管理員帳戶的權限 - 例如，設定活動原則在登入嘗試失敗 10 後撤銷系統管理員權限。|G Suite|
 |應用程式儀表板 > 應用程式權限|權限|取消禁止應用程式|在 Google 和 Salesforce 中：移除應用程式的禁止設定，並允許使用者將權限授與其 Google 或 Salesforce 的第三方應用程式。 在 Office 365 中：還原協力廠商應用程式對 Office 的權限。|G Suite、Salesforce、Office|
@@ -140,6 +140,7 @@ translationtype: HT
 |設定 > 雲端探索設定 > 管理資料檢視|雲端探索|建立自訂雲端探索篩選資料檢視|建立新的資料檢視，取得探索結果更細微的檢視。 例如，特定的 IP 範圍。|探索|
 |設定 > 雲端探索設定 > 刪除資料|雲端探索|刪除雲端探索資料|刪除從探索來源收集來的所有資料。|探索|
 |設定 > 雲端探索設定 > 手動上傳記錄檔/自動上傳記錄檔|雲端探索|剖析雲端探索資料|已剖析所有記錄資料的通知。|探索|
+
 
 
 ## <a name="see-also"></a>另請參閱  

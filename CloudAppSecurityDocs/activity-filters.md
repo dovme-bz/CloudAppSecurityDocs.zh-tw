@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activities"></a>活動
@@ -42,11 +42,11 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
   
 -   活動識別碼 - 依據識別碼，僅搜尋特定活動。 若您要將 Cloud App Security 連線到 SIEM (使用 SIEM 代理程式)，並進一步調查 Cloud App Security 入口網站中的警示時，就非常適合使用此篩選。  
   
--   活動物件 – 搜尋活動執行對象物件。 此篩選器適用於檔案、資料夾、使用者或應用程式物件。
+-   活動物件 – 搜尋活動執行對象物件。 此篩選器適用於檔案、資料夾、使用者或應用程式物件。 
     - 活動物件識別碼 - 物件 (檔案、資料夾、使用者或應用程式識別碼) 的識別碼。
     - 檔案、資料夾或網站 URL - 讓您能夠選取開頭為特定字串的檔案、資料夾和 URL。
     - 目標物件 (檔案/資料夾) - 可讓您選取特定檔案或資料夾。 
-    - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 
+    - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 針對 [活動物件項目] 篩選條件，您可以選取是否想要篩選「包含」、「等於」或「開頭為」指定項目的項目。
     
 -   活動類型 - 搜尋應用程式活動。
 
@@ -77,7 +77,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
     - Darknet 掃描 IP
     - 惡意程式碼 C&C 伺服器
     - Remote Connectivity Analyzer
-    - Sattelite 提供者
+    - 衛星提供者
     - 智慧型 Proxy 和存取 Proxy (故意省略)
     - Tor 結束節點
     - Zscaler

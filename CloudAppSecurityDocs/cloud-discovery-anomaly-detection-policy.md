@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5c5d77a83d3eba40250ece02cfce4aa8f80d345d
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常偵測原則
@@ -27,7 +27,7 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
 
 針對每個原則，設定下列項目：
 
-1. 決定是否要讓原則根據範本，相關原則範本是 「Anomlylous behavior in discovered users」 (探索到之使用者中的異常行為) 範本，可在探索到之使用者和應用程式中偵測到異常行為時發出警示，例如：與其他使用者相較之下的大量上傳資料、與使用者歷程記錄相較之下的大型使用者交易。 您也可以選取 「Anomalous behavior of discovered IP addresses」 (探索到之 IP 位址的異常行為) 範本，可在探索到之 IP 位址和應用程式中偵測到異常行為時發出警示，例如：與其他 IP 位址相較之下的大量上傳資料、與 IP 位址歷程記錄相較之下的大型應用程式交易。 
+1. 決定是否要根據範本來建立原則，相關原則範本是「Anomalous behavior in discovered users (探索到之使用者中的異常行為) 」範本，可在探索到之使用者和應用程式中偵測到異常行為時發出警示，例如：與其他使用者相較之下的大量上傳資料，或是與使用者歷程記錄相較之下的大型使用者交易。 您也可以選取 「Anomalous behavior of discovered IP addresses」 (探索到之 IP 位址的異常行為) 範本，可在探索到之 IP 位址和應用程式中偵測到異常行為時發出警示，例如：與其他 IP 位址相較之下的大量上傳資料、與 IP 位址歷程記錄相較之下的大型應用程式交易。 
  
 2. 提供 [原則名稱] 和 [描述]。  
 

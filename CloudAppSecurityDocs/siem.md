@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/1/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 866e9bcd9d9526d077365e4e4462567b20e3302f
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: ab0164181826368c2dae7836e9b8189bb907f790
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="siem-integration--public-preview-"></a>SIEM 整合 -PUBLIC PREVIEW- 
@@ -50,7 +50,7 @@ translationtype: HT
 按 [下一步] 。
   ![遠端 Syslog 設定](./media/siem2.png)
 
-6. 選取您想要匯出至 SIEM 伺服器的資料類型：[警示] 和 [活動]。 使用滑桿來啟用和停用它們，預設會選取所有項目。 您可以使用 [套用至] 下拉式清單來設定篩選條件，只將特定警示和活動傳送至 SIEM 伺服器。
+6. 選取您想要匯出至 SIEM 伺服器的資料類型：[警示] 和 [活動]。 使用滑桿來啟用和停用它們，預設會選取所有項目。 您可以使用 [套用至] 下拉式清單來設定篩選條件，以便只將特定警示和活動傳送至 SIEM 伺服器。
 您可以按一下 [Edit and preview results] (編輯和預覽結果)，檢查篩選是否如預期運作。 按 [下一步] 。 
 
   ![資料類型設定](./media/siem3.png)

@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Secuirty 版本資訊和版本 | Microsoft Docs"
+title: "Cloud App Security 版本資訊和版本 | Microsoft Docs"
 description: "本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,35 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23870c7ba734acc3095f1dcd097f19954fee5e79
-ms.sourcegitcommit: 064afc7148de42c0e81763f96ec13fb2c92f02a9
+ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="release-notes"></a>版本資訊
 
+## <a name="cloud-app-security-release-93"></a>Cloud App Security 版本 93
+發行日期：2017 年 3 月 20 日
+
+**新功能：**
+-    Cloud App Security Anonymization 現在可讓您設定自訂的加密金鑰。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
+-    為了更充分掌控使用者與帳戶管理，您現在可以從 [帳戶] 頁面內按一下每個使用者旁的齒輪，直接存取每個使用者的 Azure AD 帳戶設定。 這可以方便存取進階使用者管理功能群組管理、MFA 設定、使用者登入相關詳細資訊，以及提供封鎖登入的能力。 
+-    您現在可以透過 Cloud App Security API，匯出待批准應用程式的封鎖指令碼。 深入了解 Cloud App Security 入口網站中的 API，方法是按一下功能表列中的問號，隨即出現 [API 文件]。
+-    適用於 ServiceNow 的 Cloud App Security App 連線程式已擴展為包含 OAuth 權杖的支援 (如 Geneva、Helsinki、Istanbul 中所引進)。 這提供 ServiceNow 更健全的 API 連線，不需要仰賴部署使用者。 如需詳細資訊，請參閱[將 ServiceNow 連接至 Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)。 現有的客戶可在 [ServiceNow App 連線程式] 頁面中更新其設定。
+-    如果您已設定其他第三方 DLP 掃描器，DLP 掃描狀態現在將會顯示個別連線程式的狀態，以改善可見性。
+-    Cloud App Security 現在支援 Office 365 稽核記錄檔中所支援的 Microsoft Teams 活動。 這項功能正逐步推出。
+-    針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
+-    在 [應用程式權限] 索引標籤上的應用程式抽屜中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
+-    「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
+-    當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
+ 
+**其他 Salesforce 的支援︰**
+-    您現在可在 Cloud App Security 中暫停或恢復 Salesforce 使用者的權限。 這可在 Salesforce 連線程式的 [帳戶] 索引標籤中完成，方法是按一下特定使用者資料列結尾的齒輪，然後選取 [暫時停權] 或 [恢復權限]，而且還能夠在原則中當作治理動作套用。 在 Cloud App Security 中採取的所有暫時停權與恢復權限的動作，都會記錄在[治理記錄](governance-actions.md)中。 
+-    提高 Salesforce 內容共用可見度：您現在可以看到共用檔案的共用對象，包括公開共用的檔案、與群組共用的檔案，以及與整個 Salesforce 網域共用的檔案。 提高可見度將回溯推出至新的與目前的已連線 Salesforce 應用程式，第一次更新時可能需要一些時間。
+-    我們改善了下列 Salesforce 事件的涵蓋範圍，並將它們與 [管理使用者] 活動區隔： 
+    - 編輯權限
+    - 建立使用者
+    - 變更角色
+    - 重設密碼
 
 ## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security 版本 90、91、92
 發行於 2017 年 2 月
@@ -55,7 +78,7 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 
 **新功能**
 -    我們將開始推出在 Cloud App Security 中檢視 Office 365 安全與規範中心 DLP 事件的功能。 如果您已在 Office 365 安全與規範中心中設定 DLP 原則，則偵測到原則相符項目時，將可以在 Cloud App Security 活動記錄檔中看到它們。 活動記錄檔中的資訊將包括已觸發相符項目的檔案或電子郵件，以及相符的原則或警示。 「安全性事件」活動可讓您在 Cloud App Security 活動記錄檔中檢視 Office 365 DLP 原則相符項目。 您可以使用這項功能︰
-    -    查看來自 Office365 DLP 引擎的所有 DLP 相符項目。
+    -    查看來自 Office 365 DLP 引擎的所有 DLP 相符項目。
     -    警示發現特定檔案、SharePoint 網站或原則之 Office 365 DLP 原則相符項目。
     -    調查內容較廣的 DLP 相符項目，例如，存取或下載已觸發 DLP 原則相符項目之檔案的外部使用者。
  
