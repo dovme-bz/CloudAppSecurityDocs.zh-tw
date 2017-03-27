@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>控制
 您可將治理動作套用至整個雲端環境的使用者檔案。 在徹底調查及了解雲端之後，您可以使用治理動作來協助保護組織。  
+
+## <a name="use-policies-to-assess-risk"></a>使用原則評估風險  
+查看未解決的警示後，請移至原則中心檢閱未觸發警示的原則違規。  
+
+-   在 Cloud App Security 儀表板中，依序按一下 **[控制]** 及 **[原則]**。  
+
+-   選取特定的原則，查看符合原則但未觸發警示的 **[立即違規]** 清單。  
+
+-   按一下違規，一次一個，判斷該如何處理每個違規。 如需管理動作的詳細資訊，請參閱以下圖表。  
+
+     如果原則設定為尋找相容性缺口，而有人將信用卡號碼儲存在 OneDrive 的檔案中，原則中就會有相符項目。  
+
+     ![PCI 相符項目](./media/pci-matches.png "PCI 相符項目")  
+
+-   選取相符項目，查看違反原則的實際檔案。  
+
+     ![PCI 內容相符項目](./media/pci-content-matches.png "PCI 內容相符項目")  
+
+     您可以選取檔案本身以取得檔案的相關資訊。  
+
+     您可以按一下 **[共同作業者]**，查看可以存取這個檔案的人員。  
+
+     您可以按一下 **[相符項目]**，查看實際的信用卡號碼。  
+
+     ![內容相符項目 ccn](./media/content-matches-ccn.png "內容相符項目 ccn")  
 
 ## <a name="apply-governance-actions"></a>套用治理動作  
 您可以從原則內部、警示內部以及透過 **[檔案]** 記錄來套用治理動作。  
