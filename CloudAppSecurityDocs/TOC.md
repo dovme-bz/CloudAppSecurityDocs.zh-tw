@@ -35,7 +35,7 @@
 ##### [Cloud Discovery 異常偵測原則](cloud-discovery-anomaly-detection-policy.md)
 #### [活動原則](user-activity-policies.md)
 #### [異常偵測原則](anomaly-detection-policy.md)
-##### [檔案原則](data-protection-policies.md)
+#### [檔案原則](data-protection-policies.md)
 ##### [內容檢查](content-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
 #### [原則範本參考](policy-template-reference.md)
