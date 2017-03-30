@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>版本資訊
@@ -23,6 +23,7 @@ translationtype: HT
 發行日期：2017 年 3 月 20 日
 
 **新功能：**
+-   您現在可以套用原則以包含或排除匯入的使用者群組。 
 -    Cloud App Security Anonymization 現在可讓您設定自訂的加密金鑰。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
 -    為了更充分掌控使用者與帳戶管理，您現在可以從 [帳戶] 頁面內按一下每個使用者旁的齒輪，直接存取每個使用者的 Azure AD 帳戶設定。 這可以方便存取進階使用者管理功能群組管理、MFA 設定、使用者登入相關詳細資訊，以及提供封鎖登入的能力。 
 -    您現在可以透過 Cloud App Security API，匯出待批准應用程式的封鎖指令碼。 深入了解 Cloud App Security 入口網站中的 API，方法是按一下功能表列中的問號，隨即出現 [API 文件]。
@@ -32,7 +33,7 @@ translationtype: HT
 -    針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
 -    在 [應用程式權限] 索引標籤上的應用程式抽屜中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
 -    「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
--    當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
+-    當停用檔案上的 Azure 資訊保護標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
  
 **其他 Salesforce 的支援︰**
 -    您現在可在 Cloud App Security 中暫停或恢復 Salesforce 使用者的權限。 這可在 Salesforce 連線程式的 [帳戶] 索引標籤中完成，方法是按一下特定使用者資料列結尾的齒輪，然後選取 [暫時停權] 或 [恢復權限]，而且還能夠在原則中當作治理動作套用。 在 Cloud App Security 中採取的所有暫時停權與恢復權限的動作，都會記錄在[治理記錄](governance-actions.md)中。 
