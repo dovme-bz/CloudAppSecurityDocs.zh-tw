@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4fc7ea83542a8fee5deb55b17337f3f9ccd3f3d0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>什麼是 Cloud App Security
@@ -50,8 +50,8 @@ Cloud App Security 可整合您雲端的可見度，
 Cloud App Security 通過 Microsoft Compliance 的官方認證，符合 ISO、HIPAA、CSA STAR、歐盟示範條款 (EU Model Clauses) 等等。 若要檢視認證的完整的憑證清單，請前往 [Microsoft Compliance Offerings] (Microsoft Compliance 認證清單) (https://go.microsoft.com/fwlink/?linkid=842039) 選取 [Cloud App Security]。  
 
 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。 如需資料保留的詳細資訊，請參閱[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
-Cloud App Security 以下列方式保留資料： 
- 
+Cloud App Security 如下保留資料︰
+
 - 活動記錄：180 天 
 - 探索資料：90 天 
 - 警示︰180 天 
