@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
@@ -107,6 +107,32 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 深入了解[管理動作](governance-actions.md)。
 
 深入了解 [Azure 資訊保護](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)及查看 Azure 資訊保護[快速入門教學課程](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)。
+
+
+## <a name="integration-with-azure-rights-management"></a>與 Azure 版權管理整合
+
+您的組織必須具有 Azure 版權管理的授權，並已啟用來在 Cloud App Security 與 Azure RMS 之間進行整合。  這兩個不同的步驟可已在[啟用 Azure 版權管理](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中找到。
+
+Cloud App Security 目前僅支援一般保護層級。 未來版本中將提供對 Office、PDF 和影像檔案的原生保護。 
+
+此功能目前適用於儲存於SharePoint Online 和商務用 OneDrive 中的檔案。 未來版本中將支援更多雲端應用程式。
+
+將 Cloud App Security 連線到您的 Office 365 服務之後，您將能夠使用 Cloud App Security RMS 整合功能，可讓您直接在 Cloud App Security 入口網站中使用 RMS 保護文件：
+
+1. 從 [檔案] 頁面上，選取您要保護的檔案，然後按一下檔案資料列結尾的三個點，接著選擇 [保護]。 
+![保護應用程式](./media/protect-app.png)
+2. 系統將要求您選擇一個組織範本以用來保護檔案，然後按一下 [保護]。 
+![保護範本](./media/protect-template.png)
+3. 當您選擇範本並按一下 [保護]之後，Cloud App Security 會套用範本並保護原始的檔案。 受保護的檔案將具有與原始檔案相同的名稱，但含有新的 “.pfile” 副檔名。
+> [!NOTE]
+>     建議您在檔案上套用全公司適用的 RMS 範本，讓組織中的所有使用者都可存取這些檔案，包括檔案的原始擁有者。 檔案的擁有者、檔案的共用原則，以及已經有權存取它的使用者清單，不會在檔案變成受保護狀態時變更。
+
+4. 如果使用者想要存取受保護的檔案，他們必須已在其裝置上安裝 RMS 共用應用程式。 如需詳細資訊，請參閱 [Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)。
+
+5. 您可以隨時都能在 [治理記錄] 中，於先前採取之 [保護] 動作的資料列結尾按一下 [還原] 按鈕來還原此動作。 
+
+
+
 
  
 ## <a name="see-also"></a>另請參閱  

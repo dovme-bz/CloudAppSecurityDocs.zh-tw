@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5db9f82b948f2db192b7c5ba47fb911413397271
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
@@ -127,6 +127,7 @@ translationtype: HT
 |檔案|檔案|從使用者隔離還原|還原被隔離的使用者。|方塊|
 |檔案|檔案|對自己授與讀取權限|授與您自己檔案的讀取權限，讓您可以存取該檔案，並了解它是否有違規。|G Suite|
 |檔案|檔案|允許編輯者進行共用|在 Google 雲端硬碟中，檔案的預設編輯者權限也允許共用。 此治理動作和移除編輯者能力 (共用及啟用編輯者以共用檔案) 相反。|G Suite|
+|檔案|檔案|保護|透過 Microsoft Rights Management，套用組織範本來保護檔案。|Office 365|
 |檔案|檔案|撤銷自己的讀取權限|撤銷您自己對檔案的讀取權限，授與您自己有權限可了解檔案是否有違規情況之後，此項目相當實用。|G Suite|
 |檔案、檔案原則|檔案|移轉檔案擁有權|變更擁有者 - 在原則中選取特定的擁有者。|G Suite|
 |檔案、檔案原則|檔案|移除共同作業者|移除檔案的特定共同作業者。|G Suite、Box、One Drive、SharePoint|

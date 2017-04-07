@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/26/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,38 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d617631819744211df5e6bee1f48df36dcedb7ce
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 2fcc085cc53d2d7580640022029b1a528bea416a
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="working-with-the-risk-score"></a>使用風險分數  
+
+## <a name="the-cloud-app-catalog"></a>雲端應用程式目錄
+
+若要進一步了解 Cloud App Security 的 Cloud Discovery 可以探索哪些雲端應用程式，請使用雲端應用程式目錄。
+
+雲端應用程式目錄包含超過 14,000 個 SaaS 應用程式，您可以依據名稱、網域、風險分數、類別或可用的安全性功能來檢視 (篩選)。
+
+![存取雲端應用程式目錄](./media/risk-cac-dropdown.png)
+
+## <a name="discovery-requests"></a>探索要求
+
+雲端應用程式目錄中的資訊與風險分數是以多種來源為依據。 Microsoft 致力於提供最新的資訊，但不為任何資料來源的正確性提供保證。 
+
+如果您認為應用程式的相關資訊已過期，請與我們連絡。
+
+-    要求分數更新 – 如果您希望我們的小組重新評估此雲端應用程式。
+-    回報新資料 (針對每個特定欄位或一般) – 如果您認為應用程式的相關資訊已過期。
+
+![更新風險資料](./media/risk-cac-feedback.png)
+
+此外，我們鼓勵您建議增加您的組織使用但 Cloud Discovery 目前無法探索的任何雲端應用程式。
+
+![建議新的應用程式](./media/risk-suggest-app.png)
+
+
+## <a name="customizing-the-risk-score"></a>自訂風險分數
+
 Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可靠性的重要資料。 在入口網站中，每個探索到的應用程式都會顯示總分數，代表此特定應用程式的企業運用成熟度的 Cloud App Security 評估。 任何指定應用程式的總分數，都是評估可靠性時，Cloud App Security 考慮的三個子類別之三項子分數的加權平均︰  
   
 -   **一般** - 此類別是指有關公司生產應用程式的基本事項，包括其網域、創建年份和熱門程度。 這些欄位意在展現公司最基本層面的穩定性。  
@@ -32,74 +59,20 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2.  滑動 [設定分數計量] 下的 [重要性]，將欄位權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
+2.  滑動 [設定分數計量] 下的 [重要性]，將欄位或風險類別的權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
   
 3.  此外，您可以在分數計算中設定特定值為無法使用或不適用。 包含時，N/A 值對計算的分數有負比重。  
   
      ![分數](./media/score.png "分數")  
-  
-## <a name="manage-continuous-reports"></a>管理連續報告  
-監視組織的 Cloud Discovery 記錄資料時，自訂連續報告提供更細微的資訊。 透過建立自訂報告，即可能篩選特定地理位置、網路和網站或組織單位。 Cloud Discovery 報告選擇器預設只會顯示下列報告︰  
-  
--  **全域報告**將記錄檔所含全部資料來源的所有資訊合併在入口網站中。  
-  
-- **資料來源特定報告**只顯示特定資料來源的資訊。  
-  
-建立新的連續報告：  
-  
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
-  
-2.  按一下 **「Manage continuous report」** (管理連續報告) 索引標籤。  
-  
-3.  按一下 [建立報告] 按鈕。  
-  
-4.  輸入報告名稱。  
-  
-5.  選取您要包含的資料來源 (全部或特定)。  
-  
-6.  設定要對資料執行的篩選，可以是 [組織單位]、[IP 位址標記] 或 [IP 位址範圍]。 如需使用 IP 位址標記和 IP 位址範圍的詳細資訊，請參閱[根據需求組織資料](general-setup.md#IPtagsandRanges)。  
-  
-    ![建立自訂連續報告](./media/create-custom-continuous-report.png) 
-  
-## <a name="exclude-entities"></a>排除實體  
-如有雜訊特別多且無關的系統使用者或 IP 位址或不相干的應用程式，您可能想要從已經分析的 Cloud Discovery 資料中排除它們的資料。 例如，您可能想要排除源自 127.0.0.1 或本機主機的所有資訊。  
-  
-建立一個排除項目︰  
-  
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
-  
-2.  按一下 [排除實體] 索引標籤。  
-  
-3.  選擇 [已排除的使用者] 或 [已排除的 IP 位址] 索引標籤，然後按一下按鈕以 [新增使用者] 或 [新增 IP 位址]。  
-  
-4.  新增使用者別名或 IP 位址。 我們建議您加入為何排除使用者或 IP 位址的相關資訊。  
-  
-     ![排除使用者](./media/exclude-user.png "排除使用者")  
-  
-## <a name="deleting-cloud-discovery-data"></a>刪除 Cloud Discovery 資料  
-有數個原因讓您想要刪除 Cloud Discovery 資料。 我們建議您有下列情況時刪除︰  
-  
--   如果您手動上傳記錄檔，而且長時間才以新記錄檔更新系統，卻不希望舊資料影響結果。  
-  
--   當您設定新的自訂資料檢視時，它只會從該時點開始套用新的資料，因此您可能想要清除舊資料，然後再上傳一次記錄檔，以便自訂資料檢視來取得記錄檔資料中的事件。  
-  
--   如果多個使用者或 IP 位址在離線一段時間後，最近又開始活動，他們的活動會被識別為異常，而您可能會收到許多誤判違規。  
-  
-刪除 Cloud Discovery 資料︰  
-  
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
-  
-2.  按一下 [刪除資料] 索引標籤。  
-  
-     請務必確認您要刪除資料再繼續 - 此動作無法復原，且會刪除系統中的**所有** Cloud Discovery 資料。  
-  
-3.  按一下 [刪除] 按鈕。  
-  
-     ![刪除資料](./media/delete-data.png "刪除資料")  
-  
-    > [!NOTE]  
-    >  刪除程序需要幾分鐘，不會立即完成。  
 
+您可以在 Cloud App Security 入口網站中，取得了解如何往上堆疊風險分數所需的所有資訊。
+若要深入了解特定風險分類中風險因素的權重，請使用應用程式設定檔中每個欄位名稱右邊的 [i] 按鈕。 這會提供 Cloud App Security 如何針對特定風險因素進行計分的確切資訊。 分數是風險因素在 1-10 級別中的值 + 它在風險分類中的權重：
+
+![風險計算](./media/cac-weight.png)
+  
+若要了解風險類別在應用程式總分數中的權重，請將滑鼠停留在風險分類分數上方：
+
+![風險分類權重](./media/risk-category-weight.png)
 
 
  

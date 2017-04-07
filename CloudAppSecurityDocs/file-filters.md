@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a44be5715d0a9af18afcafaeec3c6180d4e9283
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="files"></a>檔案
@@ -118,6 +118,9 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 - 擁有者：按一下 [擁有者] 即可檢視此檔案擁有者的使用者頁面。
 - 相符的原則：按一下 [相符的原則] 連結即可查看此檔案符合的原則清單。
 - 分類標籤：按一下 [分類標籤] 即可檢視此檔案中的 Azure 資訊保護分類標籤清單。 您接著可以依據符合此標籤的所有檔案進行篩選。    
+
+隱藏式檔案選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外檔案和向下切入的內容連結。 例如，如果您將游標移到 [擁有者] 欄位旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將擁有者新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**分類標籤**。
+
 
 ![隱藏式檔案選單](./media/file-drawer.png "隱藏式檔案選單")  
   

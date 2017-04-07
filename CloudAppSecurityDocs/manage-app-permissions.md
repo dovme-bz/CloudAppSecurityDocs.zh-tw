@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>管理應用程式權限
@@ -27,11 +27,7 @@ translationtype: HT
 
 若要存取 [應用程式權限] 索引標籤：
 
-1. 在 Cloud App Security 入口網站中，按一下 [調查]，然後在 [連線應用程式]下方，選取 [Office 365]。 
-> [!Note]
-> 您必須先將 Cloud App Security 連接到 Office 365，才能使用應用程式權限。
-
-2. 接著在 Office 365 儀表板內，按一下 [應用程式權限] 索引標籤。
+在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [應用程式權限]。
 
 
  ![應用程式權限](./media/app-permissions.png)

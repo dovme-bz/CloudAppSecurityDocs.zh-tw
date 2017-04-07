@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2016
+ms.date: 4/2/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: c8f22fc1c949a265b3a53cc4a534550be9601d10
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="activities"></a>活動
-Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 您可以篩選 [活動記錄]，進而找到特定活動。 您可以根據活動建立原則，然後定義想要收到的警示項目並採取動作。 您也可以搜尋對特定檔案執行的活動。 我們取得之每項活動的活動與資訊類型，都是取決於應用程式以及應用程式可提供的資料種類。 
+Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
+
+> [!NOTE] 
+> 如需 Cloud App Security 所監視的 Office 365 活動完整清單，請參閱[搜尋 Office 365 安全與規範中心的稽核記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)
+
+您可以篩選 [活動記錄]，進而找到特定活動。 您可以根據活動建立原則，然後定義想要收到的警示項目並採取動作。 您也可以搜尋對特定檔案執行的活動。 我們取得之每項活動的活動與資訊類型，都是取決於應用程式以及應用程式可提供的資料種類。 
 
 例如，您可以使用 [活動記錄] 尋找組織中使用過期作業系統或瀏覽器的使用者，方法如下：當您在 [活動記錄] 頁面上將應用程式連接到 Cloud App Security 之後，請使用進階篩選，並選取 [User agent tag]\(使用者代理程式標記)。 然後選取 [過期的瀏覽器] 或 [過期的作業系統]。
 
@@ -121,6 +126,9 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
 - 位置：按一下位置用 Bing 地圖服務檢視位置。
 - IP 位址類別與標記：按一下 IP 標記以檢視在此活動中找到的 IP 標記清單。 您接著可以依據符合此標記的所有活動進行篩選。    
+
+隱藏式活動選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外活動和向下切入的內容連結。 例如，如果您將游標移到 IP 位址類別旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將 IP 位址新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**使用者群組**。
+
 
 ![隱藏式活動選單](./media/activity-drawer.png "隱藏式活動選單")  
   

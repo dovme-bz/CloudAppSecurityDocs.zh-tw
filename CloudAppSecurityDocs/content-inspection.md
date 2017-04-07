@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="content-inspection"></a>內容檢查
@@ -42,7 +42,7 @@ Cloud App Security 內容檢查功能的運作方式如下︰
 
 - 電子郵件地址 
 - 信用卡號碼 
-  - 所有的信用卡公司 (Visa、MasterCard、美國運通、大來卡、發現卡、JCB、Dankort、及中國銀聯) 
+  -    所有的信用卡公司 (Visa、MasterCard、美國運通、大來卡、發現卡、JCB、Dankort、及中國銀聯) 
   - 分隔符號- 空格、點或虛線
   - 這項掃描也包含 Luhn 驗證
 - SWIFT 銀行代碼
@@ -59,6 +59,15 @@ Cloud App Security 內容檢查功能的運作方式如下︰
 - 住家地址
 - 護照卡
 - 社會安全號碼
+
+## <a name="supported-languages"></a>支援的語言
+
+Cloud App Security 內容檢查引擎：
+-    支援所有 Unicode 字元
+-    涵蓋超過 1,000 個檔案類型
+-    支援多種語言，特別是使用 Unicode 字元集的檔案。 請確定會定義您的原則來處理那些語言，例如如果您正在尋找關鍵字，您必須跨您想要使用的語言放入關鍵字。
+-    在使用非 Unicode 編碼 (例如簡體中文 GB2312) 的文字型檔案類型中，針對 Unicode 中文關鍵字進行比較，將不會如預期般運作。
+-    針對依賴協力廠商程式庫的檔案類型，比對字串與文字不一定會如預期般運作。 這在檔案中最常見 (例如二進位檔案類型)，其中的內容檢查依賴協力廠商程式庫，傳回適用於語言和字元集的 Java 字串。
 
 
 

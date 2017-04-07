@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>版本資訊
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security 版本 94
+發行日期：2017 年 4 月 2 日
+
+**新功能：**
+-    Cloud App Security 現在已與 Azure RMS 整合。 您可以直接從 Cloud App Security 入口網站中，利用 Microsoft Rights Management 來保護 Office 365 OneDrive 和 Sharepoint Online 中的檔案。 這可以從 [檔案] 頁面完成。 如需詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。 未來版本中將提供對其他應用程式的支援。
+-    到目前為止，當您的網路中發生傀儡程式和編目程式活動時，尤其難以辨識，因為這類活動不是由使用者在您的網路上所執行。 Bot 和編目程式可以在您不知情的狀況下，於您的電腦上執行惡意的工具。 現在，Cloud App Security 提供工具，讓您能夠在傀儡程式和編目程式於您的網路上執行時進行查看。 您可以使用新的使用者代理程式標記來篩選活動記錄中的活動。 使用者代理程式標記可讓您篩選傀儡程式所執行的所有活動，而您可以使用它來建立原則，以便每次偵測到這種類型的活動時警示您。 若未來版本以將這個有風險的活動內嵌到異常偵測警示的形式來包含它時，將為您提供最新訊息。 
+-    新的統一應用程式權限頁面可讓您更輕鬆地調查已授與使用者對協力廠商應用程式的權限。 按一下 [調查] > [應用程式權限]，您現在可以透過每個已連接應用程式之應用程式權限的頁面，來檢視已授與使用者對協力廠商應用程式的所有權限清單，此頁面讓您能夠在各種應用程式與已授與的權限間進行比較。  如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
+-    您可以從隱藏式表格選單中篩選資料，更容易進行調查。
+在 [活動記錄] 中，[檔案] 表格和 [應用程式權限] 頁面現已增強且具有新的內容動作，讓您在調查過程中進行樞紐分析時能夠輕鬆許多。 我們也新增了設定頁面的快速連結，以及按一下就能複製資料的功能。 如需詳細資訊，請參閱[使用隱藏式檔案與活動選單](file-filters.md)的相關資訊。
+-    已完成對 Microsoft Teams 推出 Microsoft Office 365 活動記錄及警示的支援。
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security 版本 93
 發行日期：2017 年 3 月 20 日
