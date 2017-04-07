@@ -1,11 +1,11 @@
 ---
-title: "控制 | Microsoft Docs"
+title: "如何使用治理動作以控制雲端應用程式使用情況 | Microsoft Docs"
 description: "本文章提供的相關資訊說明您可以在 Cloud App Security 中採取哪些治理動作，以控制組織的雲端應用程式使用方式。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,44 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
-
 # <a name="control"></a>控制
 您可將治理動作套用至整個雲端環境的使用者檔案。 在徹底調查及了解雲端之後，您可以使用治理動作來協助保護組織。  
+
+## <a name="use-policies-to-assess-risk"></a>使用原則評估風險  
+查看未解決的警示後，請移至原則中心檢閱未觸發警示的原則違規。  
+
+-   在 Cloud App Security 儀表板中，依序按一下 **[控制]** 及 **[原則]**。  
+
+-   選取特定的原則，查看符合原則但未觸發警示的 **[立即違規]** 清單。  
+
+-   按一下違規，一次一個，判斷該如何處理每個違規。 如需管理動作的詳細資訊，請參閱以下圖表。  
+
+     如果原則設定為尋找相容性缺口，而有人將信用卡號碼儲存在 OneDrive 的檔案中，原則中就會有相符項目。  
+
+     ![PCI 相符項目](./media/pci-matches.png "PCI 相符項目")  
+
+-   選取相符項目，查看違反原則的實際檔案。  
+
+     ![PCI 內容相符項目](./media/pci-content-matches.png "PCI 內容相符項目")  
+
+     您可以選取檔案本身以取得檔案的相關資訊。  
+
+     您可以按一下 **[共同作業者]**，查看可以存取這個檔案的人員。  
+
+     您可以按一下 **[相符項目]**，查看實際的信用卡號碼。  
+
+     ![內容相符項目 ccn](./media/content-matches-ccn.png "內容相符項目 ccn")  
 
 ## <a name="apply-governance-actions"></a>套用治理動作  
 您可以從原則內部、警示內部以及透過 **[檔案]** 記錄來套用治理動作。  
 
-您可以隨時前往 **[設定]** 齒輪 ![設定圖示](./media/settings-icon.png "settings icon")，選擇 **[治理記錄]**，以檢閱並查看所有先前套用之治理動作的狀態。  
+您可以隨時前往 [設定] 齒輪 ![設定圖示](./media/settings-icon.png "設定圖示")，並選擇 [治理記錄]，以檢閱並查看所有先前套用之治理動作的狀態。  
 
-若有任何失敗的治理動作，選擇**重試**圖示 ![重試圖示](./media/retry-icon.png "retry icon") 即可再次套用。  
+若有任何失敗的治理動作，選擇**重試**圖示 ![重試圖示](./media/retry-icon.png "重試圖示") 即可再次套用。  
 
 不同類型的原則、違規及應用程式，可用的治理動作也各異。  
 
@@ -42,7 +64,7 @@ ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
 >   
 >  如需指引，您可以使用 **[篩選]** 區段中的 **[編輯及預覽結果]** 按鈕。  
 
-![檔案原則編輯及預覽結果](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![檔案原則編輯及預覽結果](./media/file-policy-edit-and-preview-results.png "檔案原則編輯及預覽結果")  
 
 ## <a name="migration"></a>移轉  
 Cloud App Security 可讓您知道組織中的使用者正在使用哪些應用程式，並提供監視新應用程式採用情況的工具，以協助您進行移轉。 其中也有相關工具讓您查看大家已在使用哪些應用程式，協助您了解可為組織提供何種類型的應用程式。  
@@ -56,7 +78,7 @@ Cloud App Security 可讓您知道組織中的使用者正在使用哪些應用�
 
     1.  在您的 **[Cloud Discovery 儀表板]** 中，選擇 **[Dropbox]**，然後選擇 **[IP 位址]** 或 **[使用者]** 索引標籤。  
 
-    2.  選擇箭號 ![箭號圖示](./media/arrow-icon.png "arrow icon")，然後選擇 **[匯出]**。  
+    2.  選擇箭號 ![箭號圖示](./media/arrow-icon.png "箭號圖示")，然後選擇 [匯出]。  
 
 ### <a name="find-more-secure-alternatives"></a>尋找其他更安全的選項  
 Cloud App Security 服務類別目錄可協助您尋找適用於組織的替代方案，而不是使用者可能正在使用的高風險應用程式。  
@@ -67,7 +89,7 @@ Cloud App Security 服務類別目錄可協助您尋找適用於組織的替代�
 
 2.   使用 [類別] 下方的 [生產力] 來篩選應用程式。  
 
-3.   針對每個使用中的應用程式，查看 **[分數]** 以了解它是否安全，以及不安全的原因。  
+3.   針對每個使用中的應用程式，查看 [分數] 以了解它是否安全，以及不安全的原因。  
 
 4.   如果您決定要為整個組織購買企業授權，建議您同時查看 **[使用者]** 資料行。 您可在做決定前，於該處查看最受您使用者歡迎的項目、其是否受信任，以及其具備哪些安全性功能。  
 
@@ -75,9 +97,3 @@ Cloud App Security 服務類別目錄可協助您尋找適用於組織的替代�
 若要了解如何使用及設定原則來控制雲端應用程式的使用情形，請參閱[使用原則控制雲端應用程式](control-cloud-apps-with-policies.md)。   
 如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

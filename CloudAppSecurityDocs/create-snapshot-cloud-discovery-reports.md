@@ -1,11 +1,11 @@
 ---
-title: "建立 Cloud Discovery 快照集報告 | Microsoft Docs"
+title: "建立 Cloud Discovery 雲端應用程式使用情況的快照集報告 | Microsoft Docs"
 description: "本文提供的資訊說明如何手動上傳記錄檔，以建立 Cloud Discovery 應用程式的快照集報告。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>建立 Cloud Discovery 快照集報告
 請務必手動上傳記錄檔，讓 Cloud App Security 剖析過後再嘗試使用自動記錄收集器。
 如果還沒有記錄檔，而您想要查看記錄檔應有的外觀範例，請依照下列程序，下載範例記錄檔查看記錄檔應有的外觀。
@@ -60,7 +57,7 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
      ![探索設定索引標籤](./media/discovery-settings-tab.png)
 11. 接下來，依序選取 [管理快照集報告] 和您的快照集報告。
  
-![快照集報告的管理](./media/snapshot-report-managment.png)
+![快照報告管理](./media/snapshot-report-managment.png)
 
   
       
@@ -71,8 +68,3 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

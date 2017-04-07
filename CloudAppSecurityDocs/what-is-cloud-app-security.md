@@ -1,11 +1,11 @@
 ---
-title: "什麼是 Cloud App Security | Microsoft Docs"
+title: "什麼是 Cloud App Security？ | Microsoft Docs"
 description: "本主題說明 Cloud App Security 及其運作方式。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,9 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
-
-
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>什麼是 Cloud App Security
 
@@ -26,7 +24,7 @@ ms.openlocfilehash: 64881249bbf81ad7b181eed53035b7b19791d0db
 
 轉移至雲端雖然可增加員工的彈性並降低 IT 成本，但也在維護組織安全方面帶來新的複雜性與挑戰。 若要完整發揮雲端應用程式的優點，IT 團隊必須在支援存取與維持掌控權之間找到適當的平衡，才可保護重要的資料。  
 
-Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是全方位的解決方案，可協助組織充分發揮雲端應用程式所保證的優勢，同時透過改良的活動可見度來維持控管能力。 它也能針對跨雲端應用程式的重要資料，協助提供強化的保護。 貴組織可以使用有助找出影子 IT、評估風險、強制執行原則、調查活動並停止威脅的相關工具，更安全地轉移到雲端，同時保有重要資料的控管能力。  
+Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是全方位的解決方案，可協助組織充分發揮雲端應用程式所保證的優勢，同時透過改良的活動可見度來維持控管能力。 它也能針對跨雲端應用程式的重要資料，協助提供強化的保護。 貴組織可以使用有助找出影子 IT、評估風險、強制執行原則、調查活動並停止威脅的相關工具，更安全地轉移到雲端，同時保有重要資料的控管能力。 
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security 的架構  
 
@@ -45,14 +43,18 @@ Cloud App Security 可整合您雲端的可見度，
 -   使用易於部署且善用提供者 API 的 App 連線程式，以取得您所連接之應用程式的可見度及治理功能。  
 -   透過設定並持續精確微調原則，協助您保有掌控度。  
 
-![Cloud App Security 架構](./media/architecture.png)  
+![Cloud App Security 架構圖](./media/architecture.png)  
 
-> [!NOTE]  
-> 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。如需資料保留的詳細資訊，請參閱我們的[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)以及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
+### <a name="data-retention--compliance"></a>資料保留與相容性
+
+Cloud App Security 通過 Microsoft Compliance 的官方認證，符合 ISO、HIPAA、CSA STAR、歐盟示範條款 (EU Model Clauses) 等等。 若要檢視認證的完整的憑證清單，請前往 [Microsoft Compliance Offerings] (Microsoft Compliance 認證清單) (https://go.microsoft.com/fwlink/?linkid=842039) 選取 [Cloud App Security]。  
+
+當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。 如需資料保留的詳細資訊，請參閱[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
 Cloud App Security 如下保留資料︰
->- 活動記錄：180 天
->- 探索資料：90 天
->- 警示︰180 天
+
+- 活動記錄：180 天 
+- 探索資料：90 天 
+- 警示︰180 天 
 
 Cloud App Security 從這些來源收集資料後，即會對資料執行複雜的分析。 它會立即提醒您有異常活動，並讓您深入了解您的雲端環境。 您可以在 Cloud App Security 中設定原則，並使用該原則保護雲端環境中的所有項目。  
 
@@ -82,9 +84,3 @@ Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式�
 在[開始使用 Cloud App Security](getting-started-with-cloud-app-security.md) 中了解基本概念。    
 如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

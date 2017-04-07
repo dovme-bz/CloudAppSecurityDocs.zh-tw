@@ -1,11 +1,11 @@
 ---
-title: "為內容檢查進行疑難排解 | Microsoft Docs"
+title: "在 Cloud App Security 中為內容檢查錯誤進行疑難排解 | Microsoft Docs"
 description: "本主題提供內容檢查狀態及其意義的清單。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
-
-
+ms.openlocfilehash: 02451f0bc49cc5b3365673806562708943de7cfd
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="troubleshooting-content-inspection"></a>為內容檢查進行疑難排解
 |內容檢查狀態|描述|
 |----|----|
@@ -45,8 +42,3 @@ ms.openlocfilehash: 65e1957f413ff72b4ddfc76dc01e9514c721104c
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

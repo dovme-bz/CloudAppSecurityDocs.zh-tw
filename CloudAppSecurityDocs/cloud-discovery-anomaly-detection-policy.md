@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 異常偵測原則 | Microsoft Docs"
+title: "在 Cloud App Security 中建立 Cloud Discovery 異常偵測原則 | Microsoft Docs"
 description: "此主題提供如何使用 Cloud Discovery 異常偵測原則的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3c78f9b9eca0c88256951ba5e58b656b6d5b14ab
-ms.openlocfilehash: 1bbf3b0b6c36cb7b29826efc598a66a41a53b3e2
-
-
+ms.openlocfilehash: ddc5f406aaa9d18e605c796cc8dba6c3927c6d2b
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常偵測原則
 本文提供原則的參考詳細資訊，並說明每種原則類型和您可以針對每個原則設定的欄位。  
   
@@ -30,19 +27,19 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
 
 針對每個原則，設定下列項目：
 
-1. 決定是否要讓原則根據範本，相關原則範本是 [Anomlylous behavior in discovered users] (探索到之使用者中的異常行為) 範本，可在探索到之使用者和應用程式中偵測到異常行為時發出警示，例如：與其他使用者相較之下的大量上傳資料、與使用者歷程記錄相較之下的大型使用者交易。 您也可以選取 [Anomalous behavior of discovered IP addresses] (探索到之 IP 位址的異常行為) 範本，可在探索到之 IP 位址和應用程式中偵測到異常行為時發出警示，例如：與其他 IP 位址相較之下的大量上傳資料、與 IP 位址歷程記錄相較之下的大型應用程式交易。 
+1. 決定是否要根據範本來建立原則，相關原則範本是「Anomalous behavior in discovered users (探索到之使用者中的異常行為) 」範本，可在探索到之使用者和應用程式中偵測到異常行為時發出警示，例如：與其他使用者相較之下的大量上傳資料，或是與使用者歷程記錄相較之下的大型使用者交易。 您也可以選取 「Anomalous behavior of discovered IP addresses」 (探索到之 IP 位址的異常行為) 範本，可在探索到之 IP 位址和應用程式中偵測到異常行為時發出警示，例如：與其他 IP 位址相較之下的大量上傳資料、與 IP 位址歷程記錄相較之下的大型應用程式交易。 
  
 2. 提供 [原則名稱] 和 [描述]。  
 
-3. 按一下 [新增篩選]，為您想要監視的應用程式建立篩選條件。 您可以選取特定應用程式、應用程式 [類別]，或依 [名稱]、[網域] 和 [Risk factor] (風險因素) 進行篩選，然後按一下 [儲存]。
+3. 按一下 [新增篩選]，為您想要監視的應用程式建立篩選條件。 您可以選取特定應用程式、應用程式 [類別]，或依 [名稱]、[網域] 和 「Risk factor」 (風險因素) 進行篩選，然後按一下 [儲存]。
 
 4. 在 [套用至] 下，設定您想要如何篩選使用量。 您可使用下列兩種不同方式，篩選受監視的使用量：  
   
-    -   連續報告 – 選擇是否監視 [All continuous reports] (所有連續報告) (預設值)，或選擇監視 [Specific continuous reports] (特定連續報告)。  
+    -   連續報告 – 選擇是否監視 「All continuous reports」 (所有連續報告) (預設值)，或選擇監視 「Specific continuous reports」 (特定連續報告)。  
   
-        -   選取 [All continuous reports] (所有連續報告) 時，系統會將每個增加的使用量和一般使用模式 (從所有資料檢視學習而得) 進行比較。  
+        -   選取 「All continuous reports」 (所有連續報告) 時，系統會將每個增加的使用量和一般使用模式 (從所有資料檢視學習而得) 進行比較。  
   
-        -   選取 [Specific continuous reports] (特定連續報告) 時，系統會將每個增加的使用量和一般使用模式 (從相同資料檢視中觀察到的增加量學習而得) 進行比較。  
+        -   選取 「Specific continuous reports」 (特定連續報告) 時，系統會將每個增加的使用量和一般使用模式 (從相同資料檢視中觀察到的增加量學習而得) 進行比較。  
   
     -   **Users and IP addresses (使用者和 IP 位址)** – 已與每個雲端應用程式使用量建立關聯的使用者、IP 位址，或兩者。  
   
@@ -50,16 +47,16 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
   
         -   選取 [IP 位址] 時，將會忽略已與應用程式使用量建立關聯的使用者 (若有的話)。  
   
-        -   選取 [Users and IP addresses] (使用者與 IP 位址) (預設值) 時，將會考慮這兩種關聯，但若使用者與 IP 位址之間有緊密的對應性，則可能會產生重複警示。
+        -   選取 「Users and IP addresses」 (使用者與 IP 位址) (預設值) 時，將會考慮這兩種關聯，但若使用者與 IP 位址之間有緊密的對應性，則可能會產生重複警示。
     -   只對下列日期以後發生的可疑活動觸發警示 – 任何在選取的日期之前發生的應用程式使用量增加情況皆會被忽略。 不過，系統會從所選日期之前開始的活動進行學習，藉此建立標準使用模式。  
   
 5. 在 [警示] 下，您可以設定警示敏感度。 您可以使用多種方式來控制原則所觸發的警示數目：  
   
-    -   [Select anomaly detection sensitivity] (選取異常偵測敏感度) 滑桿 – 針對每週每 1,000 位使用者的前 X 個異常活動觸發警示。 將會針對具有最高風險的活動觸發警示。  
+    -   「Select anomaly detection sensitivity」 (選取異常偵測敏感度) 滑桿 – 針對每週每 1,000 位使用者的前 X 個異常活動觸發警示。 將會針對具有最高風險的活動觸發警示。  
   
-    -   **Daily alert limit (每日警示限制)** – 限制一天當中可產生的警示數目。 您可以選擇 [Send alert as email] (將警示傳送為電子郵件)、[Send alert as text message] (將警示傳送為簡訊) 或兩者。 簡訊所傳送的訊息將限制為每天 10 則，針對 UTC 時區，這表示會在 UTC 時區午夜重設 10 則訊息限制。
+    -   **Daily alert limit (每日警示限制)** – 限制一天當中可產生的警示數目。 您可以選擇 「Send alert as email」 (將警示傳送為電子郵件)、「Send alert as text message」 (將警示傳送為簡訊) 或兩者。 簡訊所傳送的訊息將限制為每天 10 則，針對 UTC 時區，這表示會在 UTC 時區午夜重設 10 則訊息限制。
 
-    - 您也可以選取 [Use your organization's default settings] (使用組織的預設設定) 選項，這個選項會填入組織預設設定的 [Daily alert limit] (每日警示限制)、電子郵件和簡訊設定。 若要設定預設值，請填寫 [Alert configuration] (警示設定) 設定，然後按一下 [Save these alert settings as the default for your organization] (將這些警示設定儲存為組織的預設值)。
+    - 您也可以選取 「Use your organization's default settings」 (使用組織的預設設定) 選項，這個選項會填入組織預設設定的 「Daily alert limit」 (每日警示限制)、電子郵件和簡訊設定。 若要設定預設值，請填寫 「Alert configuration」 (警示設定) 設定，然後按一下 「Save these alert settings as the default for your organization」 (將這些警示設定儲存為組織的預設值)。
 
 6. 按一下 [建立]。
 
@@ -71,8 +68,3 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-

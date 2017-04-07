@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery 原則 | Microsoft Docs"
+title: "在 Cloud App Security 中建立 Cloud Discovery 應用程式原則 | Microsoft Docs"
 description: "本主題提供如何使用 Cloud Discovery 原則的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
-
-
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-policies"></a>Cloud Discovery 原則
     
 ## <a name="creating-an-app-discovery-policy"></a>建立應用程式探索原則  
@@ -29,7 +26,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
   
 2.  按一下 [建立原則] ，然後選取 [App Discovery] 原則。  
   
-     ![應用程式探索原則功能表](./media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![應用程式探索原則功能表](./media/app-discovery-policy-menu.png "應用程式探索原則功能表")  
   
 3.  為您的原則命名並描述，如果希望，也可以範本為依據；如需原則範本的詳細資訊，請參閱 [Control cloud apps with policies](control-cloud-apps-with-policies.md) (使用原則控制雲端應用程式)。  
   
@@ -52,7 +49,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
 您可在底部設定要針對已探索到的應用程式觸發警示的閾值，以僅在環境中超過 100 個使用者使用此應用程式，且從服務下載了一定資料量的情況下，才觸發警示。   
 此外，您可以設定想要接收的每日警示限制。  
   
-![應用程式探索原則範例](./media/app-discovery-policy-example.png "app discovery policy example")  
+![應用程式探索原則範例](./media/app-discovery-policy-example.png "應用程式探索原則範例")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Cloud Discovery 異常偵測  
 Cloud App Security 會搜尋 Cloud Discovery 的所有記錄檔是否有異常。 例如，某位使用者從未使用過 Dropbox，突然上傳 600 GB 到 Dropbox，或是在特定應用程式上的交易比起平日超出許多。 異常偵測原則預設為已啟用，所以不需要設定新的原則即可正常運作，但您可以在預設原則中微調想要收到警示的異常類型。  
@@ -61,7 +58,7 @@ Cloud App Security 會搜尋 Cloud Discovery 的所有記錄檔是否有異常�
   
 2.  按一下 [建立原則] ，然後選取 [Cloud Discovery 異常偵測原則]。  
   
-     ![Cloud Discovery 異常偵測原則功能表](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![Cloud Discovery 異常偵測原則功能表](./media/cloud-discovery-anomaly-detection-policy-menu.png "Cloud Discovery 異常偵測原則功能表")  
   
 3.  為您的原則命名並描述，如果希望，也可以範本為依據；如需原則範本的詳細資訊，請參閱 [Control cloud apps with policies](control-cloud-apps-with-policies.md) (使用原則控制雲端應用程式)。  
   
@@ -78,7 +75,7 @@ Cloud App Security 會搜尋 Cloud Discovery 的所有記錄檔是否有異常�
   
 9. 按一下 [建立]。  
   
-![新的異常行為探索原則](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+![新的探索異常原則](./media/new-discovery-anomaly-policy.png "新的探索異常原則")  
   
 ## <a name="see-also"></a>另請參閱  
 [使用者活動原則](user-activity-policies.md)   
@@ -86,8 +83,3 @@ Cloud App Security 會搜尋 Cloud Discovery 的所有記錄檔是否有異常�
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
