@@ -1,11 +1,11 @@
 ---
-title: "設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
+title: "在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
 description: "本主題提供如何上傳記錄檔以建立自動 Cloud Discovery 報告的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
-
-
+ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
 記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟每隔 20 分鐘接收一次，然後將檔案上傳到 Cloud App Security。
 
@@ -44,7 +41,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 ## <a name="set-up-and-configuration"></a>安裝與設定  
   
-### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
   
 1.  請移至自動上傳設定頁面上︰  
     在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon") 以及 [記錄收集器]。  
@@ -77,7 +74,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 4.  按一下 Hyper-V 或 VMWare，以**下載**新的記錄收集器虛擬機器，並使用您在入口網站接收到的密碼解壓縮檔案。  
   
-### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 
 > [!NOTE] 
 > 下列步驟描述 Hyper-V 中的部署。 VM Hypervisor 的部署步驟有些不同。  
@@ -114,7 +111,7 @@ sudo network_config
 
 此時，您的記錄收集器應已連接網路，並能夠連線至 Cloud App Security 入口網站。  
 
-### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>步驟 3 – 記錄集合的內部部署設定 
+### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>步驟 3 – 記錄集合的內部部署設定 
 當第一次登入記錄收集器並從入口網站匯入記錄收集器的設定時，步驟如下： 
 
 1.  使用入口網站提供給您的互動式管理認證，透過 SSH 登入記錄收集器。 (如果這是您第一次登入主控台，您必須變更密碼，並在變更密碼之後，再次登入。 如果您使用終端機工作階段，可能需要重新啟動終端機工作階段。 )
@@ -156,8 +153,3 @@ sudo network_config
     
       
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

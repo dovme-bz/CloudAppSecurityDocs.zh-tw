@@ -1,11 +1,11 @@
 ---
-title: "檔案 | Microsoft Docs"
+title: "了解 Cloud App Security 中可用的檔案資料和篩選 | Microsoft Docs"
 description: "本參考主題提供 Cloud App Security 所使用之檔案和檔案篩選器的類型資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,20 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 046816dbffffb8f91b11656375730b07be4b4fb0
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="files"></a>檔案
 
 
 Cloud App Security 讓您可從連接的應用程式看見所有檔案，以提供資料保護。 當您使用 App 連線程式連接 Cloud App Security 與應用程式後，Cloud App Security 會掃描所有的檔案，例如，儲存在 OneDrive 和 Salesforce 的所有檔案。 然後，Cloud App Security 每次修改都會重新掃描每個檔案，修改的部分可以是內容、中繼資料或共用權限。 掃描的時間取決於儲存在應用程式中的檔案數目。 您也可以使用 [檔案] 頁面篩選檔案，調查雲端應用程式中儲存的資料類型。 
 
-例如，您可以使用 [檔案] 頁面保護標示為**機密**的外部共用檔案，方法如下︰將應用程式連接到 Cloud App Security 之後，即可與 Azure 資訊保護整合。 然後，在 [檔案] 頁面中，篩選出標示**機密**的檔案。 如果透過篩選 [共同作業者] 篩選條件來排除網域，看到有組織外部共用的**機密**檔案，您可以建立檔案原則，偵測已套用不當存取層級的**機密**檔案，並且為它們套用自動治理動作 (例如 [Remove external collaborators] (移除外部共同作業者) 和 [Send policy-match digest to file owner] (將原則相符摘要傳送給擁有者))，防止組織資料遺失。
+例如，您可以使用 [檔案] 頁面保護標示為**機密**的外部共用檔案，方法如下︰將應用程式連接到 Cloud App Security 之後，即可與 Azure 資訊保護整合。 然後，在 [檔案] 頁面中，篩選出標示**機密**的檔案。 如果透過篩選 [共同作業者] 篩選條件來排除網域，看到有組織外部共用的**機密**檔案，您可以建立檔案原則，偵測已套用不當存取層級的**機密**檔案，並且為它們套用自動治理動作 (例如 「Remove external collaborators」 (移除外部共同作業者) 和 「Send policy-match digest to file owner」 (將原則相符摘要傳送給擁有者))，防止組織資料遺失。
 
  ![機密檔案篩選器](media/file-filter-confidential.png)
 
-以下是如何利用 [檔案] 頁面的另一個範例。 確定您的組織中沒有在過去 6 個月未修改過的公開或外部共用檔案：將應用程式連接到 Cloud App Security 之後，請在 [檔案] 頁面中篩選出檔案，而檔案的存取層級為 [外部] 或 [公開]，並將 [上次修改時間] 日期設定為 6 個月之前。 您可以建立檔案原則來偵測這些過時的公用檔案，方法是按一下 [New policy from search] (從搜尋新增原則)，並且為它們套用自動治理動作 (例如 [移除外部使用者])，防止組織資料遺失。
+以下是如何利用 [檔案] 頁面的另一個範例。 確定您的組織中沒有在過去 6 個月未修改過的公開或外部共用檔案：將應用程式連接到 Cloud App Security 之後，請在 [檔案] 頁面中篩選出檔案，而檔案的存取層級為 [外部] 或 [公開]，並將 [上次修改時間] 日期設定為 6 個月之前。 您可以建立檔案原則來偵測這些過時的公用檔案，方法是按一下 「New policy from search」 (從搜尋新增原則)，並且為它們套用自動治理動作 (例如 [移除外部使用者])，防止組織資料遺失。
 
  ![篩選過時外部檔案](media/file-example-stale-external.png)
 
@@ -41,7 +38,7 @@ Cloud App Security 讓您可從連接的應用程式看見所有檔案，以提�
 
  ![進階檔案記錄篩選條件](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a>檔案篩選器 
+###  <a name="Filefilters"></a>檔案篩選器 
  
 Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如：存取層級、檔案類型) 來監視任何檔案類型。 
  
@@ -84,7 +81,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 -   檔案名稱 – 雲端應用程式中定義的檔案名稱或名稱的子字串；例如，名稱中含有密碼的所有檔案。   
   
--   檔案標記 - 搜尋具有 Azure 資訊保護所設定之特定標記的檔案。 這需要與 Azure 資訊保護整合。
+-   分類標籤 - 搜尋具有 Azure 資訊保護所設定特定標籤的檔案。 這需要與 Azure 資訊保護整合。
 
 -   檔案類型 – Cloud App Security 會接收來自服務的兩個 MIME 類型，並掃描檔案以判斷真正的檔案類型。 請注意，這項掃描適用於資料掃描相關的檔案 (文件、影像、簡報、試算表、文字檔和 zip/封存檔)。 依據檔案/資料夾類型進行篩選，例如 ... 的所有資料夾或 ... 的所有試算表檔案。
 
@@ -114,13 +111,16 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 ## <a name="working-with-the-file-drawer"></a>使用檔案抽屜
 
-您可以透過按一下檔案記錄中的檔案本身，檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：
+您可以按一下檔案記錄中的檔案本身，以檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：
 
 - URL：帶您前往檔案位置。
-- 檔案識別碼：按一下 [檔案識別碼] 即可開啟快顯，其中內含檔案的未經處理檔案詳細資料，包括檔案識別碼及加密金鑰。
+- 檔案識別碼：按一下 [檔案識別碼] 即可開啟快顯視窗，其中包含檔案的未經處理檔案詳細資料，包括檔案識別碼及加密金鑰。
 - 擁有者：按一下 [擁有者] 即可檢視此檔案擁有者的使用者頁面。
 - 相符的原則：按一下 [相符的原則] 連結即可查看此檔案符合的原則清單。
 - 分類標籤：按一下 [分類標籤] 即可檢視此檔案中的 Azure 資訊保護分類標籤清單。 您接著可以依據符合此標籤的所有檔案進行篩選。    
+
+隱藏式檔案選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外檔案和向下切入的內容連結。 例如，如果您將游標移到 [擁有者] 欄位旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將擁有者新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**分類標籤**。
+
 
 ![隱藏式檔案選單](./media/file-drawer.png "隱藏式檔案選單")  
   
@@ -132,8 +132,3 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-
