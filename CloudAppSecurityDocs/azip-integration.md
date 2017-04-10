@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
+ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
@@ -86,8 +86,11 @@ Cloud App Security 預設會掃描您組織所定義的分類標籤，以及其�
 
 ![Cloud App Security 中的 Azure 資訊保護標籤](./media/azip-tags-in-cas.png)
 
-> ![Note] 當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
-> **原則 #1 - 在 Box 上對外共用機密資料：**
+> [!Note]
+> 當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
+
+
+**原則 #1 - 在 Box 上對外共用機密資料：**
 
 1.    建立檔案原則。
 2.    設定原則的名稱、嚴重性及類別。
