@@ -37,10 +37,10 @@ translationtype: HT
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>步驟 1：在 Cloud App Security 入口網站中進行設定
 
-1. 在 Cloud App Security 入口網站的 [設定] 齒輪下，按一下 [SIEM agents] (SIEM 代理程式)。
+1. 在 Cloud App Security 入口網站的 [設定] 齒輪下，按一下 [SIEM agents]\(SIEM 代理程式)。
 
-2. 按一下 [Add SIEM agent] (新增 SIEM 代理程式)，啟動精靈。
-3. 在精靈中，按一下 [Add SIEM agent] (新增 SIEM 代理程式)。    
+2. 按一下 [Add SIEM agent]\(新增 SIEM 代理程式)，啟動精靈。
+3. 在精靈中，按一下 [Add SIEM agent]\(新增 SIEM 代理程式)。    
 4. 在精靈中，填入名稱，並**選取 SIEM 格式**，然後設定與該格式相關的任何 [進階設定]。 按 [下一步] 。
 
    ![一般 SIEM 設定](./media/siem1.png)
