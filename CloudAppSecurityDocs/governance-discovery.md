@@ -32,7 +32,7 @@ Cloud App Security 可讓您使用現有的內部安全性設備來禁止存取�
 
    ![產生封鎖指令碼](./media/generate-block-script.png)  
 
-3. 在 [Generate block script] (產生封鎖指令碼) 中，選取所產生之封鎖指令碼的適用裝置。 
+3. 在 [Generate block script]\(產生封鎖指令碼) 中，選取所產生之封鎖指令碼的適用裝置。 
 
    ![[Generate block script] (產生封鎖指令碼) 快顯](./media/generate-block-script-popup.png)  
 
