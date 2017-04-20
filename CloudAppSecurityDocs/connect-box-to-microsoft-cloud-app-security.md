@@ -1,11 +1,11 @@
 ---
-title: "連接 Box | Microsoft Docs"
+title: "連接 Box 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Box 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
   
@@ -32,15 +29,15 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
     -   在 Box Admin 主控台中，依序按一下設定圖示和 [Business settings (商務設定)]。  
   
-         ![box 商務設定](./media/box-business-settings.png "box business settings")  
+         ![Box 商務設定](./media/box-business-settings.png "Box 商務設定")  
   
     -   按一下 [應用程式] 索引標籤。  
   
-         ![box 應用程式](./media/box-apps.png "box apps")  
+         ![Box 應用程式](./media/box-apps.png " Box應用程式")  
   
     -   如果選取 **「Unpublished Applications」** (未發行的應用程式)，請在 「Except for」 (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
   
-         ![box 設定除外](./media/box-settings-except-for.png "box settings except for")  
+         ![Box 設定除外](./media/box-settings-except-for.png "Box 設定除外")  
   
     > [!NOTE]  
     >  如果您是現有的 Adallom 客戶，而主控台 URL 是供 Adallom 非供 Cloud App Security 使用，請使用這個應用程式序號︰bwahmilhdlpbqy2ongkl119o3lrkoshc。  
@@ -49,9 +46,9 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
 3.  在 [App 連線程式] 頁面中，按一下加號按鈕並選取 [Box]。  
   
-     ![連接 box](./media/connect-box.png "connect box")  
+     ![連接 Box](./media/connect-box.png "連接 Box")  
   
-4.  在 [方塊設定] 快顯中，按一下 [連入此連結]。  
+4.  在 [Box settings] (Box 設定) 快顯視窗中，按一下 [連入此連結]。  
   
 5.  這會開啟 Box 的登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Box 應用程式。  
   
@@ -75,8 +72,3 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

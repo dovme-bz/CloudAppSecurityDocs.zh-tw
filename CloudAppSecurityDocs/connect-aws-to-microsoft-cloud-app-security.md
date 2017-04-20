@@ -1,11 +1,11 @@
 ---
-title: "連接 AWS | Microsoft Docs"
+title: "連接 AWS 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 AWS 應用程式連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,47 +13,40 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
-
-
+ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>將 AWS 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Amazon Web Services 帳戶。  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>如何將 Amazon Web Services 連接至 Cloud App Security  
   
-1.  在 Amazon Web Services 主控台中，按一下 [身分識別與存取權管理]。  
+1.  在您 [Amazon Web Services 主控台](https://console.aws.amazon.com/)的 [Security, Identity & Compliance] (安全性、身分識別及相容性) 下，按一下 [IAM]。  
   
-     ![aws 身分識別與存取](./media/aws-identity-and-access.png "aws identity and access")  
+     ![AWS 身分識別與存取](./media/aws-identity-and-access.png "AWS 身分識別與存取")  
   
-2.  按一下 [使用者] 索引標籤。  
+2.  按一下 [使用者] 索引標籤，然後按一下 [新增使用者]。  
   
-     ![aws 使用者](./media/aws-users.png "aws users")  
+     ![AWS 使用者](./media/aws-users.png "AWS 使用者")      
   
-3.  按一下 [建立新的使用者]。  
-  
-     ![AWS 建立使用者](./media/aws-create-user.png "AWS create user")  
-  
-4.  為 Cloud App Security 建立新的使用者，並確定勾選 **「Generate an access key for each user」** (為每個使用者產生存取金鑰) 核取方塊。  
-  
-5.  按一下 [Download Credentials (下載認證)] 。  
-  
-     ![aws 下載認證](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  在 [使用權限] 索引標籤上，按一下 **「Attach Policy」** (附加原則)。  
-  
-     ![aws 附加使用者原則](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  [檢閱原則] 畫面隨即開啟。
- 
-     ![檢閱原則](./media/aws-review-policy.png "aws review policy")  
-  
+4.  在 [詳細資料] 步驟中，提供 Cloud App Security 的新使用者名稱，並確定在 [存取類型] 下選取 [以程式設計方式存取] 並按一下 [Next Permissions] (後續權限)。  
 
-8. 在 [原則名稱] 下方，輸入 "AdallomTrustPolicy"。 
-10. 在 [原則文件] 下方，複製並貼上下列項目︰  
+     ![AWS 建立使用者](./media/aws-create-user.png "AWS 建立使用者")
+
+5. 在 [權限] 步驟中，選取 [Attach existing policies directly] (直接附加現有的原則)，然後按一下 [建立原則]。
+
+   ![AWS 附加使用者](./media/aws-attach-user-policy.png "AWS 附加現有的原則")
+
+6.  在 [建立原則] 下選取 [Create Your Own Policy] (建立您自己的原則)。
+ 
+    ![AWS 建立自己的原則](./media/aws-create-own-policy.png "AWS 建立原則")
+ 
+7.  在 [檢閱原則] 下提供 [原則名稱]，例如 CloudAppSecurityPolicy。
+
+    ![AWS 檢閱原則](./media/aws-review-policy.png "AWS 檢閱原則")
+
+8. 然後將下列內容貼入 [Policy Document] (原則文件) 欄位，然後按一下 [建立原則]：
   
     ```     
     {  
@@ -61,8 +54,7 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -78,37 +70,44 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
   
     ```  
   
-9. 在下載檔案 `credentials.csv` 中，找出新使用者的認證。 您稍後需要複製這些。  
+9. 如有必要，回到 [新增使用者] 畫面中來重新整理清單，並選取您剛才建立的使用者，然後按一下 [Next Review] (下一個檢閱)。
+
+   ![AWS 檢閱使用者原則](./media/aws-review-user.png "AWS 檢閱使用者")
+
+10. 如果所有詳細資料都正確，請按一下 [建立使用者]。
+
+    ![AWS 使用者權限](./media/aws-user-permissions.png "AWS 檢閱使用者權限")
+
+11. 當您取得成功訊息後，請按一下 [下載 CSV] 儲存新使用者的認證複本，您以後會需要它們。  
+
+    ![AWS 下載 CSV](./media/aws-download-csv.png "AWS 下載 CSV")
   
-10. 返回 AWS 主控台主頁面，在右上角的下拉式視窗中選擇您的主要區域，然後在主功能表中按一下 [CloudTrail]。  
+10. 在 AWS 主控台中按一下 [服務]，然後按一下 [管理工具] 下的 [CloudTrail]。  
   
-     ![aws cloudtrail](./media/aws-cloudtrail.png "aws cloudtrail")  
+     ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    1.  如果未曾對此區域使用過 CloudTrail，請按一下 [開始使用] 按鈕，選取適當的 S3 陣列安裝它。  
+    以前如果未曾使用過 CloudTrail，請按一下 [開始使用]，提供名稱並選取適當的 S3 陣列安來裝它，然後按一下 [開啟]。 為確保您擁有完整的涵蓋範圍，請將 [Apply to all regions] (套用到所有區域) 設為 [是]。
   
-         按一下畫面左上角的 [設定] 索引標籤。 按一下 [其他設定] 下的編輯圖示。  
+       ![AWS 開啟 CloudTrail](./media/aws-turnon-cloudtrail.png "AWS 開啟 CloudTrail")
   
-         ![aws cloudtrail 設定](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  當系統詢問您是否要 [Include global services (包含全域服務)] 時，請按一下 [是]，並按一下 [儲存]。 這只適用於您選擇的區域。  
-  
-         ![aws 包括全域 svc](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  請針對所有區域重複步驟 11，但任何其他地區請不要設定 [Include global services (包含全域服務)]。  
+    [Trails] (軌跡) 清單中應該會看到新的 CloudTrail 名稱。
+    
+      ![AWS CloudTrail 清單](./media/aws-cloudtrail-list.png "AWS CloudTrail 清單")
   
 11. 在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
 12. 在 [App 連線程式] 頁面中，依序按一下加號及 [AWS]。  
   
-     ![連接 AWS](./media/connect-aws.png "connect AWS")  
+     ![連接 AWS](./media/connect-aws.png "連接 AWS")  
   
-13. 在快顯中，將 CSV 檔案的**存取金鑰**及**祕密金鑰**貼入 API 網頁中的欄位，然後按一下 [更新存取金鑰]。  
+13. 在快顯視窗中，將 CSV 檔案的**存取金鑰**及**祕密金鑰**貼入相關欄位，然後按一下 [連接]。  
+   ![AWS 連接應用程式](./media/aws-connect-app.png "AWS connect app") 
   
-14. 請按一下 [測試 API] 確定連線成功。  
+14. 按一下 [測試 API] 確定連線成功。  
   
      測試可能需要幾分鐘的時間。 完成後，您會收到成功或失敗的通知。 收到成功通知之後，按一下 [完成]。  
   
-連接 AWS 之後，您會收到連線前 7 天的事件。
+連接 AWS 之後，您會收到連線前 7 天的事件，除非您是剛啟用 CloudTrail，若是如此，您就會收到從 CloudTrail 啟用時的事件。
   
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
@@ -116,8 +115,3 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

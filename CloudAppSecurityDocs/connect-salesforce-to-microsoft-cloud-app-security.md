@@ -1,11 +1,11 @@
 ---
-title: "連接 Salesforce | Microsoft Docs"
+title: "連接 Salesforce 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
 description: "本主題提供如何使用 API 連接器將 Salesforce 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>將 Salesforce 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連接程式 API，將 Cloud App Security 連接至您現有的 Salesforce 帳戶。  
   
@@ -48,7 +44,7 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce 編輯設定檔")  
   
-    -   請確定您已選取 [API Enabled (已啟用 API)] 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
+    -   請確定您已選取 [API Enabled] (已啟用 API) 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
   
          ![salesforce api 已啟用](./media/salesforce-api-enabled.png "salesforce api 已啟用")  
   
@@ -64,7 +60,7 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
   
     3.  將目前的系統管理使用者選取為專屬的 Cloud App Security 使用者。  
   
-    4.  請確定已選取 [Salesforce CRM Content User (Salesforce CRM 內容使用者)] 核取方塊。  
+    4.  請確定已選取 [Salesforce CRM Content User] (Salesforce CRM 內容使用者) 核取方塊。  
   
          如果未選取，請按一下 [編輯] 然後核取此核取方塊。  
   
@@ -95,16 +91,23 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
      測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [完成]。  
   
   
-連接 Salesforce 之後，您將會收到下列「事件」：自連線起的觸發程序、連線前 60 天的登入事件與設定稽核線索、EventMonitoring 30 天前或 1 天前的事件 (根據您的 Salesforce EventMonitoring 授權而定)。
+連接 Salesforce 之後，您將會收到下列「事件」：自連線起的觸發程序、連線前 60 天的登入事件與設定稽核線索、EventMonitoring 30 天前或 1 天前的事件 (根據您的 Salesforce EventMonitoring 授權而定)。 Cloud App Security API 會直接與 Salesforce 提供的 API 進行通訊。 因為 Salesforce 限制了可以接收的 API 呼叫數目，所以 Cloud App Security 會將此納入考量並遵守限制。 Salesforce API 傳送的每個回應都有 API 計數器欄位，包括可用總計數和剩餘計數。 Cloud App Security 以百分比計算此值，確保一律保留 10% 的可用 API 呼叫。 
+
+> [!NOTE]
+> Cloud App Security 節流只計算它自己和 Salesforce 的 API 呼叫，不計算任何其他應用程式和 Salesforce 進行的 API 呼叫。
+> 因為限制而限制 API 呼叫會降低 Cloud App Security 內嵌資料的速率，但通常隔夜就會趕上進度。
+
+
+Cloud App security 處理 Salesforce 事件的方式如下︰ 
   
+- 每隔 15 分鐘登入事件
+- 每隔 15 分鐘設定稽核記錄
+- Salesforce 每隔 24 小時匯出監視事件記錄檔 (12:00 UTC) 
+
+
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-
