@@ -1,11 +1,11 @@
 ---
-title: "連接應用程式 | Microsoft Docs"
+title: "連接應用程式以取得對 Cloud App Security 的深入可見度及控制 | Microsoft Docs"
 description: "本主題描述使用 API 連接器將應用程式連接到您組織的雲端應用程式之過程。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2017
+ms.date: 3/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
-ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
-
-
+ms.openlocfilehash: 0c6fbb24a0b5d7f1c5ada4b805eb8b7ae5ecada2
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="connect-apps"></a>連線應用程式 
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
   
@@ -67,7 +64,7 @@ App 連線程式流程如下所示︰
   
 下表列出，針對雲端應用程式，應用程式連接器支援的功能︰  
 
-||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
 |-|-|-|-|-|-|-|-|-|  
 |**列出帳戶**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**群組**|✔|✔|✔|✔|✔|✔|✔|✔|  
@@ -89,9 +86,26 @@ App 連線程式流程如下所示︰
   
 -   針對記錄檔︰  
   
-     104.209.35.177  
+    104.209.35.177  
   
-     13.91.98.185  
+    13.91.98.185
+ 
+    40.118.211.172
+
+    13.93.216.68
+
+    13.91.61.249
+
+    13.93.233.42
+
+    13.64.196.27
+
+    13.64.198.97
+
+    13.64.199.41
+
+    13.64.198.19
+  
   
 -   針對主控台：  
   
@@ -107,7 +121,7 @@ App 連線程式流程如下所示︰
 |應用程式|授權類型|使用者|  
 |---------|------------------|----------|  
 |方塊|企業|強烈建議您以管理員身分連線至 Box。 以共同管理員身分連線，將會導致僅部分資料可見度。 如果您以共同管理員身分連線，請務必選取所有權限。|  
-|Google Apps|偏好 Google Apps Unlimited<br /><br /> Google Apps Enterprise (最低)|進階管理員|  
+|G Suite|偏好 G Suite Unlimited<br /><br /> G Suite Enterprise (最低)|進階管理員|  
 |Office 365||全域管理員|  
 |AWS||新建立的使用者|  
 |Dropbox|商務/企業版|系統管理員|  
@@ -127,9 +141,5 @@ Cloud App Security 部署在 Azure 中並完全整合到 [ExpressRoute](https://
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
+
    
-
-
-<!--HONumber=Jan17_HO2-->
-
-

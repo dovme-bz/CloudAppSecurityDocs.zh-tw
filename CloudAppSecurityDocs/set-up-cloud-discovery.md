@@ -1,11 +1,11 @@
 ---
-title: "部署 Cloud Discovery | Microsoft Docs"
+title: "部署 Cloud Discovery 與 Cloud App Security | Microsoft Docs"
 description: "本主題描述用來啟動 Cloud Discovery 的設定程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個以上屬性進行排名和評分之 13,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
 [雲端應用程式目錄] 會依據認證法規、業界標準和最佳做法來進行雲端應用程式的風險分級。 在雲端應用程式目錄中執行四種補充程序，以保持最新資訊︰
-1.  直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 相容性這類屬性)。
-2.  透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。
-3.  Cloud App Security 雲端分析師團隊進行的連續分析 (適用於靜止加密這類屬性)。
-4.  客戶型修訂要求 (根據雲端應用程式目錄變更的客戶提交要求)。 所有要求都是由雲端分析師團隊所檢閱，並根據其發現的項目進行更新。
+1.    直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 相容性這類屬性)。
+2.    透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。
+3.    Cloud App Security 雲端分析師團隊進行的連續分析 (適用於靜止加密這類屬性)。
+4.    客戶型修訂要求 (根據雲端應用程式目錄變更的客戶提交要求)。 所有要求都是由雲端分析師團隊所檢閱，並根據其發現的項目進行更新。
   
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
@@ -84,7 +81,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Cisco ScanSafe
 - Cisco Merkai – URL 記錄
 - Dell Sonicwall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -113,16 +110,17 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Cisco Scansfe|**是**|否|**是**|**是**|**是**|**是**|
 |Dell SonicWall|**是**|**是**|否|**是**|**是**|**是**|
 |Fortigate|否|**是**|否|**是**|**是**|**是**|
-|Juniper SRX|否|**是**|否|**是**|**是**|**是**|
+|Juniper SRX|否|**是**|否|**是**\*|**是**|**是**|
 |McAfee SWG|**是**|否|否|**是**|**是**|**是**|
 |Meraki|**是**|**是**|否|**是**|否|否|
 |MS TMG|**是**|否|**是**|**是**|**是**|**是**|
-|PAN|**是**|**是**|**是**|**是**|**是**|**是**|
+|Palo Alto Networks|**是**|**是**|**是**|**是**\*|**是**|**是**|
 |Sophos|**是**|**是**|**是**|**是**|**是**|否|
 |Websense - 調查詳細資料報告 (CSV)|**是**|否|否|**是**|否|否|
 |Websense - 網際網路活動記錄 (CEF)|**是**|**是**|**是**|**是**|**是**|**是**|
-|Zscaler|**是**|否|**是**|否|**是**|否|
+|Zscaler|**是**|否|**是**|否|**是**|**是**|
 
+\* Cloud Discovery 支援 IPv6。
 
 ## <a name="see-also"></a>另請參閱
  
@@ -131,10 +129,3 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 [設定自動記錄上傳以進行連續報告](configure-automatic-log-upload-for-continuous-reports.md)
 
 [使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Dec16_HO4-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: "部署 Cloud App Security 讓雲端應用程式使用洞察力和控制 | Microsoft Docs"
 description: "本主題概述啟動並執行 Cloud App Security 的程序。"
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
 Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
 
@@ -134,7 +131,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 **建立 IP 位址標記**
 
 1. 移至 [設定]  >  [IP 位址標記]。
-2. 選擇 (+) **新增 IP 位址範圍]**。
+2. 選擇 (+) **新增 IP 位址範圍**。
 3. 輸入 IP 範圍 **[詳細資料]**、**[位置]**、**[標記]** 及 **[類別]**。
 4. 選擇 **[建立]**。
 
@@ -164,9 +161,3 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 設定原則[使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)。    
 如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

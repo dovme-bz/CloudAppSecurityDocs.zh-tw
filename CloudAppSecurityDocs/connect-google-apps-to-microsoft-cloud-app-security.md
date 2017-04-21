@@ -1,11 +1,11 @@
 ---
-title: "連接 Google Apps | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 Google Apps 連接至 Cloud App Security 的資訊。"
+title: "連接 G Suite 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
+description: "本主題提供如何使用 API 連接器將 G Suite 連接至 Cloud App Security 的資訊。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,50 +13,36 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
-
-
+ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
+# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
+本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
 
-# <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>將 Google Apps 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Google Apps 帳戶。
-
   
   
-## <a name="configure-google-apps"></a>設定 Google Apps  
+## <a name="configure-g-suite"></a>設定 G Suite  
   
-1.  以 Google Apps 超級管理員身分登入 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)。  
+1.  以 G Suite 超級管理員身分登入 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)。  
   
-2.  按一下 [Create an empty project (建立空白專案)] 啟動新的專案。  
+2.  按一下 [建立專案] 開始新的專案。  
   
      ![google1](./media/google1.png "google1")  
   
-3.  在 [新增專案] 畫面中︰  
+3.  在 [新增專案] 畫面中命名您的專案，如下所示︰</br>
+    **Cloud App Security for Google** 然後按一下 [建立]****。  
+           ![google2](./media/google2.png "google2")  
   
-    1.  如下命名您的專案︰</br>
-    **Cloud App Security for Google** 
-  
-    2.  選取是否要訂閱更新。  
-  
-    3.  檢閱並核准服務條款。  
-  
-    4.  按一下 [建立]。  
-  
-         ![google2](./media/google2.png "google2")  
-  
-4.  在建立專案之後，按一下 [Enable and manage APIs (啟用和管理 API)]。  
+4.  專案建立後，在工具列上的 Google Cloud Platform 旁邊，選取專案，然後按一下 [API] 的 [Go to APIs overview] (移至 API 概觀)。  
   
      ![google3](./media/google3.png "google3")  
   
-5.  按一下 [Enabled APIs (啟用的 API)] 索引標籤，停用所有列出的 API。  
+5.  停用 [API] 下列出的所有 API。  
+      
+6.  按一下 [程式庫] 啟用下列 API (如果 [Popular APIs] (熱門 API) 清單未列出 API，請使用搜尋列)：  
   
-     ![google5](./media/google5.png "google5")  
-  
-6.  按一下 [Google API] 索引標籤，啟用下列 API (如果 「Popular APIs」 (熱門 API) 清單未列出 API，請使用搜尋列)：  
-  
-     ![google8](./media/google8.png "google8")  
+     ![Google API](./media/google4.png "google4")  
   
     > [!NOTE]  
     >  暫時忽略**認證**警告。  
@@ -65,19 +51,17 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
     -   稽核 API  
   
-    -   磁碟機 API  
+    -   Google Drive API  
   
     -   Google Apps Marketplace SDK  
   
     -   Gmail API  
-  
-         ![google11 警告](./media/google11-warning.png "google11 警告")  
-  
+            
 7.  您應該會有 5 個 [Enabled APIs (啟用的 API)]：  
   
-     ![google15](./media/google15.png "google15")  
+     ![Google 啟用的 API](./media/google5.png "google5")  
   
-8.  依序按一下 [認證] 和 [OAuth consent (OAuth 同意)]  
+8.  依序按一下 [認證] 和 [OAuth consent screen] (OAuth 同意畫面)  
   
     -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中輸入 **Cloud App Security for Google**。  
   
@@ -85,79 +69,75 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
     -   按一下 **[儲存]**。  
   
-     ![google16](./media/google16.png "google16")  
+     ![Google 產品名稱](./media/google6.png "google6")  
   
-9. 在 [認證] 索引標籤上，按一下 [建立認證] 旁的箭號，然後選取 [服務帳戶金鑰]。  
+9. 在 [API Credentials] (API 認證) 畫面上，按一下 [建立認證] 旁的箭號。  
   
-     ![google17](./media/google17.png "google17")  
+     ![Google 認證](./media/google7.png "google7")  
+
+10. 選取 [服務帳戶金鑰]。
+
+     ![Google 服務帳戶金鑰](./media/google8.png "google8")  
   
-10. 在 [服務帳戶] 中選擇 [New service account (新的服務帳戶)]，並輸入任何名稱，例如**服務帳戶 1**。  
+11. 在 [Create service account key] (建立服務帳戶金鑰) 下選擇 [New service account] (新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。  
   
-     ![google19](./media/google19.png "google19")  
+     ![Google 建立服務帳戶金鑰](./media/google9.png "google9")  
   
-     在 [金鑰類型] 下選擇 [P12]，然後按一下 [建立]。  
+12.  P12 憑證檔案會儲存到您的電腦。 快顯視窗會向您顯示**私密金鑰密碼**，請務必儲存以供後用。  
+        
+12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts] (管理服務帳戶)。  
+       ![G Suite 認證服務帳戶](./media/google10.png "G Suite credentials service account")  
   
-     即會下載 P12 憑證檔案。 儲存憑證以供後用。  
+13. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
   
-     ![google20](./media/google20.png "google20")  
+     ![Google 編輯](./media/google11.png "Google 編輯")  
   
-11. 在 [認證] 索引標籤上，按一下最右側的 [管理服務帳戶]。  
+14. 選取 [Enable G Suite Domain-wide Delegation] (啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
-     ![Google Apps 認證服務帳戶](./media/google-apps-credentials-service-account.png "Google Apps 認證服務帳戶")  
+     ![Google 全網域](./media/google12.png "Google 全網域")  
   
-12. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
+15. 請複製指派給服務的**服務帳戶識別碼**，以供稍後使用。  
   
-     ![google22](./media/google22.png "google22")  
+     ![Google 服務帳戶識別碼](./media/google13.png "google13")  
   
-13. 選取 「Enable Google Apps Domain-wide Delegation」 (啟用 Google Apps 全網域委派) 核取方塊，然後按一下 [儲存]。  
-  
-     ![google24](./media/google24.png "google24")  
-  
-14. 將指派給服務的**電子郵件地址**複製下來，以供稍後使用。  
-  
-     ![google25](./media/google25.png "google25")  
-  
-15. 按一下 Google 雲端平台旁邊的三條水平線來開啟 Google 功能表，然後選取 [API manager (API 管理員)]。  
-  
-     ![Google 功能表](./media/google-menu.png "Google 功能表")  
-  
-     選取 [Enabled APIs (啟用的 API)]。  
-  
-     ![google27](./media/google27.png "google27")  
-  
-16. 按一下 [Drive API (磁碟機 API)] 旁邊的設定齒輪，並在 [Drive UI Integration (磁碟機 UI 整合)] 下填入下列內容︰  
-  
+16. 按一下標題列中 Google Cloud Platform 旁的三條水平線，開啟 Google 功能表，然後依序選取 [API 管理員] 及 [儀表板]。  
+    
+17. 向下捲動至已啟用的 API 清單，並按一下 **Google Drive API** 旁的設定齒輪。   
+       ![Google Drive 選項](./media/google14.png "google14")  
+
+18. 填寫下列內容：
+
     -   **應用程式名稱**：Cloud App Security for Google。  
   
-    -   **簡短描述和完整描述**：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
+    -   **簡短描述和完整描述**：(選用) Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
-    -   在**應用程式圖示**下上傳 128x128 和 32x32 影像。  
+    -   Google 要求您至少上傳一個應用程式圖示。 請移至 [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) 下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
   
-         影像位於︰[https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
-  
-    -   在 [開啟 URL] 下輸入下列資訊：  
+    -   在 [Drive Integration] (磁碟機整合) 下的 [開啟 URL:] 中鍵入：  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
   
     -   按一下 [儲存變更]。  
   
-         ![google29](./media/google29.png "google29")  
+         ![Google Drive 設定](./media/google15.png "googledriveconfig")  
   
-17. 在 **「Enabled APIs」** (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪，然後選取 [設定] 索引標籤。  
+19. 在 [Enabled APIs] (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
+         ![oogle Marketplace SDK 設定](./media/google16.png "googledriveconfig")  
+20. 選取 [設定] 索引標籤。  
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
   
-    -   **應用程式名稱**：Cloud App Security for Google。  
+    -   [應用程式名稱] 應顯示 **Cloud App Security for Google**。
   
          在 [應用程式描述] 欄位中填入「Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。」  
   
-    -   取消核取 [Enable individual install (啟用個別安裝)] 核取方塊。  
+    -   取消核取 [Enable individual install] (啟用個別安裝) 核取方塊。  
   
     -   在**應用程式圖示**下設定 4 個必要影像。  
   
          影像位於︰[https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
-         ![google31](./media/google31.png "google31")  
+         ![Google Marketplace SDK 設定](./media/google17.png "google17")  
   
     -   填寫下列**支援 URL**：  
   
@@ -165,98 +145,94 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
         -   **隱私權原則 URL**：http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   在 [OAuth 2.0 scopes (OAuth 2.0 範圍)] 下方，輸入下列項目 (每行 1 項， 並按 Enter 確認)：  
+    -   在 [OAuth 2.0 scopes] (OAuth 2.0 領域) 下複製和貼上下列內容。 它們一次只能複製一個，並且每次複製都必須按下 Enter︰  
   
-        -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
+           https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
-        -   https://www.googleapis.com/auth/admin.reports.usage.readonly  
+           https://www.googleapis.com/auth/admin.reports.usage.readonly  
   
-        -   https://www.googleapis.com/auth/drive  
+           https://www.googleapis.com/auth/drive  
   
-        -   https://www.googleapis.com/auth/drive.appdata  
+           https://www.googleapis.com/auth/drive.appdata  
   
-        -   https://www.googleapis.com/auth/drive.apps.readonly  
+           https://www.googleapis.com/auth/drive.apps.readonly  
   
-        -   https://www.googleapis.com/auth/drive.file  
+           https://www.googleapis.com/auth/drive.file  
   
-        -   https://www.googleapis.com/auth/drive.metadata.readonly  
+           https://www.googleapis.com/auth/drive.metadata.readonly  
   
-        -   https://www.googleapis.com/auth/drive.readonly  
+           https://www.googleapis.com/auth/drive.readonly  
   
-        -   https://www.googleapis.com/auth/drive.scripts  
+           https://www.googleapis.com/auth/drive.scripts  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.readonly  
+           https://www.googleapis.com/auth/admin.directory.user.readonly  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.security  
+           https://www.googleapis.com/auth/admin.directory.user.security  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.alias  
+           https://www.googleapis.com/auth/admin.directory.user.alias  
   
-        -   https://www.googleapis.com/auth/admin.directory.orgunit  
+           https://www.googleapis.com/auth/admin.directory.orgunit  
   
-        -   https://www.googleapis.com/auth/admin.directory.notifications  
+           https://www.googleapis.com/auth/admin.directory.notifications  
   
-        -   https://www.googleapis.com/auth/admin.directory.group.member  
+           https://www.googleapis.com/auth/admin.directory.group.member  
   
-        -   https://www.googleapis.com/auth/admin.directory.group  
+           https://www.googleapis.com/auth/admin.directory.group  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile.action  
+           https://www.googleapis.com/auth/admin.directory.device.mobile.action  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile  
+           https://www.googleapis.com/auth/admin.directory.device.mobile  
   
-        -   https://www.googleapis.com/auth/admin.directory.user  
+           https://www.googleapis.com/auth/admin.directory.user  
   
     -   按一下 [儲存變更]。  
   
-18. 從控制項清單選取 [安全性]。 如果沒看到這個選項，請從頁面底部的灰色列中選取 [其他控制項]，然後選取 [安全性]。  
-  
-     ![Google Apps 安全性](./media/google-apps-security.png "Google Apps 安全性")  
-  
+18. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 
+       ![Google 安全性](./media/googlesecurity.png "google8")  
+ 
 19. 選擇 [API 參考]。  
-  
-     ![google api ref](./media/google-api-ref.png "google api ref")  
-  
+       ![Google API 啟用](./media/googleapi.png "google8")  
+      
 20. 選取 [Enable API Access (啟用 API 存取)]，然後按一下 [儲存變更]。  
   
-     ![google api access](./media/google-api-access.png "google api access")  
+    ![Google 參考](./media/googleapiref.png "google8")  
+
   
 ## <a name="configure-cloud-app-security"></a>設定 Cloud App Security  
   
 1.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [連線應用程式]。  
   
-2.  在 [連線應用程式] 頁面中，按一下加號並選取 [Google Apps]。  
+2.  在 [連線應用程式] 頁面中，按一下加號並選取 [G Suite]。  
+       
   
-     ![連接 Google Apps](./media/connect-google-apps.png "連接 Google Apps")  
+3.  在快顯視窗中填入下列內容：  
   
-3.  在快顯畫面填寫下列內容：  
+     ![Cloud App Security 中的 G Suite 設定](./media/gsuite-config-cas.png "Cloud App Security 中的 G Suite 設定")  
   
-     ![Cloud App Security 中的 Google Apps 設定](./media/google-apps-configuration-in-cloud-app-security.png "Cloud App Security 中的 Google Apps 設定")  
+    1.  您在步驟 16 中複製的**服務帳戶電子郵件地址**。  
   
-    1.  您在步驟 14 中複製的 **Google 服務帳戶電子郵件地址**。  
+    2.  您在步驟 21 中複製的**專案編號 (應用程式識別碼)**。  
   
-    2.  您在步驟 17 中複製的 **Google 專案編號 (應用程式識別碼)**。  
+    3.  上傳您在步驟 12 中儲存的**憑證** P12。 您需要之前儲存的密碼才能執行這項操作。  
   
-    3.  上傳您在步驟 10 中儲存的 **Google 憑證** P12。  
+    4.  輸入 G Suite 系統管理員其中一個**系統管理員帳戶的電子郵件**。  
   
-    4.  輸入其中一個 Google Apps 管理員的**管理員電子郵件**。  
-  
-    5.  如果您有 Google Apps Unlimited 帳戶，請核取這個核取方塊。 如需適用於 Google Apps Unlimited 的 Cloud App Security 可用功能資訊，請參閱[為您的應用程式提供立即可見度、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
+    5.  如果您有 G Suite Unlimited 帳戶，請核取這個核取方塊。 如需 Cloud App Security for G Suite Unlimited 可用功能的資訊，請參閱[為您的應用程式提供立即可見度、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
   
     6.  按一下 [儲存設定]。  
   
-    7.  [連入此連結] 連接到 Google Apps。 這會開啟 Google Apps，並要求您授與 Cloud App Security 存取權。  
-  
-         ![Google Apps 授權要求](./media/google-apps-authorization-request.png "Google Apps 授權要求")  
-  
-    8.  按一下 [測試 API] 確定連線成功。  
+    7.  [連入此連結] 連接到 G Suite。 這會開啟 G Suite，並要求您授與 Cloud App Security 存取權。  
+         
+    8.  按一下 [Test now] (立即測試) 確定連線成功。  
   
          測試可能需要幾分鐘的時間。  
   
-         收到成功通知之後，按一下 [完成] 並關閉 Google Apps 頁面。  
+         收到成功通知之後，按一下 [完成] 並關閉 G Suite 頁面。  
   
   
-連接 Google Apps 之後，您會收到連線前 60 天的事件。
+連接 G Suite 之後，您會收到連線前 60 天的事件。
   
-連接 Google Apps 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了確保近即時的掃描，系統會將已偵測到活動的檔案移到掃描佇列開頭，好比說，系統會立即掃描受到編輯、更新或共用的檔案，而不會等到定期掃描程序時才進行。 如果檔案本來就沒有修改 (例如只受到檢視、預覽、列印或匯出的檔案)，則不適用此情況。
+連接 G Suite 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了確保近即時的掃描，系統會將已偵測到活動的檔案移到掃描佇列開頭，好比說，系統會立即掃描受到編輯、更新或共用的檔案，而不會等到定期掃描程序時才進行。 如果檔案本來就沒有修改 (例如只受到檢視、預覽、列印或匯出的檔案)，則不適用此情況。
   
   
 ## <a name="see-also"></a>另請參閱  
@@ -265,8 +241,3 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

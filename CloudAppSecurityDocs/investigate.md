@@ -39,7 +39,7 @@ translationtype: HT
 
 -   在 [Cloud App Security] 主控台中，移至 [應用程式目錄] 或是 [探索到的應用程式]。  
 
--   在應用程式清單中，於您要標記為獲批准的應用程式出現的資料列上，選擇資料列結尾的三個點 ![標記為獲批准點](./media/sanction-three-dots.png "標記為獲批准點")，然後選擇 [Mark as sanctioned] (標示為獲批准)。  
+-   在應用程式清單中，於您要標記為獲批准的應用程式出現的資料列上，選擇資料列結尾的三個點 ![標記為獲批准點](./media/sanction-three-dots.png "標記為獲批准點")，然後選擇 [Mark as sanctioned]\(標示為獲批准)。  
 
      ![標記為獲批准](./media/mark-as-sanctioned.png "標記為獲批准")  
 

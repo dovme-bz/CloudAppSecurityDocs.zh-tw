@@ -1,11 +1,11 @@
 ---
-title: "自訂入口網站 |Microsoft Docs"
+title: "自訂有最佳結果的 Cloud App Security 入口網站 | Microsoft Docs"
 description: "本主題提供自訂入口網站的第一個步驟。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
-ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
-
-
+ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="customize-the-portal"></a>自訂入口網站
 下列程序會指示您自訂 Cloud App Security 入口網站。
   
@@ -38,7 +35,7 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 4.  新增**管理網域**的清單。 受管理的網域用來協助 Cloud App Security 判斷哪些使用者是內部使用者、哪些是外部使用者，以及檔案應該和不應共用的位置。 這用於報告及警示。  
 > [!NOTE] 
 > - 網域中未設定為內部的使用者將會標示為外部，而且不會掃描活動或檔案。
-> - 如果要與 Azure 資訊保護整合相整合，請參閱[Azure 資訊保護整合](azip-integration.md)資訊。 
+> - 如果要與 Azure Information Protection 整合相整合，請參閱[Azure Information Protection 整合](azip-integration.md)以取得相關資訊。 
   
 4.  **活動記錄電子郵件隱私權設定**  
   
@@ -66,7 +63,7 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
   
 ![管理管理員存取權](./media/manage-admin-access.png "管理管理員存取權")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> 自訂管理設定  
+##  <a name="Adminsettings"></a> 自訂管理設定  
 若要將您的喜好設定設定為 Cloud App Security 的管理員，請在入口網站功能表列中按一下您的名稱，然後選取 [使用者設定] 來進行下列設定︰  
   
 1.  按一下 [帳戶設定]。 這裡，您可以自訂入口網站語言以供自己檢視。 您可以將它設定為以預設語言顯示入口網站，或者自行設定不同的語言。  
@@ -82,49 +79,17 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
   
 3. 完成時按一下 [儲存]。  
   
-##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> 設定 IP 範圍  
+##  <a name="IPtagsandRanges"></a> 設定 IP 範圍  
 若要輕鬆找出已知的 IP 位址，例如您的實體辦公室 IP 位址，您需要設定 IP 位址範圍，讓您能標記並適當地分類，以及自訂記錄檔和警示顯示與調查的方式。   
-每個 IP 範圍群組可根據預先設定的 IP 類別清單來分類，或是以您自己建立的 IP 標記加以標記。 此外，此設定可讓您根據您的內部網路知識，覆寫公用地理位置資訊。  
+如需詳細資訊，請參閱 [IP 標籤](ip-tags.md)。
   
-可支援 IPv4 和 IPv6。  
-  
-在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [IP 位址範圍]。 按一下 [+新增 IP 位址範圍] 並進行下列設定︰  
-  
-> [!NOTE]  
->  位置和已註冊的 ISP 會覆寫預設值。   
-> 不過，IP 標記會新增至活動而不會覆寫資料。  
-  
-1.  **命名**您的 IP 範圍。 名稱不會出現在活動記錄檔，它只用於管理您的 IP 範圍。  
-  
-     若要將 IP 範圍包含在 IP 類別中，請從下拉式功能表選取類別。  
-  
-2.  輸入您想要設定的 [IP 位址範圍]，然後按一下 "+" 按鈕。 您可以使用網路首碼表示法 (也稱為 CIDR 表示法) 新增任意數目的 IP 位址和子網路，例如 192.168.1.0/32。  
-  
-3.  若要覆寫這些位址的 [位置] 或 [組織 (ISP)] 欄位，請輸入新值。 例如，如果您的 IP 位址被公開認為在愛爾蘭，但您知道它是在美國，您可以覆寫此設定。  
-  
-4.  輸入 [已註冊的 ISP]。 這會覆寫您活動中的資料  
-  
-5.  若要**標記**來自這些 IP 位址的活動，請輸入標記。 在方塊中輸入文字即可建立標記。 您已經設定標記之後，就可以從清單中選擇它，輕鬆地將它新增到其他 IP 範圍。 您可以為每個範圍新增任意數量的 IP 標記。 建立原則時，可以使用 IP 標記。  除了您設定的 IP 標記之外，Cloud App Security 具有不可設定的內建標記。 您可以在 [IP 標記篩選](activity-filters.md)下看到標記清單。  
-  
-6.  **IP 類別**可用來輕鬆地辨識來自有趣 IP 位址的活動。 類別可在入口網站取得，但需要使用者設定才能決定哪些 IP 位址會包含在每個類別中，「風險」類別除外，它包含兩個 IP 標記 - 匿名 Proxy 和 Tor。  
-  
-     可以使用下列 IP 類別︰  
-  
-    -   **系統管理**︰這些應為您管理員的所有 IP 位址。  
-  
-    -   **內部**︰這些應為您的內部網路、分公司和 Wi-Fi 漫遊位址的所有 IP 位址。  
-  
-    -   **風險**︰這些應為任何您視為危險的 IP 位址。 它們可以包含您在過去已看到的可疑 IP 位址、競爭對手網路中的 IP 位址等等。  
-  
-    -   **VPN**︰這些應為您用於遠端工作者的任何 IP 位址。  
-  
-    -   **雲端 Proxy**︰這應該是您雲端 Proxy 的 IP 位址。  
-  
-7.  完成時按一下 [建立]。  
-  
-     ![newipaddress 範圍](./media/newipaddress-range.png "newipaddress 範圍")  
-  
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> 將您的體驗個人化  
+## <a name="import-user-groups"></a>匯入使用者群組
+
+當您使用 API 連接器連接應用程式時，Cloud App Security 可讓您從 Office 365 及 Azure Active Directory 等等匯入使用者群組。
+
+如需詳細資訊，請參閱[使用者群組](user-groups.md)。
+
+##  <a name="Adallom_mailsettings"></a> 將您的體驗個人化  
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
   
 ![郵件設定功能表](./media/mail-setting-menu.png "郵件設定功能表")  
@@ -152,12 +117,10 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
          %%content%% - 針對一般使用者所包含內容的預留位置，其由原則所設定。  
   
      範例電子郵件範本如下︰ 
-
-
-           
-          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-          <html>  
-          <head>  
+```html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html>  
+       <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
           </head>  
@@ -206,30 +169,25 @@ ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
           </table>  
             </body>  
           </html>  
-         
+    ```
 
   
-3.  按一下 [上傳範本...] ，然後選取您建立的檔案。  
+3.  Click **Upload a template...** and select the file you created.  
   
-     然後按一下 [傳送測試電子郵件]，傳送測試電子郵件給自己，以查看您所建立範本的範例。  
-     電子郵件將傳送至您用來登入入口網站的帳戶。 在測試電子郵件中，您將能夠看到中繼資料欄位、範本、電子郵件主旨、電子郵件內文中的標題，以及內容。  
+     Then, click **Send a test email** to send yourself a test email to see an example of the template you created.  
+     The email will be sent to the account you used to log into the portal. In the test email you will be able to see the metadata fields, the template, the email subject, the title in the email body and the content.  
   
-## <a name="single-sign-on"></a>單一登入  
-Cloud App Security 搭配 Azure Active Directory 一起進行驗證、佈建和授權相關的活動。 如需如何管理單一登入的相關資訊，請參閱 [Azure Active Directory 同盟相容性清單：可用來實作單一登入的協力廠商身分識別提供者](https://msdn.microsoft.com/library/azure/jj679342.aspx)。  
+## Single sign-on  
+Cloud App Security is coupled with Azure Active Directory for authentication, provisioning, and licensing related activities. For information on how to manage single sign-on, see [Azure Active Directory federation compatibility list: third-party identity providers that can be used to implement single sign-on](https://msdn.microsoft.com/library/azure/jj679342.aspx).  
 
 
 > [!NOTE] 
-> 若您使用 ExpressRoute，Cloud App Security 會在 Azure 中部署並與 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) 完全整合。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
-    如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
+> If you use ExpressRoute, Cloud App Security is deployed in Azure and fully integrated with [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/). All interactions with the Cloud App Security apps and traffic sent to Cloud App Security, including upload of discovery logs, is routed via ExpressRoute **public peering** for improved latency, performance and security. There are no configuration steps required from the customer side.  
+    For more information about  Public Peering, see [ExpressRoute circuits and routing domains](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/).  
     
-## <a name="see-also"></a>另請參閱  
-[設定 Cloud Discovery](set-up-cloud-discovery.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
-[Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
+## See Also  
+[Set up Cloud Discovery](set-up-cloud-discovery.md)   
+[For technical support, please visit the Cloud App Security assisted support page.](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier customers can also choose Cloud App Security directly from the Premier Portal.](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
