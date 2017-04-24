@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72228b607c3006101f9f427b38de63b090cdb9a0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
+ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
 translationtype: HT
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
@@ -29,7 +29,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 
 資料匿名運作方式：
 
-1.    有三種方法可以套用資料匿名： 
+1.  有三種方法可以套用資料匿名： 
     
     - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [Anonymize private information (匿名私人資訊)]。
  ![匿名快照資料](./media/anonymize-log.png)
@@ -48,20 +48,20 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
   ![匿名](./media/anonymizer1.png)
   
 
-2.    選取匿名時，Cloud App Security 會剖析流量記錄檔，並擷取特定資料屬性。
-3.    Cloud App Security 會以加密的使用者名稱來取代使用者名稱。
-4.    它接著會分析雲端使用量資料，並根據匿名資料來產生 Cloud Discovery 報告。
+2.  選取匿名時，Cloud App Security 會剖析流量記錄檔，並擷取特定資料屬性。
+3.  Cloud App Security 會以加密的使用者名稱來取代使用者名稱。
+4.  它接著會分析雲端使用量資料，並根據匿名資料來產生 Cloud Discovery 報告。
  ![匿名 Cloud Discovery 儀表板](./media/anonymize-dashboard.png)
  
 
-5.    針對特定調查 (例如，調查異常使用量警示)，您可以解析入口網站中的特定使用者名稱，並提供業務上的正當理由。 這個頁面也可用來查閱已知使用者名稱的加密使用者名稱。 
+5.  針對特定調查 (例如，調查異常使用量警示)，您可以解析入口網站中的特定使用者名稱，並提供業務上的正當理由。 這個頁面也可用來查閱已知使用者名稱的加密使用者名稱。 
 
     1. 在 [設定] 齒輪下，選取 [Cloud Discovery 設定]。
     2. 在 「Anonymization」 (匿名) 索引標籤的 「Anonymize and resolve usernames」 (匿名和解析使用者名稱) 下，輸入您為何執行解析的理由。
     3. 在 「Enter username to resolve」 (輸入要解析的使用者名稱) 下，選取 「From anonymized」(匿名來源)，然後輸入匿名使用者名稱，或選取 「To anonymized」 (匿名目標)，然後輸入要解析的原始使用者名稱。 按一下 [解析]。 
 ![匿名](./media/anonymizer.png)
 
-6.    這個動作是在入口網站的**治理記錄**中進行稽核。 
+6.  這個動作是在入口網站的**治理記錄**中進行稽核。 
 ![匿名](./media/anonymize-gov-log.png)
 
 
