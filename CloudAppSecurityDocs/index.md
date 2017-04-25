@@ -1,13 +1,14 @@
 ---
 layout: LandingPage
 description: "了解如何使用 Cloud App Security。"
-ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
-ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
+ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
 translationtype: HT
 ---
 # <a name="cloud-app-security-documentation"></a>Cloud App Security 文件
 
-控制並協助保護您於公司外部共用的電子郵件、文件及敏感性資料。 透過 Azure 資訊保護持續強化資料保護 (從簡易分類到內嵌標籤和權限)，無論該資料儲存於何處，或是與誰共用。
+Cloud App Security 為您的雲端應用程式提供企業級的安全保護。
+您不一定需要在雲端，但您的員工全都會在雲端。 將您內部部署系統的安全保護延伸到您的雲端應用程式，讓您可以更進一步地、更全面性地掌握及控制應用程式，以及使用更先進的防護功能抵禦雲端的安全性問題，而且無論應用程式是否經過核准，一律都能受到保護。
 
 <ul class="panelContent cardsFTitle">
     <li>
