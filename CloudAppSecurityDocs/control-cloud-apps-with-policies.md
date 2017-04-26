@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f897a528e425a2abd74f6828a7785fdfe147286
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="control-cloud-apps-with-policies"></a>使用原則來控制雲端應用程式
@@ -139,7 +139,20 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
 >  [資料保護原則](data-protection-policies.md)  
 >   
 >  [Cloud Discovery 原則](cloud-discovery-policies.md)  
+
   
+### <a name="add-automated-actions-to-respond-and-remediate-risks-automatically"></a>新增自動化動作以自動回應與補救風險
+
+如需每個應用程式的可用管理動作清單，請參閱[管理連線的應用程式](governance-actions.md)。
+
+您也可以設定原則，在偵測到相符項目時，以電子郵件或簡訊向您傳送警示。 
+
+請移至[自訂入口網站](general-setup.md)來設定通知喜好設定 
+  
+> [!NOTE] 
+> 每個電話號碼每天透過簡訊傳送的警示數目上限是 10。 請注意，會根據 UTC 時區來計算日期。 
+
+
 ## <a name="enable-and-disable-policies"></a>啟用和停用原則
 
 建立原則之後，您可以啟用或停用它。 這可避免在建立原則後，為了停止它而刪除原則。 相反地，若因故想要停止原則，只要停用它，直到您選擇再次啟用它為止。

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>控制和保護您的檔案  
@@ -27,10 +27,10 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 這個使用案例適用於 Office 365、G Suite、Box、Dropbox 和 Salesforce。
 
 ### <a name="the-threat"></a>威脅
-員工正在組織外部共用含有機密資料的公司檔案。 這會導致未受監視的資料外洩。 這可能是無害且未違反貴公司的原則，但即使是在這種情況下，監視共用內容還是非常重要，因此，您一律需了解您的網路使用方法以及要在外部共用哪些資料。
+雲端技術提供的最大優點之一是能夠與任何人共用任何項目。 但是能力愈大責任愈多，為確保不與外部共用機密資料，您需要知道哪些檔案包含機密資料，這些資料與哪些人共用。 使用雲端應用程式提供的工具，您無法分辨雲端應用程式儲存了什麼，或者誰存取了什麼，這讓您無法得知可能洩漏的資料。
 
 ### <a name="the-solution"></a>解決方案
-在 Cloud App Security 中部署下列項目 (不包括 Cloud App Security 中的下列原則和治理動作)，藉以掌握網路中的檔案共用並部署治理動作。
+透過尋找這兩個參數：敏感度和共用層級，並且交叉使用，您就可以找出這些可能的缺口。 Cloud App Security 會掃描所有儲存在您雲端應用程式的檔案，並自動依其共用層級分類。 然後，您可以在 Cloud App Security 設定檔案原則，搜尋所有儲存在您雲端應用程式中的機密資料。 一旦發現與外部共用的機密檔案，您可以手動採取補救動作，或設定 Cloud App Security 為您自動執行補救動作。 如此一來，您只要按一下就可移除資料洩漏的風險。
 
 #### <a name="prerequisites"></a>必要條件
 
@@ -38,7 +38,7 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 
 #### <a name="setting-up-monitoring"></a>設定監視
 
-1.    建立原則來控制檔案
+1.    透過設定掃描所有外部共用檔案是否有機密內容的原則，開始監視您的應用程式︰
 
     1. 在 [原則] 頁面上，按一下 [[建立檔案原則](data-protection-policies.md)]。 
     ![建立檔案原則](./media/create-file-policy.png)
@@ -66,7 +66,7 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 
 #### <a name="removing-the-risk"></a>移除風險
 
-當您驗證風險並調整原則以確保它會以您預期的方式執行之後，請執行下列動作： 
+在您驗證及微調原則之後，移除可能符合原則的可能誤報。 然後執行下列動作： 
   1. 您可以立即採取[治理動作](governance-actions.md)，方法是按一下資料列結尾的三個點，然後選取相關的治理動作，例如**將使用者置入隔離中**。
 
  ![外部自動治理](./media/auto-gov-external.png)
@@ -81,21 +81,21 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 
 這個使用案例會利用 Cloud App Security 與 Azure 資訊保護之間的整合。 如果您在整個組織中執行 Azure 資訊保護，並已花時間將檔案標上 Azure 資訊保護標籤，則 Cloud App Security 讓您能夠在為那些檔案標上標籤之後，監視並控制它們會發生什麼情況。
 
-## <a name="the-threat"></a>威脅
+### <a name="the-threat"></a>威脅
 
 您知道您需要保護資料，您已經在 Azure 資訊保護中分類檔案時遇到問題。 但當您將它們分類之後，您如何得知它們的所在之處及誰能查看它們？ 
 
-## <a name="the-solution"></a>解決方案
- 當這些分類的檔案位於雲端時，您可以使用 Cloud App Security 來監視它們。 這可讓您確認您歸類為**機密** (或其他機密分類) 的資料不會被不當共用。讓 Cloud App Security 能夠藉由推出下列原則與治理動作來監視和管理您已在 Azure 資訊保護中分類的檔案。
+### <a name="the-solution"></a>解決方案
+ 當這些分類的檔案位於雲端時，您可以使用 Cloud App Security 來監視它們。 這可讓您確認，分類為**機密** (或其他機密分類) 的資料不會被不當共用。 推出下列原則和控管動作，讓 Cloud App Security 監視和管理以 Azure 資訊保護分類的檔案。
 
-### <a name="prerequisites"></a>必要條件
+#### <a name="prerequisites"></a>必要條件
 
 - 將至少一個雲端應用程式[連接](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)到 Cloud App Security。
 - 依照 [Azure 資訊保護整合指示](azip-integration.md)來啟用自動掃描。
 
-### <a name="setting-up-monitoring"></a>設定監視
+#### <a name="setting-up-monitoring"></a>設定監視
 
-1. 建立原則來控制您的資料    
+1. 監視所有具有所需分類標籤的公開共用檔案︰    
     
     1. 在 [原則] 頁面上，按一下 [[建立檔案原則](data-protection-policies.md)]。 
 
@@ -116,7 +116,7 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
     3. 如果您發現誤判，請為它們標上勾號，以便從報告和即時比對中排除它們。 您可以使用意見反應功能，讓 Cloud App Security 小組了解您想要新增的增強功能。 
 
 
-### <a name="validating-your-policy"></a>驗證您的原則
+#### <a name="validating-your-policy"></a>驗證您的原則
 
 1. 建立新的 Word 文件，並使用 Azure 資訊保護工具列來設定任何區分大小寫的標籤，例如**機密**。 
 
@@ -129,7 +129,7 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 
 #### <a name="removing-the-risk"></a>移除風險
 
-當您驗證風險並調整原則以確保它會以您預期的方式執行之後，請執行下列動作： 
+在您驗證及微調原則，移除可能符合原則的可能誤報之後，請執行下列動作： 
 
 1. 您可以立即採取[治理動作](governance-actions.md)，方法是按一下資料列結尾的三個點，然後選取相關的治理動作，例如**置入使用者隔離中**。
     
