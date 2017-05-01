@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
+ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
 translationtype: HT
 ---
 # <a name="release-notes"></a>版本資訊
+
+
+## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security 版本 95 (推出中)
+發行日期：2017 年 4 月 24 日
+
+**更新**
+- [帳戶] 頁面已使用改進功能更新，讓風險偵測變得更容易。 您現在會更容易篩選內部和外部帳戶，看一眼就知道使用者是否擁有系統管理權限，而且可以只對每個帳戶依應用程式執行動作 (例如移除權限、移除使用者的共同作業、暫時停止使用者的權限)。 此外，還會顯示每個帳戶的已匯入[使用者群組](user-groups.md)。 
+
+- 針對 Microsoft 帳戶 (Office 365 和 Azure Active Directory)，Cloud App Security 會將不同的使用者識別碼群組在單一帳戶之下，例如 Proxy 位址、別名、SID 和其他。 所有與帳戶相關的別名都會出現在主要電子郵件地址下。 以使用者識別碼清單為基礎，凡執行者為使用者識別碼的活動，其執行者會顯示為主要使用者名稱 UPN (使用者主體名稱)。 根據 UPN 指派群組並套用原則。 這會改善調查活動，並將所有相關的活動融合到異常和群組原則的相同工作階段。 這項功能會在下個月陸續推出。
+
+- 傀儡程式標記已新增為瀏覽器利用內建報告的可能風險因素。 現在，除了瀏覽器利用被標記為過時，您還可以看到傀儡程式何時執行瀏覽器利用。 深入了解[內建報告](built-in-report-reference.md)。
+
+- 現在在建立內容檢查檔案原則時，您可以設定篩選器只包含至少有 50 個符合項目的檔案。
+
+
 
 ## <a name="cloud-app-security-release-94"></a>Cloud App Security 版本 94
 發行日期：2017 年 4 月 2 日

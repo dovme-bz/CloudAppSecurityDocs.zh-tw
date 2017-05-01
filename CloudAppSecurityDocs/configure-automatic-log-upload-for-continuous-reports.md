@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
 記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟每隔 20 分鐘接收一次，然後將檔案上傳到 Cloud App Security。
 
 在設定自動收集記錄檔之前，請確認您的記錄檔與預期記錄檔類型相符，以確保 Cloud App Security 可以剖析特定檔案。 
+
+>[!NOTE]
+>Cloud App Security 支援將記錄檔從 SIEM 伺服器轉送到記錄檔收集器，假設記錄檔是以原始格式轉送。 不過，強烈建議您直接整合記錄檔收集器與防火牆及/或 Proxy。
+
 
 ## <a name="technical-requirements"></a>技術需求
 - Hypervisor：HyperV 或 VMware
@@ -74,7 +78,7 @@ translationtype: HT
   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 4.  按一下 Hyper-V 或 VMWare，以**下載**新的記錄收集器虛擬機器，並使用您在入口網站接收到的密碼解壓縮檔案。  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 
 > [!NOTE] 
 > 下列步驟描述 Hyper-V 中的部署。 VM Hypervisor 的部署步驟有些不同。  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 12b77282ebf900978efa6be7b6902aee5ad2eaaa
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="policy-templates"></a>原則範本
@@ -36,7 +36,7 @@ translationtype: HT
 |新的風險應用程式|在發現新應用程式的風險分數低於 6，而且有超過 50 位使用者每天使用超過 50 MB 時發出警示。|
 |共同作業應用程式合規性檢查|在發現新共同作業應用程式未符合 SOC2 及 SSAE 16 規範，而且有超過 50 位使用者每天使用超過 50 MB 時發出警示。|
 |從有風險的 IP 位址登入|在使用者從有風險的 IP 位址登入您獲批准的應用程式時發出警示。 根據預設，有風險的 IP 位址類別包含具有「匿名 Proxy」、「TOR」或「殭屍網路」IP 位址標記的位址。 您可以在 [IP 位址範圍] 設定頁面中，將更多 IP 位址新增到此類別。|
-|來自非管理 IP 位址的管理活動|在管理員使用者從不包含在特定 IP 位址範圍類別中的 IP 位址執行管理活動時發出警示。 您可以前往 [設定] 頁面選取 IP 位址範圍，藉此設定其他有風險的 IP 位址。|
+|來自非公司 IP 位址的管理活動|在管理員使用者從不包含在公司 IP 位址範圍類別中的 IP 位址執行管理活動時發出警示。 您必須先移至 [設定] 頁面設定公司的 IP 位址，並設定 [IP 位址範圍]。|
 |使用者從未分類的 IP 位址登入|在使用者從不包含在特定 IP 範圍類別中的 IP 位址登入時發出警示。 您可以前往 [設定] 頁面選取 IP 位址範圍，藉此將 IP 位址分類。|
 |在雲端中偵測到包含 PII 的檔案 (內建 DLP 引擎)|在內建資料外洩防護 (DLP) 引擎在獲批准的雲端應用程式中偵測到包含個人識別資訊 (PII) 的檔案時發出警示。|
 |新的人力資源管理應用程式|在新發現的人力資源管理應用程式有超過 50 位使用者每天使用超過 50 MB 時發出警示。|
