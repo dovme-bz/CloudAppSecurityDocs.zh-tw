@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,22 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f4fd428f762bcbe1fb2a26bf44268cf985fbd4f
-ms.sourcegitcommit: c79c405a1277c5fcebbc245fa12ff8feb53248d5
+ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
+ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
 translationtype: HT
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>將 ServiceNow 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用 App 連接器 API，將 Cloud App Security 連接至您現有的 ServiceNow 帳戶。  
-  
-## <a name="how-to-connect-servicenow-to-cloud-app-security"></a>如何將 ServiceNow 連接至 Cloud App Security  
-  
-> [!NOTE]  
+
+本節提供的指示說明如何使用 App 連接器 API，將 Cloud App Security 連接至您現有的 ServiceNow 帳戶。 
+
+ >  [!NOTE]
+>  建議使用適用於 Fuji 和更新版本的 OAuth 應用程式權杖，來部署 ServiceNow (請參閱相關的 [ServiceNow 文件](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)。 針對舊版，則會根據使用者/密碼提供[舊版連線模式](#legacy-servicenow-connection)。
+
+ > [!NOTE]  
 >  Cloud App Security 支援 Eureka、Fiji、Geneva、Helsinki 和 Istanbul 版本的 ServiceNow。 若要連接 ServiceNow 與 Cloud App Security，您必須擁有**系統管理員**角色，並確定 ServiceNow 執行個體支援 API 存取。  如需詳細資訊，請參閱 [ServiceNow 產品文件](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)。
+  
+## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>如何使用 OAuth 將 ServiceNow 連線至 Cloud App Security
+  
   
 1.  使用系統管理員帳戶登入您的 ServiceNow 帳戶。  
   
@@ -69,6 +74,36 @@ translationtype: HT
   
 連接 ServiceNow 之後，您會收到連線前 60 天的事件。
   
+## <a name="legacy-servicenow-connection"></a>舊版 ServiceNow 連線
+
+若要連接 ServiceNow 與 Cloud App Security，您必須擁有系統管理員層級權限，並確定 ServiceNow 執行個體支援 API 存取。   
+
+1.  使用系統管理員帳戶登入您的 ServiceNow 帳戶。   
+
+2.  建立新的 Cloud App Security 服務帳戶，並將系統管理員角色附加至新建立的帳戶。   
+
+3.  確定已開啟 REST API 外掛程式。   
+
+    ![ServiceNow 帳戶](./media/servicenow-account.png "ServiceNow 帳戶")   
+
+4.  在 Cloud App Security 入口網站中，依序按一下 [調查] 和 [獲批准的應用程式]。   
+
+5.  在 ServiceNow 列中，按一下 [App 連線程式狀態] 欄位中的 [連線]，或依序按一下 [連線到應用程式] 按鈕和 [ServiceNow]。   
+
+    ![連線 ServiceNow](./media/connect-servicenow.png "連線 ServiceNow")   
+
+6.  在 ServiceNow 設定頁面上，[API] 索引標籤的適當方塊中，加入 ServiceNow 的使用者名稱、密碼和執行個體 URL。   
+
+7.  按一下 [連線] 。   
+
+   ![ServiceNow 更新密碼](./media/servicenow-update-password.png "ServiceNow 更新密碼")   
+
+8.  按一下 [測試 API] 確定連線成功。   
+  
+   測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。   
+ 連接 ServiceNow 之後，您會收到連線前 60 天的事件。 
+
+
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

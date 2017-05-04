@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
-ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
+ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
 translationtype: HT
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
@@ -64,7 +64,7 @@ Cloud Discovery 利用流量記錄中的資料。 記錄越詳細，可見度就
  
 Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 例如，「Cisco ASA 防火牆」標準記錄格式未包含「每筆交易的上傳位元組數」和「使用者名稱」，而且未包含「目標 URL」 (但僅限目標 IP)。
-因此，在這些記錄的 Cloud Discovery 資料中會顯示這些屬性，以及我們所限制之雲端應用程式的可見度。 對於 Cisco ASA 防火牆，需要將資訊層級設定為 6。 
+因此，在這些記錄的 Cloud Discovery 資料中不會顯示這些屬性，而且所看到的雲端應用程式會受到限制。 對於 Cisco ASA 防火牆，需要將資訊層級設定為 6。 
  
 
 為了順利產生 Cloud Discovery 報告，您的流量記錄必須符合下列條件︰
@@ -79,7 +79,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Cisco ASA 防火牆 (對於 Cisco ASA 防火牆，需要將資訊層級設定為 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
-- Cisco Merkai – URL 記錄
+- Cisco Meraki - URL 記錄
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
