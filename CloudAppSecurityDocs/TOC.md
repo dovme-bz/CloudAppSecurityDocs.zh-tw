@@ -9,6 +9,7 @@
 ## [部署 Cloud Discovery](set-up-cloud-discovery.md)
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](configure-automatic-log-upload-for-continuous-reports.md)
+### [使用自訂記錄檔剖析器](custom-log-parser.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
