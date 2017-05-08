@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6a4b0e2c79fcb96a307d83a4077492138b73066
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 451d88f6403e62ed5cf68d5a932e5029f270df7a
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
-# <a name="import-user-groups-preview"></a>匯入使用者群組 (預覽)
+# <a name="import-user-groups"></a>匯入使用者群組
 
 當您使用 API 連接器連接應用程式時，Cloud App Security 可讓您從 Office 365 及 Azure Active Directory 等等匯入使用者群組。
 使用者群組有兩種類型： 
