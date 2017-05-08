@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="customize-the-portal"></a>自訂入口網站
 下列程序會指示您自訂 Cloud App Security 入口網站。
@@ -89,7 +90,7 @@ translationtype: HT
 
 如需詳細資訊，請參閱[使用者群組](user-groups.md)。
 
-##  <a name="Adallom_mailsettings"></a> 將您的體驗個人化  
+##  <a name="mailsettings"></a> 將您的體驗個人化  
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
   
 ![郵件設定功能表](./media/mail-setting-menu.png "郵件設定功能表")  
