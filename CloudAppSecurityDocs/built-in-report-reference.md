@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="built-in-report-reference"></a>內建報告參考資料
-建議您使用內建報告作為起點建立自訂報告，有點像您的自訂報告根據的範本。 下表提供一份內建報告的清單，以及您可能想要用它們來監視的事件類型。  
+
+CAS 提供現成的內建報告完整清單，可讓您汲取及監視人員使用雲端的方式。 您可以在每個報告中使用篩選器來自訂報告，並將報告匯出以方便您使用。
+
+
+下表提供一份內建報告的清單，以及您可能想要用它們來監視的事件類型。  
   
 ## <a name="built-in-report-list"></a>內建報告清單  
   

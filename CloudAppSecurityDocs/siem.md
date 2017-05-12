@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ab0164181826368c2dae7836e9b8189bb907f790
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 19b1f69d61488fca523d09fa0fe752029ee0f8c2
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
-# <a name="siem-integration--public-preview-"></a>SIEM 整合 -PUBLIC PREVIEW- 
+# <a name="siem-integration"></a>SIEM 整合
     
 您現在可以整合 Cloud App Security 與 SIEM 伺服器，來啟用警示和活動的集中式監視。 與 SIEM 服務整合可讓您進一步保護雲端應用程式，同時維護一般安全性工作流程、自動化安全性程序，以及關聯雲端型事件與內部部署事件。 Cloud App Security SIEM 代理程式會在您的伺服器上執行，以及從 Cloud App Security 提取警示和活動，並將它們串流至 SIEM 伺服器。
 
@@ -126,6 +127,9 @@ translationtype: HT
 |**資料伺服器連線錯誤**| 如果您透過 TCP 使用 Syslog 伺服器，則會收到此錯誤。 SIEM 代理程式無法連接至 Syslog 伺服器。  如果您收到這個錯誤，則代理程式會在修正錯誤之前停止提取新的活動，因此請務必遵循補救步驟，直到錯誤不再出現為止。|1.確定您正確地定義 Syslog 伺服器︰在 Cloud App Security UI 中，編輯您的 SIEM 代理程式 (如上所述)，並確定您所撰寫的伺服器名稱正確，且設定正確的連接埠。 </br>2.檢查 Syslog 伺服器連線︰確定防火牆未封鎖通訊。|
 |**SIEM 代理程式錯誤**|SIEM 代理程式已中斷連線超過 X 小時|請確認您未在 Cloud App Security 入口網站中變更 SIEM 設定。 否則，這可能表示 Cloud App Security 與您執行 SIEM 代理程式的電腦之間有連線問題。|
 |**SIEM 代理程式通知錯誤**|從 SIEM 代理程式收到 SIEM 代理程式通知轉寄錯誤。|這表示您收到有關 SIEM 代理程式與 SIEM 伺服器之間連線的錯誤。 請確認沒有防火牆封鎖您的 SIEM 伺服器或您執行 SIEM 代理程式的電腦。 另外也請檢查 SIEM 伺服器的 IP 位址未變更。|
+
+> [!NOTE]
+> 此功能處於公開預覽狀態。
 
 ## <a name="see-also"></a>另請參閱  
 [使用者活動原則](user-activity-policies.md)   

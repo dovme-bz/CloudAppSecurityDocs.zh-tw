@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個以上屬性進行排名和評分之 13,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
@@ -74,15 +75,19 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 4.  記錄檔有效，並且包含輸出流量資訊。
  
 ## <a name="supported-firewalls-and-proxies"></a>支援的防火牆和 Proxy
+
+- Barracuda - Web 應用程式防火牆 (W3C)
 - Blue Coat Proxy SG - 存取記錄 (W3C)
 - Check Point
 - Cisco ASA 防火牆 (對於 Cisco ASA 防火牆，需要將資訊層級設定為 6)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL 記錄
+- Clavister NGFW (Syslog)
 - Dell Sonicwall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto 系列防火牆
@@ -95,24 +100,26 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Zscaler
 
 
-如果您的記錄檔不受支援，請在 [資料來源] 中選取 [其他]，並指定您嘗試上傳的設備與記錄檔。 Cloud App Security 雲端分析師團隊將會檢閱您的記錄，而且會在新增您記錄類型支援時通知您。 
+如果您的記錄檔不受支援，請在 [資料來源] 中選取 [其他]，並指定您嘗試上傳的設備與記錄檔。 Cloud App Security 雲端分析師團隊將會檢閱您的記錄，而且會在新增您記錄類型支援時通知您。 或者，您可以定義符合您格式的自訂剖析器。 如需詳細資訊，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)。
 
 
 資料屬性 (根據廠商文件)：
 
 |資料來源|目標應用程式 URL|目標應用程式 IP|Username|來源 IP|總流量|上傳的位元組|
 |----|----|----|-----|----|----|----|
+|Barracuda|**是**|**是**|**是**|**是**|否|否|
 |Blue Coat|**是**|否|**是**|**是**|**是**|**是**|
 |Checkpoint|否|**是**|否|**是**|否|否|
 |Cisco ASA|否|**是**|否|**是**|**是**|否|
 |Cisco FWSM|否|**是**|否|**是**|**是**|否|
 |Cisco Ironport WSA|**是**|**是**|**是**|**是**|**是**|**是**|
-|Cisco Scansfe|**是**|否|**是**|**是**|**是**|**是**|
+|Cisco Meraki|**是**|**是**|否|**是**|否|否||Cisco Scansafe|**是**|否|**是**|**是**|**是**|**是**|
+|Clavister NGFW (Syslog)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Dell SonicWall|**是**|**是**|否|**是**|**是**|**是**|
 |Fortigate|否|**是**|否|**是**|**是**|**是**|
-|Juniper SRX|否|**是**|否|**是**\*|**是**|**是**|
+|Juniper SRX|否|**是**|否|**是**\**|**是**|**是**|
+|Juniper SSG|否|**是**|否|**是**|**是**|**是**|
 |McAfee SWG|**是**|否|否|**是**|**是**|**是**|
-|Meraki|**是**|**是**|否|**是**|否|否|
 |MS TMG|**是**|否|**是**|**是**|**是**|**是**|
 |Palo Alto Networks|**是**|**是**|**是**|**是**\*|**是**|**是**|
 |Sophos|**是**|**是**|**是**|**是**|**是**|否|
