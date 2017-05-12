@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="release-notes"></a>版本資訊
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security 96 版
+發行日期：2017 年 5 月 8 日
+
+新功能：
+-    持續逐步推出「安全性讀取者」權限，可讓您管理授與給系統管理員在 Cloud App Security 主控台中的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
+-    已完成推出 Cloud Discovery 針對 CSV 記錄檔的使用者定義記錄檔剖析器支援。 Cloud App Security 可提供工具來描述與特定資料相關聯的資料行，讓您針對先前不支援的設備來設定剖析器。 如需詳細資訊，請參閱[自訂記錄檔剖析器](custom-log-parser.md)。
+改善：
+-    Cloud Discovery 現在支援 Juniper SSG 設備。
+-    Cloud Discovery 對 Cisco ASA 記錄檔的支援已改進以獲得更好的可見度。
+-    您現在可以在 Cloud App Security 入口網站資料表中更輕鬆地執行大量動作和選取多個記錄：頁面長度已增加以改善大量作業。
+-    「域外共用 (依網域)」和「共用檔案的擁有者」內建報告現在可以針對 Salesforce 資料執行。
+-    我們已開始推出其他的 Salesforce 活動，讓您能夠追蹤從活動資料所擷取的有趣資訊。 這些活動包括檢視和編輯帳戶、潛在客戶、商機以及各種其他有趣的 Salesforce 物件。
+-    新的活動已新增到 Exchange，讓您可監視已授與哪些權限給使用者信箱或信箱資料夾。 這些活動包括：
+    -    新增收件者權限
+    -    移除收件者權限
+    -    新增信箱資料夾權限
+    -    移除信箱資料夾權限
+    -    設定信箱資料夾權限
+
+    例如，您現在可監視已授與其他使用者信箱 **SendAs** 權限，因此能以其名稱傳送電子郵件的使用者。
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security 版本 95 (推出中)

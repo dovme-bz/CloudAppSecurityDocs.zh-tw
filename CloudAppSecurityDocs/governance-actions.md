@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306cee70e89e232367f8f9312cde2a7db91879bf
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
 治理可讓您即時控制各應用程式上的使用者活動。 對於連線的應用程式，您可以對檔案或活動套用治理動作。
@@ -105,7 +106,7 @@ translationtype: HT
 |帳戶|檔案|移除使用者的共同作業|移除特定使用者對於所有檔案的所有共同作業 - 對於有人離開公司時很實用。|Box、G Suite|
 |帳戶|帳戶|恢復使用者的權限|恢復使用者的權限|G Suite、Box、Office、Salesforce|
 |帳戶|帳戶|帳戶設定|帶您前往特定應用程式 (例如，進入 Salesforce) 中的 [帳戶設定] 頁面。|所有應用程式 - OneDrive 與 SharePoint 設定從 Office 內設定。|
-|帳戶 |檔案|移轉所有檔案擁有權|您可以針對一個帳戶，將某位使用者的檔案全部移轉為由您所選的一位新的人員擁有。 先前的擁有者會成為編輯者。 移轉擁有權之後，admin@gtest1.adallom.com 會成為編輯者，且再也無法變更共用設定。 新的擁有者會收到電子郵件通知，告知擁有權已變更。|G Suite|
+|帳戶 |檔案|移轉所有檔案擁有權|您可以針對一個帳戶，將某位使用者的檔案全部移轉為由您所選的一位新的人員擁有。 先前的擁有者會成為編輯者，且再也無法變更共用設定。 新的擁有者會收到電子郵件通知，告知擁有權已變更。|G Suite|
 |帳戶、活動原則|帳戶|暫時停止使用者的權限|將使用者設定為沒有任何存取權也無法登入 - 如果使用者在此設定情況下登入，會立即將其鎖住。|G Suite、Box、Office、Salesforce|
 |活動原則、帳戶|帳戶|撤銷密碼|撤銷使用者帳戶的密碼 - 例如，設定活動原則在登入嘗試失敗 10 後撤銷密碼。|G Suite|
 |活動原則、帳戶|帳戶|撤銷系統管理員權限|撤銷系統管理員帳戶的權限 - 例如，設定活動原則在登入嘗試失敗 10 後撤銷系統管理員權限。|G Suite|
