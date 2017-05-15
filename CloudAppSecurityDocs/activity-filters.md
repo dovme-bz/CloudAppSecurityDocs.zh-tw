@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 948e5d12e66f70a9bef6a4a48ac75ce01ae63a99
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -73,8 +75,8 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
   
 -   IP 位址 - 執行活動來源的原始 IP 位址、類別或標記。  
     - 原始 IP 位址 - 可讓您搜尋在原始 IP 位址上執行或由其執行的活動，條件包括等於、不等於或開頭是否為特定順序，或是否為經過設定的原始 IP 位址。 
-    - IP 類別 - 執行活動的來源 IP 位址類別；例如，來自系統管理 IP 位址範圍的所有活動。 類別需要設定成包含相關 IP 位址，但 "Risky" 類別除外，這種類別是預先設定的類別，並且包含兩個 IP 標記 - 匿名 Proxy 和 Tor。 若要了解如何設定 IP 類別，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。  
-    - IP 標記 - 執行活動的來源 IP 位址標記；例如，來自匿名 Proxy IP 位址的所有活動。 Cloud App Security 建立一組不可設定的內建 IP 標記。 此外，您可以設定專屬 IP 標記。 如需設定專屬 IP 標記的詳細資訊，請參閱[依據需求來組織資料](general-setup.md#IPtagsandRanges)。
+    - IP 類別 - 執行活動的來源 IP 位址類別；例如，來自系統管理 IP 位址範圍的所有活動。 類別需要設定成包含相關 IP 位址，但 "Risky" 類別除外，這種類別是預先設定的類別，並且包含兩個 IP 標記 - 匿名 Proxy 和 Tor。 若要了解如何設定 IP 類別，請參閱[依據需求來組織資料](ip-tags.md)。  
+    - IP 標記 - 執行活動的來源 IP 位址標記；例如，來自匿名 Proxy IP 位址的所有活動。 Cloud App Security 建立一組不可設定的內建 IP 標記。 此外，您可以設定專屬 IP 標記。 如需設定專屬 IP 標記的詳細資訊，請參閱[依據需求來組織資料](ip-tags.md)。
    內建 IP 標記包含：
     - Microsoft 應用程式 (其中的 14 個)
     - 匿名 Proxy

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2016
+ms.date: 4/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6a8ad3618f27cbfecd11fd0f12817c030620c20
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: cc25a661cf7bd18be19e9e6fd82a4d39cf132c66
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="accounts"></a>帳戶
 Cloud App Security 可讓您從連線應用程式看見帳戶。 當您使用 App 連線程式將 Cloud App Security 連線至應用程式時，Cloud App Security 會讀取與連線應用程式建立關聯的帳戶資訊。 [帳戶] 頁面可讓您調查這些帳戶、權限、為其所屬成員的群組、其別名以及所用的應用程式。 此外，當 Cloud App Security 偵測到先前在其中一個連線應用程式 (例如活動或檔案共用) 中未看到的新帳戶時，會將此帳戶新增至該應用程式的帳戶清單。 這可讓您檢視與您的雲端應用程式互動之外部使用者的活動。

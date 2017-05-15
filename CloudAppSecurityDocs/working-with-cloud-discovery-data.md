@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acae7c7da7e9f800ff95a89ab422143bb84b699c
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: dc103be5e26752cdfa7dd605ba45f4a7c347b032
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="discover"></a>探索
 
@@ -73,7 +74,7 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
   
 5.  選取您要包含的資料來源 (全部或特定)。  
   
-6.  設定要對資料執行的篩選，可以是 [組織單位]、[IP 位址標記] 或 [IP 位址範圍]。 如需使用 IP 位址標記和 IP 位址範圍的詳細資訊，請參閱[根據需求組織資料](general-setup.md#IPtagsandRanges)。  
+6.  設定要對資料執行的篩選，可以是 [組織單位]、[IP 位址標記] 或 [IP 位址範圍]。 如需使用 IP 位址標記和 IP 位址範圍的詳細資訊，請參閱[根據需求組織資料](ip-tags.md)。  
   
     ![建立自訂連續報告](./media/create-custom-continuous-report.png) 
 

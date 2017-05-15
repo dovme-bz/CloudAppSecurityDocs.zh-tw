@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 7f1b4f7fc213dee315b723bf09d88dd7867c14e6
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
 Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
@@ -99,7 +100,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 您可使用原則來協助您監視趨勢、查看安全性威脅，並產生自訂的報告及警示。 使用原則時，您可以建立治理動作並設定資料外洩防護及檔案共用的控制項。
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>步驟 4. [個人化您的體驗](general-setup.md#mailsettings)。
+### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>步驟 4. [個人化您的體驗](mail-settings.md)。
 建議工作：新增您的組織詳細資料
 
 **輸入電子郵件設定**
@@ -126,7 +127,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 有些功能在針對您的需求進行自訂時才能發揮最大的效益。 您可以使用自己的電子郵件範本，為使用者提供更好的體驗，也可以決定要接收何種通知，並自訂風險分數計量以符合組織的喜好設定。
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsgeneral-setupmdiptagsandranges"></a>步驟 5. [根據您的需求組織資料](general-setup.md#IPtagsandRanges)。
+### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>步驟 5. [根據您的需求組織資料](ip-tags.md)。
 建議工作：設定重要的設定
 
 **建立 IP 位址標記**
