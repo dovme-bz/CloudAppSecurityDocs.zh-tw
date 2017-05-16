@@ -15,7 +15,8 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
 ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -34,13 +35,13 @@ translationtype: HT
     **Cloud App Security for Google** 然後按一下 [建立]****。  
            ![google2](./media/google2.png "google2")  
   
-4.  專案建立後，在工具列上的 Google Cloud Platform 旁邊，選取專案，然後按一下 [API] 的 [Go to APIs overview] (移至 API 概觀)。  
+4.  專案建立後，在工具列上的 Google Cloud Platform 旁邊，選取專案，然後按一下 [API] 的 [Go to APIs overview]\(移至 API 概觀)。  
   
      ![google3](./media/google3.png "google3")  
   
 5.  停用 [API] 下列出的所有 API。  
       
-6.  按一下 [程式庫] 啟用下列 API (如果 [Popular APIs] (熱門 API) 清單未列出 API，請使用搜尋列)：  
+6.  按一下 [程式庫] 啟用下列 API (如果 [Popular APIs]\(熱門 API) 清單未列出 API，請使用搜尋列)：  
   
      ![Google API](./media/google4.png "google4")  
   
