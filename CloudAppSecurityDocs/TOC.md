@@ -1,9 +1,12 @@
 # 了解並探索
 ## [什麼是 CAS？](what-is-cloud-app-security.md)
 ## [版本資訊](release-notes.md)
-# 在客體叢集部署
+# 部署
 ## [開始使用](getting-started-with-cloud-app-security.md)
-## [自訂入口網站](general-setup.md)
+## [基本設定](general-setup.md)
+### [管理系統管理員](manage-admins.md)
+#### [系統管理員設定](admin-settings.md)
+### [郵件設定](mail-settings.md)
 ### [使用者群組](user-groups.md)
 ### [IP 標籤和範圍](ip-tags.md)
 ## [部署 Cloud Discovery](set-up-cloud-discovery.md)
@@ -13,7 +16,7 @@
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
-### [連線 G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [連接 G Suite](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [連接 Office 365](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [連接 AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [連接 Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -51,3 +54,4 @@
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 ## [為內容檢查進行疑難排解](troubleshooting-content-inspection.md)
+## [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)
