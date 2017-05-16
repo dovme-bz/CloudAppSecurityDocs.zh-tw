@@ -15,7 +15,8 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
 ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
@@ -48,7 +49,7 @@ translationtype: HT
   
      ![連接 Box](./media/connect-box.png "連接 Box")  
   
-4.  在 [Box settings] (Box 設定) 快顯視窗中，按一下 [連入此連結]。  
+4.  在 [Box settings]\(Box 設定) 快顯視窗中，按一下 [連入此連結]。  
   
 5.  這會開啟 Box 的登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Box 應用程式。  
   
