@@ -15,7 +15,8 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: e888fe124b72704309183be7c2516367f2a14a0d
 ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>將 Okta 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Okta 帳戶。  
@@ -42,7 +43,7 @@ translationtype: HT
   
          ![Okta 權杖快顯視窗](./media/okta-token-popup.png "Okta 權杖快顯視窗")  
   
-    -   在 [Token created successfully] (已成功建立權杖) 快顯視窗中，複製 [權杖值]。  
+    -   在 [Token created successfully]\(已成功建立權杖) 快顯視窗中，複製 [權杖值]。  
   
          ![Okta 權杖值](./media/okta-token-value.png "Okta 權杖值")  
   

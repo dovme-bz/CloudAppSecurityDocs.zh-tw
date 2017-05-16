@@ -15,7 +15,8 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
 ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>將 Salesforce 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連接程式 API，將 Cloud App Security 連接至您現有的 Salesforce 帳戶。  
@@ -44,7 +45,7 @@ translationtype: HT
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce 編輯設定檔")  
   
-    -   請確定您已選取 [API Enabled] (已啟用 API) 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
+    -   請確定您已選取 [API Enabled]\(已啟用 API) 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
   
          ![salesforce api 已啟用](./media/salesforce-api-enabled.png "salesforce api 已啟用")  
   
@@ -60,7 +61,7 @@ translationtype: HT
   
     3.  將目前的系統管理使用者選取為專屬的 Cloud App Security 使用者。  
   
-    4.  請確定已選取 [Salesforce CRM Content User] (Salesforce CRM 內容使用者) 核取方塊。  
+    4.  請確定已選取 [Salesforce CRM Content User]\(Salesforce CRM 內容使用者) 核取方塊。  
   
          如果未選取，請按一下 [編輯] 然後核取此核取方塊。  
   
