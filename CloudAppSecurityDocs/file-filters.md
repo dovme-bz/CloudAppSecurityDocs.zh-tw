@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/3/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a93e9ac3c98dbbe2fef09419afe58c158ec96337
-ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="files"></a>檔案
 
@@ -60,7 +61,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
 > - **OneDrive：** OneDrive 會將內部使用者指派為任何外部使用者所放入您 OneDrive 中之檔案的擁有者。 如此一來，系統會將這些檔案視為組織所擁有，Cloud App Security 即可掃描這些檔案並套用原則，就像 OneDrive 中的任何其他檔案一樣。
 > - **Google 雲端硬碟：**Google 雲端硬碟會將這些檔案視為外部使用者擁有，既然這些檔案和資料不屬於您的組織，基於法律限制，Cloud App Security 即不能存取這些檔案。
 > - **Box：**由於 Box 會將外部擁有的檔案視為私人資訊，因此 Box 全域管理員無法查看檔案的內容。 基於這個理由，Cloud App Security 並不能存取這些檔案。 
-> - **Dropbox：**由於 Dropbox 會將外部擁有的檔案視為私人資訊，因此 Box 全域管理員無法查看檔案的內容。 基於這個理由，Cloud App Security 並不能存取這些檔案。
+> - **Dropbox：**由於 Dropbox 會將外部擁有的檔案視為私人資訊，因此 Dropbox 全域管理員無法查看檔案的內容。 基於這個理由，Cloud App Security 並不能存取這些檔案。
 
 -   應用程式 – 僅搜尋這些應用程式中的檔案。  
   
