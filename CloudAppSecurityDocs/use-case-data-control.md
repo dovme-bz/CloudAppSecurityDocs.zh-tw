@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cae50c83705d91513525c9b90e462e44e07b97ed
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>控制和保護您的檔案  
 
@@ -136,6 +138,10 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 2. 進行完整驗證之後，您可以設定它來執行自動治理動作。 例如，在 SharePoint 和 OneDrive 中，您可以**置入使用者隔離中**，而針對 G Suite 和 Box，您可以**移除公用存取權**。
  
  ![自動治理動作移除公用存取權](./media/gov-action-public-access.png)
+
+
+如需 Cloud App Security 與 Azure 資訊保護搭配使用的詳細資訊，請參閱[保護資料不受使用者錯誤影響](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)。
+
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   

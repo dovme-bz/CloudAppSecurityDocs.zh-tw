@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,21 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 3be2a96cb9fe792917ce388ca52df9c03428f9fa
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>將 Office 365 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Microsoft Office 365 帳戶。  
   
-  
+Cloud App Security 支援舊版 Office 365 專用平台，以及 Office 365 服務的最新供應項目 (通常稱為 Office 365 的 vNext 版系列)。  Cloud App Security 不支援舊版 Microsoft Business Productivity Online Standard Suite。 
+
+> [!NOTE]
+> 在某些情況下，vNext 服務版本在系統管理和一般管理層級方面，與標準 Office 365 供應項目稍有不同。
+
+ 
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>如何將 Office 365 連接至 Cloud App Security  
   
