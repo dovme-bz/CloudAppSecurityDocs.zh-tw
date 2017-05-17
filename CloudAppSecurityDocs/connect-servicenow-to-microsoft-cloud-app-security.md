@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>將 ServiceNow 連接至 Microsoft Cloud App Security
 
@@ -32,9 +34,9 @@ translationtype: HT
   
 1.  使用系統管理員帳戶登入您的 ServiceNow 帳戶。  
   
-2.  在 [Filter navigator] (篩選導覽) 搜尋列中，鍵入 **OAuth** 並選取 [Application Registry] (應用程式登錄)。
+2.  在 [Filter navigator]\(篩選導覽) 搜尋列中，鍵入 **OAuth** 並選取 [Application Registry]\(應用程式登錄)。
 
-3. 在 [Application Registry] (應用程式登錄) 功能表列中，按一下 [新增] 建立新的 OAuth 設定檔。
+3. 在 [Application Registry]\(應用程式登錄) 功能表列中，按一下 [新增] 建立新的 OAuth 設定檔。
 
    ![ServiceNow 的新 OAuth 設定檔](./media/servicenow-app-registry.png)
 
@@ -42,15 +44,15 @@ translationtype: HT
 
    ![ServiceNow OAuth 類型](./media/servicenow-oauth-app-type.png)
 
-5. 在 [Application Registries New record] (應用程式登錄新增記錄) 填入下列內容︰
+5. 在 [Application Registries New record]\(應用程式登錄新增記錄) 填入下列內容︰
     
     - [名稱] 欄位中請填入新的 OAuth 設定檔名稱，例如 CloudAppSecurity。 
     
     - [用戶端識別碼] 會自動產生。 您需要複製此識別碼，並將它貼入 Cloud App Security 以完成連線。
     
-    - 在 [Client Secret] (用戶端密碼) 欄位中輸入字串。 如果空白，就會自動產生隨機密碼。 複製並儲存以供稍後使用。 
+    - 在 [Client Secret]\(用戶端密碼) 欄位中輸入字串。 如果空白，就會自動產生隨機密碼。 複製並儲存以供稍後使用。 
     
-    - 將 [Access Token Lifespan] (存取權杖使用時間) 增加到至少 3,600。
+    - 將 [Access Token Lifespan]\(存取權杖使用時間) 增加到至少 3,600。
     
     - 按一下 [提交] 。
 
@@ -62,13 +64,13 @@ translationtype: HT
   
      ![連線 ServiceNow](./media/connect-servicenow.png "連線 ServiceNow")  
   
-8.  在快顯中，於適當的方塊內新增您的 ServiceNow 使用者名稱、密碼、執行個體 URL 及用戶端識別碼。  
+8.  在快顯中，於適當的方塊中新增您的 ServiceNow 使用者識別碼、密碼、執行個體 URL 及用戶端密碼。  
   
 9.  按一下 [連線] 。  
   
      ![ServiceNow 連線到 CAS](./media/servicenow-portal-connect.png "在入口網站連線到 ServiceNow")  
   
-10.  按一下 [Test now] (立即測試) 確定連線成功。  
+10.  按一下 [Test now]\(立即測試) 確定連線成功。  
   
      測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
   
@@ -92,7 +94,7 @@ translationtype: HT
 
     ![連線 ServiceNow](./media/connect-servicenow.png "連線 ServiceNow")   
 
-6.  在 ServiceNow 設定頁面上，[API] 索引標籤的適當方塊中，加入 ServiceNow 的使用者名稱、密碼和執行個體 URL。   
+6.  在 ServiceNow 設定頁面上，於 [API] 索引標籤的適當方塊中，新增您的 ServiceNow 使用者識別碼、密碼和執行個體 URL。   
 
 7.  按一下 [連線] 。   
 
