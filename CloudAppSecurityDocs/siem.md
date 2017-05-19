@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -25,12 +25,38 @@ ms.lasthandoff: 05/09/2017
 
 當您初次整合您的 SIEM 與 Cloud App Security 時，過去兩天內的活動和警示會轉寄到 SIEM，並從那時候開始轉寄所有活動和警示 (依據您選取的篩選)。 此外，如果您延長此功能的停用期間，當您再次加以啟用時，其會轉寄過去兩天內的警示和活動，接著轉寄那時候開始的所有警示和活動。
 
+## <a name="siem-integration-architecture"></a>SIEM 整合架構
+
+SIEM 代理程式會部署在您的組織網路中。 部署並設定好 SIEM 代理程式之後，代理程式便會輪詢使用 Cloud App Security RESTful API 所設定的資料類型 (警示與活動)。
+之後，便會透過連接埠 443 上加密的 HTTPS 通道進行流量傳輸。
+
+SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安裝期間提供的網路設定 (搭配自訂連接埠的 TCP 或 UDP)，傳送 Syslog 訊息至本機 SIEM。 
+
+![SIEM 整合架構](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>SIEM 記錄範例
+
+Cloud App Security 提供給 SIEM 的記錄乃是 CEF 格式的 Syslog。 在下列記錄範例中，會顯示 Cloud App Security 通常傳送給 SIEM 伺服器的事件類型。 在範例中，會顯示觸發警示的時間、「事件的類型」、違反的「原則」、觸發事件的「使用者」、使用者導致違規所使用的「應用程式」，以及警示來源的 **URL**：
+
+活動記錄範例： 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+警示記錄範例： 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>如何整合
+
 與 SIEM 整合是透過三個步驟完成︰
 1. 在 Cloud App Security 入口網站中進行設定。 
 2. 下載 JAR 檔案，並在您的伺服器上執行該檔案。
 3. 驗證 SIEM 代理程式正在運作。
 
-## <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>必要條件
 
 - 標準 Windows 或 Linux 伺服器 (可以是虛擬機器)。
 - 伺服器必須執行 Java 8；不支援舊版本。
