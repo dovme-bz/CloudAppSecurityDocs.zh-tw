@@ -15,14 +15,15 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
 ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.translationtype: HT
+ms.contentlocale: zh-TW
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>將 AWS 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Amazon Web Services 帳戶。  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>如何將 Amazon Web Services 連接至 Cloud App Security  
   
-1.  在您 [Amazon Web Services 主控台](https://console.aws.amazon.com/)的 [Security, Identity & Compliance] (安全性、身分識別及相容性) 下，按一下 [IAM]。  
+1.  在您 [Amazon Web Services 主控台](https://console.aws.amazon.com/)的 [Security, Identity & Compliance]\(安全性、身分識別及相容性) 下，按一下 [IAM]。  
   
      ![AWS 身分識別與存取](./media/aws-identity-and-access.png "AWS 身分識別與存取")  
   
@@ -30,15 +31,15 @@ translationtype: HT
   
      ![AWS 使用者](./media/aws-users.png "AWS 使用者")      
   
-4.  在 [詳細資料] 步驟中，提供 Cloud App Security 的新使用者名稱，並確定在 [存取類型] 下選取 [以程式設計方式存取] 並按一下 [Next Permissions] (後續權限)。  
+4.  在 [詳細資料] 步驟中，提供 Cloud App Security 的新使用者名稱，並確定在 [存取類型] 下選取 [以程式設計方式存取] 並按一下 [Next Permissions]\(後續權限)。  
 
      ![AWS 建立使用者](./media/aws-create-user.png "AWS 建立使用者")
 
-5. 在 [權限] 步驟中，選取 [Attach existing policies directly] (直接附加現有的原則)，然後按一下 [建立原則]。
+5. 在 [權限] 步驟中，選取 [Attach existing policies directly]\(直接附加現有的原則)，然後按一下 [建立原則]。
 
    ![AWS 附加使用者](./media/aws-attach-user-policy.png "AWS 附加現有的原則")
 
-6.  在 [建立原則] 下選取 [Create Your Own Policy] (建立您自己的原則)。
+6.  在 [建立原則] 下選取 [Create Your Own Policy]\(建立您自己的原則)。
  
     ![AWS 建立自己的原則](./media/aws-create-own-policy.png "AWS 建立原則")
  
@@ -46,7 +47,7 @@ translationtype: HT
 
     ![AWS 檢閱原則](./media/aws-review-policy.png "AWS 檢閱原則")
 
-8. 然後將下列內容貼入 [Policy Document] (原則文件) 欄位，然後按一下 [建立原則]：
+8. 然後將下列內容貼入 [Policy Document]\(原則文件) 欄位，然後按一下 [建立原則]：
   
     ```     
     {  
@@ -70,7 +71,7 @@ translationtype: HT
   
     ```  
   
-9. 如有必要，回到 [新增使用者] 畫面中來重新整理清單，並選取您剛才建立的使用者，然後按一下 [Next Review] (下一個檢閱)。
+9. 如有必要，回到 [新增使用者] 畫面中來重新整理清單，並選取您剛才建立的使用者，然後按一下 [Next Review]\(下一個檢閱)。
 
    ![AWS 檢閱使用者原則](./media/aws-review-user.png "AWS 檢閱使用者")
 
@@ -86,11 +87,11 @@ translationtype: HT
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    以前如果未曾使用過 CloudTrail，請按一下 [開始使用]，提供名稱並選取適當的 S3 陣列安來裝它，然後按一下 [開啟]。 為確保您擁有完整的涵蓋範圍，請將 [Apply to all regions] (套用到所有區域) 設為 [是]。
+    以前如果未曾使用過 CloudTrail，請按一下 [開始使用]，提供名稱並選取適當的 S3 陣列安來裝它，然後按一下 [開啟]。 為確保您擁有完整的涵蓋範圍，請將 [Apply to all regions]\(套用到所有區域) 設為 [是]。
   
        ![AWS 開啟 CloudTrail](./media/aws-turnon-cloudtrail.png "AWS 開啟 CloudTrail")
   
-    [Trails] (軌跡) 清單中應該會看到新的 CloudTrail 名稱。
+    [Trails]\(軌跡) 清單中應該會看到新的 CloudTrail 名稱。
     
       ![AWS CloudTrail 清單](./media/aws-cloudtrail-list.png "AWS CloudTrail 清單")
   
