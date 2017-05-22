@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
-ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
-translationtype: HT
+ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
 記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟每隔 20 分鐘接收一次，然後將檔案上傳到 Cloud App Security。
@@ -32,8 +34,8 @@ translationtype: HT
 - CPU：2
 - RAM：4 GB 
 - 防火牆設定： 
-- 允許記錄收集器接收輸入的 FTP 和 Syslog 流量
-- 允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)
+    - 允許記錄收集器接收輸入的 FTP 和 Syslog 流量
+    - 允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)
 
   
 ## <a name="log-collector-performance"></a>記錄收集器效能
