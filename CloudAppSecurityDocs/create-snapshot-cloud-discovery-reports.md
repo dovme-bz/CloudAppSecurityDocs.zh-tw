@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7987786ed6db8593f8ec7baa60d1c6523ac00272
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>建立 Cloud Discovery 快照集報告
 請務必手動上傳記錄檔，讓 Cloud App Security 剖析過後再嘗試使用自動記錄收集器。
@@ -34,7 +36,7 @@ translationtype: HT
   
      ![新的快照集報告](./media/new-snapshot-report.png) 
 
-4.  選取您要上傳記錄檔的 [資料來源]。  
+4.  選取您要上傳 13 記錄檔的 **[資料來源]**。  
   
 5. 請驗證記錄檔格式，確定它已根據您可以下載的範例正確格式化。 按一下 [檢視並驗證]，再按一下 「Download sample log」 (下載範例記錄檔)。 然後比較您的記錄檔與範例提供的內容，確認二者相容。 
 
