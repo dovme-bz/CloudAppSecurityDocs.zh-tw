@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -73,7 +73,7 @@ Cloud App Security 提供給 SIEM 的記錄乃是 CEF 格式的 Syslog。 在下
 
    ![一般 SIEM 設定](./media/siem1.png)
 
-5. 輸入 [Remote syslog host] (遠端 Syslog 主機) 的 IP 位址和 [Syslog port number] (Syslog 連接埠號碼)。 選取 TCP 或 UDP 作為遠端 Syslog 通訊協定。
+5. 輸入 [遠端 Syslog 主機] 的 IP 位址或主機名稱，以及 [Syslog 連接埠號碼]。 選取 TCP 或 UDP 作為遠端 Syslog 通訊協定。
 如果您沒有這些詳細資料，則可以與安全性系統管理員合作，來取得這些詳細資料。
 按 [下一步] 。
   ![遠端 Syslog 設定](./media/siem2.png)
