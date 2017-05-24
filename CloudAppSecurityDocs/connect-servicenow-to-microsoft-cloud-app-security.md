@@ -40,7 +40,7 @@ ms.lasthandoff: 05/16/2017
 
    ![ServiceNow 的新 OAuth 設定檔](./media/servicenow-app-registry.png)
 
-4. 在 [What kind of OAuth application?] (OAuth 應用程式種類為何?) 下，按一下 [Create an OAuth API endpoint for external clients] (建立外部用戶端的 OAuth API 端點)。
+4. 在 [What kind of OAuth application?] \(OAuth 應用程式種類為何?) 下，按一下 [Create an OAuth API endpoint for external clients] \(建立外部用戶端的 OAuth API 端點)。
 
    ![ServiceNow OAuth 類型](./media/servicenow-oauth-app-type.png)
 
