@@ -14,8 +14,10 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1aaf81fe759fabd6105076d22c65f20c149b8d19
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="activity-policies"></a>活動原則
 活動原則可讓您利用應用程式提供者的 API，強制執行各種不同的自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。  

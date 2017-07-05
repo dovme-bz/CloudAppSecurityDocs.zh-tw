@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: c218a1aa02aafaa38107bc6072a810dec2e5a0a4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>控制和保護您的檔案  
 
@@ -40,7 +40,7 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
 
 #### <a name="setting-up-monitoring"></a>設定監視
 
-1.    透過設定掃描所有外部共用檔案是否有機密內容的原則，開始監視您的應用程式︰
+1.  透過設定掃描所有外部共用檔案是否有機密內容的原則，開始監視您的應用程式︰
 
     1. 在 [原則] 頁面上，按一下 [[建立檔案原則](data-protection-policies.md)]。 
     ![建立檔案原則](./media/create-file-policy.png)
@@ -101,11 +101,11 @@ Cloud App Security 可以根據 20 個以上的中繼資料篩選條件 (例如�
     
     1. 在 [原則] 頁面上，按一下 [[建立檔案原則](data-protection-policies.md)]。 
 
-    2.    在 [篩選] 區段中，您可以移除用於 [存取層級] 和 [上次修改] 的篩選，在您雲端中的所有檔案上執行此原則。 這些篩選僅適用於從現在起修改的檔案。 新增篩選 [分類標籤]，然後選取 [等於]，接著選取組織的分類標籤。 
+    2.  在 [篩選] 區段中，您可以移除用於 [存取層級] 和 [上次修改] 的篩選，在您雲端中的所有檔案上執行此原則。 這些篩選僅適用於從現在起修改的檔案。 新增篩選 [分類標籤]，然後選取 [等於]，接著選取組織的分類標籤。 
     
     ![檔案原則分類標籤](./media/file-policy-class-label.png)
 
-    3.    若要監視這些已分類檔案的不當共用，請新增含有您嘗試防止之存取層級的篩選 - 例如，**存取層級等於公用、公用 (網際網路)**。  啟動原則之後，需要針對 Cloud App Security 花些時間來掃描現有的檔案，還有您新增的任何新檔案。 根據您在雲端中擁有的資料量而定，可能需要花費一些時間才能完成掃描。
+    3.  若要監視這些已分類檔案的不當共用，請新增含有您嘗試防止之存取層級的篩選 - 例如，**存取層級等於公用、公用 (網際網路)**。  啟動原則之後，需要針對 Cloud App Security 花些時間來掃描現有的檔案，還有您新增的任何新檔案。 根據您在雲端中擁有的資料量而定，可能需要花費一些時間才能完成掃描。
 
     ![檔案原則篩選公開](./media/file-policy-filter-public.png)
 

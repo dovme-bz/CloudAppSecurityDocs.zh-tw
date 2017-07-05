@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8ff332a58da395a8284dfd3416e54624b739ef
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="file-policies"></a>檔案原則  
 檔案原則可讓您利用雲端提供者的 API，強制執行各種不同的自動化程序。 原則可以設定成提供連續的相容性掃描、法務 eDiscovery 工作、公開共用機密內容的 DLP，以及更多使用案例。  

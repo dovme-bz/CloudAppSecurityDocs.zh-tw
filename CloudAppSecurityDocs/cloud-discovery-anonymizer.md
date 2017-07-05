@@ -14,17 +14,19 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
 Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄檔上傳至 Cloud App Security 入口網站之後，會妥善處理記錄檔，並將所有使用者名稱資訊取代為加密使用者名稱。 如此一來，所有雲端活動都會保持匿名。 必要時，針對特定安全性調查 (例如，由於安全性缺口或可疑使用者活動)，系統管理員可以解析真實使用者名稱。 如果系統管理員有理由懷疑特定使用者，則也可以查閱已知使用者名稱的加密使用者名稱，然後使用加密使用者名稱來開始進行調查。 每個使用者名稱轉換都是在入口網站的**治理記錄**中進行稽核。
 
 重點︰
--    不會儲存或顯示任何私人資訊。 僅限加密資訊。
--    搭配使用 AES-128 與每個租用戶的專用金鑰，來加密私人資料。
--    解析使用者名稱是透過解密指定的加密使用者名稱，根據使用者，以臨機操作方式執行。
+-   不會儲存或顯示任何私人資訊。 僅限加密資訊。
+-   搭配使用 AES-128 與每個租用戶的專用金鑰，來加密私人資料。
+-   解析使用者名稱是透過解密指定的加密使用者名稱，根據使用者，以臨機操作方式執行。
 
 
 資料匿名運作方式：

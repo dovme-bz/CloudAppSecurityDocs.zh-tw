@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>使用自訂記錄檔剖析器
 Cloud App Security 可讓您設定自訂剖析器以符合記錄檔的格式並進行處理，如此一來即使記錄檔來自 Cloud App Security 並未明確支援的防火牆或裝置，Cloud Discovery 也可以使用記錄檔。 
@@ -26,7 +27,7 @@ Cloud App Security 可讓您設定自訂剖析器以符合記錄檔的格式並�
 
  
 設定自訂 CSV 剖析器：
-1.    在 Cloud App Security 入口網站中，依序按一下 [探索] 和 [建立新的快照集報告]。  
+1.  在 Cloud App Security 入口網站中，依序按一下 [探索] 和 [建立新的快照集報告]。  
   
     ![建立新的快照集報告](./media/create-new-snapshot-report.png)
      
