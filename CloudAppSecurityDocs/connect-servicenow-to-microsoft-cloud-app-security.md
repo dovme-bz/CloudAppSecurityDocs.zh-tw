@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>將 ServiceNow 連接至 Microsoft Cloud App Security
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/16/2017
   
 8.  在快顯中，於適當的方塊中新增您的 ServiceNow 使用者識別碼、密碼、執行個體 URL 及用戶端密碼。 若要尋找您的 ServiceNow 使用者識別碼，請在 ServiceNow 入口網站中，移至 [使用者] 並在表格中找出您的名稱。名稱會顯示在使用者識別碼旁邊。
 
-![ServiceNow 使用者識別碼](./media/servicenow-userid.png)
+    ![ServiceNow 使用者識別碼](./media/servicenow-userid.png)
   
 9.  按一下 [連線] 。  
   

@@ -14,8 +14,10 @@ ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 1083a743f2602bab6e55e96e1e7f7dd4c0b77bce
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="content-inspection"></a>內容檢查
 本文說明在針對雲端中的資料執行 DLP 內容檢查時，Cloud App Security 所遵循的程序。 
@@ -42,7 +44,7 @@ Cloud App Security 內容檢查功能的運作方式如下︰
 
 - 電子郵件地址 
 - 信用卡號碼 
-  -    所有的信用卡公司 (Visa、MasterCard、美國運通、大來卡、發現卡、JCB、Dankort、及中國銀聯) 
+  - 所有的信用卡公司 (Visa、MasterCard、美國運通、大來卡、發現卡、JCB、Dankort、及中國銀聯) 
   - 分隔符號- 空格、點或虛線
   - 這項掃描也包含 Luhn 驗證
 - SWIFT 銀行代碼
@@ -63,11 +65,11 @@ Cloud App Security 內容檢查功能的運作方式如下︰
 ## <a name="supported-languages"></a>支援的語言
 
 Cloud App Security 內容檢查引擎：
--    支援所有 Unicode 字元
--    涵蓋超過 1,000 個檔案類型
--    支援多種語言，特別是使用 Unicode 字元集的檔案。 請確定會定義您的原則來處理那些語言，例如如果您正在尋找關鍵字，您必須跨您想要使用的語言放入關鍵字。
--    在使用非 Unicode 編碼 (例如簡體中文 GB2312) 的文字型檔案類型中，針對 Unicode 中文關鍵字進行比較，將不會如預期般運作。
--    針對依賴協力廠商程式庫的檔案類型，比對字串與文字不一定會如預期般運作。 這在檔案中最常見 (例如二進位檔案類型)，其中的內容檢查依賴協力廠商程式庫，傳回適用於語言和字元集的 Java 字串。
+-   支援所有 Unicode 字元
+-   涵蓋超過 1,000 個檔案類型
+-   支援多種語言，特別是使用 Unicode 字元集的檔案。 請確定會定義您的原則來處理那些語言，例如如果您正在尋找關鍵字，您必須跨您想要使用的語言放入關鍵字。
+-   在使用非 Unicode 編碼 (例如簡體中文 GB2312) 的文字型檔案類型中，針對 Unicode 中文關鍵字進行比較，將不會如預期般運作。
+-   針對依賴協力廠商程式庫的檔案類型，比對字串與文字不一定會如預期般運作。 這在檔案中最常見 (例如二進位檔案類型)，其中的內容檢查依賴協力廠商程式庫，傳回適用於語言和字元集的 Java 字串。
 
 
 

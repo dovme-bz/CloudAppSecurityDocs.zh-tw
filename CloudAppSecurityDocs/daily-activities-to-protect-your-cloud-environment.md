@@ -14,8 +14,10 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="working-with-the-dashboard"></a>使用儀表板
 啟動並執行 Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
