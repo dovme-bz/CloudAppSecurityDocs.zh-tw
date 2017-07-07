@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 6/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6b7a2d88c748f8e5b379fb5d70b603c2b6f0e95
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
 治理可讓您即時控制各應用程式上的使用者活動。 對於連線的應用程式，您可以對檔案或活動套用治理動作。
@@ -80,20 +81,28 @@ ms.contentlocale: zh-TW
   
     -   每個應用程式皆可強制執行細微的動作；特定動作視應用程式的術語而異。  
   
-    -   暫時停止使用者的權限 – 暫時停止使用者的應用程式權限。  
+    -   暫時停止使用者的權限 – 暫時停止使用者的應用程式權限。 
+    > [!NOTE] 
+    > 如果您的 Azure Active Directory 設定為與 Active Directory 內部部署環境中的使用者自動同步，內部部署環境中的設定將會覆寫 Azure AD 設定，而且會還原此治理動作。 
   
     -   撤銷密碼 – 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
   
-     ![活動原則 ref6](./media/activity-policy-ref6.png "活動原則 ref6")  
+     ![Cloud App Security 活動原則治理動作](./media/activity-policy-ref6.png "活動原則 ref6")  
   
 
 ### <a name="governance-conflicts"></a>治理衝突
 
 建立多個原則之後，可能會出現多個原則中的治理動作重疊的狀況。 在此案例中，Cloud App Security 會如下所述處理治理動作：
 
+#### <a name="conflicts-between-policies"></a>原則相衝突
+
 - 若兩個原則包含彼此包含的動作 (例如，**設為私人**包含**移除外部共用**)，Cloud App Security 將會解決衝突，並強制執行更強大的動作。
 - 如果其中的動作完全無關 (例如**通知擁有者**和**設為私用**)， 則這兩個動作皆會執行。
 - 如果動作彼此衝突，(例如**變更擁有者為使用者 A** 和**變更擁有者為使用者 B**)，則每個相符項目可能會產生不同的結果。 建議您變更原則以避免發生衝突，因為這些衝突可能會導致磁碟機出現有害且很難偵測得到的變更。
+
+#### <a name="conflicts-in-user-sync"></a>使用者同步衝突
+
+- 如果您的 Azure Active Directory 設定為與 Active Directory 內部部署環境中的使用者自動同步，內部部署環境中的設定將會覆寫 Azure AD 設定，而且會還原此治理動作。 
 
 ### <a name="governance-log"></a>治理記錄
 治理記錄會為每個設定執行 Cloud App Security 的工作提供一筆狀態記錄 (包括手動和自動工作)。 這些工作包含您在原則中設定的工作、在檔案和使用者上設定的治理動作，以及您設定 Cloud App Security 採取的任何其他動作。 治理記錄也會提供這些動作成敗的相關資訊。 您可以選擇重試或還原治理記錄中的一些治理動作。 
@@ -124,7 +133,8 @@ ms.contentlocale: zh-TW
 |檔案原則, 活動原則|檔案, 活動|通知特定使用者|傳送電子郵件通知特定使用者有檔案違反了原則。|所有應用程式|
 |檔案原則與活動原則|檔案, 活動|通知使用者|傳送電子郵件給使用者，通知使用者他們所進行的作業，或他們自己所擁有的檔案違反了原則。 您可以加入自訂通知，讓使用者知道所違反的規定為何。|全部|
 |檔案原則及檔案|檔案|移除編輯者的能力以進行共用|在 Google 雲端硬碟中，檔案的預設編輯者權限也允許共用。 此治理動作會限制此選項，並限制檔案與擁有者共用。|G Suite|
-|檔案原則及檔案|檔案|置於系統管理隔離中|移除檔案具備的所有權限，並將檔案移至使用者根磁碟機下的隔離資料夾。 系統管理員如此即可檢閱該檔案，並加以移動。|方塊|
+|檔案原則及檔案|檔案|[置於系統管理隔離中](use-case-admin-quarantine.md)|移除檔案具備的所有權限，並將檔案移至系統管理位置中的隔離資料夾。 系統管理員如此即可檢閱該檔案，並加以移除。|Office 365 SharePoint、商務用 OneDrive、Box|
+|檔案原則、活動原則、警示|應用程式|需要使用者重新登入|您可以要求使用者重新登入所有 Office 365 和 Azure AD 應用程式，以快速有效地修復可疑的使用者活動警示及遭盜用的帳戶。 您可以在 [原則設定] 和 [警示] 頁面中，於 [暫時停止使用者的權限] 選項旁找到新的治理動作。|Office 365、Azure AD|
 |檔案|檔案|從使用者隔離還原|還原被隔離的使用者。|方塊|
 |檔案|檔案|對自己授與讀取權限|授與您自己檔案的讀取權限，讓您可以存取該檔案，並了解它是否有違規。|G Suite|
 |檔案|檔案|允許編輯者進行共用|在 Google 雲端硬碟中，檔案的預設編輯者權限也允許共用。 此治理動作和移除編輯者能力 (共用及啟用編輯者以共用檔案) 相反。|G Suite|

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>將 Salesforce 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連接程式 API，將 Cloud App Security 連接至您現有的 Salesforce 帳戶。  
@@ -45,10 +46,14 @@ ms.contentlocale: zh-TW
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce 編輯設定檔")  
   
-    -   請確定您已選取 [API Enabled]\(已啟用 API) 核取方塊。 如果未選取，您可能需要連絡 Salesforce 以將它新增至您的帳戶。  
-  
-         ![salesforce api 已啟用](./media/salesforce-api-enabled.png "salesforce api 已啟用")  
-  
+    -   請確定您已啟用下列核取方塊：   
+        - **啟用 API**
+        - **檢視所有資料** 
+        - **管理 Salesforce CRM 內容**
+        - **管理使用者**
+        
+        如果未選取這些核取方塊，您可能需要連絡 Salesforce 以將其新增至您的帳戶。  
+             
 3.  如果您的組織已啟用 **Salesforce CRM 內容**，請確定目前的系統管理帳戶也有啟用它。  
   
     1.  移至您的 Salesforce 設定頁面。  

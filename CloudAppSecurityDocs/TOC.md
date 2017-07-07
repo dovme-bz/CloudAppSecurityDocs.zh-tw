@@ -13,6 +13,7 @@
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](configure-automatic-log-upload-for-continuous-reports.md)
 ### [使用自訂記錄檔剖析器](custom-log-parser.md)
+### [Cloud Discovery 擴充](cloud-discovery-aad-enrichment.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [連接 Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
 # 用法
 ## [使用儀表板](daily-activities-to-protect-your-cloud-environment.md)
-## [探索](working-with-cloud-discovery-data.md)
+## 案例
+### [保護您的組織免受勒索軟體威脅](use-case-ransomware.md)
+## 探索
+### [使用探索到的應用程式](discovered-apps.md)
 ### [使用風險分數](risk-score.md)
 ## [調查](investigate.md)
 ### [活動](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [原則範本參考](policy-template-reference.md)
 ### [治理連線的應用程式](governance-actions.md)
 ### [治理探索到的應用程式](governance-discovery.md)
-## 整合
+## 使用安全性延伸模組進行整合
 ### [Azure 資訊保護整合](azip-integration.md)
 ### [SIEM 整合](siem.md)
+### [外部 DLP 整合](icap-stunnel.md)
+### [API 權杖](api-tokens.md)
 # 疑難排解
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)

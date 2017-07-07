@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -32,7 +33,7 @@ ms.contentlocale: zh-TW
      ![google1](./media/google1.png "google1")  
   
 3.  在 [新增專案] 畫面中命名您的專案，如下所示︰</br>
-    **Cloud App Security for Google** 然後按一下 **[建立]**。  
+    **Microsoft Cloud App Security**，然後按一下 [建立]****。  
            ![google2](./media/google2.png "google2")  
   
 4.  專案建立後，在工具列上的 Google Cloud Platform 旁邊，選取專案，然後按一下 **[API]** 的 **[Go to APIs overview]**\(移至 API 概觀)。  
@@ -64,7 +65,7 @@ ms.contentlocale: zh-TW
   
 8.  依序按一下 [認證] 和 [OAuth consent screen] (OAuth 同意畫面)  
   
-    -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中輸入 **Cloud App Security for Google**。  
+    -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中，鍵入 **Microsoft Cloud App Security**。  
   
     -   所有其他欄位都是選擇性的。  
   
@@ -80,11 +81,11 @@ ms.contentlocale: zh-TW
 
      ![Google 服務帳戶金鑰](./media/google8.png "google8")  
   
-11. 在 [Create service account key] (建立服務帳戶金鑰) 下選擇 [New service account] (新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。  
+11. 在 [Create service account key] (建立服務帳戶金鑰) 下選擇 [New service account] (新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。 選取 [Enable G Suite Domain-wide Delegation] (啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
      ![Google 建立服務帳戶金鑰](./media/google9.png "google9")  
   
-12.  P12 憑證檔案會儲存到您的電腦。 快顯視窗會向您顯示**私密金鑰密碼**，請務必儲存以供後用。  
+12.  P12 憑證檔案會儲存到您的電腦。  
         
 12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts] (管理服務帳戶)。  
        ![G Suite 認證服務帳戶](./media/google10.png "G Suite credentials service account")  
@@ -92,10 +93,6 @@ ms.contentlocale: zh-TW
 13. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
   
      ![Google 編輯](./media/google11.png "Google 編輯")  
-  
-14. 選取 [Enable G Suite Domain-wide Delegation] (啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
-  
-     ![Google 全網域](./media/google12.png "Google 全網域")  
   
 15. 請複製指派給服務的**服務帳戶識別碼**，以供稍後使用。  
   
@@ -108,7 +105,7 @@ ms.contentlocale: zh-TW
 
 18. 填寫下列內容：
 
-    -   **應用程式名稱**：Cloud App Security for Google。  
+    -   **應用程式名稱**：Microsoft Cloud App Security。  
   
     -   **簡短描述和完整描述**：(選用) Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
@@ -117,18 +114,16 @@ ms.contentlocale: zh-TW
     -   在 [Drive Integration] (磁碟機整合) 下的 [開啟 URL:] 中鍵入：  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   按一下 [儲存變更]。  
-  
+     
          ![Google Drive 設定](./media/google15.png "googledriveconfig")  
   
 19. 在 [Enabled APIs] (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
          ![oogle Marketplace SDK 設定](./media/google16.png "googledriveconfig")  
-20. 選取 [設定] 索引標籤。  
+20. 選取 [設定] 索引標籤。 
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
   
-    -   [應用程式名稱] 應顯示 **Cloud App Security for Google**。
+    -   [應用程式名稱] 應該為 [Microsoft Cloud App Security]。
   
          在 [應用程式描述] 欄位中填入「Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。」  
   

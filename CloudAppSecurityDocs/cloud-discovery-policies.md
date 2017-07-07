@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: ad1b3e4c94458a35aa3f4230fe48d29e5f2f8461
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery 原則
     
@@ -24,28 +26,28 @@ translationtype: HT
   
 1.  在主控台中，依序按一下 [控制] 和 [原則]。  
   
-2.  按一下 [建立原則] ，然後選取 [App Discovery] 原則。  
+2.  按一下 [建立原則]，然後選取 [應用程式探索原則]。  
   
      ![應用程式探索原則功能表](./media/app-discovery-policy-menu.png "應用程式探索原則功能表")  
   
 3.  為您的原則命名並描述，如果希望，也可以範本為依據；如需原則範本的詳細資訊，請參閱 [Control cloud apps with policies](control-cloud-apps-with-policies.md) (使用原則控制雲端應用程式)。  
   
-4.  若要設定哪些探索到的應用程式將會觸發此原則，請按一下 [新增篩選]。  
+4.  設定原則的 [嚴重性]。
+
+5. 若要設定哪些探索到的應用程式將會觸發此原則，請新增篩選。  
   
-     篩選是從篩選快顯畫面的頁面左側選擇。 可以依 [應用程式名稱]、[網域]、[風險因素]、[風險分數] 和 [類別] 來篩選。 頁面的右側會顯示來自目前服務類別目錄之所選篩選的結果。 選擇篩選之後，請儲存並確定適當的標記顯示在 [篩選] 方塊中。  
-  
-5.  在 [Apply to (套用至)] 下選擇此適用於 [使用者]、[IP 位址] 還是兩者皆適用。  
-  
-6.  設定 [Daily usage threshold (每日使用量閾值)]，應用程式必須符合它才能符合原則。  
+6.  您可以設定原則敏感度的閾值。 啟用 [同一天發生下列所有情況時，觸發原則比對] 之後，您可以設定 [使用者數目]、[IP 位址數目]、[每日流量]、[下載的資料]、[上傳的資料] 和 [交易數目] 的最小值，應用程式必須符合才能比對原則。  
   
 7.  設定 [每日警示限制]，然後選取警示將會傳送為電子郵件還是簡訊，或是兩者皆傳送，並視需要提供詳細資訊。 您可以按一下 [Save alert settings to default (將警示設定儲存為預設值)]，讓未來的原則能將這些警示設定，包括電話號碼和電子郵件地址，儲存為預設值。  
   
+8. 選取當應用程式符合此原則時所要套用的可能**治理**動作。 它可能會將原則自動標記為 [獲批准] 或 [待批准] 
+
 8.  按一下 [建立]。  
   
 例如，如果您想要探索雲端環境中高風險的主控應用程式，請如下所示設定您的原則︰  
   
 設定原則篩選，探索在 [主控服務] 類別中找到且分數低的任何服務，這表示它們具有高風險。   
-將原則的 [嚴重性] 設為 [中]。   
+   
 您可在底部設定要針對已探索到的應用程式觸發警示的閾值，以僅在環境中超過 100 個使用者使用此應用程式，且從服務下載了一定資料量的情況下，才觸發警示。   
 此外，您可以設定想要接收的每日警示限制。  
   

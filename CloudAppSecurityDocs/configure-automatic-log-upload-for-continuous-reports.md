@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
-記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟每隔 20 分鐘接收一次，然後將檔案上傳到 Cloud App Security。
+記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟接收，然後在檔案大小大於 40 KB 時將檔案上傳到 Cloud App Security。
+
+記錄檔上傳到 Cloud App Security 之後會移至備份目錄，其中儲存了任何指定時間的最後 20 個記錄檔。 每次有新的記錄檔抵達，就會刪除舊的記錄檔。 當記錄收集器磁碟空間已滿時，記錄收集器會在有更多可用磁碟空間之前卸除新的記錄檔。
 
 在設定自動收集記錄檔之前，請確認您的記錄檔與預期記錄檔類型相符，以確保 Cloud App Security 可以剖析特定檔案。 
 
@@ -80,7 +82,7 @@ ms.lasthandoff: 05/16/2017
   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 4.  按一下 Hyper-V 或 VMWare，以**下載**新的記錄收集器虛擬機器，並使用您在入口網站接收到的密碼解壓縮檔案。  
   
-###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 
 > [!NOTE] 
 > 下列步驟描述 Hyper-V 中的部署。 VM Hypervisor 的部署步驟有些不同。  
@@ -146,11 +148,23 @@ sudo network_config
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 5 - 確認已在 Cloud App Security 入口網站中部署成功
 
+在 [記錄收集器] 資料表中檢查收集器狀態，並確定狀態為 [已連線]。 如果是 [已建立]，記錄收集器連線和剖析可能尚未完成。
+
+![記錄收集器狀態](./media/log-collector-status.png)
+
 移至 [治理記錄] 並確認記錄檔會定期被上傳到入口網站。  
   
 如果您在部署期間遇到問題，請參閱[為雲端探索進行疑難排解](troubleshooting-cloud-discovery.md)。
 
+### <a name="optional---create-custom-continuous-reports"></a>選擇性 - 建立自訂連續報告
 
+在您確認要將記錄檔上傳到 Cloud App Security 並產生報告之後，您可以建立自訂報告。 您現在可以根據 Azure Active Directory 使用者群組建立自訂探索報告。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。 您也可以自訂以 IP 位址標籤或 IP 位址範圍為基礎的報告。
+
+1. 在 Cloud App Security 入口網站中，選取設定齒輪下的 [Cloud Discovery 設定]，然後選取 [管理連續報告]。 
+2. 按一下 [建立報告] 按鈕並填入欄位。
+3. 在 [篩選] 下，您可以依資料來源、依[匯入的使用者群組](user-groups.md)或依 [IP 位址標籤和範圍](ip-tags.md)來篩選資料。 
+
+![自訂連續報告](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>另請參閱  
 [使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)   
