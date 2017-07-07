@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>建立 Cloud Discovery 快照集報告
 請務必手動上傳記錄檔，讓 Cloud App Security 剖析過後再嘗試使用自動記錄收集器。
@@ -41,6 +41,11 @@ ms.lasthandoff: 05/16/2017
 5. 請驗證記錄檔格式，確定它已根據您可以下載的範例正確格式化。 按一下 [檢視並驗證]，再按一下 「Download sample log」 (下載範例記錄檔)。 然後比較您的記錄檔與範例提供的內容，確認二者相容。 
 
  ![驗證記錄檔格式](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > 快照集和自動上傳支援 FTP 範例格式，但只有自動上傳支援 Syslog。<br></br>
+下載範例記錄檔將會下載範例 FTP 記錄檔。
+
 
 5.  選擇您想要上傳的**流量記錄檔**。 一次最多可以上傳 20 個檔案。 亦支援壓縮檔及 ZIP 壓縮檔案。  
   

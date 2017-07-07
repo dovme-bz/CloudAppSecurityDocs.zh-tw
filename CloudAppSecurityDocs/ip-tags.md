@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3c8c8917606f3c34055eef0334f010d8aab7998
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: a80fec6fe57d643655df2e57ef980b6395d4dcfc
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/28/2017
 ---
 #  <a name="IPtagsandRanges"></a> 使用 IP 範圍和標籤
 
@@ -29,7 +31,7 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
 - 過期的作業系統
 - 受管理的裝置
 - 匿名 Proxy
-- 殭屍網路
+- 殭屍網路 (如果有疆屍網路執行的活動，您將會收到連結，以便您深入了解特定殭屍網路)
 - Tor
 - 相容的裝置
 - 已驗證的裝置
@@ -37,7 +39,7 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
 
 若要在搜尋中使用這些內建的標籤，請參閱其在 Cloud App Security API 文件中的識別碼。 
 
-
+內建 IP 位址標籤和自訂 IP 標籤會依階層考量，其中自訂 IP 標籤優先於內建 IP 標籤。 例如，如果根據威脅情報將 IP 位址標籤為 [具風險]，但有自訂 IP 標籤將其識別為 [公司]，則會優先使用自訂類別和標籤。
 
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [IP 位址範圍]。 按一下 [+新增 IP 位址範圍] 並進行下列設定︰  
   

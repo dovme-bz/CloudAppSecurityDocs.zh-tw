@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -80,7 +80,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
    內建 IP 標記包含：
     - Microsoft 應用程式 (其中的 14 個)
     - 匿名 Proxy
-    - 殭屍網路
+    - 殭屍網路 (您可以使用可深入了解特定殭屍網路的連結，來查看疆屍網路已執行活動)
     - Darknet 掃描 IP
     - 惡意程式碼 C&C 伺服器
     - Remote Connectivity Analyzer
@@ -99,8 +99,8 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 -   已註冊的 ISP – 執行活動的來源 ISP。   
 
 -  來源 - 依據偵測到其中有活動的來源進行搜尋。 來源可以是下列任一項：
-  -    App 連線程式 - 直接來自應用程式 API 連接器之記錄。
-  -    App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
+  - App 連線程式 - 直接來自應用程式 API 連接器之記錄。
+  - App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
   
 
 -   使用者 - 執行活動的使用者，可使用網域、群組、名稱或組織進行篩選。 若要篩選不具特定使用者的活動，您可以使用 ‘is not set’ 運算子。  
@@ -117,10 +117,14 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
   
 -   使用者代理程式標記 - 內建的使用者代理程式標記；例如，來自過期瀏覽器或過期作業系統的所有活動。  
     
-  
-## <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單
+>[!NOTE]
+> 每當您想要清除篩選時，您可以按一下清除篩選圖示 ![清除篩選圖示](./media/clear-filters.png) 來執行這個動作。
 
-您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供下列您可以對檔案執行的額外動作：
+## <a name="the-activity-drawer"></a>活動下拉式清單
+
+### <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單
+
+您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供下列您可以對活動執行的額外動作：
 
 - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
 - 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
@@ -135,6 +139,22 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 ![隱藏式活動選單](./media/activity-drawer.png "隱藏式活動選單")  
   
 如需可用的治理動作清單，請參閱[活動治理動作](governance-actions.md#activity-governance-actions)。
+
+### <a name="user-insights"></a>使用者深入解析
+
+調查體驗包括目前使用者的預設深入解析。 您只要按一下就可以取得使用者的完整概觀，包括它們從中連線的位置、與它們有關的未解決警示數目，以及其中繼資料資訊。
+
+檢視使用者深入解析：
+
+1. 在 [活動記錄] 中按一下活動本身。
+
+2. 然後按一下 [使用者] 索引標籤。 <br></br> 這會開啟 [活動] 下拉式清單。[使用者] 索引標籤會提供下列的使用者深入解析：
+    - **未解決的警示**：與使用者有關的未解決警示數目。
+    - **檔案違規**：使用者所擁有檔案的檔案違規數目。
+    - **活動**：使用者在過去 30 天執行的活動數目。
+    - **國家/地區**：使用者在過去 30 天從中連線的國家/地區數目。
+    - **ISP**：使用者在過去 30 天從中連線的 ISP 數目。
+    - **IP 位址**：使用者在過去 30 天從中連線的 IP 位址數目。
 
 
 ## <a name="see-also"></a>另請參閱  

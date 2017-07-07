@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 6/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,22 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cb2b4b26ee9a5f0340409090318fcbe1421b90d5
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 7f4b5fb5b6100d5037be62f012c73cdc6609680f
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="basic-set-up"></a>基本設定
 下列程序會指示您自訂 Cloud App Security 入口網站。
+
+## <a name="prerequisites"></a>必要條件 
+若要存取入口網站，請務必將下列 IP 位址新增至防火牆白名單，以提供 Cloud App Security 入口網站的存取權：  
+  
+- 104.42.231.28  
+  
+> [!NOTE]  
+>  若要在 URL 和 IP 位址變更時取得更新，請訂閱 RSS，如 [Office 365 URL 與 IP 位址範圍](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)中所述。  
   
 ## <a name="set-up-the-portal"></a>設定入口網站  
   

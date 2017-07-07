@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 49c2c444b0ae378584f3ddbccccf7c8b34bb50d3
-ms.sourcegitcommit: 26ae7b0e1ee0ec3b2c7464a6424d4ebd1cd436ac
+ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 ##  <a name="mailsettings"></a> 設定電子郵件通知喜好設定  
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
@@ -33,6 +33,9 @@ ms.lasthandoff: 05/10/2017
      **回覆電子郵件地址**︰要用於訊息回覆的電子郵件帳戶。  
   
      ![郵件設定組態](./media/mail-settings-config.png "郵件設定組態")  
+
+  >[!NOTE]
+  >若要將 [寄件者電子郵件地址] 欄位變更為您自己的網域，請參閱[這裡](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)的指示。
   
 2.  針對 [電子郵件設計]，您可以使用 HTML 檔案，以自訂和設計從系統傳送的電子郵件訊息。 用於範本的 HTML 檔案應該包含下列項目︰  
   

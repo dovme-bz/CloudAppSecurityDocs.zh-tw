@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 305c7ab0293e35ffbabc9b665a5b797619111131
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="files"></a>檔案
 
@@ -83,7 +83,12 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 -   檔案名稱 – 雲端應用程式中定義的檔案名稱或名稱的子字串；例如，名稱中含有密碼的所有檔案。   
   
--   分類標籤 - 搜尋具有 Azure 資訊保護所設定特定標籤的檔案。 這需要與 Azure 資訊保護整合。
+-   分類標籤 - 搜尋設定特定標籤的檔案。 這些標籤包括：
+    - Azure 資訊保護標籤。 這需要與 Azure 資訊保護整合。
+    - Cloud App Security 標籤。 現在提供其所掃描之檔案的更多深入資訊。 針對 Cloud App Security DLP 所掃描的每個檔案，您現在可以知道檔案是否因為加密或損毀而無法檢查。 例如，您可以設定原則，針對外部共用的受密碼保護檔案發出警示並予以隔離，如下所示： 
+        - 已加密 Azure RMS - 這些檔案由於已設定 Azure RMS 加密，因此不會檢查其內容。
+        - 已加密密碼 - 這些檔案由於受使用者密碼保護，因此不會檢查其內容。
+        - 損毀的檔案 - 這些檔案由於無法讀取其內容，因此不會檢查其內容。
 
 -   檔案類型 – Cloud App Security 會接收來自服務的兩個 MIME 類型，並掃描檔案以判斷真正的檔案類型。 請注意，這項掃描適用於資料掃描相關的檔案 (文件、影像、簡報、試算表、文字檔和 zip/封存檔)。 依據檔案/資料夾類型進行篩選，例如 ... 的所有資料夾或 ... 的所有試算表檔案。
 
@@ -111,6 +116,9 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (PDF、
   
 ![套用至篩選器](./media/apply-to-filter.png "套用至篩選器")  
   
+>[!NOTE]
+> 每當您想要清除篩選時，您可以按一下清除篩選圖示 ![清除篩選圖示](./media/clear-filters.png) 來執行這個動作。
+
 ## <a name="working-with-the-file-drawer"></a>使用檔案抽屜
 
 您可以按一下檔案記錄中的檔案本身，以檢視每個檔案的詳細資訊。 如此即可開啟檔案抽屜，其提供下列您可以對檔案執行的額外動作：

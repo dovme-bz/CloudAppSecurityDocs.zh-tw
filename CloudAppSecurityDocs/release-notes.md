@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,37 +13,125 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
+ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="release-notes"></a>版本資訊
 
+## <a name="cloud-app-security-release-100"></a>Cloud App Security 版本 100 
+發行日期：2017 年 7 月 3 日
+ 
+
+### <a name="new-features"></a>新功能
+-   **安全性延伸模組**：[安全性延伸模組] 是新的儀表板，可集中化管理 Cloud App Security 的所有安全性延伸模組，包括 API 權杖管理、SIEM 代理程式和外部 DLP 連接器。 Cloud App Security 的 [設定] 下提供這個新的儀表板。 
+    - API 權杖 – 產生和管理您自己的 [API 權杖](api-tokens.md)，以使用 RESTful API 來整合 Cloud App Security 與協力廠商軟體。 
+    - SIEM 代理程式 – [SIEM 整合](siem.md) 之前直接位在 [設定] 下方，現在則提供為 [安全性延伸模組] 中的索引標籤。
+    - 外部 DLP (預覽) – Cloud App Security 可讓您[運用協力廠商分類系統中的現有投資](icap-stunnel.md) (例如資料外洩防護 (DLP) 解決方案)，且可讓您使用環境中執行的現有部署來掃描雲端應用程式的內容。 請連絡您的帳戶管理員，以加入預覽。 
+-   **自動批准/不批准：**新的應用程式偵測原則讓 Cloud Discovery 可以自動設定應用程式具有 [批准/不批准] 標籤。 這可讓您自動找出違反組織原則和規定的應用程式，並將其新增至產生的封鎖指令碼。
+-   **Cloud App Security 檔案標籤**：您現在可以套用 Cloud App Security 檔案標籤，以深入了解它所掃描的檔案。 針對 Cloud App Security DLP 所掃描的每個檔案，您現在可以知道檔案是否因為加密或損毀而無法檢查。 例如，您可以設定原則，針對外部共用的受密碼保護檔案發出警示並予以隔離。 這項功能適用於 2017 年 7 月 3 日之後所掃描的檔案。
+
+    您可以使用篩選 [分類標籤] > [Cloud App Security] 來篩選這些檔案： 
+    - **已加密 Azure RMS** - 這些檔案由於已設定 Azure RMS 加密，因此不會檢查其內容。
+    - **已加密密碼** - 這些檔案由於受使用者密碼保護，因此不會檢查其內容。
+    - **損毀的檔案** - 這些檔案由於無法讀取其內容，因此不會檢查其內容。
+-   **使用者深入解析**：已升級調查體驗，啟用目前使用者的預設深入解析。 現在，您只要按一下就可以從 [活動] 下拉式清單中看到使用者的完整概觀，包括它們從中連線的位置、與它們有關的未解決警示數目，以及其中繼資料資訊。
+-   **App 連線程式深入解析**：在 [App 連線程式] 中，每個連線的應用程式現在都會在表格中包括應用程式下拉式清單，更輕鬆地向下切入到其狀態。 所提供的詳細資料包括 App 連線程式的連線時間，以及連線程式的最後一個健全狀況檢查。 您也可以監視每個應用程式的 DLP 掃描狀態：DLP 所檢查的檔案總數，以及即時掃描狀態 (所要求的掃描與實際掃描)。 您可以得知 Cloud App Security 即時掃描檔案的速率是否低於所要求的數目，以及您的租用戶是否可能超過其容量並在 DLP 結果中發生延遲。
+-   **雲端應用程式目錄自訂：** 
+    - **應用程式標籤**：您現在可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 例如，自訂監看清單、給特定業務單位的指派，或自訂核准，例如 "approved by legal"。
+    - **自訂附註**：當您檢閱和評估跨環境探索到的不同應用程式時，現在可以將結論和深入解析儲存至「附註」。
+    - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
+-   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
+
+### <a name="other-improvements"></a>其他改進： 
+-   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。
+-   **預期的記錄格式：**Cloud Discovery 記錄的預期記錄格式現在提供 Syslog 格式和 FTP 格式的範例。
+-   **記錄收集器上傳狀態：**您現在可以在入口網站中查看記錄收集器狀態，並使用入口網站內狀態通知和系統警示對錯誤進行更快速地疑難排解。
+
+
+## <a name="cloud-app-security-release-99"></a>Cloud App Security 版本 99 
+發行日期：2017 年 6 月 18 日
+
+### <a name="new-features"></a>新功能
+
+-   您現在可以要求使用者重新登入所有 Office 365 和 Azure AD 應用程式，以快速有效地修復可疑的使用者活動警示及遭盜用的帳戶。 您可以在 [原則設定] 和 [警示] 頁面的 [暫停使用者] 選項旁邊找到新的治理動作。
+-   您現在可以篩選活動記錄中的 [Add impersonation role assignment (新增模擬角色指派)] 活動。 此活動可讓您使用 Cmdlet **New-ManagementRoleAssignment**來偵測系統管理員何時將 [應用程式模擬] 角色授與任何使用者或系統帳戶。 這個角色允許模擬者使用與已模擬帳戶建立關聯的權限來執行作業，而不是使用與模擬者帳戶建立關聯的權限。
+Cloud Discovery 改進：
+-   Cloud Discovery 資料現在可以使用 Azure Active Directory 使用者名稱資料進行擴充。 當您啟用這項功能時，探索流量記錄檔中收到的使用者名稱會經過比對，並取代為 Azure AD 使用者名稱以啟用下列新功能：
+  - 您可以調查 Azure Active Directory 使用者的影子 IT 使用方式。
+  - 您可以將探索到的雲端應用程式使用與 API 收集的活動相互關聯。
+  - 然後，您可以建立以 Azure AD 使用者群組為基礎的自訂記錄檔。 例如，特定行銷部門的影子 IT 報告。
+-   已改進 Juniper syslog 剖析器。 它現在支援 welf 和 sd syslog 格式。
+-   改進 Palo Alto 剖析器，可進行更好的應用程式探索。
+-   若要確認已成功上載記錄檔，您現在可以在 Cloud App Security 入口網站中看到記錄收集器的狀態。 
+
+### <a name="general-improvements"></a>一般改進：
+-   內建 IP 位址標籤和自訂 IP 標籤現在會依階層考量，其中自訂 IP 標籤優先於內建 IP 標籤。 例如，如果根據威脅情報將 IP 位址標籤為 [具風險]，但有自訂 IP 標籤將其識別為 [公司]，則會優先使用自訂類別和標籤。
+
+
+## <a name="cloud-app-security-release-98"></a>Cloud App Security 版本 98 
+發行日期：2017 年 6 月 4 日
+ 
+Cloud Discovery 更新：
+-   使用者現在可以對探索到的應用程式執行進階篩選，以讓您執行深入調查，例如根據使用量來篩選應用程式：有多少上傳流量來自特定類型的探索到應用程式、有多少使用者使用特定類別的探索到應用程式。 您也可以執行左面板中的複選來選取多個類別。 
+-   已開始推出根據常用搜尋的新 Cloud Discovery 範本，例如 "non-compliant cloud storage app"。 這些基本篩選可以用作對探索到的應用程式執行分析的範本。
+-   為了方便使用，您現在可以執行動作，例如透過一個動作批准和不批准多個應用程式。
+-   我們現在將推出根據 Azure Active Directory 使用者群組建立自訂探索報告的功能。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。
+
+新功能：
+-   安全性讀取者的 RBAC 已完成推出。 這項功能可讓您管理授與 Cloud App Security 主控台內系統管理員的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 您可以新增其他系統管理員，或覆寫使用 [管理存取] 選項的權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
+-   我們現在將推出 Microsoft 智慧型安全性圖表偵測到之具風險 IP 位址的詳細威脅智慧報告：殭屍網路執行活動時，會看到殭屍網路名稱 (可用時) 與特定殭屍網路的詳細報告連結。
+ 
+## <a name="cloud-app-security-release-97"></a>Cloud App Security 版本 97
+發行日期：2017 年 5 月 24 日
+
+### <a name="new-features"></a>新功能
+-   調查檔案和原則違規：您現在可以在 [檔案] 頁面中看到所有原則相符項目。 此外，已改進您的 [File Alert (檔案警示)] 頁面，現在包括特定檔案之 [歷程記錄] 的不同索引標籤，可讓您向下切入到特定檔案之所有原則的違規歷程記錄。 每個「歷程記錄」事件都會在警示時包括檔案的快照。 它會指出刪除還是隔離檔案。
+-   Office 365 SharePoint 和商務用 OneDrive 檔案現在提供[系統管理隔離](use-case-admin-quarantine.md)，其為私人預覽版本。 這項功能可讓您隔離符合原則的檔案，或設定要隔離它們的自動化動作，並從使用者的 SharePoint 目錄中移除它們，以及將原始檔案複製至您選擇的系統管理隔離位置。
+        
+### <a name="cloud-discovery-improvements"></a>Cloud Discovery 改進
+
+-   已改進 Cloud Discovery 對 Cisco Meraki 記錄檔的支援。
+-   向 Cloud Discovery 建議改進的選項現在可讓您建議新的風險因素。
+-   已改進自訂記錄剖析器，可區隔日期和時間設定來支援記錄格式，並可讓您選擇設定時間戳記。
+-   開始推出根據 Azure Active Directory 使用者群組建立自訂探索報告的功能。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。
+
+**其他更新**
+
+-   Cloud App Security 現在支援 Office 365 稽核記錄中所支援的 Microsoft Power BI 活動。 這項功能正逐步推出。 請注意，您需要[在 Power BI 入口網站中啟用這項功能](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)。
+-   在活動原則中，您現在可以設定要對所有已連線應用程式之使用者採取的通知和暫停動作。 例如，您可以設定原則，一律通知使用者的管理員，並在使用者具有任何已連線應用程式中的多次失敗登入時立即暫停使用者。
+ 
+## <a name="oob-release"></a>OOB 版本
+-   為了快速反應横掃全球的勒索軟體，在星期日，Cloud App Security 團隊已將新的[潛在的勒索軟體活動偵測原則](use-case-ransomware.md)範本新增至包括 WannaCrypt 簽章延伸模組的入口網站。 建議您立即設定此原則。
 
 ## <a name="cloud-app-security-release-96"></a>Cloud App Security 96 版
 發行日期：2017 年 5 月 8 日
 
 新功能：
--    持續逐步推出「安全性讀取者」權限，可讓您管理授與給系統管理員在 Cloud App Security 主控台中的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
--    已完成推出 Cloud Discovery 針對 CSV 記錄檔的使用者定義記錄檔剖析器支援。 Cloud App Security 可提供工具來描述與特定資料相關聯的資料行，讓您針對先前不支援的設備來設定剖析器。 如需詳細資訊，請參閱[自訂記錄檔剖析器](custom-log-parser.md)。
+
+-   持續逐步推出「安全性讀取者」權限，可讓您管理授與給系統管理員在 Cloud App Security 主控台中的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
+-   已完成推出 Cloud Discovery 針對 CSV 記錄檔的使用者定義記錄檔剖析器支援。 Cloud App Security 可提供工具來描述與特定資料相關聯的資料行，讓您針對先前不支援的設備來設定剖析器。 如需詳細資訊，請參閱[自訂記錄檔剖析器](custom-log-parser.md)。
+
 改善：
--    Cloud Discovery 現在支援 Juniper SSG 設備。
--    Cloud Discovery 對 Cisco ASA 記錄檔的支援已改進以獲得更好的可見度。
--    您現在可以在 Cloud App Security 入口網站資料表中更輕鬆地執行大量動作和選取多個記錄：頁面長度已增加以改善大量作業。
--    「域外共用 (依網域)」和「共用檔案的擁有者」內建報告現在可以針對 Salesforce 資料執行。
--    我們已開始推出其他的 Salesforce 活動，讓您能夠追蹤從活動資料所擷取的有趣資訊。 這些活動包括檢視和編輯帳戶、潛在客戶、商機以及各種其他有趣的 Salesforce 物件。
--    新的活動已新增到 Exchange，讓您可監視已授與哪些權限給使用者信箱或信箱資料夾。 這些活動包括：
-    -    新增收件者權限
-    -    移除收件者權限
-    -    新增信箱資料夾權限
-    -    移除信箱資料夾權限
-    -    設定信箱資料夾權限
+
+-   Cloud Discovery 現在支援 Juniper SSG 設備。
+-   Cloud Discovery 對 Cisco ASA 記錄檔的支援已改進以獲得更好的可見度。
+-   您現在可以在 Cloud App Security 入口網站資料表中更輕鬆地執行大量動作和選取多個記錄：頁面長度已增加以改善大量作業。
+-   「域外共用 (依網域)」和「共用檔案的擁有者」內建報告現在可以針對 Salesforce 資料執行。
+-   我們已開始推出其他的 Salesforce 活動，讓您能夠追蹤從活動資料所擷取的有趣資訊。 這些活動包括檢視和編輯帳戶、潛在客戶、商機以及各種其他有趣的 Salesforce 物件。
+-   新的活動已新增到 Exchange，讓您可監視已授與哪些權限給使用者信箱或信箱資料夾。 這些活動包括：
+    -   新增收件者權限
+    -   移除收件者權限
+    -   新增信箱資料夾權限
+    -   移除信箱資料夾權限
+    -   設定信箱資料夾權限
 
     例如，您現在可監視已授與其他使用者信箱 **SendAs** 權限，因此能以其名稱傳送電子郵件的使用者。
 
 
-## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security 版本 95 (推出中)
+## <a name="cloud-app-security-release-95"></a>Cloud App Security 版本 95
 發行日期：2017 年 4 月 24 日
 
 **更新**
@@ -61,12 +149,12 @@ ms.contentlocale: zh-TW
 發行日期：2017 年 4 月 2 日
 
 **新功能：**
--    Cloud App Security 現在已與 Azure RMS 整合。 您可以直接從 Cloud App Security 入口網站中，利用 Microsoft Rights Management 來保護 Office 365 OneDrive 和 Sharepoint Online 中的檔案。 這可以從 [檔案] 頁面完成。 如需詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。 未來版本中將提供對其他應用程式的支援。
--    到目前為止，當您的網路中發生傀儡程式和編目程式活動時，尤其難以辨識，因為這類活動不是由使用者在您的網路上所執行。 Bot 和編目程式可以在您不知情的狀況下，於您的電腦上執行惡意的工具。 現在，Cloud App Security 提供工具，讓您能夠在傀儡程式和編目程式於您的網路上執行時進行查看。 您可以使用新的使用者代理程式標記來篩選活動記錄中的活動。 使用者代理程式標記可讓您篩選傀儡程式所執行的所有活動，而您可以使用它來建立原則，以便每次偵測到這種類型的活動時警示您。 若未來版本以將這個有風險的活動內嵌到異常偵測警示的形式來包含它時，將為您提供最新訊息。 
--    新的統一應用程式權限頁面可讓您更輕鬆地調查已授與使用者對協力廠商應用程式的權限。 按一下 [調查] > [應用程式權限]，您現在可以透過每個已連接應用程式之應用程式權限的頁面，來檢視已授與使用者對協力廠商應用程式的所有權限清單，此頁面讓您能夠在各種應用程式與已授與的權限間進行比較。  如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
--    您可以從隱藏式表格選單中篩選資料，更容易進行調查。
+-   Cloud App Security 現在已與 Azure RMS 整合。 您可以直接從 Cloud App Security 入口網站中，利用 Microsoft Rights Management 來保護 Office 365 OneDrive 和 Sharepoint Online 中的檔案。 這可以從 [檔案] 頁面完成。 如需詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。 未來版本中將提供對其他應用程式的支援。
+-   到目前為止，當您的網路中發生傀儡程式和編目程式活動時，尤其難以辨識，因為這類活動不是由使用者在您的網路上所執行。 Bot 和編目程式可以在您不知情的狀況下，於您的電腦上執行惡意的工具。 現在，Cloud App Security 提供工具，讓您能夠在傀儡程式和編目程式於您的網路上執行時進行查看。 您可以使用新的使用者代理程式標記來篩選活動記錄中的活動。 使用者代理程式標記可讓您篩選傀儡程式所執行的所有活動，而您可以使用它來建立原則，以便每次偵測到這種類型的活動時警示您。 若未來版本以將這個有風險的活動內嵌到異常偵測警示的形式來包含它時，將為您提供最新訊息。 
+-   新的統一應用程式權限頁面可讓您更輕鬆地調查已授與使用者對協力廠商應用程式的權限。 按一下 [調查] > [應用程式權限]，您現在可以透過每個已連接應用程式之應用程式權限的頁面，來檢視已授與使用者對協力廠商應用程式的所有權限清單，此頁面讓您能夠在各種應用程式與已授與的權限間進行比較。  如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
+-   您可以從隱藏式表格選單中篩選資料，更容易進行調查。
 在 [活動記錄] 中，[檔案] 表格和 [應用程式權限] 頁面現已增強且具有新的內容動作，讓您在調查過程中進行樞紐分析時能夠輕鬆許多。 我們也新增了設定頁面的快速連結，以及按一下就能複製資料的功能。 如需詳細資訊，請參閱[使用隱藏式檔案與活動選單](file-filters.md)的相關資訊。
--    已完成對 Microsoft Teams 推出 Microsoft Office 365 活動記錄及警示的支援。
+-   已完成對 Microsoft Teams 推出 Microsoft Office 365 活動記錄及警示的支援。
  
 
 
@@ -76,21 +164,21 @@ ms.contentlocale: zh-TW
 
 **新功能：**
 -   您現在可以套用原則以包含或排除匯入的使用者群組。 
--    Cloud App Security Anonymization 現在可讓您設定自訂的加密金鑰。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
--    為了更充分掌控使用者與帳戶管理，您現在可以從 [帳戶] 頁面內按一下每個使用者旁的齒輪，直接存取每個使用者的 Azure AD 帳戶設定。 這可以方便存取進階使用者管理功能群組管理、MFA 設定、使用者登入相關詳細資訊，以及提供封鎖登入的能力。 
--    您現在可以透過 Cloud App Security API，匯出待批准應用程式的封鎖指令碼。 深入了解 Cloud App Security 入口網站中的 API，方法是按一下功能表列中的問號，隨即出現 [API 文件]。
--    適用於 ServiceNow 的 Cloud App Security App 連線程式已擴展為包含 OAuth 權杖的支援 (如 Geneva、Helsinki、Istanbul 中所引進)。 這提供 ServiceNow 更健全的 API 連線，不需要仰賴部署使用者。 如需詳細資訊，請參閱[將 ServiceNow 連接至 Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)。 現有的客戶可在 [ServiceNow App 連線程式] 頁面中更新其設定。
--    如果您已設定其他第三方 DLP 掃描器，DLP 掃描狀態現在將會顯示個別連線程式的狀態，以改善可見性。
--    Cloud App Security 現在支援 Office 365 稽核記錄檔中所支援的 Microsoft Teams 活動。 這項功能正逐步推出。
--    針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
--    在 [應用程式權限] 索引標籤上的應用程式抽屜中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
--    「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
--    當停用檔案上的 Azure 資訊保護標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
+-   Cloud App Security Anonymization 現在可讓您設定自訂的加密金鑰。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
+-   為了更充分掌控使用者與帳戶管理，您現在可以從 [帳戶] 頁面內按一下每個使用者旁的齒輪，直接存取每個使用者的 Azure AD 帳戶設定。 這可以方便存取進階使用者管理功能群組管理、MFA 設定、使用者登入相關詳細資訊，以及提供封鎖登入的能力。 
+-   您現在可以透過 Cloud App Security API，匯出待批准應用程式的封鎖指令碼。 深入了解 Cloud App Security 入口網站中的 API，方法是按一下功能表列中的問號，隨即出現 [API 文件]。
+-   適用於 ServiceNow 的 Cloud App Security App 連線程式已擴展為包含 OAuth 權杖的支援 (如 Geneva、Helsinki、Istanbul 中所引進)。 這提供 ServiceNow 更健全的 API 連線，不需要仰賴部署使用者。 如需詳細資訊，請參閱[將 ServiceNow 連接至 Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)。 現有的客戶可在 [ServiceNow App 連線程式] 頁面中更新其設定。
+-   如果您已設定其他第三方 DLP 掃描器，DLP 掃描狀態現在將會顯示個別連線程式的狀態，以改善可見性。
+-   Cloud App Security 現在支援 Office 365 稽核記錄檔中所支援的 Microsoft Teams 活動。 這項功能正逐步推出。
+-   針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
+-   在 [應用程式權限] 索引標籤上的應用程式抽屜中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
+-   「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
+-   當停用檔案上的 Azure 資訊保護標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
  
 **其他 Salesforce 的支援︰**
--    您現在可在 Cloud App Security 中暫停或恢復 Salesforce 使用者的權限。 這可在 Salesforce 連線程式的 [帳戶] 索引標籤中完成，方法是按一下特定使用者資料列結尾的齒輪，然後選取 [暫時停權] 或 [恢復權限]，而且還能夠在原則中當作治理動作套用。 在 Cloud App Security 中採取的所有暫時停權與恢復權限的動作，都會記錄在[治理記錄](governance-actions.md)中。 
--    提高 Salesforce 內容共用可見度：您現在可以看到共用檔案的共用對象，包括公開共用的檔案、與群組共用的檔案，以及與整個 Salesforce 網域共用的檔案。 提高可見度將回溯推出至新的與目前的已連線 Salesforce 應用程式，第一次更新時可能需要一些時間。
--    我們改善了下列 Salesforce 事件的涵蓋範圍，並將它們與 [管理使用者] 活動區隔： 
+-   您現在可在 Cloud App Security 中暫停或恢復 Salesforce 使用者的權限。 這可在 Salesforce 連線程式的 [帳戶] 索引標籤中完成，方法是按一下特定使用者資料列結尾的齒輪，然後選取 [暫時停權] 或 [恢復權限]，而且還能夠在原則中當作治理動作套用。 在 Cloud App Security 中採取的所有暫時停權與恢復權限的動作，都會記錄在[治理記錄](governance-actions.md)中。 
+-   提高 Salesforce 內容共用可見度：您現在可以看到共用檔案的共用對象，包括公開共用的檔案、與群組共用的檔案，以及與整個 Salesforce 網域共用的檔案。 提高可見度將回溯推出至新的與目前的已連線 Salesforce 應用程式，第一次更新時可能需要一些時間。
+-   我們改善了下列 Salesforce 事件的涵蓋範圍，並將它們與 [管理使用者] 活動區隔： 
     - 編輯權限
     - 建立使用者
     - 變更角色
@@ -113,11 +201,11 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 
 -  現在所有設備均有 IPv6 支援。
 
--    Cloud Discovery 現在支援 Baracuda 設備。
+-   Cloud Discovery 現在支援 Baracuda 設備。
 
--    Cloud App Security 系統警示線在涵蓋了 SIEM 連線錯誤。 如需詳細資訊，請參閱 [SIEM 整合](siem.md)。
+-   Cloud App Security 系統警示線在涵蓋了 SIEM 連線錯誤。 如需詳細資訊，請參閱 [SIEM 整合](siem.md)。
 
--    Cloud App Security 現在包括下列活動的支援：
+-   Cloud App Security 現在包括下列活動的支援：
 
      **Office 365、SharePoint/OneDrive**：更新應用程式設定、從群組中移除擁有者、刪除網站、建立資料夾
 
@@ -130,16 +218,16 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 發行日期：2017 年 1 月 22 日
 
 **新功能**
--    我們將開始推出在 Cloud App Security 中檢視 Office 365 安全與規範中心 DLP 事件的功能。 如果您已在 Office 365 安全與規範中心中設定 DLP 原則，則偵測到原則相符項目時，將可以在 Cloud App Security 活動記錄檔中看到它們。 活動記錄檔中的資訊將包括已觸發相符項目的檔案或電子郵件，以及相符的原則或警示。 「安全性事件」活動可讓您在 Cloud App Security 活動記錄檔中檢視 Office 365 DLP 原則相符項目。 您可以使用這項功能︰
-    -    查看來自 Office 365 DLP 引擎的所有 DLP 相符項目。
-    -    警示發現特定檔案、SharePoint 網站或原則之 Office 365 DLP 原則相符項目。
-    -    調查內容較廣的 DLP 相符項目，例如，存取或下載已觸發 DLP 原則相符項目之檔案的外部使用者。
+-   我們將開始推出在 Cloud App Security 中檢視 Office 365 安全與規範中心 DLP 事件的功能。 如果您已在 Office 365 安全與規範中心中設定 DLP 原則，則偵測到原則相符項目時，將可以在 Cloud App Security 活動記錄檔中看到它們。 活動記錄檔中的資訊將包括已觸發相符項目的檔案或電子郵件，以及相符的原則或警示。 「安全性事件」活動可讓您在 Cloud App Security 活動記錄檔中檢視 Office 365 DLP 原則相符項目。 您可以使用這項功能︰
+    -   查看來自 Office 365 DLP 引擎的所有 DLP 相符項目。
+    -   警示發現特定檔案、SharePoint 網站或原則之 Office 365 DLP 原則相符項目。
+    -   調查內容較廣的 DLP 相符項目，例如，存取或下載已觸發 DLP 原則相符項目之檔案的外部使用者。
  
--    已改善活動描述的明確性和一致性。 每個活動現在都提供意見反應按鈕，因此，如果您有不了解的地方或有任何問題，請讓我們知道。 
+-   已改善活動描述的明確性和一致性。 每個活動現在都提供意見反應按鈕，因此，如果您有不了解的地方或有任何問題，請讓我們知道。 
  
 **改善**  
--    已為 Office 365 新增治理動作，可讓您移除檔案的所有外部使用者。 例如，這可讓您實作原則，而這些原則會**從僅限內部分類的檔案中移除外部共用**。
--    改善外部使用者在 SharePoint 中的線上識別。 篩選「外部使用者」群組時，將不會顯示 app@sharepoint 系統帳戶。
+-   已為 Office 365 新增治理動作，可讓您移除檔案的所有外部使用者。 例如，這可讓您實作原則，而這些原則會**從僅限內部分類的檔案中移除外部共用**。
+-   改善外部使用者在 SharePoint 中的線上識別。 篩選「外部使用者」群組時，將不會顯示 app@sharepoint 系統帳戶。
 
 
 
@@ -159,20 +247,20 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 發行日期：2016 年 12 月 25 日
 
 **新功能**
--    我們正在推出[資料匿名](cloud-discovery-anonymizer.md)，讓您可以享受 Cloud Discovery，同時保護使用者隱私權。 資料匿名是透過加密使用者名稱資訊來執行。
--    我們正在推出將封鎖指令碼從 Cloud App Security 匯出到其他應用裝置的能力。 這個指令碼可讓您透過封鎖流向待批准應用程式的流量，輕鬆地減少影子 IT。 下列項目現在可以使用這個選項： 
-    -    BlueCoat ProxySG
-    -    Cisco ASA
-    -    Fortinet
-    -    Juniper SRX
-    -    Palo Alto
-    -    Websense
--    已新增檔案治理動作，可讓您刪除已針對檔案或資料夾所設定的任何唯一權限，來強制檔案繼承父系的權限。 這個檔案治理動作可讓您變更檔案或資料夾的權限繼承自父資料夾。 
--    已新增稱為「外部」的使用者群組。 這是 Cloud App Security 預先設定的預設使用者群組，內含不屬於您內部網域的所有使用者。 您可以使用這個使用者群組作為篩選條件，例如，您可以找到外部使用者所執行的活動。
--    Cloud Discovery 功能現在支援 Sophos Cyberoam 應用裝置。
+-   我們正在推出[資料匿名](cloud-discovery-anonymizer.md)，讓您可以享受 Cloud Discovery，同時保護使用者隱私權。 資料匿名是透過加密使用者名稱資訊來執行。
+-   我們正在推出將封鎖指令碼從 Cloud App Security 匯出到其他應用裝置的能力。 這個指令碼可讓您透過封鎖流向待批准應用程式的流量，輕鬆地減少影子 IT。 下列項目現在可以使用這個選項： 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   已新增檔案治理動作，可讓您刪除已針對檔案或資料夾所設定的任何唯一權限，來強制檔案繼承父系的權限。 這個檔案治理動作可讓您變更檔案或資料夾的權限繼承自父資料夾。 
+-   已新增稱為「外部」的使用者群組。 這是 Cloud App Security 預先設定的預設使用者群組，內含不屬於您內部網域的所有使用者。 您可以使用這個使用者群組作為篩選條件，例如，您可以找到外部使用者所執行的活動。
+-   Cloud Discovery 功能現在支援 Sophos Cyberoam 應用裝置。
  
 **錯誤修正**
--    SharePoint Online 和商務用 OneDrive 檔案已透過「內部」而非「私人」形式顯示在 [檔案] 原則報告和 [檔案] 頁面中。 這已更正。
+-   SharePoint Online 和商務用 OneDrive 檔案已透過「內部」而非「私人」形式顯示在 [檔案] 原則報告和 [檔案] 頁面中。 這已更正。
  
 
 
@@ -217,38 +305,38 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 發行日期 2016 年 11 月 13 日
 
 **新功能**
--    Cloud App Security 現可支援 Microsoft Azure 資訊保護，包括強化的整合及自動佈建。 您可以使用 [標記安全分類] 篩選檔案及設定檔案原則，然後設定您想要檢視的分類標籤。 標籤也會指出類別是由貴組織的人員還是其他租用戶 (外部) 的人員所設定。 您也可以根據 Azure 資訊保護分類標籤設定活動原則，並啟用自動掃描 Office 365 的分類標籤。 如需如何利用此絕佳新功能的詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。
+-   Cloud App Security 現可支援 Microsoft Azure 資訊保護，包括強化的整合及自動佈建。 您可以使用 [標記安全分類] 篩選檔案及設定檔案原則，然後設定您想要檢視的分類標籤。 標籤也會指出類別是由貴組織的人員還是其他租用戶 (外部) 的人員所設定。 您也可以根據 Azure 資訊保護分類標籤設定活動原則，並啟用自動掃描 Office 365 的分類標籤。 如需如何利用此絕佳新功能的詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。
  
 **改善**
--    已改善 Cloud App Security 的活動記錄︰ 
+-   已改善 Cloud App Security 的活動記錄︰ 
    -    安全性與相容性中心內的 Office 365 事件現已與 Cloud App Security 整合，且會出現在 **[活動記錄]** 中。
    -    Cloud App Security 的所有活動都在 Cloud App Security 活動記錄中作為管理活動註冊。
--    為了協助您調查與檔案相關的警示，如今您可在每個源自檔案原則的警示中，檢視相符檔案所執行的活動清單。
--    異常偵測引擎中的不可能移動演算法已有改善，可替小型的租用戶提供更佳的支援。 
+-   為了協助您調查與檔案相關的警示，如今您可在每個源自檔案原則的警示中，檢視相符檔案所執行的活動清單。
+-   異常偵測引擎中的不可能移動演算法已有改善，可替小型的租用戶提供更佳的支援。 
  
 **微幅改善**
--    **活動匯出限制**提升至 10,000。 
--    如今您會在 Cloud Discovery 手動記錄上傳程序中建立**快照集報告**時，接收到精確的處理記錄所需時間預估。 
--    在檔案原則中，**[移除共同作業者]** 治理動作現可在群組中使用。
--    **[應用程式權限]** 頁面有微幅改善。 
--    超過 10,000 個使用者授與連接至 Office 365 的應用程式權限時，清單載入速度即會變慢。 此問題已修正。
--    已將其他屬性新增至與付款卡片產業相關的**應用程式目錄**。
+-   **活動匯出限制**提升至 10,000。 
+-   如今您會在 Cloud Discovery 手動記錄上傳程序中建立**快照集報告**時，接收到精確的處理記錄所需時間預估。 
+-   在檔案原則中，**[移除共同作業者]** 治理動作現可在群組中使用。
+-   **[應用程式權限]** 頁面有微幅改善。 
+-   超過 10,000 個使用者授與連接至 Office 365 的應用程式權限時，清單載入速度即會變慢。 此問題已修正。
+-   已將其他屬性新增至與付款卡片產業相關的**應用程式目錄**。
 
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security 版本 83
 發行日期：2016 年 10 月 30 日
 
 **新功能**
--    為了簡化[活動記錄](activity-filters.md)和[檔案記錄](file-filters.md)中的篩選功能，而合併了相似的篩選條件。 使用活動篩選條件：[活動物件]、[IP 位址] 和 [使用者]。 使用檔案篩選條件 [共同作業者] 準確尋找您需要的內容。
--    從活動記錄下拉式清單中，在 [來源] 下按一下 [檢視未經處理資料] 的連結，下載用來產生活動記錄的未經處理資料，以更進一步向下切入應用程式事件。 
--    新增 Okta 中額外登入活動的支援。 [私人預覽]
--    新增 Salesforce 中額外登入活動的支援。 
+-   為了簡化[活動記錄](activity-filters.md)和[檔案記錄](file-filters.md)中的篩選功能，而合併了相似的篩選條件。 使用活動篩選條件：[活動物件]、[IP 位址] 和 [使用者]。 使用檔案篩選條件 [共同作業者] 準確尋找您需要的內容。
+-   從活動記錄下拉式清單中，在 [來源] 下按一下 [檢視未經處理資料] 的連結，下載用來產生活動記錄的未經處理資料，以更進一步向下切入應用程式事件。 
+-   新增 Okta 中額外登入活動的支援。 [私人預覽]
+-   新增 Salesforce 中額外登入活動的支援。 
 
 **改善**
--    改進 Cloud Discovery 快照集報告的可用性及疑難排解。
--    改進警示清單中，對多個應用程式發出的警示可見度。
--    改進建立新 Cloud Discovery 連續報告時的可用性。
--    改進治理記錄的可用性。
+-   改進 Cloud Discovery 快照集報告的可用性及疑難排解。
+-   改進警示清單中，對多個應用程式發出的警示可見度。
+-   改進建立新 Cloud Discovery 連續報告時的可用性。
+-   改進治理記錄的可用性。
 
 
 
