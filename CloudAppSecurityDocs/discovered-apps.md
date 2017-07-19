@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 824dd288e821289b0d09569d461a498d87e30705
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
+ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/05/2017
 ---
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
@@ -59,7 +59,7 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 ![探索到的應用程式](./media/discovered-apps.png)  
 
 
-- **應用程式標籤**：選擇應用程式為獲批准、待批准或未標記。 此外，您可以為應用程式建立自訂標籤，然後使用此標籤來篩選特定應用程式類型。
+- **應用程式標籤**：選擇應用程式為獲批准、待批准或未標記。 此外，您可以為應用程式建立自訂標籤，然後使用此標籤來篩選特定應用程式類型。 
 - **應用程式與網域**：可讓您搜尋特定應用程式或用於特定網域的應用程式。 
 - **類別**：類別篩選位於頁面左邊，可讓您根據應用程式類別搜尋不同類型的應用程式，例如社交網路應用程式、雲端儲存體應用程式等。您可以一次選取多個類別或單一類別，然後將基本和進階篩選套用其上。
 - **合規性風險因素**：可讓您搜尋應用程式可能遵守的特定標準、憑證與規範 (HIPAA、ISO 27001、SOC 2、PCI-DSS 等)。
@@ -70,7 +70,7 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 
 ## <a name="creating-and-managing-custom-app-tags"></a>建立及管理自訂應用程式標籤
 
-您可以建立自訂應用程式標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 
+您可以建立自訂應用程式標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 例如，自訂監看清單、給特定業務單位的指派，或自訂核准，例如 "approved by legal"。
 
 建立自訂應用程式標籤：
 
