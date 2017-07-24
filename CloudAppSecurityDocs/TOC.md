@@ -1,6 +1,6 @@
 # 了解並探索
 ## [什麼是 CAS？](what-is-cloud-app-security.md)
-## [版本資訊](release-notes.md)
+## [新功能](release-notes.md)
 # 部署
 ## [開始使用](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
