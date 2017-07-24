@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/23/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>將 Salesforce 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連接程式 API，將 Cloud App Security 連接至您現有的 Salesforce 帳戶。  
@@ -108,7 +108,7 @@ Cloud App security 處理 Salesforce 事件的方式如下︰
   
 - 每隔 15 分鐘登入事件
 - 每隔 15 分鐘設定稽核記錄
-- Salesforce 每隔 24 小時匯出監視事件記錄檔 (12:00 UTC) 
+- Salesforce 記錄會追蹤 24 小時期間的使用活動，從上午 12:00 到下午 11:59 (UTC 時間)。 Salesforce 中的事件會即時產生記錄資料。 不過，Salesforce 會在事件發生之後的隔天，於非尖峰時間產生記錄檔。 因此，在事件發生之後，至少有一天無法提供記錄檔資料。 如需 Salesforce 事件的詳細資訊，請參閱[使用事件監視](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) \(英文\)。
 
 
 ## <a name="see-also"></a>另請參閱  

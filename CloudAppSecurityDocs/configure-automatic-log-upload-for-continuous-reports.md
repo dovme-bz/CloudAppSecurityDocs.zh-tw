@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
-記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 在檔案完成 FTP 至記錄收集器以及針對 Syslog 的傳輸之後，即會將 FTP 記錄檔上傳到 Cloud App Security，記錄收集器會寫入記錄檔，由磁碟接收，然後在檔案大小大於 40 KB 時將檔案上傳到 Cloud App Security。
-
-記錄檔上傳到 Cloud App Security 之後會移至備份目錄，其中儲存了任何指定時間的最後 20 個記錄檔。 每次有新的記錄檔抵達，就會刪除舊的記錄檔。 當記錄收集器磁碟空間已滿時，記錄收集器會在有更多可用磁碟空間之前卸除新的記錄檔。
-
-在設定自動收集記錄檔之前，請確認您的記錄檔與預期記錄檔類型相符，以確保 Cloud App Security 可以剖析特定檔案。 
-
->[!NOTE]
->Cloud App Security 支援將記錄檔從 SIEM 伺服器轉送到記錄檔收集器，假設記錄檔是以原始格式轉送。 不過，強烈建議您直接整合記錄檔收集器與防火牆及/或 Proxy。
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>在虛擬設備上設定自動記錄檔上傳以進行連續報告
 
 ## <a name="technical-requirements"></a>技術需求
 - Hypervisor：HyperV 或 VMware
@@ -144,7 +135,7 @@ sudo network_config
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 5 - 確認已在 Cloud App Security 入口網站中部署成功
 
