@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
@@ -33,7 +33,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 
 1.  有三種方法可以套用資料匿名： 
     
-    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [Anonymize private information (匿名私人資訊)]。
+    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [匿名個人資訊]。
  ![匿名快照資料](./media/anonymize-log.png)
 
     - 您可以設定將要匿名的資料[自動上傳新的資料來源](configure-automatic-log-upload-for-continuous-reports.md)，方法是在新增資料來源時選取 「Anonymize private information」 (匿名私人資訊)。  

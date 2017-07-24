@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b9931f11e50285c1bc6a0053fe0c8ad820851a08
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
 > [!NOTE] 
-> 此功能處於預覽狀態。
+> 此功能處於預覽狀態。 請連絡 <mcaspreview@microsoft.com>，以在您的租用戶中嘗試此功能。
 
 Cloud App Security 可以與現有 DLP 解決方案整合，以將這些控制項擴充至雲端，同時保留內部部署和雲端活動之間的一致且統一原則。 此平台會匯出易用介面 (包括 REST API 和 ICAP)，以啟用與內容分類系統 (例如 Symantec Data Loss Prevention (先前稱為 Vontu Data Loss Prevention) 或 Forcepoint DLP) 的整合。 
 
@@ -104,7 +104,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
    ![編輯 Windows Server 設定](./media/stunnel-windows.png)
  
-13. 開啟檔案，並貼上下列伺服器設定行，其中「DLP 伺服器 IP」是 ICAP 伺服器的 IP 位址、**stunnel-key** 是您在上一個步驟中建立的金鑰，而 **CAfile** 是 Cloud App Security Stunnel 用戶端的公用憑證。 此外，刪除任何現有的範例文字 (在範例中，它會顯示 Gmail 文字)，並將下列內容放入檔案中：
+13. 開啟檔案，並貼上下列伺服器設定行，其中「DLP 伺服器 IP」是 ICAP 伺服器的 IP 位址、**stunnel-key** 是您在上一個步驟中建立的金鑰，而 **CAfile** 是 Cloud App Security Stunnel 用戶端的公用憑證。 此外，請刪除任何現有的範例文字 (在範例中，它會顯示 Gmail 文字)，並將下列內容複製到檔案中：
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344

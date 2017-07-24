@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a30cf7f973daadd38a2049183ab1800d8d210cf4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: ed24b4020cd96db0bcb84378110499b289d583da
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
 治理可讓您即時控制各應用程式上的使用者活動。 對於連線的應用程式，您可以對檔案或活動套用治理動作。
@@ -85,7 +85,7 @@ ms.lasthandoff: 06/28/2017
     > [!NOTE] 
     > 如果您的 Azure Active Directory 設定為與 Active Directory 內部部署環境中的使用者自動同步，內部部署環境中的設定將會覆寫 Azure AD 設定，而且會還原此治理動作。 
   
-    -   撤銷密碼 – 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
+    -   撤銷密碼 - 撤銷使用者的密碼，並強制使用者在下次登入時設定新密碼。  
   
      ![Cloud App Security 活動原則治理動作](./media/activity-policy-ref6.png "活動原則 ref6")  
   

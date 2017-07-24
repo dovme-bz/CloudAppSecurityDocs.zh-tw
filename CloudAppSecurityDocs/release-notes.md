@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="release-notes"></a>版本資訊
 
@@ -44,6 +44,10 @@ ms.lasthandoff: 07/04/2017
     - **自訂附註**：當您檢閱和評估跨環境探索到的不同應用程式時，現在可以將結論和深入解析儲存至「附註」。
     - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
 -   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
+
+### <a name="announcements"></a>公告： 
+-   雲端應用程式目錄現在支援超過 15,000 可探索的應用程式
+-   合規性：Cloud App Security 已正式通過 Azure 的 SOC1/2/3 認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\)，然後篩選出 Cloud App Security 的結果。
 
 ### <a name="other-improvements"></a>其他改進： 
 -   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。

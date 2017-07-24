@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -156,6 +156,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
     - **ISP**：使用者在過去 30 天從中連線的 ISP 數目。
     - **IP 位址**：使用者在過去 30 天從中連線的 IP 位址數目。
 
+![Cloud App Security 中的使用者深入解析](./media/user-insights.png)
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
