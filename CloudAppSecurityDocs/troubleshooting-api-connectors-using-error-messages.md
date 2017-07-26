@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/26/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c046cefa687b67796e2039db079e51f510ea2ff0
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1c796c3933be0678183eae6e52ffd92097880ed8
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>使用錯誤訊息為 App 連線程式疑難排解
 
 嘗試使用 API App 連線程式連接雲端應用程式後，App 連線程式的對話方塊中會出現 App 連線程式的錯誤。
 
 
+> [!div class="mx-tableFixed"]
 |錯誤訊息|相關應用程式|描述|解決方法|
 |----|----|----|------------|
 |HttpRequestFailure: 伺服器傳回: 400 錯誤的要求: {"error":{"code":"AF20012","message":"系統中不正確地設定所指定的租用戶識別碼 (這裡是 Tenant_ID)。"|Office 365 |找不到指派的 Office 365 授權。 |將至少一個 Office 365 授權指派給您的租用戶。| 
