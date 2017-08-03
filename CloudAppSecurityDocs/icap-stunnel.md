@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ccc2197943c81b1a871375d4134c5aaf01876345
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: b3c9181bf1d56fe515d3e1356d38d631fee2cac5
+ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 07/23/2017
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
 > [!NOTE] 
-> 此功能處於預覽狀態。 請連絡 <mcaspreview@microsoft.com>，以在您的租用戶中嘗試此功能。
+> 此功能處於預覽狀態。 請連絡 <Cloud App Securitypreview@microsoft.com>，以在您的租用戶中嘗試此功能。
 
 Cloud App Security 可以與現有 DLP 解決方案整合，以將這些控制項擴充至雲端，同時保留內部部署和雲端活動之間的一致且統一原則。 此平台會匯出易用介面 (包括 REST API 和 ICAP)，以啟用與內容分類系統 (例如 Symantec Data Loss Prevention (先前稱為 Vontu Data Loss Prevention) 或 Forcepoint DLP) 的整合。 
 
@@ -88,7 +88,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. 串連 cert.pem 與 key.pem，並將它們儲存至檔案：`cat cert.pem key.pem >> stunnel-key.pem`
+8. 串連 cert.pem 與 key.pem，並將它們儲存至檔案：`type cert.pem key.pem >> stunnel-key.pem`
 
 9. [下載公開金鑰](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)，並將它儲存至下列位置：**C:\Program Files (x86)\stunnel\config\CAfile.pem**。
 
@@ -96,7 +96,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
         rem Open TCP Port 11344 inbound and outbound
         netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name=" Secure ICAP Port 11344" dir=out action=allow protocol=TCP localport=11344
+        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
 11. 執行：`c:\Program Files (x86)\stunnel\bin\stunnel.exe` 以開啟 Stunnel 應用程式。 
 
@@ -112,7 +112,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
         cert = C:\Program Files (x86)\stunnel\config\**stunnel-key**.pem
         CAfile = C:\Program Files (x86)\stunnel\config\**CAfile**.pem
         TIMEOUTclose = 0
-
+        client = no
 12. 儲存檔案，然後按一下 [重新載入設定]。
 
 13. 若要驗證所有事項都依預期執行，請從命令提示字元執行：`netstat -nao  | findstr 11344`
@@ -159,12 +159,12 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
 3.  開啟檔案，並貼上下列伺服器設定行，其中「DLP 伺服器 IP」是 ICAP 伺服器的 IP 位址、**stunnel-key** 是您在上一個步驟中建立的金鑰，而 **CAfile** 是 Cloud App Security Stunnel 用戶端的公用憑證：
 
         [microsoft-Cloud App Security]
-         accept = 0.0.0.0:11344
-         connect = **ICAP Server IP**:1344
-          cert = /etc/ssl/private/**stunnel-key**.pem
-          CAfile = /etc/ssl/certs/**CAfile**.pem
-          TIMEOUTclose = 1
-
+        accept = 0.0.0.0:11344
+        connect = **ICAP Server IP**:1344
+        cert = /etc/ssl/private/**stunnel-key**.pem
+        CAfile = /etc/ssl/certs/**CAfile**.pem
+        TIMEOUTclose = 1
+        client = no
 > [!NOTE] 
 > Stunnel 連接埠號碼預設為 11344。 如有必要，您可以將它變更為另一個連接埠，但請務必記下新的連接埠號碼，在下一個步驟中，您將需要輸入該連接埠號碼。
 
@@ -250,6 +250,54 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
     ![ICAP 封鎖](./media/icap-blocking.png)
  
 
+## <a name="appendix-b-symantec-deployment-guide"></a>附錄 B：Symantec 部署指南
+
+支援的 Symantec DLP 版本為 11-14.6。 如前所述，請在 Cloud App Security 租用戶所在的相同 Azure 資料中心中部署偵測伺服器。 偵測伺服器會透過專用的 IPSec 通道，與強制伺服器進行同步。 
+ 
+### <a name="detection-server-installation"></a>偵測伺服器安裝 
+Cloud App Security 所用的偵測伺服器是標準的 Network Prevent for Web 伺服器。 有數個應該變更的設定選項：
+1.  停用 [Trial Mode] \(試用模式\)：
+    1. 在 [System] \(系統\) > [Servers and Detectors] \(伺服器與偵測器\) 之下，按一下 ICAP 目標。 
+    
+      ![ICAP 目標](./media/icap-target.png)
+    
+    2. 按一下 [設定]。 
+    
+      ![設定 ICAP 目標](./media/configure-icap-target.png)
+    
+    3. 停用 [Trial Mode] \(試用模式\)。
+    
+      ![停用試用模式](./media/icap-disable-trial-mode.png)
+    
+2. 在 [ICAP] > [Response Filtering] \(回應篩選\) 之下，將 [Ignore Responses Smaller Than] \(忽略小於下值的回應\) 的值變更為 1。
+
+3. 然後將 "application/*" 新增至 [Inspect Content Type] \(檢查內容類型\) 的清單中。
+     ![檢查內容類型](./media/icap-inspect-content-type.png)
+4. 按一下 [儲存]
+
+
+### <a name="policy-configuration"></a>原則設定
+Cloud App Security 可以完美支援 Symantec DLP 包含的所有偵測規則類型，因此不需要變更現有的規則。 不過，設定變更必須套用至所有現有及新的原則，才能夠進行全面整合。 對於所有原則而言，此變更是一條新增的特定回應規則。 將設定變更新增至您的 Vontu：
+1.  移至 [Manage] \(管理\) > [Policies] \(原則\) > [Response Rules] \(回應規則\)，然後按一下 [Add Response Rule] \(新增回應規則\)。
+    
+    ![新增回應規則](./media/icap-add-response-rule.png)
+
+2.  確認已選取 [Automated Response] \(自動回應\)，然後按一下 [Next] \(下一步\)。
+
+    ![自動回應](./media/icap-automated-response.png)
+
+3. 輸入規則名稱，例如，**Block HTTP/HTTPS** (封鎖 HTTP/HTTPS)。 在 [Actions] \(動作\) 之下，選取 [Block HTTP/HTTPS] \(封鎖 HTTP/HTTPS\)，然後按一下 [Save] \(儲存\)。
+
+    ![封鎖 http](./media/icap-block-http.png)
+
+將建立的規則新增至任何現有的原則：
+1. 在每個原則中，切換至 [Response] \(回應\) 索引標籤。
+2. 從 [Response rule] \(回應規則\) 下拉式清單中，選取上列建立的封鎖回應規則。
+3. 儲存原則。
+   
+    ![停用試用模式](./media/icap-add-policy.png)
+
+此規則必須新增至所有現有的原則。
 
 
 

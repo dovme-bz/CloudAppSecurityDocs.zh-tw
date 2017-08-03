@@ -33,7 +33,7 @@ ms.lasthandoff: 07/04/2017
      ![google1](./media/google1.png "google1")  
   
 3.  在 [新增專案] 畫面中命名您的專案，如下所示︰</br>
-    **Microsoft Cloud App Security**，然後按一下 [建立]****。  
+    **Microsoft Cloud App Security**，然後按一下 [建立]。  
            ![google2](./media/google2.png "google2")  
   
 4.  專案建立後，在工具列上的 Google Cloud Platform 旁邊，選取專案，然後按一下 **[API]** 的 **[Go to APIs overview]**\(移至 API 概觀)。  
