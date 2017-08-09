@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
@@ -51,6 +51,9 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 ![探索到的應用程式篩選](./media/discovered-app-filters.png)
 
 篩選結果之後，您可以[不批准並封鎖](governance-discovery.md)這些應用程式，方法是使用 [大量動作] 核取方塊以一個動作不批准所有應用程式。 當應用程式處於待批准狀態之後，您可以使用封鎖指令碼以防止在環境中使用這些應用程式。
+
+若要更深入研究，您可以調查探索到的應用程式到子網域層級，和識別使用中的特定執行個體。 
+
 
 ## <a name="discovered-app-filters"></a>探索到的應用程式篩選
 

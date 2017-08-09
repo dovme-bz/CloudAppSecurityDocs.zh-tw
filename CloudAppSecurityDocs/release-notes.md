@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security 新功能 | Microsoft Docs"
+title: "Cloud App Security 的新功能 | Microsoft Docs"
 description: "本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7fe4b327e3f90bf98f4796d1b9b3149435b0ccd5
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-102"></a>Cloud App Security 版本 102 
+發行日期：2017 年 7 月 30 日
+ 
+-   因為 IP 位址資訊對幾乎所有調查都非常重要，所以您現在可以在 [活動] 下拉式清單中檢視 IP 位址的詳細資訊。 在特定活動中，您現在可以按一下 IP 位址索引標籤，檢視 IP 位址的相關彙總資料，包括特定 IP 位址的未解決警示數目、最近活動的趨勢圖形，以及位置地圖。 如此將有助於深入調查，例如當調查不可能的旅遊警示時，您可以輕鬆地了解使用的 IP 位址位置，以及它是否涉及可疑活動。 您也可以直接在 [IP 位址] 下拉式清單中執行動作，讓您將某個 IP 位址標記為有風險、VPN 或公司，以便未來進行調查和建立原則。 如需詳細資訊，請參閱 [IP 位址深入解析](activity-filters.md#ip-address-insights)
+
+-   在 Cloud Discovery 中，您現在也可以使用[自訂記錄檔格式](custom-log-parser.md)來進行[自動記錄上傳](discovery-docker.md)。 這可讓您輕鬆地從您的 SIEM (例如 Splunk 伺服器或任何其他不受支援的格式) 自動上傳記錄檔。 
+ 
+-   新的使用者調查動作可以對使用者進行更深層級的調查。 您現在可以從 [調查] 頁面，以滑鼠右鍵按一下活動、使用者或帳戶，並套用下列其中一個新篩選來進行進階的調查和過濾：[檢視相關的活動]、[檢視相關的治理]、[檢視相關的警示]、[檢視擁有的檔案]、[檢視與此使用者共用的檔案]。
+
+-   雲端應用程式目錄現在包含新的欄位，供帳戶終止之後保留資料之用。 此風險因素可讓您在終止雲端應用程式內的帳戶之後，確定您的資料已完全移除。
+
+-   Cloud App Security 現在已經增強與 Salesforce 物件 (例如潛在客戶、帳戶、活動、機會、設定檔與案例) 相關活動的可見性。 例如，帳戶頁面存取的可見性可讓您設定原則，以便在使用者檢視異常多的帳戶頁面時發出警示。 若您在 Salesforce 中啟用 Salesforce 事件監視 (Salesforce Shield 的一部分)，可透過 Salesforce 應用程式連接器使用。
+
+- 私人預覽版客戶現在已可使用「不要追蹤」功能！ 您現在可以控制處理哪些使用者的活動資料。 這可讓您在 Cloud App Security 中將特定群組設定為 「不要追蹤」。 例如，您現在可以決定不要處理位於德國，或位於不受特定合規性法律之任何國家/地區的任何使用者活動資料。 這在 Cloud App Security 中可以跨所有應用程式、針對特定的應用程式，或甚至針對特定子應用程式實作。 此外，還可以利用這項功能來漸進推出 Cloud App Security。 如需此功能的詳細資訊，或加入私人預覽，請連絡支援部門或您的帳戶代表。 
+
+
 
 ## <a name="cloud-app-security-release-100"></a>Cloud App Security 版本 100 
 發行日期：2017 年 7 月 3 日
@@ -45,9 +62,9 @@ ms.lasthandoff: 07/23/2017
     - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
 -   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
 
-### <a name="announcements"></a>公告： 
--   雲端應用程式目錄現在支援超過 15,000 可探索的應用程式
--   合規性：Cloud App Security 已正式通過 Azure 的 SOC1/2/3 認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\)，然後篩選出 Cloud App Security 的結果。
+### <a name="announcements"></a>宣告： 
+-   雲端應用程式目錄現在支援超過 15,000 個可探索的應用程式
+-   合規性：Cloud App Security 通過 Azure 的 SOC1/2/3 官方認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\) 並篩選 Cloud App Security 的結果。
 
 ### <a name="other-improvements"></a>其他改進： 
 -   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。
@@ -175,7 +192,7 @@ Cloud Discovery 更新：
 -   如果您已設定其他第三方 DLP 掃描器，DLP 掃描狀態現在將會顯示個別連線程式的狀態，以改善可見性。
 -   Cloud App Security 現在支援 Office 365 稽核記錄檔中所支援的 Microsoft Teams 活動。 這項功能正逐步推出。
 -   針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
--   在 [應用程式權限] 索引標籤上的應用程式抽屜中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
+-   在 Office 365 應用程式的 [應用程式權限] 索引標籤上的應用程式下拉式清單中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
 -   「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
 -   當停用檔案上的 Azure 資訊保護標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
  

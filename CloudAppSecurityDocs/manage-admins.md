@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f4d336b48dc7f3655a60d64ec4fe7e066db7f438
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 4035cbaa331470cd762550470e9543b8fa256fe0
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/03/2017
 ---
 ## <a name="managing-admin-access"></a>管理管理員存取權
 
 Cloud App Security 支援角色型存取控制。 根據預設，下列 Office 365 和 Azure AD 管理員角色可以存取 Cloud App Security：
 
-- 全域管理員和安全性系統管理員：具有 [完整存取] 的管理員在 Cloud App Security 中會擁有完整權限，可以新增管理員、新增原則和設定，上傳記錄檔及執行治理動作。
+- 全域管理員和安全性系統管理員：具有 [完整存取] 的管理員在 Cloud App Security 中會擁有完整權限，可以新增管理員、新增原則和設定、上傳記錄檔及執行治理動作。
 
 - 安全性讀取者：具有唯讀權限，而且可以管理警示。 安全性讀取者受到限制而無法執行下列動作：
       - 建立原則或編輯和變更現有原則 

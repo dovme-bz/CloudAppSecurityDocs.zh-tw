@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/04/2017
 12.  P12 憑證檔案會儲存到您的電腦。  
         
 12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts] (管理服務帳戶)。  
-       ![G Suite 認證服務帳戶](./media/google10.png "G Suite credentials service account")  
+       ![G Suite 認證服務帳戶](./media/google10.png "G Suite 認證服務帳戶")  
   
 13. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
   
@@ -119,6 +119,9 @@ ms.lasthandoff: 07/04/2017
   
 19. 在 [Enabled APIs] (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
          ![oogle Marketplace SDK 設定](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > 如果齒輪已停用，您可以改按一下 [Google Apps Marketplace SDK]。 
 20. 選取 [設定] 索引標籤。 
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
