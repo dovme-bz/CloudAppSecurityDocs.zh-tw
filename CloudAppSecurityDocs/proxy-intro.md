@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 28317b70-1851-4610-b1d6-863bc5994bb6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46377a8447ca7a7c0e98183b9d114c329d040e74
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 82e1ee0b5161dce88db815dc8eea06340bdbc532
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-the-cloud-app-security-proxy"></a>使用 Cloud App Security Proxy
 
@@ -42,7 +42,7 @@ Cloud App Security 的 Proxy 提供您執行即時監視、控制雲端環境的
 > [!NOTE]
 > -  不需要變更識別提供者的現有原則。
 
-### <a name="supported-apps-and-identity-providers"></a>支援的應用程式和識別提供者
+#### <a name="supported-apps-and-identity-providers"></a>支援的應用程式和識別提供者
 
 Proxy 的存取控制是針對支援 SAML 或 WS-同盟通訊協定的任何應用程式和任何識別提供者而設計。 Cloud App Security 小組針對領導級的識別提供者和應用程式測試存取控制功能。 不過，因為有很多識別提供者和很多雲端應用程式，所以並未針對每一種識別提供者和應用程式的組合進行測試。 我們建議您先在沙箱或測試環境中針對您的識別提供者和應用程式測試單一登入程序，再將它部署在生產環境中。
 
