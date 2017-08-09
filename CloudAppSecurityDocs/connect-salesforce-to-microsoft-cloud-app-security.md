@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>將 Salesforce 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連接程式 API，將 Cloud App Security 連接至您現有的 Salesforce 帳戶。  
@@ -38,11 +38,12 @@ ms.lasthandoff: 07/16/2017
   
     -   登入您的 Salesforce 帳戶，並移至 [設定] 頁面。  
   
-    -   在 [管理使用者] 下，移至 [設定檔] 頁面。  
+    -   在 [管理使用者] 下，移至 [使用者設定檔] 頁面。  
   
          ![salesforce 管理使用者設定檔](./media/salesforce-manageusers-profiles.png "salesforce 管理使用者設定檔")  
   
-    -   選擇您用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。 這是用於 Cloud App Security 服務帳戶的設定檔，可設定 App 連線程式。  
+    -   按一下 [新增] 建立新的設定檔。 
+    - 選擇您剛才用來部署 Cloud App Security 的設定檔，然後按一下 [編輯]。 這是用於 Cloud App Security 服務帳戶的設定檔，可設定 App 連線程式。  
   
          ![salesforce 編輯設定檔](./media/salesforce-edit-profile.png "salesforce 編輯設定檔")  
   
@@ -108,7 +109,7 @@ Cloud App security 處理 Salesforce 事件的方式如下︰
   
 - 每隔 15 分鐘登入事件
 - 每隔 15 分鐘設定稽核記錄
-- Salesforce 記錄會追蹤 24 小時期間的使用活動，從上午 12:00 到下午 11:59 (UTC 時間)。 Salesforce 中的事件會即時產生記錄資料。 不過，Salesforce 會在事件發生之後的隔天，於非尖峰時間產生記錄檔。 因此，在事件發生之後，至少有一天無法提供記錄檔資料。 如需 Salesforce 事件的詳細資訊，請參閱[使用事件監視](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) \(英文\)。
+- Salesforce 記錄會追蹤 UTC 時間上午 12:00 到下午 11:59 這 24 小時的 使用活動。 Salesforce 中的事件會即時產生記錄資料。 不過，Salesforce 會在事件發生之後的隔天，在非尖峰時間才產生記錄檔。 因此，事件發生之後至少有一天的時間，無法使用記錄檔資料。 如需 Salesforce 事件的詳細資訊，請參閱[使用事件監視](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm) \(英文\)。
 
 
 ## <a name="see-also"></a>另請參閱  

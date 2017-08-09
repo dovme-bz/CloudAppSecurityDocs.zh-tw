@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,15 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
-Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個以上屬性進行排名和評分之 13,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
-[雲端應用程式目錄] 會依據認證法規、業界標準和最佳做法來進行雲端應用程式的風險分級。 在雲端應用程式目錄中執行四種補充程序，以保持最新資訊︰
-1.    直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 相容性這類屬性)。
-2.    透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。
-3.    Cloud App Security 雲端分析師團隊進行的連續分析 (適用於靜止加密這類屬性)。
-4.    客戶型修訂要求 (根據雲端應用程式目錄變更的客戶提交要求)。 所有要求都是由雲端分析師團隊所檢閱，並根據其發現的項目進行更新。
-  
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
-
-Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄檔上傳至 Cloud App Security 入口網站之後，會妥善處理記錄檔，並將所有使用者名稱資訊取代為加密使用者名稱。 如此一來，所有雲端活動都會保持匿名。 如需詳細資訊，請參閱 [Cloud Discovery 匿名](cloud-discovery-anonymizer.md)。
-
+Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
+ 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>快照集和連續風險評估報告 
 
 您可以產生兩種類型的報告： 
@@ -44,7 +36,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
   
 -   **剖析** – Cloud App Security 會使用針對每項資料來源的專用剖析器，剖析並擷取來自流量記錄的流量資料。  
   
--   **分析** – 依 Cloud App Catalog 分析流量資料來識別超過 13,000 種的雲端應用程式，並評估其風險評分。 使用中的使用者和 IP 位址也會被識別為分析的一部分。  
+-   **分析** – 依 Cloud App Catalog 分析流量資料來識別超過 15,000 種的雲端應用程式，並評估其風險評分。 使用中的使用者和 IP 位址也會被識別為分析的一部分。  
   
 -   **產生報告** - 產生從記錄檔擷取之資料的風險評估報告。   
  
@@ -74,6 +66,8 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 3.  事件未超過 90 天。
 4.  記錄檔有效，並且包含輸出流量資訊。
  
+
+
 ## <a name="supported-firewalls-and-proxies"></a>支援的防火牆和 Proxy
 
 - Barracuda - Web 應用程式防火牆 (W3C)
@@ -99,6 +93,8 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Websense - 網站安全性解決方案 - 網際網路活動記錄 (CEF)
 - Zscaler
 
+> [!NOTE]
+> Cloud Discovery 支援 IPv4 和 IPv6 兩種位址。
 
 如果您的記錄檔不受支援，請在 [資料來源] 中選取 [其他]，並指定您嘗試上傳的設備與記錄檔。 Cloud App Security 雲端分析師團隊將會檢閱您的記錄，而且會在新增您記錄類型支援時通知您。 或者，您可以定義符合您格式的自訂剖析器。 如需詳細資訊，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)。
 
@@ -117,17 +113,19 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Clavister NGFW (Syslog)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Dell SonicWall|**是**|**是**|否|**是**|**是**|**是**|
 |Fortigate|否|**是**|否|**是**|**是**|**是**|
-|Juniper SRX|否|**是**|否|**是**\**|**是**|**是**|
+|Juniper SRX|否|**是**|否|**是**|**是**|**是**|
 |Juniper SSG|否|**是**|否|**是**|**是**|**是**|
 |McAfee SWG|**是**|否|否|**是**|**是**|**是**|
 |MS TMG|**是**|否|**是**|**是**|**是**|**是**|
-|Palo Alto Networks|**是**|**是**|**是**|**是**\*|**是**|**是**|
+|Palo Alto Networks|**是**|**是**|**是**|**是**|**是**|**是**|
 |Sophos|**是**|**是**|**是**|**是**|**是**|否|
-|Websense - 調查詳細資料報告 (CSV)|**是**|否|否|**是**|否|否|
+|Squid (一般)|**是**|否|**是**|**是**|否|**是**|
+|Squid (原生)|**是**|否|**是**|**是**|否|**是**|
+|Websense - 調查詳細資料報告 (CSV)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Websense - 網際網路活動記錄 (CEF)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Zscaler|**是**|否|**是**|否|**是**|**是**|
 
-\* Cloud Discovery 支援 IPv6。
+
 
 ## <a name="see-also"></a>另請參閱
  
