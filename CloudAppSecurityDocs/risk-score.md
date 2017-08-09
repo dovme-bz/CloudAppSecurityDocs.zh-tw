@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87653e25b6bb7344aa7670329d50aadae9cc9e02
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: c08aa36d651c060f571e580c531a6d4eee22094c
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-the-risk-score"></a>使用風險分數  
 
 ## <a name="the-cloud-app-catalog"></a>雲端應用程式目錄
 
-雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 50 個以上屬性進行排名和評分之 14,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
+雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
 [雲端應用程式目錄] 會依據認證法規、業界標準和最佳做法來進行雲端應用程式的風險分級。 在雲端應用程式目錄中執行四種補充程序，以保持最新資訊︰
 1.  直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 相容性這類屬性)。
 2.  透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。

@@ -1,11 +1,11 @@
 ---
-title: "使用 Windows 上的 Docker 設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
-description: "本主題說明使用 Windows 上的 Docker，在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
+title: "在 Windows 上使用 Docker 設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
+description: "本主題說明在 Windows 中使用 Docker，在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/16/2017
+ms.date: 7/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1ef3958d72150a1a67e92877c58270cbe17fe038
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: 3f17a43fb231ec9175cbfb2485ea363f6285e167
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>在 Windows Server 2016 上安裝和設定自動記錄檔收集器 Docker
 
 ## <a name="technical-requirements"></a>技術需求
 
--   作業系統：Windows Server 2016 或 Windows 10
+-   作業系統：Windows Sever 2016 或 Windows 10
 
 -   磁碟空間：250 GB
 
@@ -47,24 +47,24 @@ ms.lasthandoff: 07/16/2017
 
 ## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器
 
-1.  請移至自動上傳設定頁面上︰<br></br> 在 Cloud App Security 入口網站中，依序按一下設定圖示 [設定圖示](./media/settings-icon.png) 和 [記錄收集器]。
+1.  請移至自動上傳設定頁面上︰<br></br> 在 Cloud App Security 入口網站中，依序按一下設定圖示 [設定圖示](./media/settings-icon.png) 以及 [記錄收集器]。
 
 2.  為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰
 
-    ![Windows1](./media/windows1.png)
+    ![Windows 1](./media/windows1.png)
 
     a. 按一下 [加入資料來源]。
 
     b. **命名** Proxy 或防火牆。
 
-    c. 從 [來源] 清單中選取設備。
+    c. 從 [來源] 清單中選取設備。 如果您選取 [自訂記錄檔格式] 來處理未特別列出的網路設備，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)以了解組態指示。
 
     d. 比較您的記錄檔和預期的記錄檔格式範例。 如果您的記錄檔格式不符合此範例，您應該將資料來源加入為 [其他]。
 
     e. 將 [接收器類型] 設定為 [FTP]、[FTPS]、[Syslog – UDP]、[Syslog – TCP] 或 [Syslog – TLS]。
 
     > [!NOTE]
-    > 與安全傳輸通訊協定 (FTPS 和 Syslog – TLS) 整合通常需要額外的設定或您的防火牆/Proxy。
+    > 與安全傳輸通訊協定 (FTPS 及 Syslog – TLS) 整合通常需要額外的設定或防火牆/Proxy。
 
     f. 為記錄檔可用來偵測網路流量的每個防火牆和 Proxy 重複這個程序。
 
@@ -74,9 +74,9 @@ ms.lasthandoff: 07/16/2017
 
     b. 為記錄收集器**命名**。
 
-    c. 輸入您用來部署 Docker 之機器的 [主機 IP 位址]。
+    c. 輸入您要用來部署 Docker 之電腦的 [主機 IP 位址]。
 
-    d. 選取所有您想要連接到收集器的 [資料來源]，然後按一下 [更新] 以儲存設定，請參閱接下來的部署設定。
+    d. 選取您想要連線到收集器的所有 [資料來源]，然後按一下 [更新] 以儲存設定 (參閱接下來的部署步驟)。
 
     ![Windows2](./media/windows2.png)
 
@@ -85,73 +85,83 @@ ms.lasthandoff: 07/16/2017
 
     > -   請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 
-4.  隨即會出現進一步的部署資訊。
+4.  進一步的部署資訊會出現。
 
     ![Windows3](./media/windows3.png)
 
-5.  **複製**對話方塊中的執行命令。 您可以使用複製到剪貼簿圖示 [複製到剪貼簿圖示](./media/copy-icon.png)。
+5.  從對話方塊**複製**執行命令。 您可以使用複製至剪貼簿圖示 [複製至剪貼簿圖示](./media/copy-icon.png)。
 
-6.  **匯出**預期的資料來源設定。 此設定會說明您應如何在應用裝置中設定記錄檔匯出。
+6.  **匯出**預期的資料來源設定。 此設定會告訴您如何在設備中設定記錄檔匯出。
 
     ![Windows4](./media/windows4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 進行機器的內部部署
+## <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
 
 >[!NOTE]
->下列步驟說明 Windows Server 中的部署。 其他平台的部署步驟有些不同。
+>下列步驟描述 Windows Server 中的部署。 其他平台的部署步驟有些不同。
 
-1.  **下載**[最新穩定的 Docker for Windows](https://docs.docker.com/docker-for-windows/install/\#download-docker-for-windows)。
+1.  **下載**[適用於 Windows 的最新穩定 Docker](https://docs.docker.com/docker-for-windows/install/\#download-docker-for-windows) \(英文\)。
     
 2.  **執行** InstallDocker.msi 安裝程式。
 
-3.  開啟 Windows 機器上的 PowerShell 終端機。
+3.  在 Windows 電腦上開啟 PowerShell 終端機。
 
-4.  使用下列命令，**連接**至 Docker Hub：`docker login -u cascollector`
+4.  使用下列命令，**連線**至 docker 中樞：`docker login -u caslogcollector`
 
 5.  使用下列密碼 `C0llector3nthusiast`
 
     ![windows5](./media/windows5.png)
 
-6.  使用下列命令，從 Docker Hub 中**提取**至收集器映像：`docker pull Microsoft/caslogcollector`
+6.  使用下列命令，從 docker 中樞**提取**至收集器映像：`docker pull microsoft/caslogcollector`
 
     ![windows6](./media/windows6.png)
 
-7.  使用入口網站中產生的執行命令，部署收集器映像。
+7.  使用在入口網站中產生的執行命令部署收集器映像。
 
     ![windows8](./media/windows8.png)
 
     >[!NOTE]
-    >如果您需要設定 Proxy，請在其下新增 Proxy IP 位址和連接埠。 比方說，如果您的 Proxy 詳細資料是 192.168.10.1:8080，則更新的執行命令如下：  
- `   Sudo docker run --name casCollector -p 21:21 -p 20000-20099:20000-20099 -e
+    >如果您需要設定 Proxy，請在之下新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令是：  
+ `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
     "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
     "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=casCollector" --security-opt
+    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
     apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
 
     ![windows9](./media/windows9.png)
 
-9.  執行下列命令，確認收集器正常執行：`Docker logs <collector_name>`
+9.  執行下列命令，確認收集器正常執行：`docker logs <collector_name>`
 
-您應該會看到**已順利完成！**訊息。
+您應該會看到 **Finished successfully!** 的訊息。
   ![windows10](./media/windows10.png)
 
-## <a name="step-4---on-premises-configuration-of-your-network-appliances"></a>步驟 4 - 網路設備的內部部署設定
+## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
 
 設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 5 - 確認已在 Cloud App Security 入口網站中部署成功
+## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 4 - 確認已在 Cloud App Security 入口網站中部署成功
 
 在 [記錄收集器] 資料表中檢查收集器狀態，並確定狀態為 [已連線]。 如果是 [已建立]，記錄收集器連線和剖析可能尚未完成。
 
 ![windows11](./media/windows11.png)
 
-您也可以移至 [治理記錄] 並確認記錄檔會定期上傳到入口網站。
+您也可以移至 [治理記錄] 並確認記錄檔會定期被上傳到入口網站。
 
 如果您在部署期間遇到問題，請參閱[為雲端探索進行疑難排解](troubleshooting-cloud-discovery.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="optional---create-custom-continuous-reports"></a>選擇性 - 建立自訂連續報告
+
+在您確認要將記錄檔上傳到 Cloud App Security 並產生報告之後，您可以建立自訂報告。 您現在可以根據 Azure Active Directory 使用者群組建立自訂探索報告。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。 您也可以自訂以 IP 位址標籤或 IP 位址範圍為基礎的報告。
+
+1. 在 Cloud App Security 入口網站中，選取設定齒輪下的 [Cloud Discovery 設定]，然後選取 [管理連續報告]。 
+2. 按一下 [建立報告] 按鈕並填入欄位。
+3. 在 [篩選] 下，您可以依資料來源、依[匯入的使用者群組](user-groups.md)或依 [IP 位址標籤和範圍](ip-tags.md)來篩選資料。 
+
+![自訂連續報告](./media/custom-continuous-report.png)
+
+## <a name="see-also"></a>另請參閱
  
 [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 
