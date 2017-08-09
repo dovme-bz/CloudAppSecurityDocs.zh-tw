@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>在虛擬設備上設定自動記錄檔上傳以進行連續報告
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/16/2017
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
   
 1.  請移至自動上傳設定頁面上︰  
-    在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "settings icon") 以及 [記錄收集器]。  
+    在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，以及 [記錄收集器]。  
   
 3.  為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 07/16/2017
   
     b.  **命名** Proxy 或防火牆。  
   
-    c.  從 [來源] 清單中選取設備。  
+    c.  從 [來源] 清單中選取設備。 如果您選取 [自訂記錄檔格式] 來處理未特別列出的網路設備，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)以了解組態指示。
   
     d.  比較您的記錄檔和預期的記錄檔格式範例。 如果您的記錄檔格式不符合此範例，您應該將資料來源加入為 [其他]。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 07/16/2017
 1.  開啟 Hyper-V 管理員。  
   
 2.  依序選取 [新增] 和 [虛擬機器]，然後按一下 [下一步]。  
- ![探索 Hyperv 虛擬機器](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![探索 hyperv 虛擬機器](./media/discovery-hyperv-virtual-machine.png "探索 hyperv 虛擬機器")  
   
 3.  為新的虛擬機器**命名**，例如 CloudAppSecurityLogCollector01，然後按一下 [下一步]。  
   

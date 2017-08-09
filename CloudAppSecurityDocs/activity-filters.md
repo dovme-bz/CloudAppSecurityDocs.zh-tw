@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
-ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
+ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -124,23 +124,22 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 ### <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單
 
-您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供下列您可以對活動執行的額外動作：
+您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供每個活動的下列額外動作和深入解析：
+    - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
+    - 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
+    - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
+    - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
+    - 位置：按一下位置用 Bing 地圖服務檢視位置。
+    - IP 位址類別與標記：按一下 IP 標記以檢視在此活動中找到的 IP 標記清單。 您接著可以依據符合此標記的所有活動進行篩選。    
 
-- 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
-- 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
-- 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
-- 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
-- 位置：按一下位置用 Bing 地圖服務檢視位置。
-- IP 位址類別與標記：按一下 IP 標記以檢視在此活動中找到的 IP 標記清單。 您接著可以依據符合此標記的所有活動進行篩選。    
-
-隱藏式活動選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外活動和向下切入的內容連結。 例如，如果您將游標移到 IP 位址類別旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將 IP 位址新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**使用者群組**。
+ 隱藏式活動選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外活動和向下切入的內容連結。 例如，如果您將游標移到 IP 位址類別旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將 IP 位址新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**使用者群組**。
 
 
 ![隱藏式活動選單](./media/activity-drawer.png "隱藏式活動選單")  
   
 如需可用的治理動作清單，請參閱[活動治理動作](governance-actions.md#activity-governance-actions)。
 
-### <a name="user-insights"></a>使用者深入解析
+#### <a name="user-insights"></a>使用者深入解析
 
 調查體驗包括目前使用者的預設深入解析。 您只要按一下就可以取得使用者的完整概觀，包括它們從中連線的位置、與它們有關的未解決警示數目，以及其中繼資料資訊。
 
@@ -157,6 +156,28 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
     - **IP 位址**：使用者在過去 30 天從中連線的 IP 位址數目。
 
 ![Cloud App Security 中的使用者深入解析](./media/user-insights.png)
+
+#### <a name="ip-address-insights"></a>IP 位址深入解析
+
+因為 IP 位址資訊對幾乎所有調查都非常重要，所以您可以在 [活動] 下拉式清單中檢視 IP 位址的詳細資訊。 在特定活動中，您可以按一下 IP 位址索引標籤，檢視 IP 位址的相關彙總資料，包括特定 IP 位址的未解決警示數目、最近活動的趨勢圖形，以及位置地圖。 如此將有助於深入調查，例如當調查不可能的旅遊警示時，您可以輕鬆地了解使用的 IP 位址位置，以及它是否涉及可疑活動。 您也可以直接在 [IP 位址] 下拉式清單中執行動作，讓您將某個 IP 位址標記為有風險、VPN 或公司，以便未來進行調查和建立原則。
+
+檢視 IP 位址深入解析：
+
+1. 在 [活動記錄] 中按一下活動本身。
+
+2. 然後按一下 [IP 位址] 索引標籤。 <br></br> 這會開啟 [活動] 下拉式清單。[IP 位址] 索引標籤會提供 IP 位址的下列深入解析：
+    - **未解決的警示**：與 IP 位址有關的未解決警示數目。
+    - **活動**：過去 30 天依 IP 位址執行的活動數目。
+    - **IP 位置**：過去 30 天 IP 位址從當中連線的地理位置。
+    - **活動**：過去 30 天從此 IP 位址執行的活動數目。
+    - **管理員活動**：過去 30 天從此 IP 位址執行的管理活動數目。
+    - 您可以執行下列 IP 位址動作：
+        - 標記為有風險 
+        - 標記為 VPN IP 位址
+        - 標記為有風險的 IP，並新增至封鎖的群組
+
+![Cloud App Security 中的 IP 位址深入解析](./media/ip-address-insights.png)
+
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
