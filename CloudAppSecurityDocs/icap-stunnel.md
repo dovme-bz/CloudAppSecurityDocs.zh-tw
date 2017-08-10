@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
@@ -52,7 +52,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
 設定 ICAP 伺服器，並記下連接埠號碼，然後確定您已將 [模式] 設定為 [封鎖]。 封鎖模式設定 ICAP 伺服器將分類結果轉送回 Cloud App Security。
 
-如需如何完成這項作業的指示，請參閱外部 DLP 產品文件。 例如，請參閱[附錄 A：Forcepoint ICAP 伺服器設定](#forcepoint)。
+如需如何完成這項作業的指示，請參閱外部 DLP 產品文件。 如需範例，請參閱[附錄 A：Forcepoint ICAP 伺服器安裝程式](#forcepoint)和[附錄 B：Symantec 部署指南](#symantec)。
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>步驟 2：設定 Stunnel 伺服器 
 
@@ -252,9 +252,9 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
     ![ICAP 封鎖](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>附錄 B：Symantec 部署指南
+## 附錄 B：Symantec 部署指南<a name="symantec"></a>
 
-支援的 Symantec DLP 版本為 11-14.6。 如先前所述，您應該在與 Cloud App Security 租用戶所在相同的 Azure 資料中心，部署您的偵測伺服器。 偵測伺服器會透過專用的 IPSec 通道，同步處理強制伺服器。 
+支援的 Symantec DLP 版本為 11 及更新版本。 如先前所述，您應該在與 Cloud App Security 租用戶所在相同的 Azure 資料中心，部署您的偵測伺服器。 偵測伺服器會透過專用的 IPSec 通道，同步處理強制伺服器。 
  
 ### <a name="detection-server-installation"></a>偵測伺服器安裝 
 Cloud App Security 所使用的偵測伺服器是一個標準的 Network Prevent for Web 伺服器。 有幾個應該變更的組態選項：
