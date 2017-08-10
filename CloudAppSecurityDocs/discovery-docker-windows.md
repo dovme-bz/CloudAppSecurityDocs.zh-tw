@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3f17a43fb231ec9175cbfb2485ea363f6285e167
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: dfa0e6d884fde67f901c9dcdec208a447f2c6cb9
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>在 Windows Server 2016 上安裝和設定自動記錄檔收集器 Docker
+
+> [!NOTE]
+> 此功能正逐步在租用戶間推出。 如果您希望加入預覽，請連絡支援服務。
 
 ## <a name="technical-requirements"></a>技術需求
 
@@ -45,7 +48,9 @@ ms.lasthandoff: 08/03/2017
 
 -   IT 配置的虛擬機器 I/O 效能：決定記錄檔寫入記錄收集器磁碟的速度。 記錄收集器有內建的安全機制，會監視記錄檔到達的速率，並與上傳速率相比較。 如果網路擁塞，記錄收集器就會開始卸除記錄檔。 如果您的安裝程式通常每小時超過 50 GB，建議您將流量分割至多個記錄收集器。
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器
+## <a name="set-up-and-configuration"></a>安裝與設定  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器
 
 1.  請移至自動上傳設定頁面上︰<br></br> 在 Cloud App Security 入口網站中，依序按一下設定圖示 [設定圖示](./media/settings-icon.png) 以及 [記錄收集器]。
 
@@ -95,7 +100,7 @@ ms.lasthandoff: 08/03/2017
 
     ![Windows4](./media/windows4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
 
 >[!NOTE]
 >下列步驟描述 Windows Server 中的部署。 其他平台的部署步驟有些不同。
@@ -135,13 +140,13 @@ ms.lasthandoff: 08/03/2017
 您應該會看到 **Finished successfully!** 的訊息。
   ![windows10](./media/windows10.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
 
 設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 4 - 確認已在 Cloud App Security 入口網站中部署成功
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 4 - 確認已在 Cloud App Security 入口網站中部署成功
 
 在 [記錄收集器] 資料表中檢查收集器狀態，並確定狀態為 [已連線]。 如果是 [已建立]，記錄收集器連線和剖析可能尚未完成。
 

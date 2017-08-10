@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e198a945682771eee27b97985607ee997ccd3e4
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
+
+> [!NOTE]
+> 此功能正逐步在租用戶間推出。 如果您希望加入預覽，請連絡支援服務。
 
 ## <a name="technical-requirements"></a>技術需求
 
@@ -45,7 +48,9 @@ ms.lasthandoff: 08/03/2017
 
 -   IT 配置的虛擬機器 I/O 效能：決定記錄檔寫入記錄收集器磁碟的速度。 記錄收集器有內建的安全機制，會監視記錄檔到達的速率，並與上傳速率相比較。 如果網路擁塞，記錄收集器就會開始卸除記錄檔。 如果您的安裝程式每小時通常超過 50 GB，建議將流量分割至多個記錄收集器。
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器
+## <a name="set-up-and-configuration"></a>安裝與設定  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器
 
 1.  請移至自動上傳設定頁面上︰  <br></br>在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png) 以及 [記錄收集器]。
 
@@ -93,7 +98,7 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu4](./media/ubuntu4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
 
 > [!Note]
 > 下列步驟描述 Ubuntu 中的部署。 其他平台的部署步驟有些不同。
@@ -130,13 +135,13 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu8](./media/ubuntu8.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
 
 設定網路防火牆和 Proxy 定期將記錄匯出到對話方塊指示的專用 FTP 目錄 Syslog 連接埠，例如︰
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 4 - 確認已在 Cloud App Security 入口網站中部署成功
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>步驟 4 - 確認已在 Cloud App Security 入口網站中部署成功
 
 在 [記錄收集器] 資料表中檢查收集器狀態，並確定狀態為 [已連線]。 如果是 [已建立]，記錄收集器連線和剖析可能尚未完成。
 
@@ -146,7 +151,7 @@ ms.lasthandoff: 08/03/2017
 
 如果您在部署期間遇到問題，請參閱[為雲端探索進行疑難排解](troubleshooting-cloud-discovery.md)。
 
-## <a name="optional---create-custom-continuous-reports"></a>選擇性 - 建立自訂連續報告
+### <a name="optional---create-custom-continuous-reports"></a>選擇性 - 建立自訂連續報告
 
 在您確認要將記錄檔上傳到 Cloud App Security 並產生報告之後，您可以建立自訂報告。 您現在可以根據 Azure Active Directory 使用者群組建立自訂探索報告。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。 您也可以自訂以 IP 位址標籤或 IP 位址範圍為基礎的報告。
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
@@ -52,8 +52,13 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 
 篩選結果之後，您可以[不批准並封鎖](governance-discovery.md)這些應用程式，方法是使用 [大量動作] 核取方塊以一個動作不批准所有應用程式。 當應用程式處於待批准狀態之後，您可以使用封鎖指令碼以防止在環境中使用這些應用程式。
 
-若要更深入研究，您可以調查探索到的應用程式到子網域層級，和識別使用中的特定執行個體。 
+Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過調查找到的子網域來識別特定的使用中執行個體。
 
+例如，您可以區別不同的 SharePoint 網站。
+
+不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery.md#supported-firewalls-and-proxies) 查看支援的設備清單。
+
+![子網域資訊](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>探索到的應用程式篩選
 
