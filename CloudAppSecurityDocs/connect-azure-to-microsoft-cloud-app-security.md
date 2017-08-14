@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 8/8/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 75b5a6fb3707872f0455da1a1856b55adb17c597
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
+ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>將 Azure 連線到 Microsoft Cloud App Security
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
 Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用帳戶中將所有活動記錄串流至單一事件中樞的指示。 
 
-### <a name="step-1-stream-your-azure-activity"></a>步驟 1：串流 Azure 活動
+### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>步驟 1：將您的 Azure 活動記錄串流至事件中樞
 
 1.  將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請遵循 Azure 文件中的官方指南：https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
@@ -35,6 +35,9 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
  > 如果您有多個 Azure 訂用帳戶，請對每一個訂用帳戶重複此步驟，但訂用帳戶間則共用單一事件中樞。
 
  完成指示後，新的事件中樞會建立於您選擇的命名空間。
+ 
+ > [!NOTE]
+ > 如果您在嘗試匯出活動記錄後發生錯誤，請在 Azure 中前往 [資源提供者] 刀鋒視窗，並確認已註冊 ‘microsoft.insights’。
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>步驟 2：取得事件中樞的連接字串
 
@@ -53,6 +56,9 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 4.  選取 Azure 監視器新建立的事件中樞。 其名為 **insights-operational-logs**。
   
     ![Insights operational logs](media/azure-insight-operational-logs.png "Azure Insights operational logs")
+  
+  > [!NOTE]
+  > 建立事件中樞可能需要幾分鐘的時間。
 
 5. 按一下 [共用存取原則]，再按一下 [新增]，就可建立新的存取原則，提供 Cloud App Security 權限讀取事件中樞。
   
@@ -78,7 +84,10 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
   
 4.  在 [連接字串]欄位中，貼上您在上一個步驟中複製的連接字串。  
   
-5.  在 [取用者群組] 欄位中，鍵入：$Default，除非您建立了不同的取用者群組來使用。
+5.  在 [取用者群組] 欄位中鍵入：`$Default`
+    
+   >[!NOTE] 
+   > 如果您建立了其他取用者群組來使用，請使用該**取用者群組**名稱。
   
 6.  按一下 [連線] 。
 8.  按一下 [測試 API] 確定連線成功。  
