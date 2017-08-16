@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>部署 Cloud App Security Proxy
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > 強烈建議您在生產環境中安裝之前，先嘗試在沙箱或測試環境中安裝。
 
 若要部署 Cloud App Security Proxy，並啟用存取控制及工作階段控制，必須採取如下所述的步驟。
+
+在部署 Proxy 時，您必須在識別提供者和您要控制的應用程式兩者中變更組態。 這包含變更 URL，以便讓識別提供者和應用程式會將登入要求重新導向至 Proxy。 此外，如有需要，請同時取代憑證。
+
+完成這些步驟之後，所有登入事件都會經過 Proxy，而 Proxy 可以決定是否允許這些事件存取應用程式、拒絕存取，或允許在受監視的模式下存取。 請注意在這個階段，Proxy 可以向裝置要求用戶端憑證，並使用裝置的狀態來決定原則。
 
 ## <a name="prerequisites"></a>必要條件
 
