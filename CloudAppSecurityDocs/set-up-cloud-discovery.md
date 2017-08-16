@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8a60d15ae730cfa3fb1a851bf588d291f5287e
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
@@ -123,7 +123,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Squid (原生)|**是**|否|**是**|**是**|否|**是**|
 |Websense - 調查詳細資料報告 (CSV)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Websense - 網際網路活動記錄 (CEF)|**是**|**是**|**是**|**是**|**是**|**是**|
-|Zscaler|**是**|否|**是**|否|**是**|**是**|
+|Zscaler|**是**|**是**|**是**|**是**|**是**|**是**|
 
 
 
