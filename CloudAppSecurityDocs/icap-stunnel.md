@@ -151,7 +151,7 @@ ICAP 伺服器和 Cloud App Security 會使用私密金鑰和公開憑證進行�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>下載 Cloud App Security Stunnel 用戶端公開金鑰
 
-從這個位置下載公開金鑰：https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem，並將它儲存至這個位置：**/etc/ssl/certs/MCASCAfile.pem**
+從這個位置下載公開金鑰：https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem ，並將它儲存至這個位置：**/etc/ssl/certs/MCASCAfile.pem**
 
 ### <a name="configure-stunnel"></a>設定 Stunnel 
 
