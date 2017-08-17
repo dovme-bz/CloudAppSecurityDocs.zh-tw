@@ -213,7 +213,7 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
 
 2. 按一下加號以新增連線。 
 
-3. 在 [Add  new external DLP wizard (新增外部 DLP 精靈)] 中，提供將用來識別連接器的 [連線名稱] (例如，My Forcepoint 連接器)。
+3. 在 [Add  new external DLP wizard (新增外部 DLP 精靈)] 中，提供將用來識別連接器的 [連線名稱]\ (例如，My Forcepoint 連接器)。
 
 4. 選取 [連線類型]：
     - **Symantec Vontu** – 選取此選項可使用 Vontu DLP 設備的自訂整合
