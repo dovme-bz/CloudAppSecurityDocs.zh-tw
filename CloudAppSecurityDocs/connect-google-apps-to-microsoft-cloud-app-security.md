@@ -63,7 +63,7 @@ ms.lasthandoff: 08/07/2017
   
      ![Google 啟用的 API](./media/google5.png "google5")  
   
-8.  依序按一下 [認證] 和 [OAuth consent screen] (OAuth 同意畫面)  
+8.  依序按一下 [認證] 和 [OAuth consent screen]\(OAuth 同意畫面)  
   
     -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中，鍵入 **Microsoft Cloud App Security**。  
   
@@ -73,7 +73,7 @@ ms.lasthandoff: 08/07/2017
   
      ![Google 產品名稱](./media/google6.png "google6")  
   
-9. 在 [API Credentials] (API 認證) 畫面上，按一下 [建立認證] 旁的箭號。  
+9. 在 [API Credentials]\(API 認證) 畫面上，按一下 [建立認證] 旁的箭號。  
   
      ![Google 認證](./media/google7.png "google7")  
 
@@ -81,13 +81,13 @@ ms.lasthandoff: 08/07/2017
 
      ![Google 服務帳戶金鑰](./media/google8.png "google8")  
   
-11. 在 [Create service account key] (建立服務帳戶金鑰) 下選擇 [New service account] (新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。 選取 [Enable G Suite Domain-wide Delegation] (啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
+11. 在 [Create service account key]\(建立服務帳戶金鑰) 下選擇 [New service account]\(新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。 選取 [Enable G Suite Domain-wide Delegation]\(啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
      ![Google 建立服務帳戶金鑰](./media/google9.png "google9")  
   
 12.  P12 憑證檔案會儲存到您的電腦。  
         
-12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts] (管理服務帳戶)。  
+12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts]\(管理服務帳戶)。  
        ![G Suite 認證服務帳戶](./media/google10.png "G Suite 認證服務帳戶")  
   
 13. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
@@ -111,13 +111,13 @@ ms.lasthandoff: 08/07/2017
   
     -   Google 要求您至少上傳一個應用程式圖示。 請移至 [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) 下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
   
-    -   在 [Drive Integration] (磁碟機整合) 下的 [開啟 URL:] 中鍵入：  
+    -   在 [Drive Integration]\(磁碟機整合) 下的 [開啟 URL:] 中鍵入：  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
          ![Google Drive 設定](./media/google15.png "googledriveconfig")  
   
-19. 在 [Enabled APIs] (啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
+19. 在 [Enabled APIs]\(啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
          ![oogle Marketplace SDK 設定](./media/google16.png "googledriveconfig")  
 
        >[!NOTE]
@@ -130,7 +130,7 @@ ms.lasthandoff: 08/07/2017
   
          在 [應用程式描述] 欄位中填入「Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。」  
   
-    -   取消核取 [Enable individual install] (啟用個別安裝) 核取方塊。  
+    -   取消核取 [Enable individual install]\(啟用個別安裝) 核取方塊。  
   
     -   在**應用程式圖示**下設定 4 個必要影像。  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 08/07/2017
   
         -   **隱私權原則 URL**：http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   在 [OAuth 2.0 scopes] (OAuth 2.0 領域) 下複製和貼上下列內容。 它們一次只能複製一個，並且每次複製都必須按下 Enter︰  
+    -   在 [OAuth 2.0 scopes]\(OAuth 2.0 領域) 下複製和貼上下列內容。 它們一次只能複製一個，並且每次複製都必須按下 Enter︰  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -222,7 +222,7 @@ ms.lasthandoff: 08/07/2017
   
     7.  [連入此連結] 連接到 G Suite。 這會開啟 G Suite，並要求您授與 Cloud App Security 存取權。  
          
-    8.  按一下 [Test now] (立即測試) 確定連線成功。  
+    8.  按一下 [Test now]\(立即測試) 確定連線成功。  
   
          測試可能需要幾分鐘的時間。  
   
