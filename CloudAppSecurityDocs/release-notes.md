@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 的新功能
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security 版本 103 
+發行日期：2017 年 8 月 13 日
+
+- Cloud App Security 已針對下列 Office 檔案新增 Azure 資訊保護原生保護支援：.docm、.docx、.dotm、.dotx、.xlam、.xlsb、.xlsm、.xlsx、.xltx、.xps、.potm、.potx、.ppsx、.ppsm、.pptm、.pptx、.thmx、.vsdx、.vsdm、.vssx、.vssm、.vstx、.vstm (取代一般保護)。
+
+- 任何 Azure Active Directory 相容性系統管理員都會自動獲授與類似 Cloud App Security 的權限，包括唯讀及管理警示、建立和修改檔案原則、允許檔案治理動作，以及檢視 [資料管理] 下的所有內建報表。 
+
+- 我們將 DLP 違規內容從 40 個字元擴充到 100 個字元，以協助您更清楚違規的內容。
+
+- Cloud Discovery 自訂記錄檔上傳程式的詳細錯誤訊息，能讓您輕鬆地為上傳記錄檔中的錯誤進行疑難排解。
+
+- 擴充 Cloud Discovery 封鎖指令碼以支援 Zscaler 格式。
+
+- 新的雲端應用程式目錄風險因素：帳戶終止之後保留資料。 這可讓您在終止雲端應用程式內的帳戶之後，確定您的資料已完全移除。
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security 版本 102 
 發行日期：2017 年 7 月 30 日
