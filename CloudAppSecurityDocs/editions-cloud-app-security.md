@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 68ca6a7a4bacb0e04fddea4c1df36350c0e4c6fb
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Cloud App Security 與 Office 365 進階安全性管理 (ASM) 之間有哪些差異？
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-獨立版的 Cloud App Security 為跨 SaaS 解決方案，為待批准的應用程式提供 Shadow IT Discovery，而針對獲批准的應用程式，則提供組織中雲端應用程式間的資訊保護、威脅偵測與條件式存取。 
+Microsoft Cloud App Security 是全方位的跨 SaaS 解決方案，為雲端應用程式帶來深度的可見性、強大的資料控制項和增強的威脅防護。 您可以使用這項服務，探索使用中的雲端應用程式查看陰影 IT，並可在批准服務後，控制和保護應用程式中的資料。 
 
 ## <a name="office-365-advanced-security-management"></a>Office 365 進階安全性管理
 
@@ -34,30 +34,27 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="feature-support"></a>功能支援
 
-|Pillar|功能|Microsoft Cloud App Security|進階安全性管理|
+|功能|功能|Microsoft Cloud App Security|Office 365 進階安全性管理|
 |----|----|----|----|
-|Shadow IT Discovery||||
-||探索到的應用程式支援|15,000+ 並且自動評估風險|750+ 個應用程式 (類似於 Office 365)|
-||記錄上傳|手動與自動|手動|
+|雲端探索|探索到的應用程式 |15,000 多種雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
+||探索分析的部署|手動與自動上傳記錄檔|手動上傳記錄檔|
 ||記錄匿名保護使用者隱私|是|是|
-||持續中的風險評定：應用程式風險分數和新的應用程式警示|是||
-||探索到的應用程式報告|是|是|
-||應用程式探索異常偵測|是||
-||存取完整的應用程式目錄|是||
-||每個應用程式、使用者、IP 位址的詳細報告|是||
-|資訊保護||||
-||DLP 支援|跨 SaaS DLP 和共用資料控制|由 Office 365 DLP 提供，可在 ASM 中檢視及回報事件|
-||應用程式權限 - 識別及控制 OAuth 應用程式|是|是|
+||存取完整的雲端應用程式目錄|是||
+||雲端應用程式風險評估|是||
+||依照應用程式、使用者、IP 位址的雲端使用情況分析|是||
+||進行中的分析與報告|是||
+||自動偵測探索到的應用程式|是||
+|資訊保護|資料外洩防護 (DLP) 支援|跨 SaaS DLP 和共用資料控制|使用現有的 Office DLP (Office E3 和更新版本提供)|
+||應用程式權限以及撤銷存取權的能力|是|是|
 ||原則設定和強制執行|是||
-||Azure 資訊保護整合|是||
-||整合第三方 DLP 解決方案|是||
-|威脅偵測||||
-||偵測涵蓋範圍|跨應用程式的完整警示、威脅和違規儀表板|Office 365 異常偵測和安全性警示|
+||與 Azure 資訊保護整合 |是||
+||與協力廠商 DLP 解決方案整合|是||
+|威脅偵測|異常偵測和行為分析|包含 Office 365 的跨 SaaS 應用程式|Office 365 應用程式 |
 ||手動與自動的警示補救措施|是|是|
-||SIEM 連接器|警示和活動記錄|僅限警示|
-||Microsoft 智慧型安全性圖表增強功能|是|是|
+||SIEM 連接器|是。 跨 SaaS 應用程式的警示和活動記錄檔。|是。 僅 Office 365 警示。|
+||整合到 Microsoft 智慧型安全性圖表|是|是|
 ||活動原則|是|是|
-||異常偵測|是|是|
+
 
 ## <a name="see-also"></a>另請參閱  
 

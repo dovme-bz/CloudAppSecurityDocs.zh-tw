@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="file-policies"></a>檔案原則  
 檔案原則可讓您利用雲端提供者的 API，強制執行各種不同的自動化程序。 原則可以設定成提供連續的相容性掃描、法務 eDiscovery 工作、公開共用機密內容的 DLP，以及更多使用案例。  
@@ -79,7 +79,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
 7.  選取 [內容檢查方法]。 內建的 DLP 可讓您依檔案內容篩選檔案。 若要掃描檔案內容，請接著選取 [內建 DLP]。 啟用內容檢查之後，即可選擇使用預設的運算式，或搜尋其他自訂的運算式，作為子字串或是您自己的[規則運算式](working-with-the-regex-engine.md)。  
     此外，您也可以指定規則運算式，從結果中排除檔案。 如果您有要從原則中排除的內部分類關鍵字標準，這會非常有用。  
     您可以決定設定要至少比對到多少次內容違規數，才將該檔案視為違規。 例如，如果您希望在發現內容中至少有 10 個信用卡號碼的檔案時接獲警示，您可以選擇 10。  
-    比對內容與選取的運算式時，違規文字將會取代為 "X" 字元。 違規預設會全部遮罩，且出現在顯示違規前後 40 個字元的內容中。 運算式內容中的數字會置換成 “#” 字元，且不再儲存於 Cloud App Security 內。 您可以選取 [Unmask the last 4 characters of a violation]\(取消遮罩違規的最後 4 個字元) 選項，來取消遮罩違規本身的最後 4 個字元。
+    比對內容與選取的運算式時，違規文字將會取代為 "X" 字元。 違規預設會全部遮罩，且出現在顯示違規前後 100 個字元的內容中。 運算式內容中的數字會置換成 “#” 字元，且不再儲存於 Cloud App Security 內。 您可以選取 [Unmask the last 4 characters of a violation]\(取消遮罩違規的最後 4 個字元) 選項，來取消遮罩違規本身的最後 4 個字元。
   
 8.  選擇您想要 Cloud App Security 在偵測到相符項目時採取的 [治理] 動作。  
   
