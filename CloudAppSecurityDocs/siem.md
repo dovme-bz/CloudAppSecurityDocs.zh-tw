@@ -66,7 +66,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
   ![遠端 Syslog 設定](./media/siem2.png)
 
 6. 選取您想要匯出至 SIEM 伺服器的資料類型：[警示] 和 [活動]。 使用滑桿來啟用和停用它們，預設會選取所有項目。 您可以使用 [套用至] 下拉式清單來設定篩選條件，以便只將特定警示和活動傳送至 SIEM 伺服器。
-您可以按一下 [Edit and preview results] (編輯和預覽結果)，檢查篩選是否如預期運作。 按 [下一步] 。 
+您可以按一下 [Edit and preview results]\(編輯和預覽結果)，檢查篩選是否如預期運作。 按 [下一步] 。 
 
   ![資料類型設定](./media/siem3.png)
 
@@ -121,7 +121,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 
 ## <a name="regenerating-your-token"></a>重新產生權杖
-如果您遺失權杖，則一律可以重新產生權杖，方法是按一下表格中 SIEM 代理程式之資料列結尾的三個點，然後選取 [Regenerate token] (重新產生權杖)。
+如果您遺失權杖，則一律可以重新產生權杖，方法是按一下表格中 SIEM 代理程式之資料列結尾的三個點，然後選取 [Regenerate token]\(重新產生權杖)。
 
  ![SIEM - 重新產生權杖](./media/siem-regenerate-token.png)
 
