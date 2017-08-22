@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>什麼是 Cloud App Security
 
@@ -80,6 +80,9 @@ Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式�
 ### <a name="policy-control"></a>原則控制  
 
 您可以使用原則定義您使用者在雲端中的行為。 使用原則偵測雲端環境中的具風險行為、違規或可疑的資料點與活動。 如有需要，您可使用原則整合補救程序，以完整降低風險。 有多種不同類型的原則，與您想要收集的雲端環境資訊以及您可能要採取的修復動作類型相互關聯。  
+
+## <a name="related-videos"></a>相關影片
+- [加入安全性社群](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## <a name="see-also"></a>另請參閱  
 

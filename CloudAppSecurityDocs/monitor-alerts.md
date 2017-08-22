@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>警示
 檢視警示：
@@ -27,6 +27,11 @@ ms.lasthandoff: 06/28/2017
 
 ![警示功能表](./media/alert-menu.png)
 
+若要處理每個警示，請按一下表格中的警示，並選取下列其中一個選項：
+- **解決警示**：調查並採取行動以減輕警示事項之後，請按一下 [解決警示]。 您可以輸入註解以儲存所採取行動的相關資訊，以供日後參考。您也可以選擇**傳送有關警示的意見反應給 Cloud App Security 小組**。 解決警示之後，警示表格中就不會再顯示該警示。
+- 解決警示和**標示為已讀取**：您可以讓警示保持開啟，但將它標示為已讀取。
+- 解決警示和**調整原則**：您可以修改符合警示的原則以回應警示。
+- **關閉**：您可以關閉警示，如此表格中便不會顯示該警示，但是也不會將警示顯示為已解決的狀態。 如果警示屬於良性或誤判的警示，這是最常用的選項。
 
 將會顯示下列警示類型。 
 
