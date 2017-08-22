@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>將 Azure 連線到 Microsoft Cloud App Security
 
@@ -41,7 +41,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>步驟 2：取得事件中樞的連接字串
 
-1.  前往 [事件中樞] 刀鋒視窗。
+1.  前往 [事件中樞 - 預覽] 刀鋒視窗。
   
    ![事件中樞刀鋒視窗](media/azure-event-hubs.png "Azure 事件中樞")
 
@@ -54,12 +54,12 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
     ![事件中樞實體](media/azure-event-hubs-entities.png "Azure 事件中樞實體")
 
 4.  選取 Azure 監視器新建立的事件中樞。 其名為 **insights-operational-logs**。
-  
-    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure Insights operational logs")
-  
   > [!NOTE]
   > 建立事件中樞可能需要幾分鐘的時間。
 
+   ![Insights operational logs](media/azure-insight-operational-logs.png "Azure Insights operational logs")
+  
+  
 5. 按一下 [共用存取原則]，再按一下 [新增]，就可建立新的存取原則，提供 Cloud App Security 權限讀取事件中樞。
   
     ![共用存取原則](media/azure-shared-access-policies.png "Azure 共用存取原則")
@@ -90,15 +90,8 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
    > 如果您建立了其他取用者群組來使用，請使用該**取用者群組**名稱。
   
 6.  按一下 [連線] 。
-8.  按一下 [測試 API] 確定連線成功。  
+     如此會以簡訊傳送連線，因此可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
   
-     測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
-  
-
-
-
-
-
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

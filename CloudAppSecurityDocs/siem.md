@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9a2c3a2db12a6a67bffb0ad1bc2493fdddfaf66f
-ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
+ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
-您現在可以整合 Cloud App Security 與 SIEM 伺服器，以便集中監視 Office 365 的警示和活動。 隨著 Office 365 支援新的活動和事件，在 Cloud App Security 中也會逐漸看到這些項目。 與 SIEM 服務整合可讓您進一步保護雲端應用程式，同時維護一般安全性工作流程、自動化安全性程序，以及關聯雲端型事件與內部部署事件。 Cloud App Security SIEM 代理程式會在您的伺服器上執行，以及從 Cloud App Security 提取警示和活動，並將它們串流至 SIEM 伺服器。
+您現在可以整合 Cloud App Security 與 SIEM 伺服器，以集中監視 Office 365 警示和活動。 隨著 Office 365 所支援的新活動與事件，Cloud App Security 也會隨之推出對應的支援。 與 SIEM 服務整合可讓您進一步保護雲端應用程式，同時維護一般安全性工作流程、自動化安全性程序，以及關聯雲端型事件與內部部署事件。 Cloud App Security SIEM 代理程式會在您的伺服器上執行，以及從 Cloud App Security 提取警示和活動，並將它們串流至 SIEM 伺服器。
 
 當您初次整合您的 SIEM 與 Cloud App Security 時，過去兩天內的活動和警示會轉寄到 SIEM，並從那時候開始轉寄所有活動和警示 (依據您選取的篩選)。 此外，如果您延長此功能的停用期間，當您再次加以啟用時，其會轉寄過去兩天內的警示和活動，接著轉寄那時候開始的所有警示和活動。
 
@@ -91,7 +91,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 您可以隨時輸入-h 來取得說明。
 
-以下是傳送到您 SIEM 的範例活動記錄：
+以下是傳送到 SIEM 的活動記錄範例：
 ```
     2017-07-11T19:14:55.895Z CEF:0|MCAS|SIEM_Agent|0.102.17|EVENT_CATEGORY_LOGIN|Log on|0|externalId=1499800495894_e453bc33-a7c1-48f7-8397-8ae8e2758183 start=1499800495895 end=1499800495895 msg=Log on suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online dvc=13.82.149.151 requestClientApplication=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 machine_id_149980022970038514 cs1Label=portalURL cs1=https://cloud-app-security.com/#/audits?activity.id\=eq(1499800495894_e453bc33-a7c1-48f7-8397-8ae8e2758183,) cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=targetObjects cs3=admin@contoso.com c6a1Label="Device IPv6 Address" c6a1=
     2017-07-11T19:14:56.781Z CEF:0|MCAS|SIEM_Agent|0.102.17|EVENT_CATEGORY_DOWNLOAD_FILE|Download file|0|externalId=1499800496781_2e50118e-dee7-40d7-b912-b81a10feed28 start=1499800496781 end=1499800496781 msg=Download file: file name50280117yyct6t.xlsx suser=roy@adallom.com.test destinationServiceName=Salesforce dvc=13.82.149.151 requestClientApplication=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 machine_id_149979855250880034 cs1Label=portalURL cs1=https://cloud-app-security/#/audits?activity.id\=eq(1499800496781_2e50118e-dee7-40d7-b912-b81a10feed28,) cs2Label=uniqueServiceAppIds cs2=APPID_SALESFORCE cs3Label=targetObjects cs3=name50280117yyct6t.xlsx c6a1Label="Device IPv6 Address" c6a1=
@@ -115,7 +115,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 1. 請確認 Cloud App Security 入口網站中的 SIEM 代理程式狀態不是 [連線錯誤] 或 [已中斷連線]，而且沒有代理程式通知。 如果連線關閉超過兩小時，就會顯示 [連線錯誤]，如果連線關閉過 12 小時，則會顯示 [已中斷連線]。
  ![SIEM 已中斷連線](./media/siem-not-connected.png)
  
-   相反地，狀態應該是 [已連線]，如下所示︰![SIEM 已連線](./media/siem-connected.png)
+   相反地，狀態應該是如下所示的 [已連線]︰![SIEM 已連線](./media/siem-connected.png)
 
 2. 在 Syslog/SIEM 伺服器中，確定您看到從 Cloud App Security 抵達的活動和警示。
 
@@ -136,11 +136,15 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 ![SIEM - 刪除](./media/siem-delete.png)
 
 > [!NOTE]
-> 這項功能處於公開預覽狀態。
+> 此功能處於公開預覽狀態。
 
 ## <a name="high-availability-options"></a>高可用性選項
 
-SIEM 代理程式是可支援復原最多兩天停機時間的單一端點。 在客戶端點使用負載平衡器，可以達成更高的高可用性。
+SIEM 代理程式為單一端點，可支援復原最多兩天的停機時間。 使用負載平衡器做為客戶端點，可以達成額外的高可用性。
+
+
+## <a name="related-videos"></a>相關影片  
+[安裝 Cloud App Security 的 SIEM 連接器](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   
