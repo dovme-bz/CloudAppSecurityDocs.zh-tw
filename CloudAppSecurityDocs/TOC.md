@@ -5,6 +5,7 @@
 # 部署
 ## [開始使用](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
+### [網路需求](network-requirements.md)
 ### [管理系統管理員](manage-admins.md)
 #### [系統管理員設定](admin-settings.md)
 ### [郵件設定](mail-settings.md)
