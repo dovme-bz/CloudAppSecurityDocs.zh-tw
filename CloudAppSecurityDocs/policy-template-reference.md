@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>原則範本
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 06/28/2017
 |威脅偵測|來自非公司 IP 位址的管理活動|在管理員使用者從不包含在公司 IP 位址範圍類別中的 IP 位址執行管理活動時發出警示。 您必須先移至 [設定] 頁面設定公司的 IP 位址，並設定 [IP 位址範圍]。|
 |威脅偵測|一般異常偵測|在其中一個獲批准的應用程式中偵測到異常工作階段時發出警示，例如：不可能的移動、登入模式、非使用中帳戶。|
 |威脅偵測|從有風險的 IP 位址登入|在使用者從有風險的 IP 位址登入您獲批准的應用程式時發出警示。 根據預設，有風險的 IP 位址類別包含具有「匿名 Proxy」、「TOR」或「殭屍網路」IP 位址標記的位址。 您可以在 [IP 位址範圍] 設定頁面中，將更多 IP 位址新增到此類別。|
-|威脅偵測|單一使用者大量下載|在單一使用者在 5 分鐘內執行 30 次以上的下載時發出警示。|
+|威脅偵測|單一使用者大量下載|在單一使用者在 1 分鐘內執行 50 次以上的下載時發出警示。|
 |威脅偵測|對應用程式多次失敗的使用者登入嘗試|在單一使用者嘗試登入單一應用程式，並在 5 分鐘內超過 10 次失敗時發出警示。|
 |威脅偵測|潛在的勒索軟體活動|在使用者將檔案上傳到可能受勒索軟體感染的雲端時發出警示。|
 |威脅偵測|使用者從未分類的 IP 位址登入|在使用者從不包含在特定 IP 範圍類別中的 IP 位址登入時發出警示。 您可以前往 [設定] 頁面選取 IP 位址範圍，藉此將 IP 位址分類。|
