@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 91a1ea2434b90207701a01bd8087b38c1c0f864b
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="alerts"></a>警示
 檢視警示：
@@ -27,11 +27,11 @@ ms.lasthandoff: 08/20/2017
 
 ![警示功能表](./media/alert-menu.png)
 
-若要處理每個警示，請按一下表格中的警示，並選取下列其中一個選項：
-- **解決警示**：調查並採取行動以減輕警示事項之後，請按一下 [解決警示]。 您可以輸入註解以儲存所採取行動的相關資訊，以供日後參考。您也可以選擇**傳送有關警示的意見反應給 Cloud App Security 小組**。 解決警示之後，警示表格中就不會再顯示該警示。
-- 解決警示和**標示為已讀取**：您可以讓警示保持開啟，但將它標示為已讀取。
-- 解決警示和**調整原則**：您可以修改符合警示的原則以回應警示。
-- **關閉**：您可以關閉警示，如此表格中便不會顯示該警示，但是也不會將警示顯示為已解決的狀態。 如果警示屬於良性或誤判的警示，這是最常用的選項。
+當您查看警示後發現不相關，您可以將其 [關閉]。 您可以輸入註解來說明關閉警示的原因，也可以**傳送意見反應給 Cloud App Security 小組**。 我們的安全性研究小組會檢閱意見反應，以持續改進警示機制。 
+
+若您調查警示並降低風險，隨後即可 [解決] 警示。 警示表格中就不會再顯示該警示。 若您已開始調查問題，但想要確保您會記得繼續，可以將問題 [標記為未讀取]。 您也可以**調整符合警示的原則**，以利改善往後的警示比對。 解決警示也會提供選項，讓您能夠輸入註解及**傳送意見反應給 Cloud App Security 小組**。
+
+
 
 將會顯示下列警示類型。 
 

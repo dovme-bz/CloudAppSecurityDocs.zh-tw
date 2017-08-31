@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 的新功能
+
+
+## <a name="cloud-app-security-release-104"></a>Cloud App Security 版本 104 
+發行日期：2017 年 8 月 27 日
+
+-   您現在可以使用 [IP 位址範圍 API](https://portal.cloudappsecurity.com/api-docs/) 建立指令碼，以大量新增 IP 位址。 
+-   Cloud Discovery 現在會同時顯示總交易數與封鎖的交易數，讓您能夠更清楚看到封鎖的交易數。
+-   您現在可以依據雲端應用程式是否經過 **ISO 27017** 認證來加以篩選。 這個新的 Cloud App Catalog 風險因素會判斷應用程式提供者是否具有此憑證，能夠制定一套大眾均可接受的措施與準則，以及用於處理及保護公用雲端計算環境中的使用者資訊。
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security 版本 103 
@@ -119,7 +127,7 @@ Cloud Discovery 更新：
 -   我們現在將推出根據 Azure Active Directory 使用者群組建立自訂探索報告的功能。 例如，如果您想要查看行銷部門的雲端使用情況，您可以使用 [匯入使用者群組] 功能匯入行銷群組，然後為此群組建立自訂報告。
 
 新功能：
--   安全性讀取者的 RBAC 已完成推出。 這項功能可讓您管理授與 Cloud App Security 主控台內系統管理員的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 您可以新增其他系統管理員，或覆寫使用 [管理存取] 選項的權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
+-   安全性讀取者的 RBAC 已完成推出。這項功能可讓您管理授與 Cloud App Security 主控台內系統管理員的權限。 根據預設，所有的 Azure Active Directory 和 Office 365 全域管理員及安全性管理員在入口網站中都有完整的權限，而 Azure Active Directory 和 Office 365 中的所有安全性讀取者在 Cloud App Security 中只有唯讀權限。 您可以新增其他系統管理員，或覆寫使用 [管理存取] 選項的權限。 如需詳細資訊，請參閱[管理管理員權限](manage-admins.md)。
 -   我們現在將推出 Microsoft 智慧型安全性圖表偵測到之具風險 IP 位址的詳細威脅智慧報告：殭屍網路執行活動時，會看到殭屍網路名稱 (可用時) 與特定殭屍網路的詳細報告連結。
  
 ## <a name="cloud-app-security-release-97"></a>Cloud App Security 版本 97
@@ -208,7 +216,7 @@ Cloud Discovery 更新：
 -   適用於 ServiceNow 的 Cloud App Security App 連線程式已擴展為包含 OAuth 權杖的支援 (如 Geneva、Helsinki、Istanbul 中所引進)。 這提供 ServiceNow 更健全的 API 連線，不需要仰賴部署使用者。 如需詳細資訊，請參閱[將 ServiceNow 連接至 Microsoft Cloud App Security](connect-servicenow-to-microsoft-cloud-app-security.md)。 現有的客戶可在 [ServiceNow App 連線程式] 頁面中更新其設定。
 -   如果您已設定其他第三方 DLP 掃描器，DLP 掃描狀態現在將會顯示個別連線程式的狀態，以改善可見性。
 -   Cloud App Security 現在支援 Office 365 稽核記錄檔中所支援的 Microsoft Teams 活動。 這項功能正逐步推出。
--   針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。 您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
+-   針對 Exchange Online 模擬事件，您現在可依使用的權限層級 (委派、系統管理員或委派的系統管理員) 來篩選。您現在可以在 [活動記錄] 中搜尋您感興趣之顯示模擬層級的事件，方法是搜尋 [活動物件] > [項目]。
 -   在 Office 365 應用程式的 [應用程式權限] 索引標籤上的應用程式下拉式清單中，您現在可以看到每個應用程式的 [發行者]。 您也可以使用 [發行者] 做為篩選條件，調查來自相同發行者的其他應用程式。
 -   「有風險的 IP 位址」現在會顯示為獨立的風險因素，而非在 [位置] 風險因素下加權。 
 -   當停用檔案上的 Azure 資訊保護標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
