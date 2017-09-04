@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
-ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
+ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
+ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/04/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>將 Azure 連線到 Microsoft Cloud App Security
 
@@ -91,7 +91,12 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
   
 6.  按一下 [連線] 。
      如此會以簡訊傳送連線，因此可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
-  
+
+
+> [!NOTE]
+> 此功能處於公開預覽狀態。
+
+
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
