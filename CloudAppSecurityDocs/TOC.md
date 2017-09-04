@@ -33,6 +33,7 @@
 ## [使用儀表板](daily-activities-to-protect-your-cloud-environment.md)
 ## 案例
 ### [保護您的組織免受勒索軟體威脅](use-case-ransomware.md)
+### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
 ## 探索
 ### [使用探索到的應用程式](discovered-apps.md)
 ### [使用風險分數](risk-score.md)
