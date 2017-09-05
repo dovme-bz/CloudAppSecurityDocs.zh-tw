@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/3/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148c9b275ce77a963dc27c77be791d5dcd37379a
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
+ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/04/2017
 ---
 # <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
 Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
@@ -38,7 +38,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
   
 -   您購買 Cloud App Security 授權之後，會收到一封電子郵件，其中附有啟用資訊和 Cloud App Security 入口網站的連結。  
   
--   若要設定 Cloud App Security，您必須是 Azure Active Directory 或 Office 365 的全域管理員、規範管理員或安全性系統管理員。 請務必了解，獲指派系統管理員角色的使用者將會在您組織已訂閱的所有雲端應用程式都擁有相同的權限，而不論您是在 Office 365 入口網站、Azure 傳統入口網站，還是使用適用於 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 的 Azure AD 模組來指派角色。 如需詳細資訊，請參閱[在 Office 365 中指派管理員角色](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)和[在 Azure Active Directory 中指派管理員角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。  
+-   若要設定 Cloud App Security，您必須是 Azure Active Directory 或 Office 365 的全域管理員、規範管理員或安全性讀取者。 請務必了解，獲指派系統管理員角色的使用者將會在您組織已訂閱的所有雲端應用程式都擁有相同的權限，而不論您是在 Office 365 入口網站、Azure 傳統入口網站，還是使用適用於 [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 的 Azure AD 模組來指派角色。 如需詳細資訊，請參閱[在 Office 365 中指派管理員角色](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)和[在 Azure Active Directory 中指派管理員角色](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)。  
   
 -   若要執行 Cloud App Security 入口網站，請使用 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新) 或 Apple Safari (最新)。  
 
