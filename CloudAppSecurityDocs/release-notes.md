@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f2df50b089cf7a2b5aa989b56c243faa2dd251b2
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 的新功能
 
@@ -28,6 +28,7 @@ ms.lasthandoff: 08/27/2017
 -   您現在可以使用 [IP 位址範圍 API](https://portal.cloudappsecurity.com/api-docs/) 建立指令碼，以大量新增 IP 位址。 
 -   Cloud Discovery 現在會同時顯示總交易數與封鎖的交易數，讓您能夠更清楚看到封鎖的交易數。
 -   您現在可以依據雲端應用程式是否經過 **ISO 27017** 認證來加以篩選。 這個新的 Cloud App Catalog 風險因素會判斷應用程式提供者是否具有此憑證，能夠制定一套大眾均可接受的措施與準則，以及用於處理及保護公用雲端計算環境中的使用者資訊。
+- 為了讓您針對 GDPR 合規性做準備，我們會從「雲端應用程式類別目錄」中的雲端應用程式收集 GDPR 整備聲明。 它還不會影響應用程式的風險分數，而只是提供應用程式發行者 GDPR 整備頁面 (當應用程式發行者提供此頁面時) 的連結。 Microsoft 尚未驗證此內容，對其有效性不負責任。
 
 
 ## <a name="cloud-app-security-release-103"></a>Cloud App Security 版本 103 
