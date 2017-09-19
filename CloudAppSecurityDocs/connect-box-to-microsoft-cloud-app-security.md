@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1a51be2be508459866f284261643001d12ebe0c0
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 06/28/2017
   
          ![Box 應用程式](./media/box-apps.png " Box應用程式")  
   
-    -   如果選取 **「Unpublished Applications」** (未發行的應用程式)，請在 「Except for」 (除外) 文字方塊中，新增 Cloud App Security 的應用程式序號：`nduj1o3yavu30dii7e03c3n7p49cj2qh`，然後按一下 [儲存]。  
+    -   如果選取 [Unpublished Applications] \(未發行的應用程式\)，請在 [Except for] \(除外\) 文字方塊中，新增 Cloud App Security 應用程式序號：<br></br>US1 資料中心：`nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>EU1 資料中心：`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>然後按一下 [儲存]。 如需如何查看要連線的目標 Cloud App Security 資料中心，請參閱 [API 權杖](api-tokens.md)。 
   
          ![Box 設定除外](./media/box-settings-except-for.png "Box 設定除外")  
   

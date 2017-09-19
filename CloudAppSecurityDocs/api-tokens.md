@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>API 權杖
     
@@ -49,7 +49,11 @@ Cloud App Security API 可利用程式設計方式透過 REST API 端點存取 C
   - [已產生] 是從未使用過的權杖。 
   - [使用中] 是已產生且過去 7 天內已使用的權杖。 
   - [非使用中] 是已使用但過去 7 天內沒有活動的權杖。
+5. 在產生新權杖之後，系統會提供您用來存取 Cloud App Security 入口網站的新 URL。 
 
+ ![Cloud App Security API 權杖](./media/generate-api-token.png)
+
+一般入口網站 URL 依然可用，但速度會比隨權杖提供給您的自訂 URL 慢上許多。 如果您不記得 URL，只要到功能表中的 **?** 圖示選取 [關於]，即可隨時檢視。
 
 ## <a name="api-token-management"></a>API 權杖管理
 
@@ -63,6 +67,14 @@ API 權杖頁面包含已產生之所有 API 權杖的資料表。
 
 > [!NOTE]
 > SIEM 連接器和記錄收集器也會使用 API 權杖。 這些權杖應該從記錄收集器和 SIEM 代理程式區段進行管理，因此不會出現在此資料表中。 
+
+
+## <a name="view-your-data-center"></a>檢視您的資料中心
+
+若要查看您連線的目標資料中心，可以在 Cloud App Security 入口網站中前往功能表列的 **?** 再選取 [關於]。 
+
+您可以在 Cloud App Security 版本畫面中看到資料中心。
+
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   
