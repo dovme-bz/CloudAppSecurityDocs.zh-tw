@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37f288aa66213fde4ad3a0146064b2c44ea79e4a
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
+ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 09/24/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 09/03/2017
 
 
 
--   **虛擬設備** (*取代中*)：[在 HYPER-V 或 VMware Hypervisor 上以映像形式執行](configure-automatic-log-upload-for-continuous-reports.md)
+-   **虛擬設備**：[在 HYPER-V 或 VMware Hypervisor 上以映像形式執行](configure-automatic-log-upload-for-continuous-reports.md)
 
 
 
