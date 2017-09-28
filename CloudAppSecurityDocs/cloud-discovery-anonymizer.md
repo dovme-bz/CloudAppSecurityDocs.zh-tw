@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
+# <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
 Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄檔上傳至 Cloud App Security 入口網站之後，會妥善處理記錄檔，並將所有使用者名稱資訊取代為加密使用者名稱。 如此一來，所有雲端活動都會保持匿名。 必要時，針對特定安全性調查 (例如，由於安全性缺口或可疑使用者活動)，系統管理員可以解析真實使用者名稱。 如果系統管理員有理由懷疑特定使用者，則也可以查閱已知使用者名稱的加密使用者名稱，然後使用加密使用者名稱來開始進行調查。 每個使用者名稱轉換都是在入口網站的**治理記錄**中進行稽核。
 
@@ -33,7 +33,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 
 1.  有三種方法可以套用資料匿名： 
     
-    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [匿名個人資訊]。
+    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 **[Anonymize private information (匿名私人資訊)]**。
  ![匿名快照資料](./media/anonymize-log.png)
 
     - 您可以設定將要匿名的資料[自動上傳新的資料來源](configure-automatic-log-upload-for-continuous-reports.md)，方法是在新增資料來源時選取 「Anonymize private information」 (匿名私人資訊)。  
