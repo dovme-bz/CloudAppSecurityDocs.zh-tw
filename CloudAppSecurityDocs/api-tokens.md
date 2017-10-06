@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="api-tokens"></a>API 權杖
     
@@ -47,8 +47,8 @@ Cloud App Security API 可利用程式設計方式透過 REST API 端點存取 C
 4. 您可以依狀態篩選權杖：[使用中]、[非使用中] 或 [已產生]。 
 
   - [已產生] 是從未使用過的權杖。 
-  - [使用中] 是已產生且過去 7 天內已使用的權杖。 
-  - [非使用中] 是已使用但過去 7 天內沒有活動的權杖。
+  - [使用中] 是已產生且過去七天內已使用的權杖。 
+  - [非使用中] 是已使用但過去七天內沒有活動的權杖。
 5. 在產生新權杖之後，系統會提供您用來存取 Cloud App Security 入口網站的新 URL。 
 
  ![Cloud App Security API 權杖](./media/generate-api-token.png)
@@ -63,7 +63,7 @@ API 權杖頁面包含已產生之所有 API 權杖的資料表。
 
 此資料表提供有關權杖產生時間及上次使用時間的詳細資料，並可讓您撤銷權杖。 
 
-撤銷權杖之後，會從資料表中移除權杖，而且使用該權杖的軟體在提供新權杖之前將無法進行 API 呼叫。 
+撤銷權杖之後，權杖即從資料表中移除，而且使用該權杖的軟體在提供新權杖之前將無法進行 API 呼叫。 
 
 > [!NOTE]
 > SIEM 連接器和記錄收集器也會使用 API 權杖。 這些權杖應該從記錄收集器和 SIEM 代理程式區段進行管理，因此不會出現在此資料表中。 
@@ -78,7 +78,7 @@ API 權杖頁面包含已產生之所有 API 權杖的資料表。
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

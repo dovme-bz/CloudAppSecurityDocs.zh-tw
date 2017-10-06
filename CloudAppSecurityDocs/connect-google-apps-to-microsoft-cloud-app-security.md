@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/4/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af60110859b027a9e9d58443f202752d6044d1a2
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: 1b33f8bcb27cc303463ac83b46098bf82d66d25c
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -26,13 +26,13 @@ ms.lasthandoff: 08/07/2017
   
 ## <a name="configure-g-suite"></a>設定 G Suite  
   
-1.  以 G Suite 超級管理員身分登入 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)。  
+1.  以 G Suite 進階管理員的身分登入 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)。  
   
 2.  按一下 [建立專案] 開始新的專案。  
   
      ![google1](./media/google1.png "google1")  
   
-3.  在 [新增專案] 畫面中命名您的專案，如下所示︰</br>
+3.  在 [新增專案] 畫面中，以下列名稱命名您的專案︰</br>
     **Microsoft Cloud App Security**，然後按一下 [建立]。  
            ![google2](./media/google2.png "google2")  
   
@@ -81,44 +81,44 @@ ms.lasthandoff: 08/07/2017
 
      ![Google 服務帳戶金鑰](./media/google8.png "google8")  
   
-11. 在 [Create service account key]\(建立服務帳戶金鑰) 下選擇 [New service account]\(新增服務帳戶) 並鍵入任何名稱，例如**服務帳戶 1**；在 [角色] 下選擇 [專案] 及 [編輯器]，然後在 [金鑰類型] 下選擇 [P12] 並按一下 [建立]。 選取 [Enable G Suite Domain-wide Delegation]\(啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
+11. 在 [建立服務帳戶金鑰] 下，選擇 [新增服務帳戶]，並輸入任何名稱，例如 **Service account 1**。 在 [角色] 下，選擇 [專案]，然後選擇 [編輯者]。 在 [金鑰類型] 下，選擇 [P12]，然後按一下 [建立]。 選取 [Enable G Suite Domain-wide Delegation]\(啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
-     ![Google 建立服務帳戶金鑰](./media/google9.png "google9")  
+     ![在 Google 中建立服務帳戶金鑰](./media/google9.png "google9")  
   
 12.  P12 憑證檔案會儲存到您的電腦。  
         
 12. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts]\(管理服務帳戶)。  
        ![G Suite 認證服務帳戶](./media/google10.png "G Suite 認證服務帳戶")  
   
-13. 按一下所建服務帳戶右側的 3 個點，然後選取 [編輯]。  
+13. 按一下位於您所建立之服務帳戶右側的三個點，然後選取 [編輯]。  
   
      ![Google 編輯](./media/google11.png "Google 編輯")  
   
-15. 請複製指派給服務的**服務帳戶識別碼**，以供稍後使用。  
+15. 請複製指派給服務的 [服務帳戶 ID]，以供稍後使用。  
   
      ![Google 服務帳戶識別碼](./media/google13.png "google13")  
   
-16. 按一下標題列中 Google Cloud Platform 旁的三條水平線，開啟 Google 功能表，然後依序選取 [API 管理員] 及 [儀表板]。  
+16. 按一下在標題列中位於 Google Cloud Platform 旁邊的三條水平線，以開啟 Google 功能表。 依序選取 [API 管理員] 和 [資訊主頁]。  
     
 17. 向下捲動至已啟用的 API 清單，並按一下 **Google Drive API** 旁的設定齒輪。   
-       ![Google Drive 選項](./media/google14.png "google14")  
+       ![選取 [Google Drive]](./media/google14.png "google14")  
 
-18. 填寫下列內容：
+18. 填寫下列資訊：
 
     -   **應用程式名稱**：Microsoft Cloud App Security。  
   
-    -   **簡短描述和完整描述**：(選用) Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
+    -   **簡短描述和完整描述** (選擇性)：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
     -   Google 要求您至少上傳一個應用程式圖示。 請移至 [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) 下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
   
-    -   在 [Drive Integration]\(磁碟機整合) 下的 [開啟 URL:] 中鍵入：  
+    -   在 [雲端磁碟整合] 下的 [檔案開啟網址] 中輸入下列 URL：  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
      
-         ![Google Drive 設定](./media/google15.png "googledriveconfig")  
+         ![Google Drive 設定](./media/google15.png "Google Drive 設定")  
   
 19. 在 [Enabled APIs]\(啟用的 API) 清單中，按一下 [Google Apps Marketplace SDK] 旁邊的設定齒輪。 
-         ![oogle Marketplace SDK 設定](./media/google16.png "googledriveconfig")  
+         ![Google Marketplace SDK 設定](./media/google16.png "Google Drive config")  
 
        >[!NOTE]
        > 如果齒輪已停用，您可以改按一下 [Google Apps Marketplace SDK]。 
@@ -128,11 +128,11 @@ ms.lasthandoff: 08/07/2017
   
     -   [應用程式名稱] 應該為 [Microsoft Cloud App Security]。
   
-         在 [應用程式描述] 欄位中填入「Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和管理雲端應用程式使用，保護公司資料，以及偵測任何雲端應用程式的可疑活動。」  
+         在 [應用程式說明] 欄位中填入「Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。」  
   
     -   取消核取 [Enable individual install]\(啟用個別安裝) 核取方塊。  
   
-    -   在**應用程式圖示**下設定 4 個必要影像。  
+    -   在 [應用程式圖示] 下設定四個必要影像。  
   
          影像位於︰[https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip)  
   
@@ -144,7 +144,7 @@ ms.lasthandoff: 08/07/2017
   
         -   **隱私權原則 URL**：http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   在 [OAuth 2.0 scopes]\(OAuth 2.0 領域) 下複製和貼上下列內容。 它們一次只能複製一個，並且每次複製都必須按下 Enter︰  
+    -   在 [OAuth 2.0 範圍] 下，複製並貼上下列 URL (一次複製一個，並於貼上後按 Enter)：  
   
            https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
@@ -204,7 +204,7 @@ ms.lasthandoff: 08/07/2017
 2.  在 [連線應用程式] 頁面中，按一下加號並選取 [G Suite]。  
        
   
-3.  在快顯視窗中填入下列內容：  
+3.  在快顯視窗中填入下列資訊：  
   
      ![Cloud App Security 中的 G Suite 設定](./media/gsuite-config-cas.png "Cloud App Security 中的 G Suite 設定")  
   
@@ -216,11 +216,11 @@ ms.lasthandoff: 08/07/2017
   
     4.  輸入 G Suite 系統管理員其中一個**系統管理員帳戶的電子郵件**。  
   
-    5.  如果您有 G Suite Unlimited 帳戶，請核取這個核取方塊。 如需 Cloud App Security for G Suite Unlimited 可用功能的資訊，請參閱[為您的應用程式提供立即可見度、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
+    5.  如果您有 G Suite Unlimited 帳戶，請核取這個核取方塊。 如需 Cloud App Security for G Suite Unlimited 可用功能的資訊，請參閱[為您的應用程式提供立即可見性、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
   
     6.  按一下 [儲存設定]。  
   
-    7.  [連入此連結] 連接到 G Suite。 這會開啟 G Suite，並要求您授與 Cloud App Security 存取權。  
+    7.  [連入此連結] 連接到 G Suite。 這會開啟 G Suite，且系統會要求您授與 Cloud App Security 存取權。  
          
     8.  按一下 [Test now]\(立即測試) 確定連線成功。  
   
@@ -231,12 +231,12 @@ ms.lasthandoff: 08/07/2017
   
 連接 G Suite 之後，您會收到連線前 60 天的事件。
   
-連接 G Suite 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了確保近即時的掃描，系統會將已偵測到活動的檔案移到掃描佇列開頭，好比說，系統會立即掃描受到編輯、更新或共用的檔案，而不會等到定期掃描程序時才進行。 如果檔案本來就沒有修改 (例如只受到檢視、預覽、列印或匯出的檔案)，則不適用此情況。
+連接 G Suite 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了啟用近乎即時的掃描，系統會將偵測到活動的檔案移動到掃描佇列的開頭。 例如，系統會立即掃描被編輯、更新或共用的檔案。 這並不適用於實際上並未修改的檔案。 例如，已檢視、預覽、列印或匯出的檔案，會在標準掃描期間進行掃描。
   
   
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

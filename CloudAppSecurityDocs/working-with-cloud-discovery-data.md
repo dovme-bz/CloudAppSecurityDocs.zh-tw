@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 9/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b76c732e35258212b4ab97d5e21811a5f2f2828
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="discover"></a>探索
 
@@ -77,6 +77,10 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 6.  設定要對資料執行的篩選，可以是 [組織單位]、[IP 位址標記] 或 [IP 位址範圍]。 如需使用 IP 位址標記和 IP 位址範圍的詳細資訊，請參閱[根據需求組織資料](ip-tags.md)。  
   
     ![建立自訂連續報告](./media/create-custom-continuous-report.png) 
+
+
+> [!NOTE]
+> 所有的自訂報告都有 1 GB 未壓縮資料的上限。 如果資料量超過 1 GB，則前 1 GB 的資料將會輸出至報告。
 
 ## <a name="deleting-cloud-discovery-data"></a>刪除 Cloud Discovery 資料  
 有數個原因讓您想要刪除 Cloud Discovery 資料。 我們建議您有下列情況時刪除︰  

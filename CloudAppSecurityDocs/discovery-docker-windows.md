@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/6/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87bff98075e9ec170442f5611828c79bf7bd43b6
-ms.sourcegitcommit: ccee5664f5c49d5bae3748021d5b20dcf637d317
+ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>在 Windows Server 2016 上安裝和設定自動記錄檔收集器 Docker
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 09/08/2017
     -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
 
     -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)。
+
+> [!NOTE]
+> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在[連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)。
 
 ## <a name="log-collector-performance"></a>記錄收集器效能
 
