@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7d74bb482f44e2845d348dd18777d72910b7e18b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -45,15 +45,15 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
  ![進階活動記錄篩選條件](media/activity-log-filter-advanced.png)
 
 ## <a name="activity-filters"></a>活動篩選
-以下是可套用的活動篩選清單。 大部分的篩選器皆支援多個值與 NOT，以提供可在建立原則時使用的強大工具。  
+以下是可套用的活動篩選器清單。 大部分的篩選器皆支援多個值與 NOT，以提供可在建立原則時使用的強大工具。  
   
--   活動識別碼 - 依據識別碼，僅搜尋特定活動。 若您要將 Cloud App Security 連線到 SIEM (使用 SIEM 代理程式)，並進一步調查 Cloud App Security 入口網站中的警示時，就非常適合使用此篩選。  
+-   活動識別碼 - 依據識別碼，僅搜尋特定活動。 若您要將 Cloud App Security 連線到 SIEM (使用 SIEM 代理程式)，並進一步調查 Cloud App Security 入口網站中的警示時，就適合使用此篩選器。  
   
 -   活動物件 – 搜尋活動執行對象物件。 此篩選器適用於檔案、資料夾、使用者或應用程式物件。 
     - 活動物件識別碼 - 物件 (檔案、資料夾、使用者或應用程式識別碼) 的識別碼。
     - 檔案、資料夾或網站 URL - 讓您能夠選取開頭為特定字串的檔案、資料夾和 URL。
     - 目標物件 (檔案/資料夾) - 可讓您選取特定檔案或資料夾。 
-    - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 針對 [活動物件項目] 篩選條件，您可以選取是否想要篩選「包含」、「等於」或「開頭為」指定項目的項目。
+    - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 針對 [活動物件項目] 篩選器，您可以選取是否想要篩選「包含」、「等於」或「開頭為」指定項目的項目。
     
 -   活動類型 - 搜尋應用程式活動。
 
@@ -80,7 +80,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
    內建 IP 標記包含：
     - Microsoft 應用程式 (其中的 14 個)
     - 匿名 Proxy
-    - 殭屍網路 (您可以使用可深入了解特定殭屍網路的連結，來查看疆屍網路已執行活動)
+    - 殭屍網路 (您可以看到殭屍網路所執行的活動，以及可深入了解特定殭屍網路的連結)
     - Darknet 掃描 IP
     - 惡意程式碼 C&C 伺服器
     - Remote Connectivity Analyzer
@@ -98,7 +98,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 -   已註冊的 ISP – 執行活動的來源 ISP。   
 
--  來源 - 依據偵測到其中有活動的來源進行搜尋。 來源可以是下列任一項：
+-  來源 - 依據偵測到其中有活動的來源進行搜尋。 可以是下列任何來源：
   - App 連線程式 - 直接來自應用程式 API 連接器之記錄。
   - App 連線程式分析 - 以 API 連接器所掃描到之資訊為基礎的 Cloud App Security 額外功能。
   
@@ -124,7 +124,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 ### <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單
 
-您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中提供每個活動的下列額外動作和深入解析：
+您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中可為每個活動提供下列額外動作和深入解析：
     - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
     - 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
     - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
@@ -141,7 +141,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 #### <a name="user-insights"></a>使用者深入解析
 
-調查體驗包括目前使用者的預設深入解析。 您只要按一下就可以取得使用者的完整概觀，包括它們從中連線的位置、與它們有關的未解決警示數目，以及其中繼資料資訊。
+調查體驗包括目前使用者的預設深入解析。 您只要按一下就可以取得使用者的完整概觀，包括連線來源位置、所涉及的未解決警示數目，以及其中繼資料資訊。
 
 檢視使用者深入解析：
 
@@ -159,7 +159,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 #### <a name="ip-address-insights"></a>IP 位址深入解析
 
-因為 IP 位址資訊對幾乎所有調查都非常重要，所以您可以在 [活動] 下拉式清單中檢視 IP 位址的詳細資訊。 在特定活動中，您可以按一下 IP 位址索引標籤，檢視 IP 位址的相關彙總資料，包括特定 IP 位址的未解決警示數目、最近活動的趨勢圖形，以及位置地圖。 如此將有助於深入調查，例如當調查不可能的旅遊警示時，您可以輕鬆地了解使用的 IP 位址位置，以及它是否涉及可疑活動。 您也可以直接在 [IP 位址] 下拉式清單中執行動作，讓您將某個 IP 位址標記為有風險、VPN 或公司，以便未來進行調查和建立原則。
+因為 IP 位址資訊對幾乎所有調查都非常重要，所以您可以在 [活動] 下拉式清單中檢視 IP 位址的詳細資訊。 在特定活動中，您可以按一下 IP 位址索引標籤，檢視 IP 位址的相關彙總資料，包括特定 IP 位址的未解決警示數目、最近活動的趨勢圖形，以及位置地圖。 如此將有助於深入調查，例如當調查不可能的旅遊警示時，您可以輕鬆地了解使用的 IP 位址位置，以及它是否涉及可疑活動。 您也可以直接在 [IP 位址] 下拉式清單中執行動作，讓您將某個 IP 位址標記為有風險、VPN 或公司，以便日後進行調查和建立原則。
 
 檢視 IP 位址深入解析：
 
@@ -181,7 +181,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dba7c5cf9a5160e4bd6be4a236f8e64ac4a412e2
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: 42e562f484ee5e0a980ab3678c34508cbff113f3
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 09/17/2017
     -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
 
     -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)。
+
+> [!NOTE]
+> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在[連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)。
 
 ## <a name="log-collector-performance"></a>記錄收集器效能
 

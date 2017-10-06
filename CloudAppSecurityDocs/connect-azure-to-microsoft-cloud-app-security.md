@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>將 Azure 連線到 Microsoft Cloud App Security
 
@@ -32,18 +32,18 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 1.  將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請遵循 Azure 文件中的官方指南：https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
  > [!NOTE]
- > 如果您有多個 Azure 訂用帳戶，請對每一個訂用帳戶重複此步驟，但訂用帳戶間則共用單一事件中樞。
+ > 如果您有多個 Azure 訂用帳戶，請對每一個訂用帳戶重複此步驟，並於所有訂用帳戶之間共用單一事件中樞。
 
  完成指示後，新的事件中樞會建立於您選擇的命名空間。
  
  > [!NOTE]
- > 如果您在嘗試匯出活動記錄後發生錯誤，請在 Azure 中前往 [資源提供者] 刀鋒視窗，並確認已註冊 ‘microsoft.insights’。
+ > 如果您在嘗試匯出活動記錄後發生錯誤，請移至 Azure 中位於左側功能表上的 [資源提供者]，並確認已註冊 'microsoft.insights'。
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>步驟 2：取得事件中樞的連接字串
 
-1.  前往 [事件中樞 - 預覽] 刀鋒視窗。
+1.  移至左側功能表上的 [事件中樞 - 預覽]。
   
-   ![事件中樞刀鋒視窗](media/azure-event-hubs.png "Azure 事件中樞")
+   ![事件中樞功能表](media/azure-event-hubs.png "Azure 事件中樞")
 
 2.  選取事件中樞命名空間。
   
@@ -66,13 +66,13 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 
 6.  輸入新原則的名稱，至少務必包含**接聽宣告**。 完成之後，按一下 [建立]。
   
-    ![Azure 新的原則](media/azure-new-policy.png "Azure 建立新的原則")
+    ![Azure 新的原則](media/azure-new-policy.png "Azure 新的原則")
 
-7.  在 [設定] 下的 [共用的存取原則]，按一下剛建立好的存取原則。   
+7.  在 [設定] 的 [共用的存取原則] 底下，按一下您所建立的存取原則。   
   
-    ![Azure 選取原則](media/azure-select-policy.png "Azure 選取原則")
+    ![Azure 原則](media/azure-select-policy.png "Azure 原則")
 
-8. 在 [原則] 視窗中，按一下 [連接字串 - 主索引鍵] 或 [連接字串 - 次索引鍵] 旁的按鈕來複製其中一個連接字串。
+8. 在 [原則] 視窗中，透過按一下 [連接字串 - 主索引鍵] 或 [連接字串 - 次索引鍵] 旁的按鈕，來複製其中一個連接字串。
 
 ### <a name="step-3-add-azure-to-cloud-app-security"></a>步驟 3：將 Azure 新增至 Cloud App Security
  
@@ -89,8 +89,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
    >[!NOTE] 
    > 如果您建立了其他取用者群組來使用，請使用該**取用者群組**名稱。
   
-6.  按一下 [連線] 。
-     如此會以簡訊傳送連線，因此可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
+6.  按一下 [連線] 以連線並測試連線。 這可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。  
 
 
 > [!NOTE]
@@ -99,7 +98,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/19/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
-ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
+ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
@@ -33,7 +33,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 
 1.  有三種方法可以套用資料匿名： 
     
-    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 **[Anonymize private information (匿名私人資訊)]**。
+    - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [匿名私人資訊]。
  ![匿名快照資料](./media/anonymize-log.png)
 
     - 您可以設定將要匿名的資料[自動上傳新的資料來源](configure-automatic-log-upload-for-continuous-reports.md)，方法是在新增資料來源時選取 「Anonymize private information」 (匿名私人資訊)。  
@@ -73,7 +73,7 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
       
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
     
       

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 ##  <a name="mailsettings"></a> 設定電子郵件通知喜好設定  
 在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
+
+如需應加入反垃圾郵件服務白名單的 Cloud App Security 電子郵件伺服器 IP 位址的詳細資訊，請參閱[網路需求](network-requirements.md)。 
   
 ![郵件設定功能表](./media/mail-setting-menu.png "郵件設定功能表")  
   

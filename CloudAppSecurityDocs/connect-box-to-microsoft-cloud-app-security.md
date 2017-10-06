@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a51be2be508459866f284261643001d12ebe0c0
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: 6c8b27ac5d148980463b68feded3667e1ebb19e1
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
@@ -25,7 +25,7 @@ ms.lasthandoff: 09/17/2017
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>如何將 Box 連接至 Cloud App Security  
   
 > [!NOTE]  
->  使用非系統管理員帳戶的帳戶進行部署時，會導致 API 測試失敗，而且不允許 Cloud App Security 掃描 Box 的所有檔案。 如果您無法使用系統管理員帳戶，可以使用勾選了所有權限的共同管理員來部署，但這麼做 API 測試仍會失敗，亦不會掃描 Box 中其他管理員擁有的檔案。  
+>  使用非系統管理員帳戶的帳戶進行部署時，會導致 API 測試失敗，並會使 Cloud App Security 無法掃描 Box 中的所有檔案。 如果您無法使用系統管理員帳戶，可以使用勾選了所有權限的共同管理員來部署，但這麼做 API 測試仍會失敗，亦不會掃描 Box 中其他管理員擁有的檔案。  
   
 1.  如果您要限制應用程式的存取權，請遵循此步驟。 否則，請前往步驟 2。  
   
@@ -52,9 +52,9 @@ ms.lasthandoff: 09/17/2017
   
 4.  在 [Box settings]\(Box 設定) 快顯視窗中，按一下 [連入此連結]。  
   
-5.  這會開啟 Box 的登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Box 應用程式。  
+5.  Box 的登入頁面隨即開啟。 輸入您的認證，允許 Cloud App Security 存取您小組的 Box 應用程式。  
   
-6.  Box 會詢問您是否要允許 Cloud App Security 存取小組資訊和活動記錄檔，並允許其以任何小組成員的身分執行任何活動。 若要進行，請按一下 [允許]。  
+6.  Box 會詢問您是否要允許 Cloud App Security 存取小組資訊及活動記錄檔，並以小組成員的身分執行活動。 若要進行，請按一下 [允許]。  
   
 7.  返回 Cloud App Security 入口網站時，您應該會收到訊息，指出已順利連接 Box。  
   
@@ -66,11 +66,11 @@ ms.lasthandoff: 09/17/2017
  
 連接 Box 之後，您會收到連線前 60 天的事件。
   
-連接 Box 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了確保近即時的掃描，系統會將已偵測到活動的檔案移到掃描佇列開頭，好比說，系統會立即掃描受到編輯、更新或共用的檔案，而不會等到定期掃描程序時才進行。 如果檔案本來就沒有修改 (例如只受到檢視、預覽、列印或匯出的檔案)，則不適用此情況。
+連接 Box 之後，Cloud App Security 即會執行完整掃描。 根據您擁有的檔案與使用者數量而定，完整掃描可能需要一段時間才能完成。 為了啟用近乎即時的掃描，系統會將偵測到活動的檔案移動到掃描佇列的開頭。 例如，系統會立即掃描被編輯、更新或共用的檔案，這些檔案並不需要等待標準的掃描流程。 近乎即時的掃描並不適用於實際上並未修改的檔案。 例如，已檢視、預覽、列印或匯出的檔案，會依標準的掃描排程進行掃描。
   
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

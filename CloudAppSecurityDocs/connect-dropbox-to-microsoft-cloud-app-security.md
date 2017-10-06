@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 56195253a603671d2f273616b652f5d821e80a51
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>將 Dropbox 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Dropbox 帳戶。  
@@ -39,9 +39,9 @@ ms.lasthandoff: 06/28/2017
   
 5.  按一下 [連入此連結]。  
   
-     這會開啟 Dropbox 的登入頁面。 輸入您的認證，允許 Cloud App Security 存取您小組的 Dropbox 執行個體。  
+     Dropbox 的登入頁面隨即開啟。 輸入您的認證，允許 Cloud App Security 存取您小組的 Dropbox 執行個體。  
   
-6.  Dropbox 會詢問您是否要允許 Cloud App Security 存取小組資訊和活動記錄檔，並允許其以任何小組成員的身分執行任何活動。 若要進行，請按一下 [允許]。  
+6.  Dropbox 會詢問您是否要允許 Cloud App Security 存取小組資訊及活動記錄檔，並以小組成員的身分執行活動。 若要進行，請按一下 [允許]。  
   
 7.  返回 Cloud App Security 主控台時，您應該會收到訊息，指出已順利連接 Dropbox。  
   
@@ -52,11 +52,11 @@ ms.lasthandoff: 06/28/2017
 連接 Dropbox 之後，您會收到連線前 60 天的事件。
 
 > [!NOTE] 
-> Cloud App Security 會將任何 Dropbox 的新增檔案事件顯示為「上傳檔案」，以與連接 Cloud App Security 的其他所有應用程式保持一致。 
+> Cloud App Security 會將任何 Dropbox 的新增檔案事件顯示為「上傳檔案」，以與連線至 Cloud App Security 的其他所有應用程式保持一致。 
  
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

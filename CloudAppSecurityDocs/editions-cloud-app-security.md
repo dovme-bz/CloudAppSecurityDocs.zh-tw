@@ -1,6 +1,6 @@
 ---
 title: "Cloud App Security 版本之間的差異為何？ | Microsoft Docs"
-description: "本主題說明 Cloud App Security 與 Office 365 進階安全性管理之間的差異。"
+description: "本主題說明 Cloud App Security 與 Office 365 雲端 App 安全性之間的差異。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -13,28 +13,28 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: 68700daaa07dddf18bf71cf6830e755f99f76dbb
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Cloud App Security 與 Office 365 進階安全性管理 (ASM) 之間有哪些差異？
+# <a name="what-are-the-differences-between-cloud-app-security-and-office-365-cloud-app-security"></a>Cloud App Security 與 Office 365 雲端 App 安全性之間的差異為何？
 
 > [!NOTE]
-> 如需進階安全性管理及適用於 Office 365 的 Cloud App Security 相關資訊，請參閱[開始使用進階安全性管理](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
+> 如需 Office 365 雲端 App 安全性的詳細資訊，請參閱[開始使用 Office 365 雲端 App 安全性](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
 Microsoft Cloud App Security 是全方位的跨 SaaS 解決方案，為雲端應用程式帶來深度的可見性、強大的資料控制項和增強的威脅防護。 您可以使用這項服務，探索使用中的雲端應用程式查看陰影 IT，並可在批准服務後，控制和保護應用程式中的資料。 
 
-## <a name="office-365-advanced-security-management"></a>Office 365 進階安全性管理
+## <a name="office-365-cloud-app-security"></a>Office 365 雲端 App 安全性
 
-進階安全性管理是 Cloud App Security 的子集，能提高對 Office 365 的可見度及控制權。 這包括以使用者活動記錄為基礎的威脅偵測、探索影子 IT 以尋找功能與 Office 365 供應項目類似的應用程式，及控制 Office 365 的應用程式權限。
+Office 365 雲端 App 安全性是 Cloud App Security 的子集，能提高對 Office 365 的可見度及控制權。 這包括以使用者活動記錄為基礎的威脅偵測、探索影子 IT 以尋找功能與 Office 365 供應項目類似的應用程式，及控制 Office 365 的應用程式權限。
 
 ## <a name="feature-support"></a>功能支援
 
-|功能|功能|Microsoft Cloud App Security|Office 365 進階安全性管理|
+|功能|功能|Microsoft Cloud App Security|Office 365 雲端 App 安全性|
 |----|----|----|----|
 |雲端探索|探索到的應用程式 |15,000 多種雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
 ||探索分析的部署|手動與自動上傳記錄檔|手動上傳記錄檔|

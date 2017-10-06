@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>網路需求
 
@@ -69,7 +69,13 @@ ms.lasthandoff: 09/17/2017
 > [!NOTE] 
 > Stunnel 連接埠號碼預設為 11344。 若有必要，您可以將其變更為另一個連接埠，但請務必記下新的連接埠號碼。
 
+## <a name="email-server"></a>電子郵件伺服器
 
+Cloud App Security 的專用電子郵件 IP 位址為： 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+請務必將此 IP 位址加入反垃圾郵件服務的白名單，以接收系統傳送的通知。
     
 
 
