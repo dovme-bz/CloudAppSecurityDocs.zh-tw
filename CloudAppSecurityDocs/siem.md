@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -52,7 +52,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>步驟 1：在 Cloud App Security 入口網站中進行設定
 
-1. 在 Cloud App Security 入口網站中，按一下設定齒輪下的 [安全性延伸模組]，然後按一下 [SIEM 代理程式] 索引標籤。
+1. 在 Cloud App Security 入口網站中，按一下設定齒輪下的 安全性延伸模組，然後按一下SIEM 代理程式 索引標籤。
 
 2. 按一下加號圖示以啟動 [新增 SIEM 代理程式精靈]。
 3. 在精靈中，按一下 [Add SIEM agent]\(新增 SIEM 代理程式)。 
@@ -83,6 +83,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 > [!NOTE]
 > - 根據 SIEM 代理程式的版本，檔名可能會不同。
 > - 方括弧 [] 中的參數是選擇性的，應只在相關情況下使用。
+> - 在 Windows 上執行時，建議您設定排定的工作來執行命令。 如此可確保服務一律為執行狀態。
 
 使用下列變數的位置：
 - DIRNAME 是您想要用於本機代理程式偵錯記錄的目錄路徑。
