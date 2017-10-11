@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
 Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
 
-組織必須擁有授權才能使用 Cloud App Security。 如需詳細資訊，請參閱[如何購買 Cloud App Security](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security) 中的＜授權資源＞一節。  
+組織必須擁有授權才能使用 Cloud App Security。 如需詳細資訊，請參閱 Cloud App Security 首頁的[如何購買 Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) 一節。  
 
 >[!NOTE]
 >您無須具備 Office 365 授權，也可使用 Cloud App Security。  
 
 ## <a name="prerequisites"></a>必要條件  
   
--   組織必須擁有 Cloud App Security 的授權，才能使用該產品。 如需詳細資訊，請參閱[如何購買 Cloud App Security](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx) 並查看[授權資源](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)。  
+-   組織必須擁有 Cloud App Security 的授權，才能使用該產品。 如需詳細資訊，請參閱 Cloud App Security 首頁的[如何購買 Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) 一節。  
   
      如需租用戶啟用支援，請參閱[連絡商務用 Office 365 支援人員 - 系統管理協助](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)。  
   
