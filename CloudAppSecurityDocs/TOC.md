@@ -1,7 +1,9 @@
 # 了解並探索
-## [什麼是 CAS？](what-is-cloud-app-security.md)
+## [Cloud App Security 是什麼？](what-is-cloud-app-security.md)
 ## [新功能](release-notes.md)
-## [CAS 版本](editions-cloud-app-security.md)
+## 比較
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # 部署
 ## [開始使用](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
