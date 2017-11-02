@@ -31,10 +31,13 @@
 ### [連接 Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [連接 ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [連接 Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [使用 Proxy 保護應用程式](proxy-intro-aad.md)
+### [為 Azure AD 應用程式部署 Proxy](proxy-deployment-aad.md)
 # 用法
 ## [使用儀表板](daily-activities-to-protect-your-cloud-environment.md)
 ## 案例
 ### [保護您的組織免受勒索軟體威脅](use-case-ransomware.md)
+### [禁止下載機密資訊](use-case-proxy-block-session-aad.md)
 ### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
 ## 探索
 ### [使用探索到的應用程式](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [檔案原則](data-protection-policies.md)
 ##### [內容檢查](content-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
+#### [工作階段原則](session-policy-aad.md)
 #### [原則範本參考](policy-template-reference.md)
 ### [治理連線的應用程式](governance-actions.md)
 ### [治理探索到的應用程式](governance-discovery.md)
