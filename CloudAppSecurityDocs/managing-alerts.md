@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4134370302fe8d35e6a3e2232d6ff8a65ad96f6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 ## <a name="manage-your-alerts"></a>管理警示  
 警示是更深入了解雲端環境的切入點。 建議您根據您的發現建立新原則。 例如，您可能會看到系統管理員從格陵蘭登入，而您組織中從未有人曾從格陵蘭登入。 您可以建立一項原則，在系統管理員帳戶用來從該位置登入時，自動加以暫時停權。  
