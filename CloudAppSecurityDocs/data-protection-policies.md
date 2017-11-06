@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/1/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3cbe85149a2e632b7f9804652953728945532bcb
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: a68112f2425b993d8f2eb05200aa800ee09869d5
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="file-policies"></a>檔案原則  
 檔案原則可讓您利用雲端提供者的 API，強制執行各種不同的自動化程序。 原則可以設定成提供連續的相容性掃描、法務 eDiscovery 工作、公開共用機密內容的 DLP，以及更多使用案例。  
@@ -83,7 +83,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見的檔案類型 (100 �
   
 8.  選擇您想要 Cloud App Security 在偵測到相符項目時採取的 [治理] 動作。  
   
-9. 建立原則之後，您就可以在 [檔案原則] 索引標籤中檢視它。 您可以一直編輯原則、校正其篩選條件或變更自動化動作。 原則會在建立時自動啟用，並立即開始掃描雲端檔案。  設定治理動作時請特別小心，因為它們可能會導致無法恢復的檔案存取權限遺失。 建議您使用多個搜尋欄位，縮小篩選的範圍以明確表示您想要處理的檔案。 篩選器範圍愈小愈好。 如需指引，您可以使用 [篩選器] 區段中的 [Edit and preview results (編輯和預覽結果)] 按鈕。  
+9. 建立原則之後，您就可以在 [檔案原則] 索引標籤中檢視它。您可以一直編輯原則、校正其篩選條件或變更自動化動作。 原則會在建立時自動啟用，並立即開始掃描雲端檔案。  設定治理動作時請特別小心，因為它們可能會導致無法恢復的檔案存取權限遺失。 建議您使用多個搜尋欄位，縮小篩選的範圍以明確表示您想要處理的檔案。 篩選器範圍愈小愈好。 如需指引，您可以使用 [篩選器] 區段中的 [Edit and preview results (編輯和預覽結果)] 按鈕。  
   
    ![檔案原則編輯及預覽結果](./media/file-policy-edit-and-preview-results.png "檔案原則編輯及預覽結果")  
   

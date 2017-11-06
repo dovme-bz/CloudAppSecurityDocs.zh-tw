@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="working-with-the-dashboard"></a>使用儀表板
 啟動並執行 Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
