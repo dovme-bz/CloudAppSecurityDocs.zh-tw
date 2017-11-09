@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,40 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bacc5264d36e0948b0e802b2fbb9e04d9a058af9
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
+ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="whats-new-with-cloud-app-security"></a>Cloud App Security 的新功能
+# <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+
+## <a name="cloud-app-security-releases-109"></a>Cloud App Security 版本 109
+發行日期：2017 年 10 月 29 日 
+
+- 開始推出 Microsoft Cloud App Security Proxy 功能。 Microsoft Cloud App Security 的 Proxy 提供您所需的工具，讓您取得在雲端環境內所執行之存取與活動的即時可見性與控制權。 例如：
+    -   在下載前即予以封鎖，避免資料外洩。
+    -   設定儲存在雲端的資料以及從雲端下載的資料，強制使用加密保護的規則。
+    -   可以看見未受保護的端點，以便您能監視未受管理的裝置上正在進行的活動。
+    -   控制來自非企業網路或高風險 IP 位址的存取。
+  
+  如需詳細資訊，請參閱[使用 Proxy 保護應用程式](proxy-intro-aad.md)。
+
+-   我們會逐漸推出根據特定服務活動名稱篩選的功能。 這個新的活動類型篩選更精細，可讓您監視特定的應用程式活動，而不是較籠統的活動類型。 例如，以前可能是篩選**執行命令**，現在則可以篩選特定的 EXO Cmdlet。 活動名稱也會出現在 [Type (in app)] (類型 (依應用程式)) 下的活動下拉式清單中。 這項功能最終會取代活動類型篩選。  
+
+-   Cloud Discovery 現在支援 Cisco ASA with FirePOWER。 
+
+-   已強化 [Discovery User and IP] (Discovery 使用者和 IP) 頁面的效能，以改善使用者體驗。
+
+
+## <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security 版本 105、106、107、108
+發行日期：2017 年 9 月/10 月
+ 
+-   Cloud App Security 現在包含位於歐盟的資料中心。 我們除了美國的資料中心之外，歐盟地區的資料中心可讓 Cloud App Security 客戶完全符合新的和即將公布的歐洲標準及法規。 
+-   新的篩選已新增至 [App 連線程式] 頁面，提供您更簡便的篩選和其他深入解析。
+-   已改善僅包含目的地 IP 資訊的記錄檔雲端探索。
+ 
 
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security 版本 104 
 發行日期：2017 年 8 月 27 日

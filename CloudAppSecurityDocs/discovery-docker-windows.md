@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>在 Windows Server 2016 上安裝和設定自動記錄檔收集器 Docker
 
@@ -39,6 +39,8 @@ ms.lasthandoff: 09/28/2017
     -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
 
     -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)。
+
+    - 允許記錄收集器在連接埠 80 和 443 上初始化 Azure Blob 儲存體 (https://adaprodconsole.blob.core.windows.net/) 的輸出流量。
 
 > [!NOTE]
 > 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在[連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)。
@@ -93,15 +95,11 @@ ms.lasthandoff: 09/28/2017
 
     > -   請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 
-4.  進一步的部署資訊會出現。
-
-    ![Windows3](./media/windows3.png)
-
-5.  從對話方塊**複製**執行命令。 您可以使用複製至剪貼簿圖示 [複製至剪貼簿圖示](./media/copy-icon.png)。
+4.  進一步的部署資訊會出現。 從對話方塊**複製**執行命令。 您可以使用複製至剪貼簿圖示 [複製至剪貼簿圖示](./media/copy-icon.png)。
 
 6.  **匯出**預期的資料來源設定。 此設定會告訴您如何在設備中設定記錄檔匯出。
 
-    ![Windows4](./media/windows4.png)
+   ![建立記錄收集器](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
 
@@ -126,17 +124,10 @@ ms.lasthandoff: 09/28/2017
 
 7.  使用在入口網站中產生的執行命令部署收集器映像。
 
-    ![windows8](./media/windows8.png)
+   ![建立記錄收集器](./media/windows7.png)
 
-    >[!NOTE]
-    >如果您需要設定 Proxy，請在之下新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令是：  
- `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![windows9](./media/windows9.png)
+   如果您需要設定 Proxy，請新增 Proxy IP 位址與連接埠號碼。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令是：  
+ `(echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 9.  執行下列命令，確認收集器正常執行：`docker logs <collector_name>`
 

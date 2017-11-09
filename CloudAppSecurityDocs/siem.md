@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -52,7 +52,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>步驟 1：在 Cloud App Security 入口網站中進行設定
 
-1. 在 Cloud App Security 入口網站中，按一下設定齒輪下的 安全性延伸模組，然後按一下SIEM 代理程式 索引標籤。
+1. 在 Cloud App Security 入口網站中，按一下設定齒輪下的 [安全性延伸模組]，然後按一下 [SIEM 代理程式] 索引標籤。
 
 2. 按一下加號圖示以啟動 [新增 SIEM 代理程式精靈]。
 3. 在精靈中，按一下 [Add SIEM agent]\(新增 SIEM 代理程式)。 
@@ -82,8 +82,10 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 > [!NOTE]
 > - 根據 SIEM 代理程式的版本，檔名可能會不同。
-> - 方括弧 [] 中的參數是選擇性的，應只在相關情況下使用。
-> - 在 Windows 上執行時，建議您設定排定的工作來執行命令。 如此可確保服務一律為執行狀態。
+> - 方括弧 [  ] 中的參數是選擇性的，應只在相關情況下使用。
+> - 建議在伺服器啟動期間執行 JAR。
+>   - Windows：當成排程工作執行，確定工作設定為 [Run whether the user is logged on or not] (不論使用者登入與否均執行) 並且取消核取 [Stop the task if it runs logner than] (停止工作，如果執行時間超過) 核取方塊。
+>   - Linux：將帶有 **&** 的執行命令新增至 rc.local 檔案。 例如：`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 使用下列變數的位置：
 - DIRNAME 是您想要用於本機代理程式偵錯記錄的目錄路徑。
@@ -142,10 +144,6 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 ## <a name="high-availability-options"></a>高可用性選項
 
 SIEM 代理程式為單一端點，可支援復原最多兩天的停機時間。 使用負載平衡器做為客戶端點，可以達成額外的高可用性。
-
-
-## <a name="related-videos"></a>相關影片  
-[安裝 Cloud App Security 的 SIEM 連接器](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   

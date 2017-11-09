@@ -1,11 +1,11 @@
 ---
-title: "部署 Cloud Discovery 與 Cloud App Security | Microsoft Docs"
+title: "使用 Cloud App Security 部署 Cloud Discovery | Microsoft Docs"
 description: "本主題描述用來啟動 Cloud Discovery 的設定程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
+ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/29/2017
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
@@ -75,6 +75,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Blue Coat Proxy SG - 存取記錄 (W3C)
 - Check Point
 - Cisco ASA 防火牆 (對於 Cisco ASA 防火牆，需要將資訊層級設定為 6)
+- Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL 記錄
@@ -108,6 +109,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Blue Coat|**是**|否|**是**|**是**|**是**|**是**|
 |Checkpoint|否|**是**|否|**是**|否|否|
 |Cisco ASA|否|**是**|否|**是**|**是**|否|
+|Cisco ASA with FirePOWER|**是**|**是**|**是**|**是**|**是**|**是**|
 |Cisco FWSM|否|**是**|否|**是**|**是**|否|
 |Cisco Ironport WSA|**是**|**是**|**是**|**是**|**是**|**是**|
 |Cisco Meraki|**是**|**是**|否|**是**|否|否||Cisco Scansafe|**是**|否|**是**|**是**|**是**|**是**|
