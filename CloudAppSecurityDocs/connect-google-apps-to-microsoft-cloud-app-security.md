@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/3/2017
+ms.date: 10/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9c97187c93391c3cfd754e9bad0daab3d6ce496f
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
+ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/22/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -36,7 +36,9 @@ ms.lasthandoff: 10/03/2017
     **Microsoft Cloud App Security**，然後按一下 [建立]。  
            ![google2](./media/google2.png "google2")  
   
-4.  建立專案後，請按一下工具列的 Google Cloud Platform。
+4.  建立專案後，按一下工具列的 [Google Cloud Platform]，確定在上方的下拉式清單中選取正確的專案。
+       
+       ![google 專案](./media/googleverify-project.png "googleverify 專案")  
 
 5. 按一下 [API] 下方的 [Go to APIs overview] (移至 API 概觀)。  
   
@@ -112,7 +114,7 @@ ms.lasthandoff: 10/03/2017
   
     -   **簡短描述和完整描述** (選擇性)：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
-    -   Google 要求您至少上傳一個應用程式圖示。 請移至 [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) 下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
+    -   Google 要求您至少上傳一個應用程式圖示。 請移至 [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) 下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
   
     -   向下捲動到 [Drive Integration] (磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
   

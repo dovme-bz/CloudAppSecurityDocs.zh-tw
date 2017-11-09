@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
@@ -30,6 +30,8 @@ Cloud App Security 可讓您調查檔案，並依據 Azure Information Protectio
 
 > [!NOTE] 
 > 若要能夠執行此功能，除了需要 Cloud App Security 授權之外，也需要 Azure Information Protection Premium P1 或 P2 的授權。 當這項兩種授權準備就緒之後，Cloud App Security 便會從 Azure 資訊保護服務同步組織標籤。
+> Cloud App Security 不支援 Azure 資訊保護限域原則。
+
 
 ## <a name="how-it-works"></a>運作方式
 您可能熟悉 [Azure Information Protection](https://docs.microsoft.com/information-protection/) 中的檔案分類標籤。 您可以在 Cloud App Security 中查看 Azure Information Protection 分類標記。 整合 Cloud App Security 與 Azure Information Protection 之後，Cloud App Security 就會如下所述掃描檔案：

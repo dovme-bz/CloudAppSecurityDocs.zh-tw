@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2a87251a533a9e8fa68b8807966019c186d5669e
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 342f0eb03a79bfc3ee1d43d101d0c27769e1b9d4
+ms.sourcegitcommit: 0dc6e8eae04e8b5901eef7dbe558238790f07140
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="control-cloud-apps-with-policies"></a>使用原則來控制雲端應用程式
 
@@ -32,11 +32,14 @@ ms.lasthandoff: 06/28/2017
   
 |原則類型圖示|原則類型|用法|  
 |-----|-----------------|---------|  
+|![存取原則圖示](./media/proxy-policy.png)|存取原則|存取原則能讓您即時監視並控制使用者登入雲端應用程式。|
 |![活動原則圖示](./media/activity_policy.png)|活動原則|活動原則可讓您利用應用程式提供者的 API，強制執行各種不同的自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。|  
 |![異常偵測原則圖示](./media/anomaly_detection_policy.png)|異常偵測原則|異常偵測原則可讓您根據您在此處設定的風險因素，尋找雲端中的不尋常活動，在發生不同於組織基準或使用者一般活動的狀況時發出警示。|  
 |![Cloud Discovery 原則圖示](./media/discovery_policy.png)|應用程式探索原則|應用程式探索原則可讓您設定警示，在您的組織內偵測到新的應用程式時通知您。|  
 |![異常偵測原則圖示](./media/anomaly_detection_policy.png)|Cloud Discovery 異常偵測原則|Cloud Discovery 異常偵測原則會查看您用於探索雲端應用程式的記錄檔，並搜尋不尋常的發生事件。 例如，某位使用者從未使用過 Dropbox，突然上傳 600 GB 到 Dropbox，或是在特定應用程式上的交易比起平日超出許多。|  
 |![檔案原則圖示](./media/file_policy.png)|檔案原則|檔案原則可讓您掃描雲端應用程式是否有指定的檔案/檔案類型 (共用、與外部網域共用) 及資料 (專屬資訊、PII、信用卡資訊等)，並可套用治理動作至檔案 (治理動作依據特定雲端應用程式而異)。|  
+|![工作階段原則圖示](./media/proxy-policy.png)|工作階段原則|工作階段原則能讓您即時監視並控制雲端應用程式中的使用者活動。|
+
   
 ## <a name="identifying-risk"></a>識別風險  
 Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定任何原則和警示來與下列風險之一相關聯︰  

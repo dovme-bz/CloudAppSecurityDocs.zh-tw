@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6f9377942a969137fe766b4b146662d359b0224
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f3d710cabf1477ea248182a994dee8c00e2c4536
+ms.sourcegitcommit: f9c6bd3c629cc48ce771fec47dd6e40bc4c7a197
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery 資料匿名
 
@@ -34,10 +34,12 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 1.  有三種方法可以套用資料匿名： 
     
     - 您可以設定特定記錄檔中要匿名的資料，方法是[建立新的快照報告](create-snapshot-cloud-discovery-reports.md)，然後選取 [匿名私人資訊]。
- ![匿名快照資料](./media/anonymize-log.png)
+
+      ![匿名快照資料](./media/anonymize-log.png)
 
     - 您可以設定將要匿名的資料[自動上傳新的資料來源](configure-automatic-log-upload-for-continuous-reports.md)，方法是在新增資料來源時選取 「Anonymize private information」 (匿名私人資訊)。  
- ![匿名記錄資料](./media/anonymize-autolog.png)
+  
+      ![匿名記錄資料](./media/anonymize-autolog.png)
 
     - 您可以在 Cloud App Security 中設定預設值來匿名所有資料，而這些資料來自已上傳記錄檔中的快照報告以及來自記錄收集器中的連續報告，如下所示︰
      
@@ -47,24 +49,27 @@ Cloud Discovery 資料匿名可讓您保護使用者隱私權。 將資料記錄
 
         3. 在 [加密金鑰] 下，選取您要 [使用針對入口網站產生的專用金鑰] 或 [使用自訂金鑰]。 如果您選擇 [使用自訂金鑰]，請輸入 16 位元 UTF8 加密金鑰。
         4. 按一下 **[儲存]**。
-  ![匿名](./media/anonymizer1.png)
+ 
+       ![匿名](./media/anonymizer1.png)
   
 
 2.  選取匿名時，Cloud App Security 會剖析流量記錄檔，並擷取特定資料屬性。
 3.  Cloud App Security 會以加密的使用者名稱來取代使用者名稱。
 4.  它接著會分析雲端使用量資料，並根據匿名資料來產生 Cloud Discovery 報告。
- ![匿名 Cloud Discovery 儀表板](./media/anonymize-dashboard.png)
  
-
+    ![匿名 Cloud Discovery 儀表板](./media/anonymize-dashboard.png)
+ 
 5.  針對特定調查 (例如，調查異常使用量警示)，您可以解析入口網站中的特定使用者名稱，並提供業務上的正當理由。 這個頁面也可用來查閱已知使用者名稱的加密使用者名稱。 
 
     1. 在 [設定] 齒輪下，選取 [Cloud Discovery 設定]。
     2. 在 「Anonymization」 (匿名) 索引標籤的 「Anonymize and resolve usernames」 (匿名和解析使用者名稱) 下，輸入您為何執行解析的理由。
     3. 在 「Enter username to resolve」 (輸入要解析的使用者名稱) 下，選取 「From anonymized」(匿名來源)，然後輸入匿名使用者名稱，或選取 「To anonymized」 (匿名目標)，然後輸入要解析的原始使用者名稱。 按一下 [解析]。 
-![匿名](./media/anonymizer.png)
+
+   ![匿名](./media/anonymizer.png)
 
 6.  這個動作是在入口網站的**治理記錄**中進行稽核。 
-![匿名](./media/anonymize-gov-log.png)
+
+     ![匿名](./media/anonymize-gov-log.png)
 
 
 

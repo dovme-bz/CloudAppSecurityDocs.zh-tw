@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: edf852bf90a0d4b9345f1beb675ef5ee3c4f941d
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 8076ba72f8e431145be3df8e9b371cd1175a5c4d
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 10/09/2017
 ---
 #  <a name="IPtagsandRanges"></a> 使用 IP 範圍和標籤
 
@@ -69,14 +69,15 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
   
     -   **系統管理**︰這些應為您管理員的所有 IP 位址。  
   
-    -   **內部**︰這些應為您的內部網路、分公司和 Wi-Fi 漫遊位址的所有 IP 位址。  
+    -  **雲端提供者**：這些應該是雲端提供者使用的 IP 位址。
+  
+    -   **公司**︰這些應為您的內部網路、分公司和 Wi-Fi 漫遊位址的所有 IP 位址。  
   
     -   **風險**︰這些應為任何您視為危險的 IP 位址。 它們可以包含您在過去已看到的可疑 IP 位址、競爭對手網路中的 IP 位址等等。  
   
     -   **VPN**︰這些應為您用於遠端工作者的任何 IP 位址。  
-  
-    -   **雲端 Proxy**︰這應該是您雲端 Proxy 的 IP 位址。  
-  
+ 
+
 7.  完成時按一下 [建立]。  
   
      ![newipaddress 範圍](./media/newipaddress-range.png "newipaddress 範圍")  

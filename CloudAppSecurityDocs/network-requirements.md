@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>網路需求
 
 本主題會提供一份連接埠與 IP 位址的清單，若您要使用 Cloud App Security，就必須予以允許並列入白名單。 
 
-如需如何查看要連線的目標 Cloud App Security 資料中心，請參閱 [API 權杖](api-tokens.md)
 
+## <a name="view-your-data-center"></a>檢視您的資料中心
 
+以下某些需求會隨您連接的資料中心而異。 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>入口網站存取權、SIEM 代理程式、驗證閘道及記錄收集器
+查看您連接的資料中心：
 
-若要獲得入口網站及驗證閘道存取權、允許 Cloud App Security 連線到您的 SIEM，以及讓 Cloud App Security 記錄收集器執行，您必須將下列 IP 位址的**輸出連接埠 443** 新增到您的防火牆白名單中：  
+1. 在 Cloud App Security 入口網站中，按一下 **?** 再選取 [關於]。 
+
+    ![按一下 [關於]](./media/about-menu.png)
+
+2. 您可以在 Cloud App Security 的版本畫面中看到地區及資料中心。
+
+    ![檢視您的資料中心](./media/data-center.png)
+
+## <a name="portal-access"></a>入口網站存取權
+
+如要存取 Cloud App Security 入口網站，請將下列 IP 位址的**輸出連接埠 443**新增到您的防火牆允許清單：  
 
 
 > [!div class="mx-tableFixed"]
 |資料中心|IP 位址|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>SIEM 代理程式連線
+
+若要讓 Cloud App Security 連線到 SIEM，請將下列 IP 位址的**輸出連接埠 443**新增到您的防火牆允許清單：  
+
+
+> [!div class="mx-tableFixed"]
+|資料中心|IP 位址|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>應用程式連接器存取權及外部 DLP 整合
 
@@ -77,10 +99,20 @@ Cloud App Security 的專用電子郵件 IP 位址為：
 
 請務必將此 IP 位址加入反垃圾郵件服務的白名單，以接收系統傳送的通知。
     
+## <a name="log-collector"></a>記錄收集器 
+
+若要啟用使用記錄收集器的 Cloud Discovery 功能並偵測組織中的影子 IT，必須開啟下列項目：
+
+- 允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
+- 允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)。
+- 允許記錄收集器在連接埠 80 和 443 上初始化 Azure Blob 儲存體 (https://adaprodconsole.blob.core.windows.net/) 的輸出流量。
+
+> [!NOTE]
+> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量。
 
 
 
-  
+
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

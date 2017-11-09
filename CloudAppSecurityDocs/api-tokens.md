@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e8e86368429fac280b5555d85a0de3ec1789effa
+ms.sourcegitcommit: 2fe9475d428855a6dab6fa2edd0ccd56d66f87ec
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="api-tokens"></a>API 權杖
     
@@ -69,16 +69,13 @@ API 權杖頁面包含已產生之所有 API 權杖的資料表。
 > SIEM 連接器和記錄收集器也會使用 API 權杖。 這些權杖應該從記錄收集器和 SIEM 代理程式區段進行管理，因此不會出現在此資料表中。 
 
 
-## <a name="view-your-data-center"></a>檢視您的資料中心
 
-若要查看您連線的目標資料中心，可以在 Cloud App Security 入口網站中前往功能表列的 **?** 再選取 [關於]。 
-
-您可以在 Cloud App Security 版本畫面中看到資料中心。
 
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
-  
-  
+
+## <a name="check-out-this-video"></a>請觀賞這部影片！
+[Microsoft Cloud App Security – REST API’s and Tokens](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens) (Microsoft Cloud App Security – REST API 和權杖)  

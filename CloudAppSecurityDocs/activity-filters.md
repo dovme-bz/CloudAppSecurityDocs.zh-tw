@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 835ffc05fb84117bf9bbf848d5718de4557e5e15
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -51,11 +51,11 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
   
 -   活動物件 – 搜尋活動執行對象物件。 此篩選器適用於檔案、資料夾、使用者或應用程式物件。 
     - 活動物件識別碼 - 物件 (檔案、資料夾、使用者或應用程式識別碼) 的識別碼。
-    - 檔案、資料夾或網站 URL - 讓您能夠選取開頭為特定字串的檔案、資料夾和 URL。
-    - 目標物件 (檔案/資料夾) - 可讓您選取特定檔案或資料夾。 
     - 項目 - 可讓您依任何活動物件 (例如︰使用者名稱、檔案、參數、網站) 的名稱或識別碼搜尋。 針對 [活動物件項目] 篩選器，您可以選取是否想要篩選「包含」、「等於」或「開頭為」指定項目的項目。
     
 -   活動類型 - 搜尋應用程式活動。
+
+-   活動類型 (預覽) - 即將推出。使用活動類別或應用程式直接提供的活動名稱，讓您更細緻地搜尋應用程式活動。
 
 -   系統管理活動 – 僅搜尋管理活動。  
   
