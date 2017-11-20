@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e762f9f4a90a9777ef1782c1c12305ea7d065ef
-ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
+ms.openlocfilehash: 1e7596ff9bb62f998a98fe9ff09e37ef0f93a906
+ms.sourcegitcommit: 938c799a13a81f3289229ea883c65bd1669b2ec4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/06/2017
 
     -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
 
-    -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 contoso.cloudappsecurity.com)。
+    -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 portal.contoso.cloudappsecurity.com)。
 
     - 允許記錄收集器在連接埠 80 和 443 上初始化 Azure Blob 儲存體 (https://adaprodconsole.blob.core.windows.net/) 的輸出流量。
 

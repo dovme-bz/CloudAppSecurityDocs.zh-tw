@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 5d49c04f6ddfda778bc3775805a42383a41f88c4
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>使用 Microsoft Cloud App Security Proxy 封鎖下載機密資訊
 
-> [!NOTE]
-> 開始推出 Microsoft Cloud App Security Proxy 功能。
 
 現今的 IT 系統管理員處於進退兩難的局面：您想要讓員工更具生產力。 這表示允許員工存取應用程式，讓他們可以透過任何裝置隨時工作。 另一方面又想保護公司的資產，這包括所有權和特殊權限資訊。 您該如何讓員工存取雲端應用程式，同時又能保護資料？ **對於可以從未受管理的裝置或非公司網路位置存取企業雲端應用程式中之敏感性資料的使用者，此使用案例可讓您封鎖這些使用者的下載。**
 
@@ -127,7 +125,9 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 
 4. 在原則報告中，您可以看到哪些登入已重新導向至 Proxy 進行工作階段控制，以及哪些檔案已從受監視的工作階段下載或封鎖。
 
-  
+
+
+
 ## <a name="see-also"></a>另請參閱  
 [建立工作階段原則](session-policy-aad.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

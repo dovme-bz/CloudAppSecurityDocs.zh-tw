@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d76d9026352d237b26f2945570e2f349bd372bb4
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>為 Azure AD 應用程式部署 Proxy
 
 > [!NOTE]
-> 開始推出 Microsoft Cloud App Security Proxy 功能。
+> 這是預覽功能。
 
 請遵循下列步驟，將 Azure AD 應用程式設定為由 Cloud App Security Proxy 進行控制。
 
@@ -100,6 +100,8 @@ ms.lasthandoff: 10/31/2017
 
 
 您現在已準備好建立[工作階段原則](session-policy-aad.md)來控制 Proxy 應用程式。
+
+
 
 ## <a name="see-also"></a>另請參閱  
 [使用 Cloud App Security Proxy](proxy-intro-aad.md)   

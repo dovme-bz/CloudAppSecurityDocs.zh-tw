@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>工作階段原則 
 
 > [!NOTE]
-> 開始推出 Microsoft Cloud App Security Proxy 功能。
+> 這是預覽功能。
 
 Cloud App Security 工作階段原則可以監視即時工作階段，讓您更清楚雲端應用程式，根據您針對使用者工作階段設定的原則，採取不同的動作。 使用工作階段控制可以在允許存取的同時，監視工作階段及/或限制特定的工作階段活動，而不是完全允許或完全封鎖存取。 
 
@@ -159,7 +159,7 @@ Proxy 會記錄每個經它路由的使用者工作階段流量記錄。 流量�
 
 當 [保護] 設為要在 Cloud App Security Proxy 工作階段原則中採取的 [動作] 時，Proxy 會根據原則的檔案篩選，強制執行檔案標記及後續保護。 [標籤] 是在 Azure 的 Azure 資訊保護主控台中設定，必須在標籤內選取 [保護]，Cloud App Security 原則才會將標籤顯示為選項。 在符合 Cloud App Security 原則的準則下，選取標籤並下載檔案時，檔案會在下載時套用標籤及對應的保護 (具有權限)。 原始檔案仍保持在雲端應用程式中的狀況，而下載的檔案受到保護。 嘗試存取該檔案的使用者必須符合套用保護決定的權限需求。  
  
-  
+ 
 ## <a name="see-also"></a>另請參閱  
 [使用 Azure AD Proxy 功能封鎖未受管理裝置的下載作業](use-case-proxy-block-session-aad.md)   
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
