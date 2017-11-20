@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>使用 Microsoft Cloud App Security Proxy 防護應用程式
 
 > [!NOTE]
-> 開始推出 Microsoft Cloud App Security Proxy 功能。
+> 這是預覽功能。
+
 
 在現今的工作地點，在事件發生之後才知道雲端環境中發生事件通常不夠，您希望在員工有意或無意讓資料與組織面臨風險之前，就能夠即時阻止入侵與洩漏。 讓組織中的使用者充分利用雲端應用程式提供的服務和工具，並可攜帶自己的裝置來工作，極其重要。 同時，您還需要有工具幫助您保護組織，即時防止發生資料外洩以及資料遭竊的情況。 搭配 Azure Active Directory，Cloud App Security Proxy 讓您體驗這些功能的全面整合。
 
@@ -79,6 +80,7 @@ Proxy 目前支援在 Azure AD 中設定使用 SAML 單一登入的應用程式�
 
 > [!NOTE]
 > Office 365 應用程式不設定使用 SAML，所以目前不受支援。
+
 
 ## <a name="see-also"></a>另請參閱  
 [部署 Cloud App Security Proxy](proxy-deployment-aad.md)   
