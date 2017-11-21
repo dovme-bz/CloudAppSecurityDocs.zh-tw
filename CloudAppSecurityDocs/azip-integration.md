@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
@@ -61,6 +61,7 @@ Cloud App Security 可讓您調查檔案，並依據 Azure Information Protectio
 
 ### <a name="set-internal-and-external-tags"></a>設定內部和外部標記
 Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其他組織所定義的外部分類標籤。 
+
 
 若要忽略在組織外部設定的分類標籤，請在 Cloud App Security 入口網站，從 [一般設定] 的 [Auzre 安全性設定] 下，選取 [Ignore Azure Information Protection classification labels from other tenants]\(忽略其他租用戶的 Azure Information Protection 分類標籤)。
  
@@ -118,7 +119,7 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
 
 ## <a name="integration-with-azure-rights-management"></a>與 Azure 版權管理整合
 
-您的組織必須具有 Azure 版權管理的授權，並已啟用來在 Cloud App Security 與 Azure RMS 之間進行整合。  這兩個不同的步驟可已在[啟用 Azure 版權管理](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中找到。
+您的組織必須具有 Azure 版權管理的授權，並已啟用來在 Cloud App Security 與 Azure RMS 之間進行整合。 這兩個不同的步驟可已在[啟用 Azure 版權管理](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中找到。
 
 Cloud App Security 目前支援 Office 檔案的原生保護 (2016 和更新版本)。 未來版本會提供對 PDF 和影像檔案的原生保護。 
 
@@ -133,7 +134,7 @@ Cloud App Security 目前支援 Office 檔案的原生保護 (2016 和更新版�
 
 2. 系統會要求您選擇組織的其中一個分類標籤，用以保護檔案，然後按一下 [保護]。 
 ![保護分類標籤](./media/protect-template.png)
-3. 當您選擇分類標籤並按一下 [保護]之後，Cloud App Security 會套用分類標籤並保護原始檔案。 T
+3. 當您選擇分類標籤並按一下 [保護]之後，Cloud App Security 會套用分類標籤並保護原始檔案。
 > [!NOTE]
 >   建議您在檔案上套用全公司適用的 RMS 分類標籤，讓組織中的所有使用者都可存取這些檔案，包括檔案的原始擁有者。 檔案的擁有者、檔案的共用原則，以及已經有權存取它的使用者清單，不會在檔案變成受保護狀態時變更。
 

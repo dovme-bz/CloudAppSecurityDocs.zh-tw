@@ -1,6 +1,6 @@
 ---
 title: "設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
-description: "本主題說明透過在內部部署伺服器中的 Ubuntu 上使用 Docker，以在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
+description: "本主題說明透過在 Azure 中的 Ubuntu 上使用 Docker，以在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
@@ -97,42 +97,56 @@ ms.lasthandoff: 11/14/2017
 
    ![建立記錄收集器](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>步驟 2 – 在 Azure 中部署您的電腦
 
-> [!Note]
+> [!NOTE]
 > 下列步驟描述 Ubuntu 中的部署。 其他平台的部署步驟有些不同。
 
-1.  在 Ubuntu 電腦上開啟終端機。
 
-2.  使用下列命令變更為 root 權限：`sudo -i`
-
-3. 若要略過網路中的 Proxy，請執行下列兩個命令：
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  如果您接受[軟體授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請執行下列命令以解除安裝舊的版本並安裝 Docker CE：
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > 如果此命令無法驗證您的 Proxy 憑證，請以 `curl -k` 作為開頭執行該檔案。
+1.  在您的 Azure 環境中建立新的 Ubuntu 電腦。 
+2.  電腦啟動之後，請透過下列步驟開啟連接埠：
+    1.  在電腦檢視中，移至 [網路]，並按兩下相關的介面來選取它。
+    2.  移至 [網路安全性群組]，並選取相關的網路安全性群組。
+    3.  移至 [輸入安全性規則]，然後按一下 [新增]。
+      
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. (於 [進階] 模式中) 新增下列規則：
 
-4.  透過匯入收集器設定，在主機電腦上部署收集器映像。 若要這麼做，請複製在入口網站中產生的執行命令。 如果您需要設定 Proxy，請新增 Proxy IP 位址與連接埠號碼。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令是：
+    |名稱|目的地連接埠範圍|通訊協定|來源|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|任何值|任何值|
+    |caslogcollector_ftp_passive|20000-20099|TCP|任何值|任何值|
+    |caslogcollector_syslogs_tcp|601-700|TCP|任何值|任何值|
+    |caslogcollector_syslogs_tcp|514-600|UDP|任何值|任何值|
+      
+      ![Ubuntu Azure 規則](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  返回電腦並按一下 [連線]，以開啟電腦上的終端機。
 
-   ![建立記錄收集器](./media/windows7.png)
+4.  使用 `sudo -i` 變更為 root 權限。
 
-5.  執行下列命令，確認收集器正常執行：`docker logs \<collector_name\>`
+5.  如果您接受[軟體授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請執行下列命令以解除安裝舊的版本並安裝 Docker CE：
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-您應該會看到訊息：**Finished successfully!**
+6. 在 Cloud App Security 入口網站的 [建立新記錄收集器] 視窗中，複製命令以匯入主機電腦上的收集器設定：
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
+
+7. 執行命令以部署記錄收集器。
+
+      ![Ubuntu Azure 命令](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>若要設定 Proxy，請新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令將會是： 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. 若要確認記錄收集器是否正常執行，請執行下列命令：`Docker logs <collector_name>`。 您應該會取得以下結果：[已順利完成!]
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
 

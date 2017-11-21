@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -34,7 +34,9 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 ![SIEM 整合架構](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>支援的 SIEM
 
+Cloud App Security 目前支援 HP archsight 和一般 CEF。
 
 ## <a name="how-to-integrate"></a>如何整合
 
@@ -63,6 +65,7 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 5. 輸入 [遠端 Syslog 主機] 的 IP 位址或主機名稱，以及 [Syslog 連接埠號碼]。 選取 TCP 或 UDP 作為遠端 Syslog 通訊協定。
 如果您沒有這些詳細資料，則可以與安全性系統管理員合作，來取得這些詳細資料。
 按 [下一步] 。
+
   ![遠端 Syslog 設定](./media/siem2.png)
 
 6. 選取您想要匯出至 SIEM 伺服器的資料類型：[警示] 和 [活動]。 使用滑桿來啟用和停用它們，預設會選取所有項目。 您可以使用 [套用至] 下拉式清單來設定篩選條件，以便只將特定警示和活動傳送至 SIEM 伺服器。
@@ -74,12 +77,13 @@ SIEM 代理程式從 Cloud App Security 擷取資料後，便會使用您在安�
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>步驟 2：下載 JAR 檔案，並在您的伺服器上執行該檔案
 
-1. [從 Microsoft 下載中心下載 .zip 檔案](https://go.microsoft.com/fwlink/?linkid=838596)，並將它解壓縮。
+1. 在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/?linkid=838596) \(英文\) 接受[軟體授權條款](https://go.microsoft.com/fwlink/?linkid=862491)之後，請下載 .zip 檔案並將它解壓縮。
 
 2. 從 ZIP 檔案中解壓縮 .jar 檔案，並在您的伺服器上執行該檔案。
  在執行這個檔案之後，請執行下列命令︰
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - 根據 SIEM 代理程式的版本，檔名可能會不同。
 > - 方括弧 [  ] 中的參數是選擇性的，應只在相關情況下使用。
