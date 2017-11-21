@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 11/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf434c9f9ed1cc4c2d0edd375e0f51b45fdf6571
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>在虛擬設備上設定自動記錄檔上傳以進行連續報告
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 09/28/2017
   > [!NOTE] 
   > - 單一記錄收集器可以處理多個資料來源。
   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會使用這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
-4.  在 Hyper-V 或 VMWare 上按一下以**下載**新的記錄收集器虛擬機器。 然後，使用您在入口網站中收到的密碼將檔案解壓縮。  
+4.  如果您接受[使用者授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請按一下 Hyper-V 或 VMWare 以**下載**新的記錄收集器虛擬機器。 然後，使用您在入口網站中收到的密碼將檔案解壓縮。  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 

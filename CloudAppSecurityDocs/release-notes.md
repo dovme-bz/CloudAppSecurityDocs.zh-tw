@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
 
-## <a name="cloud-app-security-releases-109"></a>Cloud App Security 版本 109
+## <a name="cloud-app-security-release-110"></a>Cloud App Security 版本 110
+發行日期 2017 年 11 月 12 日
+ 
+-   現在已正式運作：我們將開始推出記錄收集器的新部署模式。 除了目前以虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 [Ubuntu 電腦](discovery-docker.md)上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
+-   從入口網站的頁面內，您可以使用位於角落的新藍色問號來存取 docs.microsoft.com 上的相關 Cloud App Security 文件頁面。 每個連結都具有內容相關性，並會根據您所在的頁面將您引導至所需的資訊。
+-   您現在可以從 Cloud App Security 入口網站的每個頁面傳送意見反應。 這可讓您直接向 Cloud App Security 小組回報錯誤、要求新功能，以及分享您的體驗。
+-   針對深入調查組織的雲端使用方式，已改進識別子網域的雲端探索能力。 如需詳細資訊，請參閱[使用探索到的應用程式](discovered-apps.md)。
+
+## <a name="cloud-app-security-release-109"></a>Cloud App Security 版本 109
 發行日期：2017 年 10 月 29 日 
 
 - 開始推出 Microsoft Cloud App Security Proxy 功能。 Microsoft Cloud App Security 的 Proxy 提供您所需的工具，讓您取得在雲端環境內所執行之存取與活動的即時可見性與控制權。 例如：
