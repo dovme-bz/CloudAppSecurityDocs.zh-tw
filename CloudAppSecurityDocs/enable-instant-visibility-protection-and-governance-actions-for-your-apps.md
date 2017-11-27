@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-apps"></a>連線應用程式 
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
@@ -76,7 +76,7 @@ App 連線程式流程如下所示︰
 |**登入活動**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**使用者活動**|✔*|✔|✔|✔ - 需要 Google Unlimited|部分|Salesforce Shield 予以支援|✔|不適用|  
 |**管理活動**|✔|✔|✔|✔|部分|✔|✔|✔|  
-|**定期掃描檔案**|✔|✔|不適用|✔|✔|✔|✔|敬請期待|  
+|**定期掃描檔案**|✔|✔|不適用|✔|✔|✔|✔|不適用|  
 |**接近即時的檔案掃描**|✔|✔|不適用|✔ - 需要 Google Unlimited|||敬請期待||  
 |**共用控制權**|✔|✔|不適用|✔|不適用||✔||  
 |**隔離**|✔|✔|不適用|敬請期待|||敬請期待||  
