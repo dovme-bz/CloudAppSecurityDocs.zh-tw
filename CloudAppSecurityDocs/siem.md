@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: 298358657f775ec3a53a52112ee05af5db13ca16
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -116,6 +116,61 @@ Cloud App Security 目前支援 HP archsight 和一般 CEF。
   2017-07-16T09:17:46.290Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy4|3|externalId=596b30200c204203a33a4765 start=1500196666290 end=1500196666290 msg=Activity policy ''test-activity-policy4'' was triggered by ''admin@contoso.com'' suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b30200c204203a33a4765 cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=relatedAudits cs3=1500196587034_a8673602-7e95-46d6-a1fe-c156c4709c5d
   2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3
 ```
+#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF 格式的 Cloud App Security 警示範例
+
+
+##### <a name="activity-logs"></a>活動記錄
+
+-   EVENT_CATEGORY_*：活動的高層級類別
+
+-   <ACTION>：如入口網站中顯示的活動類型
+
+-   externalId：事件識別碼
+
+-   start：警示時間戳記
+
+-   end：警示時間戳記
+
+-   rt：警示時間戳記
+
+-   msg：如入口網站中顯示的事件描述
+
+-   suser：活動使用者
+
+-   destinationServiceName：活動源自的應用程式，例如 Office 365、Sharepoint、Box。
+
+-   dvc：用戶端裝置的 IP
+
+-   requestClientApplication：用戶端裝置的使用者代理程式
+
+-   cs<X>Label：每個標籤具有不同的意義，但標籤本身可說明其意義，例如 targetObjects。
+
+-   cs<X>：對應到標籤的資訊 (如標籤範例所示的活動或警示目標使用者)。
+
+##### <a name="alerts"></a>警示
+
+-   <alert type> - 例如 “ALERT_CABINET_EVENT_MATCH_AUDIT”
+
+-   <name> - 符合的原則名稱
+
+-   externalId：警示識別碼
+
+-   start：警示時間戳記
+
+-   end：警示時間戳記
+
+-   rt：警示時間戳記
+
+-   msg：如入口網站中顯示的警示描述
+
+-   suser：警示主體使用者
+
+-   destinationServiceName：警示源自的應用程式，例如 Office 365、Sharepoint、Box
+
+-   cs<X>Label：每個標籤具有不同的意義，但標籤本身可說明其意義，例如 targetObjects。
+
+-   cs<X>：對應到標籤的資訊 (如標籤範例所示的活動或警示目標使用者)。
+
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>步驟 3：驗證 SIEM 代理程式正在運作
 

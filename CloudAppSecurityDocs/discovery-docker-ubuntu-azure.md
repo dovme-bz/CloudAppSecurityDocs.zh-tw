@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM：4 GB
 
--   防火牆設定：
-
-    -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
-
-    -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 portal.contoso.cloudappsecurity.com)。
-
-    - 允許記錄收集器在連接埠 80 和 443 上初始化 Azure Blob 儲存體 (https://adaprodconsole.blob.core.windows.net/) 的輸出流量。
-
-> [!NOTE]
-> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在[連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)。
+-   如[網路需求](network-requirements#log-collector)中所述，設定您的防火牆
 
 ## <a name="log-collector-performance"></a>記錄收集器效能
 
@@ -118,7 +109,7 @@ ms.lasthandoff: 11/14/2017
     |caslogcollector_ftp|21|TCP|任何值|任何值|
     |caslogcollector_ftp_passive|20000-20099|TCP|任何值|任何值|
     |caslogcollector_syslogs_tcp|601-700|TCP|任何值|任何值|
-    |caslogcollector_syslogs_tcp|514-600|UDP|任何值|任何值|
+    |caslogcollector_syslogs_udp|514-600|UDP|任何值|任何值|
       
       ![Ubuntu Azure 規則](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ ms.lasthandoff: 11/14/2017
 
 5.  如果您接受[軟體授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請執行下列命令以解除安裝舊的版本並安裝 Docker CE：
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. 在 Cloud App Security 入口網站的 [建立新記錄收集器] 視窗中，複製命令以匯入主機電腦上的收集器設定：
 
@@ -138,12 +129,12 @@ ms.lasthandoff: 11/14/2017
 
       ![Ubuntu Azure 命令](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->若要設定 Proxy，請新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令將會是： 
+     >[!NOTE]
+     >若要設定 Proxy，請新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令將會是： 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Ubuntu Proxy](./media/ubuntu-proxy.png)
 
 8. 若要確認記錄收集器是否正常執行，請執行下列命令：`Docker logs <collector_name>`。 您應該會取得以下結果：[已順利完成!]
 
