@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 58cf8529634951c778e9a0abca743e4b8c7d05d7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e568172068f5ec63a519c495f7e824bd49b03883
+ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>將 Office 365 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Microsoft Office 365 帳戶。  
@@ -43,7 +43,7 @@ Cloud App Security 支援下列 Office 365 應用程式：
 >- 您必須至少獲得一個指派的 Office 365 授權，才能連接 Office 365 與 Cloud App Security。
 >-  Office 365 預設會啟用 Exchange 系統管理員稽核記錄功能，當系統管理員 (或已獲得系統管理權限指派的使用者) 在您的 Exchange Online 組織中進行變更時，這項功能即會將事件記錄至 Office 365 稽核記錄中。 使用 Exchange 系統管理中心進行的變更，或是在 Windows PowerShell 中執行 Cmdlet 所做的變更，皆會記錄在 Exchange 系統管理稽核記錄檔中。 如需 Exchange 系統管理員稽核記錄功能的詳細資訊，請參閱 [Administrator audit logging](http://go.microsoft.com/fwlink/p/?LinkID=619225) (系統管理員稽核記錄)。
 >- 您必須針對每個使用者信箱開啟 Exchange 信箱稽核記錄功能，才能記錄 Exchange Online 中的使用者活動，請參閱 [Exchange 信箱活動](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)。
->- 如果已啟用 Office 應用程式，則特定 Office 應用程式中也會建立屬於 Office 365 的群組。例如如果已啟用 SharePoint，則 SharePoint 中也會建立 Office 365 群組。
+>- 如果已啟用 Office 應用程式，則屬於 Office 365 的群組也會從特定 Office 應用程式匯入 Cloud App Security。例如，如果已啟用 SharePoint，則會匯入 Office 365 群組與 SharePoint 群組。
 >- 您必須[在 PowerBI 中啟用稽核](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)才能從中取得記錄檔。 啟用稽核之後，Cloud App Security 便開始取得記錄檔 (具有 24-72 小時的延遲)。
 > 如果您的 Azure Active Directory 已設定為與 Active Directory 內部部署環境中的使用者自動同步，內部部署環境中的設定將會覆寫 Azure AD 設定，且會還原 [暫時停止使用者的權限] 治理動作的使用。 
  

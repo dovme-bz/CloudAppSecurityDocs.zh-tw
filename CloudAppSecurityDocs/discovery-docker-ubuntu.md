@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
@@ -32,16 +32,8 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM：4 GB
 
--   防火牆設定：
+-   如[網路需求](network-requirements#log-collector)中所述，設定您的防火牆
 
-    -   允許記錄收集器接收輸入的 FTP 和 Syslog 流量。
-
-    -   允許記錄收集器起始輸出流量至連接埠 443 上的入口網站 (例如 portal.contoso.cloudappsecurity.com)。
-
-    - 允許記錄收集器在連接埠 80 和 443 上初始化 Azure Blob 儲存體 (https://adaprodconsole.blob.core.windows.net/) 的輸出流量。
-
-> [!NOTE]
-> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在[連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)。
 
 ## <a name="log-collector-performance"></a>記錄收集器效能
 
@@ -115,7 +107,7 @@ ms.lasthandoff: 11/14/2017
 
     `curl -o /tmp/MCASInstallDocker.sh
     https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
+    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
      > [!NOTE] 
      > 如果此命令無法驗證您的 Proxy 憑證，請以 `curl -k` 作為開頭執行該檔案。
@@ -124,7 +116,7 @@ ms.lasthandoff: 11/14/2017
 
 4.  透過匯入收集器設定，在主機電腦上部署收集器映像。 若要這麼做，請複製在入口網站中產生的執行命令。 如果您需要設定 Proxy，請新增 Proxy IP 位址與連接埠號碼。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令是：
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![建立記錄收集器](./media/windows7.png)
 
