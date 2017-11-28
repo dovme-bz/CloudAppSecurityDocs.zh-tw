@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
 治理可讓您即時控制各應用程式上的使用者活動。 對於連線的應用程式，您可以對檔案或活動套用治理動作。
@@ -52,6 +52,8 @@ ms.lasthandoff: 11/06/2017
         -   私人使用 – 只有擁有者可以存取檔案，並會移除所有的共用。  
   
         -   移除共同作業者 – 從檔案中移除特定的共同作業者。  
+
+        - 減少公用存取：將可公開取得的檔案設定為只能透過共用連結來取得。
   
     -   隔離  
   
@@ -141,6 +143,7 @@ ms.lasthandoff: 11/06/2017
 |檔案|檔案|保護|透過 Azure 資訊保護，套用組織範本來保護檔案。|Office 365 (SharePoint 與 OneDrive)|
 |檔案|檔案|撤銷自己的讀取權限|撤銷您自己對檔案的讀取權限，授與您自己有權限可了解檔案是否有違規情況之後，此項目相當實用。|G Suite|
 |檔案、檔案原則|檔案|移轉檔案擁有權|變更擁有者 - 在原則中選取特定的擁有者。|G Suite|
+|檔案、檔案原則|檔案|減少公用存取|讓您將可公開取得的檔案設定為只能透過共用連結來取得。|G Suite|
 |檔案、檔案原則|檔案|移除共同作業者|移除檔案的特定共同作業者。|G Suite、Box、One Drive、SharePoint|
 |檔案、檔案原則|檔案|使其成為私人|使其成為私人 - 不再有任何共同作業者或公用連結，不與任何人共用。|G Suite、One Drive、SharePoint|
 |檔案、檔案原則|檔案|移除外部使用者|移除所有外部共同作業者 - 在 [設定] 中可將網域之外的共同作業者設定為內部共同作業者。|G Suite、Box |

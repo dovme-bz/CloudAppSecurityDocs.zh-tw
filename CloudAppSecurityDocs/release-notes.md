@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security 版本 111
+發行日期 2017 年 11 月 26 日
+
+-   探索原則現在支援應用程式標記做為條件以及治理動作。 這可讓您使用自訂標籤 (像是 **熱門應用程式**) 來自動標記新發現的應用程式。 您也可以使用應用程式標記做為篩選條件，例如，「當觀察清單中的應用程式在一天有超過 100 個以上的使用者時向我發出警示」。
+
+-   **時間**篩選已改善，讓使用者更容易使用。
+
+-   內容檢查現在可區分內容、中繼資料和檔案名稱，讓您可以選取想要檢查的項目。
+
+-   為 G Suite 新增了新的治理動作。 您現在可以對共用檔案**減少公用存取**。 讓您將可公開取得的檔案設定為只能透過共用連結來取得。
+
+-   對於其他應用程式的所有 OKTA 登入活動現在會顯示在 Cloud App Security 中，並註明來源為 OKTA。 您可以在活動的**活動物件**欄位中，根據執行登入的目標應用程式來檢視和篩選。
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security 版本 110
