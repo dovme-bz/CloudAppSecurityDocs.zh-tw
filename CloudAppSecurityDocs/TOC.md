@@ -18,6 +18,9 @@
 ### [設定自動記錄上傳以進行連續報告](discovery-docker.md)
 #### [Ubuntu 上的 Docker (內部部署)](discovery-docker-ubuntu.md)
 #### [Ubuntu 上的 Docker (Azure)](discovery-docker-ubuntu-azure.md)
+##### 修改 Docker 設定
+###### [自訂憑證檔](discovery-docker-custom-cert.md)
+###### [變更 FTP 密碼](discovery-docker-change-ftp.md)
 #### [使用虛擬設備](configure-automatic-log-upload-for-continuous-reports.md)
 ### [使用自訂記錄檔剖析器](custom-log-parser.md)
 ### [Cloud Discovery 擴充](cloud-discovery-aad-enrichment.md)
