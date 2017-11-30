@@ -18,10 +18,7 @@
 ### [設定自動記錄上傳以進行連續報告](discovery-docker.md)
 #### [Ubuntu 上的 Docker (內部部署)](discovery-docker-ubuntu.md)
 #### [Ubuntu 上的 Docker (Azure)](discovery-docker-ubuntu-azure.md)
-##### 修改 Docker 設定
-###### [自訂憑證檔](discovery-docker-custom-cert.md)
-###### [變更 FTP 密碼](discovery-docker-change-ftp.md)
-#### [使用虛擬設備](configure-automatic-log-upload-for-continuous-reports.md)
+#### [使用虛擬設備 - 已淘汰](configure-automatic-log-upload-for-continuous-reports.md)
 ### [使用自訂記錄檔剖析器](custom-log-parser.md)
 ### [Cloud Discovery 擴充](cloud-discovery-aad-enrichment.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 ## [為內容檢查進行疑難排解](troubleshooting-content-inspection.md)
 ## [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)
+## [為 Cloud Discovery Docker 部署進行疑難排解](troubleshoot-docker.md)
+## [疑難排解原則](troubleshoot-policies.md)
