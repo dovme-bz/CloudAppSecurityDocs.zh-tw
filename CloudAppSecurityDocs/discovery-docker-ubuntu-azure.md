@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
 
 ## <a name="technical-requirements"></a>技術需求
 
--   作業系統：Ubuntu 14.04 或更高版本
+-   OS：Ubuntu 14.04 或更高版本 (沒有支援 Ubuntu 17.10 的 Docker 穩定版本)
 
 -   磁碟空間：250 GB
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/22/2017
     |caslogcollector_syslogs_tcp|601-700|TCP|任何值|任何值|
     |caslogcollector_syslogs_udp|514-600|UDP|任何值|任何值|
       
-      ![Ubuntu Azure 規則](./media/ubuntu-azure-rules.png)
+      ![Ubuntu Azure 規則](./media/inbound-rule.png)
 
 3.  返回電腦並按一下 [連線]，以開啟電腦上的終端機。
 
@@ -121,23 +121,21 @@ ms.lasthandoff: 11/22/2017
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. 在 Cloud App Security 入口網站的 [建立新記錄收集器] 視窗中，複製命令以匯入主機電腦上的收集器設定：
-
-      ![Ubuntu Azure](./media/ubuntu-azure.png)
-
-7. 執行命令以部署記錄收集器。
-
       ![Ubuntu Azure 命令](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >若要設定 Proxy，請新增 Proxy IP 位址和通訊埠。 例如，如果您的 Proxy 詳細資料是 192.168.10.1:8080，更新的執行命令將會是： 
+6. 在 Cloud App Security 入口網站的 [建立新記錄收集器] 視窗中，複製命令以匯入主機電腦上的收集器設定：
 
+      ![Ubuntu Azure](./media/windows7.png)
+
+7. 執行命令以部署記錄收集器。
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu Proxy](./media/ubuntu-proxy.png)
 
 8. 若要確認記錄收集器是否正常執行，請執行下列命令：`Docker logs <collector_name>`。 您應該會取得以下結果：[已順利完成!]
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>步驟 3 - 網路設備的內部部署設定
 
@@ -166,7 +164,7 @@ ms.lasthandoff: 11/22/2017
 ![自訂連續報告](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>另請參閱
-[使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)  
+[為 Cloud Discovery Docker 部署進行疑難排解](troubleshoot-docker.md)
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security](https://premier.microsoft.com/)
 

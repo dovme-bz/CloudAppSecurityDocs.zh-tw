@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
 
 ## <a name="technical-requirements"></a>技術需求
 
--   作業系統：Ubuntu 14.04 或更高版本
+-   OS：Ubuntu 14.04 或更高版本 (沒有支援 Ubuntu 17.10 的 Docker 穩定版本)
 
 -   磁碟空間：250 GB
 
@@ -153,7 +153,7 @@ ms.lasthandoff: 11/22/2017
 ![自訂連續報告](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>另請參閱
-[使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)  
+[為 Cloud Discovery Docker 部署進行疑難排解](troubleshoot-docker.md)  
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security](https://premier.microsoft.com/)
 
