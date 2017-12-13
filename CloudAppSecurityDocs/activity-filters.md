@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 148884c2709658d53b658e3b3a7d9f33daf18771
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: b13f7c6270b79050e8ba0f871f2096f420bf6691
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -134,7 +134,13 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
  隱藏式活動選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外活動和向下切入的內容連結。 例如，如果您將游標移到 IP 位址類別旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將 IP 位址新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**使用者群組**。
 
-
+ 您也可以使用索引標籤頂端的圖示以執行下列動作：
+ - 檢視相同類型的活動
+ - 檢視同一個使用者的所有活動
+ - 檢視來自同一個 IP 位址的活動
+ - 檢視來自相同地理位置的活動
+ - 檢視來自相同時段 (48 小時) 的活動
+ 
 ![隱藏式活動選單](./media/activity-drawer.png "隱藏式活動選單")  
   
 如需可用的治理動作清單，請參閱[活動治理動作](governance-actions.md#activity-governance-actions)。
@@ -165,7 +171,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 
 1. 在 [活動記錄] 中按一下活動本身。
 
-2. 然後按一下 [IP 位址] 索引標籤。 <br></br> 這會開啟 [活動] 下拉式清單。[IP 位址] 索引標籤會提供 IP 位址的下列深入解析：
+2. 然後按一下 [IP 位址] 索引標籤。 <br></br> 這會開啟隱藏式 [活動] 選單的 [IP 位址] 索引標籤，其中提供 IP 位址的下列深入解析：
     - **未解決的警示**：與 IP 位址有關的未解決警示數目。
     - **活動**：過去 30 天依 IP 位址執行的活動數目。
     - **IP 位置**：過去 30 天 IP 位址從當中連線的地理位置。
@@ -175,6 +181,7 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
         - 標記為有風險 
         - 標記為 VPN IP 位址
         - 標記為有風險的 IP，並新增至封鎖的群組
+
 
 ![Cloud App Security 中的 IP 位址深入解析](./media/ip-address-insights.png)
 

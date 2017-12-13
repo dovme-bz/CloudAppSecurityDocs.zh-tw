@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> 使用 IP 範圍和標籤
 
@@ -40,7 +40,7 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
 若要在搜尋中使用這些內建的標籤，請參閱其在 Cloud App Security API 文件中的識別碼。 
 
 > [!NOTE]
-> 您可以使用 [IP 位址範圍 API](https://portal.cloudappsecurity.com/api-docs/) 建立指令碼，以大量新增 IP 位址
+> 您可以藉由使用 **IP 位址範圍 API** 來建立指令碼，以便大量新增 IP 範圍。在 Cloud App Security 入口網站功能表列中，依序按一下問號、[API 文件]，便能找到此 API。
 
 
 內建 IP 位址標籤和自訂 IP 標籤會依階層考量，其中自訂 IP 標籤優先於內建 IP 標籤。 例如，如果根據威脅情報將 IP 位址標籤為 [具風險]，但有自訂 IP 標籤將其識別為 [公司]，則會優先使用自訂類別和標籤。

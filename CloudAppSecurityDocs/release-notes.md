@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-112"></a>Cloud App Security 版本 112
+發行日期：2017 年 12 月 10 日
+
+-   您現在可以在活動記錄中按一下使用者名稱或 IP 位址，以存取相關的隱藏式深入解析選單。 
+-   在調查活動時，只要按一下時鐘圖示，就能在隱藏式深入解析選單內輕鬆地檢視所有相同時段的活動，讓您可以針對正在檢視的活動，查看其 48 小時內執行的所有活動。
+-   已改善適用於 Juniper SRX 的 Cloud Discovery 記錄檔剖析器。
+-   針對由 Proxy 監視的活動，**活動物件**已擴充為包含 DLP 掃描的相關資訊，而符合的原則也擴充為包含 DLP 違規 (若存在)。
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security 版本 111
 發行日期 2017 年 11 月 26 日
@@ -72,7 +81,7 @@ ms.lasthandoff: 11/27/2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security 版本 104 
 發行日期：2017 年 8 月 27 日
 
--   您現在可以使用 [IP 位址範圍 API](https://portal.cloudappsecurity.com/api-docs/) 建立指令碼，以大量新增 IP 位址。 
+-   您現在可以藉由使用 **IP 位址範圍 API** 來建立指令碼，以便大量新增 IP 範圍。在 Cloud App Security 入口網站功能表列中，依序按一下問號、[API 文件]，便能找到此 API。 
 -   Cloud Discovery 現在會同時顯示總交易數與封鎖的交易數，讓您能夠更清楚看到封鎖的交易數。
 -   您現在可以依據雲端應用程式是否經過 **ISO 27017** 認證來加以篩選。 這個新的 Cloud App Catalog 風險因素會判斷應用程式提供者是否具有此憑證，能夠制定一套大眾均可接受的措施與準則，以及用於處理及保護公用雲端計算環境中的使用者資訊。
 - 為了讓您針對 GDPR 合規性做準備，我們會從「雲端應用程式類別目錄」中的雲端應用程式收集 GDPR 整備聲明。 它還不會影響應用程式的風險分數，而只是提供應用程式發行者 GDPR 整備頁面 (當應用程式發行者提供此頁面時) 的連結。 Microsoft 尚未驗證此內容，對其有效性不負責任。
