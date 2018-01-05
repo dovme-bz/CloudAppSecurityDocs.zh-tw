@@ -41,9 +41,11 @@
 ### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
 ## 探索
 ### [使用探索到的應用程式](discovered-apps.md)
+#### [探索到的應用程式篩選與查詢](discovered-app-queries.md)
 ### [使用風險分數](risk-score.md)
 ## [調查](investigate.md)
 ### [活動](activity-filters.md)
+#### [活動篩選與查詢](activity-filters-queries.md)
 ### [檔案](file-filters.md)
 ### [帳戶](accounts.md)
 ### [內建報告參考資料](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [外部 DLP 整合](icap-stunnel.md)
 ### [API 權杖](api-tokens.md)
 # 疑難排解
+## [為服務狀態進行疑難排解](troubleshooting-status.md)
 ## [為 Cloud Discovery 進行疑難排解](troubleshooting-cloud-discovery.md)
 ## [使用錯誤訊息為 API 連接器進行疑難排解](troubleshooting-api-connectors-using-error-messages.md)
 ## [為內容檢查進行疑難排解](troubleshooting-content-inspection.md)
