@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
+ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
@@ -52,46 +52,6 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 
 篩選結果之後，您可以[不批准並封鎖](governance-discovery.md)這些應用程式，方法是使用 [大量動作] 核取方塊以一個動作不批准所有應用程式。 當應用程式處於待批准狀態之後，您可以使用封鎖指令碼以防止在環境中使用這些應用程式。
 
-Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過調查找到的子網域來識別特定的使用中執行個體。
-
-例如，您可以區別不同的 SharePoint 網站。
-
-不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery.md#supported-firewalls-and-proxies) 查看支援的設備清單。
-
-![子網域資訊](./media/discovery-domains.png)  
-
-## <a name="discovered-app-filters"></a>探索到的應用程式篩選
-
-探索到的應用程式篩選分為基本和進階。 若要取得複雜的篩選 (如以上範例所示)，請使用包括下列各項的進階選項：
-
-![探索到的應用程式](./media/discovered-apps.png)  
-
-
-- **應用程式標籤**：選擇應用程式為獲批准、待批准或未標記。 此外，您可以為應用程式建立自訂標籤，然後使用此標籤來篩選特定應用程式類型。 
-- **應用程式與網域**：可讓您搜尋特定應用程式或用於特定網域的應用程式。 
-- **類別**：類別篩選位於頁面左邊，可讓您根據應用程式類別搜尋不同類型的應用程式，例如社交網路應用程式、雲端儲存體應用程式等。您可以一次選取多個類別或單一類別，然後將基本和進階篩選套用其上。
-- **合規性風險因素**：可讓您搜尋應用程式可能遵守的特定標準、憑證與規範 (HIPAA、ISO 27001、SOC 2、PCI-DSS 等)。
-- **一般風險因素**：可讓您搜尋一般風險因素，例如消費者歡迎程度、資料中心地區設定等。
-- **風險分數**：可讓您依風險分數篩選應用程式，以便專注在只檢閱高風險的應用程式。 您也可以覆寫 Cloud App Security 所設定的風險分數。 如需詳細資訊，請參閱[使用風險分數](risk-score.md)。
-- **安全性風險因素**：可讓您根據特定安全措施 (例如待用資料加密、多重要素驗證等) 進行篩選。
-- **使用量**：可讓您根據此應用程式的使用量統計資料進行篩選，例如具有小於或大於指定**資料上傳**數量的應用程式，以及具有大於或小於指定**使用者**數目的應用程式。
-
-## <a name="creating-and-managing-custom-app-tags"></a>建立及管理自訂應用程式標籤
-
-您可以建立自訂應用程式標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 例如，自訂監看清單、給特定業務單位的指派，或自訂核准，例如 "approved by legal"。
-
-建立自訂應用程式標籤：
-
-1. 從**設定**齒輪選取 [Cloud Discovery]，然後在 [Manage app tags]\(管理應用程式標籤) 索引標籤中，按一下圖示 ![加號圖示](./media/plus-icon.png)。 
-
-![建立自訂應用程式標籤](./media/create-app-tag.png)
-
-2. 您可以使用 [Manage app tags]\(管理應用程式標籤) 資料表，檢視每個應用程式標籤目前標記的應用程式，而且您可以刪除未使用的應用程式標籤。
-
-3. 若要套用應用程式標籤，請在 [探索到的應用程式] 索引標籤中，按一下資料表最右側的三個點，然後選取要套用的應用程式標籤。 
-
-> [!NOTE]
->您也可以直接在 [探索到的應用程式] 資料表中建立新的應用程式標籤，方法是在選取任何所選應用程式右側的三個點之後，按一下 [Create app tag]\(建立應用程式標籤)。 您也可以按一下 [Create app tag]\(建立應用程式標籤) 快顯視窗角落的連結，來存取 [Manage app tags]\(管理應用程式標籤) 畫面。
 
 ## <a name="exclude-entities"></a>排除實體  
 如有雜訊特別多且無關的系統使用者或 IP 位址或不相干的應用程式，您可能想要從已經分析的 Cloud Discovery 資料中排除它們的資料。 例如，您可能想要排除源自 127.0.0.1 或本機主機的所有資訊。  
