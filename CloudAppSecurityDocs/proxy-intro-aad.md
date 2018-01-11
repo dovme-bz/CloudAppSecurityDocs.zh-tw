@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: d180fce8789fa20bea7135ce3fba437db996dcce
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>使用 Microsoft Cloud App Security Proxy 防護應用程式
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 11/13/2017
 
 ## <a name="how-it-works"></a>運作方式
 
-Cloud App Security Proxy 整合了 Azure AD 條件式存取。 Azure AD 條件式存取可讓您根據特定條件，強制執行對組織中應用程式的存取控制。 這些條件會定義條件式存取原則套用的「對象」(例如使用者或使用者群組)、「內容」(哪些雲端應用程式) 和「位置」 (哪些位置和網路)。 決定條件之後，您可以將使用者路由至可套用工作階段控制的 Cloud App Security Proxy。
+Cloud App Security Proxy 整合了 Azure AD 條件式存取。 Azure AD 條件式存取可讓您根據特定條件，強制執行對組織中應用程式的存取控制。 這些條件會定義條件式存取原則套用的「對象」(例如使用者或使用者群組)、「內容」(哪些雲端應用程式) 和「位置」 (哪些位置和網路)。 決定條件之後，您可以將使用者路由至可套用存取和工作階段控制的 Cloud App Security Proxy。
 
-在使用者路由至 Cloud App Security Proxy 之後，即可根據工作階段原則即時監視與控制他們的應用程式工作階段。 Cloud App Security 入口網站內使用工作段原則，進一步細化工作階段篩選，設定要對使用者採取的動作。 使用工作階段原則，您可以：
+在使用者路由至 Cloud App Security Proxy 之後，即可根據存取和工作階段原則即時監視與控制他們的應用程式存取和工作階段。 Cloud App Security 入口網站內使用存取和工作段原則來進一步細化篩選並設定要對使用者採取的動作。 使用存取和工作階段原則，您可以：
 
 -   **封鎖下載**：您可以封鎖下載機密文件。 例如，未受管理的裝置。
 
@@ -40,6 +40,9 @@ Cloud App Security Proxy 整合了 Azure AD 條件式存取。 Azure AD 條件�
 -   **限制非企業網路的使用者工作階段**：使用者可以從不屬於公司網路的位置存取受保護的應用程式，但限制其存取，並封鎖或保護下載敏感性資料。
 
 -   **監視低度信任使用者工作階段**：當高風險的使用者登入應用程式時會受到監視，其在工作階段中的動作也會予以記錄。 您可以調查及分析使用者的行為，以了解未來應該在什麼位置及什麼情況下套用工作階段原則。 
+
+- **封鎖存取**：您可以完全封鎖來自不受控裝置或來自非企業網路的使用者，使其無法存取特定的應用程式。
+
 
 ### <a name="how-session-control-works"></a>工作階段控制如何運作
 
@@ -66,7 +69,7 @@ Proxy 可讓您建立能夠考量裝置是否受管理的原則。 為識別裝�
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>相容且加入網域的裝置
-Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳遞至 Cloud App Security Proxy。 此時，可使用裝置狀態作為篩選，開發工作階段原則。
+Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳遞至 Cloud App Security Proxy。 此時，可使用裝置狀態作為篩選，開發存取原則或工作階段原則。
 如需詳細資訊，請參閱 [Azure Active Directory 中的裝置管理簡介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。 
 
 ### <a name="client-certificate-authenticated-devices"></a>使用用戶端憑證驗證的裝置
@@ -75,11 +78,15 @@ Proxy 裝置識別機制可要求使用用戶端憑證驗證相關裝置。 這�
  
 ## <a name="supported-apps-and-clients"></a>支援的應用程式和用戶端
 
-Proxy 目前支援在 Azure AD 中設定使用 SAML 單一登入的應用程式。 此外，並非所有應用程式都會自動提供工作階段控制。 Cloud App Security 小組測試過許多熱門應用程式的工作階段控制。 其他應用程式可能需要客戶完成上線程序。
-用戶端當然希望取得任何主要平台的任何瀏覽器工作階段控制。 不過，不支援行動裝置應用程式和桌面應用程式。 
+Proxy 目前支援在 Azure AD 中設定使用 SAML 單一登入的應用程式。 
 
 > [!NOTE]
-> Office 365 應用程式不設定使用 SAML，所以目前不受支援。
+> - Proxy 也支援使用識別提供者所設定的應用程式，不是私人預覽之 Azure AD 設定的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
+> - Office 365 應用程式不設定使用 SAML，所以目前不受支援。
+
+此外，並非所有應用程式都會自動提供工作階段控制。 Cloud App Security 小組測試過許多熱門應用程式的工作階段控制。 其他應用程式可能需要客戶完成上線程序。
+用戶端當然希望取得任何主要平台的任何瀏覽器工作階段控制。 不過，工作階段控制項不支援行動裝置應用程式和桌面應用程式。 
+
 
 
 ## <a name="see-also"></a>另請參閱  

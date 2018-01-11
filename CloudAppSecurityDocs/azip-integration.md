@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 12/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,24 +13,39 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
-Cloud App Security 可讓您調查檔案，並依據 Azure Information Protection 分類標籤設定原則，提升您監視及控制雲端上敏感性資料的能力。 整合 Azure Information Protection 與 Cloud App Security 就像選取一個單一核取方塊一樣簡單。 
+無論是否受保護，Cloud App Security 可讓您將 Azure 資訊保護分類標籤自動套用至檔案，當作檔案原則治理動作。 您也可以在 Cloud App Security 入口網站中篩選套用的分類標籤，以調查檔案。 這可讓您對雲端的敏感性資料有更大的可見性與掌控度。 整合 Azure Information Protection 與 Cloud App Security 就像選取一個單一核取方塊一樣簡單。 
 
 將 Azure Information Protection 整合到 Cloud App Security，即可利用這兩個服務的完整功能，以及保護雲端中的檔案，包括︰
+- 能夠對符合特定原則的檔案套用分類標籤當作治理動作
 - 在集中位置檢視所有分類檔案的能力
 - 根據分類層級執行調查以及量化雲端應用程式上敏感性資料暴露的能力
 - 建立原則以確認正確處理分類檔案的能力
 
+
 > [!NOTE] 
-> 若要能夠執行此功能，除了需要 Cloud App Security 授權之外，也需要 Azure Information Protection Premium P1 或 P2 的授權。 當這項兩種授權準備就緒之後，Cloud App Security 便會從 Azure 資訊保護服務同步組織標籤。
-> Cloud App Security 不支援 Azure 資訊保護限域原則。
+> 若要能夠執行此功能，除了需要 Cloud App Security 授權之外，也需要 Azure 資訊保護 Premium P2 的授權。 當這項兩種授權準備就緒之後，Cloud App Security 便會從 Azure 資訊保護服務同步組織標籤。
+
+
+## <a name="prerequisites"></a>必要條件
+
+Cloud App Security 目前支援下列檔案類型套用 Azure 資訊保護分類標籤：
+
+- Word：docm、docx、dotm、dotx
+- Excel：xlam、xlsm、xlsx、xltx
+- PowerPoint：potm、potx、ppsx、ppsm、pptm、pptx
+- 未來版本會提供 PDF 和影像檔案 
+
+此功能目前適用於儲存於 Box、SharePoint Online 和商務用 OneDrive 中的檔案。 未來版本中將支援更多雲端應用程式。
+
+Cloud App Security 目前無法掃描或變更標示為不受 Cloud App Security 保護的檔案。 標示為 Cloud App Security 外部 (不受保護) 的檔案可以掃描，而且 Cloud App Security 可套用依 Cloud App Security 原則定義的不同標籤 (無論是否受保護)。
 
 
 ## <a name="how-it-works"></a>運作方式
@@ -38,8 +53,9 @@ Cloud App Security 可讓您調查檔案，並依據 Azure Information Protectio
 1. Cloud App Security 會擷取您租用戶所使用的所有分類標籤清單。 每隔一小時會執行一次，使清單維持最新狀態。
 2. Cloud App Security 接著會掃描檔案是否有分類標籤，如下所示︰a. 如果您已啟用自動掃描 (請參閱後文)，則會將所有新的或修改過的檔案新增至掃描佇列。
     b. 如果您設定檔案原則 (請參閱後文) 以搜尋分類標籤，則會將這些檔案新增至分類標籤的掃描佇列。
-3. 如上所述，這些掃描是針對 Cloud App Security 執行初始掃描時所發現的分類標籤，以查看租用戶所使用的分類標籤。 外部標籤 (租用戶外部人員所設定的分類標籤) 會新增至分類標籤清單。 若不想掃描，請選取 [Only scan files for Azure Information Protection classification labels from this tenant] \(只掃描此租用戶的 Azure 資訊保護分類標籤) 核取方塊 (請參閱後文)。
+3. 如上所述，這些掃描是針對 Cloud App Security 執行初始掃描時所發現的分類標籤，以查看租用戶所使用的分類標籤。 外部標籤 (租用戶外部人員所設定的分類標籤) 會新增至分類標籤清單。 若不想掃描，請選取 [Only scan files for Azure Information Protection classification labels from this tenant] (只掃描此租用戶的 Azure 資訊保護分類標籤) 核取方塊 (請參閱下文)。
 4. 在 Cloud App Security 上啟用 Azure Information Protection 之後，也會掃描所有已新增至 Office 365 的新檔案是否有分類標籤。
+5. 您可以在 Cloud App Security 中建立自動套用分類標籤的新原則。
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>如何整合 Azure Information Protection 與 Cloud App Security
   
@@ -52,14 +68,15 @@ Cloud App Security 可讓您調查檔案，並依據 Azure Information Protectio
 1. 在 Cloud App Security 的 [設定] 齒輪下，選取 [一般設定] 頁面。
 2. 在 Azure 資訊保護下，選取 「Automatically scan files for Azure Information Protection classification labels」 (自動掃描檔案尋找 Azure 資訊保護分類標籤)。 
 
-啟用 Azure Information Protection 之後，就可以在 Cloud App Security 中查看具有分類標籤的檔案以及根據標籤進行篩選。
+啟用 Azure Information Protection 之後，就可以在 Cloud App Security 中查看具有分類標籤的檔案以及根據標籤進行篩選。 Cloud App Security 連線到雲端應用程式之後，您就能夠使用 Cloud App Security Azure 資訊保護整合功能，將 Azure 資訊保護標籤直接新增至檔案或設定自動套用分類標籤當作治理動作的檔案原則，直接在 Cloud App Security 入口網站中套用 Azure 資訊保護標籤 (無論是否受保護)。
+
 
  ![啟用 Azure Information Protection](./media/enable-azip.png)
 
 > [!NOTE] 
 > 自動掃描不會掃描現有的檔案，直到這些檔案經過修改為止。 若要掃描現有檔案是否有 Azure 資訊保護分類標籤，您至少要有一項**內容檢查檔案原則**。 如果完全沒有的話，請建立新的**檔案原則**、刪除所有預設篩選，並選取 [內容檢查] 選項。 接著在 [內容檢查] 下，按一下 [Include files that match a preset expression (包含符合預設運算式的檔案)] 並選取任何預先定義的值，然後儲存原則。 如此便可啟用內容檢查，以自動偵測 Azure 資訊保護分類標籤。
 
-### <a name="set-internal-and-external-tags"></a>設定內部和外部標記
+#### <a name="set-internal-and-external-tags"></a>設定內部和外部標記
 Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其他組織所定義的外部分類標籤。 
 
 
@@ -67,35 +84,64 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
  
 ![忽略標籤](./media/azip-ignore.png)
 
-### <a name="control-file-exposure"></a>控制檔案暴露
-- 如果這是您使用 Azure 資訊保護分類標籤標來標籤的文件︰
+### <a name="apply-labels-directly-to-files"></a>直接將標籤套用至檔案
 
-![Azure 資訊保護範例畫面](./media/azip-screen.png)
+1. 從 [檔案] 頁面上，選取您要保護的檔案，然後按一下檔案資料列結尾的三個點，接著選擇 [套用分類標籤]。
+
+ ![保護應用程式](./media/protect-app.png)
+  
+  >[!NOTE]
+  >Azure 資訊保護所保護的檔案，其大小上限為 50 MB。 
+
+2. 系統會要求您選擇組織分類標籤的其中之一，套用至檔案，並按一下 [套用]。 
+![保護分類標籤](./media/protect-template.png)
+
+3. 當您選擇分類標籤並按一下 [套用] 之後，Cloud App Security 會將分類標籤套用至原始檔案。
+
+5. 您也可以選擇 [移除分類標籤] 選項移除分類標籤。 
+
+
+如需 Cloud App Security 與 Azure 資訊保護如何搭配使用的詳細資訊，請參閱[保護資料不受使用者錯誤影響](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)。
+
+### <a name="automatically-label-files-preview"></a>自動為檔案貼上標籤 (預覽)
+
+您可以建立檔案原則，並將 [套用分類標籤] 設定為治理動作，將分類標籤自動套用到檔案。
+
+請遵循下列指示建立檔案原則：
+
+1.  建立檔案原則。
+2.  設定原則包含您想要偵測的檔案類型，例如，[存取層級] 不等於 [內部] 以及 [擁有者 OU] 等於您財務小組的所有檔案。 
+3.  在相關應用程式的治理動作下，[套用分類標籤] 然後選取標籤類型。
+
+   ![套用標籤](./media/aip-gov-action.png)
+
+### <a name="control-file-exposure"></a>控制檔案暴露
+
+- 如果這是您貼上 Azure 資訊保護分類標籤的文件︰
+
+   ![Azure 資訊保護範例畫面](./media/azip-screen.png)
 
 - 篩選分類標籤之後，即可在 Cloud App Security 的 [檔案] 頁面中看到此檔案︰
 
-![Cloud App Security 與 Azure 資訊保護的比較](./media/cas-compared-azip.png)
+   ![Cloud App Security 與 Azure 資訊保護的比較](./media/cas-compared-azip.png)
 
-- 您可以取得檔案抽屜中這些檔案和其分類標籤的詳細資訊。
+- 您可以在 [檔案] 頁面中按一下相關的檔案，於檔案抽屜中取得這些檔案及其分類標籤的詳細資訊，並檢查是否有分類標籤：
 
-- 在 [檔案] 頁面中，按一下相關檔案以查看其中是否有任何分類標籤：
-
-![檔案抽屜](./media/azip-file-drawer.png)
-
-- 您可以按一下分類標籤檢視更多資訊，或查看完整分類標籤清單：
- 
-![標籤清單](./media/azip-tags-list.png)
+   ![檔案抽屜](./media/azip-file-drawer.png)
 
 - 接著，您可以在 Cloud App Security 建立檔案原則，以控制不當共用的檔案，以及找到已標示標籤但近期曾修改過的檔案。
 - 此外，您可對與分類檔案相關的活動觸發警示。
 
-![Cloud App Security 中的 Azure 資訊保護標籤](./media/azip-tags-in-cas.png)
+  ![Cloud App Security 中的 Azure 資訊保護標籤](./media/azip-tags-in-cas.png)
+
+- 您也可以建立原則，將分類標籤自動套用至特定的檔案。
+
 
 > [!Note]
 > 當停用檔案上的 Azure Identity Protection 標籤時，停用的標籤在 Cloud App Security 中會顯示為「已停用」。 已刪除的標籤則不會顯示。
 
 
-**原則 #1 - 在 Box 上對外共用機密資料：** 
+**原則範例 - 在 Box 上對外共用機密資料：**
 
 1.  建立檔案原則。
 2.  設定原則的名稱、嚴重性及類別。
@@ -103,7 +149,7 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
 
 ![機密性原則](./media/azip-confidentiality-policy.png) 
 
-**原則 #2 - 受限制的資料最近曾在 SharePoint 的 Finance 資料夾以外之處修改過：**
+**原則範例 - 受限制的資料最近曾在 SharePoint 的 Finance 資料夾以外之處修改過：**
 
 1.  建立檔案原則。
 2.  設定原則的名稱、嚴重性及類別。
@@ -116,34 +162,6 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
 
 深入了解 [Azure 資訊保護](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)及查看 Azure 資訊保護[快速入門教學課程](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)。
 
-
-## <a name="integration-with-azure-rights-management"></a>與 Azure 版權管理整合
-
-您的組織必須具有 Azure 版權管理的授權，並已啟用來在 Cloud App Security 與 Azure RMS 之間進行整合。 這兩個不同的步驟可已在[啟用 Azure 版權管理](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中找到。
-
-Cloud App Security 目前支援 Office 檔案的原生保護 (2016 和更新版本)。 未來版本會提供對 PDF 和影像檔案的原生保護。 
-
-此功能目前適用於儲存於SharePoint Online 和商務用 OneDrive 中的檔案。 未來版本中將支援更多雲端應用程式。
-
-將 Cloud App Security 連線到您的 Office 365 服務之後，您將能夠使用 Cloud App Security RMS 整合功能，可讓您直接在 Cloud App Security 入口網站中使用 RMS 保護文件：
-
-1. 從 [檔案] 頁面上，選取您要保護的檔案，然後按一下檔案資料列結尾的三個點，接著選擇 [保護]。 
-![保護應用程式](./media/protect-app.png)
->[!NOTE]
->Azure 資訊保護所保護的檔案，其大小上限為 50 MB。 
-
-2. 系統會要求您選擇組織的其中一個分類標籤，用以保護檔案，然後按一下 [保護]。 
-![保護分類標籤](./media/protect-template.png)
-3. 當您選擇分類標籤並按一下 [保護]之後，Cloud App Security 會套用分類標籤並保護原始檔案。
-> [!NOTE]
->   建議您在檔案上套用全公司適用的 RMS 分類標籤，讓組織中的所有使用者都可存取這些檔案，包括檔案的原始擁有者。 檔案的擁有者、檔案的共用原則，以及已經有權存取它的使用者清單，不會在檔案變成受保護狀態時變更。
-
-4. 如果使用者想要存取受保護的檔案，他們必須已在其裝置上安裝 RMS 共用應用程式。 如需詳細資訊，請參閱 [Microsoft Rights Management 共用應用程式技術概觀與保護詳細資料](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)。
-
-5. 您可以隨時都能在 [治理記錄] 中，於先前採取之 [保護] 動作的資料列結尾按一下 [還原] 按鈕來還原此動作。 
-
-
-如需 Cloud App Security 與 Azure 資訊保護如何搭配使用的詳細資訊，請參閱[保護資料不受使用者錯誤影響](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)。
 
  
 ## <a name="related-videos"></a>相關影片  

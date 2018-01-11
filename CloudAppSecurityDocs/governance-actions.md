@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>治理連線的應用程式
 治理可讓您即時控制各應用程式上的使用者活動。 對於連線的應用程式，您可以對檔案或活動套用治理動作。
@@ -136,6 +136,8 @@ ms.lasthandoff: 11/27/2017
 |檔案原則與活動原則|檔案, 活動|通知使用者|傳送電子郵件給使用者，通知使用者他們所進行的作業，或他們自己所擁有的檔案違反了原則。 您可以加入自訂通知，讓使用者知道所違反的規定為何。|全部|
 |檔案原則及檔案|檔案|移除編輯者的能力以進行共用|在 Google 雲端硬碟中，檔案的預設編輯者權限也允許共用。 此治理動作會限制此選項，並限制檔案與擁有者共用。|G Suite|
 |檔案原則及檔案|檔案|[置於系統管理隔離中](use-case-admin-quarantine.md)|移除檔案具備的所有權限，並將檔案移至系統管理位置中的隔離資料夾。系統管理員如此即可檢閱該檔案，並加以移除。|Office 365 SharePoint、商務用 OneDrive、Box|
+|檔案原則及檔案|檔案|套用分類標籤|根據原則中設定的條件自動將 Azure 資訊保護分類標籤套用至檔案。|Box, OneDrive, SharePoint|
+|檔案原則及檔案|檔案|移除分類標籤|根據原則中設定的條件自動移除檔案的 Azure 資訊保護分類標籤。|Box, OneDrive, SharePoint|
 |檔案原則、活動原則、警示|應用程式|需要使用者重新登入|您可以要求使用者重新登入所有 Office 365 和 Azure AD 應用程式，以快速有效地修復可疑的使用者活動警示及遭盜用的帳戶。 您可以在 [原則設定] 和 [警示] 頁面中，於 [暫時停止使用者的權限] 選項旁找到新的治理動作。|Office 365、Azure AD|
 |檔案|檔案|從使用者隔離還原|還原被隔離的使用者。|方塊|
 |檔案|檔案|對自己授與讀取權限|授與您自己檔案的讀取權限，讓您可以存取該檔案，並了解它是否有違規。|G Suite|

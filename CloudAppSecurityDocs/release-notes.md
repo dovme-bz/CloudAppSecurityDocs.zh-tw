@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,29 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-114"></a>Cloud App Security 版本 114
+發行日期：2018 年 1 月 7 日
+
+- 從 114 版開始，我們會逐漸推出在 [活動記錄] 和 [探索到的應用程式] 頁面中建立和儲存自訂查詢的功能。 自訂查詢可讓您建立篩選範本，可重複使用進行深入了解調查。 此外，已新增**建議的查詢**以提供立即可用的調查範本，篩選活動及探索到的應用程式。 **建議的查詢**包含識別風險的自訂篩選，例如模擬活動、管理員活動、危險的不相容雲端儲存體應用程式、使用弱式加密的企業應用程式，以及安全性風險。 您可以使用**建議的查詢**作為起點，在您認為合適時修改它們，然後儲存為新的查詢。 如需詳細資訊，請參閱[活動篩選與查詢](activity-filters-queries.md)和[探索到的應用程式篩選與查詢](discovered-app-queries.md)。
+ 
+- 您現在可以前往 [status.cloudappsecurity.com](https://status.cloudappsecurity.com) 檢查目前的 Cloud App Security 服務狀態，或直接在入口網站內按一下 [說明]>[系統狀態]。 
+ 
+
+## <a name="cloud-app-security-release-113"></a>Cloud App Security 版本 113
+發行日期：2017 年 12 月 25 日
+
+-   我們很高興宣佈 Cloud App Security 現在支援與 Azure 資訊保護的深度整合。 此公用預覽功能可讓您掃描與分類雲端應用程式中的檔案，自動套用 Azure 資訊保護標籤的保護。 這項功能適用於 Box、SharePoint 和 OneDrive。 如需詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
+
+-   Cloud Discovery 記錄檔剖析器現可支援一般格式：LEEF、CEF 和 WC3。
+
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security 版本 112
 發行日期：2017 年 12 月 10 日
@@ -63,11 +79,11 @@ ms.lasthandoff: 12/10/2017
   
   如需詳細資訊，請參閱[使用 Proxy 保護應用程式](proxy-intro-aad.md)。
 
--   我們會逐漸推出根據特定服務活動名稱篩選的功能。 這個新的活動類型篩選更精細，可讓您監視特定的應用程式活動，而不是較籠統的活動類型。 例如，以前可能是篩選**執行命令**，現在則可以篩選特定的 EXO Cmdlet。 活動名稱也會出現在 [類型 (依應用程式)]  下的活動下拉式清單中。 這項功能最終會取代活動類型篩選。  
+-   我們會逐漸推出根據特定服務活動名稱篩選的功能。 這個新的活動類型篩選更精細，可讓您監視特定的應用程式活動，而不是較籠統的活動類型。 例如，以前可能是篩選**執行命令**，現在則可以篩選特定的 EXO Cmdlet。 活動名稱也會出現在 [Type (in app)] (類型 (依應用程式)) 下的活動下拉式清單中。 這項功能最終會取代活動類型篩選。  
 
 -   Cloud Discovery 現在支援 Cisco ASA with FirePOWER。 
 
--   已強化 [Discovery 使用者和 IP] 頁面的效能，以改善使用者體驗。
+-   已強化 [Discovery User and IP] (Discovery 使用者和 IP) 頁面的效能，以改善使用者體驗。
 
 
 ## <a name="cloud-app-security-releases-105-106-107-108"></a>Cloud App Security 版本 105、106、107、108
@@ -613,7 +629,7 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 * 當您設定在違反原則時要傳送警示，現已可設定您要接到警示的最低嚴重性等級。 您可以選擇為此使用貴組織的預設值，您可以設定特定的警示設定作為您組織的預設值。
 
 ## <a name="see-also"></a>另請參閱  
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)。   
+[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
