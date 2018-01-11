@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>自動套用 Azure 資訊保護分類標籤  
 
@@ -45,12 +45,12 @@ Cloud App Security 與 Azure 資訊保護的整合可自動將檔案加密，以
 
 ## <a name="prerequisites"></a>必要條件
 
-- 為您的租用戶啟用 Cloud App Security 和 Azure 資訊保護
+- 為您的租用戶[啟用 Cloud App Security 和 Azure 資訊保護](azip-integration.md)。
 - [將 Box 連線至 Cloud App Security](connect-box-to-microsoft-cloud-app-security.md)。
 
 ## <a name="setting-up-data-protection"></a>設定資料保護
 
-現在要設定原則，以尋找 Box 帳戶所儲存之檔案中的信用卡號碼，以及何時找到它們。
+讓我們設定尋找儲存在 Box 帳戶中之檔案信用卡號碼的原則，找到後自動套用 Azure 資訊保護標籤，然後使用該標籤控制所有檔案的情況。
 
 1. 設定會對儲存在 Box 中的任何敏感性資料加密的原則，以開始保護您儲存在 Box 中的資料：
 

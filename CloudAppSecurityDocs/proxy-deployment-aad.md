@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>為 Azure AD 應用程式部署 Proxy
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 11/13/2017
 
         ![裝置識別](./media/device-identification.png)
  
-       上傳憑證之後，您可以根據 [裝置標籤] 等於或不等於 [有效的用戶端憑證] 來建立工作階段原則。
+       上傳憑證之後，您可以根據 [裝置標籤] 等於或不等於 [有效的用戶端憑證] 來建立存取原則和工作階段原則。
  
       > [!NOTE]
       >如果工作階段符合使用有效用戶端憑證篩選條件的原則，則只會向使用者要求憑證。 
@@ -99,7 +99,7 @@ ms.lasthandoff: 11/13/2017
  ![測試使用者代理程式標籤](./media/domain-joined.png)
 
 
-您現在已準備好建立[工作階段原則](session-policy-aad.md)來控制 Proxy 應用程式。
+您現在已準備好建立[存取原則](access-policy-aad.md)和[工作階段原則](session-policy-aad.md)來控制 Proxy 應用程式。
 
 
 

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -130,57 +130,25 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF 格式的 Cloud App Security 警示範例
 
 
-##### <a name="activity-logs"></a>活動記錄
+|適用|CEF 欄位名稱|說明|
+|----|-----|----|
+|活動/警示|啟動| 活動或警示的時間戳記|
+|活動/警示|結束|活動或警示的時間戳記|
+|活動/警示|rt|活動或警示的時間戳記|
+|活動/警示|msg |如入口網站中顯示的活動或警示描述|
+|活動/警示|suser| 活動或警示主體使用者|
+|活動/警示|destinationServiceName| 活動或警示源自的應用程式，例如 Office 365、Sharepoint、Box。|
+|活動/警示|cs<X>標籤|每個標籤具有不同的意義，但標籤本身可說明其意義，例如 targetObjects。|
+|活動/警示|cs<X>|對應到標籤的資訊 (如標籤範例所示的活動或警示目標使用者)。|
+|活動|EVENT_CATEGORY_* |活動的高層級類別|
+|活動|<ACTION> |如入口網站中顯示的活動類型|
+|活動|externalId| 事件識別碼|
+|活動|dvc| 用戶端裝置的 IP|
+|活動|requestClientApplication|用戶端裝置的使用者代理程式|
+|警示|<alert type>|例如 “ALERT_CABINET_EVENT_MATCH_AUDIT”|
+|警示|<name>|符合的原則名稱|
+|警示|externalId|警示識別碼|
 
--   EVENT_CATEGORY_*：活動的高層級類別
-
--   <ACTION>：如入口網站中顯示的活動類型
-
--   externalId：事件識別碼
-
--   start – 活動時間戳記
-
--   end – 活動時間戳記
-
--   rt - 活動時間戳記
-
--   msg：如入口網站中顯示的事件描述
-
--   suser：活動使用者
-
--   destinationServiceName：活動源自的應用程式，例如 Office 365、Sharepoint、Box。
-
--   dvc：用戶端裝置的 IP
-
--   requestClientApplication：用戶端裝置的使用者代理程式
-
--   cs<X>Label：每個標籤具有不同的意義，但標籤本身可說明其意義，例如 targetObjects。
-
--   cs<X>：對應到標籤的資訊 (如標籤範例所示的活動或警示目標使用者)。
-
-##### <a name="alerts"></a>警示
-
--   <alert type> - 例如 “ALERT_CABINET_EVENT_MATCH_AUDIT”
-
--   <name> - 符合的原則名稱
-
--   externalId：警示識別碼
-
--   start：警示時間戳記
-
--   end：警示時間戳記
-
--   rt：警示時間戳記
-
--   msg：如入口網站中顯示的警示描述
-
--   suser：警示主體使用者
-
--   destinationServiceName：警示源自的應用程式，例如 Office 365、Sharepoint、Box
-
--   cs<X>Label：每個標籤具有不同的意義，但標籤本身可說明其意義，例如 targetObjects。
-
--   cs<X>：對應到標籤的資訊 (如標籤範例所示的活動或警示目標使用者)。
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>步驟 3：驗證 SIEM 代理程式正在運作

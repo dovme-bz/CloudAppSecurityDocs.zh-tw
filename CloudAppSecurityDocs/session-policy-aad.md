@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="session-policies"></a>工作階段原則 
 
 > [!NOTE]
 > 這是預覽功能。
 
-Cloud App Security 工作階段原則可以監視即時工作階段，讓您更清楚雲端應用程式，根據您針對使用者工作階段設定的原則，採取不同的動作。 使用工作階段控制可以在允許存取的同時，監視工作階段及/或限制特定的工作階段活動，而不是完全允許或完全封鎖存取。 
+Cloud App Security 工作階段原則可以監視即時工作階段，讓您更清楚雲端應用程式，根據您針對使用者工作階段設定的原則，採取不同的動作。 使用工作階段控制可以在允許存取的同時，監視工作階段及/或限制特定的工作階段活動，而不是[完全允許或完全封鎖存取](access-policy-aad.md)。 
 
 例如，您可以決定針對來自受管理裝置或來自特定位置的工作階段，允許使用者存取應用程式，但限制下載機密檔案或要求某些文件的下載保護。 工作階段原則能讓您設定這些使用者工作階段控制。 
 
@@ -34,6 +34,8 @@ Cloud App Security 工作階段原則可以監視即時工作階段，讓您更�
 - 相關的應用程式應該要[部署 Proxy](proxy-deployment-aad.md)
 - [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Cloud App Security Proxy，如下所述。
 
+> [!NOTE]
+> - 工作階段原則也支援使用識別提供者所設定的應用程式，而不是私人預覽之 Azure AD 所設定的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>建立 Azure AD 條件式存取原則
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 1/4/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b681ef0cd982b79ae096f257f793920607669a2
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: 27e14be8501964ea62d2e5df84d96a9553d30ad6
+ms.sourcegitcommit: f96793b1b6d0a88cf52279fff0ab6bf4bddc5c6b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="network-requirements"></a>網路需求
 
@@ -40,15 +40,19 @@ ms.lasthandoff: 11/22/2017
 
 ## <a name="portal-access"></a>入口網站存取權
 
-如要存取 Cloud App Security 入口網站，請將下列 IP 位址的**輸出連接埠 443**新增到您的防火牆允許清單：  
+如要存取 Cloud App Security 入口網站，請將下列 IP 位址和 DNS 名稱的**輸出連接埠 443**新增到您的防火牆允許清單：  
 
 
 > [!div class="mx-tableFixed"]
-|資料中心|IP 位址|  
-|----|----|
-|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|
-|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+|資料中心|IP 位址|DNS 名稱|
+|----|----|----|
+|美國|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+
+
+>[!NOTE]
+>而不是只能開啟您特定租用戶 URL 的萬用字元 (\*)；例如，根據上文中的螢幕擷取畫面，您可以開啟：mod244533.us.portal.cloudappsecurity.com
 
 ## <a name="siem-agent-connection"></a>SIEM 代理程式連線
 
@@ -58,29 +62,30 @@ ms.lasthandoff: 11/22/2017
 > [!div class="mx-tableFixed"]
 |資料中心|IP 位址|  
 |----|----|
-|US1|13.91.91.243|
+|美國|13.91.91.243|
 |US2|52.184.165.82|
-|EU1|52.174.56.180|
+|EU|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>應用程式連接器存取權及外部 DLP 整合
 
-若要連線到協力廠商應用程式以及與外部 DLP 解決方案整合，請允許 Cloud App Security 連線到這些 IP 位址：
+
+### <a name="app-connector"></a>應用程式連接器
+
+若要讓 Cloud App Security 存取某些協力廠商應用程式，就必須使用這些 IP 位址，讓 Cloud App Security 能夠收集記錄與提供 Cloud App Security 主控台的存取權。 
+
+> [!NOTE]
+>因為 Cloud App Security 會從這些 IP 位址執行治理動作與掃描，所以您會在廠商的活動記錄中看到這些 IP 位址。 
+
+若要連線到協力廠商應用程式與外部 DLP 解決方案整合，請允許 Cloud App Security 從這些 IP 位址進行連線：
 
 
 > [!div class="mx-tableFixed"]
 |資料中心|IP 位址|  
 |----|----|
-|US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+|美國|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-
-
-### <a name="app-connector"></a>應用程式連接器
-若要讓 Cloud App Security 存取某些協力廠商應用程式，就必須使用這些 IP 位址，讓 Cloud App Security 能夠收集記錄與提供 Cloud App Security 主控台的存取權。 
-
-> [!NOTE]
->因為 Cloud App Security 會從這些 IP 位址執行治理動作與掃描，所以您會在廠商的活動記錄中看到這些 IP 位址。 
-  
+|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+ 
 
 ### <a name="dlp-integration"></a>DLP 整合
 
@@ -112,12 +117,12 @@ Cloud App Security 的專用電子郵件 IP 位址為：
    
     |資料中心|URL|
     |----|----|
-    |US1|https://adaprodconsole.blob.core.windows.net/|
+    |美國|https://adaprodconsole.blob.core.windows.net/|
     |US2|https://prod03use2console1.blob.core.windows.net/|
-    |EU1|https://prod02euwconsole1.blob.core.windows.net/|
+    |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在連接埠 443 上初始化針對 Microsoft Azure 資料中心 IP 範圍的輸出流量。
+> 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在連接埠 443 上初始化針對 [Microsoft Azure 資料中心 IP 範圍](https://www.microsoft.com/download/details.aspx?id=41653)的輸出流量。
 
 
 

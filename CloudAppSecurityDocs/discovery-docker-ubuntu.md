@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>在 Ubuntu 上安裝與設定
 
@@ -62,8 +62,9 @@ ms.lasthandoff: 11/29/2017
     d. 比較您的記錄檔和預期的記錄檔格式範例。 如果您的記錄檔格式不符合此範例，您應該將資料來源加入為 [其他]。
 
     e. 將 [接收器類型] 設定為 [FTP]、[FTPS]、[Syslog – UDP]、[Syslog – TCP] 或 [Syslog – TLS]。
-    >[!NOTE]
-    >與安全傳輸通訊協定 (FTPS 及 Syslog – TLS) 整合通常需要額外的設定或防火牆/Proxy。
+    
+     >[!NOTE]
+     >與安全傳輸通訊協定 (FTPS 及 Syslog – TLS) 整合通常需要額外的設定或防火牆/Proxy。
 
     f. 為記錄檔可用來偵測網路流量的每個防火牆和 Proxy 重複這個程序。
 
@@ -73,15 +74,18 @@ ms.lasthandoff: 11/29/2017
 
     b. 為記錄收集器**命名**。
 
-    c. 輸入您要用來部署 Docker 之電腦的 [主機 IP 位址]。
+    c. 輸入您要用來部署 Docker 之電腦的 [主機 IP 位址]。 
+       
+       > [!NOTE]
+       > 如果有 DNS 伺服器 (或對等項目) 能夠解析主機名稱，則機器名稱可以取代主機 IP 位址。
 
     d. 選取您想要連線到收集器的所有 [資料來源]，然後按一下 [更新] 以儲存設定 (參閱接下來的部署步驟)。
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - 單一記錄收集器可以處理多個資料來源。
-    >- 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
+     >  [!NOTE]
+     > - 單一記錄收集器可以處理多個資料來源。
+     > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會需要這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
 
 4.  進一步的部署資訊會出現。 從對話方塊**複製**執行命令。 您可以使用複製至剪貼簿圖示 ![複製至剪貼簿圖示](./media/copy-icon.png)。
 
@@ -91,7 +95,7 @@ ms.lasthandoff: 11/29/2017
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>步驟 2 – 電腦的內部部署
 
-> [!Note]
+> [!NOTE]
 > 下列步驟描述 Ubuntu 中的部署。 其他平台的部署步驟有些不同。
 
 1.  在 Ubuntu 電腦上開啟終端機。
@@ -153,7 +157,10 @@ ms.lasthandoff: 11/29/2017
 ![自訂連續報告](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>另請參閱
-[為 Cloud Discovery Docker 部署進行疑難排解](troubleshoot-docker.md)  
+
+[為 Cloud Discovery Docker 部署進行疑難排解](troubleshoot-docker.md)
+
 [如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security](https://premier.microsoft.com/)
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>將 AWS 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Amazon Web Services 帳戶。  
@@ -36,20 +36,12 @@ ms.lasthandoff: 09/28/2017
 
      ![在 AWS 中建立使用者](./media/aws-create-user.png "AWS 中建立使用者")
 
-5. 在 [權限] 步驟中，選取 [Attach existing policies directly]\(直接附加現有的原則)，然後按一下 [建立原則]。
+5. 按一下 [JSON] 索引標籤：
 
-   ![在 AWS 中附加使用者](./media/aws-attach-user-policy.png "在 AWS 中附加使用者原則")
+     ![AWS JSON](./media/aws-json.png "AWS JSON 索引標籤")
 
-6.  在 [建立原則] 下選取 [Create Your Own Policy]\(建立您自己的原則)。
- 
-    ![在 AWS 中建立您自己的原則](./media/aws-create-own-policy.png "在 AWS 中建立原則")
- 
-7.  在 [檢閱原則] 下提供 [原則名稱]，例如 CloudAppSecurityPolicy。
+6. 將下列指令碼貼入提供的區域：
 
-    ![AWS 中的檢閱原則](./media/aws-review-policy.png "AWS 中的檢閱原則")
-
-8. 然後將下列內容貼入 [Policy Document] \(原則文件\) 欄位，然後按一下 [Create policy] \(建立原則\)：
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ ms.lasthandoff: 09/28/2017
      }  
   
     ```  
-  
+
+     ![AWS 程式碼](./media/aws-code.png "AWS 程式碼")
+    
+6. 按一下 [檢閱原則]。
+
+7. 提供**名稱**並按一下 [建立原則]。
+
+     ![AWS 命名原則](./media/aws-create-policy.png "AWS 建立原則")
+
 9. 回到 [Add user] \(新增使用者\) 畫面，視需要重新整理清單，並選取您剛才建立的使用者，然後按一下 [Next: Review] \(下一步: 檢閱\)。
 
    ![在 AWS 中檢閱使用者原則](./media/aws-review-user.png "檢閱 AWS 中的使用者")
