@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
+ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
@@ -51,7 +51,7 @@ Cloud App Security 目前無法掃描或變更標示為不受 Cloud App Security
 ## <a name="how-it-works"></a>運作方式
 您可能熟悉 [Azure Information Protection](https://docs.microsoft.com/information-protection/) 中的檔案分類標籤。 您可以在 Cloud App Security 中查看 Azure Information Protection 分類標記。 整合 Cloud App Security 與 Azure Information Protection 之後，Cloud App Security 就會如下所述掃描檔案：
 1. Cloud App Security 會擷取您租用戶所使用的所有分類標籤清單。 每隔一小時會執行一次，使清單維持最新狀態。
-2. Cloud App Security 接著會掃描檔案是否有分類標籤，如下所示︰a. 如果您已啟用自動掃描 (請參閱後文)，則會將所有新的或修改過的檔案新增至掃描佇列。
+2. Cloud App Security 接著會掃描檔案是否有分類標籤，如下所示︰a. 若您啟用自動掃描 (如下方所示)，所有新增或已修改的檔案就都會加到掃描佇列中，而系統會掃描、分類及保護所有現有檔案及存放庫。
     b. 如果您設定檔案原則 (請參閱後文) 以搜尋分類標籤，則會將這些檔案新增至分類標籤的掃描佇列。
 3. 如上所述，這些掃描是針對 Cloud App Security 執行初始掃描時所發現的分類標籤，以查看租用戶所使用的分類標籤。 外部標籤 (租用戶外部人員所設定的分類標籤) 會新增至分類標籤清單。 若不想掃描，請選取 [Only scan files for Azure Information Protection classification labels from this tenant] (只掃描此租用戶的 Azure 資訊保護分類標籤) 核取方塊 (請參閱下文)。
 4. 在 Cloud App Security 上啟用 Azure Information Protection 之後，也會掃描所有已新增至 Office 365 的新檔案是否有分類標籤。
