@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a87855be812c7f4228cb78eda2a023faad436011
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 4e0732cce649b7d6c2767325e3c232c36b523fec
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-apps"></a>連線應用程式 
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
@@ -82,7 +82,7 @@ App 連線程式流程如下所示︰
 |**隔離**|✔|✔|不適用|敬請期待|||敬請期待||  
 |**檢視應用程式權限**|✔|提供者不支援|不適用|✔||✔|提供者不支援||  
 |**撤銷應用程式權限**|✔||不適用|✔||✔|不適用||  
-  
+|**套用 Azure 資訊保護標籤**|✔|✔|||||||  
   
 ## <a name="prerequisites"></a>必要條件  
 
