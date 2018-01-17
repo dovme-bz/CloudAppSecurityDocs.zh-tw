@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -25,7 +25,7 @@ ms.lasthandoff: 12/31/2017
   
 ## <a name="configure-g-suite"></a>設定 G Suite  
   
-1.  以 G Suite 進階管理員的身分登入 [https://cloud.google.com/console/project](https://cloud.google.com/console/project)。  
+1.  以 G Suite 進階管理員的身分登入 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>。  
   
 2.  按一下 [建立專案] 開始新的專案。  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 12/31/2017
   
     -   **簡短描述和完整描述** (選擇性)：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
-    -   Google 要求您至少上傳一個應用程式圖示。 移至 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) 以下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後，在**應用程式圖示**下拖放 128x128 和 32x32 影像。  
+    -   Google 要求您至少上傳一個應用程式圖示。 移至 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) 以下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後在**應用程式圖示**下，按一下 128x128 圖片旁的 [選取]，並將其拖曳到快顯畫面。 按一下 32x32 圖片旁的 [選取]，並將其拖曳到快顯畫面。  
   
     -   向下捲動到 [Drive Integration] (磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
   
@@ -184,7 +184,8 @@ ms.lasthandoff: 12/31/2017
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   當 G Suite 要求可見度時，請選取 [我的網域] (非公用)。 
     -   按一下 [儲存變更]。  
   
 22. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 
