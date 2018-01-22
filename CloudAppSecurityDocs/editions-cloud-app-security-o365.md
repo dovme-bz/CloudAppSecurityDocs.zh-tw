@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc4a82602aabb8b493edefd1cb1456b81fff9d13
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security 與 Office 365 Cloud App Security 之間的差異為何？
 
@@ -38,7 +38,7 @@ Office 365 Cloud App Security 是 Microsoft Cloud App Security 的子集，能�
 |----|----|----|----|
 |雲端探索|探索到的應用程式 |15,000 多種雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
 ||探索分析的部署|手動與自動上傳記錄檔|手動上傳記錄檔|
-||記錄匿名保護使用者隱私|是|否|
+||記錄匿名保護使用者隱私|是||
 ||存取完整的雲端應用程式目錄|是||
 ||雲端應用程式風險評估|是||
 ||依照應用程式、使用者、IP 位址的雲端使用情況分析|是||
@@ -60,6 +60,6 @@ Office 365 Cloud App Security 是 Microsoft Cloud App Security 的子集，能�
 ## <a name="see-also"></a>另請參閱  
 
 在[開始使用 Cloud App Security](getting-started-with-cloud-app-security.md) 中了解基本概念。    
-如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   
 

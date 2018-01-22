@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 306d2d2a5dde99efb99d1e2e04e03ed1abfb71bb
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 83533fcf57da6fa65e0c1efda15a3d3440c290e6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>使用錯誤訊息為 App 連線程式疑難排解
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 
 
 > [!div class="mx-tableFixed"]
-|錯誤訊息|相關應用程式|描述|解決方法|
+|錯誤訊息|相關應用程式|說明|解決方法|
 |----|----|----|------------|
 |HttpRequestFailure: 伺服器傳回: 400 錯誤的要求: {"error":{"code":"AF20012","message":"系統中不正確地設定所指定的租用戶識別碼 (這裡是 Tenant_ID)。"|Office 365 |找不到指派的 Office 365 授權。 |將至少一個 Office 365 授權指派給您的租用戶。| 
 |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"重新整理權杖無效"}|方塊|Box 重新整理權杖無效|再次遵循將 Box 連線至 Cloud App Security 的程序。|
@@ -57,7 +57,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

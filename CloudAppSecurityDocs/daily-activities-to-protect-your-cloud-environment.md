@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8bfd63e9d2491025158526fa41fb2f5240df2a28
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="working-with-the-dashboard"></a>使用儀表板
 啟動並執行 Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
@@ -40,5 +40,5 @@ Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
 ## <a name="next-steps"></a>接下來的步驟  
 如需如何調查警示的詳細資訊，請參閱[調查](investigate.md)。  
-如需技術支援，請前往 [Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  

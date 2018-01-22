@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
-ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
+ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="what-is-cloud-app-security"></a>什麼是 Cloud App Security
 
@@ -95,5 +95,5 @@ Cloud App Security 的 Proxy 提供您所需的工具，讓您取得在雲端環
 ## <a name="see-also"></a>另請參閱  
 
 在[開始使用 Cloud App Security](getting-started-with-cloud-app-security.md) 中了解基本概念。    
-如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   

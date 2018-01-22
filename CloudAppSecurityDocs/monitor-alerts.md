@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d2d677ef91a22a4489c4709a84742410d991899
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: d160d0dd0ac1103fb84788c632f3569c5109a1a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="alerts"></a>警示
 檢視警示：
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="built-in-alerts"></a>內建警示
 
-|警示名稱|AlertID|描述|
+|警示名稱|AlertID|說明|
 |----|----|----|
 |新增位置|ALERT_GEOLOCATION_NEW_COUNTRY|在掃描開始 (最多 6 個月) 後偵測到新位置。 這只會對整個組織的每個國家 (地區) 顯示一次。 |
 |新增管理使用者|ALERT_ADMIN_USER|偵測到特定應用程式的新管理員 – 這可以是某個應用程式中之管理員但現在是另一個應用程式中之管理員的人員。 此警示與特定管理員類型相關，因此會在每次變更管理員類型時顯示。 如果使用者遺失後再次取得管理員權限，則會顯示此警示。|
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="custom-alerts"></a>自訂警示
 
-|警示名稱|AlertID|描述|
+|警示名稱|AlertID|說明|
 |----|----|----|
 |可疑活動警示|ALERT_SUSPICIOUS_ACTIVITY|可疑活動會根據異常活動的可疑程度進行評分 (是否包含非使用中帳戶？ 它是否來自新的位置？)這些準則都會一起計算，以根據下列風險因素來提供風險分數︰ <br>使用者是系統管理員 <br>純遠端使用者<br>匿名 Proxy<br> 整個工作階段讓登入失敗<br>許多失敗登入<br>新增 (管理員)<br>IP/ISP/國家 (地區)/使用者的使用者代理程式/租用戶<br> IP/ISP/國家 (地區)/僅供 (管理員) 使用者使用的使用者代理程式<br>第一個 (管理員) 使用者活動執行一段時間<br>第一次執行這個特定管理活動一段時間<br>這個特定管理活動不常見/之前未曾執行過<br>過去，此 IP 只會讓登入失敗<br>不可能的旅遊|
 |可疑的雲端使用警示|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery 異常偵測會檢查一般行為模式，並尋找以異常方式使用的使用者或應用程式。 |
@@ -60,7 +60,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
