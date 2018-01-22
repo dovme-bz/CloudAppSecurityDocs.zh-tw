@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 386f9d87ea477b75af03bc03d44f2a36657e2b6d
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-the-siem-agent"></a>為 SIEM 代理程式進行疑難排解
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 
 如果您在執行代理程式時於命令提示字元中看到下列其中一個錯誤，請使用下列步驟來補救此問題︰
 
-|錯誤|描述|解決方法|
+|錯誤|說明|解決方法|
 |----|----|----|
 |啟動程序期間的一般錯誤|代理程式啟動程序期間的意外錯誤。|請連絡支援部門。|
 |太多嚴重錯誤|連接主控台時發生太多嚴重錯誤。 正在關閉。|請連絡支援部門。|
@@ -35,7 +35,7 @@ ms.lasthandoff: 11/06/2017
 
 建立代理程式之後，如果您在 Cloud App Security 入口網站的 [SIEM agent]\(SIEM 代理程式) 頁面中看到下列其中一個**代理程式通知**，請使用下列步驟來補救此問題︰
 
-|錯誤|描述|解決方法|
+|錯誤|說明|解決方法|
 |----|----|----|
 |**內部錯誤**|SIEM 代理程式發生未知錯誤。|請連絡支援部門。|
 |**資料伺服器傳送錯誤**|如果您透過 TCP 使用 Syslog 伺服器，則會收到此錯誤。 SIEM 代理程式無法連接至 Syslog 伺服器。  如果您收到這個錯誤，則代理程式會在修正錯誤之前停止提取新的活動，因此請務必遵循補救步驟，直到錯誤不再出現為止。|1.確定您正確地定義 Syslog 伺服器︰在 Cloud App Security UI 中，編輯您的 SIEM 代理程式 (如上所述)，並確定您所撰寫的伺服器名稱正確，且設定正確的連接埠。 </br>2.檢查 Syslog 伺服器連線︰確定防火牆未封鎖通訊。| 
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.app: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b95533e39ce21693f46d431fcc70d82a2d423d1
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 56b29da76a14e95b2ec3b31083013befb9ce8f21
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="built-in-report-reference"></a>內建報告參考資料
 
@@ -28,7 +28,7 @@ CAS 提供現成的內建報告完整清單，可讓您汲取及監視人員使�
   
 ## <a name="built-in-report-list"></a>內建報告清單  
   
-|報告類型|內建報告名稱|描述|  
+|報告類型|內建報告名稱|說明|  
 |-----------------|---------------------------|-----------------|  
 |安全性|活動 (依位置)|此報告會列出您雲端應用程式之活動的起始國家/地區，以及代表每個國家/地區活動量的不同參數，例如事件數目、使用者數目等。請使用它來取得使用者的地理分布概觀。|  
 |安全性|瀏覽器利用|瀏覽器攻擊是最常見的攻擊方式。 廠商投資巨量的資源來保護瀏覽軟體，並建立有效的更新機制將更新傳播至端點。 若使用更新已到期很久的已過時瀏覽器，會使得它成為威脅行動者以可用的入侵套件來進行攻擊的輕鬆目標。 這份報告列出過去 7 天內使用者用來存取您雲端應用程式的過時瀏覽器。 報表也會讓您知道是否為傀儡程式執行過時的瀏覽器利用。|  
@@ -42,7 +42,7 @@ CAS 提供現成的內建報告完整清單，可讓您汲取及監視人員使�
   
 ## <a name="see-also"></a>另請參閱  
 [控制](control.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

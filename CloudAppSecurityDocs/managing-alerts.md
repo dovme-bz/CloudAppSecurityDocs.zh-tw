@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 ## <a name="manage-your-alerts"></a>管理警示  
 警示是更深入了解雲端環境的切入點。 建議您根據您的發現建立新原則。 例如，您可能會看到系統管理員從格陵蘭登入，而您組織中從未有人曾從格陵蘭登入。 您可以建立一項原則，在系統管理員帳戶用來從該位置登入時，自動加以暫時停權。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/06/2017
 
 下表提供會觸發的警示類型清單，及建議的解決方法。  
 
-|警示類型|描述|建議的解決方法|  
+|警示類型|說明|建議的解決方法|  
 |----------------|-----------------|----------------------------|  
 |活動原則違規|這類警示是您建立的原則結果。|若要大量使用這類警示，建議您在原則中心內使用以減少警示。<br /><br /> 新增更多篩選及更細微的控制來微調原則，以排除雜訊太多的實體。<br /><br /> 如果原則精確且應該有警示，而它又是您想要立即停止的違規，請考慮在原則中新增自動補救。|  
 |檔案原則違規|這類警示是您建立的原則結果。| 若要大量使用這類警示，建議您在原則中心內使用以減少警示。<br /><br /> 新增更多篩選及更細微的控制來微調原則，以排除雜訊太多的實體。<br /><br /> 如果原則精確且應該有警示，而它又是您想要立即停止的違規，請考慮在原則中新增自動補救。|  
@@ -82,5 +82,5 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="next-steps"></a>接下來的步驟  
 如需如何調查警示的詳細資訊，請參閱[調查](investigate.md)。  
-如需技術支援，請前往 [Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  

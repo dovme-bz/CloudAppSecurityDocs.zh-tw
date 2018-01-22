@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e6b47d61464e2a8b7fb95d8a7fdad9873d09d0b
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e710418938af85a8a16a866dcbae43ac612f090a
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="accounts"></a>帳戶
 Cloud App Security 可讓您從連線應用程式看見帳戶。 當您使用 App 連線程式將 Cloud App Security 連線至應用程式時，Cloud App Security 會讀取與連線應用程式建立關聯的帳戶資訊。 [帳戶] 頁面可讓您調查這些帳戶、權限、為其所屬成員的群組、其別名以及所用的應用程式。 此外，當 Cloud App Security 在其中一個連線應用程式 (例如活動或檔案共用) 中偵測到先前未看過的新帳戶時，會將此帳戶新增至該應用程式的帳戶清單。 這可讓您檢視與您的雲端應用程式互動之外部使用者的活動。
@@ -61,7 +61,7 @@ Cloud App Security 可讓您從連線應用程式看見帳戶。 當您使用 Ap
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

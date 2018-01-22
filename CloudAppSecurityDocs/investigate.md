@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="investigate"></a>調查
 當 Cloud App Security 在雲端環境上執行之後，您需要學習及調查如何使用 Cloud App Security 的工具深入了解雲端環境中發生的一切。 然後根據特定的環境及其使用狀況，您可以找出必要需求，保護貴組織免於風險威脅。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/06/2017
 ## <a name="dashboards"></a>儀表板  
 下列儀表板可協助您調查雲端環境中的應用程式︰  
 
-|儀表板|描述|  
+|儀表板|說明|  
 |---------------|-----------------|  
 |主要儀表板|雲端狀態 (使用者、檔案、活動) 及必要動作 (警示、活動違規及內容違規) 概觀|  
 |應用程式儀表板：整體|每個位置的應用程式使用情況、每數個使用者的使用量圖形概觀|  
@@ -154,5 +154,5 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 如需了解如何控制貴組織的雲端應用程式，請參閱[控制項](control.md)。   
-如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。  
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。  

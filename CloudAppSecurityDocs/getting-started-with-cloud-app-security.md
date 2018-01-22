@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
 Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
@@ -161,5 +161,5 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 ## <a name="see-also"></a>另請參閱
 
 設定原則[使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)。    
-如需技術支援，請前往 [Cloud App Security 的輔助支援](http://support.microsoft.com/oas/default.aspx?prid=16031)頁面。   
+
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   

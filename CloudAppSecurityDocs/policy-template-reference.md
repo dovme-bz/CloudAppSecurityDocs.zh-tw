@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d9ffe832652885548ddeb49fd782d2a104c7523f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="policy-templates"></a>原則範本
 
 以下是 Cloud App Security 中所有原則範本的清單。 建議您盡可能以現有的範本為基礎開始建立原則，以方便使用。
 
-|風險類別|範本名稱|描述|
+|風險類別|範本名稱|說明|
 |-----|----|----|
 |雲端探索|找到的使用者有異常行為|在找到的使用者及應用程式中偵測到異常行為時發出警示，例如：與其他使用者相較之下上傳了大量資料、與使用者歷程記錄相較之下有大型使用者交易。|
 |雲端探索|找到的 IP 位址有異常行為|在找到的 IP 位址及應用程式中偵測到異常行為時發出警示，例如：與其他 IP 位址相較之下上傳了大量資料、與 IP 位址歷程記錄相較之下有大型應用程式交易。|
@@ -62,6 +62,6 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
