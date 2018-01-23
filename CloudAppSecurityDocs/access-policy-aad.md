@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/20/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b91c48262dbf85b133433b9d16615cab934dcddd
-ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
+ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="access-policies"></a>存取原則 
 
@@ -89,8 +89,8 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
  
 ## <a name="see-also"></a>另請參閱  
-[使用 Azure AD Proxy 功能封鎖未受管理裝置的下載作業](use-case-proxy-block-session-aad.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面](http://support.microsoft.com/oas/default.aspx?prid=16031)  \(英文\)。  
+[使用 Azure AD Proxy 功能封鎖非受控裝置的下載作業](use-case-proxy-block-session-aad.md)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75e0c1cc4d91cfcbb8631170a0adfbde9349dee
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 6d6daa74269057595a34db7813d0cd6ba5eaf947
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="manage-app-permissions"></a>管理應用程式權限
 許多可能由組織中的商務使用者安裝的第三方生產力應用程式會需要權限，才能存取使用者資訊及資料，以及以其他雲端應用程式 (例如 Office 365、G Suite 和 Salesforce) 使用者的身分登入。  當使用者安裝這些應用程式時，通常不會仔細檢閱提示中的詳細資料 (包括授權給應用程式的資料) 就按下 [接受]。  因為 IT 沒有足夠深入解析資訊可以對應用程式的安全性風險，以及應用程式所提供的生產力優點來進行權衡。 因為接受第三方應用程式權限對您的組織而言為潛在的安全性風險，所以監視您使用者所授與的應用程式權限，讓您可以執行必要的監視及控制，從而保護您的使用者與您的應用程式。 Cloud App Security 應用程式權限讓您可以查看哪些使用者安裝的應用程式具有 Office 365 資料的存取權、G Suite 資料和 Salesforce 資料，應用程式有哪些權限，和哪些使用者授權這些應用程式存取 Office 365、G Suite 和 Salesforce 帳戶。 應用程式權限可讓您決定您的使用者可以或不可以存取哪些應用程式。
@@ -63,7 +63,7 @@ ms.lasthandoff: 11/06/2017
 > 建議您讓應用程式的使用者其應用程式將被禁止，無法再行使用。
 
 3. 若要核准應用程式，可按一下表格中應用程式列結尾的核准圖示。 <br></br>
- ![核准圖示](./media/approve-app.png) <br></br>
+ ![核准應用程式](./media/approve-app.png) <br></br>
 圖示會轉變成綠色，表示應用程式已獲核准，可供您的所有連線應用程式使用者使用。
 > [!Note]
 > 將應用程式標記為已核准對使用者沒有影響。 其目的只在讓您可以圖像方式標記您核准的應用程式，與您尚未審核的應用程式加以區分。
@@ -91,7 +91,7 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   
