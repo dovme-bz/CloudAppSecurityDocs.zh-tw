@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-115"></a>Cloud App Security 115 版
+發行日期：2018 年 1 月 21 日
+
+-   此版本提供在檔案原則中選取特定資料夾時的增強體驗。 您現在可以輕鬆地檢視並選取多個要包含在原則中的資料夾。 
+-   在 [探索到的應用程式] 頁面中： 
+   - 大量標記功能可讓您套用自訂標籤 (除了獲批准的標籤和待批准的標籤)。 
+   - 當您**產生 IP 位址報表**時，匯出的報表現在會包含流量是否來自獲批准或待批准應用程式的相關資訊。 
+-   您現在可以在入口網站中的 [連線到應用程式] 頁面，直接向 Microsoft Cloud App Security 小組要求新的 API App 連線程式。 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security 版本 114
 發行日期：2018 年 1 月 7 日
@@ -34,7 +44,7 @@ ms.lasthandoff: 01/07/2018
 
 -   我們很高興宣佈 Cloud App Security 現在支援與 Azure 資訊保護的深度整合。 此公用預覽功能可讓您掃描與分類雲端應用程式中的檔案，自動套用 Azure 資訊保護標籤的保護。 這項功能適用於 Box、SharePoint 和 OneDrive。 如需詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
 
--   Cloud Discovery 記錄檔剖析器現可支援一般格式：LEEF、CEF 和 WC3。
+-   Cloud Discovery 記錄檔剖析器現可支援一般格式：LEEF、CEF 和 W3C。
 
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security 版本 112
@@ -629,7 +639,7 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 * 當您設定在違反原則時要傳送警示，現已可設定您要接到警示的最低嚴重性等級。 您可以選擇為此使用貴組織的預設值，您可以設定特定的警示設定作為您組織的預設值。
 
 ## <a name="see-also"></a>另請參閱  
-[如需技術支援，請前往 Cloud App Security 的輔助支援頁面。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
@@ -254,7 +254,9 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
 
 ## 附錄 B：Symantec 部署指南<a name="symantec"></a>
 
-支援的 Symantec DLP 版本為 11 及更新版本。 如先前所述，您應該在與 Cloud App Security 租用戶所在相同的 Azure 資料中心，部署您的偵測伺服器。 偵測伺服器會透過專用的 IPSec 通道，同步處理強制伺服器。 
+支援的 Symantec DLP 版本為 11 及更新版本。 
+
+如先前所述，您應該在與 Cloud App Security 租用戶所在相同的 Azure 資料中心，部署您的偵測伺服器。 偵測伺服器會透過專用的 IPSec 通道，同步處理強制伺服器。 
  
 ### <a name="detection-server-installation"></a>偵測伺服器安裝 
 Cloud App Security 所使用的偵測伺服器是一個標準的 Network Prevent for Web 伺服器。 有幾個應該變更的組態選項：
@@ -279,7 +281,10 @@ Cloud App Security 所使用的偵測伺服器是一個標準的 Network Prevent
 
 
 ### <a name="policy-configuration"></a>原則組態
-Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則類型，因此不需要變更現有的規則。 不過，有一項組態變更必須套用到所有現有原則和新原則，才能完整的整合。 這項變更在所有原則以外新增的特定回應規則。 對您的 Vontu 新增組態變更：
+Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則類型，因此不需要變更現有的規則。 不過，有一項組態變更必須套用到所有現有原則和新原則，才能完整的整合。 這項變更在所有原則以外新增的特定回應規則。 
+
+對您的 Vontu 新增組態變更：
+
 1.  移至 [Manage] \(管理\)  >  [Policies] \(原則\)  >  [Response Rules] \(回應規則\)，按一下 [Add Response Rule] \(新增回應規則\)。
     
     ![新增回應規則](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
     ![封鎖 http](./media/icap-block-http.png)
 
 對任何現有的原則新增您建立的規則：
+
 1. 在每個原則中，切換至 [Response] \(回應\) 索引標籤。
-2. 從 [Response rule] \(回應規則\) 下拉式清單，選取您在上面建立的封鎖回應規則。
+
+2. 從 [Response rule] \(回應規則\) 下拉式清單，選取您在上面所建立的封鎖回應規則。
+
 3. 儲存原則。
    
     ![停用試用模式](./media/icap-add-policy.png)
 
 此規則必須新增至所有現有的原則。
 
+>[!NOTE]
+> 如果您使用 Symantec vontu 掃描 Dropbox 的檔案，CAS 會自動顯示檔案來自下列 URL：http://misc/filename。此預留位置 URL 實際上不會連到任何地方，只是用於記錄之用。
 
 
+## <a name="see-also"></a>另請參閱  
+[使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
+
+[Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
