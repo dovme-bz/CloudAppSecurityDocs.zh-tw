@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8288ce33b1640b32d6524f2e28462ed23be88f2e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 14e17de471cbd54106f7785daecca98ef1e09d38
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="troubleshooting-cloud-app-security-status"></a>針對 Cloud App Security 狀態行疑難排解
 
-您現在可以前往 [status.cloudappsecurity.com](http://www.status.cloudappsecurity.com) 檢查目前的 Cloud App Security 服務狀態，或直接在入口網站內按一下 [說明]>[系統狀態]。 
+您現在可以前往 [status.cloudappsecurity.com](https://status.cloudappsecurity.com) 檢查目前的 Cloud App Security 服務狀態，或直接在入口網站內按一下 [說明]>[系統狀態]。 
 
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   

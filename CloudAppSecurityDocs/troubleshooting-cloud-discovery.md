@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>為 Cloud Discovery 進行疑難排解
 ## <a name="log-parsing-errors"></a>記錄剖析錯誤
@@ -28,7 +28,6 @@ ms.lasthandoff: 01/16/2018
 |錯誤|描述|解決方法|
 |----|----|----|
 |不支援的檔案類型|上傳的檔案不是有效的記錄檔 (例如影像檔)。|上傳直接從防火牆或 Proxy 匯出的 **text**、**zip** 或 **gzip** 檔案。|
-|內部錯誤|偵測到內部資源失敗|按一下 [重試] 重新執行工作。|
 |記錄格式不相符|上傳的記錄格式不符合此資料來源的預期記錄格式。|1.確認記錄未損毀。 <br /> 2.比較並比對記錄檔與上載頁面中所顯示的範例格式。|
 |交易超過 90 天|所有交易都超過 90 天，因此將予以忽略。|匯出具有最新事件的新記錄檔，並重新進行上傳。|
 |沒有可分類雲端應用程式的交易|在記錄中找不到任何可辨識雲端應用程式的交易。|確認記錄包含輸出流量資訊。|
