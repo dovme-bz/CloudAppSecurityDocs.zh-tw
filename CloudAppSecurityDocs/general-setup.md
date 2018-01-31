@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5f9868fab58c1809b80aaa6b06a797c4e70e2e64
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
-# <a name="basic-set-up"></a>基本設定
+# <a name="basic-setup"></a>基本設定
 下列程序會指示您自訂 Cloud App Security 入口網站。
 
 ## <a name="prerequisites"></a>必要條件 
-若要存取入口網站，請務必將下列 IP 位址新增至防火牆白名單，以提供 Cloud App Security 入口網站的存取權：  
+若要存取入口網站，請務必將下列 IP 位址新增至防火牆的白名單，以提供 Cloud App Security 入口網站的存取權：  
   
 - 104.42.231.28  
   
@@ -36,28 +36,24 @@ ms.lasthandoff: 01/16/2018
      
      ![一般設定](./media/general-settings.png "一般設定")  
   
-3.  請務必在 [組織詳細資料] 下，提供您組織的 [組織顯示名稱]。 它將會顯示在系統傳送的電子郵件和網頁上。  
+3.  請務必在 [組織詳細資料] 下，提供您組織的 [組織顯示名稱]。 其會顯示在系統傳送的電子郵件和網頁上。  
   
 4. 提供**環境名稱** (租用戶)。 如果您管理多個租用戶，這點尤其重要。  
   
-4. 您也可以提供**標誌**，它將會顯示在從系統傳送的電子郵件通知和網頁上。 標誌應該是大小上限為 150 x 50 像素且為透明背景的 png 檔案。  
+4. 您也可以提供**標誌**，其會顯示在系統傳送的電子郵件通知和網頁上。 標誌應該是大小上限為 150 x 50 像素且為透明背景的 png 檔案。  
 
 4.  請務必新增 [受管理的網域] 清單。 這是很重要的步驟，因為 Cloud App Security 使用受管理的網域來判斷哪些使用者是內部使用者、哪些是外部使用者，以及檔案應該和不應共用的位置。 這用於報告及警示。  
 > [!NOTE] 
-> - 網域中未設定為內部的使用者將會標示為外部，而且不會掃描活動或檔案。
+> - 網域中未設定為內部的使用者會標示為外部，而且不會掃描其活動或檔案。
 
 5. 如果要與 Azure Information Protection 整合相整合，請參閱[Azure Information Protection 整合](azip-integration.md)以取得相關資訊。 
   
   
-6.  如果您在任何時間點想要備份入口網站設定，此畫面可讓您執行此作業。 按一下 [匯出入口網站設定] 來建立所有入口網站設定的 JSON 檔案，包括原則規則、使用者群組和 IP 位址範圍。  
+6.  如果您在任何時間點想要備份入口網站設定，此畫面可讓您執行此作業。 按一下 [匯出入口網站設定] 可建立所有入口網站設定的 JSON 檔案，包括原則規則、使用者群組和 IP 位址範圍。  
   
-       
-
-
-
+   
 > [!NOTE] 
-> 若您使用 ExpressRoute，Cloud App Security 會在 Azure 中部署並與 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) 完全整合。 與 Cloud App Security 應用程式的所有互動和傳送至 Cloud App Security 的流量，包括上傳探索記錄檔，都會透過 ExpressRoute **公用對等互連**路由傳送以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。  
-    如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
+> 若您使用 ExpressRoute，Cloud App Security 會在 Azure 中部署並與 [ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) 完全整合。 與 Cloud App Security 應用程式進行的所有互動及傳送至 Cloud App Security 的流量 (包括上傳探索記錄)，都會透過 ExpressRoute **公用對等互連**路由傳送，以改善延遲、效能和安全性。 客戶端不需要任何組態步驟。 <br></br>如需公用對等互連的詳細資訊，請參閱 [ExpressRoute 線路和路由網域](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)。  
     
 ## <a name="see-also"></a>另請參閱  
 [設定 Cloud Discovery](set-up-cloud-discovery.md)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>將 ServiceNow 連接至 Microsoft Cloud App Security
 
@@ -44,13 +44,13 @@ ms.lasthandoff: 01/16/2018
 
    ![ServiceNow OAuth 類型](./media/servicenow-oauth-app-type.png)
 
-5. 在 [Application Registries New record]\(應用程式登錄新增記錄) 填入下列內容︰
+5. 在 [Application Registry 新增記錄] 下填入下列欄位︰
     
     - [名稱] 欄位中請填入新的 OAuth 設定檔名稱，例如 CloudAppSecurity。 
     
-    - [用戶端識別碼] 會自動產生。 您需要複製此識別碼，並將它貼入 Cloud App Security 以完成連線。
+    - [用戶端識別碼] 會自動產生。 您需要複製此識別碼，並將其貼入 Cloud App Security 以完成連線。
     
-    - 在 [Client Secret]\(用戶端密碼) 欄位中輸入字串。 如果空白，就會自動產生隨機密碼。 複製並儲存以供稍後使用。 
+    - 在 [Client Secret]\(用戶端密碼) 欄位中輸入字串。 如果保留空白，則會自動產生隨機祕密。 複製並儲存以供稍後使用。 
     
     - 將 [Access Token Lifespan]\(存取權杖使用時間) 增加到至少 3,600。
     
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/16/2018
   
      ![連線 ServiceNow](./media/connect-servicenow.png "連線 ServiceNow")  
   
-8.  在快顯中，於適當的方塊中新增您的 ServiceNow 使用者識別碼、密碼、執行個體 URL 及用戶端密碼。 若要尋找您的 ServiceNow 使用者識別碼，請在 ServiceNow 入口網站中，移至 [使用者] 並在表格中找出您的名稱。名稱會顯示在使用者識別碼旁邊。
+8.  在快顯中，於適當的方塊中新增您的 ServiceNow 使用者識別碼、密碼、執行個體 URL、用戶端識別碼及用戶端密碼。 若要尋找您的 ServiceNow 使用者識別碼，請在 ServiceNow 入口網站中，移至 [使用者] 並在資料表中找出您的名稱。名稱會顯示在使用者識別碼旁邊。
 
     ![ServiceNow 使用者識別碼](./media/servicenow-userid.png)
   
@@ -104,7 +104,7 @@ ms.lasthandoff: 01/16/2018
 
 8.  按一下 [測試 API] 確定連線成功。   
   
-   測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。   
+   測試可能需要幾分鐘的時間。 收到成功通知之後，按一下 [關閉]。    
  連接 ServiceNow 之後，您會收到連線前 60 天的事件。 
 
 

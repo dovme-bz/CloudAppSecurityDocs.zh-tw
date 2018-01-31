@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af2fc62de63eba4ca1f275be5cf4f8717047c063
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
+ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure 資訊保護整合
 
@@ -91,7 +91,7 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
  ![保護應用程式](./media/protect-app.png)
   
   >[!NOTE]
-  >Azure 資訊保護所保護的檔案，其大小上限為 50 MB。 
+  >當 Cloud App Security 使用 Azure 資訊保護來保護檔案時，支援的檔案大小上限為 50 MB。 
 
 2. 系統會要求您選擇組織分類標籤的其中之一，套用至檔案，並按一下 [套用]。 
 ![保護分類標籤](./media/protect-template.png)

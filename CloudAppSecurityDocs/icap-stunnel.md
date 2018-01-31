@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
@@ -31,11 +31,11 @@ Cloud App Security 可以與現有 DLP 解決方案整合，以將這些控制�
 >此功能處於公開預覽狀態。
 
 ## <a name="architecture"></a>架構
-Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設定決定是否要使用內部 DLP 引擎或外部 DLP 來掃描檔案。 如果套用外部 DLP 掃描，則會透過安全通道將檔案傳送至客戶環境，其中，會將檔案轉送至 DLP 結果的 ICAP 設備：允許/封鎖。 回應會透過 Stunnel 傳送回 Cloud App Security，而原則使用 Stunnel 來決定後續動作，例如通知、隔離和共用控制項。
+Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設定決定是否要使用內部 DLP 引擎或外部 DLP 來掃描檔案。 如果套用外部 DLP 掃描，則會透過安全通道將檔案傳送至客戶環境，其中，會將檔案轉送至 DLP 結果的 ICAP 設備：允許/封鎖。 回應會透過 Stunnel 傳送回 Cloud App Security，而原則使用 Stunnel 來決定後續動作，例如通知、隔離和共用控制。
 
 ![Stunnel 架構](./media/icap-architecture-stunnel.png)
 
-因為 Cloud App Security 是在 Azure 中執行，所以 Azure 中的部署會產生更佳的效能。 不過，支援包括其他雲端和內部部署的其他選項。 在其他環境中部署可能會因較高延遲和較低輸送量而導致效能降低。 ICAP 伺服器和 Stunnel 必須一起部署到相同的網路，確定已加密流量。
+因為 Cloud App Security 在 Azure 中執行，所以 Azure 中的部署會產生更佳的效能。 不過，支援包括其他雲端和內部部署的其他選項。 在其他環境中部署可能會因較高延遲和較低輸送量而導致效能降低。 ICAP 伺服器和 Stunnel 必須一起部署到相同的網路，確定已加密流量。
 
 ## <a name="prerequisites"></a>必要條件
 為了讓 Cloud App Security 透過 Stunnel 將資料傳送至 ICAP 伺服器，請使用動態來源連接埠號碼將 DMZ 防火牆開啟到 Cloud App Security 所使用的外部 IP 位址。 
@@ -56,7 +56,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>步驟 2：設定 Stunnel 伺服器 
 
-在此步驟中，您將會設定連線到 ICAP 伺服器的 Stunnel。 
+這個步驟會引導您設定連線到 ICAP 伺服器的 Stunnel。 
 
 >[!NOTE]
 > 雖然高度建議，但是這個步驟是選擇性的，並且可以針對測試工作負載略過。 
@@ -74,7 +74,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 1. [Download the latest Windows Server installation](https://www.stunnel.org/downloads.html) (下載最新 Windows Server 安裝) (這應該作用於任何最新 Windows Server 版本)。
 (預設安裝)
 
-2. 在安裝期間，不會建立新的自我簽署憑證，您將在稍後的步驟中建立憑證。
+2. 在安裝期間，先不要建立新的自我簽署憑證，請在稍後的步驟中建立憑證。
 
 3. 按一下 [Start server after installation (安裝後啟動伺服器)]。
 
@@ -125,7 +125,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
 以 root 使用者身分登入時，下列範例是根據 Ubuntu 伺服器安裝；針對其他伺服器，請使用平行命令。 
 
-在備妥的伺服器上，於同時安裝 Stunnel 和 OpenSSL 的 Ubuntu 伺服器上執行下列命令，以下載並安裝最新版的 Stunnel：
+在備妥的伺服器上，在會同時安裝 Stunnel 和 OpenSSL 的 Ubuntu 伺服器上執行下列命令，以下載並安裝最新的 Stunnel 版本：
 
     apt-get update
     apt-get install openssl -y
@@ -227,12 +227,12 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
    > [!NOTE]
    > 高度建議核取 [Use secure ICAP (使用安全 ICAP)] 方塊，以設定加密的 Stunnel 閘道。 如果基於測試目的，或您沒有 Stunnel 伺服器，則可以取消核取這個方塊，直接與您的 DLP 伺服器整合。 
 
-5. 在 [伺服器設定] 畫面上，提供您在步驟 2 中所設定 Stunnel 伺服器的 [IP 位址] 和 [連接埠]。 基於負載平衡，您可以設定其他伺服器的 [IP 位址] 和 [連接埠]。 提供的 IP 位址應該是您伺服器的外部靜態 IP 位址。
+5. 在 [伺服器設定] 畫面上，提供您在步驟 2 中所設定 Stunnel 伺服器的 [IP 位址] 和 [連接埠]。 為達負載平衡，您可以設定其他伺服器的 [IP 位址] 和 [連接埠]。 提供的 IP 位址應該是您伺服器的外部靜態 IP 位址。
 
    ![Cloud App Security ICAP 連線](./media/icap-wizard2.png)
 6. 按 [下一步] 。 Cloud App Security 會測試與您所設定伺服器的連線。 如果您收到錯誤，請檢閱指示和網路設定。 成功連線之後，即可按一下 [結束]。
 
-7. 現在，若要將流量導向此外部 DLP 伺服器，當您在 [內容檢查方法] 下建立 [檔案原則] 時，請選取您剛剛建立的連線。 深入了解[建立檔案原則](data-protection-policies.md)。
+7. 現在，若要將流量導向此外部 DLP 伺服器，當您建立 [檔案原則] 時，請在 [內容檢查方法] 下選取您剛剛建立的連線。 深入了解[建立檔案原則](data-protection-policies.md)。
 
 
 ## 附錄 A：Forcepoint ICAP 伺服器設定<a name="forcepoint"></a>
@@ -293,7 +293,7 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
 
     ![自動回應](./media/icap-automated-response.png)
 
-3. 輸入規則名稱，例如 **Block HTTP/HTTPS**。 在 [Actions] \(動作\) 下，選取 [Block HTTP/HTTPS] \(封鎖 HTTP/HTTPS\)，然後按一下 [Save] \(儲存\)。
+3. 輸入規則名稱，例如 **Block HTTP/HTTPS**。 在 [動作] 下，選取 [封鎖 HTTP/HTTPS]，然後按一下 [儲存]。
 
     ![封鎖 http](./media/icap-block-http.png)
 
@@ -301,7 +301,7 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
 
 1. 在每個原則中，切換至 [Response] \(回應\) 索引標籤。
 
-2. 從 [Response rule] \(回應規則\) 下拉式清單，選取您在上面所建立的封鎖回應規則。
+2. 從 [回應規則] 下拉式清單中，選取您先前建立的封鎖回應規則。
 
 3. 儲存原則。
    
