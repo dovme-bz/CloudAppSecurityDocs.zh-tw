@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 635535c0089a7c1dc8c1505c302b4e5245449029
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 ## <a name="managing-admin-access"></a>管理管理員存取權
 
@@ -31,7 +31,7 @@ Cloud App Security 支援角色型存取控制。 根據預設，下列 Office 3
       - 建立原則或編輯和變更現有原則 
       - 執行任何管理動作 
       - 上傳探索記錄
-      - 禁用或核准第三方應用程式
+      - 禁用或核准協力廠商應用程式
       - 存取和檢視 IP 位址範圍設定頁面
       - 存取和檢視任何設定頁面 
       - 存取和檢視 Discovery 設定 
@@ -39,19 +39,19 @@ Cloud App Security 支援角色型存取控制。 根據預設，下列 Office 3
       - 存取和檢視管理記錄檔 
       - 存取和檢視管理快照集報告頁面 
 
-如需詳細資訊，請參閱[在 Azure Active Directory 中指派系統管理員角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。
+如需詳細資訊，請參閱[在 Azure Active Directory 中指派管理員角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。
 
-您也可以執行下列動作，將其他管理員新增至 Cloud App Security，而不是將使用者新增至 Azure Active Directory 系統管理角色：
+您也可以執行下列步驟，將其他管理員新增至 Cloud App Security，而不是將使用者新增至 Azure Active Directory 系統管理角色：
 
 1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員存取權]。 
 
 2. 新增應該可以存取 Cloud App Security 的管理員。
   
       
-3. 接下來，按一下下拉式清單，設定管理員要擁有的存取類型 ([完整存取] 或 [唯讀及管理警示])。
+3. 接著，按一下下拉式清單，設定管理員擁有的存取類型 ([完整存取] 或 [唯讀及管理警示])。
 
      >[!NOTE]
-      >任何具有 [唯讀及管理警示] 限制存取的管理員，若嘗試存取受限制頁面或執行受限制動作，都會收到錯誤，指出他們沒有存取頁面或執行動作的權限。
+      >任何受限於 [唯讀及管理警示] 存取的管理員，若嘗試存取限制的頁面或執行限制的動作，都會收到錯誤，指出他們無權存取頁面或執行動作。
 
    ![管理管理員存取權](./media/manage-admin-access.png "管理管理員存取權")  
 
@@ -69,7 +69,7 @@ Cloud App Security 支援角色型存取控制。 根據預設，下列 Office 3
 將其他管理員新增至 Cloud App Security：
 1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員存取權]。 
 
-2. 新增應該可以存取 Cloud App Security 的管理員，選取其存取層級，然後按一下 [關閉]。
+2. 新增應該可以存取 Cloud App Security 的管理員。 選取其存取層級，然後按一下 [關閉]。
 
 
 
