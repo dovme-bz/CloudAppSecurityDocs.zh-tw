@@ -39,7 +39,7 @@ ms.lasthandoff: 01/21/2018
        
        ![google 專案](./media/googleverify-project.png "googleverify 專案")  
 
-5. 按一下 [API] 下方的 [Go to APIs overview] (移至 API 概觀)。  
+5. 按一下 [API] 下方的 [Go to APIs overview] \(移至 API 概觀)。  
   
      ![google3](./media/google3.png "google3")  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 01/21/2018
   
      ![Google 啟用的 API](./media/google5.png "google5")  
   
-9.  按一下 [認證]，然後選取 [OAuth consent screen] (OAuth 同意畫面) 索引標籤。
+9.  按一下 [認證]，然後選取 [OAuth consent screen] \(OAuth 同意畫面) 索引標籤。
   
     -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中，鍵入 **Microsoft Cloud App Security**。  
   
@@ -102,12 +102,12 @@ ms.lasthandoff: 01/21/2018
   
      ![Google 服務帳戶識別碼](./media/google12.png "google12")  
   
-17. 按一下在標題列中位於 Google Cloud Platform 旁邊的三條水平線，以開啟 Google 功能表。 按一下 **Google Cloud Platform**，然後按一下左功能表中的 [APIs and services] (API 和服務) 索引標籤。  
+17. 按一下在標題列中位於 Google Cloud Platform 旁邊的三條水平線，以開啟 Google 功能表。 按一下 **Google Cloud Platform**，然後按一下左功能表中的 [APIs and services] \(API 和服務) 索引標籤。  
     
 18. 在開啟的儀表板中，向下捲動至已啟用的 API 清單，並按一下 [Google Drive API]。   
        ![選取 [Google Drive]](./media/google14.png "google14")  
 
-19. 按一下 [Drive UI Integration] (磁碟機 UI 整合) 索引標籤，然後填寫下列資訊：
+19. 按一下 [Drive UI Integration] \(磁碟機 UI 整合) 索引標籤，然後填寫下列資訊：
 
     -   **應用程式名稱**：Microsoft Cloud App Security。  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 01/21/2018
   
     -   Google 要求您至少上傳一個應用程式圖示。 移至 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) 以下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後在**應用程式圖示**下，按一下 128x128 圖片旁的 [選取]，並將其拖曳到快顯畫面。 按一下 32x32 圖片旁的 [選取]，並將其拖曳到快顯畫面。  
   
-    -   向下捲動到 [Drive Integration] (磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
+    -   向下捲動到 [Drive Integration] \(磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
@@ -123,7 +123,7 @@ ms.lasthandoff: 01/21/2018
 
 20. 按一下 [儲存變更]。
 
-20. 返回 [Enabled APIs] (啟用的 API) 清單。 按一下 [Google Apps Marketplace SDK]。 
+20. 返回 [Enabled APIs] \(啟用的 API) 清單。 按一下 [Google Apps Marketplace SDK]。 
       
 21. 選取 [設定] 索引標籤。 
   
@@ -185,7 +185,7 @@ ms.lasthandoff: 01/21/2018
   
            https://www.googleapis.com/auth/admin.directory.user  
 
-    -   在 [可見度] 底下，選取 [我的網域] (非公用)。 
+    -   在 [可見度] 底下，選取 [我的網域] \(非公用)。 
     -   按一下 [儲存變更]。  
   
 22. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 

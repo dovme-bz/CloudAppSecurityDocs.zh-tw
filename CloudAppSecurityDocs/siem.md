@@ -87,7 +87,7 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 > - 根據 SIEM 代理程式的版本，檔名可能會不同。
 > - 方括弧 [  ] 中的參數是選擇性的，應只在相關情況下使用。
 > - 建議在伺服器啟動期間執行 JAR。
->   - Windows：當成排程工作執行，確定工作設定為 [Run whether the user is logged on or not] (不論使用者登入與否均執行) 並且取消核取 [Stop the task if it runs logner than] (停止工作，如果執行時間超過) 核取方塊。
+>   - Windows：當成排程工作執行，確定工作設定為 [Run whether the user is logged on or not] \(不論使用者登入與否均執行) 並且取消核取 [Stop the task if it runs logner than] \(停止工作，如果執行時間超過) 核取方塊。
 >   - Linux：將帶有 **&** 的執行命令新增至 rc.local 檔案。 例如：`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 使用下列變數的位置：

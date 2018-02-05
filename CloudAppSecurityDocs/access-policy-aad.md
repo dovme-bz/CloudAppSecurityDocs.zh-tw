@@ -64,7 +64,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
  ![新增存取原則](./media/access-policy-screen.png)
 
-4. 在 [Activities matching all of the following] (符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
+4. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
      
    - **裝置標記**：用以篩選識別受管理的裝置。
 
@@ -82,7 +82,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
     - **封鎖**：設定此動作，根據您設定的原則篩選明確封鎖存取。 
 
-6. 您可以 [Create an alert for each matching event with the policy's severity] (使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
+6. 您可以 [Create an alert for each matching event with the policy's severity] \(使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
 
 
 

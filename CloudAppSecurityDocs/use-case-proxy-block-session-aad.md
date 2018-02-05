@@ -64,7 +64,7 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 
  ![新的工作階段原則](./media/new-session-policy.png)
 
-4. 在 [工作階段控制項類型] 下，選取 [Monitor all activities and control file download] (監視所有活動及控制檔案下載)。 這能讓您監視使用者在 Salesforce 工作階段中執行的所有作業，並讓您即時控制封鎖與保護下載。
+4. 在 [工作階段控制項類型] 下，選取 [Monitor all activities and control file download] \(監視所有活動及控制檔案下載)。 這能讓您監視使用者在 Salesforce 工作階段中執行的所有作業，並讓您即時控制封鎖與保護下載。
 
  ![工作階段原則控制類型](./media/session-policy-control-type.png)
 
