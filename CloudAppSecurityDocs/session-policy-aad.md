@@ -71,7 +71,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
     ![工作階段原則控制類型](./media/session-policy-control-type.png)
 
-6. 在 [Activities matching all of the following] (符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
+6. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
 
      - **裝置標記**：用以篩選識別受管理的裝置。
 
@@ -90,7 +90,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 7. 如已選取選項 [監視所有活動及控制檔案下載]：
 
-    1. 在 [Files matching all of the following] (符合下列所有條件的檔案) 區段的 [活動來源] 下，選取要套用至原則的其他檔案篩選。 這些會包含下列選項︰
+    1. 在 [Files matching all of the following] \(符合下列所有條件的檔案) 區段的 [活動來源] 下，選取要套用至原則的其他檔案篩選。 這些會包含下列選項︰
 
         - **分類標籤** - 如果您的組織使用 Azure 資訊保護，而且使用它的分類標籤來保護資料，請使用此篩選。 即可在此根據檔案套用的分類標籤篩選檔案。 如需 Cloud App Security 與 Azure 資訊保護整合的詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
 
@@ -115,7 +115,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
          ![工作階段原則動作](./media/session-policy-actions.png)
 
-10. 您可以 [Create an alert for each matching event with the policy's severity] (使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
+10. 您可以 [Create an alert for each matching event with the policy's severity] \(使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
 
     ![工作階段原則警示](./media/session-policy-alert.png)
 
@@ -150,7 +150,7 @@ Proxy 會記錄每個經它路由的使用者工作階段流量記錄。 流量�
 下載匯出的記錄：
 
 1. 準備好報表後，請依序移至 [調查] 和 [自訂報告]。
-2. 在表格中，從 [Proxy traffic logs] (Proxy 流量記錄) 清單中選取相關的報表，並按一下 [下載] ![下載按鈕](./media/download-button.png)。 
+2. 在表格中，從 [Proxy traffic logs] \(Proxy 流量記錄) 清單中選取相關的報表，並按一下 [下載] ![下載按鈕](./media/download-button.png)。 
 
 
 ## 封鎖下載的運作方式<a name="block-download"></a>
