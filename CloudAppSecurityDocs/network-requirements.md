@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/30/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf6bca7ff1e5ccb2bc2ed72a0c6f0e47942ed19a
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
+ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>網路需求
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 01/21/2018
 |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
  
 
-## <a name="dlp-integration"></a>DLP 整合
+## <a name="third-party-dlp-integration"></a>協力廠商的 DLP 整合
 
 為了讓 Cloud App Security 透過 Stunnel 將資料傳送至 ICAP 伺服器，請使用動態來源連接埠號碼向這些 IP 位址開放您的 DMZ 防火牆。 
 

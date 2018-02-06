@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 1/31/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7299b52fe26a079664489c0bc832dd898c2c6cfc
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="basic-setup"></a>基本設定
 下列程序會指示您自訂 Cloud App Security 入口網站。
@@ -47,7 +47,9 @@ ms.lasthandoff: 01/24/2018
 > - 網域中未設定為內部的使用者會標示為外部，而且不會掃描其活動或檔案。
 
 5. 如果要與 Azure Information Protection 整合相整合，請參閱[Azure Information Protection 整合](azip-integration.md)以取得相關資訊。 
-  
+
+ >[!NOTE]
+ > 若要使用 Azure 資訊保護整合，您必須啟用 [Office 365 應用程式連接器](connect-office-365-to-microsoft-cloud-app-security.md)。
   
 6.  如果您在任何時間點想要備份入口網站設定，此畫面可讓您執行此作業。 按一下 [匯出入口網站設定] 可建立所有入口網站設定的 JSON 檔案，包括原則規則、使用者群組和 IP 位址範圍。  
   
