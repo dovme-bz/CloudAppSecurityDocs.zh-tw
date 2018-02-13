@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
@@ -28,9 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 -   逐步推出：Cloud App Security 現在支援相同已連線應用程式的多個執行個體。 例如，如果您有多個 Salesforce 的執行個體 (一個針對銷售，一個針對行銷)，則可以將兩者同時連線至 Cloud App Security 並從相同的主控台來管理，以建立更細微的原則和更深入的調查。 
 
-- 已改善 Cloud App Security 調查！ 您現在可以在 [警示] 頁面內向下鑽研到 [活動記錄]，並檢視可以直接從警示執行的其他動作。
-
-- Cloud Discovery 剖析器現在支援 XML 和 KPC 兩個額外的檢查點格式。
+Cloud Discovery 剖析器新增了對 XML 及 KPC 兩種檢查點格式的支援。
 
 
 
