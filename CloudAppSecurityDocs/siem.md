@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>SIEM 整合
     
@@ -75,6 +75,10 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 
 7. 複製並儲存權杖，以供稍後使用。 按一下 [完成] 並離開精靈之後，回到 SIEM 頁面就可以在表格中看到您新增的 SIEM 代理程式。 在稍後連接之前，它會顯示為 [已建立]。
 
+> [!NOTE]
+> 您建立的任何權杖皆會繫結到建立該權杖的系統管理員。 亦即，若系統管理員使用者從雲端應用程式安全性中移除，該權杖也會隨之失效。
+
+
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>步驟 2：下載 JAR 檔案，並在您的伺服器上執行該檔案
 
 1. 在 [Microsoft 下載中心](https://go.microsoft.com/fwlink/?linkid=838596) \(英文\) 接受[軟體授權條款](https://go.microsoft.com/fwlink/?linkid=862491)之後，請下載 .zip 檔案並將它解壓縮。
@@ -87,7 +91,7 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 > - 根據 SIEM 代理程式的版本，檔名可能會不同。
 > - 方括弧 [  ] 中的參數是選擇性的，應只在相關情況下使用。
 > - 建議在伺服器啟動期間執行 JAR。
->   - Windows：當成排程工作執行，確定工作設定為 [Run whether the user is logged on or not] \(不論使用者登入與否均執行) 並且取消核取 [Stop the task if it runs logner than] \(停止工作，如果執行時間超過) 核取方塊。
+>   - Windows：當成排程工作執行，確定工作設定為 [Run whether the user is logged on or not] (不論使用者登入與否均執行) 並且取消核取 [Stop the task if it runs logner than] (停止工作，如果執行時間超過) 核取方塊。
 >   - Linux：將帶有 **&** 的執行命令新增至 rc.local 檔案。 例如：`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 使用下列變數的位置：
