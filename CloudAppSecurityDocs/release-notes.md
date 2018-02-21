@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/4/2018
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
+ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 版本 116
 發行於 2018 年 2 月 4 日
 
+- 新的**以案例為基礎的偵測**增強了 Cloud App Security 異常偵測原則，其中案例包括不可能的旅行距離、來自可疑 IP 位址的活動，以及多次嘗試登入失敗。 新原則會自動啟用，為整個雲端環境提供立即可用的威脅偵測。 此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 如需詳細資訊，請參閱[取得即時的行為分析和異常偵測](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)。
+
 - 逐步推出：Cloud App Security 現在可跨 SaaS 應用程式以相互關聯使用者與其帳戶。 這可讓您輕鬆地跨越使用者所有各種相互關聯 SaaS 應用程式來調查他們的所有活動，而不論使用者所使用的應用程式或帳戶為何。  
 
 -   逐步推出：Cloud App Security 現在支援相同已連線應用程式的多個執行個體。 例如，如果您有多個 Salesforce 的執行個體 (一個針對銷售，一個針對行銷)，則可以將兩者同時連線至 Cloud App Security 並從相同的主控台來管理，以建立更細微的原則和更深入的調查。 
 
-Cloud Discovery 剖析器新增了對 XML 及 KPC 兩種檢查點格式的支援。
+- Cloud Discovery 剖析器現在支援 XML 和 KPC 兩個額外的檢查點格式。
 
 
 
