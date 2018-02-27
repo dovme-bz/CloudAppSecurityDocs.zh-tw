@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security 的新功能 | Microsoft Docs"
+title: "Cloud App Security 新功能 | Microsoft Docs"
 description: "本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/12/2018
+ms.date: 2/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
-ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
+ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
+ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+## <a name="cloud-app-security-release-117"></a>Cloud App Security 版本 117
+2018 年 2 月 20 日發行
+
+-   Cloud App Security 現在與 Azure 資訊保護深度整合，讓您得以保護 G Suite 中的檔案。 此公用預覽功能可讓您掃描與分類 G Suite 中的檔案，並自動套用 Azure 資訊保護標籤以供保護。 如需詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
+
+-   Cloud Discovery 現在支援 i-FILTER。
+
+-   SIEM 代理程式資料表現在包含了更多詳細資料，以方便管理。
+
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 版本 116
 發行於 2018 年 2 月 4 日
-
 - 新的**以案例為基礎的偵測**增強了 Cloud App Security 異常偵測原則，其中案例包括不可能的旅行距離、來自可疑 IP 位址的活動，以及多次嘗試登入失敗。 新原則會自動啟用，為整個雲端環境提供立即可用的威脅偵測。 此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 如需詳細資訊，請參閱[取得即時的行為分析和異常偵測](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)。
 
 - 逐步推出：Cloud App Security 現在可跨 SaaS 應用程式以相互關聯使用者與其帳戶。 這可讓您輕鬆地跨越使用者所有各種相互關聯 SaaS 應用程式來調查他們的所有活動，而不論使用者所使用的應用程式或帳戶為何。  
@@ -183,9 +191,9 @@ ms.lasthandoff: 02/12/2018
     - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
 -   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
 
-### <a name="announcements"></a>宣告： 
--   雲端應用程式目錄現在支援超過 15,000 個可探索的應用程式
--   合規性：Cloud App Security 通過 Azure 的 SOC1/2/3 官方認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\) 並篩選 Cloud App Security 的結果。
+### <a name="announcements"></a>公告： 
+-   雲端應用程式目錄現在支援超過 15,000 可探索的應用程式
+-   合規性：Cloud App Security 已正式通過 Azure 的 SOC1/2/3 認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\)，然後篩選出 Cloud App Security 的結果。
 
 ### <a name="other-improvements"></a>其他改進： 
 -   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。
