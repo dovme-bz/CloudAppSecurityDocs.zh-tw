@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 2/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8463285f9462296188bc015b455fad824b3660cb
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 859cba7daf575b41b33380eeec33288a17e64d91
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="use-a-custom-log-parser"></a>使用自訂記錄檔剖析器
 Cloud App Security 可讓您設定自訂剖析器以符合記錄檔的格式並進行處理，如此一來即使記錄檔來自 Cloud App Security 並未明確支援的防火牆或裝置，Cloud Discovery 也可以使用記錄檔。 
