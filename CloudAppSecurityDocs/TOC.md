@@ -1,5 +1,6 @@
 # 了解並探索
 ## [Cloud App Security 是什麼？](what-is-cloud-app-security.md)
+## [Cloud App Security 合規性、信任、資料安全性與隱私權](cas-compliance-trust.md)
 ## [新功能](release-notes.md)
 ## 比較
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [部署 Cloud Discovery](set-up-cloud-discovery.md)
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](discovery-docker.md)
-#### [Ubuntu 上的 Docker (內部部署)](discovery-docker-ubuntu.md)
+#### [內部部署 Ubuntu 與 RHEL 上的 Docker](discovery-docker-ubuntu.md)
 #### [Ubuntu 上的 Docker (Azure)](discovery-docker-ubuntu-azure.md)
 #### [使用虛擬設備 - 已淘汰](configure-automatic-log-upload-for-continuous-reports.md)
 ### [使用自訂記錄檔剖析器](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [檔案原則](data-protection-policies.md)
 ##### [內容檢查](content-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
+#### [存取原則](access-policy-aad.md)
 #### [工作階段原則](session-policy-aad.md)
 #### [原則範本參考](policy-template-reference.md)
 ### [治理連線的應用程式](governance-actions.md)
