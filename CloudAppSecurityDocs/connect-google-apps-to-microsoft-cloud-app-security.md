@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -62,7 +62,9 @@ ms.lasthandoff: 01/21/2018
    > [!NOTE]  
    >  暫時忽略**認證**警告。  
 
-8.  您應該會有 5 個 [Enabled APIs (啟用的 API)]：  
+8. 針對每個 API 按一下 [啟用]。
+     ![啟用 Google APPI](./media/google-api.png "google-api")  
+1. 您應該會有 5 個**啟用的 API**，請務必停用任何其他 API：
   
      ![Google 啟用的 API](./media/google5.png "google5")  
   
@@ -187,7 +189,7 @@ ms.lasthandoff: 01/21/2018
 
     -   在 [可見度] 底下，選取 [我的網域] \(非公用)。 
     -   按一下 [儲存變更]。  
-  
+        ![google 可見性](./media/google-visibility.png "google 可見性")  
 22. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 
    
       ![Google Security](./media/googlesec.png "Google Security")  
@@ -219,7 +221,7 @@ ms.lasthandoff: 01/21/2018
   
     4.  輸入 G Suite 系統管理員其中一個**系統管理員帳戶的電子郵件**。  
   
-    5.  如果您有 G Suite Unlimited 帳戶，請核取這個核取方塊。 如需 Cloud App Security for G Suite Unlimited 可用功能的資訊，請參閱[為您的應用程式提供立即可見性、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
+    5.  如果您有 G Suite 商務或企業帳戶，請選取此核取方塊。 如需適用於 G Suite 商務或企業帳戶的 Cloud App Security 可用功能的詳細資訊，請參閱[為您的應用程式提供立即可見性、保護及治理動作](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。  
   
     6.  按一下 [儲存設定]。  
   

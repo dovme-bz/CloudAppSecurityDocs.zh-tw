@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: f8dabfd6a7e5d246c1c36dd29e023e294a266f5d
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
@@ -69,7 +69,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
  
 
 
-## <a name="supported-firewalls-and-proxies"></a>支援的防火牆和 Proxy
+## 支援的防火牆和 Proxy <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web 應用程式防火牆 (W3C)
 - Blue Coat Proxy SG - 存取記錄 (W3C)
@@ -81,6 +81,7 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 - Cisco Meraki - URL 記錄
 - Clavister NGFW (Syslog)
 - Dell Sonicwall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ Cloud Discovery 無法顯示或分析記錄中未包含的屬性。
 |Barracuda|**是**|**是**|**是**|**是**|否|否|
 |Blue Coat|**是**|否|**是**|**是**|**是**|**是**|
 |Checkpoint|否|**是**|否|**是**|否|否|
-|Cisco ASA|否|**是**|否|**是**|**是**|否|
+|Cisco ASA (Syslog)|否|**是**|否|**是**|**是**|否|
 |Cisco ASA with FirePOWER|**是**|**是**|**是**|**是**|**是**|**是**|
 |Cisco FWSM|否|**是**|否|**是**|**是**|否|
 |Cisco Ironport WSA|**是**|**是**|**是**|**是**|**是**|**是**|
 |Cisco Meraki|**是**|**是**|否|**是**|否|否||Cisco Scansafe|**是**|否|**是**|**是**|**是**|**是**|
 |Clavister NGFW (Syslog)|**是**|**是**|**是**|**是**|**是**|**是**|
 |Dell SonicWall|**是**|**是**|否|**是**|**是**|**是**|
+|Digital Arts i-FILTER|**是**|**是**|**是**|**是**|**是**|**是**|
 |Fortigate|否|**是**|否|**是**|**是**|**是**|
 |Juniper SRX|否|**是**|否|**是**|**是**|**是**|
-|Juniper SSG|否|**是**|否|**是**|**是**|**是**|
+|Juniper SSG|否|**是**|**是**|**是**|**是**|**是**|
 |McAfee SWG|**是**|否|否|**是**|**是**|**是**|
 |MS TMG|**是**|否|**是**|**是**|**是**|**是**|
-|Palo Alto Networks|**是**|**是**|**是**|**是**|**是**|**是**|
+|Palo Alto Networks|否|**是**|**是**|**是**|**是**|**是**|
 |Sophos|**是**|**是**|**是**|**是**|**是**|否|
 |Squid (一般)|**是**|否|**是**|**是**|否|**是**|
 |Squid (原生)|**是**|否|**是**|**是**|否|**是**|

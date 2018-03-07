@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security 新功能 | Microsoft Docs"
+title: "Cloud App Security 的新功能 | Microsoft Docs"
 description: "本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,36 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: c2e6d6b3b31c93d69f366b93a7426f62518b948c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
-## <a name="cloud-app-security-release-117"></a>Cloud App Security 版本 117
-2018 年 2 月 20 日發行
 
--   Cloud App Security 現在與 Azure 資訊保護深度整合，讓您得以保護 G Suite 中的檔案。 此公用預覽功能可讓您掃描與分類 G Suite 中的檔案，並自動套用 Azure 資訊保護標籤以供保護。 如需詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
+## <a name="cloud-app-security-release-118"></a>Cloud App Security 118 版
+發行日期：2018 年 3 月 4 日
 
--   Cloud Discovery 現在支援 i-FILTER。
+- 您現在可針對自己專屬的自訂應用程式，以善用 Microsoft Cloud App Security 的影子 IT 探索和監視功能。 新增自訂應用程式到 Cloud Discovery 的新功能，可讓您監視應用程式的使用方式，並在使用模式變更時獲得警示。 如需詳細資訊，請參閱[保護自訂應用程式](cloud-discovery-custom-apps.md)。 這項功能正逐步推出。
 
--   SIEM 代理程式資料表現在包含了更多詳細資料，以方便管理。
+- Cloud App Security 入口網站的 [設定] 頁面已重新設計。 新設計合併了所有設定頁面，提供搜尋功能和改良的設計。 
+
+- Cloud Discovery 現在支援 Barracuda F-Series 防火牆和 Barracuda F-Series 防火牆 Web 記錄串流。
+
+- 在 [使用者] 和 [IP 位址] 頁面的搜尋功能現在可自動完成，讓您更輕鬆地找到想要的項目。
+
+- 您現在可在 [排除實體] 和 [排除 IP 位址設定] 頁面執行大量動作。 這可讓您更輕鬆地選取多個使用者和群組或 IP 位址，並將它們從您組織的 Cloud Discovery 監視當中排除。 
+
+## <a name="cloud-app-security-release-117"></a>Cloud App Security 117 版
+發行日期：2018 年 2 月 20 日
+
+-   Cloud App Security 現在深入整合了 Azure 資訊保護，讓您可以保護 G Suite 中的檔案。 此公開預覽功能可讓您掃描與分類 G Suite 中的檔案，並自動套用 Azure 資訊保護標籤的保護。 如需詳細資訊，請參閱 [Azure 資訊保護整合](azip-integration.md)。
+
+-   Cloud Discovery 現在支援 [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/) \(英文\)。
+
+-   SIEM 代理程式資料表現在包含更多詳細資料，以便於輕鬆管理。
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 版本 116
 發行於 2018 年 2 月 4 日
@@ -191,9 +205,9 @@ ms.lasthandoff: 02/20/2018
     - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
 -   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
 
-### <a name="announcements"></a>公告： 
--   雲端應用程式目錄現在支援超過 15,000 可探索的應用程式
--   合規性：Cloud App Security 已正式通過 Azure 的 SOC1/2/3 認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\)，然後篩選出 Cloud App Security 的結果。
+### <a name="announcements"></a>宣告： 
+-   雲端應用程式目錄現在支援超過 15,000 個可探索的應用程式
+-   合規性：Cloud App Security 通過 Azure 的 SOC1/2/3 官方認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\) 並篩選 Cloud App Security 的結果。
 
 ### <a name="other-improvements"></a>其他改進： 
 -   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。

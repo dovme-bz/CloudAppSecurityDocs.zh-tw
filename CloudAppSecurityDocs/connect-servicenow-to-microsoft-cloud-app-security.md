@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 1a8e439e170b5684c105ac7ae398deaa4e0c10f6
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>將 ServiceNow 連接至 Microsoft Cloud App Security
 
 本節提供的指示說明如何使用 App 連接器 API，將 Cloud App Security 連接至您現有的 ServiceNow 帳戶。 
 
  >  [!NOTE]
->  建議使用適用於 Fuji 和更新版本的 OAuth 應用程式權杖，來部署 ServiceNow (請參閱相關的 [ServiceNow 文件](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)。 針對舊版，則會根據使用者/密碼提供[舊版連線模式](#legacy-servicenow-connection)。
+>  建議使用適用於 Fuji 和更新版本的 OAuth 應用程式權杖，來部署 ServiceNow (請參閱相關的 [ServiceNow 文件](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)。 針對舊版，則會根據使用者/密碼提供[舊版連線模式](#legacy-servicenow-connection)。 提供的使用者名稱/密碼僅用於 API 權杖產生，而不會在初始連線程序之後儲存。
 
  > [!NOTE]  
 >  Cloud App Security 支援 Eureka、Fiji、Geneva、Helsinki 和 Istanbul 版本的 ServiceNow。 若要連接 ServiceNow 與 Cloud App Security，您必須擁有**系統管理員**角色，並確定 ServiceNow 執行個體支援 API 存取。  如需詳細資訊，請參閱 [ServiceNow 產品文件](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)。
@@ -33,7 +33,10 @@ ms.lasthandoff: 01/24/2018
   
   
 1.  使用系統管理員帳戶登入您的 ServiceNow 帳戶。  
-  
+ 
+  > [!NOTE]
+  >  提供的使用者名稱/密碼僅用於 API 權杖產生，而不會在初始連線程序之後儲存。
+
 2.  在 [Filter navigator]\(篩選導覽) 搜尋列中，鍵入 **OAuth** 並選取 [Application Registry]\(應用程式登錄)。
 
 3. 在 [Application Registry]\(應用程式登錄) 功能表列中，按一下 [新增] 建立新的 OAuth 設定檔。
