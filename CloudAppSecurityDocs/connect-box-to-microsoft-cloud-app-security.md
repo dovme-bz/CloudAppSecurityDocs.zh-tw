@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  如果您要限制應用程式的存取權，請遵循此步驟。 否則，請前往步驟 2。  
   
-    -   在 Box Admin 主控台中，依序按一下設定圖示和 [Business settings (商務設定)]。  
+    -   在 [Box Admin] 主控台中，按一下 [Business settings] \(商務設定\) 或 [Enterprise settings] \(企業設定\) 之後的設定圖示。  
   
          ![Box 商務設定](./media/box-business-settings.png "Box 商務設定")  
   

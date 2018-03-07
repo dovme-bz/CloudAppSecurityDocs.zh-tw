@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 3/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
@@ -52,6 +52,13 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
 
 篩選結果之後，您可以[不批准並封鎖](governance-discovery.md)這些應用程式，方法是使用 [大量動作] 核取方塊以一個動作不批准所有應用程式。 當應用程式處於待批准狀態之後，您可以使用封鎖指令碼以防止在環境中使用這些應用程式。
 
+Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過調查找到的子網域來識別特定的使用中執行個體。
+     
+例如，您可以區別不同的 SharePoint 網站。
+
+不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery#supported-firewalls-and-proxies) 查看支援的設備清單。
+
+ ![子網域資訊](./media/discovery-domains.png) 
 
 ## <a name="exclude-entities"></a>排除實體  
 如有雜訊特別多且無關的系統使用者或 IP 位址或不相干的應用程式，您可能想要從已經分析的 Cloud Discovery 資料中排除它們的資料。 例如，您可能想要排除源自 127.0.0.1 或本機主機的所有資訊。  

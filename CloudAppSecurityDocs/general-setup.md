@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>基本設定
 下列程序會指示您自訂 Cloud App Security 入口網站。
@@ -32,10 +32,8 @@ ms.lasthandoff: 02/05/2018
   
 ## <a name="set-up-the-portal"></a>設定入口網站  
   
-1.  在 Cloud App Security 入口網站的功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [一般設定] 設定下列項目︰  
-     
-     ![一般設定](./media/general-settings.png "一般設定")  
-  
+1.  在 Cloud App Security 入口網站於功能表列中，按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [設定] 以設定組織的詳細資料。     
+
 3.  請務必在 [組織詳細資料] 下，提供您組織的 [組織顯示名稱]。 其會顯示在系統傳送的電子郵件和網頁上。  
   
 4. 提供**環境名稱** (租用戶)。 如果您管理多個租用戶，這點尤其重要。  

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd4c2cc8a4382a5e3a50903499d098d1e90dce53
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ec381d45d9124220fd227f91d4e4c4673f127014
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>建立 Cloud Discovery 快照集報告
 請務必手動上傳記錄檔，讓 Cloud App Security 剖析過後再嘗試使用自動記錄收集器。
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/16/2018
 10. 在記錄上傳成功之後，您應該會看到通知，告訴您已成功完成記錄檔的處理。 此時，若要檢視報告，您可以按一下狀態列中的連結，或移至 [設定] 齒輪，然後選取 **「Cloud Discovery settings」** (Cloud Discovery 設定)。   
   
      ![探索設定索引標籤](./media/discovery-settings-tab.png)
-11. 接下來，依序選取 [管理快照集報告] 和您的快照集報告。
+11. 接下來，選取 [快照集報告]，並選取您的快照集報告。
  
 ![快照報告管理](./media/snapshot-report-managment.png)
 

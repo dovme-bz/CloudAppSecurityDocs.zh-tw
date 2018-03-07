@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>管理管理員存取權
 
@@ -43,7 +43,7 @@ Cloud App Security 支援角色型存取控制。 根據預設，下列 Office 3
 
 您也可以執行下列步驟，將其他管理員新增至 Cloud App Security，而不是將使用者新增至 Azure Active Directory 系統管理角色：
 
-1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員存取權]。 
+1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員]。 
 
 2. 新增應該可以存取 Cloud App Security 的管理員。
   
