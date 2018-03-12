@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
+ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="file-policies"></a>檔案原則  
 檔案原則可讓您利用雲端提供者的 API，強制執行各種不同的自動化程序。 設定原則可提供持續的相容性掃描、法律 eDiscovery 工作、公開共用敏感性內容的 DLP，以及更多使用案例。  <br></br>
@@ -105,8 +105,7 @@ Cloud App Security 的內建 DLP 引擎可從所有常見檔案類型 (100 種�
 -   Extensions  
    
     -  您可透過協力廠商引擎來執行內容檢查，以取得增強的 DLP 或反惡意程式碼功能。  
-  
-    -  [治理動作](governance-actions.md)可透過第三方引擎來執行，以強制執行自訂的加密控制或其他類型的檔案處理 (例如自訂浮水印)。  
+
   
 ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
