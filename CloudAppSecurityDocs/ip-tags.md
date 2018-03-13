@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 3/7/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 #  <a name="IPtagsandRanges"></a> 使用 IP 範圍和標籤
 
@@ -45,7 +45,7 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
 
 內建 IP 位址標籤和自訂 IP 標籤會依階層考量，其中自訂 IP 標籤優先於內建 IP 標籤。 例如，如果 IP 位址依威脅情報標記為 [具風險]，但有自訂 IP 標記將其識別為 [公司]，則優先使用自訂類別和標記。
 
-在功能表列中，按一下設定圖示![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [IP 位址範圍]。 按一下 [+新增 IP 位址範圍] 並設定下列欄位︰  
+在功能表列中，按一下設定圖示![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [IP 位址範圍]。 按一下加號以新增 IP 位址範圍，並設定下列欄位︰  
   
 > [!NOTE]  
 > - 位置和已註冊的 ISP 會覆寫預設。   
@@ -57,13 +57,7 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
   
 2.  輸入您想要設定的 [IP 位址範圍]，然後按一下 "+" 按鈕。 您可以使用網路首碼表示法 (也稱為 CIDR 表示法) 新增任意數目的 IP 位址和子網路，例如 192.168.1.0/32。  
   
-3.  若要覆寫這些位址的 [位置] 或 [組織 (ISP)] 欄位，請輸入新值。 例如，如果您的 IP 位址被公開認為在愛爾蘭，但您知道它是在美國，您可以覆寫此設定。  
-  
-4.  輸入 [已註冊的 ISP]。 這會覆寫您活動中的資料  
-  
-5.  若要**標記**來自這些 IP 位址的活動，請輸入標記。 在方塊中輸入文字即可建立標記。 在您設定好標記後，就可以從清單中予以選擇，輕鬆地將其新增至其他 IP 範圍。 您可以為每個範圍新增任意數量的 IP 標記。 建立原則時，可以使用 IP 標記。  除了您設定的 IP 標記之外，Cloud App Security 具有不可設定的內建標記。 您可以在 [IP 標記篩選](activity-filters.md)下看到標記清單。  
-  
-6.  **IP 類別**可用來輕鬆地辨識來自有趣 IP 位址的活動。 類別可在入口網站取得，但需要使用者設定才能決定各個類別包含哪些 IP 位址，「具風險」類別除外，其包含兩個 IP 標記：匿名 Proxy 和 Tor。  
+3.  **類別**可用來輕鬆地辨識來自特定 IP 位址的活動。 類別可在入口網站取得，但需要使用者設定才能決定各個類別包含哪些 IP 位址，「具風險」類別除外，其包含兩個 IP 標記：匿名 Proxy 和 Tor。  
   
      可以使用下列 IP 類別︰  
   
@@ -76,9 +70,13 @@ Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰
     -   **風險**︰這些應為任何您視為危險的 IP 位址。 它們可以包含您在過去已看到的可疑 IP 位址、競爭對手網路中的 IP 位址等等。  
   
     -   **VPN**︰這些應為您用於遠端工作者的任何 IP 位址。  
+4.  若要**標記**來自這些 IP 位址的活動，請輸入標記。 在方塊中輸入文字即可建立標記。 在您設定好標記後，就可以從清單中予以選擇，輕鬆地將其新增至其他 IP 範圍。 您可以為每個範圍新增任意數量的 IP 標記。 建立原則時，可以使用 IP 標記。  除了您設定的 IP 標記之外，Cloud App Security 具有不可設定的內建標記。 您可以在 [IP 標記篩選](activity-filters.md)下看到標記清單。  
+  
+5.  若要覆寫這些位址的 [位置] 或 [組織 (ISP)] 欄位，請輸入新值。 例如，如果您的 IP 位址被公開認為在愛爾蘭，但您知道它是在美國，您可以覆寫此設定。  
+  
+6.  輸入 [已註冊的 ISP]。 這會覆寫您活動中的資料  
  
-
-7.  完成時按一下 [建立]。  
+7.   完成時按一下 [建立]。  
   
      ![newipaddress 範圍](./media/newipaddress-range.png "newipaddress 範圍")  
   
