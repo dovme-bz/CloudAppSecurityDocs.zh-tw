@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> 設定電子郵件通知喜好設定  
-在功能表列中，按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [郵件設定]，以針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，還有傳送給使用者與他們相關的缺口通知中來設定參數。  
 
-如需應加入反垃圾郵件服務白名單的 Cloud App Security 電子郵件伺服器 IP 位址的詳細資訊，請參閱[網路需求](network-requirements.md)。 
+針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，以及傳送給使用者與他們相關的缺口通知，若要設定這些通知的參數，請遵循此步驟。 如需應加入反垃圾郵件服務白名單的 Cloud App Security 電子郵件伺服器 IP 位址的詳細資訊，請參閱[網路需求](network-requirements.md)。 
+
+
+1. 在功能表列中，按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 並選取 [設定]，然後選取 [郵件設定] 索引標籤。  
+
+2. **寄件者電子郵件地址**︰您想要用來傳送通知的電子郵件帳戶。  
+   
+   **寄件者顯示名稱**︰您想要顯示在電子郵件 [寄件者] 欄位中的名稱。  
   
-![郵件設定功能表](./media/mail-setting-menu.png "郵件設定功能表")  
-  
-設定下列各項：  
-  
-1.  **寄件者電子郵件地址**︰您想要用來傳送通知的電子郵件帳戶。  
-  
-     **寄件者顯示名稱**︰您想要顯示在電子郵件 [寄件者] 欄位中的名稱。  
-  
-     **回覆電子郵件地址**︰要用於訊息回覆的電子郵件帳戶。  
+   **回覆電子郵件地址**︰要用於訊息回覆的電子郵件帳戶。  
   
      ![郵件設定組態](./media/mail-settings-config.png "郵件設定組態")  
 
@@ -41,7 +39,7 @@ ms.lasthandoff: 01/16/2018
   
 2.  針對 [電子郵件設計]，您可以使用 HTML 檔案，以自訂和設計從系統傳送的電子郵件訊息。 用於範本的 HTML 檔案應該包含下列項目︰  
   
-    -   所有範本 CSS 都應內嵌在範本中。  
+    -   所有範本 CSS 檔案都應內嵌在範本中。  
   
     -   範本中應該有三個無法編輯的預留位置︰  
   

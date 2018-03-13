@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="Adminsettings"></a> 自訂管理設定  
 若要將您的喜好設定設定為 Cloud App Security 的管理員，請在入口網站功能表列中按一下您的名稱，然後選取 [使用者設定] 來進行下列設定︰  
   
-1.  按一下 [帳戶設定]。 這裡，您可以自訂入口網站語言以供自己檢視。 您可以將它設定為以預設語言顯示入口網站，或者自行設定不同的語言。  
+1.  按一下 [帳戶設定]。 您可以在這裡設定和更新用來存取 Cloud App Security 入口網站的密碼。  
   
      ![自訂使用者設定](./media/custom-user-settings.png "自訂使用者設定")  
   
