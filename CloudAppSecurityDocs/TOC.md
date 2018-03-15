@@ -43,6 +43,7 @@
 ### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
 ## 探索
 ### [使用探索到的應用程式](discovered-apps.md)
+#### [新增自訂應用程式到 Cloud Discovery](cloud-discovery-custom-apps.md)
 #### [探索到的應用程式篩選與查詢](discovered-app-queries.md)
 ### [使用風險分數](risk-score.md)
 ## [調查](investigate.md)
