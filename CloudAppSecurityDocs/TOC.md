@@ -41,6 +41,7 @@
 ### [保護您的組織免受勒索軟體威脅](use-case-ransomware.md)
 ### [禁止下載機密資訊](use-case-proxy-block-session-aad.md)
 ### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
+### [自動套用 Azure 資訊保護標籤](use-case-information-protection.md)
 ## 探索
 ### [使用探索到的應用程式](discovered-apps.md)
 #### [新增自訂應用程式到 Cloud Discovery](cloud-discovery-custom-apps.md)
