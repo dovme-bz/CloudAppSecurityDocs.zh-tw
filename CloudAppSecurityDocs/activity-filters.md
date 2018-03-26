@@ -1,23 +1,23 @@
 ---
-title: "雲端應用程式活動的可視性 | Microsoft Docs"
-description: "本主題提供可套用至活動原則的活動、篩選和比對參數清單。"
-keywords: 
+title: 雲端應用程式活動的可視性 | Microsoft Docs
+description: 本主題提供可套用至活動原則的活動、篩選和比對參數清單。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>活動
 Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud App Security 連接到使用 App 連線程式的應用程式後，Cloud App Security 會掃描發生的所有活動 (每個應用程式的追溯掃描時段都不相同)，再以新的活動不斷更新。 
@@ -30,11 +30,6 @@ Cloud App Security 可讓您從連接的應用程式看見所有活動。 Cloud 
 例如，您可以使用 [活動記錄] 尋找組織中使用過期作業系統或瀏覽器的使用者，方法如下：當您在 [活動記錄] 頁面上將應用程式連接到 Cloud App Security 之後，請使用進階篩選，並選取 [User agent tag]\(使用者代理程式標記)。 然後選取 [過期的瀏覽器] 或 [過期的作業系統]。
 
  ![過期的瀏覽器活動範例](media/activity-example-outdated.png)
-
-如果您想要檢查是否有在組織外部存取的**機密**檔案，請設定 [Activity object]\(活動物件) 篩選條件來搜尋 [Classification label]\(分類標籤)，然後選取 [機密] 標籤。 設定 [IP 位址] 篩選條件來搜尋 [類別]，並排除正式 IP 位址 (您可以在 [設定] 功能表中設定 IP 類別)。 您可以按一下 [New policy from search]\(從搜尋新增原則)，根據您所定義的篩選條件來建立活動原則，並自動通知使用者。
-
- ![活動機密檔案外部範例](media/activity-example-ip.png)
-
  
 基本篩選條件提供您絕佳的工具以開始篩選活動。
 
