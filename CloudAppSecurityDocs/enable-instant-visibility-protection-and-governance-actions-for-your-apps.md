@@ -1,29 +1,33 @@
 ---
-title: "連接應用程式以取得對 Cloud App Security 的深入可見度及控制 | Microsoft Docs"
-description: "本主題描述使用 API 連接器將應用程式連接到您組織的雲端應用程式之過程。"
-keywords: 
+title: 連接應用程式以取得對 Cloud App Security 的深入可見度及控制 | Microsoft Docs
+description: 本主題描述使用 API 連接器將應用程式連接到您組織的雲端應用程式之過程。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c14ba598a593dd8711151eb58e0eab75d0ea8791
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-apps"></a>連線應用程式 
 應用程式連接器利用應用程式提供者的 API，讓 Cloud App Security 對您連線至的應用程式有更好的可見度和控制。  
   
 Cloud App Security 利用雲端提供者提供的 API，每個服務都有自己的架構和 API 限制。 Cloud App Security 使用服務來使 API 的使用達到最佳化，並且確保最佳的效能。 Cloud App Security 引擎會考慮服務加諸於 API 的不同限制 (例如節流、API 限制、動態時間調整 API 範圍等)，而利用允許的容量。 某些作業，例如掃描租用戶中的所有檔案，需要大量的 API，因此會分散在較長的時間。 請預期某些原則會執行長達幾個小時或幾天。  
   
+## <a name="multi-instance-support"></a>多執行個體支援
+
+Cloud App Security 支援同一個已連線應用程式有多個執行個體。 例如，如果您有多個 Salesforce 的執行個體 (一個針對銷售，一個針對行銷)，則可以將兩者同時連線至 Cloud App Security 並從相同的主控台來管理，以建立更細微的原則和更深入的調查。 這項支援僅適用於與 API 連線的應用程式，而不適用於雲端探索的應用程式或與 Proxy 連線的應用程式。
+
 ## <a name="how-it-works"></a>運作方式  
 Cloud App Security 部署時具有系統管理員權限，能夠完整存取您環境中的所有物件。  
   

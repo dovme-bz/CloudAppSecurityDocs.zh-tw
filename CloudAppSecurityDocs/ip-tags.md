@@ -1,23 +1,23 @@
 ---
-title: "設定 IP 範圍和標籤 | Microsoft Docs"
-description: "本主題提供使用 IP 標籤和 IP 分類的指示。"
-keywords: 
+title: 設定 IP 範圍和標籤 | Microsoft Docs
+description: 本主題提供使用 IP 標籤和 IP 分類的指示。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> 使用 IP 範圍和標籤
 
@@ -26,16 +26,7 @@ ms.lasthandoff: 03/08/2018
   
 可支援 IPv4 和 IPv6。  
   
-Cloud App Security 對下列 IP 位址有預先設定的內建標籤︰ 
-- 原生用戶端
-- 過期的作業系統
-- 受管理的裝置
-- 匿名 Proxy
-- 殭屍網路 (如果活動為疆屍網路所執行，您會收到連 結，以深入了解特定殭屍網路)
-- Tor
-- 相容的裝置
-- 已驗證的裝置
-- Impersonate
+Cloud App Security 推出時即已預先設定，具有 Azure 及 Office 365 等熱門雲端提供者的內建 IP 範圍。 此外還有以 Microsoft 威脅情報為基礎的內建標記，包括匿名 Proxy、殭屍網路及 Tor。 您可以在 [IP 位址範圍] 頁面上的下拉式清單看到完整清單。
 
 若要在搜尋中使用這些內建的標籤，請參閱其在 Cloud App Security API 文件中的識別碼。 
 
