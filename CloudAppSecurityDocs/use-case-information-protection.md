@@ -1,23 +1,23 @@
 ---
-title: "自動套用 Azure 資訊保護分類標籤 | Microsoft Docs"
-description: "本主題描述要在 Microsoft Cloud App Security 中自動套用 Azure 資訊保護分類標籤的程序。"
-keywords: 
+title: 自動套用 Azure 資訊保護分類標籤 | Microsoft Docs
+description: 本主題描述要在 Microsoft Cloud App Security 中自動套用 Azure 資訊保護分類標籤的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>自動套用 Azure 資訊保護分類標籤  
 
@@ -86,8 +86,8 @@ Cloud App Security 與 Azure 資訊保護的整合可自動將檔案加密，以
 4. 您可以按一下相符項目來查看有哪些檔案受到保護。 相符項目本身會加上遮罩以保護機密資料。 
 
 >[!NOTE]
->Cloud App Security 目前支援對 Box、SharePoint 和商務用 OneDrive 自動套用 Azure 資訊保護標籤。
-
+> - Cloud App Security 目前支援對 Box、SharePoint 和商務用 OneDrive 自動套用 Azure 資訊保護標籤。
+> - 當文件使用 Cloud App Security 來加上標籤時，視覺標記不會立即套用，而會在文件於 Office 應用程式中開啟，並初次儲存後才套用。 如需詳細資訊，請參閱[如何為 Azure 資訊保護的標籤設定視覺標記](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)。
 
  ## <a name="see-also"></a>另請參閱  
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   

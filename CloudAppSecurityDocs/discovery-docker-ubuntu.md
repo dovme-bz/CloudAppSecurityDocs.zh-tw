@@ -1,30 +1,30 @@
 ---
-title: "設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
-description: "本主題說明透過在內部部署伺服器中的 Ubuntu 上使用 Docker，以在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
-keywords: 
+title: 設定自動記錄檔上傳以進行連續報告 | Microsoft Docs
+description: 本主題說明透過在內部部署伺服器中的 Ubuntu 上使用 Docker，以在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 13110a717b907decd2bafc938a01548f16d7bd76
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
+ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>內部部署 Ubuntu 與 RHEL 上的 Docker
 
 
 ## <a name="technical-requirements"></a>技術需求
 
--   OS：Ubuntu 14.04 或更高版本 (沒有支援 Ubuntu 17.10 的 Docker 穩定版本)
+-   OS：Ubuntu 14.04 或更高版本 (沒有 Docker 穩定版本可支援 Ubuntu 17.10)，或 RHEL 7.2 或更高版本 
 
 -   磁碟空間：250 GB
 

@@ -1,23 +1,23 @@
 ---
-title: "設定電子郵件通知喜好設定 | Microsoft Docs"
-description: "本文說明如何個人化 Cloud App Security 所傳送的電子郵件通知。"
-keywords: 
+title: 設定電子郵件通知喜好設定 | Microsoft Docs
+description: 本文說明如何個人化 Cloud App Security 所傳送的電子郵件通知。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> 設定電子郵件通知喜好設定  
 
@@ -29,7 +29,9 @@ ms.lasthandoff: 03/08/2018
 2. **寄件者電子郵件地址**︰您想要用來傳送通知的電子郵件帳戶。  
    
    **寄件者顯示名稱**︰您想要顯示在電子郵件 [寄件者] 欄位中的名稱。  
-  
+   > [!NOTE]
+   > 根據 [rfc822 通訊協定](http://www.rfc-editor.org/rfc/rfc822.txt)，顯示名稱只能使用 Unicode 字元。
+
    **回覆電子郵件地址**︰要用於訊息回覆的電子郵件帳戶。  
   
      ![郵件設定組態](./media/mail-settings-config.png "郵件設定組態")  

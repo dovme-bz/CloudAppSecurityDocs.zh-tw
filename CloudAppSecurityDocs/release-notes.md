@@ -1,26 +1,31 @@
 ---
-title: "Cloud App Security 的新功能 | Microsoft Docs"
-description: "本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。"
-keywords: 
+title: Cloud App Security 的新功能 | Microsoft Docs
+description: 本主題會經常更新，讓您知道最新版 Cloud App Security 的新功能。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security 版本 119
+發行日期：2018 年 3 月 18 日
+
+-   [IP 位址範圍] 頁面包括 Cloud App Security 探索到的內建 IP 位址。 其中有已識別的雲端服務 (例如 Azure 和 Office 365) IP 位址，還有威脅情報摘要，會自動為 IP 位址補充已知的具風險 IP 位址相關資訊。 
+-   當 Cloud App Security 嘗試對檔案執行治理動作，但因檔案已鎖定而失敗時，現在會自動重試治理動作。 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security 118 版
 發行日期：2018 年 3 月 4 日
