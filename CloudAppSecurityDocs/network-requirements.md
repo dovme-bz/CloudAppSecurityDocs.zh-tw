@@ -1,15 +1,15 @@
 ---
-title: "Cloud App Security 網路需求 | Microsoft Docs"
-description: "本主題說明要使用 Cloud App Security 時，必須開啟的 IP 位址與連接埠。"
-keywords: 
+title: Cloud App Security 網路需求 | Microsoft Docs
+description: 本主題說明要使用 Cloud App Security 時，必須開啟的 IP 位址與連接埠。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/30/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
@@ -21,7 +21,7 @@ ms.lasthandoff: 01/30/2018
 ---
 # <a name="network-requirements"></a>網路需求
 
-本主題會提供一份連接埠與 IP 位址的清單，若您要使用 Cloud App Security，就必須予以允許並列入白名單。 
+本主題會提供一份連接埠與 IP 位址的清單，若您要使用 Cloud App Security，就必須予以允許並列入允許清單。 
 
 
 ## <a name="view-your-data-center"></a>檢視您的資料中心
@@ -88,7 +88,7 @@ ms.lasthandoff: 01/30/2018
 
 為了讓 Cloud App Security 透過 Stunnel 將資料傳送至 ICAP 伺服器，請使用動態來源連接埠號碼向這些 IP 位址開放您的 DMZ 防火牆。 
 
-1.  來源位址：這些位址應該如上述列在白名單中，才能使用 API 連接器協力廠商應用程式
+1.  來源位址：這些位址應該如上述列在允許清單中，才能使用 API 連接器協力廠商應用程式
 2.  來源 TCP 連接埠：動態
 3.  目的地位址：連線至外部 ICAP 伺服器的 Stunnel 一或兩個 IP 位址
 4.  目的地 TCP 連接埠：如您網路中所定義
@@ -112,7 +112,7 @@ Cloud App Security 的專用電子郵件 IP 位址為：
 
 198.2.134.139 (mail1.cloudappsecurity.com)
 
-請務必將此 IP 位址加入反垃圾郵件服務的白名單，以接收系統傳送的通知。
+請務必將此 IP 位址加入反垃圾郵件服務的允許清單，以接收系統傳送的通知。
     
 ## <a name="log-collector"></a>記錄收集器 
 
@@ -129,7 +129,7 @@ Cloud App Security 的專用電子郵件 IP 位址為：
     |EU|https://prod02euwconsole1.blob.core.windows.net/|
 
 > [!NOTE]
-> - 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的白名單，請允許記錄收集器在連接埠 443 上初始化針對 [Microsoft Azure 資料中心 IP 範圍](https://www.microsoft.com/download/details.aspx?id=41653)的輸出流量。
+> - 如果您的防火牆要求靜態 IP 位址存取清單，且不支援以 URL 為基礎的允許清單，請允許記錄收集器在連接埠 443 上初始化針對 [Microsoft Azure 資料中心 IP 範圍](https://www.microsoft.com/download/details.aspx?id=41653)的輸出流量。
 >- 允許記錄收集器初始化 Cloud App Security 入口網站的輸出流量。
 
 
