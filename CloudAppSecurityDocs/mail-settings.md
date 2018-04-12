@@ -21,7 +21,7 @@ ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> 設定電子郵件通知喜好設定  
 
-針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，以及傳送給使用者與他們相關的缺口通知，若要設定這些通知的參數，請遵循此步驟。 如需應加入反垃圾郵件服務白名單的 Cloud App Security 電子郵件伺服器 IP 位址的詳細資訊，請參閱[網路需求](network-requirements.md)。 
+針對從 Cloud App Security 傳送給管理員要求警示的電子郵件通知，以及傳送給使用者與他們相關的缺口通知，若要設定這些通知的參數，請遵循此步驟。 如需應加入反垃圾郵件服務允許清單的 Cloud App Security 電子郵件伺服器 IP 位址的詳細資訊，請參閱[網路需求](network-requirements.md)。 
 
 
 1. 在功能表列中，按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 並選取 [設定]，然後選取 [郵件設定] 索引標籤。  

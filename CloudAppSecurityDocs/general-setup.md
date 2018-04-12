@@ -1,15 +1,15 @@
 ---
-title: "提供 Cloud App Security 入口網站中的組織設定以獲得最佳結果 | Microsoft Docs"
-description: "本文說明如何提供 Cloud App Security 中組織的相關資訊。"
-keywords: 
+title: 提供 Cloud App Security 入口網站中的組織設定以獲得最佳結果 | Microsoft Docs
+description: 本文說明如何提供 Cloud App Security 中組織的相關資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/3/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
@@ -23,7 +23,7 @@ ms.lasthandoff: 03/05/2018
 下列程序會指示您自訂 Cloud App Security 入口網站。
 
 ## <a name="prerequisites"></a>必要條件 
-若要存取入口網站，請務必將下列 IP 位址新增至防火牆的白名單，以提供 Cloud App Security 入口網站的存取權：  
+若要存取入口網站，請務必將下列 IP 位址新增至防火牆的允許清單，以提供 Cloud App Security 入口網站的存取權：  
   
 - 104.42.231.28  
   
