@@ -1,23 +1,23 @@
 ---
-title: "連接 G Suite 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 G Suite 連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 G Suite 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 G Suite 連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 9dba7289b83397ae68224b56332baf1a59abe704
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>將 G Suite 連接至 Microsoft Cloud App Security
 本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 G Suite 帳戶。
@@ -25,109 +25,109 @@ ms.lasthandoff: 03/05/2018
   
 ## <a name="configure-g-suite"></a>設定 G Suite  
   
-1.  以 G Suite 進階管理員的身分登入 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>。  
+1. 以 G Suite 進階管理員的身分登入 <a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a>。  
   
-2.  按一下 [建立專案] 開始新的專案。  
+2. 按一下 [建立專案] 開始新的專案。  
   
-     ![google1](./media/google1.png "google1")  
+    ![google1](./media/google1.png "google1")  
   
-3.  在 [新增專案] 畫面中，以下列名稱命名您的專案︰</br>
-    Microsoft Cloud App Security**，然後按一下 [建立]**。  
-           ![google2](./media/google2.png "google2")  
+3. 在 [新增專案] 畫面中，以下列名稱命名您的專案︰</br>
+   Microsoft Cloud App Security**，然後按一下 [建立]**。  
+          ![google2](./media/google2.png "google2")  
   
-4.  建立專案後，按一下工具列的 [Google Cloud Platform]，確定在上方的下拉式清單中選取正確的專案。
+4. 建立專案後，按一下工具列的 [Google Cloud Platform]，確定在上方的下拉式清單中選取正確的專案。
        
-       ![google 專案](./media/googleverify-project.png "googleverify 專案")  
+      ![google 專案](./media/googleverify-project.png "googleverify 專案")  
 
 5. 按一下 [API] 下方的 [Go to APIs overview] \(移至 API 概觀)。  
   
      ![google3](./media/google3.png "google3")  
   
-6.  停用 [API] 下列出的所有 API。  
+6. 停用 [API] 下列出的所有 API。  
       
-7.  按一下 [程式庫] 啟用下列 API (如果 [Popular APIs]\(熱門 API) 清單未列出 API，請使用搜尋列)：  
+7. 按一下 [程式庫] 啟用下列 API (如果 [Popular APIs]\(熱門 API) 清單未列出 API，請使用搜尋列)：  
      
-    -   管理 SDK  
+   -   管理 SDK  
   
-    -   稽核 API  
+   -   稽核 API  
   
-    -   Google Drive API  
+   -   Google Drive API  
   
-    -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace API  
   
-    -   Gmail API  
+   -   Gmail API  
             
- ![Google API](./media/google4.png "google4")  
+   ![Google API](./media/google4.png "google4")  
   
    > [!NOTE]  
    >  暫時忽略**認證**警告。  
 
 8. 針對每個 API 按一下 [啟用]。
      ![啟用 Google APPI](./media/google-api.png "google-api")  
-1. 您應該會有 5 個**啟用的 API**，請務必停用任何其他 API：
+9. 您應該會有 5 個**啟用的 API**，請務必停用任何其他 API：
   
      ![Google 啟用的 API](./media/google5.png "google5")  
   
-9.  按一下 [認證]，然後選取 [OAuth consent screen] \(OAuth 同意畫面) 索引標籤。
+10. 按一下 [認證]，然後選取 [OAuth consent screen] \(OAuth 同意畫面) 索引標籤。
   
-    -   在 [Product name shown to users (向使用者顯示的產品名稱)] 中，鍵入 **Microsoft Cloud App Security**。  
+    - 在 [Product name shown to users (向使用者顯示的產品名稱)] 中，鍵入 **Microsoft Cloud App Security**。  
   
-    -   所有其他欄位都是選擇性的。  
+    - 所有其他欄位都是選擇性的。  
   
-    -   按一下 **[儲存]**。  
+    - 按一下 **[儲存]**。  
   
-     ![Google 產品名稱](./media/google6.png "google6")  
+      ![Google 產品名稱](./media/google6.png "google6")  
   
-10. 在 [認證] 索引標籤中，按一下 [建立認證] 旁的箭號。  
+11. 在 [認證] 索引標籤中，按一下 [建立認證] 旁的箭號。  
   
      ![Google 認證](./media/google7.png "google7")  
 
-11. 選取 [服務帳戶金鑰]。
+12. 選取 [服務帳戶金鑰]。
 
      ![Google 服務帳戶金鑰](./media/google8.png "google8")  
   
-12. 在 [建立服務帳戶金鑰] 下，選擇 [新增服務帳戶]，並輸入任何名稱，例如 **Service account 1**。 在 [角色] 下，選擇 [專案]，然後選擇 [編輯者]。 在 [金鑰類型] 下，選擇 [P12]，然後按一下 [建立]。 P12 憑證檔案會儲存到您的電腦。
+13. 在 [建立服務帳戶金鑰] 下，選擇 [新增服務帳戶]，並輸入任何名稱，例如 **Service account 1**。 在 [角色] 下，選擇 [專案]，然後選擇 [編輯者]。 在 [金鑰類型] 下，選擇 [P12]，然後按一下 [建立]。 P12 憑證檔案會儲存到您的電腦。
  
      ![在 Google 中建立服務帳戶金鑰](./media/google9.png "google9")  
   
-13.  請複製指派給服務的 [服務帳戶 ID]，以供稍後使用。    
+14. 請複製指派給服務的 [服務帳戶 ID]，以供稍後使用。    
         
-14. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts]\(管理服務帳戶)。  
+15. 在 [認證] 畫面中，按一下最右側的 [Manage service accounts]\(管理服務帳戶)。  
      
     ![G Suite 認證服務帳戶](./media/google10.png "G Suite 認證服務帳戶")  
   
-15. 按一下位於您所建立之服務帳戶右側的三個點，然後選取 [編輯]。  
+16. 按一下位於您所建立之服務帳戶右側的三個點，然後選取 [編輯]。  
   
      ![Google 編輯](./media/google11.png "Google 編輯")  
   
-16. 選取 [Enable G Suite Domain-wide Delegation]\(啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
+17. 選取 [Enable G Suite Domain-wide Delegation]\(啟用 G Suite 全網域委派) 核取方塊，然後按一下 [儲存]。  
   
      ![Google 服務帳戶識別碼](./media/google12.png "google12")  
   
-17. 按一下在標題列中位於 Google Cloud Platform 旁邊的三條水平線，以開啟 Google 功能表。 按一下 **Google Cloud Platform**，然後按一下左功能表中的 [APIs and services] \(API 和服務) 索引標籤。  
+18. 按一下在標題列中位於 Google Cloud Platform 旁邊的三條水平線，以開啟 Google 功能表。 按一下 **Google Cloud Platform**，然後按一下左功能表中的 [APIs and services] \(API 和服務) 索引標籤。  
     
-18. 在開啟的儀表板中，向下捲動至已啟用的 API 清單，並按一下 [Google Drive API]。   
+19. 在開啟的儀表板中，向下捲動至已啟用的 API 清單，並按一下 [Google Drive API]。   
        ![選取 [Google Drive]](./media/google14.png "google14")  
 
-19. 按一下 [Drive UI Integration] \(磁碟機 UI 整合) 索引標籤，然後填寫下列資訊：
+20. 按一下 [Drive UI Integration] \(磁碟機 UI 整合) 索引標籤，然後填寫下列資訊：
 
-    -   **應用程式名稱**：Microsoft Cloud App Security。  
+    - **應用程式名稱**：Microsoft Cloud App Security。  
   
-    -   **簡短描述和完整描述** (選擇性)：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
+    - **簡短描述和完整描述** (選擇性)：Microsoft Cloud App Security 可讓您掌握雲端應用程式，協助您控制、調查和治理雲端應用程式的使用、保護公司資料，以及偵測任何雲端應用程式的可疑活動。  
   
-    -   Google 要求您至少上傳一個應用程式圖示。 移至 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) 以下載包含 Cloud App Security 圖示的 ZIP 檔案。 然後在**應用程式圖示**下，按一下 128x128 圖片旁的 [選取]，並將其拖曳到快顯畫面。 按一下 32x32 圖片旁的 [選取]，並將其拖曳到快顯畫面。  
+    - Google 要求您至少上傳一個應用程式圖示。 前往 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) 下載包含 Cloud App Security 圖示的 zip 檔案。 然後在**應用程式圖示**下，按一下 128x128 圖片旁的 [選取]，並將其拖曳到快顯畫面。 按一下 32x32 圖片旁的 [選取]，並將其拖曳到快顯畫面。  
   
-    -   向下捲動到 [Drive Integration] \(磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
+    - 向下捲動到 [Drive Integration] \(磁碟機整合) 區段，並在 [開啟 URL] 下方鍵入下列 URL：  
   
-         https://portal.cloudappsecurity.com/#/services/11770?tab=files  
+       https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
-       ![編輯 Google Drive](./media/google15.png "google15")  
+      ![編輯 Google Drive](./media/google15.png "google15")  
 
-20. 按一下 [儲存變更]。
+21. 按一下 [儲存變更]。
 
-20. 返回 [Enabled APIs] \(啟用的 API) 清單。 按一下 [Google Apps Marketplace SDK]。 
+22. 返回 [Enabled APIs] \(啟用的 API) 清單。 按一下 [Apps Marketplace SDK]。 
       
-21. 選取 [設定] 索引標籤。 
+23. 選取 [設定] 索引標籤。 
   
     -   複製上方顯示的**專案編號 (應用程式識別碼)** 以供日後使用。  
   
@@ -139,7 +139,7 @@ ms.lasthandoff: 03/05/2018
   
     -   在 [應用程式圖示] 下設定四個必要影像。  
   
-         這些影像可以在下列位置找到：[https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
+         您可於下列連結找到影像：[https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826)  
   
     -   填寫下列**支援 URL**：  
   
@@ -190,14 +190,14 @@ ms.lasthandoff: 03/05/2018
     -   在 [可見度] 底下，選取 [我的網域] \(非公用)。 
     -   按一下 [儲存變更]。  
         ![google 可見性](./media/google-visibility.png "google 可見性")  
-22. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 
+24. 請移至 [admin.google.com](https://admin.google.com/)，然後選擇 [安全性]。 
    
       ![Google Security](./media/googlesec.png "Google Security")  
  
-23. 選擇 [API 參考]。  
+25. 選擇 [API 參考]。  
        ![Google API 啟用](./media/googleapi.png "Google API")  
       
-24. 選取 [Enable API Access (啟用 API 存取)]，然後按一下 [儲存變更]。  
+26. 選取 [Enable API Access (啟用 API 存取)]，然後按一下 [儲存變更]。  
   
     ![Google 參考](./media/googleapiref.png "google8")  
 

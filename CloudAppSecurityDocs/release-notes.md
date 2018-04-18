@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security 版本 120
+發行日期：2018 年 4 月 8 日
+
+-   對於 Office 365 與 Azure AD，我們正在逐步推出一項功能，能夠在 Office 365 及 Azure AD 應用程式 (內外部應用程式皆適用) 執行使用者帳戶活動時，偵測到內部應用程式。 這使您得以建立警示原則，在應用程式執行未預期與未經授權的活動時向您發出警示。 
+-   在將應用程式權限清單匯出至 csv 時，也包括了發行者、權限等級及社群使用方式等其他欄位，這有助於合規性與調查程序的進行。
+-   改善已連線 ServiceNow 的應用程式，使內部服務活動不會再註記為「已經過來賓執行」，並且不會再觸發誤判警示。 這些活動現在會以其他已連線應用程式慣用的 N/A 表示。
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security 版本 119
 發行日期：2018 年 3 月 18 日
@@ -64,11 +72,11 @@ ms.lasthandoff: 03/19/2018
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security 115 版
 發行日期：2018 年 1 月 21 日
 
--   此版本提供在檔案原則中選取特定資料夾時的增強體驗。 您現在可以輕鬆地檢視並選取多個要包含在原則中的資料夾。 
--   在 [探索到的應用程式] 頁面中： 
-   - 大量標記功能可讓您套用自訂標籤 (除了獲批准的標籤和待批准的標籤)。 
-   - 當您**產生 IP 位址報表**或**產生使用者報告**時，匯出的報表現在會包含流量是否來自獲批准或待批准應用程式的相關資訊。 
--   您現在可以在入口網站中的 [連線到應用程式] 頁面，直接向 Microsoft Cloud App Security 小組要求新的 API App 連線程式。 
+- 此版本提供在檔案原則中選取特定資料夾時的增強體驗。 您現在可以輕鬆地檢視並選取多個要包含在原則中的資料夾。 
+- 在 [探索到的應用程式] 頁面中： 
+  - 大量標記功能可讓您套用自訂標籤 (除了獲批准的標籤和待批准的標籤)。 
+  - 當您**產生 IP 位址報表**或**產生使用者報告**時，匯出的報表現在會包含流量是否來自獲批准或待批准應用程式的相關資訊。 
+- 您現在可以在入口網站中的 [連線到應用程式] 頁面，直接向 Microsoft Cloud App Security 小組要求新的 API App 連線程式。 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security 版本 114
