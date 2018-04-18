@@ -1,23 +1,23 @@
 ---
-title: "透過安全 ICAP 的 Cloud App Security 外部 DLP 整合 | Microsoft Docs"
-description: "本主題提供在 Cloud App Security 中設定 ICAP 連線以及 Stunnel 設定所需的步驟。"
-keywords: 
+title: 透過安全 ICAP 的 Cloud App Security 外部 DLP 整合 | Microsoft Docs
+description: 本主題提供在 Cloud App Security 中設定 ICAP 連線以及 Stunnel 設定所需的步驟。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
@@ -72,7 +72,7 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 #### <a name="install-stunnel-on-windows"></a>在 Windows 上安裝 Stunnel
 
 1. [Download the latest Windows Server installation](https://www.stunnel.org/downloads.html) (下載最新 Windows Server 安裝) (這應該作用於任何最新 Windows Server 版本)。
-(預設安裝)
+   (預設安裝)
 
 2. 在安裝期間，先不要建立新的自我簽署憑證，請在稍後的步驟中建立憑證。
 
@@ -80,34 +80,34 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
 
 4. 使用下列其中一種方式建立憑證：
 
-   -    使用您的憑證管理伺服器以在 ICAP 伺服器上建立 SSL 憑證，然後將金鑰複製至您準備安裝 Stunnel 的伺服器。
-   -    或者，在 Stunnel 伺服器上，使用下列 OpenSSL 命令產生私密金鑰和自我簽署憑證。 請取代這些變數：
-       -    含私密金鑰名稱的 **key.pem**
-       -    含憑證名稱的 **cert.pem**
-       -    含新建立金鑰名稱的 **stunnel-key**
+   - 使用您的憑證管理伺服器以在 ICAP 伺服器上建立 SSL 憑證，然後將金鑰複製至您準備安裝 Stunnel 的伺服器。
+   - 或者，在 Stunnel 伺服器上，使用下列 OpenSSL 命令產生私密金鑰和自我簽署憑證。 請取代這些變數：
+     -    含私密金鑰名稱的 **key.pem**
+     -    含憑證名稱的 **cert.pem**
+     -    含新建立金鑰名稱的 **stunnel-key**
 
 5. 在 Stunnel 安裝路徑下，開啟 config 目錄。 它預設為：c:\Program Files (x86)\stunnel\config\
 6. 以系統管理員權限，執行命令列：`..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. 串連 cert.pem 與 key.pem，並將它們儲存至檔案：`type cert.pem key.pem >> stunnel-key.pem`
+7. 串連 cert.pem 與 key.pem，並將它們儲存至檔案：`type cert.pem key.pem >> stunnel-key.pem`
 
-9. [下載公開金鑰](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)，並將它儲存至下列位置：**C:\Program Files (x86)\stunnel\config\MCASca.pem**。
+8. [下載公開金鑰](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)，並將它儲存至下列位置：**C:\Program Files (x86)\stunnel\config\MCASca.pem**。
 
-10. 新增下列規則，以在 Windows 防火牆中開啟連接埠：
+9. 新增下列規則，以在 Windows 防火牆中開啟連接埠：
 
-        rem Open TCP Port 11344 inbound and outbound
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
+       rem Open TCP Port 11344 inbound and outbound
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. 執行：`c:\Program Files (x86)\stunnel\bin\stunnel.exe` 以開啟 Stunnel 應用程式。 
+10. 執行：`c:\Program Files (x86)\stunnel\bin\stunnel.exe` 以開啟 Stunnel 應用程式。 
 
-12. 按一下 [設定]，然後 [編輯設定]。
+11. 按一下 [設定]，然後 [編輯設定]。
 
-   ![編輯 Windows Server 設定](./media/stunnel-windows.png)
+    ![編輯 Windows Server 設定](./media/stunnel-windows.png)
  
-13. 開啟檔案，並貼上下列伺服器設定行，其中 **DLP Server IP** 是 ICAP 伺服器的 IP 位址、**stunnel-key** 是您在上一個步驟中建立的金鑰，而 **MCASCAfile** 是 Cloud App Security Stunnel 用戶端的公用憑證。 此外，刪除任何現有的範例文字 (在範例中，它會顯示 Gmail 文字)，並將下列內容放入檔案中：
+12. 開啟檔案，並貼上下列伺服器設定行，其中 **DLP Server IP** 是 ICAP 伺服器的 IP 位址、**stunnel-key** 是您在上一個步驟中建立的金鑰，而 **MCASCAfile** 是 Cloud App Security Stunnel 用戶端的公用憑證。 此外，刪除任何現有的範例文字 (在範例中，它會顯示 Gmail 文字)，並將下列內容放入檔案中：
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -116,9 +116,9 @@ Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設�
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-12. 儲存檔案，然後按一下 [重新載入設定]。
+13. 儲存檔案，然後按一下 [重新載入設定]。
 
-13. 若要驗證所有事項都依預期執行，請從命令提示字元執行：`netstat -nao  | findstr 11344`
+14. 若要驗證所有事項都依預期執行，請從命令提示字元執行：`netstat -nao  | findstr 11344`
  
 
 #### <a name="install-stunnel-on-ubuntu"></a>在 Ubuntu 上安裝 Stunnel
@@ -151,7 +151,7 @@ ICAP 伺服器和 Cloud App Security 會使用私密金鑰和公開憑證進行�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>下載 Cloud App Security Stunnel 用戶端公開金鑰
 
-從這個位置下載公開金鑰：https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem ，並將它儲存至這個位置：**/etc/ssl/certs/MCASCAfile.pem**
+請從這個位置下載公開金鑰：https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 並將其儲存至：**/etc/ssl/certs/MCASCAfile.pem**
 
 ### <a name="configure-stunnel"></a>設定 Stunnel 
 
@@ -260,23 +260,25 @@ Stunnel 設定會設定於 stunnel.conf 檔案中。
  
 ### <a name="detection-server-installation"></a>偵測伺服器安裝 
 Cloud App Security 所使用的偵測伺服器是一個標準的 Network Prevent for Web 伺服器。 有幾個應該變更的組態選項：
-1.  停用 [Trial Mode] \(試用模式\)：
-    1. 在 [System] \(系統\)  >  [Servers and Detectors] \(伺服器和偵測器\) 下，按一下 ICAP 目標。 
+1. 停用 [Trial Mode] \(試用模式\)：
+   1. 在 [System] \(系統\)  >  [Servers and Detectors] \(伺服器和偵測器\) 下，按一下 ICAP 目標。 
     
       ![ICAP 目標](./media/icap-target.png)
     
-    2. 按一下 [設定] 。 
+   2. 按一下 [設定] 。 
     
       ![設定 ICAP 目標](./media/configure-icap-target.png)
     
-    3. 停用 [Trial Mode] \(試用模式\)。
+   3. 停用 [Trial Mode] \(試用模式\)。
     
       ![停用試用模式](./media/icap-disable-trial-mode.png)
     
 2. 在 [ICAP]  >  [Response Filtering] \(回應篩選\) 下，將 [Ignore Responses Smaller Than] \(忽略回應小於\) 值變更為 1。
 
-3. 然後將 "application/*" 新增至 [Inspect Content Type] \(檢查內容類型\) 的清單。
+
+3. 然後將 "application/<em>" 新增至**檢查內容類型</em>**的清單。
      ![檢查內容類型](./media/icap-inspect-content-type.png)
+
 4. 按一下 [儲存]
 
 
@@ -289,7 +291,7 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
     
     ![新增回應規則](./media/icap-add-response-rule.png)
 
-2.  確定已選取 [Automated Response] **\(自動回應\)**  並按 [Next] \(下一步\)。
+2.  確定已選取 [Automated Response]**\(自動回應\)** 並按 [Next] \(下一步\)。
 
     ![自動回應](./media/icap-automated-response.png)
 
@@ -310,7 +312,7 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
 此規則必須新增至所有現有的原則。
 
 >[!NOTE]
-> 如果您使用 Symantec vontu 掃描 Dropbox 的檔案，CAS 會自動顯示檔案來自下列 URL：http://misc/filename。此預留位置 URL 實際上不會連到任何地方，只是用於記錄之用。
+> 如果您使用 Symantec vontu 掃描 Dropbox 的檔案，CAS 會自動顯示檔案來自下列 URL：http://misc/filename。此預留位置 URL 實際上不會連到任何地方，僅作記錄之用。
 
 
 ## <a name="see-also"></a>另請參閱  

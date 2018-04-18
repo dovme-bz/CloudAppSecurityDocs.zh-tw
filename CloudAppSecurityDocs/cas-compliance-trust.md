@@ -1,23 +1,23 @@
 ---
-title: "Cloud App Security 合規性、資料安全性、隱私權、信任 | Microsoft Docs"
-description: "本主題描述 Cloud App Security 合規性供應項目、信任中心、隱私權和資料安全性。"
-keywords: 
+title: Cloud App Security 合規性、資料安全性、隱私權、信任 | Microsoft Docs
+description: 本主題描述 Cloud App Security 合規性供應項目、信任中心、隱私權和資料安全性。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/11/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: efa135ed66891e4af5f685405b742fb9f1d5667e
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security 合規性、信任、資料安全性和隱私權
 
@@ -36,25 +36,25 @@ Microsoft Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件�
 Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，包括但不限於：
 
 
-| |標題|描述|
+| |Title|說明|
 |----|----|----|
 |![CSA 標誌](./media/csastar-attest.png)|CSA STAR 證明|根據獨立稽核，Azure 和 Intune 榮獲雲端安全性聯盟 (Cloud Security Alliance) 的 STAR 證明。|
 |![CSA 標誌](./media/csastar.png)|CSA STAR 認證|Azure、Intune 和 Power BI 榮獲雲端安全性聯盟 (Cloud Security Alliance) STAR 認證的金級。|
-|![歐盟示範條款標誌](./media/eu-model-icon.png)|[歐盟示範條款](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft 提供歐盟標準合約條款，針對個人資料的傳輸提供保證。|
+|![歐盟示範條款標誌](./media/eu-model-icon.png)|[歐盟示範條款](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft 提供歐盟標準合約條款，針對個人資料的傳輸提供保證。|
 |![隱私盾標誌](./media/privacy_shield.png)|歐盟-美國隱私盾|Microsoft 符合此架構，保護從歐盟傳送到美國的個人資料。|
 |![FISC 標誌](./media/logo_fisc.png)|FISC|Microsoft 符合日本金融業資訊系統 (Financial Industry Information Systems) v8 標準的需求。|
-|![HIPAA 標誌](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/trustcenter/compliance/hipaa)|Microsoft 提供健康保險流通與責任法案業務聯盟合約 (BAA)。|
+|![HIPAA 標誌](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft 提供健康保險流通與責任法案業務聯盟合約 (BAA)。|
 |![ISO 9001 標誌](./media/iso-9001.png)|ISO 9001|Microsoft 針對這些品質管理標準的實作已通過認證。|
-|![ISO 27001 標誌](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001)|Microsoft 針對這些資訊安全性管理標準的實作已通過認證。|
-|![ISO 27018 標誌](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/trustcenter/compliance/iso-iec-27018)|Microsoft 是第一個遵守此雲端隱私權實務準則的雲端提供者。|
+|![ISO 27001 標誌](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft 針對這些資訊安全性管理標準的實作已通過認證。|
+|![ISO 27018 標誌](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft 是第一個遵守此雲端隱私權實務準則的雲端提供者。|
 |![PCI 標誌](./media/pci-logo.png)|PCI DSS|Azure 符合支付卡產業資料安全標準層級 1 的 3.1 版。|
-|![SOC 標誌](./media/soc-logo.png)|[SOC 1 和 SOC 2 類型 2 報告](https://www.microsoft.com/trustcenter/compliance/soc)|Microsoft 雲端服務符合運作安全性的服務組織控制 (Service Organization Controls) 標準。|
+|![SOC 標誌](./media/soc-logo.png)|[SOC 1 和 SOC 2 類型 2 報告](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Microsoft 雲端服務符合運作安全性的服務組織控制 (Service Organization Controls) 標準。|
 |![SOC 標誌](./media/soc-logo.png)|SOC 3|Microsoft 雲端服務符合運作安全性的服務組織控制 (Service Organization Controls) 標準。|
 |![G-Cloud 標誌](./media/g-cloud.png)|英國 G-Cloud|皇冠商業服務 (Crown Commercial Service) 已將 Microsoft 雲端服務分類更新為 Government Cloud v6。|
 
-如需詳細資訊，請前往 [Microsoft 合規性供應項目] (https://go.microsoft.com/fwlink/?linkid=842039) \(英文\) 並選取 Cloud App Security。  
+如需詳細資訊，請前往 [Microsoft 合規性供應項目](https://go.microsoft.com/fwlink/?linkid=842039) 並選取 [Cloud App Security]。  
 
-## <a name="privacy"></a>隱私權
+## <a name="privacy"></a>私密性
 
 ### <a name="you-are-the-owner-of-your-data"></a>您是資料的擁有者
 
@@ -66,7 +66,7 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 
 -   Cloud App Security 只會將您的資料用於提供您所訂閱之服務的一致用途上。
 
--   如果政府與 Microsoft 接洽要求存取您的資料，Microsoft 會盡可能地將查詢轉送給您 (客戶)。 Microsoft 已對無效的法律要求提出質疑，這些要求已被禁止對無效的[政府要求](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) \(英文\) 洩漏客戶資料。 深入了解[誰可以存取您的資料，以及條件為何](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) \(英文\)。
+-   如果政府與 Microsoft 接洽要求存取您的資料，Microsoft 會盡可能地將查詢轉送給您 (客戶)。 Microsoft 已對無效的法律要求提出質疑，這些要求已被禁止對無效的[政府要求](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data) \(英文\) 洩漏客戶資料。 深入了解[誰可以存取您的資料，以及條件為何](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms) \(英文\)。
 
 ### <a name="privacy-controls"></a>隱私權控制
 
@@ -76,7 +76,7 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 
 -   Microsoft Cloud App Security 目前在北美洲和歐洲 (每個都是一個「地區」) 的資料中心運作。 您的租用戶帳戶將會根據您註冊時選擇的國家/地區，建立在「地區」中。 具體來說，您的資料將會儲存在距離該位置最近之「地區」的資料中心中。
 
-[深入了解隱私權](https://www.microsoft.com/trustcenter/privacy)
+[深入了解隱私權](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>透明度
 
@@ -100,11 +100,11 @@ Microsoft Cloud App Security 保留資料的方式如下：
 
 若要深入了解 Microsoft 的資料處理實務，請閱讀[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) \(英文\)。
 
-[深入了解透明度](https://www.microsoft.com/trustcenter/about/transparency) 
+[深入了解透明度](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
 ## <a name="security"></a>安全性
 
-### <a name="encryption"></a>加密
+### <a name="encryption"></a>Encryption
 
 Microsoft 使用加密技術，在您的資料於 Microsoft 資料庫靜置以及在使用者裝置和 Cloud App Security 資料中心之間傳輸時加以保護。
 
