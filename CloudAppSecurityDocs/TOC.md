@@ -38,7 +38,6 @@
 # 用法
 ## [使用儀表板](daily-activities-to-protect-your-cloud-environment.md)
 ## 案例
-### [保護您的組織免受勒索軟體威脅](use-case-ransomware.md)
 ### [禁止下載機密資訊](use-case-proxy-block-session-aad.md)
 ### [使用系統管理隔離來保護您的檔案](use-case-admin-quarantine.md)
 ### [自動套用 Azure 資訊保護標籤](use-case-information-protection.md)
@@ -52,7 +51,6 @@
 #### [活動篩選與查詢](activity-filters-queries.md)
 ### [檔案](file-filters.md)
 ### [帳戶](accounts.md)
-### [內建報告參考資料](built-in-report-reference.md)
 ### [管理應用程式權限](manage-app-permissions.md)
 ### [監視應用程式](monitor-alerts.md)
 #### [管理警示](managing-alerts.md)
@@ -65,8 +63,9 @@
 #### [檔案原則](data-protection-policies.md)
 ##### [內容檢查](content-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
-#### [存取原則](access-policy-aad.md)
-#### [工作階段原則](session-policy-aad.md)
+#### 條件式存取應用程式控制原則
+##### [存取原則](access-policy-aad.md)
+##### [工作階段原則](session-policy-aad.md)
 #### [原則範本參考](policy-template-reference.md)
 ### [治理連線的應用程式](governance-actions.md)
 ### [治理探索到的應用程式](governance-discovery.md)
