@@ -1,27 +1,30 @@
 ---
-title: "針對 SIEM 與 Cloud App Security 的整合進行疑難排解 | Microsoft Docs"
-description: "本主題提供將您的 SIEM 連線到 Cloud App Security 時可能發生的問題清單，並提供每個問題的解決方法。"
-keywords: 
+title: 針對 SIEM 與 Cloud App Security 的整合進行疑難排解 | Microsoft Docs
+description: 本主題提供將您的 SIEM 連線到 Cloud App Security 時可能發生的問題清單，並提供每個問題的解決方法。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 940e5994e9260b5fff6882867d5acea4f974b5e7
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-the-siem-agent"></a>為 SIEM 代理程式進行疑難排解
 
-請確認 Cloud App Security 入口網站中的 SIEM 代理程式狀態不是 [連線錯誤] 或 [已中斷連線]，而且沒有代理程式通知。 如果連線關閉超過兩小時，就會顯示 [連線錯誤]，如果連線關閉過 12 小時，則會顯示 [已中斷連線]。
+請確認 Microsoft Cloud App Security 入口網站中的 SIEM 代理程式狀態不是 [連線錯誤] 或 [已中斷連線]，而且沒有代理程式通知。 如果連線關閉超過兩小時，就會顯示 [連線錯誤]，如果連線關閉過 12 小時，則會顯示 [已中斷連線]。
 
 如果您在執行代理程式時於命令提示字元中看到下列其中一個錯誤，請使用下列步驟來補救此問題︰
 

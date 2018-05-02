@@ -1,26 +1,29 @@
 ---
-title: "部署 Cloud App Security 讓雲端應用程式使用洞察力和控制 | Microsoft Docs"
-description: "本主題概述啟動並執行 Cloud App Security 的程序。"
-keywords: 
+title: 部署 Cloud App Security 讓雲端應用程式使用洞察力和控制 | Microsoft Docs
+description: 本主題概述啟動並執行 Cloud App Security 的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 59588a909192f225a086bacc4c218f388cbc46d4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="deploy-cloud-app-security"></a>部署 Cloud App Security
-Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Cloud App Security 的步驟。  
+*適用於：Microsoft Cloud App Security*
+
+
+# <a name="deploy-microsoft-cloud-app-security"></a>部署 Microsoft Cloud App Security
+Microsoft Cloud App Security 可協助您充分利用雲端應用程式的優點，同時維持對公司資源的控制。 其運作方式為改善雲端活動的可見度，並協助提升對公司資料的保護。 本主題會逐步引導您設定及使用 Microsoft Cloud App Security 的步驟。  
 
 組織必須擁有授權才能使用 Cloud App Security。 如需詳細資訊，請參閱 Cloud App Security 首頁的[如何購買 Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security) 一節。  
 
@@ -44,7 +47,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 
 ## <a name="to-access-the-portal"></a>存取入口網站
 
-若要存取 Cloud App Security 入口網站，請前往 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)。  
+若要存取 Cloud App Security 入口網站，請移至 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)。  
   
 或者，您可以透過 **Office 365 系統管理中心**存取入口網站，方法是依序按一下系統管理中心圖示 ![O365 系統管理中心圖示](./media/o365-admin-centers-icon.png "O365 系統管理中心圖示") 和 [Cloud App Security]。  
   
@@ -139,7 +142,7 @@ Cloud App Security 可協助您充分利用雲端應用程式的優點，同時�
 3. 輸入 IP 範圍 **[詳細資料]**、**[位置]**、**[標記]** 及 **[類別]**。
 4. 選擇 **[建立]**。
 
- 現在您可以在建立原則及篩選與建立連續報告時，使用 IP 標記。
+   現在您可以在建立原則及篩選與建立連續報告時，使用 IP 標記。
 
 **建立連續報告**
 

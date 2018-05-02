@@ -1,26 +1,28 @@
 ---
-title: "使用 Cloud App Security 儀表板 | Microsoft Docs"
-description: "本文章提供使用 Cloud App Security 儀表板的基礎知識。"
-keywords: 
+title: 使用 Cloud App Security 儀表板 | Microsoft Docs
+description: 本文章提供使用 Cloud App Security 儀表板的基礎知識。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="working-with-the-dashboard"></a>使用儀表板
-啟動並執行 Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
+啟動並執行 Microsoft Cloud App Security 後，您將需設定資料流、批准您想要讓人員使用的應用程式，以及設定原則監視雲端環境。 接著就可以使用 Cloud App Security 來控制及保護您的雲端並管理風險。  
 
 本主題說明您每日應該搭配 Cloud App Security 執行的工作。  
 

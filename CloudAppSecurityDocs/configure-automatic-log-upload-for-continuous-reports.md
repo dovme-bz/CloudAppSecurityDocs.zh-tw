@@ -1,24 +1,26 @@
 ---
-title: "在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
-description: "本主題提供如何上傳記錄檔以建立自動 Cloud Discovery 報告的資訊。"
-keywords: 
+title: 在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告 | Microsoft Docs
+description: 本主題提供如何上傳記錄檔以建立自動 Cloud Discovery 報告的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 56252b8d4bd7d69719b9ceb6fb05a9e8030f8ffd
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 8e3e75687839e96d92c50f6fba132b49c06c62bd
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>在虛擬設備上設定自動記錄檔上傳以進行連續報告 - 已過時
 
 > [!WARNING] 
@@ -29,7 +31,7 @@ ms.lasthandoff: 01/16/2018
 - 磁碟空間：250 GB
 - CPU：2
 - RAM：4 GB 
-- 如[網路需求](network-requirements#log-collector)中所述，設定您的防火牆
+- 如[網路需求](network-requirements.md#log-collector)中所述，設定您的防火牆
 
 
 ## <a name="log-collector-performance"></a>記錄收集器效能
@@ -43,70 +45,70 @@ ms.lasthandoff: 01/16/2018
   
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>步驟 1 – Web 入口網站設定：定義資料來源並將它們連結到記錄收集器  
   
-1.  請移至自動上傳設定頁面上︰  
-    在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，以及 [記錄收集器]。  
+1. 請移至自動上傳設定頁面上︰  
+   在 Cloud App Security 入口網站中，依序按一下設定圖示 ![設定圖示](./media/settings-icon.png "設定圖示")，以及 [記錄收集器]。  
   
-3.  為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰  
+2. 為每個要上傳記錄檔的防火牆或 Proxy，建立相符的資料來源︰  
   
-    a.  按一下 [加入資料來源]。  
+   a.  按一下 [加入資料來源]。  
   
-    b.  **命名** Proxy 或防火牆。  
+   b.  **命名** Proxy 或防火牆。  
   
-    c.  從 [來源] 清單中選取設備。 如果您選取 [自訂記錄檔格式] 來處理未列出的網路設備，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)中的設定指示。
+   c.  從 [來源] 清單中選取設備。 如果您選取 [自訂記錄檔格式] 來處理未列出的網路設備，請參閱[使用自訂記錄檔剖析器](custom-log-parser.md)中的設定指示。
   
-    d.  比較您的記錄檔和預期的記錄檔格式範例。 如果您的記錄檔格式不符合此範例，您應該將資料來源加入為 [其他]。  
+   d.  比較您的記錄檔和預期的記錄檔格式範例。 如果您的記錄檔格式不符合此範例，您應該將資料來源加入為 [其他]。  
   
-    e.  將 [接收器類型] 設為 [FTP] 或 [Syslog]。 若為 **Syslog** 請選擇 [UDP] 或 [TCP]。  
+   e.  將 [接收器類型] 設為 [FTP] 或 [Syslog]。 若為 **Syslog** 請選擇 [UDP] 或 [TCP]。  
   
-    f.  為記錄檔可用來偵測網路流量的每個防火牆和 Proxy 重複這個程序。  
+   f.  為記錄檔可用來偵測網路流量的每個防火牆和 Proxy 重複這個程序。  
   
-4.  移至上方的 [記錄收集器] 索引標籤。  
+3. 移至上方的 [記錄收集器] 索引標籤。  
   
-    a.  按一下 [加入記錄收集器]。  
+   a.  按一下 [加入記錄收集器]。  
   
-    b.  為記錄收集器**命名**。  
+   b.  為記錄收集器**命名**。  
   
-    c.  選取所有您想要連接到收集器的 [資料來源]，然後按一下 [更新] 以儲存設定並產生存取權杖。  
-![探索資料來源](./media/discovery-data-sources.png)
+   c.  選取所有您想要連接到收集器的 [資料來源]，然後按一下 [更新] 以儲存設定並產生存取權杖。  
+   ![探索資料來源](./media/discovery-data-sources.png)
   
-  > [!NOTE] 
-  > - 單一記錄收集器可以處理多個資料來源。
-  > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會使用這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
-4.  如果您接受[使用者授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請按一下 Hyper-V 或 VMWare 以**下載**新的記錄收集器虛擬機器。 然後，使用您在入口網站中收到的密碼將檔案解壓縮。  
+   > [!NOTE] 
+   > - 單一記錄收集器可以處理多個資料來源。
+   > - 請複製螢幕的內容，因為當您進行記錄收集器與 Cloud App Security 的通訊設定時會使用這些資訊。 如果您已選取 Syslog，則這些資訊會包含 Syslog 接聽程式會在哪個連接埠接聽的資訊。
+4. 如果您接受[使用者授權條款](https://go.microsoft.com/fwlink/?linkid=862492)，請按一下 Hyper-V 或 VMWare 以**下載**新的記錄收集器虛擬機器。 然後，使用您在入口網站中收到的密碼將檔案解壓縮。  
   
 ### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>步驟 2 – 虛擬機器的內部部署和網路設定   
 
 > [!NOTE] 
 > 下列步驟描述 Hyper-V 中的部署。 VM Hypervisor 的部署步驟有些不同。  
 
-1.  開啟 Hyper-V 管理員。  
+1. 開啟 Hyper-V 管理員。  
   
-2.  依序選取 [新增] 和 [虛擬機器]，然後按一下 [下一步]。  
- ![探索 Hyper-V 虛擬機器](./media/discovery-hyperv-virtual-machine.png "探索 Hyper-V 虛擬機器")  
+2. 依序選取 [新增] 和 [虛擬機器]，然後按一下 [下一步]。  
+   ![探索 Hyper-V 虛擬機器](./media/discovery-hyperv-virtual-machine.png "探索 Hyper-V 虛擬機器")  
   
-3.  為新的虛擬機器**命名**，例如 CloudAppSecurityLogCollector01，然後按一下 [下一步]。  
+3. 為新的虛擬機器**命名**，例如 CloudAppSecurityLogCollector01，然後按一下 [下一步]。  
   
-4.  選取 [Generation 1 (第 1 代)]，並按一下 [下一步]。  
+4. 選取 [Generation 1 (第 1 代)]，並按一下 [下一步]。  
   
-5.  將 [啟動記憶體] 變更至 [4096 MB]。  
+5. 將 [啟動記憶體] 變更至 [4096 MB]。  
         
 6. 檢查此虛擬機器的 [Use Dynamic Memory (使用動態記憶體)]，然後按一下 [下一步]。  
   
-7.  如果有此選項，請選擇網路 [連線]，並按一下 [下一步]。  
+7. 如果有此選項，請選擇網路 [連線]，並按一下 [下一步]。  
   
-8.  選擇 [使用現有的虛擬硬碟] 並選取包含在下載之 ZIP 檔案中的 **.vhd** 檔案。  
+8. 選擇 [使用現有的虛擬硬碟] 並選取包含在下載之 ZIP 檔案中的 **.vhd** 檔案。  
   
-9.  按 [下一步]  ，然後按一下 [完成] 。  
-    電腦即新增至您的 Hyper-V 環境。  
+9. 按 [下一步]  ，然後按一下 [完成] 。  
+   電腦即新增至您的 Hyper-V 環境。  
   
-9. 按一下 [虛擬機器] 資料表中的機器，然後按一下 [啟動]。   
+10. 按一下 [虛擬機器] 資料表中的機器，然後按一下 [啟動]。   
   
-10. 連接至記錄收集器的虛擬機器，查看其是否已指派 DHCP 位址：按一下虛擬機器，然後選取 [連線]。 您應該會看到登入提示。 如果您有看到 IP 位址，即可使用終端機/SSH 工具連接至虛擬機器。  如果未顯示 IP 位址，請使用 Hyper-V/VMWare 連線工具與您在先前建立記錄收集器時所複製的認證，進行登入。 您可以執行以下命令以使用網路設定公用程式來變更密碼及設定虛擬機器：
-```
-sudo network_config
-```
-> [!NOTE]
-> 虛擬機器已預先設定為從 DHCP 伺服器取得 IP 位址。 如果您需要設定靜態 IP 位址、預設閘道、主機名稱、DNS 伺服器和 NTPS，則可以使用 **network_config** 公用程式，或以手動方式執行變更。
+11. 連接至記錄收集器的虛擬機器，查看其是否已指派 DHCP 位址：按一下虛擬機器，然後選取 [連線]。 您應該會看到登入提示。 如果您有看到 IP 位址，即可使用終端機/SSH 工具連接至虛擬機器。  如果未顯示 IP 位址，請使用 Hyper-V/VMWare 連線工具與您在先前建立記錄收集器時所複製的認證，進行登入。 您可以執行以下命令以使用網路設定公用程式來變更密碼及設定虛擬機器：
+    ```
+    sudo network_config
+    ```
+    > [!NOTE]
+    > 虛擬機器已預先設定為從 DHCP 伺服器取得 IP 位址。 如果您需要設定靜態 IP 位址、預設閘道、主機名稱、DNS 伺服器和 NTPS，則可以使用 **network_config** 公用程式，或以手動方式執行變更。
 
 
 此時，您的記錄收集器應已連接網路，並能夠連線至 Cloud App Security 入口網站。  
@@ -165,6 +167,3 @@ sudo network_config
 [使用 Cloud Discovery 資料](working-with-cloud-discovery-data.md)   
 
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
-    
-      
-  

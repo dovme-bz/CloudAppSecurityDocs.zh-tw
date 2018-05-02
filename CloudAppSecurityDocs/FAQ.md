@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security 常見問題集 | Microsoft Docs"
-description: "本文提供 Cloud App Security 的常見問題與解答。"
-keywords: 
+title: Cloud App Security 常見問題集 | Microsoft Docs
+description: 本文提供 Cloud App Security 的常見問題與解答。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acc80f823431f5f903412b8e984683a3e8f62d34
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3347b7cfba41c2e5dc9f47b74a2b1f6e8d7dab62
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="frequently-asked-questions"></a>常見問題集
 
 ## <a name="what-kind-of-permissions-do-i-need-to-have-in-order-to-access-cloud-app-security"></a>需要有何種權限才能存取 Cloud App Security？

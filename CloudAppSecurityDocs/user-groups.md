@@ -1,29 +1,31 @@
 ---
-title: "從連接的應用程式匯入使用者群組 | Microsoft Docs"
-description: "本主題提供將使用者群組匯入 Cloud App Security 的指示。"
-keywords: 
+title: 從連接的應用程式匯入使用者群組 | Microsoft Docs
+description: 本主題提供將使用者群組匯入 Cloud App Security 的指示。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dd1263d164751133e8c50e13b003c68f43926b8d
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: aa151c383f1121fe20ef485660ab42dab8c395a1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+   
 # <a name="import-user-groups"></a>匯入使用者群組
 
-當您使用 API 連接器連接應用程式時，Cloud App Security 可讓您從 Office 365 及 Azure Active Directory 等等匯入使用者群組。
+當您使用 API 連接器連接應用程式時，Microsoft Cloud App Security 可讓您從 Office 365 及 Azure Active Directory 等等匯入使用者群組。
 使用者群組有兩種類型： 
-- 自動群組 </br>Cloud App Security 預設會建立自動群組。 例如，有一個名為**外部**的自動使用者群組，結合了來自組織外部且可以存取檔案，或已參與租用戶使用者活動之所有應用程式的所有使用者。
+- 自動群組 </br>Microsoft Cloud App Security 預設會建立自動群組。 例如，有一個名為**外部**的自動使用者群組，結合了來自組織外部且可以存取檔案，或已參與租用戶使用者活動之所有應用程式的所有使用者。
  Cloud App Security 中有下列自動群組：
   - External
   - Dropbox 系統管理員
@@ -39,12 +41,12 @@ ms.lasthandoff: 01/16/2018
 1. 在功能表列中，按一下設定圖示![設定圖示](./media/settings-icon.png "設定圖示")，然後選取 [使用者群組]。
 2. 按一下 [匯入使用者群組]。
 
-  ![匯入使用者群組](./media/user-groups-add.png)
+   ![匯入使用者群組](./media/user-groups-add.png)
 
 3. 選取要使用者群組匯入來源的應用程式。 應用程式清單是由您部署的應用程式連接器決定。
 4. 選取要匯入的群組。 可用群組清單是應用程式本身中的所有現有使用者群組清單。 如果想要新增新的群組，您必須直接在應用程式本身上執行，然後當它出現在這裡時選取它。
-4. 視群組大小而定，匯入最多可能需要一小時。 您可以選取在匯入程序完成時，透過電子郵件通知的選項。
-5. 按一下 [匯入]。 匯入群組後，Cloud App Security 會自動同步處理群組成員，就像 Active Directory Connect 一樣。
+5. 視群組大小而定，匯入最多可能需要一小時。 您可以選取在匯入程序完成時，透過電子郵件通知的選項。
+6. 按一下 [匯入]。 匯入群組後，Cloud App Security 會自動同步處理群組成員，就像 Active Directory Connect 一樣。
 7. 匯入完成後，您可以在 [使用者群組] 頁面中按一下特定的群組，檢視所有群組成員的清單。 您也可以按一下任何群組成員，進一步向下切入特定帳戶的詳細資料，並檢視它們使用哪些應用程式及帳戶摘要，包括使用者圖形及其活動。
 
 匯入群組可讓您在調查**活動記錄**和建立原則時，選取這些群組作為篩選。 

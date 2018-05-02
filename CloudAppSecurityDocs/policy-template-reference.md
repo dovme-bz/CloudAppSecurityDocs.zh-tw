@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security 中的原則範本參考 | Microsoft Docs"
-description: "本主題提供的資訊說明如何使用與設定原則，以控制雲端應用程式的使用方式。"
-keywords: 
+title: Cloud App Security 中的原則範本參考 | Microsoft Docs
+description: 本主題提供的資訊說明如何使用與設定原則，以控制雲端應用程式的使用方式。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="policy-templates"></a>原則範本
 
-以下是 Cloud App Security 中所有原則範本的清單。 建議您盡可能以現有的範本為基礎開始建立原則，以方便使用。
+以下是 Microsoft Cloud App Security 中所有原則範本的清單。 建議您盡可能以現有的範本為基礎開始建立原則，以方便使用。
 
 |風險類別|範本名稱|說明|
 |-----|----|----|

@@ -1,24 +1,27 @@
 ---
-title: "在 Cloud App Security 中建立 Cloud Discovery 異常偵測原則 | Microsoft Docs"
-description: "此主題提供如何使用 Cloud Discovery 異常偵測原則的資訊。"
-keywords: 
+title: 在 Cloud App Security 中建立 Cloud Discovery 異常偵測原則 | Microsoft Docs
+description: 此主題提供如何使用 Cloud Discovery 異常偵測原則的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 49e7dadb3d179e70c04decccdc8ab11aeefc3241
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常偵測原則
 本文提供原則的參考詳細資訊，並說明每種原則類型和您可以針對每個原則設定的欄位。  
   
@@ -33,7 +36,8 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
  
 2. 提供 [原則名稱] 和 [描述]。  
 
-3. 按一下 [新增篩選]，為您想要監視的應用程式建立篩選條件。 您可以選取特定的應用程式、應用程式「類別」，或依 [名稱]、[網域] 和 [風險因素] 進行篩選，然後按一下 [儲存]。
+3. 按一下 [新增篩選]，為您想要監視的應用程式建立篩選條件。 
+   您可以選取特定的應用程式、應用程式「類別」，或依 [名稱]、[網域] 和 [風險因素]<strong>**</strong> 進行篩選，然後按一下 [儲存]。
 
 4. 在 [套用至] 下，設定您想要如何篩選使用量。 您可使用下列兩種不同方式，篩選受監視的使用量：  
   
@@ -49,7 +53,7 @@ Cloud Discovery 異常偵測原則可讓您進行設定，以持續監視雲端�
   
         -   選取 [IP 位址] 會忽略應用程式使用量和使用者之間的關聯 (若有的話)。  
   
-        -   選取 [使用者與 IP 位址] \(預設值) 會考慮這兩種關聯，但在使用者與 IP 位址之間有緊密對應性的情況下，可能會產生重複警示。
+        -   選取 [使用者與 IP 位址] (預設值) 會考慮這兩種關聯，但在使用者與 IP 位址之間有緊密對應性的情況下，可能會產生重複警示。
     -   只對特定日期以後發生的可疑活動觸發警示，任何在選取的日期之前所發生的應用程式使用量增加情況皆會被忽略。 不過，系統會根據所選日期之前的活動進行學習，藉此建立標準使用模式。  
   
 5. 在 [警示] 下，您可以設定警示敏感度。 您可以使用多種方式來控制原則所觸發的警示數目：  

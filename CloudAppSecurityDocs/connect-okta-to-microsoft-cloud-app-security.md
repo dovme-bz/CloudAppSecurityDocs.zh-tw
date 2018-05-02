@@ -1,26 +1,30 @@
 ---
-title: "連接 Okta 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 Okta 連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 Okta 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 Okta 連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7aa0ffc06f46307154baf2d6998c6425719097a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c8f789798297b01ee324e3e3c824461f14eb3e9c
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
+
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>將 Okta 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Okta 帳戶。  
+本節提供的指示說明如何使用連接器 API，將 Microsoft Cloud App Security 連接至您現有的 Okta 帳戶。  
   
 ## <a name="how-to-connect-okta-to-cloud-app-security"></a>如何將 Okta 連接至 Cloud App Security  
   

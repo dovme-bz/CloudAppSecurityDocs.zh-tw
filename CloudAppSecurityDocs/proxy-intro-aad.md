@@ -1,31 +1,34 @@
 ---
-title: "使用 Microsoft Cloud App Security Proxy 防護 | Microsoft Docs"
-description: "本主題提供 Cloud App Security Proxy 如何運作的資訊。"
-keywords: 
+title: 使用 Microsoft Cloud App Security Proxy 防護 | Microsoft Docs
+description: 本主題提供 Cloud App Security Proxy 如何運作的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/6/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>使用 Microsoft Cloud App Security Proxy 防護應用程式
 
 > [!NOTE]
 > 這是預覽功能。
 
 
-在現今的工作地點，在事件發生之後才知道雲端環境中發生事件通常不夠，您希望在員工有意或無意讓資料與組織面臨風險之前，就能夠即時阻止入侵與洩漏。 讓組織中的使用者充分利用雲端應用程式提供的服務和工具，並可攜帶自己的裝置來工作，極其重要。 同時，您還需要有工具幫助您保護組織，即時防止發生資料外洩以及資料遭竊的情況。 搭配 Azure Active Directory，Cloud App Security Proxy 讓您體驗這些功能的全面整合。
+在現今的工作地點，在事件發生之後才知道雲端環境中發生事件通常不夠，您希望在員工有意或無意讓資料與組織面臨風險之前，就能夠即時阻止入侵與洩漏。 讓組織中的使用者充分利用雲端應用程式提供的服務和工具，並可攜帶自己的裝置來工作，極其重要。 同時，您還需要有工具幫助您保護組織，即時防止發生資料外洩以及資料遭竊的情況。 搭配 Azure Active Directory，Microsoft Cloud App Security Proxy 讓您體驗這些功能的全面整合。
 
 ## <a name="how-it-works"></a>運作方式
 

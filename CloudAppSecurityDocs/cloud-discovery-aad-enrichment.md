@@ -1,24 +1,27 @@
 ---
-title: "使用 Azure AD 使用者名稱擴充 Cloud App Security 探索資料 | Microsoft Docs"
-description: "本文提供如何使用 Azure AD 使用者名稱擴充 Cloud App Security 探索資料的相關資訊。"
-keywords: 
+title: 使用 Azure AD 使用者名稱擴充 Cloud App Security 探索資料 | Microsoft Docs
+description: 本文提供如何使用 Azure AD 使用者名稱擴充 Cloud App Security 探索資料的相關資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 88bc530ec33f03da650dba558123ac1e0c217183
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 7778f1a2798975f5e292a4f013d07d2665f05536
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery 擴充
 
 Cloud Discovery 資料現在可以使用 Azure Active Directory 使用者名稱資料進行擴充。 當您啟用這項功能時，在探索流量記錄檔中收到的使用者名稱會經過比對，並取代為 Azure AD 使用者名稱以啟用下列新功能：

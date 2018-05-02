@@ -1,26 +1,28 @@
 ---
-title: "連接 AWS 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 AWS 應用程式連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 AWS 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 AWS 應用程式連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06844dfc86947bff1baaf3234b3c2949b57ff49a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 64c3ac8cea662aa1eab69f46f5d226bc585e5e83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>將 AWS 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Amazon Web Services 帳戶。  
+本節提供的指示說明如何使用連接器 API，將 Microsoft Cloud App Security 連接至您現有的 Amazon Web Services 帳戶。  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>如何將 Amazon Web Services 連接至 Cloud App Security  
   

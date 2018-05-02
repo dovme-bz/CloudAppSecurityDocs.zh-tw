@@ -1,24 +1,27 @@
 ---
-title: "在 Cloud App Security 中建立原則以控制活動 | Microsoft Docs"
-description: "本主題提供建立及使用活動原則的指示。"
-keywords: 
+title: 在 Cloud App Security 中建立原則以控制活動 | Microsoft Docs
+description: 本主題提供建立及使用活動原則的指示。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 87e05e1b28ef469b6f180fbd4479ac6727b22f3b
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="activity-policies"></a>活動原則
 活動原則可讓您利用應用程式提供者的 API，強制執行各種不同的自動化程序。 這些原則可讓您監視由不同使用者執行的特定活動，或是追蹤意外高比率的某種特定類型活動。  
   
@@ -68,15 +71,15 @@ ms.lasthandoff: 01/16/2018
 [活動原則] 是一種 API 型原則，可讓您將 20 多個檔案中繼資料篩選 (包括裝置類型和位置) 納入考量，藉此監視雲端中的組織活動。 系統會根據原則結果產生通知，並可能讓使用者暫停使用雲端應用程式。   
 每個原則皆由下列部分組成：  
   
--   活動篩選 – 可讓您根據中繼資料建立非常細微的條件。  
+- 活動篩選 – 可讓您根據中繼資料建立非常細微的條件。  
   
--   活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  「Activity match parameters」(活動比對參數) 預設會在單一活動符合所有活動篩選時引發相符事件。   
-您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
+- 活動比對參數 – 可讓您設定活動要重複幾次才會被視為符合原則的臨界值。  指定將活動視為符合原則前的必要重複次數；例如，您可設定原則，以在使用者於 2 分鐘的時間範圍內執行 10 次失敗登入時提出警示。  「Activity match parameters」(活動比對參數) 預設會在單一活動符合所有活動篩選時引發相符事件。   
+  您可使用 [重複的活動] 來設定重複的活動數量、計算活動數量的時間範圍，甚至可以指定相同的使用者和相同雲端應用程式內應該執行的所有活動。  
   
   
--   動作 – 此原則提供一組可在偵測到違規時自動套用的治理動作。  
-## <a name="see-also"></a>另請參閱  
-[資料保護原則](data-protection-policies.md)   
+- 動作 – 此原則提供一組可在偵測到違規時自動套用的治理動作。  
+  ## <a name="see-also"></a>另請參閱  
+  [資料保護原則](data-protection-policies.md)   
 
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   

@@ -1,27 +1,30 @@
 ---
-title: "在 Cloud App Security 中建立異常偵測原則 | Microsoft Docs"
-description: "本主題提供異常偵測原則的描述，並提供異常偵測原則建置組塊的參考資訊。"
-keywords: 
+title: 在 Cloud App Security 中建立異常偵測原則 | Microsoft Docs
+description: 本主題提供異常偵測原則的描述，並提供異常偵測原則建置組塊的參考資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ac466a721a9e5eef13d868d2eae2ce1c2df58c8
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+ 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>取得即時的行為分析和異常偵測
 
-Cloud App Security 的異常偵測原則提供立即可用的使用者和實體行為分析 (UEBA) 與機器學習 (ML)，因此您可以馬上在整個雲端環境中執行進階威脅偵測。 新的異常偵測原則會自動啟用，針對使用者以及連線至網路的機器與裝置，立即偵測數種行為異常，以提供立即的結果。  此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 
+Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者和實體行為分析 (UEBA) 與機器學習 (ML)，因此您可以馬上在整個雲端環境中執行進階威脅偵測。 新的異常偵測原則會自動啟用，針對使用者以及連線至網路的機器與裝置，立即偵測數種行為異常，以提供立即的結果。  此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 
 
 異常偵測原則會自動啟用，但 Cloud App Security 有七天的初始學習期間，該期間內並不會引發所有的異常偵測警示。 之後，每個工作階段都會與活動進行比較，當使用者處於使用中時，會偵測到上個月的 IP 位址、裝置等以及這些活動的風險分數。  這些偵測是啟發式異常偵測引擎的一部分，會依據從您組織活動中學習到的基準，藉以分析您的環境及觸發警示。 這些偵測也會運用特定的機器學習演算法，此類演算法可分析使用者和登入模式以減少誤判。
 
@@ -56,6 +59,14 @@ Cloud App Security 的異常偵測原則提供立即可用的使用者和實體�
 **匿名 IP 位址的活動**
 - 這項偵測會識別使用者透過已識別為匿名 Proxy IP 位址的 IP 位址來活動。 想隱藏裝置 IP 位址的人會使用這類 Proxy，並可能用於惡意用途。 這項偵測利用機器學習演算法減少「誤判」，例如組織中使用者普遍使用的誤標 IP 位址。
 
+**勒索軟體活動**
+-  Cloud App Security 透過異常偵測來延伸其勒索軟體偵測功能，以確保防護複雜的勒索軟體攻擊涵蓋範圍更全面。 Cloud App Security 使用安全性研究專業知識來識別可反映勒索軟體活動的行為模式，進而保證可提供全面且強大的保護。 例如，若 Cloud App Security 發現有高比率的檔案上傳或檔案刪除活動，則可能代表加密程序設計不良。 這個資料會收集在從已連線 API 收到的記錄檔中，然後再和學習到的行為模式與威脅情報 (例如，已知的勒索軟體延伸模組) 結合使用。 如需 Cloud App Security 如何偵測勒索軟體的詳細資訊，請參閱[保護組織防範勒索軟體](use-case-ransomware.md)。
+
+**離職使用者活動**
+
+- 這個偵測讓您能夠識別離職員工是否繼續在 SaaS 應用程式上執行動作。 因為資料顯示內部威脅的最大風險來自不歡而散的離職員工，請務必留意離職員工帳戶的活動。 有時候，當員工離開公司時，系統管理員會從公司應用程式解除佈建其帳戶，但在許多情況下，仍會留有特定公司資源的存取權。 考慮到具特殊權限帳戶時，這更為重要，因為先前的系統管理員可造成的損害原本就更大。
+這個偵測會利用 Cloud App Security 的功能跨應用程式監視使用者行為，能識別使用者的實際活動、帳戶是否為離職帳戶，以及在其他應用程式上的實際活動。 例如，Azure AD 帳戶已被停權的員工，仍可存取公司 AWS 基礎結構的情況，就可能造成大規模的損害。  
+
 **可疑 IP 位址的活動**
 - 這項偵測會識別使用者透過 Microsoft 威脅情報已識別為具風險的 IP 位址來活動。 這些 IP 位址涉及惡意活動，例如殭屍網路 C&C，且可能表示帳戶已洩露。 這項偵測利用機器學習演算法減少「誤判」，例如組織中使用者普遍使用的誤標 IP 位址。
 
@@ -82,14 +93,14 @@ Cloud App Security 的異常偵測原則提供立即可用的使用者和實體�
 
 1. 在**活動記錄**中，您可以開啟活動以顯示 [活動] 隱藏式選單。 按一下 [使用者] 以檢視使用者深入解析索引標籤。其中資訊包括像是警示數目、活動和活動連線來源位置，而來源位置乃是調查時的重要線索。 
 
- ![異常偵測警示 1](./media/anomaly-alert-user1.png)
- ![異常偵測警示 1](./media/anomaly-alert-user2.png)
+   ![異常偵測警示 1](./media/anomaly-alert-user1.png)
+   ![異常偵測警示 1](./media/anomaly-alert-user2.png)
 
  
 2. 這可讓您了解使用者所執行的可疑活動為何，並對於帳戶是否遭到入侵更具信心。 例如，多次登入失敗的警示確實可疑，且可能表示潛在的暴力密碼破解攻擊，但也可能是應用程式設定錯誤，導致良性的真肯定警示。 不過，如果您看到多次登入失敗的警示加上其他可疑的活動，則代表帳戶很可能遭到入侵。 在下列範例中，您可以看到**多次失敗登入嘗試**警示之後接著是**來自 TOR IP 位址的活動**和**不可能的移動活動**，後兩者都是很強的入侵指標 (IOC)。 如果還有疑慮，那麼您可以看到相同使用者執行**大量下載活動**，這通常是攻擊者執行資料外洩的指標。 
 
-  ![異常偵測警示 1](./media/anomaly-alert-user3.png)
-  ![異常偵測警示 1](./media/anomaly-alert-user4.png)
+   ![異常偵測警示 1](./media/anomaly-alert-user3.png)
+   ![異常偵測警示 1](./media/anomaly-alert-user4.png)
 
  
 

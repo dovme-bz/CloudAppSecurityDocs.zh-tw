@@ -1,30 +1,32 @@
 ---
-title: "建立允許及封鎖存取的 Cloud App Security 存取原則 | Microsoft Docs"
-description: "本主題描述設定 Cloud App Security Proxy 存取原則的程序，此原則允許和封鎖透過 Azure AD 連線的應用程式存取。"
-keywords: 
+title: 建立允許及封鎖存取的 Cloud App Security 存取原則 | Microsoft Docs
+description: 本主題描述設定 Cloud App Security Proxy 存取原則的程序，此原則允許和封鎖透過 Azure AD 連線的應用程式存取。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="access-policies"></a>存取原則 
 
 > [!NOTE]
 > 這是預覽功能。
 
-Cloud App Security 的存取原則可以根據使用者、位置、裝置和應用程式，即時監視和控制對雲端應用程式的存取。 您可以推出受控裝置的用戶端憑證，或利用現有的憑證，例如協力廠商 MDM 憑證，建立任何裝置的存取原則，包括未加入網域的裝置，以及不受 Windows Intune 管理的裝置。 例如，您可以將用戶端憑證部署到受控裝置，然後封鎖無憑證裝置的存取。 
+Microsoft Cloud App Security 的存取原則可以根據使用者、位置、裝置和應用程式，即時監視和控制對雲端應用程式的存取。 您可以推出受控裝置的用戶端憑證，或利用現有的憑證，例如協力廠商 MDM 憑證，建立任何裝置的存取原則，包括未加入網域的裝置，以及不受 Windows Intune 管理的裝置。 例如，您可以將用戶端憑證部署到受控裝置，然後封鎖無憑證裝置的存取。 
 
 > [!NOTE]
 > 使用[工作階段原則](session-policy-aad.md)可以在允許存取的同時，監視工作階段及/或限制特定的工作階段活動，而不是完全允許或完全封鎖存取。 
@@ -44,12 +46,12 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 1. 設定已指派使用者或使用者群組的 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，以及您想要利用 Cloud App Security Proxy 控制的 SAML 應用程式。 
 
-  > [!NOTE]
-  > 這個原則只會影響[部署 Proxy](proxy-deployment-aad.md) 的應用程式。
+   > [!NOTE]
+   > 這個原則只會影響[部署 Proxy](proxy-deployment-aad.md) 的應用程式。
 
 2. 選取 [工作階段] 刀鋒視窗的 [使用 Proxy 強制的限制]，將使用者路由至 Cloud App Security Proxy。
 
- ![Azure AD 條件式存取的 Proxy 限制](./media/proxy-deploy-restrictions-aad.png)
+   ![Azure AD 條件式存取的 Proxy 限制](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>建立 Cloud App Security 存取原則 
 
@@ -58,11 +60,11 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 1. 在入口網站中，選取後面跟著 [原則] 的 [控制]。
 2. 在 [原則] 頁面中，按一下 [建立原則]，然後選取 [存取原則]。  
 
- ![建立存取原則](./media/access-policy-menu.png)
+   ![建立存取原則](./media/access-policy-menu.png)
 
 3. 在 [存取原則] 視窗中指派原則名稱，例如「封鎖不受控裝置的存取」。
 
- ![新增存取原則](./media/access-policy-screen.png)
+   ![新增存取原則](./media/access-policy-screen.png)
 
 4. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
      

@@ -1,29 +1,32 @@
 ---
-title: "使用風險分數 | Microsoft Docs"
-description: "本主題提供如何使用和自訂 Cloud App Security 應用程式風險分數的指示。"
-keywords: 
+title: 使用風險分數 | Microsoft Docs
+description: 本主題提供如何使用和自訂 Cloud App Security 應用程式風險分數的指示。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fbb7d6bef14cb70766fdfbbc8ec958c557ee29df
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 863801bab42b957af98541da326d9b7ec6c69ccc
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-risk-score"></a>使用風險分數  
 
 ## <a name="the-cloud-app-catalog"></a>雲端應用程式目錄
 
-雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Cloud App Security 雲端應用程式目錄，以讓您持續取得雲端使用、Shadow IT 以及 Shadow IT 對組織造成之風險的可見度。
+雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Microsoft Cloud App Security 雲端應用程式目錄，以讓您持續掌握雲端使用、Shadow IT 以及 Shadow IT 對組織造成的風險。
 [雲端應用程式目錄] 會依據認證法規、業界標準和最佳做法來進行雲端應用程式的風險分級。 在雲端應用程式目錄中執行四種補充程序，以保持最新資訊︰
 1.  直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 合規性、服務條款、登入 URL、隱私權原則和 HQ 位置這類屬性)。
 2.  透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。
@@ -45,7 +48,7 @@ ms.lasthandoff: 01/16/2018
 有基本和進階雲端應用程式目錄篩選。 若要取得複雜的篩選，請使用包括下列各項的進階選項：
 
 - **應用程式標籤**：標籤可讓您自訂「雲端應用程式目錄」。 
-  您可以選取 [Sanctioned (核准)]、[Unsanctioned (不核准)]，也可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 
+  您可以選取 [Sanctioned ] \(核准\)、[Unsanctioned] \(不核准\)，也可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 
 - **應用程式與網域**：可讓您搜尋特定應用程式或用於特定網域的應用程式。 
 - **類別**：類別篩選位於頁面左邊，可讓您根據應用程式類別搜尋不同類型的應用程式，例如社交網路應用程式、雲端儲存體應用程式等。您可以一次選取多個類別或單一類別，然後將基本和進階篩選套用其上。
 - **合規性風險因素**：可讓您搜尋應用程式可能遵守的特定標準、憑證與規範 (HIPAA、ISO 27001、SOC 2、PCI-DSS 等)。
@@ -60,11 +63,11 @@ ms.lasthandoff: 01/16/2018
 **建議新的應用程式：**
 1. 在 [探索到的應用程式] 頁面頂端，按一下三個點，然後選取 [建議新的應用程式]。 
 
-  ![向 Cloud App Security 建議應用程式](./media/suggest-new-app.png)
+   ![向 Cloud App Security 建議應用程式](./media/suggest-new-app.png)
 
 2. 在 [建議新的雲端應用程式] 快顯視窗中，填入新應用程式的詳細資料，包括應用程式的名稱和網域。 
 
-  ![向 Cloud App Security 建議應用程式快顯](./media/suggest-new-app-popup.png)
+   ![向 Cloud App Security 建議應用程式快顯](./media/suggest-new-app-popup.png)
 
 3. 建議選取讓 Cloud App Security 分析師在需要應用程式其他資訊時連絡您的核取方塊，以於分析完成時向您進行更新。
 
@@ -72,11 +75,11 @@ ms.lasthandoff: 01/16/2018
 
 1. 在 [雲端應用程式目錄] 頁面中，於您想要更新的應用程式資料列中，按一下資料列結尾的三個點，然後選取 [要求分數更新]。
 
-  ![要求分數更新](./media/request-score-update.png)
+   ![要求分數更新](./media/request-score-update.png)
 
 2. 在 [建議改進] 快顯視窗中，選取您是否想要要求分數更新、建議新的風險因素，或更新應用程式資料。
 
-  ![建議和改進 Cloud App Security](./media/suggest-improvement-popup.png)
+   ![建議和改進 Cloud App Security](./media/suggest-improvement-popup.png)
 
 3. 建議選取讓 Cloud App Security 分析師在需要應用程式其他資訊時連絡您的核取方塊，以於分析完成時向您進行更新。
  
@@ -84,27 +87,27 @@ ms.lasthandoff: 01/16/2018
 
 ## <a name="customizing-the-risk-score"></a>自訂風險分數
 
-Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可靠性的重要資料。 在入口網站中，每個探索到的應用程式都會顯示總分數，代表此特定應用程式的企業運用成熟度的 Cloud App Security 評估。 任何指定應用程式的總分數，都是評估可靠性時，Cloud App Security 考慮的三個子類別之三項子分數的加權平均︰  
+Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可靠性的重要資料。 在入口網站中，每個探索到的應用程式都會顯示總分數，代表此特定應用程式的企業運用成熟度的 Cloud App Security 評估。 任何給定應用程式的總分數，都是評估可靠性時，Cloud App Security 考慮的三個子類別之三個子分數的加權平均︰  
   
--   **一般** - 此類別是指有關公司生產應用程式的基本事項，包括其網域、創建年份和熱門程度。 這些欄位意在展現公司最基本層面的穩定性。  
+-   **一般** - 此類別是指有關生產應用程式之公司的基本事項，包括其領域、創建年份和熱門程度。 這些欄位意在展現公司最基本層面的穩定性。  
   
--   **安全性** - 安全性類別會考量探索到的應用程式所用之資料實體安全性的所有處理標準。 這包括多重要素驗證、加密、資料分類和資料所有權等欄位。  
+-   **安全性** - 安全性類別會考量探索到的應用程式所用之資料實體安全性的所有處理標準。 這包括多重要素驗證、加密、資料分類和資料擁有權等欄位。  
   
 -   **相容性** - 此類別可顯示生產應用程式的公司支持哪些常見的法規標準最佳做法。 規格清單包含 HIPAA、CSA 和 PCI-DSS 等標準。  
   
-每個類別都包含許多特定的屬性。 根據我們的評分法，每個屬性會獲得 0 到 10 的初始分數，視值而定。 True/False 值分別會得到 10 或 0，而連續的屬性，例如網域使用期限，會得到範圍內的特定值。 每個屬性的分數會根據類別中所有其他現有欄位加權，以建立類別的子分數。 如果您遇到未計分的應用程式，通常表示應用程式的內容為未知，因此不予計分。  
+每個類別都由許多特定的屬性組成。 根據 Cloud App Security 的評分演算法，每個屬性會獲得 0 到 10 的初始分數，視值而定。 True/False 值分別會得到 10 或 0，而連續的屬性，例如網域使用期限，會得到範圍內的特定值。 每個屬性的分數會根據類別中所有其他現有欄位加權，以建立類別的子分數。 如果您遇到未計分的應用程式，通常表示應用程式的內容為未知，因此不予計分。  
   
 請務必花點時間檢閱並修改 Cloud Discovery 分數設定的預設權重。 評估的各種參數預設都有相同的權重。 如有特定參數對貴組織而言需增加或減少其重要性，請務必如下所示變更其權重︰  
   
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
+1. 在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2.  滑動 [設定分數計量] 下的 [重要性]，將欄位或風險類別的權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
+2. 滑動 [設定分數計量] 下的 [重要性]，將欄位或風險類別的權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
   
-3.  此外，您可以在分數計算中設定特定值為無法使用或不適用。 包含時，N/A 值對計算的分數有負比重。  
+3. 此外，您可以在分數計算中設定特定值為無法使用或不適用。 包含時，N/A 值對計算的分數有負比重。  
   
-  ![分數](./media/score.png "分數")  
+   ![分數](./media/score.png "分數")  
 
-您可以在 Cloud App Security 入口網站中，取得了解如何往上堆疊風險分數所需的所有資訊。
+您可以在 Cloud App Security 入口網站中，取得了解如何往上堆疊 Cloud App Security 風險分數所需的所有資訊。
 若要深入了解特定風險分類中風險因素的權重，請使用應用程式設定檔中每個欄位名稱右邊的 [i] 按鈕。 這會提供 Cloud App Security 如何針對特定風險因素進行計分的確切資訊。 分數是風險因素在 1-10 級別中的值 + 它在風險分類中的權重：
 
 ![風險計算](./media/cac-weight.png)

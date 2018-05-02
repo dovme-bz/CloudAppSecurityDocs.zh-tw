@@ -1,24 +1,27 @@
 ---
-title: "在 Cloud App Security 中使用探索到的應用程式 | Microsoft Docs"
-description: "本主題描述用來識別及修復 Cloud App Security 中具風險之 Cloud Discovery 應用程式的程序。"
-keywords: 
+title: 在 Cloud App Security 中使用探索到的應用程式 | Microsoft Docs
+description: 本主題描述用來識別及修復 Cloud App Security 中具風險之 Cloud Discovery 應用程式的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>檢閱 Cloud Discovery 儀表板
@@ -106,15 +109,15 @@ Cloud Discovery 儀表板的設計目的是讓您深入了解如何在組織中�
   
 刪除 Cloud Discovery 資料︰  
   
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
+1. 在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2.  按一下 [刪除資料] 索引標籤。  
+2. 按一下 [刪除資料] 索引標籤。  
   
-     請務必確認您要刪除資料再繼續 - 此動作無法復原，且會刪除系統中的**所有** Cloud Discovery 資料。  
+    請務必確認您要刪除資料再繼續 - 此動作無法復原，且會刪除系統中的**所有** Cloud Discovery 資料。  
   
-3.  按一下 [刪除] 按鈕。  
+3. 按一下 [刪除] 按鈕。  
   
-     ![刪除資料](./media/delete-data.png "刪除資料")  
+    ![刪除資料](./media/delete-data.png "刪除資料")  
   
    > [!NOTE]  
    >  刪除程序需要幾分鐘，不會立即完成。  

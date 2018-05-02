@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security 過去更新的封存 | Microsoft Docs"
-description: "本主題為描述 Cloud App Security 過去版本所做更新的封存。"
-keywords: 
+title: Cloud App Security 過去更新的封存 | Microsoft Docs
+description: 本主題為描述 Cloud App Security 過去版本所做更新的封存。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eccb23c10641517090c9fead2231eb5ebceb2000
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的過去版本封存
 
 若要查看最新功能清單，請參閱 [Cloud App Security 新功能](release-notes.md)。
@@ -173,16 +176,16 @@ ms.lasthandoff: 03/08/2018
 
 #### <a name="new-features"></a>新功能
 
--   您現在可以要求使用者重新登入所有 Office 365 和 Azure AD 應用程式，以快速有效地修復可疑的使用者活動警示及遭盜用的帳戶。 您可以在 [原則設定] 和 [警示] 頁面的 [暫停使用者] 選項旁邊找到新的治理動作。
--   您現在可以篩選活動記錄中的 [Add impersonation role assignment (新增模擬角色指派)] 活動。 此活動可讓您使用 Cmdlet **New-ManagementRoleAssignment**來偵測系統管理員何時將 [應用程式模擬] 角色授與任何使用者或系統帳戶。 這個角色允許模擬者使用與已模擬帳戶建立關聯的權限來執行作業，而不是使用與模擬者帳戶建立關聯的權限。
-Cloud Discovery 改進：
--   Cloud Discovery 資料現在可以使用 Azure Active Directory 使用者名稱資料進行擴充。 當您啟用這項功能時，探索流量記錄檔中收到的使用者名稱會經過比對，並取代為 Azure AD 使用者名稱以啟用下列新功能：
+- 您現在可以要求使用者重新登入所有 Office 365 和 Azure AD 應用程式，以快速有效地修復可疑的使用者活動警示及遭盜用的帳戶。 您可以在 [原則設定] 和 [警示] 頁面的 [暫停使用者] 選項旁邊找到新的治理動作。
+- 您現在可以篩選活動記錄中的 [Add impersonation role assignment (新增模擬角色指派)] 活動。 此活動可讓您使用 Cmdlet **New-ManagementRoleAssignment**來偵測系統管理員何時將 [應用程式模擬] 角色授與任何使用者或系統帳戶。 這個角色允許模擬者使用與已模擬帳戶建立關聯的權限來執行作業，而不是使用與模擬者帳戶建立關聯的權限。
+  Cloud Discovery 改進：
+- Cloud Discovery 資料現在可以使用 Azure Active Directory 使用者名稱資料進行擴充。 當您啟用這項功能時，探索流量記錄檔中收到的使用者名稱會經過比對，並取代為 Azure AD 使用者名稱以啟用下列新功能：
   - 您可以調查 Azure Active Directory 使用者的影子 IT 使用方式。
   - 您可以將探索到的雲端應用程式使用與 API 收集的活動相互關聯。
   - 然後，您可以建立以 Azure AD 使用者群組為基礎的自訂記錄檔。 例如，特定行銷部門的影子 IT 報告。
--   已改進 Juniper syslog 剖析器。 它現在支援 welf 和 sd syslog 格式。
--   改進 Palo Alto 剖析器，可進行更好的應用程式探索。
--   若要確認已成功上載記錄檔，您現在可以在 Cloud App Security 入口網站中看到記錄收集器的狀態。 
+- 已改進 Juniper syslog 剖析器。 它現在支援 welf 和 sd syslog 格式。
+- 改進 Palo Alto 剖析器，可進行更好的應用程式探索。
+- 若要確認已成功上載記錄檔，您現在可以在 Cloud App Security 入口網站中看到記錄收集器的狀態。 
 
 #### <a name="general-improvements"></a>一般改進：
 -   內建 IP 位址標籤和自訂 IP 標籤現在會依階層考量，其中自訂 IP 標籤優先於內建 IP 標籤。 例如，如果根據威脅情報將 IP 位址標籤為 [具風險]，但有自訂 IP 標籤將其識別為 [公司]，則會優先使用自訂類別和標籤。
@@ -256,8 +259,7 @@ Cloud Discovery 更新：
 
 - 針對 Microsoft 工作帳戶 (Office 365 和 Azure Active Directory)，Cloud App Security 會將不同的使用者識別碼 (例如 Proxy 位址、別名、SID 等) 分組在單一帳戶之下。 所有與帳戶相關的別名都會出現在主要電子郵件地址下。 以使用者識別碼清單為基礎，凡執行者為使用者識別碼的活動，其執行者會顯示為主要使用者名稱 UPN (使用者主體名稱)。 根據 UPN 指派群組並套用原則。 這會改善調查活動，並將所有相關的活動融合到異常和群組原則的相同工作階段。 這項功能會在下個月陸續推出。
 
-- 傀儡程式標記已新增為瀏覽器利用內建報告的可能風險因素。 現在，除了瀏覽器利用被標記為過時，您還可以看到傀儡程式何時執行瀏覽器利用。 深入了解[內建報告](built-in-report-reference.md)。
-
+- 傀儡程式標記已新增為瀏覽器利用內建報告的可能風險因素。 現在，除了瀏覽器利用被標記為過時，您還可以看到傀儡程式何時執行瀏覽器利用。 
 - 現在在建立內容檢查檔案原則時，您可以設定篩選器只包含至少有 50 個符合項目的檔案。
 
 
@@ -343,8 +345,8 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 -   已改善活動描述的明確性和一致性。 每個活動現在都提供意見反應按鈕，因此，如果您有不了解的地方或有任何問題，請讓我們知道。 
  
 **改善**  
--   已為 Office 365 新增治理動作，可讓您移除檔案的所有外部使用者。 例如，這可讓您實作原則，而這些原則會**從僅限內部分類的檔案中移除外部共用**。
--   改善外部使用者在 SharePoint 中的線上識別。 篩選「外部使用者」群組時，將不會顯示 app@sharepoint 系統帳戶。
+- 已為 Office 365 新增治理動作，可讓您移除檔案的所有外部使用者。 例如，這可讓您實作原則，而這些原則會**從僅限內部分類的檔案中移除外部共用**。
+- 改善外部使用者在 SharePoint 中的線上識別。 篩選「外部使用者」群組時，將不會顯示 app@"sharepoint" 系統帳戶。
 
 
 
@@ -427,11 +429,11 @@ Cloud App Security 現已通過 Microsoft Compliance 的官方認證，符合 IS
 -   Cloud App Security 現可支援 Microsoft Azure 資訊保護，包括強化的整合及自動佈建。 您可以使用 [標記安全分類] 篩選檔案及設定檔案原則，然後設定您想要檢視的分類標籤。 標籤也會指出類別是由貴組織的人員還是其他租用戶 (外部) 的人員所設定。 您也可以根據 Azure 資訊保護分類標籤設定活動原則，並啟用自動掃描 Office 365 的分類標籤。 如需如何利用此絕佳新功能的詳細資訊，請參閱[與 Azure 資訊保護整合](azip-integration.md)。
  
 **改善**
--   已改善 Cloud App Security 的活動記錄︰ 
-   -    安全性與相容性中心內的 Office 365 事件現已與 Cloud App Security 整合，且會出現在 **[活動記錄]** 中。
-   -    Cloud App Security 的所有活動都在 Cloud App Security 活動記錄中作為管理活動註冊。
--   為了協助您調查與檔案相關的警示，如今您可在每個源自檔案原則的警示中，檢視相符檔案所執行的活動清單。
--   異常偵測引擎中的不可能移動演算法已有改善，可替小型的租用戶提供更佳的支援。 
+- 已改善 Cloud App Security 的活動記錄︰ 
+  -    安全性與相容性中心內的 Office 365 事件現已與 Cloud App Security 整合，且會出現在 **[活動記錄]** 中。
+  -    Cloud App Security 的所有活動都在 Cloud App Security 活動記錄中作為管理活動註冊。
+- 為了協助您調查與檔案相關的警示，如今您可在每個源自檔案原則的警示中，檢視相符檔案所執行的活動清單。
+- 異常偵測引擎中的不可能移動演算法已有改善，可替小型的租用戶提供更佳的支援。 
  
 **微幅改善**
 -   **活動匯出限制**提升至 10,000。 

@@ -1,24 +1,26 @@
 ---
-title: "使用 Cloud App Security 探索到的應用程式篩選與查詢 | Microsoft Docs"
-description: "本主題提供 Cloud App Security 探索到的應用程式篩選與查詢清單，並說明如何使用它們。"
-keywords: 
+title: 使用 Cloud App Security 探索到的應用程式篩選與查詢 | Microsoft Docs
+description: 本主題提供 Cloud App Security 探索到的應用程式篩選與查詢清單，並說明如何使用它們。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>探索到的應用程式篩選與查詢
 
 ## <a name="discovered-app-filters"></a>探索到的應用程式篩選
@@ -64,11 +66,11 @@ ms.lasthandoff: 01/04/2018
 
 3. 在 [儲存查詢] 快顯視窗中命名您的查詢。
 
- ![新增查詢](./media/new-query.png)
+   ![新增查詢](./media/new-query.png)
 
 4. 日後若要再次使用這項查詢，請在 [查詢] 下向下捲動至 [儲存查詢]，並選取您的查詢。 
 
- ![開啟查詢](./media/open-query.png)
+   ![開啟查詢](./media/open-query.png)
 
 
 Cloud App Security 也會提供您**建議的查詢**，讓您儲存經常使用的自訂查詢。 建議的查詢提供調查途徑建議，使用下列選用建議查詢篩選探索到的應用程式：

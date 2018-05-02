@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security 中的 API 權杖管理 | Microsoft Docs"
-description: "本主題提供為 Cloud App Security 產生 API 權杖的相關資訊。"
-keywords: 
+title: Cloud App Security 中的 API 權杖管理 | Microsoft Docs
+description: 本主題提供為 Cloud App Security 產生 API 權杖的相關資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 1823f6bbcf0061b43d9d438c94b9434a609b5fad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="api-tokens"></a>API 權杖
     
-Cloud App Security API 可利用程式設計方式透過 REST API 端點存取 Cloud App Security。 應用程式可以使用 API，在 Cloud App Security 資料和物件上執行讀取和更新作業。 例如，Cloud App Security API 支援使用者物件的下列常見作業：
+Microsoft Cloud App Security API 可利用程式設計方式透過 REST API 端點存取 Cloud App Security。 應用程式可以使用 API，在 Cloud App Security 資料和物件上執行讀取和更新作業。 例如，Cloud App Security API 支援使用者物件的下列常見作業：
 
 - 上傳 Cloud Discovery 的記錄檔
 - 產生封鎖指令碼
@@ -40,18 +43,18 @@ Cloud App Security API 可利用程式設計方式透過 REST API 端點存取 C
 1. 在 [設定] 功能表上，選取 [安全性延伸模組]，然後選取 [API 權杖]。
 
 2. 按一下加號圖示，**產生新權杖**並提供未來識別權杖的名稱，然後按一下 [下一步]。
-![Cloud App Security 產生 API 權杖](./media/api-token-gen.png)
+   ![Cloud App Security 產生 API 權杖](./media/api-token-gen.png)
 
 3. 複製權杖值並儲存至某處以供復原 (如果您遺失權杖，則必須重新產生權杖)。 權杖將具有發出權杖之使用者的權限。 例如，安全性讀取者無法發出可改變資料的權杖。
 
 4. 您可以依狀態篩選權杖：[使用中]、[非使用中] 或 [已產生]。 
 
-  - [已產生] 是從未使用過的權杖。 
-  - [使用中] 是已產生且過去七天內已使用的權杖。 
-  - [非使用中] 是已使用但過去七天內沒有活動的權杖。
+   - [已產生] 是從未使用過的權杖。 
+   - [使用中] 是已產生且過去七天內已使用的權杖。 
+   - [非使用中] 是已使用但過去七天內沒有活動的權杖。
 5. 在產生新權杖之後，系統會提供您用來存取 Cloud App Security 入口網站的新 URL。 
 
- ![Cloud App Security API 權杖](./media/generate-api-token.png)
+   ![Cloud App Security API 權杖](./media/generate-api-token.png)
 
 一般入口網站 URL 依然可用，但速度會比隨權杖提供給您的自訂 URL 慢上許多。 如果您不記得 URL，只要到功能表中的 **?** 圖示選取 [關於]，即可隨時檢視。
 

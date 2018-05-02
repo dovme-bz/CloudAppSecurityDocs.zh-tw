@@ -1,26 +1,30 @@
 ---
-title: "連接 Office 365 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 Office 365 連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 Office 365 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 Office 365 連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08f7aba84ab68e583f267717ba42ee1b1adf7922
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
+
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>將 Office 365 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Microsoft Office 365 帳戶。  
+本節提供的指示說明如何使用 App 連線程式 API，將 Microsoft Cloud App Security 連接至您現有的 Microsoft Office 365 帳戶。  
   
 Cloud App Security 支援舊版 Office 365 專用平台，以及 Office 365 服務的最新供應項目 (通常稱為 Office 365 的 vNext 版系列)。  Cloud App Security 不支援舊版 Microsoft Business Productivity Online Standard Suite。 
 

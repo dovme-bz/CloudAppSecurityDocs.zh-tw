@@ -1,25 +1,28 @@
 ---
-title: "什麼是 Cloud App Security？ | Microsoft Docs"
-description: "本主題說明 Cloud App Security 及其運作方式。"
-keywords: 
+title: 什麼是 Cloud App Security？ | Microsoft Docs
+description: 本主題說明 Cloud App Security 及其運作方式。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="what-is-cloud-app-security"></a>什麼是 Cloud App Security
+*適用於：Microsoft Cloud App Security*
+
+
+# <a name="what-is-microsoft-cloud-app-security"></a>什麼是 Microsoft Cloud App Security
 
 > [!NOTE]
 > 如需進階安全性管理及適用於 Office 365 的 Cloud App Security 相關資訊，請參閱[開始使用進階安全性管理](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
@@ -50,7 +53,7 @@ Cloud App Security 可整合您雲端的可見度，
 
 ### <a name="data-retention--compliance"></a>資料保留與相容性
 
-Cloud App Security 通過 Microsoft Compliance 的官方認證，符合 ISO、HIPAA、CSA STAR、歐盟示範條款 (EU Model Clauses) 等等。 若要檢視認證的完整的憑證清單，請前往 [Microsoft Compliance Offerings]\(Microsoft Compliance 認證清單) (https://go.microsoft.com/fwlink/?linkid=842039) 選取 [Cloud App Security]。  
+Cloud App Security 通過 Microsoft Compliance 的官方認證，符合 ISO、HIPAA、CSA STAR、歐盟示範條款 (EU Model Clauses) 等等。 請前往 [Microsoft Compliance Offerings (Microsoft 合規性供應項目)](https://go.microsoft.com/fwlink/?linkid=842039) 並選取 [Cloud App Security]，以查看完整的憑證清單。  
 
 當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。 如需資料保留的詳細資訊，請參閱[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
 Cloud App Security 如下保留資料︰ 

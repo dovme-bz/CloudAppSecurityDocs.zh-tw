@@ -1,26 +1,29 @@
 ---
-title: "連接 Box 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 Box 應用程式連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 Box 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 Box 應用程式連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: d7a3d2670a8c4ccabc96807304545b85ee43cbd2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>將 Box 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用 App 連線程式 API，將 Cloud App Security 連接至您現有的 Box 帳戶。  
+本節提供的指示說明如何使用 App 連接程式 API，將 Microsoft Cloud App Security 連接至您現有的 Box 帳戶。  
   
 ## <a name="how-to-connect-box-to-cloud-app-security"></a>如何將 Box 連接至 Cloud App Security  
   

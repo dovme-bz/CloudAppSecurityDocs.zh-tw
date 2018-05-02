@@ -1,26 +1,29 @@
 ---
-title: "連接 Dropbox 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs"
-description: "本主題提供如何使用 API 連接器將 Dropbox 應用程式連接至 Cloud App Security 的資訊。"
-keywords: 
+title: 連接 Dropbox 與 Cloud App Security 以取得可見度及使用控制 | Microsoft Docs
+description: 本主題提供如何使用 API 連接器將 Dropbox 應用程式連接至 Cloud App Security 的資訊。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf26515a37f4471b03235df63eef564326976229
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 69fb2d1969b2b9acba8516d95cd8965f01721f96
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>將 Dropbox 連接至 Microsoft Cloud App Security
-本節提供的指示說明如何使用連接器 API，將 Cloud App Security 連接至您現有的 Dropbox 帳戶。  
+本節提供的指示說明如何使用連接器 API，將 Microsoft Cloud App Security 連接至您現有的 Dropbox 帳戶。  
  
  
 由於 Dropbox 可讓您透過共用連結存取檔案而不需登入，因此 Cloud App Security 會將這些使用者註冊為「未驗證的使用者」。 若您看到未驗證的 Dropbox 使用者，可能表示使用者不是來自您的組織，也可能是來自組織內未登入但可辨識的使用者。

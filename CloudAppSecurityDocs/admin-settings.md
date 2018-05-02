@@ -1,26 +1,28 @@
 ---
-title: "設定管理喜好設定 | Microsoft Docs"
-description: "本文說明如何在 Cloud App Security 中設定管理喜好設定。"
-keywords: 
+title: 設定管理喜好設定 | Microsoft Docs
+description: 本文說明如何在 Cloud App Security 中設定管理喜好設定。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 3651f962973d9e2850301097e403d2da7b9eb01e
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 ##  <a name="Adminsettings"></a> 自訂管理設定  
-若要將您的喜好設定設定為 Cloud App Security 的管理員，請在入口網站功能表列中按一下您的名稱，然後選取 [使用者設定] 來進行下列設定︰  
+若要將您的喜好設定設定為 Microsoft Cloud App Security 的管理員，請在入口網站功能表列中按一下您的名稱，然後選取 [使用者設定] 來進行下列設定︰  
   
 1.  按一下 [帳戶設定]。 您可以在這裡設定和更新用來存取 Cloud App Security 入口網站的密碼。  
   

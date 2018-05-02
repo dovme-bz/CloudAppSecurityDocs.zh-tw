@@ -1,24 +1,26 @@
 ---
-title: "在 Cloud App Security 中新增自訂應用程式到 Cloud Discovery | Microsoft Docs"
-description: "本主題提供如何在 Cloud App Security 中新增自訂應用程式到 Cloud Discovery 以監視影子 IT。"
-keywords: 
+title: 在 Cloud App Security 中新增自訂應用程式到 Cloud Discovery | Microsoft Docs
+description: 本主題提供如何在 Cloud App Security 中新增自訂應用程式到 Cloud Discovery 以監視影子 IT。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
 # <a name="add-custom-apps-to-cloud-discovery"></a>新增自訂應用程式到 Cloud Discovery
     
 Cloud Discovery 以 Microsoft Cloud App Security 雲端應用程式目錄中超過 15,000 個雲端應用程式來分析您的流量記錄。 該目錄只包含公開可用的雲端應用程式，Cloud App Security 會針對這些應用程式提供可見度和風險資訊。
@@ -29,20 +31,20 @@ Cloud Discovery 以 Microsoft Cloud App Security 雲端應用程式目錄中超�
 
 新增自訂雲端應用程式：
 
-1.  在 Cloud App Security 入口網站中，按一下 [探索]，然後按一下 [Cloud Discovery 儀表板]。 
+1. 在 Cloud App Security 入口網站中，按一下 [探索]，然後按一下 [Cloud Discovery 儀表板]。 
   
- ![Cloud Discovery 儀表板功能表](./media/cloud-discovery-dashboard-menu.png)
+   ![Cloud Discovery 儀表板功能表](./media/cloud-discovery-dashboard-menu.png)
 
-2.  在右上角，按一下 3 個點然後選取 [新增自訂應用程式]。 
+2. 在右上角，按一下 3 個點然後選取 [新增自訂應用程式]。 
 
- ![新增自訂應用程式功能表](./media/add-custom-app-menu.png)
+   ![新增自訂應用程式功能表](./media/add-custom-app-menu.png)
 
-3.  填入定義新應用程式記錄的欄位，當防火牆記錄中探索到這些欄位之後，就會在雲端應用程式目錄和 Cloud Discovery 中將之列出。
+3. 填入定義新應用程式記錄的欄位，當防火牆記錄中探索到這些欄位之後，就會在雲端應用程式目錄和 Cloud Discovery 中將之列出。
 
-  ![自訂應用程式](./media/add-custom-app.png)
+   ![自訂應用程式](./media/add-custom-app.png)
 
 4. 在 [網域] 下，填入存取自訂應用程式時所使用的唯一網域。 這些網域會用來比對流量記錄訊息與此應用程式。 如果您使用的資料來源不包含應用程式 URL 資訊，請務必填入 [IPv4] 和 [IPv6] 位址欄位。
-4.  建議您新增可讓您追蹤此記錄變更的附註。
+5. 建議您新增可讓您追蹤此記錄變更的附註。
 
 應用程式建立之後，您就可以在雲端應用程式目錄中取得它。
 

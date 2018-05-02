@@ -1,24 +1,27 @@
 ---
-title: "在 Cloud App Security 中使用探索到的應用程式 | Microsoft Docs"
-description: "本主題描述用來識別及修復 Cloud App Security 中具風險之 Cloud Discovery 應用程式的程序。"
-keywords: 
+title: 在 Cloud App Security 中使用探索到的應用程式 | Microsoft Docs
+description: 本主題描述用來識別及修復 Cloud App Security 中具風險之 Cloud Discovery 應用程式的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>使用探索到的應用程式
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>檢閱 Cloud Discovery 儀表板
@@ -56,7 +59,7 @@ Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過�
      
 例如，您可以區別不同的 SharePoint 網站。
 
-不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery#supported-firewalls-and-proxies) 查看支援的設備清單。
+不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery.md#supported-firewalls-and-proxies) 查看支援的設備清單。
 
  ![子網域資訊](./media/discovery-domains.png) 
 
@@ -113,15 +116,15 @@ Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過�
   
 刪除 Cloud Discovery 資料︰  
   
-1.  在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
+1. 在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2.  按一下 [刪除資料] 索引標籤。  
+2. 按一下 [刪除資料] 索引標籤。  
   
-     請務必確認您要刪除資料再繼續 - 此動作無法復原，且會刪除系統中的**所有** Cloud Discovery 資料。  
+    請務必確認您要刪除資料再繼續 - 此動作無法復原，且會刪除系統中的**所有** Cloud Discovery 資料。  
   
-3.  按一下 [刪除] 按鈕。  
+3. 按一下 [刪除] 按鈕。  
   
-     ![刪除資料](./media/delete-data.png "刪除資料")  
+    ![刪除資料](./media/delete-data.png "刪除資料")  
   
    > [!NOTE]  
    >  刪除程序需要幾分鐘，不會立即完成。  

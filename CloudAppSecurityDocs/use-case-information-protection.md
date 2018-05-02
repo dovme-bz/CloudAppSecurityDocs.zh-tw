@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,23 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>自動套用 Azure 資訊保護分類標籤  
 
 在理想的世界中，您的所有員工都了解資訊保護的重要性，並遵守您的規定。 但在真實世界中，處理帳戶的合作夥伴可能會以錯誤的權限將文件上傳到您的 Box 存放庫，而一週後您意識到貴企業的機密資訊已外洩給您的競爭對手。 
 
 Microsoft Cloud App Security 可協助您在遭受這種嚴重損壞之前避免其發生。
 
-Cloud App Security 確認對 Box 帳戶中儲存的文件具有公用權限，而且會使用分類引擎來確認公開共用的文件內含機密資訊。 Cloud App Security 會傳送警示，讓您知道發生這個問題；此外，它會自動套用 Azure 資訊保護的**機密**分類標籤，為檔案提供額外的加密。 
+Microsoft Cloud App Security 確認對 Box 帳戶中儲存的文件具有公用權限，而且會使用分類引擎來確認公開共用的文件內含機密資訊。 Cloud App Security 會傳送警示，讓您知道發生這個問題；此外，它會自動套用 Azure 資訊保護的**機密**分類標籤，為檔案提供額外的加密。 
 
 >[!NOTE]
 > - 套用 Azure 資訊保護標籤是許多可用[治理動作](governance-actions.md)的其中之一。

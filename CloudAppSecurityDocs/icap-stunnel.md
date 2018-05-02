@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,15 +13,19 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
+
 # <a name="external-dlp-integration"></a>外部 DLP 整合
 
-Cloud App Security 可以與現有 DLP 解決方案整合，以將這些控制項擴充至雲端，同時保留內部部署和雲端活動之間的一致且統一原則。 此平台會匯出易用介面 (包括 REST API 和 ICAP)，以啟用與內容分類系統 (例如 Symantec Data Loss Prevention (先前稱為 Vontu Data Loss Prevention) 或 Forcepoint DLP) 的整合。 
+Microsoft Cloud App Security 可以與現有 DLP 解決方案整合，以將這些控制項擴充至雲端，同時保留內部部署和雲端活動之間的一致且統一原則。 此平台會匯出易用介面 (包括 REST API 和 ICAP)，以啟用與內容分類系統 (例如 Symantec Data Loss Prevention (先前稱為 Vontu Data Loss Prevention) 或 Forcepoint DLP) 的整合。 
 
 整合是利用標準 ICAP 通訊協定 (即 [RFC 3507](https://tools.ietf.org/html/rfc3507) 中所述的 http 類似通訊協定) 所完成。 為了保護 ICAP 安全以進行資料傳輸，需要設定 DLP 解決方案與 Cloud App Security 之間的安全 SSL 通道 (Stunnel)。 Stunnel 設定提供資料的 TLS 加密功能，因為資料是在 DLP 伺服器與 Cloud App Security 之間移動。 
 
@@ -276,7 +280,7 @@ Cloud App Security 所使用的偵測伺服器是一個標準的 Network Prevent
 2. 在 [ICAP]  >  [Response Filtering] \(回應篩選\) 下，將 [Ignore Responses Smaller Than] \(忽略回應小於\) 值變更為 1。
 
 
-3. 然後將 "application/<em>" 新增至**檢查內容類型</em>**的清單。
+3. 然後將 "application/" 新增至 [檢查內容類型]**</em>** 的清單。
      ![檢查內容類型](./media/icap-inspect-content-type.png)
 
 4. 按一下 [儲存]

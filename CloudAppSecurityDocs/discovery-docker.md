@@ -1,28 +1,31 @@
 ---
-title: "設定自動記錄檔上傳以進行連續報告 | Microsoft Docs"
-description: "本主題說明在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。"
-keywords: 
+title: 設定自動記錄檔上傳以進行連續報告 | Microsoft Docs
+description: 本主題說明在 Cloud App Security 中設定自動記錄檔上傳以進行連續報告的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2017
+ms.date: 4/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a55e0ff02d16af8b166b62a53fbcffb62d6dcc08
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>設定自動記錄檔上傳以進行連續報告
 
 
-記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 檔案將 FTP 轉送至記錄收集器完畢後，FTP 記錄會上傳至 Cloud App Security。  若是 Syslog 機制，記錄收集器會將接收到的記錄檔寫入磁碟，並將大小大於 40 KB 的檔案上傳至 Cloud App Security。
+記錄收集器可讓您輕鬆地從網路自動上傳記錄檔。 記錄收集器會在您的網路上執行，透過 Syslog 或 FTP 接收記錄檔。 每個記錄檔都會自動處理、壓縮和傳送至入口網站。 檔案將 FTP 轉送至記錄收集器完畢後，FTP 記錄會上傳至 Microsoft Cloud App Security。  若是 Syslog 機制，記錄收集器會將接收到的記錄檔寫入磁碟，並將大小大於 40 KB 的檔案上傳至 Cloud App Security。
 
 記錄檔上傳到 Cloud App Security 之後會移至備份目錄，其中儲存了任何指定時間的最後 20 個記錄檔。 每次有新的記錄檔抵達，就會刪除舊的記錄檔。 當記錄收集器磁碟空間已滿時，記錄收集器會在有更多可用磁碟空間之前卸除新的記錄檔。 發生這種情況時，您會在 [自動上傳記錄檔] 設定的 [記錄收集器] 索引標籤上收到警告。
 

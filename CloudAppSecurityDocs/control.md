@@ -1,24 +1,27 @@
 ---
-title: "如何使用治理動作以控制雲端應用程式使用情況 | Microsoft Docs"
-description: "本文章提供的相關資訊說明您可以在 Cloud App Security 中採取哪些治理動作，以控制組織的雲端應用程式使用方式。"
-keywords: 
+title: 如何使用治理動作以控制雲端應用程式使用情況 | Microsoft Docs
+description: 本文章提供的相關資訊說明您可以在 Cloud App Security 中採取哪些治理動作，以控制組織的雲端應用程式使用方式。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7586c32819f106e563eddf5bcda2af805f89310
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 12b360be1e4490b15d61f9e49ef411970e11e9d1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="control"></a>控制
 您可將治理動作套用至整個雲端環境的使用者檔案。 在徹底調查及了解雲端之後，您可以使用治理動作來協助保護組織。  
 
@@ -74,13 +77,13 @@ Cloud App Security 可讓您知道組織中的使用者正在使用哪些應用�
 ### <a name="migrate-your-users-to-a-new-app"></a>將您的使用者移轉至新的應用程式  
 假設您最近購買 Office 365，並想要讓組織中的所有使用者停用所有其他雲端儲存體應用程式，而開始使用 OneDrive。 您可能想要執行下列動作：  
 
-1.   前往 [Cloud Discovery 儀表板]，並使用 [類別] 下方的 [雲端儲存體] 來篩選應用程式。 然後依照 [使用者] 或 [IP 位址] 排序結果，並查看哪些應用程式最受歡迎。  
+1. 前往 [Cloud Discovery 儀表板]，並使用 [類別] 下方的 [雲端儲存體] 來篩選應用程式。 然後依照 [使用者] 或 [IP 位址] 排序結果，並查看哪些應用程式最受歡迎。  
 
-2.   您可以查看哪些使用者正在使用其他應用程式。 您也可以向下鑽研這些應用程式，並通知使用者請他們移轉到 OneDrive，如下所示：
+2. 您可以查看哪些使用者正在使用其他應用程式。 您也可以向下鑽研這些應用程式，並通知使用者請他們移轉到 OneDrive，如下所示：
 
-    1.  在您的 **[Cloud Discovery 儀表板]** 中，選擇 **[Dropbox]**，然後選擇 **[IP 位址]** 或 **[使用者]** 索引標籤。  
+   1.  在您的 **[Cloud Discovery 儀表板]** 中，選擇 **[Dropbox]**，然後選擇 **[IP 位址]** 或 **[使用者]** 索引標籤。  
 
-    2.  選擇箭號 ![箭號圖示](./media/arrow-icon.png "箭號圖示")，然後選擇 [匯出]。  
+   2.  選擇箭號 ![箭號圖示](./media/arrow-icon.png "箭號圖示")，然後選擇 [匯出]。  
 
 ### <a name="find-more-secure-alternatives"></a>尋找其他更安全的選項  
 Cloud App Security 服務類別目錄可協助您尋找適用於組織的替代方案，而不是使用者可能正在使用的高風險應用程式。  

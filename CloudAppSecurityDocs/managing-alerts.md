@@ -1,67 +1,70 @@
 ---
-title: "管理在 Cloud App Security 入口網站中觸發的警示 | Microsoft Docs"
-description: "本文章說明如何處理在 Cloud App Security 入口網站中引發的警示。"
-keywords: 
+title: 管理在 Cloud App Security 入口網站中觸發的警示 | Microsoft Docs
+description: 本文章說明如何處理在 Cloud App Security 入口網站中引發的警示。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>管理警示  
 警示是更深入了解雲端環境的切入點。 建議您根據您的發現建立新原則。 例如，您可能會看到系統管理員從格陵蘭登入，而您組織中從未有人曾從格陵蘭登入。 您可以建立一項原則，在系統管理員帳戶用來從該位置登入時，自動加以暫時停權。  
 
 建議您檢閱所有的警示，並將其作為修改原則的工具。 如果無害事件視為對現有原則的違規，則請精簡原則，以降低收到不必要警示的機率。  
 
-1.   按一下 [Open alerts (未解決的警示)] 下的 [檢視所有警示]。  
+1. 按一下 [Open alerts (未解決的警示)] 下的 [檢視所有警示]。  
 
-     儀表板的本區段提供完整的可見度，讓您掌握任何可疑的活動或違反您所建立原則的情形， 並可協助保護您為雲端環境所定義的安全性狀態。  
+   儀表板的本區段提供完整的可見度，讓您掌握任何可疑的活動或違反您所建立原則的情形， 並可協助保護您為雲端環境所定義的安全性狀態。  
 
-     ![警示](./media/alerts.png "警示")  
+   ![警示](./media/alerts.png "警示")  
 
-2.   您必須調查每個警示，並判斷違規的性質和所需之回應。  
+2. 您必須調查每個警示，並判斷違規的性質和所需之回應。  
 
-     您可依據 [警示類型] 或 [嚴重性] 來篩選警示，以便優先處理最重要的警示。  
+   您可依據 [警示類型] 或 [嚴重性] 來篩選警示，以便優先處理最重要的警示。  
 
-     選取特定警示。 視警示類型而定，您可在解決警示前查看各種可採取的動作。  
+   選取特定警示。 視警示類型而定，您可在解決警示前查看各種可採取的動作。  
 
-     有三種類型的違規，您必須在調查警示時處理︰  
+   有三種類型的違規，您必須在調查警示時處理︰  
 
-    #### <a name="serious-violations"></a>嚴重違規
-     嚴重違規需要立即回應。
+   #### <a name="serious-violations"></a>嚴重違規
+   嚴重違規需要立即回應。
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>可疑的違規
-    可疑違規需要進一步調查。  
+   #### <a name="questionable-violations"></a>可疑的違規
+   可疑違規需要進一步調查。  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>授權的違規或異常行為
- 授權違規或異常行為可能源於合法使用。  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>授權的違規或異常行為
+   授權違規或異常行為可能源於合法使用。  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   當您完成此程序時，請將警示標示為已解決。  
+3. 當您完成此程序時，請將警示標示為已解決。  
 
 下表提供會觸發的警示類型清單，及建議的解決方法。  
 

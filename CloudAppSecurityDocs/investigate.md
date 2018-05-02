@@ -1,26 +1,29 @@
 ---
-title: "使用 Cloud App Security 調查雲端應用程式的風險和可疑活動 | Microsoft Docs"
-description: "本主題概述使用 Cloud App Security 調查警示、問題及可疑活動的程序。"
-keywords: 
+title: 使用 Cloud App Security 調查雲端應用程式的風險和可疑活動 | Microsoft Docs
+description: 本主題概述使用 Cloud App Security 調查警示、問題及可疑活動的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="investigate"></a>調查
-當 Cloud App Security 在雲端環境上執行之後，您需要學習及調查如何使用 Cloud App Security 的工具深入了解雲端環境中發生的一切。 然後根據特定的環境及其使用狀況，您可以找出必要需求，保護貴組織免於風險威脅。
+當 Microsoft Cloud App Security 在雲端環境上執行之後，您需要學習及調查如何使用 Microsoft Cloud App Security 的工具深入了解雲端環境中發生的一切。 然後根據特定的環境及其使用狀況，您可以找出必要需求，保護貴組織免於風險威脅。
 
 本文說明如何執行深入探討調查，以深入了解雲端環境。  
 
@@ -115,13 +118,6 @@ ms.lasthandoff: 01/16/2018
     -   關於替代方案，貴組織是否有您不想批准的雲端應用程式？  
 
     -   是否有已使用但不符合貴組織原則的雲端應用程式？  
-
-## <a name="use-reports-to-investigate-risk"></a>使用報告調查風險  
-當您開始嘗試控制雲端環境時，會根據預期來進行某些假設，因為您還不清楚雲端狀況。 您要根據這些假設建立原則。
-
-雲端環境執行 Cloud App Security 後，您便可使用內建報告 (及自訂報告) 查看您的雲端狀況。 以此為基礎，再次調整您的原則將例外狀況納入，進而降低原則攔截到的誤判量。  
-
-內建報告提供您彙總檢視，以利調查。 若要使用內建報告，請依序前往 **[調查]** 及 **[內建報告]**。 如需各種內建報告的詳細資訊，請參閱[內建報告參考資料](built-in-report-reference.md)。  
 
 ## <a name="sample-investigation"></a>調查範例  
 比方說，假設您未以具有風險的 IP 位址來存取雲端環境 (例如，匿名 Proxy 及 Tor)。 但您要建立風險 IP 的原則，以確定︰  

@@ -1,26 +1,30 @@
 ---
-title: "Cloud App Security 如何執行內容檢查 | Microsoft Docs"
-description: "本文說明在針對雲端中的資料執行 DLP 內容檢查時，Cloud App Security 所遵循的程序。"
-keywords: 
+title: Cloud App Security 如何執行內容檢查 | Microsoft Docs
+description: 本文說明在針對雲端中的資料執行 DLP 內容檢查時，Cloud App Security 所遵循的程序。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 755db0fc6e61b974daec549a8ffbdfcf119ceaae
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3d2deb0cda5a2414fba046e0a99760b533e7d9b4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
+
 # <a name="content-inspection"></a>內容檢查
-本文說明在針對雲端中的資料執行 DLP 內容檢查時，Cloud App Security 所遵循的程序。 
+本文說明在針對雲端中的資料執行 DLP 內容檢查時，Microsoft Cloud App Security 所遵循的程序。 
 
 
 Cloud App Security 內容檢查功能的運作方式如下︰

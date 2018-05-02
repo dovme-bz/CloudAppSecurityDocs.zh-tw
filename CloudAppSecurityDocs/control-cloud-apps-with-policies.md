@@ -1,24 +1,27 @@
 ---
-title: "在 Cloud App Security 中建立原則以控制雲端應用程式使用情況 | Microsoft Docs"
-description: "本主題提供的資訊說明如何使用與設定原則，以控制雲端應用程式的使用方式。"
-keywords: 
+title: 在 Cloud App Security 中建立原則以控制雲端應用程式使用情況 | Microsoft Docs
+description: 本主題提供的資訊說明如何使用與設定原則，以控制雲端應用程式的使用方式。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 89a71f9274d5005a93576dfc4ef6436870b9bd4b
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 578cedd1f499f91ae2e740a7e0e0f1495d86f3cb
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="control-cloud-apps-with-policies"></a>使用原則來控制雲端應用程式
 
 原則可讓您定義使用者在雲端的行為舉止。 這些原則讓您能夠偵測雲端環境中有風險的行為、違規或可疑資料點和活動，必要時，也可整合補救工作流程，以完全降低風險。 有多種不同類型的原則，與您想要收集的雲端環境資訊以及您可能要採取的修復動作類型相互關聯。  
@@ -93,18 +96,18 @@ Cloud App Security 可協助您降低雲端中的不同風險。 您可以設定
   
 若要從 [原則範本] 建立原則，請執行下列步驟︰  
   
-1.  在主控台中，依序按一下 [控制] 和 [範本]。  
+1. 在主控台中，依序按一下 [控制] 和 [範本]。  
   
-     ![](./media/create-policy-from-template.png)  
+    ![](./media/create-policy-from-template.png)  
   
-2.  按一下您想要使用的範本資料列最右側的 **+**。 隨即開啟 [建立原則] 頁面，其中包含預先定義的設定範本。  
+2. 按一下您想要使用的範本資料列最右側的 **+**。 隨即開啟 [建立原則] 頁面，其中包含預先定義的設定範本。  
   
-3.  視需要為您的自訂原則修改範本。 在這個以範本為基礎的新原則中，每個屬性和欄位都可以根據您的需求而修改。  
-> [!NOTE] 
->使用原則篩選時，**Contains** 只搜尋以逗號、點號、空格或底線分隔的完整文字。 例如，如果您搜尋 **malware** 或 **virus**，會找到 virus_malware_file.exe，但不會找到 malwarevirusfile.exe。 如果您搜尋 *malware.exe*，會找到檔名中有 malware 或 exe 的所有檔案；如果您搜尋 **“malware.exe”** (加上引號)，則只會找到確實完全符合 “malware.exe” 的檔案。 
-     **Equals** 僅會搜尋完整字串。例如，如果您搜尋 *malware.exe*，會找到 malware.exe，但不會找到 malware.exe.txt。  
-4.  依據範本建立好新原則之後，原則範本資料表 (位於原則所建立的來源範本旁) 中的 [連結的原則] 資料行即會出現新原則的連結。   
-     您可以從每個範本建立想要的原則數目，它們將全部連結到原始的範本，讓您能夠追蹤使用相同範本建立的所有原則。  
+3. 視需要為您的自訂原則修改範本。 在這個以範本為基礎的新原則中，每個屬性和欄位都可以根據您的需求而修改。  
+   > [!NOTE] 
+   >使用原則篩選時，**Contains** 只搜尋以逗號、點號、空格或底線分隔的完整文字。 例如，如果您搜尋 **malware** 或 **virus**，會找到 virus_malware_file.exe，但不會找到 malwarevirusfile.exe。 如果您搜尋 *malware.exe*，會找到檔名中有 malware 或 exe 的所有檔案；如果您搜尋 **“malware.exe”** (加上引號)，則只會找到確實完全符合 “malware.exe” 的檔案。 
+    **Equals** 僅會搜尋完整字串。例如，如果您搜尋 *malware.exe*，會找到 malware.exe，但不會找到 malware.exe.txt。  
+4. 依據範本建立好新原則之後，原則範本資料表 (位於原則所建立的來源範本旁) 中的 [連結的原則] 資料行即會出現新原則的連結。   
+    您可以從每個範本建立想要的原則數目，它們將全部連結到原始的範本，讓您能夠追蹤使用相同範本建立的所有原則。  
   
 或者，您可以**在調查期間建立原則**。 如果您正在調查 [活動記錄]、[檔案] 或 [帳戶]，而且您向下切入以搜尋特定事物，您可以隨時根據您的調查結果建立新的原則。  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*適用於：Microsoft Cloud App Security*
+
+
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-121"></a>Cloud App Security 121 版
+發行日期：2018 年 4 月 22 日
+
+-   **條件式存取應用程式控制 (先前稱為 Cloud App Security Proxy)** 的公開預覽版已透過可更深入掌握情況且可控制不同應用程式的功能增強。 您現在可以使用「活動類型」篩選來建立工作階段原則，以監視及封鎖各種不同的應用程式特定活動。 這個新篩選可加強現有的檔案下載控制功能，讓您可以全面控制組織中的應用程式，並和 Azure Active Directory 條件式存取一起使用，即時掌握及控制有風險的使用者工作階段，例如 B2B 共同作業使用者或來自非受控裝置的使用者執行的工作階段。 如需詳細資訊，請參閱[工作階段原則](session-policy-aad.md)。
+-   逐步推出：Cloud App Security 的**異常偵測原則已經改善**，包括兩種新的威脅偵測類型：勒索軟體活動與離職使用者活動。 Cloud App Security 透過異常偵測來延伸其勒索軟體偵測功能，以確保防護複雜的勒索軟體攻擊涵蓋範圍更全面。 Cloud App Security 使用安全性研究專業知識來識別可反映勒索軟體活動的行為模式，進而保證可提供全面且強大的保護。 離職使用者活動可讓您監視離職使用者的帳戶，其帳戶可能已從公司應用程式解除佈建，但在許多情況下，仍會留有特定公司資源的存取權。 如需詳細資訊，請參閱[取得即時的行為分析和異常偵測](anomaly-detection-policy.md)。
+
 
 ## <a name="cloud-app-security-release-120"></a>Cloud App Security 版本 120
 發行日期：2018 年 4 月 8 日
