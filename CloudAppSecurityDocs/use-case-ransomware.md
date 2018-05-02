@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 747199b758fb5bee40cc7ec036280c16416d0372
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 23579135df9c26953b2a950fdd661fbac83da603
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -46,38 +46,6 @@ ms.lasthandoff: 04/23/2018
 
 2. Cloud App Security 的自動化[威脅偵測原則](anomaly-detection-policy.md)會從您連線的那一刻開始在背景中執行。 這些原則之一會搜尋勒索軟體活動，以確保防護複雜的勒索軟體攻擊涵蓋範圍完整。 使用安全性搜尋專業知識來識別可反映勒索活動的行為模式，Cloud App Security 保證可提供全面且強大的保護。 例如，若 Cloud App Security 發現有高比率的檔案上傳或檔案刪除活動，則可能代表加密程序設計不良。 這項資料會收集在從已連線應用程式 API 收到的記錄檔中，然後再和學習到的行為模式與威脅情報 (例如，已知的勒索軟體副檔名) 結合使用。 
 
-## <a name="legacy-policy-creation"></a>建立舊版原則
-
-2. 此外，請務必設定原則以開始監視雲端應用程式，該原則會監看雲端應用程式是否有大量下載，並在發生異常情況時發出警示：
-
-    1. 在 [控制項] 索引標籤上，按一下 [[範本]](policy-template-reference.md)。 
-   
-    2. 從 [[原則範本]](policy-template-reference.md) 清單，選擇 [潛在的勒索軟體活動]。 
-       ![勒索軟體範本](./media/ransomware-template.png)
-    3. 此範本設計成可立即用來搜尋勒索軟體攻擊的典型活動，以及與已知勒索軟體相關的檔案和資料夾。 (選擇性) 您可以設定符合原則時所收到的警示類型 (電子郵件和簡訊)。
-        ![勒索軟體範本](./media/ransomware-template-fields.png)
-    4. 按一下 [建立]。 
-   
-     
-2. 調查相符項目
-    
-    1. 在 [原則] 頁面上，按一下原則名稱以移至 [原則報告]，然後檢閱原則所觸發的相符項目。
-
-    2. 您可以按一下特定相符項目來開啟活動下拉式清單，藉以調查相符項目。 在下拉式清單中，您可以查看此活動相符的其他原則。 
-     
-## <a name="remediating-attacks-and-preventing-risk"></a>修復攻擊並避免發生風險
-
-在您驗證及微調原則之後，移除可能符合原則的可能誤報。 然後執行下列動作： 
-1. 符合勒索軟體原則時，您可以設定自動化[治理動作](governance-actions.md)進行修復。
-
-2. 若要防止未來遭受攻擊，請設定原則以執行自動化治理動作。 例如，在 SharePoint 和 OneDrive 中，您可以設定原則自動**暫時停止使用者的權限**。
- 
- 
-## <a name="validating-ransomeware-protection"></a>驗證勒索軟體保護
-
-1. 若要模擬警示，請將 30 個檔案的副檔名變更為 .wncry 並上傳到 SharePoint 網站。
-3. 移至原則報告。 活動原則相符項目應該很快就會出現。 
-4. 您可以按一下相符項目來查看已下載的檔案。 相符項目本身會加上遮罩以保護機密資料。 
 
 
 
