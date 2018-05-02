@@ -33,8 +33,8 @@
 ### [連接 Okta](connect-okta-to-microsoft-cloud-app-security.md)
 ### [連接 ServiceNow](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [連接 Salesforce](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [使用 Proxy 保護應用程式](proxy-intro-aad.md)
-### [為 Azure AD 應用程式部署 Proxy](proxy-deployment-aad.md)
+## [利用條件式存取應用程式控制來保護應用程式](proxy-intro-aad.md)
+### [為 Azure AD 應用程式部署條件式存取應用程式控制](proxy-deployment-aad.md)
 # 用法
 ## [使用儀表板](daily-activities-to-protect-your-cloud-environment.md)
 ## 案例
