@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+
+## <a name="cloud-app-security-release-122"></a>Cloud App Security 版本 122
+發行日期：2018 年 4 月 29 日
+
+-   逐步推出：您現在可以為每個應用程式的 Microsoft Cloud App Security 管理員設定系統管理權限。 例如，您可以將特定使用者設為僅限於 G Suite 的管理員。 這可讓使用者檢視並修改 Microsoft Cloud App Security 中只與 G Suite 相關的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
+- 逐步推出：Okta 管理員角色現在可以於 Microsoft Cloud App Security 中看見，而且可在 [設定] > [使用者群組] 下供每個角色使用作為標記。
+
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security 121 版
 發行日期：2018 年 4 月 22 日

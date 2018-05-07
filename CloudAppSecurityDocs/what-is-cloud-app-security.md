@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ Cloud App Security 可整合您雲端的可見度，
 -   方法是使用 Cloud Discovery 對應並識別您的雲端環境，以及貴組織正在使用的雲端應用程式。
 -   批准及不批准雲端中的應用程式。  
 -   使用易於部署且善用提供者 API 的 App 連線程式，以取得您所連接之應用程式的可見度及治理功能。  
--   使用 Proxy 保護取得在雲端應用程式內所執行之存取與活動的即時可見性與控制權。
+-   使用條件式存取應用程式控制保護，取得在雲端應用程式內所執行之存取與活動的即時可見性與控制。
 -   透過設定並持續精確微調原則，協助您保有掌控度。  
 
 ![Cloud App Security 架構圖](./media/proxy-architecture.png)  
@@ -81,8 +81,8 @@ App 連線程式使用雲端應用程式提供者的 API，將 Cloud App Securit
 
 Cloud App Security 使用雲端提供者所提供的 API。 每個應用程式都有自己的架構及 API 限制。 Cloud App Security 利用應用程式提供者使 API 使用情況達到最佳化，並且確保最佳的效能。 Cloud App Security 引擎會將應用程式加諸於 API 的各種限制列入考量 (例如節流、API 限制、動態時間調整 API 範圍)，進而充分利用允許的容量。 某些作業需要大量的 API，例如掃描租用戶中的所有檔案，因此會分散在較長的時間內進行。 請預期某些原則會執行長達幾個小時或幾天。  
 
-### <a name="proxy-protection"></a>Proxy 保護
-Cloud App Security 的 Proxy 提供您所需的工具，讓您取得在雲端環境內所執行之存取與活動的即時可見性與控制權。 使用 Proxy 可以保護您的組織： 
+### <a name="conditional-access-app-control-protection"></a>條件式存取應用程式控制保護
+Microsoft Cloud App Security 的條件式存取應用程式控制利用反向 Proxy 架構提供您所需的工具，讓您取得在雲端環境內所執行之存取與活動的即時可見性與控制。 透過條件式存取應用程式控制，您可以保護您的組織： 
 -   在下載發生之前就加以封鎖，避免資料外洩
 -   設定儲存在雲端的資料以及從雲端下載的資料，強制使用加密保護的規則
 -   可以看見未受保護的端點，以便您能監視未受管理的裝置上正在進行的活動

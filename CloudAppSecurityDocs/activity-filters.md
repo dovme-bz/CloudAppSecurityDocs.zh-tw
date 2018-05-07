@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10f8c4bef7e62c6a3e6f90c5df1f67e050f6c589
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -42,7 +42,9 @@ Microsoft Cloud App Security 可讓您從連接的應用程式看見所有活動
 
  ![進階活動記錄篩選條件](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> 舊版標記會新增至任何使用舊版「使用者」篩選條件的活動原則。 此篩選條件將繼續如往常般運作。 如果您想要移除舊版的標記，您可以移除該篩選條件，然後使用新的 [使用者名稱] 篩選條件再次新增篩選條件。
+ 
 ## <a name="the-activity-drawer"></a>活動下拉式清單
 
 ### <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單

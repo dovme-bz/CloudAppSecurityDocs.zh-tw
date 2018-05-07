@@ -1,11 +1,11 @@
 ---
-title: 如何使用 Cloud App Security Proxy 封鎖下載敏感性資料到未受管理的裝置 | Microsoft Docs
-description: 本主題描述使用 Azure AD Proxy 功能，保護組織不讓其從未受管理的裝置下載敏感性資料的案例。
+title: 如何使用 Cloud App Security 條件式存取應用程式控制封鎖下載敏感性資料到非受控裝置 | Microsoft Docs
+description: 本主題描述使用 Azure AD 反向 Proxy 功能，保護組織不讓其從非受控裝置下載敏感性資料的案例。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb0e0eef92181f14d83f6c4c5eaf30023b5d80da
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 72d43369ca7f8405463bbe66f7df80b8f5797149
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
 
-# <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>使用 Microsoft Cloud App Security Proxy 封鎖下載機密資訊
+# <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>使用 Microsoft Cloud App Security 條件式存取應用程式控制封鎖下載機密資訊
 
 
 現今的 IT 系統管理員處於進退兩難的局面：您想要讓員工更具生產力。 這表示允許員工存取應用程式，讓他們可以透過任何裝置隨時工作。 另一方面又想保護公司的資產，這包括所有權和特殊權限資訊。 您該如何讓員工存取雲端應用程式，同時又能保護資料？ **對於可以從未受管理的裝置或非公司網路位置存取企業雲端應用程式中之敏感性資料的使用者，此使用案例可讓您封鎖這些使用者的下載。**
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/23/2018
 貴組織的帳戶管理員於週末時，想要在家用他個人的膝上型電腦檢查 Salesforce 的內容。 此 Salesforce 資料可能包括用戶端的信用卡資訊或個人資訊。 家用電腦未受管理，這表示如果其從 Salesforce 將文件下載至電腦，可能會感染惡意程式碼，或者如果電腦遺失或遭竊，可能沒有密碼保護，任何拿到電腦的人都可以存取機密資訊。 
 
 ## <a name="the-solution"></a>解決方案
-請使用 Azure AD 條件式存取和 Cloud App Security Proxy 來監視及控制雲端應用程式的使用，藉以保護貴組織。  
+請使用 Azure AD 條件式存取和 Microsoft Cloud App Security 條件式存取應用程式控制來監視及控制雲端應用程式的使用，藉以保護貴組織。  
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -47,7 +47,7 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 ### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>步驟 1：建立 Azure AD 條件式存取原則
 
 1. 建立已指派使用者和應用程式的 Azure AD 條件式存取原則。
-2. 在條件式存取原則內的工作階段控制項下，選取 [使用 Proxy 強制的限制]。   
+2. 在條件式存取原則內的工作階段控制項下，選取 [Use Conditional Access App Control enforced restrictions] \(使用條件式存取應用程式控制強制的限制\)。   
 
    ![Azure AD 條件式存取](./media/proxy-deploy-restrictions-aad.png)
 
@@ -126,7 +126,7 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
  
    ![工作階段原則報告](./media/session-policy-report.png)
 
-4. 在原則報告中，您可以看到哪些登入已重新導向至 Proxy 進行工作階段控制，以及哪些檔案已從受監視的工作階段下載或封鎖。
+4. 在原則報告中，您可以看到哪些登入已重新導向至 Microsoft Cloud App Security 進行工作階段控制，以及哪些檔案已從受監視的工作階段下載或封鎖。
 
 
 

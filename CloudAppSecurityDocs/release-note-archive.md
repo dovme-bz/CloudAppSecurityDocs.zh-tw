@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/23/2018
     -   可以看見未受保護的端點，以便您能監視未受管理的裝置上正在進行的活動。
     -   控制來自非企業網路或高風險 IP 位址的存取。
   
-  如需詳細資訊，請參閱[使用 Proxy 保護應用程式](proxy-intro-aad.md)。
+  如需詳細資訊，請參閱[使用條件式存取應用程式控制保護應用程式](proxy-intro-aad.md)。
 
 -   我們會逐漸推出根據特定服務活動名稱篩選的功能。 這個新的活動類型篩選更精細，可讓您監視特定的應用程式活動，而不是較籠統的活動類型。 例如，以前可能是篩選**執行命令**，現在則可以篩選特定的 EXO Cmdlet。 活動名稱也會出現在 [Type (in app)] (類型 (依應用程式)) 下的活動下拉式清單中。 這項功能最終會取代活動類型篩選。  
 

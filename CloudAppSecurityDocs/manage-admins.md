@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 220f25083ad4b1589b75a8ce17f40e80ebfd7ece
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 82df91691ec5543075a9b3c11dfef1e11eb4fae9
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -42,23 +42,33 @@ Microsoft Cloud App Security 支援角色型存取控制。 根據預設，下�
       - 存取和檢視管理記錄檔 
       - 存取和檢視管理快照集報告頁面 
 
+- 應用程式/執行個體管理員：擁有 Microsoft Cloud App Security 中所有資料的權限，可專門處理特定應用程式或此處所選取之應用程式的執行個體。 例如，如果將 Box European 執行個體的管理員權限提供給使用者，管理員就只能看見與這個應用程式執行個體相關的資料 (不論它是檔案、活動、原則或警示)，如下所示：
+      - 活動頁面 - 僅限於已標記實體相關的活動
+      - 警示 - 僅限於與特定應用程式相關的警示
+      - 原則 - 可以檢視所有的原則，但只能編輯或建立專門處理應用程式/執行個體的原則
+      - 帳戶 -僅限於特定應用程式/執行個體的帳戶
+      - 應用程式權限 - 僅限於特定應用程式/執行個體的權限
+      - 檔案頁面 - 僅限於特定應用程式/執行個體中的檔案
+      - 條件式存取應用程式控制 - 沒有權限
+      - 雲端探索活動 - 沒有權限
+      - 安全性延伸模組 - 僅適用於與使用者權限搭配使用之 API 權杖的權限
+      - 治理動作 - 僅適用於特定應用程式/執行個體 
+
 如需詳細資訊，請參閱[在 Azure Active Directory 中指派管理員角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。
 
 您也可以執行下列步驟，將其他管理員新增至 Cloud App Security，而不是將使用者新增至 Azure Active Directory 系統管理角色：
 
 1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員]。 
 
-2. 新增應該可以存取 Cloud App Security 的管理員。
+2. 按一下 [加號] 新增應該可以存取 Cloud App Security 的管理員。
   
-      
-3. 接著，按一下下拉式清單，設定管理員擁有的存取類型 ([完整存取] 或 [唯讀及管理警示])。
+  ![新增管理員](./media/add-admin.png)
+    
+3. 接下來，按一下下拉式清單以設定管理員擁有何種角色：[全域管理員]、[安全性讀取者]、[合規性管理員] 或 [應用程式/執行個體管理員]。如果您選取 [應用程式/執行個體管理員]，請選取要讓管理員擁有權限的應用程式/執行個體。
 
      >[!NOTE]
-      >任何受限於 [唯讀及管理警示] 存取的管理員，若嘗試存取限制的頁面或執行限制的動作，都會收到錯誤，指出他們無權存取頁面或執行動作。
-
-   ![管理管理員存取權](./media/manage-admin-access.png "管理管理員存取權")  
-
-4. 按一下 **關閉**。  
+      >任何存取權受限的管理員，若嘗試存取限制的頁面或執行限制的動作，都會收到錯誤，指出他們無權存取頁面或執行動作。
+4. 按一下 [新增管理員]。  
 
    >[!NOTE]
     >只有全域管理員或安全性系統管理員可以授權其他使用者存取 Cloud App Security。
@@ -73,8 +83,6 @@ Microsoft Cloud App Security 支援角色型存取控制。 根據預設，下�
 1. 按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 然後按一下 [管理管理員存取權]。 
 
 2. 新增應該可以存取 Cloud App Security 的管理員。 選取其存取層級，然後按一下 [關閉]。
-
-
 
 ## <a name="see-also"></a>另請參閱  
 [設定 Cloud Discovery](set-up-cloud-discovery.md)   

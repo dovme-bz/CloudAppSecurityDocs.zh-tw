@@ -1,11 +1,11 @@
 ---
 title: 建立允許及封鎖存取的 Cloud App Security 存取原則 | Microsoft Docs
-description: 本主題描述設定 Cloud App Security Proxy 存取原則的程序，此原則允許和封鎖透過 Azure AD 連線的應用程式存取。
+description: 本主題描述設定 Cloud App Security 條件式存取應用程式控制原則的程序，以使用反向 Proxy 功能允許和封鎖透過 Azure AD 連線的應用程式存取。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 402cf7ad80c0421218dd5de9a61c9bf40fde709e
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -34,8 +34,8 @@ Microsoft Cloud App Security 的存取原則可以根據使用者、位置、裝
 ## <a name="prerequisites-to-using-access-policies"></a>使用存取原則的必要條件
 
 - Azure AD Premium P2 授權
-- 相關的應用程式應該要[部署 Proxy](proxy-deployment-aad.md)
-- [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Cloud App Security Proxy，如下所述。
+- 相關的應用程式應該要[部署條件式存取應用程式控制](proxy-deployment-aad.md)
+- [Azure AD 條件式存取原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Microsoft Cloud App Security，如下所述。
 
 > [!NOTE]
 > - 存取原則也支援使用識別提供者所設定的應用程式，而不是私人預覽之 Azure AD 所設定的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
@@ -44,14 +44,14 @@ Microsoft Cloud App Security 的存取原則可以根據使用者、位置、裝
 
 Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段原則合作，檢查每個使用者工作階段，並決定每個應用程式的原則。 若要在 Azure AD 中設定條件式存取原則，請遵循此程序：
 
-1. 設定已指派使用者或使用者群組的 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，以及您想要利用 Cloud App Security Proxy 控制的 SAML 應用程式。 
+1. 設定已指派使用者或使用者群組的 [Azure AD 條件式存取原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)，以及您想要利用條件式存取應用程式控制進行控制的 SAML 應用程式。 
 
    > [!NOTE]
-   > 這個原則只會影響[部署 Proxy](proxy-deployment-aad.md) 的應用程式。
+   > 這個原則只會影響已[部署條件式存取應用程式控制](proxy-deployment-aad.md)的應用程式。
 
-2. 選取 [工作階段] 刀鋒視窗的 [使用 Proxy 強制的限制]，將使用者路由至 Cloud App Security Proxy。
+2. 選取 [工作階段] 刀鋒視窗的 [Use Conditional Access App Control enforced restrictions] \(使用條件式存取應用程式控制強制的限制\)，將使用者路由至 Microsoft Cloud App Security。
 
-   ![Azure AD 條件式存取的 Proxy 限制](./media/proxy-deploy-restrictions-aad.png)
+   ![條件式存取應用程式控制會限制 Azure AD 條件式存取](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>建立 Cloud App Security 存取原則 
 
@@ -91,7 +91,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
  
 ## <a name="see-also"></a>另請參閱  
-[使用 Azure AD Proxy 功能封鎖非受控裝置的下載作業](use-case-proxy-block-session-aad.md)   
+[使用 Azure AD 條件式存取應用程式控制功能封鎖非受控裝置的下載作業](use-case-proxy-block-session-aad.md)   
 
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
   
