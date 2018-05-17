@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8306912fcf0c7a5049c4683b75be9009181d101b
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/30/2018
 
 4. 日後若要再次使用這項查詢，請在 [查詢] 下向下捲動至 [儲存查詢]，並選取您的查詢。 
 
-   ![開啟查詢](./media/open-query.png)
+   ![開啟查詢](./media/discovered-app-query.png)
 
 
 Cloud App Security 也會提供您**建議的查詢**，讓您儲存經常使用的自訂查詢。 建議的查詢提供調查途徑建議，使用下列選用建議查詢篩選探索到的應用程式：
