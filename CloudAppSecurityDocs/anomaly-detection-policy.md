@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/13/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -86,8 +86,20 @@ Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者
 **多次失敗的登入嘗試**
 - 此偵測依據學習到的基準，識別在單一工作階段中多次嘗試登入失敗的使用者，這可能表示缺口嘗試。 
 
+## <a name="scope-anomaly-detection-policies"></a>設定異常偵測原則範圍
 
-## <a name="triaging-anomaly-detection-alerts"></a>異常偵測警示分級
+每個異常偵測原則都可獨立設定範圍，如此就可以只套用到您要在原則中包含與排除的使用者和群組。
+例如，您可以設定來自非經常性國家/地區活動的偵測，以忽略經常出差的特定使用者。 
+
+設定異常偵測原則的範圍︰
+1. 按一下 [控制] > [原則]，將 [類型] 篩選設為 [異常偵測原則]。
+2. 按一下您要設定範圍的原則。
+3. 在 [範圍] 底下，將下拉式清單中的預設設定 [所有使用者與群組] 變更為 [特定使用者與群組]。
+4. 選取 [包含] 以指定將套用此原則的使用者和群組。 在此處未選取的任何使用者或群組，將不會被視為威脅，且不會產生警示。
+5. 選取 [排除] 以指定將不套用此原則的使用者。 在此處選取的使用者將不會被視為威脅，且不會產生警示，即使他們是 [包含] 底下所選取群組的成員也一樣。
+
+ ![異常偵測範圍](./media/anomaly-detection-scoping.png)
+## <a name="triage-anomaly-detection-alerts"></a>異常偵測警示分級
 
 您可以快速分級由新異常偵測原則所觸發的各種警示，並決定哪些需要盡快處理。 若要這樣做，您需要警示的環境脈絡，這樣才能看見整體概況，並了解是否發生了惡意行為。  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebc88634d6a4b83effe598c45f8da62338cebf53
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -26,6 +26,10 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > 這是預覽功能。
+
+
+>[!div class="step-by-step"]
+[下一步：部署條件式存取應用程式控制 »](proxy-deployment-aad.md)
 
 
 在現今的工作地點，在事件發生之後才知道雲端環境中發生事件通常不夠，您希望在員工有意或無意讓資料與組織面臨風險之前，就能夠即時阻止入侵與洩漏。 讓組織中的使用者充分利用雲端應用程式提供的服務和工具，並可攜帶自己的裝置來工作，極其重要。 同時，您還需要有工具幫助您保護組織，即時防止發生資料外洩以及資料遭竊的情況。 搭配使用 Azure Active Directory，Microsoft Cloud App Security 利用條件式存取應用程式控制讓您體驗這些功能的全面整合。
@@ -115,10 +119,14 @@ Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳�
 
 -   HighQ 
 
+-   Concur
+
 工作階段控制項將陸續支援更多的應用程式。 若您要使用的應用程式不在上列支援對象之中，您可以[將應用程式的詳細資料傳送給我們](mailto:casfeedback@microsoft.com)，並附上相關使用案例，我們會將該應用程式加入支援之列。
 
 
 
+>[!div class="step-by-step"]
+[下一步：部署條件式存取應用程式控制 »](proxy-deployment-aad.md)
 
 ## <a name="see-also"></a>另請參閱  
 [為 Azure AD 應用程式部署條件式存取應用程式控制](proxy-deployment-aad.md)   

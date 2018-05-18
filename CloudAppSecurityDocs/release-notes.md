@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 5/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,30 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0cae8e65e5dea1c0a661959ea99ec19cfbc0da94
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 545d7cb0e7152918e8f9b1e37ff1d7a210605342
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/13/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+## <a name="cloud-app-security-release-123"></a>Cloud App Security 版本 123
+
+發行日期：2018 年 5 月 13 日
+
+- **異常偵測原則範圍設定**：<br>
+異常偵測原則現在可以設定範圍。 這可讓您設定每個異常偵測原則以只包含特定使用者或群組，並排除特定使用者或群組。 例如，您可以設定來自非經常性國家/地區活動的偵測，以忽略經常出差的特定使用者。 
+
 
 ## <a name="cloud-app-security-release-122"></a>Cloud App Security 版本 122
 發行日期：2018 年 4 月 29 日
 
--   逐步推出：您現在可以為每個應用程式的 Microsoft Cloud App Security 管理員設定系統管理權限。 例如，您可以將特定使用者設為僅限於 G Suite 的管理員。 這可讓使用者檢視並修改 Microsoft Cloud App Security 中只與 G Suite 相關的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
-- 逐步推出：Okta 管理員角色現在可以於 Microsoft Cloud App Security 中看見，而且可在 [設定] > [使用者群組] 下供每個角色使用作為標記。
+-   逐步推出：您現在可以**為每個應用程式的 Microsoft Cloud App Security 管理員設定系統管理權限**。 例如，您可以將特定使用者設為僅限於 G Suite 的管理員。 這可讓使用者檢視並修改 Microsoft Cloud App Security 中只與 G Suite 相關的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
+- 逐步推出：**Okta 管理員角色現在可以於 Microsoft Cloud App Security 中看見**，而且可在 [設定] > [使用者群組] 下供每個角色使用作為標記。
 
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security 121 版

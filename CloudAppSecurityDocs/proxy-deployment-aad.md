@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5397fd49d1eaa2365c7909155ded55eef965e0de
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: d82e0e1d46e3927d0488dc525fa9c6bea42dd791
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -25,6 +25,13 @@ ms.lasthandoff: 04/30/2018
 
 > [!NOTE]
 > 這是預覽功能。
+
+
+
+>[!div class="step-by-step"]
+[« 上一步](proxy-intro-aad.md)
+[下一步 »](session-policy-aad.md)
+
 
 請遵循下列步驟，將 Azure AD 應用程式設定為由 Microsoft Cloud App Security 條件式存取應用程式控制進行控制。
 
@@ -102,6 +109,11 @@ ms.lasthandoff: 04/30/2018
 
 
 您現在已準備好建立[存取原則](access-policy-aad.md)和[工作階段原則](session-policy-aad.md)來控制條件式存取應用程式控制的應用程式。
+
+
+>[!div class="step-by-step"]
+[« 上一步：利用條件式存取應用程式控制來保護應用程式](proxy-intro-aad.md)
+[下一步：工作階段原則 »](session-policy-aad.md)
 
 
 
