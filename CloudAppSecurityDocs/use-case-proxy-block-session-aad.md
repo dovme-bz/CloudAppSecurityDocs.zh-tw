@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/09/2018
 # <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>使用 Microsoft Cloud App Security 條件式存取應用程式控制封鎖下載機密資訊
 
 >[!div class="step-by-step"]
-[« 上一步：存取原則](access-policy-aad.md)
+[« 上一篇：如何建立存取原則](access-policy-aad.md)
 
 現今的 IT 系統管理員處於進退兩難的局面：您想要讓員工更具生產力。 這表示允許員工存取應用程式，讓他們可以透過任何裝置隨時工作。 另一方面又想保護公司的資產，這包括所有權和特殊權限資訊。 您該如何讓員工存取雲端應用程式，同時又能保護資料？ **對於可以從未受管理的裝置或非公司網路位置存取企業雲端應用程式中之敏感性資料的使用者，此使用案例可讓您封鎖這些使用者的下載。**
 
@@ -133,7 +133,7 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 
 
 >[!div class="step-by-step"]
-[« 上一步：存取原則](access-policy-aad.md)
+[« 上一篇：如何建立存取原則](access-policy-aad.md)
 
 
 

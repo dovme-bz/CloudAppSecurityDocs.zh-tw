@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: becfce9773460020b4188e65c69d257f3d1b2b53
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
+ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/16/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -106,6 +106,10 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 - TOKEN 是您在前一個步驟中所複製的 SIEM 代理程式權杖。
 
 您可以隨時輸入-h 來取得說明。
+
+
+## 範例活動記錄<a name="siem-samples"></a>
+
 
 以下是傳送到 SIEM 的活動記錄範例：
 ```

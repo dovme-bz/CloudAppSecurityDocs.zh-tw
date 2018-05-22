@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
-ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
+ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« 上一步：部署條件式存取應用程式控制](proxy-deployment-aad.md)
-[下一步：存取原則 »](access-policy-aad.md)
+[« 部署條件式存取應用程式控制](proxy-deployment-aad.md)<br>
+[下一篇：如何建立存取原則 »](access-policy-aad.md)
 
 
 Microsoft Cloud App Security 工作階段原則可讓您執行即時工作階段層級監視，讓您更清楚雲端應用程式，以及讓您根據您針對使用者工作階段設定的原則採取不同的動作。 使用工作階段控制可以在允許存取的同時，利用條件式存取應用程式控制的反向 Proxy 功能監視工作階段及/或限制特定的工作階段活動，而不是[完全允許或完全封鎖存取](access-policy-aad.md)。 
@@ -182,8 +182,8 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 當 [保護] 設為要在 Cloud App Security 工作階段原則中採取的 [動作] 時，條件式存取應用程式控制會根據原則的檔案篩選條件，強制執行檔案標記及後續保護。 [標籤] 是在 Azure 的 Azure 資訊保護主控台中設定，必須在標籤內選取 [保護]，Cloud App Security 原則才會將標籤顯示為選項。 在符合 Cloud App Security 原則的準則下，選取標籤並下載檔案時，檔案會在下載時套用標籤及對應的保護 (具有權限)。 原始檔案仍保持在雲端應用程式中的狀況，而下載的檔案受到保護。 嘗試存取該檔案的使用者必須符合套用保護決定的權限需求。  
  
 >[!div class="step-by-step"]
-[« 上一步：部署條件式存取應用程式控制](proxy-deployment-aad.md)
-[下一步：存取原則 »](access-policy-aad.md)
+[« 部署條件式存取應用程式控制](proxy-deployment-aad.md)<br>
+[下一篇：如何建立存取原則 »](access-policy-aad.md)
 
  
 ## <a name="see-also"></a>另請參閱  

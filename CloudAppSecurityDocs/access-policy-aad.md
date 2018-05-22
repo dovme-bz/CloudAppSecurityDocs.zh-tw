@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
-ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
+ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« 工作階段原則](session-policy-aad.md)<br>
-[使用案例 »](use-case-proxy-block-session-aad.md)
+[« 上一篇：如何建立工作階段原則](session-policy-aad.md)<br>
+[下一篇：探索熱門使用案例 »](use-case-proxy-block-session-aad.md)
 
 
 Microsoft Cloud App Security 的存取原則可以根據使用者、位置、裝置和應用程式，即時監視和控制對雲端應用程式的存取。 您可以推出受控裝置的用戶端憑證，或利用現有的憑證，例如協力廠商 MDM 憑證，建立任何裝置的存取原則，包括未加入網域的裝置，以及不受 Windows Intune 管理的裝置。 例如，您可以將用戶端憑證部署到受控裝置，然後封鎖無憑證裝置的存取。 
@@ -95,8 +95,9 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 
 >[!div class="step-by-step"]
-[« 上一步：工作階段原則](session-policy-aad.md)
-[下一步：使用條件式存取應用程式控制封鎖下載機密資訊 »](use-case-proxy-block-session-aad.md)
+[« 上一篇：如何建立工作階段原則](session-policy-aad.md)<br>
+[下一篇：探索熱門使用案例 »](use-case-proxy-block-session-aad.md)
+
  
 ## <a name="see-also"></a>另請參閱  
 [使用 Azure AD 條件式存取應用程式控制功能封鎖非受控裝置的下載作業](use-case-proxy-block-session-aad.md)   
