@@ -34,7 +34,7 @@ ms.lasthandoff: 04/23/2018
     ![google1](./media/google1.png "google1")  
   
 3. 在 [新增專案] 畫面中，以下列名稱命名您的專案︰</br>
-   Microsoft Cloud App Security**，然後按一下 [建立]**。  
+   Microsoft Cloud App Security **，然後按一下 [建立]**。  
           ![google2](./media/google2.png "google2")  
   
 4. 建立專案後，按一下工具列的 [Google Cloud Platform]，確定在上方的下拉式清單中選取正確的專案。
@@ -145,9 +145,9 @@ ms.lasthandoff: 04/23/2018
   
     -   填寫下列**支援 URL**：  
   
-        -   **服務條款 URL**：http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **服務條款 URL**： http://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **隱私權原則 URL**：http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **隱私權原則 URL**： http://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   在 [OAuth 2.0 範圍] 下，複製並貼上下列 URL (一次複製一個，並於貼上後按 Enter)：  
   

@@ -32,7 +32,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>步驟 1：將您的 Azure 活動記錄串流至事件中樞
 
-1. 將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請依照 Azure 文件中的正式指南進行：https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
+1. 將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請依照 Azure 文件中的正式指南進行： https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
    > [!NOTE]
    > 如果您有多個 Azure 訂用帳戶，請對每一個訂用帳戶重複此步驟，並於所有訂用帳戶之間共用單一事件中樞。

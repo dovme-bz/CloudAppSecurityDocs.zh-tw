@@ -155,7 +155,7 @@ ICAP 伺服器和 Cloud App Security 會使用私密金鑰和公開憑證進行�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>下載 Cloud App Security Stunnel 用戶端公開金鑰
 
-請從這個位置下載公開金鑰：https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 並將其儲存至：**/etc/ssl/certs/MCASCAfile.pem**
+請從這個位置下載公開金鑰： https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem 並將其儲存至：**/etc/ssl/certs/MCASCAfile.pem**
 
 ### <a name="configure-stunnel"></a>設定 Stunnel 
 
@@ -316,7 +316,7 @@ Cloud App Security 會順暢地支援 Symantec DLP 隨附的所有偵測規則�
 此規則必須新增至所有現有的原則。
 
 >[!NOTE]
-> 如果您使用 Symantec vontu 掃描 Dropbox 的檔案，CAS 會自動顯示檔案來自下列 URL：http://misc/filename。此預留位置 URL 實際上不會連到任何地方，僅作記錄之用。
+> 如果您使用 Symantec vontu 掃描 Dropbox 的檔案，CAS 會自動顯示檔案來自下列 URL： http://misc/filename 。此預留位置 URL 實際上不會連到任何地方，僅作記錄之用。
 
 
 ## <a name="see-also"></a>另請參閱  
