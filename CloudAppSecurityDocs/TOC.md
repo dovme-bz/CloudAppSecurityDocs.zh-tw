@@ -1,6 +1,6 @@
 # 了解並探索
 ## [Cloud App Security 是什麼？](what-is-cloud-app-security.md)
-## [Cloud App Security 合規性、信任、資料安全性與隱私權](cas-compliance-trust.md)
+## [Cloud App Security 資料安全性和隱私權](cas-compliance-trust.md)
 ## [新功能](release-notes.md)
 ### [過去版本封存](release-note-archive.md)
 ## 比較
