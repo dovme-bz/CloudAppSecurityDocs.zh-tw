@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -168,7 +168,7 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
 您也可以為這些原則選擇設定警示、使用者通知或立即採取行動。
 深入了解[管理動作](governance-actions.md)。
 
-深入了解 [Azure 資訊保護](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection)及查看 Azure 資訊保護[快速入門教學課程](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)。
+深入了解 [Azure 資訊保護](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection)及查看 Azure 資訊保護[快速入門教學課程](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)。
 
 
  

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bda3cc88e28d8a8a99252556360cc57d36dd02f
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/30/2018
 # <a name="what-is-microsoft-cloud-app-security"></a>什麼是 Microsoft Cloud App Security
 
 > [!NOTE]
-> 如需進階安全性管理及適用於 Office 365 的 Cloud App Security 相關資訊，請參閱[開始使用進階安全性管理](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
+> 如需 Office 365 雲端 App 安全性的詳細資訊，請參閱[開始使用 Office 365 雲端 App 安全性](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)。
 
 轉移至雲端雖然可增加員工的彈性並降低 IT 成本，但也在維護組織安全方面帶來新的複雜性與挑戰。 若要完整發揮雲端應用程式的優點，IT 團隊必須在支援存取與維持掌控權之間找到適當的平衡，才可保護重要的資料。  
 
