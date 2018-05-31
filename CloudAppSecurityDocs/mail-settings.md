@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558884"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -29,18 +30,13 @@ ms.lasthandoff: 04/23/2018
 
 1. 在功能表列中，按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 並選取 [設定]，然後選取 [郵件設定] 索引標籤。  
 
-2. **寄件者電子郵件地址**︰您想要用來傳送通知的電子郵件帳戶。  
+ ![郵件設定](./media/mail-settings-config.png)
+
+2. 在 [電子郵件寄件者身分識別] 下：如果您打算使用預設的電子郵件設定，則無需在此區段變更任何內容。 如果您想要自訂電子郵件寄件者身分識別，則可以設定**寄件者顯示名稱**、**寄件者電子郵件地址**和**回覆電子郵件地址**。 Microsoft Cloud App Security 會透過使用名稱為 MailChimp®的協力廠商郵件服務為您完成。 請確定您檢閱並接受 MailChimp 的服務條款及隱私權聲明以啟用此功能，否則 Microsoft Cloud App Security 會使用預設設定傳送通知。
    
-   **寄件者顯示名稱**︰您想要顯示在電子郵件 [寄件者] 欄位中的名稱。  
    > [!NOTE]
    > 根據 [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)，顯示名稱與電子郵件地址只能使用 Unicode 字元。
 
-   **回覆電子郵件地址**︰要用於訊息回覆的電子郵件帳戶。  
-  
-     ![郵件設定組態](./media/mail-settings-config.png "郵件設定組態")  
-
-   >[!NOTE]
-   >若要將 [寄件者電子郵件地址] 欄位變更為您自己的網域，請參閱[這裡](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)的指示。
   
 3. 針對 [電子郵件設計]，您可以使用 HTML 檔案，以自訂和設計從系統傳送的電子郵件訊息。 用於範本的 HTML 檔案應該包含下列項目︰  
   

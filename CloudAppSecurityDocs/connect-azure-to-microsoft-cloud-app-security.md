@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 417e5eb128e5ec351369d8703a3c220117031f32
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: f93a78e35c76e9dd76e1264fb11d6046ed2b6d18
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558935"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>步驟 1：將您的 Azure 活動記錄串流至事件中樞
 
-1. 將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請依照 Azure 文件中的正式指南進行： https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
+1. 將 Azure 訂用帳戶的 Azure 活動記錄串流至事件中樞。 請依照 Azure 文件中的正式指南進行： https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs
 
    > [!NOTE]
    > 如果您有多個 Azure 訂用帳戶，請對每一個訂用帳戶重複此步驟，並於所有訂用帳戶之間共用單一事件中樞。
@@ -48,9 +49,7 @@ Cloud App Security 會透過事件中樞連線到 Azure。 本節提供在訂用
   
    ![事件中樞功能表](media/azure-event-hubs.png "Azure 事件中樞")
 
-2. 選取事件中樞命名空間。
-  
-   ![事件中樞命名空間](media/azure-namespace.png "Azure 命名空間")
+2.  在 Azure 快顯視窗中，按一下 [連線 Microsoft Azure]。
 
 3. 在功能表的 [實體] 按一下 [事件中樞]。 
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,22 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f95480f8d7a12dd2ef62483d7847cbb8f057d276
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 2c72bebaee6b5625d67a50ea8434e7effc527f11
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558952"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="accounts"></a>帳戶
 Microsoft Cloud App Security 可讓您從連線應用程式看見帳戶。 當您使用 App 連線程式將 Cloud App Security 連線至應用程式時，Cloud App Security 會讀取與連線應用程式建立關聯的帳戶資訊。 [帳戶] 頁面可讓您調查這些帳戶、權限、為其所屬成員的群組、其別名以及所用的應用程式。 此外，當 Cloud App Security 在其中一個連線應用程式 (例如活動或檔案共用) 中偵測到先前未看過的新帳戶時，會將此帳戶新增至該應用程式的帳戶清單。 這可讓您檢視與您的雲端應用程式互動之外部使用者的活動。
+
+系統管理員可以搜尋特定使用者的中繼資料或使用者的活動。 [使用者及帳戶] 頁面為您提供有關從連線的雲端應用程式中提取的實體相關詳細資料。 它也提供使用者的活動歷程記錄和與使用者相關的安全性警示。
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 
 您可以篩選 [帳戶] 頁面，以尋找特定的帳戶，並深入探討不同的帳戶類型，例如，您可以篩選自去年起即未存取的所有外部帳戶。 

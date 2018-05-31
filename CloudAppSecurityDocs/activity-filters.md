@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6f34fbcf5c268518c269f98838321e134c6e7279
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/30/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559071"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -109,6 +110,15 @@ Microsoft Cloud App Security 可讓您從連接的應用程式看見所有活動
 
 
 ![Cloud App Security 中的 IP 位址深入解析](./media/ip-address-insights.png)
+
+## 匯出活動 <a name="export"></a>
+
+您可以將所有使用者活動都匯出至 CSV 檔案。 
+
+在 [活動記錄檔] 的右上角，按一下 [匯出] 按鈕 ![匯出按鈕](./media/export-button.png)。
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+
 
 
 ## <a name="see-also"></a>另請參閱  

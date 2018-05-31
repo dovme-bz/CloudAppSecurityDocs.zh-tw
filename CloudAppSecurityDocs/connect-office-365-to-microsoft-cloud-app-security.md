@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558969"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -53,15 +54,13 @@ Cloud App Security 支援下列 Office 365 應用程式：
  
 1.  在 [連線應用程式] 頁面中，按一下加號按鈕並選取 [Office 365]。  
 
-2.  在 Office 365 快顯視窗中，按一下 [連線至 Office 365]。
+    ![連接 0365](./media/connect-0365.png) 
 
-      ![連接 0365](./media/connect-0365.png) 
+2.  在 Office 365 快顯視窗中，按一下 [連接 Office 365]。
+
+    ![連接 0365](./media/office-connect.png) 
  
-3.  按一下 [立即測試] 以測試 Office 365 的連線。 測試可能需要幾分鐘的時間。
-  
-    ![O365 測試連線](./media/o365-test-connection.png) 
- 
-4.   顯示已成功連接 Office 365 之後，請按一下 [關閉]。
+3.   顯示已成功連接 Office 365 之後，請按一下 [關閉]。
   
      ![O365 已連接](./media/o365-connected.png) 
 

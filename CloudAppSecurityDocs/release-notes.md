@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/11/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,48 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 545d7cb0e7152918e8f9b1e37ff1d7a210605342
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: e5d7d03bc2c30716c9c449f66734ea65c58220eb
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559054"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+
+## <a name="cloud-app-security-release-124"></a>Cloud App Security 版本 124
+
+發行日期：2018 年 5 月 27 日
+
+-   **新增至雲端應用程式類別目錄的 GDPR 風險評估**<br>
+Microsoft Cloud App Security 新增了 13 個新的風險因素。 這些風險因素遵循 GDPR 架構檢查清單，可讓您根據 GDPR 規定評估雲端應用程式類別目錄中的應用程式。
+
+-   **與 Microsoft 資料分類服務整合**<br>
+現在，Microsoft Cloud App Security 讓您能夠以原生方式利用 Microsoft 資料分類服務，以便對雲端應用程式中的檔案進行分類。 <br>
+Microsoft 資料分類服務為 Office 365、Azure 資訊保護和 Microsoft Cloud App Security 提供統一的資訊保護體驗。 它允許您將相同的資料分類架構延伸到受 Microsoft Cloud App Security 保護的協力廠商雲端應用程式，利用您在眾多應用程式中做出的決策。 
+
+-   **連線到 Microsoft Azure** (逐步推出)<br>
+Microsoft Cloud App Security 正在將其 IaaS 監視功能延伸到 Amazon Web Services 之外，且現在支援 Microsoft Azure。 這可讓您使用 Cloud App Security 順暢地連線及監視所有 Azure 訂用帳戶。 此連線會為您提供一組強大的工具來保護您的 Azure 環境，其中包括： 
+ -  透過入口網站所執行全部活動的可見度
+ -  能夠建立自訂原則以警示不想要的行為，以及能夠將潛在高風險使用者暫停或強制再次登入以自動保護這些使用者。
+ -  Azure 的所有活動均由我們的異常偵測引擎涵蓋，並會自動警示 Azure 入口網站中任何可疑的行為，例如不可能的移動、可疑的群體活動以及來自新國家/地區的活動。<br>
+如需詳細資訊，請參閱[將 Azure 連線至 Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)。
+ 
+-   **限定範圍的部署**<br> (逐步推出) Microsoft Cloud App Security 為企業提供了根據群組成員資格，精細判斷他們想要監視及保護哪些使用者的能力。 此功能可讓您選取不會針對任何受保護的應用程式顯示活動的使用者。 限定範圍的監視功能特別適用於： 
+  - 合規性 - 如果您的標準規定要求您根據當地法規不要監視特定國家/地區的使用者。
+  - 授權 - 如果您希望監視較少的使用者，以維持在您的 Microsoft Cloud App Security 授權限制內。
+如需詳細資訊，請參閱[限定範圍的部署](scoped-deployment.md)。
+
+-   **探索到的應用程式之安全性缺口應用程式警示**<br>
+我們現在有一個內建警示，通知您何時發現任何租用戶探索到的應用程式遭到入侵。 警示將提供有關入侵的日期和時間資訊，哪些使用者使用該應用程式，並將連結至公開可用的來源，以提供有關安全性缺口的資訊。
+
+-   **新的郵件伺服器**<br>
+Cloud App Security 的郵件伺服器已變更，並使用不同的 IP 位址範圍。 為確保您可以收到通知，請將新的 IP 位址加入您的反垃圾郵件白名單。 針對自訂通知的使用者，Microsoft Cloud App Security 可使用 MailChimp® (一種協力廠商電子郵件服務) 為您啟用。 如需郵件伺服器 IP 位址清單以及如何使用 MailChimp 的指示，請參閱[網路需求](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server)和[郵件設定](mail-settings.md)。
+
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security 版本 123
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,19 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
+ms.sourcegitcommit: 4952c6368978f435df9e184ec885b200b70dd854
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470656"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
-# <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security 合規性、信任、資料安全性和隱私權
+# <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security 資料安全性和隱私權
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 Microsoft Cloud App Security 是 Microsoft Cloud Security 堆疊的重要元件。 它是全方位的解決方案，可協助您的組織充分利用雲端應用程式的承諾，但可讓您透過全面的可見性、稽核功能，以及敏感性資料的細微控制來掌控一切。
 
@@ -60,6 +63,9 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 ## <a name="privacy"></a>私密性
 
 ### <a name="you-are-the-owner-of-your-data"></a>您是資料的擁有者
+- 在 Microsoft Cloud App Security 中，您的系統管理員可以從入口網站中使用搜尋列，檢視儲存在服務中的可識別的個人資料。
+- 
+- 系統管理員可以搜尋特定使用者的中繼資料或使用者的活動。 按一下實體即可開啟[**使用者及帳戶**](accounts.md)。 [使用者及帳戶] 頁面為您提供有關從連線的雲端應用程式中提取的實體相關詳細資料。 它也提供使用者的活動歷程記錄和與使用者相關的安全性警示。
 
 -   您的資料都屬於您，且您可隨時取消訂用帳戶，以及要求刪除自己的資料。 如果您不續約訂用帳戶，您的資料將會在[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) \(英文\) 中指定的時間表期間內刪除。
 
@@ -74,6 +80,10 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 ### <a name="privacy-controls"></a>隱私權控制
 
 -   隱私權控制可協助您設定組織中可存取服務的人員，以及可存取的項目。
+
+## <a name="updating-personal-data"></a>更新個人資料
+使用者相關個人資料是衍生自所使用 SaaS 應用程式中的使用者的物件。 因此，在這些應用程式中對使用者設定檔所做的任何變更，都會反映在 Microsoft Cloud App Security 中。
+
 
 ## <a name="data-location"></a>資料位置
 
@@ -104,6 +114,12 @@ Microsoft Cloud App Security 保留資料的方式如下：
 若要深入了解 Microsoft 的資料處理實務，請閱讀[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) \(英文\)。
 
 [深入了解透明度](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+
+### <a name="deleting-personal-data"></a>刪除個人資料
+從已連線的雲端應用程式中刪除資料後，Microsoft Cloud App Security 將在 2 年內自動刪除資料的複本。
+
+### <a name="exporting-personal-data"></a>匯出個人資料
+Microsoft Cloud App Security 可讓您將所有使用者活動和安全性警示資訊[匯出](activity-filters.md#export)至 CSV。
 
 ## <a name="security"></a>安全性
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558918"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -124,9 +125,20 @@ ms.lasthandoff: 05/14/2018
 
 ## <a name="email-server"></a>電子郵件伺服器
 
-Cloud App Security 的專用電子郵件 IP 位址為： 
+若要使用預設範本和設定傳送通知，請將這些 IP 位址加入至您的反垃圾郵件白名單。 Cloud App Security 的專用電子郵件 IP 位址為： 
 
-198.2.134.139 (mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+如果您想要自訂通知，Microsoft Cloud App Security 可使用 MailChimp® (協力廠商電子郵件服務) 來啟用此功能。 若要讓它運作，請在 Microsoft Cloud App Security 入口網站的 [設定] 下選取 [郵件設定] 並檢閱 MailChimp 的服務條款及隱私權聲明，然後提供允許 Microsoft 代表您使用 MailChimp 的權限。
+
+如果您不這樣做，您的電子郵件通知將使用所有預設設定傳送。
+
+若要使用 MailChimp，請將此 IP 位址加入至您的反垃圾郵件白名單以啟用傳送通知：198.2.134.139 (mail1.cloudappsecurity.com)
 
 請務必將此 IP 位址加入反垃圾郵件服務的允許清單，以接收系統傳送的通知。
 
