@@ -18,6 +18,7 @@ ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/14/2018
+ms.locfileid: "34152737"
 ---
 *適用於：Microsoft Cloud App Security*
 
