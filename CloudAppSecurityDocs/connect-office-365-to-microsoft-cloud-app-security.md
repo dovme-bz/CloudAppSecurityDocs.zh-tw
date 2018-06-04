@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: f37b1a828ab13bd2b66a9b43bcb2c625fab0cc00
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558969"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568436"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -54,16 +54,14 @@ Cloud App Security 支援下列 Office 365 應用程式：
  
 1.  在 [連線應用程式] 頁面中，按一下加號按鈕並選取 [Office 365]。  
 
-    ![連接 0365](./media/connect-0365.png) 
+      ![連接 0365](./media/connect-0365.png) 
 
 2.  在 Office 365 快顯視窗中，按一下 [連接 Office 365]。
 
-    ![連接 0365](./media/office-connect.png) 
+      ![連接 0365](./media/office-connect.png) 
  
 3.   顯示已成功連接 Office 365 之後，請按一下 [關閉]。
   
-     ![O365 已連接](./media/o365-connected.png) 
-
 > [!NOTE] 
 > 連接 Office 365 之後，您會看到一週前的資料，包括任何連接到 Office 365 以提取 API 的協力廠商應用程式。 針對在連線之前並未提取 API 的協力廠商應用程式，由於 Cloud App Security 會開啟所有預設為關閉的 API，因此您會看到從連線至 Office 365 開始的所有事件。
 

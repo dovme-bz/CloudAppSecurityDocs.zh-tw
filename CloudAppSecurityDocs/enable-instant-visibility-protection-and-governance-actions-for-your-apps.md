@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b0f009770d16f7d801df637e1ba632cc6f82f1ac
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8e9fb2a64417d68e64b2b37088fcb5baae3e6fe2
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568968"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -90,7 +91,7 @@ App 連線程式流程如下所示︰
 > |**隔離**|✔|✔|不適用|敬請期待|||敬請期待||  
 > |**檢視應用程式權限**|✔|提供者不支援|不適用|✔||✔|提供者不支援||  
 > |**撤銷應用程式權限**|✔||不適用|✔||✔|不適用||  
-> |**套用 Azure 資訊保護標籤**|✔|✔|||||||  
+> |**套用 Azure 資訊保護標籤**|✔|✔||✔|||||  
 
 ## <a name="prerequisites"></a>必要條件  
 
