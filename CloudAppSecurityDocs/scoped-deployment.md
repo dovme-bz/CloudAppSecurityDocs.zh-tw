@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559089"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568657"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security 可讓您限定部署的範圍，就能只監視特
      
      ![包括規則](./media/include-rule.png)
 
-4. 若要設定從監視中排除特定群組或使用者，請在 [排除] 索引標籤上按一下加號 ![圖示](./media/plus-icon.png)。 <br>在 [建立新包含規則] 對話方塊中，設定下列參數：
+4. 若要設定從監視中排除特定群組，請在 [排除] 標籤上按一下加號![圖示](./media/plus-icon.png)。 <br>在 [建立新包含規則] 對話方塊中，設定下列參數：
 
     1. 在 [類型規則名稱] 下，為該規則指定一個描述性名稱。
     在 [選取使用者群組] 下，選取您不想要使用 Cloud App Security 監視的所有群組。
@@ -62,6 +62,7 @@ Microsoft Cloud App Security 可讓您限定部署的範圍，就能只監視特
 - 排除使用者群組「德國所有使用者」
 - 針對使用者群組「全球銷售」僅包含 Office 365 活動
 - 針對使用者群組「銷售經理」僅包含 Power BI 活動
+- Salesforce 已連線至 Microsoft Cloud App Security，且其未設有任何規則
 
 下列使用者的活動會受到監視：
 
@@ -72,6 +73,9 @@ Microsoft Cloud App Security 可讓您限定部署的範圍，就能只監視特
 |Cornel|全球銷售<br>銷售經理|Office 365 和所有子應用程式|
 |Raymond|銷售經理|僅限 Power BI|
 
+> [!NOTE] 
+> 其他應用程式不會受到這些規則中的群組範圍限定影響。
+> 在範例中，針對 Salesforce，會監視所有使用者群組的所有活動。
 
   
     

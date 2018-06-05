@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2017
+ms.date: 5/27/2017
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3daf04f3caa2541bacafe6be33c7f9714b1dda71
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 403d61fd6c0177371dab351413e80e40dde41386
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567654"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="set-up-cloud-discovery"></a>設定 Cloud Discovery
-Cloud Discovery 會分析您的流量記錄，而其分析依據是 Microsoft Cloud App Security 雲端應用程式目錄，此目錄包含以 60 個以上風險因素進行排名和評分的 15,000 個以上雲端應用程式，可讓您持續掌握雲端使用、Shadow IT 以及 Shadow IT 對組織造成的風險。
+Cloud Discovery 會依據 Microsoft Cloud App Security 雲端應用程式目錄分析您的流量記錄，此目錄內含 16,000 個以上的雲端應用程式，並會根據 70 個以上的風險因素 加以排名和評分，這可讓您持續掌握雲端使用情況、Shadow IT 以及 Shadow IT 對組織造成的風險。
 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>快照集和連續風險評估報告 
 
@@ -39,7 +40,7 @@ Cloud Discovery 會分析您的流量記錄，而其分析依據是 Microsoft Cl
 
 -   **剖析** – Cloud App Security 會使用針對每項資料來源的專用剖析器，剖析並擷取來自流量記錄的流量資料。  
 
--   **分析** – 依 Cloud App Catalog 分析流量資料來識別超過 15,000 種的雲端應用程式，並評估其風險評分。 使用中的使用者和 IP 位址也會被識別為分析的一部分。  
+-   **分析** – 依雲端應用程式目錄分析流量資料來識別 16,000 個以上的雲端應用程式，並評定其風險分數。 使用中的使用者和 IP 位址也會被識別為分析的一部分。  
 
 -   **產生報告** - 產生從記錄檔擷取之資料的風險評估報告。   
 

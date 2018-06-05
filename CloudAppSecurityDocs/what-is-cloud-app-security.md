@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568674"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -72,7 +73,7 @@ Cloud Discovery 會使用您的流量記錄，動態探索並分析組織中正�
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>批准及不批准應用程式  
 
-Cloud App Security 可讓您使用 *[雲端應用程式目錄]*，決定批准或不批准組織中的應用程式。 Microsoft 的分析師小組具有非常龐大且持續增加的目錄，其中包含 15,000 多種根據業界標準排名及評分的雲端應用程式。 您可使用雲端應用程式目錄，依據認證法規、業界標準及最佳做法替您的雲端應用程式風險分級。 接著按照組織需求自訂分數及不同參數的加權。 Cloud App Security 會根據這些分數以及 60 多個可能影響環境的風險因素，讓您了解應用程式的風險性。  
+Cloud App Security 可讓您使用 *[雲端應用程式目錄]*，決定批准或不批准組織中的應用程式。 Microsoft 的分析師小組具有非常龐大且持續增加的目錄，內含 16,000 個以上的雲端應用程式，並會根據業界標準加以排名及評分。 您可使用雲端應用程式目錄，依據認證法規、業界標準及最佳做法替您的雲端應用程式風險分級。 接著按照組織需求自訂分數及不同參數的加權。 Cloud App Security 會根據這些分數以及 70 個以上可能影響環境的風險因素，讓您了解應用程式的風險度。  
 
 ### <a name="app-connectors"></a>App 連線程式  
 App 連線程式使用雲端應用程式提供者的 API，將 Cloud App Security 雲端與其他雲端應用程式相整合。 App 連線程式擴充控制及保護。 其同時讓您直接從雲端應用程式存取 Cloud App Security 分析的資訊。  

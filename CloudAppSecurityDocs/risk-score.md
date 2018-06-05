@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 863801bab42b957af98541da326d9b7ec6c69ccc
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567671"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 ## <a name="the-cloud-app-catalog"></a>雲端應用程式目錄
 
-雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會分析您的流量記錄，而其分析依據是根據 60 個以上的風險因素進行排名和評分之 15,000 個雲端應用程式的 Microsoft Cloud App Security 雲端應用程式目錄，以讓您持續掌握雲端使用、Shadow IT 以及 Shadow IT 對組織造成的風險。
+雲端應用程式目錄可讓您完整查看 Cloud Discovery 所識別的項目。 Cloud Discovery 會依據 Microsoft Cloud App Security 雲端應用程式目錄分析您的流量記錄，此目錄內含 16,000 個以上的雲端應用程式，並會根據 70 個以上的風險因素 加以排名和評分，這可讓您持續掌握雲端使用情況、Shadow IT 以及 Shadow IT 對組織造成的風險。
 [雲端應用程式目錄] 會依據認證法規、業界標準和最佳做法來進行雲端應用程式的風險分級。 在雲端應用程式目錄中執行四種補充程序，以保持最新資訊︰
 1.  直接從雲端應用程式進行自動化資料擷取 (適用於 SOC 2 合規性、服務條款、登入 URL、隱私權原則和 HQ 位置這類屬性)。
 2.  透過 Cloud App Security 演算法之資料的自動化進階資料擷取 (適用於 HTTP 安全性標頭這類屬性)。
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/23/2018
 有基本和進階雲端應用程式目錄篩選。 若要取得複雜的篩選，請使用包括下列各項的進階選項：
 
 - **應用程式標籤**：標籤可讓您自訂「雲端應用程式目錄」。 
-  您可以選取 [Sanctioned ] \(核准\)、[Unsanctioned] \(不核准\)，也可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 
+  您可以選取 [Sanctioned (核准)]、[Unsanctioned (不核准)]，也可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 
 - **應用程式與網域**：可讓您搜尋特定應用程式或用於特定網域的應用程式。 
 - **類別**：類別篩選位於頁面左邊，可讓您根據應用程式類別搜尋不同類型的應用程式，例如社交網路應用程式、雲端儲存體應用程式等。您可以一次選取多個類別或單一類別，然後將基本和進階篩選套用其上。
 - **合規性風險因素**：可讓您搜尋應用程式可能遵守的特定標準、憑證與規範 (HIPAA、ISO 27001、SOC 2、PCI-DSS 等)。

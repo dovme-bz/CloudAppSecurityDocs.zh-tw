@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 6d19e90b8eda14868f1b25e6d9a776b030aeedbd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558884"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568419"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -30,9 +30,9 @@ ms.locfileid: "34558884"
 
 1. 在功能表列中，按一下設定齒輪 ![設定圖示](./media/settings-icon.png "設定圖示") 並選取 [設定]，然後選取 [郵件設定] 索引標籤。  
 
- ![郵件設定](./media/mail-settings-config.png)
+   ![郵件設定](./media/mail-settings-config.png)
 
-2. 在 [電子郵件寄件者身分識別] 下：如果您打算使用預設的電子郵件設定，則無需在此區段變更任何內容。 如果您想要自訂電子郵件寄件者身分識別，則可以設定**寄件者顯示名稱**、**寄件者電子郵件地址**和**回覆電子郵件地址**。 Microsoft Cloud App Security 會透過使用名稱為 MailChimp®的協力廠商郵件服務為您完成。 請確定您檢閱並接受 MailChimp 的服務條款及隱私權聲明以啟用此功能，否則 Microsoft Cloud App Security 會使用預設設定傳送通知。
+2. 在 [電子郵件寄件者身分識別] 下：如果您打算使用預設的電子郵件設定，則無需在此區段變更任何內容。 如果您想要自訂電子郵件寄件者身分識別，您可以進行這裡任一項設定，以自訂您要變更的欄位。 您可以變更下列任一項或所有設定：[寄件者顯示名稱]、[寄件者電子郵件地址]、[收件者電子郵件地址]。 Microsoft Cloud App Security 會透過使用名稱為 MailChimp®的協力廠商郵件服務為您完成。 請確定您檢閱並接受 MailChimp 的服務條款及隱私權聲明以啟用此功能，否則 Microsoft Cloud App Security 會使用預設設定傳送通知。
    
    > [!NOTE]
    > 根據 [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)，顯示名稱與電子郵件地址只能使用 Unicode 字元。

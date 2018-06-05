@@ -1,23 +1,24 @@
 ---
-title: "Cloud App Security 與 Office 365 雲端 App 安全性之間的差異為何？ | Microsoft Docs"
-description: "本主題說明 Cloud App Security 與 Office 365 雲端 App 安全性之間的差異。"
-keywords: 
+title: Cloud App Security 與 Office 365 雲端 App 安全性之間的差異為何？ | Microsoft Docs
+description: 本主題說明 Cloud App Security 與 Office 365 雲端 App 安全性之間的差異。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 5edbb6a812060cee1fef9b0bdf78bc31d362dfaf
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567603"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security 與 Office 365 Cloud App Security 之間的差異為何？
 
@@ -36,7 +37,7 @@ Office 365 Cloud App Security 是 Microsoft Cloud App Security 的子集，能�
 
 |功能|功能|Microsoft Cloud App Security|Office 365 雲端 App 安全性|
 |----|----|----|----|
-|雲端探索|探索到的應用程式 |15,000 多種雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
+|雲端探索|探索到的應用程式 |16,000 個以上的雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
 ||探索分析的部署|手動與自動上傳記錄檔|手動上傳記錄檔|
 ||記錄匿名保護使用者隱私|是||
 ||存取完整的雲端應用程式目錄|是||
@@ -62,4 +63,3 @@ Office 365 Cloud App Security 是 Microsoft Cloud App Security 的子集，能�
 在[開始使用 Cloud App Security](getting-started-with-cloud-app-security.md) 中了解基本概念。    
 
 頂級客戶也可以直接從[頂級支援入口網站](https://premier.microsoft.com/)選擇 Cloud App Security。   
-

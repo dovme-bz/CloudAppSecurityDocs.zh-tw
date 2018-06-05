@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 4a304dc7e4da6282fe350fbb6d25825957d723fd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567569"
 ---
 *適用於：Microsoft Cloud App Security*
 
 # <a name="add-custom-apps-to-cloud-discovery"></a>新增自訂應用程式到 Cloud Discovery
     
-Cloud Discovery 以 Microsoft Cloud App Security 雲端應用程式目錄中超過 15,000 個雲端應用程式來分析您的流量記錄。 該目錄只包含公開可用的雲端應用程式，Cloud App Security 會針對這些應用程式提供可見度和風險資訊。
+Cloud Discovery 會依據 Microsoft Cloud App Security 雲端應用程式目錄中 16,000 個以上的雲端應用程式，分析您的流量記錄。 該目錄只包含公開可用的雲端應用程式，Cloud App Security 會針對這些應用程式提供可見度和風險資訊。
 
 為了看到雲端應用程式目錄所排除的雲端應用程式，Cloud App Security 可讓您探索專為您的組織開發或指派的自訂雲端應用程式 (LOB 應用程式) 使用情形。
 

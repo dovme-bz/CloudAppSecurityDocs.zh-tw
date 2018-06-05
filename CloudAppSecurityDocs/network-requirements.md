@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 5e8e98ce2ea00f834a59e4e472911d2f70e4b6e4
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558918"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568623"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -123,9 +123,9 @@ ms.locfileid: "34558918"
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
-## <a name="email-server"></a>電子郵件伺服器
+## <a name="mail-server"></a>郵件伺服器
 
-若要使用預設範本和設定傳送通知，請將這些 IP 位址加入至您的反垃圾郵件白名單。 Cloud App Security 的專用電子郵件 IP 位址為： 
+若要透過預設範本和設定傳送通知，請將這些 IP 位址新增至您的反垃圾郵件允許清單。 Cloud App Security 的專用電子郵件 IP 位址為： 
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -134,13 +134,12 @@ ms.locfileid: "34558918"
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-如果您想要自訂通知，Microsoft Cloud App Security 可使用 MailChimp® (協力廠商電子郵件服務) 來啟用此功能。 若要讓它運作，請在 Microsoft Cloud App Security 入口網站的 [設定] 下選取 [郵件設定] 並檢閱 MailChimp 的服務條款及隱私權聲明，然後提供允許 Microsoft 代表您使用 MailChimp 的權限。
+如果您想要自訂電子郵件寄件者身分識別，Microsoft Cloud App Security 可讓您使用 MailChimp® (協力廠商電子郵件服務) 進行此作業。 若要進行此作業，請在 Microsoft Cloud App Security 入口網站的 [設定] 下，選取 [郵件設定]，並檢閱 MailChimp 的服務條款及隱私權聲明，然後提供允許 Microsoft 代表您使用 MailChimp 的權限。
 
 如果您不這樣做，您的電子郵件通知將使用所有預設設定傳送。
 
 若要使用 MailChimp，請將此 IP 位址加入至您的反垃圾郵件白名單以啟用傳送通知：198.2.134.139 (mail1.cloudappsecurity.com)
 
-請務必將此 IP 位址加入反垃圾郵件服務的允許清單，以接收系統傳送的通知。
 
 ## <a name="log-collector"></a>記錄收集器 
 
@@ -169,5 +168,4 @@ ms.locfileid: "34558918"
 [可保護雲端環境的日常活動](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier 客戶也可以直接從 Premier 支援入口網站選擇 Cloud App Security。](https://premier.microsoft.com/)  
-
 
