@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759976"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -77,7 +78,7 @@ ms.lasthandoff: 05/14/2018
 
 6. 在條件式存取應用程式控制的應用程式資料表中，查看 [可用的控制項] 資料行，並確認 Azure AD 條件式存取和工作階段控制項都會出現。 <br></br>如果應用程式中未出現工作階段控制項，這表示工作階段控制項還無法用於該特定應用程式，您將改為看到 [要求工作階段控制項] 連結。 請按一下該連結以開啟對話方塊，並要求將應用程式上架到工作階段控制項。 在條件式存取應用程式控制的公開預覽期間，上架程序將由 Microsoft Cloud App Security 小組與您一起執行。
   
-   ![要求工作階段控制項](./media/request-session-control.png)
+   ![要求工作階段控制項](./media/proxy-view-new-apps.png)
 
 7. 選用 - 使用用戶端憑證識別裝置：
 
