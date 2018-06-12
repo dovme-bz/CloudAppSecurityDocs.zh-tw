@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568575"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251849"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+
+## <a name="cloud-app-security-release-125"></a>Cloud App Security 版本 125
+
+發行日期：2018 年 6 月 10 日
+
+
+### <a name="new-investigation-capability-by-top-users"></a>針對排名前幾位使用者的新調查功能： 
+Microsoft Cloud App Security 在儀表板上新增了新的調查功能小工具，可根據開啟威脅偵測警示的數目來顯示排名在前幾位的使用者。 這個調查小工具可讓您將威脅調查專注於擁有最大可疑工作階段數目的使用者。
+
+### <a name="support-for-aws-s3-buckets"></a>支援 AWS S3 貯體：
+Microsoft Cloud App Security 現在可以偵測 AWS S3 貯體及其共用層級。 如此對於可公開存取的 AWS 貯體可提供警示與可見度。 這也讓您可根據貯體來建立原則，以及套用自動治理。 此外，還有稱為**可公開存取的 S3 貯體 (AWS)** 的新原則範本，可用來輕鬆地建立原則來治理您的 AWS 儲存體。 為了啟用這些新功能，請務必如[連線 AWS](connect-aws-to-microsoft-cloud-app-security.md) 中所述來新增新的權限，以確認更新了連線到 AWS 的應用程式。
+
+### <a name="admin-privileges-based-on-user-groups"></a>以使用者群組為基礎的管理員權限：
+您現在可以根據使用者群組，以設定 Microsoft Cloud App Security 管理員的系統管理權限。 例如，您可以僅針對在德國的使用者，將特定的使用者設定為系統管理員。 這樣只有該使用者能夠針對使用者群組 [德國 - 所有使用者] 以檢視和修改 Microsoft Cloud App Security 中的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security 版本 124
@@ -57,7 +72,7 @@ Microsoft Cloud App Security 為企業提供根據群組成員資格，精細判
    如需詳細資訊，請參閱[限定範圍的部署](scoped-deployment.md)。
 
 -   **探索到的應用程式之安全性缺口應用程式警示**<br>
- 我們現在有一個內建警示，通知您何時發現任何租用戶探索到的應用程式遭到入侵。 警示將提供有關入侵的日期和時間資訊，哪些使用者使用該應用程式，並將連結至公開可用的來源，以提供有關安全性缺口的資訊。
+ 我們現在有一個內建警示，會在發現任何租用戶探索到的應用程式遭到入侵時通知您。 警示將提供有關入侵的日期和時間資訊，哪些使用者使用該應用程式，並將連結至公開可用的來源，以提供有關安全性缺口的資訊。
 
 -   **新的郵件伺服器**<br>
  Cloud App Security 的郵件伺服器已變更，並使用不同的 IP 位址範圍。 為確保您可以收到通知，請將新的 IP 位址加入您的反垃圾郵件白名單。 針對自訂通知的使用者，Microsoft Cloud App Security 可使用 MailChimp® (一種協力廠商電子郵件服務) 為您啟用。 如需郵件伺服器 IP 位址清單以及如何使用 MailChimp 的指示，請參閱[網路需求](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server)和[郵件設定](mail-settings.md)。
@@ -123,7 +138,7 @@ Microsoft Cloud App Security 為企業提供根據群組成員資格，精細判
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security 版本 116
 發行於 2018 年 2 月 4 日
-- 新的**以案例為基礎的偵測**增強了 Cloud App Security 異常偵測原則，其中案例包括不可能的旅行距離、來自可疑 IP 位址的活動，以及多次嘗試登入失敗。 新原則會自動啟用，為整個雲端環境提供立即可用的威脅偵測。 此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 如需詳細資訊，請參閱[取得即時的行為分析和異常偵測](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)。
+- 新的**以案例為基礎的偵測**增強了 Cloud App Security 異常偵測原則，其中案例包括不可能的移動、來自可疑 IP 位址的活動，以及多次嘗試登入失敗。 新原則會自動啟用，為整個雲端環境提供立即可用的威脅偵測。 此外，新的原則會從 Cloud App Security 偵測引擎公開更多資料，以協助您加速調查程序，並遏制進行中的威脅。 如需詳細資訊，請參閱[取得即時的行為分析和異常偵測](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)。
 
 - 逐步推出：Cloud App Security 現在可跨 SaaS 應用程式以相互關聯使用者與其帳戶。 這可讓您輕鬆地跨越使用者所有各種相互關聯 SaaS 應用程式來調查他們的所有活動，而不論使用者所使用的應用程式或帳戶為何。  
 

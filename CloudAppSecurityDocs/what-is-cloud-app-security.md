@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568674"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759928"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -52,18 +52,8 @@ Cloud App Security 可整合您雲端的可見度，
 
 ![Cloud App Security 架構圖](./media/proxy-architecture.png)  
 
-### <a name="data-retention--compliance"></a>資料保留與相容性
-
-Cloud App Security 通過 Microsoft Compliance 的官方認證，符合 ISO、HIPAA、CSA STAR、歐盟示範條款 (EU Model Clauses) 等等。 請前往 [Microsoft Compliance Offerings (Microsoft 合規性供應項目)](https://go.microsoft.com/fwlink/?linkid=842039) 並選取 [Cloud App Security]，以查看完整的憑證清單。  
-
-當 Cloud App Security 執行內容檢查時，會強制執行資料隱私權。 檔案內容不會儲存在 Cloud App Security 資料庫中；只有檔案記錄的中繼資料或任何已識別的違規會儲存在 Cloud App Security 資料庫中。 如需資料保留的詳細資訊，請參閱[隱私權原則](http://go.microsoft.com/fwlink/?LinkId=512132)及 [Microsoft 信任中心](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)。
-Cloud App Security 如下保留資料︰ 
- 
-- 活動記錄：180 天 
-- 探索資料：90 天 
-- 警示︰180 天 
-
-收集到這些來源的資料後，Cloud App Security 會執行複雜的啟發式異常偵測引擎，分析您的環境並警示由基準線學到的異常活動，讓您深入了解自己的雲端環境。 您可以在 Cloud App Security 中設定原則，並使用該原則保護雲端環境中的所有項目。  
+### <a name="data-retention--compliance"></a>資料保留與合規性
+如需 Microsoft Cloud App Security 資料保留和合規性的詳細資訊，請參閱 [Microsoft Cloud App Security 資料安全性和隱私權](cas-compliance-trust.md)。
 
 ### <a name="cloud-discovery"></a>雲端探索  
 

@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759858"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 1. 在設定齒輪下，選取 [一般設定]。 
 
-2. 然後，在條件式存取應用程式控制的設定下，取消選取 [通知使用者] 核取方塊。
+2. 然後，在 [條件式存取應用程式控制] 下，選取 [使用者監視] 並取消選取 [通知使用者] 核取方塊。
 
     ![停用工作階段監視通知](./media/disable-session-monitoring-notice.png)
 

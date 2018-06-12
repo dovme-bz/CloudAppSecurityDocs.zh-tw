@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.app: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4eca209bb4ec71e519439704a7dbb33e48107c9b
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 3265f1fe6d5a75ac65ec89142c571583cb5e098a
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568695"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251696"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ Microsoft Cloud App Security 可讓您產生報告，其可提供您雲端應用
    ![報告](./media/reports.png) I
 ## <a name="data-sharing-overview"></a>資料共用概觀 
 
-這會列出儲存在您雲端應用程式中的檔案數目，並根據存取權限而區分。 雲端應用程式讓共用變得很容易，因為易於存取且無所不在。 未與擁有者以外的任何人共用的檔案，稱為私人檔案。 如果共用檔案，Cloud App Security 會區別四種類型的狀態︰ <br> - 公開共用的 (Web) 檔案是不需要驗證，甚至是透過搜尋引擎結果就能存取的檔案。<br> - 公開共用檔案是不需要驗證就能使用連結來存取的檔案。<br> - 外部共用檔案是組織外部人員在向雲端應用程式驗證自己之後即可存取的檔案。<br> - 內部共用檔案是可以由您組織所有或部分使用者存取的檔案。
+這會列出儲存在您雲端應用程式中的檔案數目，並根據存取權限而區分。 雲端應用程式讓共用變得很容易，因為易於存取且無所不在。 未與擁有者以外的任何人共用的檔案，稱為私人檔案。 如果共用檔案，Cloud App Security 會區別四種類型的狀態︰ <br> - 公開共用的 (Web) 檔案是不需要驗證，甚至是透過搜尋引擎結果就能存取的檔案。<br> - 公開共用檔案是不需要驗證就能使用連結來存取的檔案。<br> - 外部共用檔案是組織外部人員在向雲端應用程式驗證自己之後即可存取的檔案。<br> - 內部共用檔案是可以由組織中所有或部分使用者存取的檔案。
 
 ## <a name="outbound-sharing-by-domain"></a>域外共用 (依網域)
 

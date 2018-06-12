@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568385"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251764"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ Microsoft Cloud App Security 支援角色型存取控制。 根據預設，下�
    - 存取和檢視管理快照集報告頁面 
 
 - 應用程式/執行個體管理員：擁有 Microsoft Cloud App Security 中所有資料的權限，可專門處理特定應用程式或此處所選取之應用程式的執行個體。 例如，如果將 Box European 執行個體的管理員權限提供給使用者，管理員就只能看見與這個應用程式執行個體相關的資料 (不論它是檔案、活動、原則或警示)，如下所示：
-- 
-  - 活動頁面 - 僅限於已標記實體相關的活動
+
+  - 活動頁面 - 僅特定應用程式相關的活動
   - 警示 - 僅限於與特定應用程式相關的警示
   - 原則 - 可以檢視所有的原則，但只能編輯或建立專門處理應用程式/執行個體的原則
   - 帳戶 -僅限於特定應用程式/執行個體的帳戶
@@ -65,6 +65,21 @@ Microsoft Cloud App Security 支援角色型存取控制。 根據預設，下�
   - 雲端探索活動 - 沒有權限
   - 安全性延伸模組 - 僅適用於與使用者權限搭配使用之 API 權杖的權限
   - 治理動作 - 僅適用於特定應用程式/執行個體 
+
+- 群組管理員：針對此處所選取的特定群組，擁有 Microsoft Cloud App Security 中這些特定群組所有專有資料的存取權限。 例如，如果將 [德國 - 所有使用者] 群組的系統管理員權限賦予使用者，則管理員僅能檢視和修改該使用者群組在 Microsoft Cloud App Security 中的所有資訊，如下所示：
+
+  - 活動頁面 - 僅群組中使用者的相關活動
+  -     警示 - 僅群組中使用者相關的警示
+  -     原則 - 可以檢視所有原則，且可以編輯或建立僅針對群組中使用者的原則。
+  -     帳戶 - 僅群組中特定使用者的帳戶
+  -     應用程式權限 - 沒有權限
+  -     檔案頁面 - 沒有權限
+  -     條件式存取應用程式控制 - 沒有權限
+  -     雲端探索活動 - 沒有權限
+  -     安全性延伸模組 - 僅群組中使用者 API 權杖的權限
+  -     治理動作 - 僅針對群組中的特定使用者
+
+
 
 如需詳細資訊，請參閱[在 Azure Active Directory 中指派管理員角色](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)。
 

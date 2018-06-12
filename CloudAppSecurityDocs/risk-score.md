@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567671"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759911"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -102,7 +102,7 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
   
 1. 在入口網站的設定圖示下，選取 [Cloud Discovery 設定]。  
   
-2. 滑動 [設定分數計量] 下的 [重要性]，將欄位或風險類別的權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
+2. 滑動 [分數計量] 下的 [重要性]，將欄位或風險類別的權重變更為 [已略過]、[低]、[中]、[高] 或 [非常高]。  
   
 3. 此外，您可以在分數計算中設定特定值為無法使用或不適用。 包含時，N/A 值對計算的分數有負比重。  
   

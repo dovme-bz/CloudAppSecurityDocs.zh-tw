@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34470656"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251747"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 |![SOC 標誌](./media/soc-logo.png)|SOC 3|Microsoft 雲端服務符合運作安全性的服務組織控制 (Service Organization Controls) 標準。|
 |![G-Cloud 標誌](./media/g-cloud.png)|英國 G-Cloud|皇冠商業服務 (Crown Commercial Service) 已將 Microsoft 雲端服務分類更新為 Government Cloud v6。|
 
-如需詳細資訊，請前往 [Microsoft 合規性供應項目](https://go.microsoft.com/fwlink/?linkid=842039) 並選取 [Cloud App Security]。  
+如需詳細資訊，請前往 [Microsoft 合規性供應項目](https://servicetrust.microsoft.com) 並選取 [Cloud App Security]。  
 
 ## <a name="privacy"></a>私密性
 
@@ -137,9 +137,9 @@ Microsoft Cloud App Security 支援角色型存取控制。 Office 365 和 Azure
 
 ## <a name="customer-controls-for-organizational-compliance"></a>組織合規性的客戶控制
 
-### <a name="do-not-track"></a>不要追蹤
+### <a name="scoped-deployment"></a>限定範圍的部署
 
-Microsoft Cloud App Security 可讓您將特定的使用者設為「不要追蹤 (DNT)」。 如此可讓您使用 Cloud App Security 只控管特定群組，或是從 Cloud App Security 控管中排除特定群組。
+Microsoft Cloud App Security 可讓您限定部署的範圍。 如此可讓您使用 Cloud App Security 只控管特定群組，或是從 Cloud App Security 控管中排除特定群組。 如需詳細資訊，請參閱[限定範圍的部署](scoped-deployment.md)。
 
 ### <a name="anonymization"></a>匿名 
 

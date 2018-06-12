@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fd7eae955e91b9df5cf067386023041d71fe3a27
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251730"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -29,11 +30,12 @@ ms.lasthandoff: 04/23/2018
 ## <a name="check-the-dashboard"></a>檢查儀表板  
 Cloud App Security 儀表板提供您活動及功能的概觀，包括︰
 
-- 開啟警示。
-- 活動違規。
-- 內容違規。
-- 繪製使用者活動來源的活動圖。
-- 您雲端環境中的已連接應用程式使用方式趨勢。  
+- 開啟警示
+- 活動違規
+- 內容違規
+- 繪製使用者活動來源的活動圖
+- 雲端環境中已連線應用程式的使用量趨勢
+- 依威脅偵測排名的前幾位使用者
 
 建議您每日檢查儀表板，查看被觸發的新警示。 這也是監督雲端環境健全狀況並了解整個雲端環境的好位置。  
 
