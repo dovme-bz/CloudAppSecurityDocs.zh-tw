@@ -26,7 +26,7 @@
 ### [Cloud Discovery 擴充](cloud-discovery-aad-enrichment.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
 ## [連接應用程式](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-### [將 Azure 連線到 Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)
+### [與 Azure 連線](connect-azure-to-microsoft-cloud-app-security.md)
 ### [連接 AWS](connect-aws-to-microsoft-cloud-app-security.md)
 ### [連接 Box](connect-box-to-microsoft-cloud-app-security.md)
 ### [連接 Dropbox](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -52,6 +52,7 @@
 ### [活動](activity-filters.md)
 #### [活動篩選與查詢](activity-filters-queries.md)
 ### [檔案](file-filters.md)
+#### [產生資料管理報告](built-in-reports.md)
 ### [帳戶](accounts.md)
 ### [管理應用程式權限](manage-app-permissions.md)
 ### [監視應用程式](monitor-alerts.md)
@@ -63,7 +64,9 @@
 #### [活動原則](user-activity-policies.md)
 #### [異常偵測原則](anomaly-detection-policy.md)
 #### [檔案原則](data-protection-policies.md)
-##### [內容檢查](content-inspection.md)
+##### 內容檢查
+###### [內建內容檢查](content-inspection.md)
+###### [資料分類服務整合](dcs-inspection.md)
 ##### [使用 RegEx 引擎](working-with-the-regex-engine.md)
 #### 條件式存取應用程式控制原則
 ##### [存取原則](access-policy-aad.md)
