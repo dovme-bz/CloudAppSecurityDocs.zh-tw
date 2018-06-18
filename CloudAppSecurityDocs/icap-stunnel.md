@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f72ec05e044f6c14aa9336ee80cd9bc6a344cc7b
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34152737"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259718"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -32,8 +32,6 @@ Microsoft Cloud App Security 可以與現有 DLP 解決方案整合，以將這�
 
 本指南提供在 Cloud App Security 中設定 ICAP 連線以及 Stunnel 設定所需的步驟，來保護透過它的通訊安全。
 
-> [!NOTE]
->此功能處於公開預覽狀態。
 
 ## <a name="architecture"></a>架構
 Cloud App Security 會掃描您的雲端環境，並根據您的檔案原則設定決定是否要使用內部 DLP 引擎或外部 DLP 來掃描檔案。 如果套用外部 DLP 掃描，則會透過安全通道將檔案傳送至客戶環境，其中，會將檔案轉送至 DLP 結果的 ICAP 設備：允許/封鎖。 回應會透過 Stunnel 傳送回 Cloud App Security，而原則使用 Stunnel 來決定後續動作，例如通知、隔離和共用控制。

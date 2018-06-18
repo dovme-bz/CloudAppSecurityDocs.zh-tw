@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
-ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
+ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259614"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -189,9 +190,7 @@ Cloud App Security 目前支援 Micro Focus ArcSight 和一般 CEF。
 > [!NOTE]
 > 此功能處於公開預覽狀態。
 
-## <a name="high-availability-options"></a>高可用性選項
 
-SIEM 代理程式為單一端點，可支援復原最多兩天的停機時間。 使用負載平衡器做為客戶端點，可以達成額外的高可用性。
 
 ## <a name="see-also"></a>另請參閱  
 [針對 SIEM 整合問題進行疑難排解](troubleshooting-siem.md)   

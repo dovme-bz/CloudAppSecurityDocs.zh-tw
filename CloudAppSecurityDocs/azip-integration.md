@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
-ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
+ms.openlocfilehash: 62c2eca135031d756864a268c57677a31dad4746
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259685"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -108,7 +109,7 @@ Cloud App Security 預設會掃描組織中所定義的分類標籤，以及其�
 
 如需 Cloud App Security 與 Azure 資訊保護如何搭配使用的詳細資訊，請參閱[保護資料不受使用者錯誤影響](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)。
 
-### <a name="automatically-label-files-preview"></a>自動為檔案貼上標籤 (預覽)
+### <a name="automatically-label-files"></a>自動為檔案貼上標籤
 
 您可以建立檔案原則，並將 [套用分類標籤] 設定為治理動作，將分類標籤自動套用到檔案。
 
