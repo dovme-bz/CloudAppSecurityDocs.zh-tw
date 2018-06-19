@@ -18,6 +18,7 @@ ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 04/30/2018
+ms.locfileid: "32298957"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/30/2018
     - API 權杖 – 產生和管理您自己的 [API 權杖](api-tokens.md)，以使用 RESTful API 來整合 Cloud App Security 與協力廠商軟體。 
     - SIEM 代理程式 – [SIEM 整合](siem.md) 之前直接位在 [設定] 下方，現在則提供為 [安全性延伸模組] 中的索引標籤。
     - 外部 DLP (預覽) – Cloud App Security 可讓您[運用協力廠商分類系統中的現有投資](icap-stunnel.md) (例如資料外洩防護 (DLP) 解決方案)，且可讓您使用環境中執行的現有部署來掃描雲端應用程式的內容。 請連絡您的帳戶管理員，以加入預覽。 
--   **自動批准/不批准：**新的應用程式偵測原則讓 Cloud Discovery 可以自動設定應用程式具有 [批准/不批准] 標籤。 這可讓您自動找出違反組織原則和規定的應用程式，並將其新增至產生的封鎖指令碼。
+-   **自動批准/不批准：** 新的應用程式偵測原則讓 Cloud Discovery 可以自動設定應用程式具有 [批准/不批准] 標籤。 這可讓您自動找出違反組織原則和規定的應用程式，並將其新增至產生的封鎖指令碼。
 -   **Cloud App Security 檔案標籤**：您現在可以套用 Cloud App Security 檔案標籤，以深入了解它所掃描的檔案。 針對 Cloud App Security DLP 所掃描的每個檔案，您現在可以知道檔案是否因為加密或損毀而無法檢查。 例如，您可以設定原則，針對外部共用的受密碼保護檔案發出警示並予以隔離。 這項功能適用於 2017 年 7 月 3 日之後所掃描的檔案。
 
     您可以使用篩選 [分類標籤] > [Cloud App Security] 來篩選這些檔案： 
@@ -159,16 +160,16 @@ ms.lasthandoff: 04/30/2018
     - **應用程式標籤**：您現在可以建立應用程式的自訂標籤。 接著可以使用這些標籤作為篩選，以深入探討您想要調查的特定應用程式類型。 例如，自訂監看清單、給特定業務單位的指派，或自訂核准，例如 "approved by legal"。
     - **自訂附註**：當您檢閱和評估跨環境探索到的不同應用程式時，現在可以將結論和深入解析儲存至「附註」。
     - **自訂風險分數**：您現在可以覆寫應用程式的風險分數。 例如，如果應用程式的風險分數為 8，而且它是您組織中批准的應用程式，則可以將您組織的風險分數變更為 10。 您也可以新增附註，以在任何人檢閱應用程式時清楚變更理由。
--   **新的記錄收集器部署模式：**我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
+-   **新的記錄收集器部署模式：** 我們將開始推出記錄收集器目前的新部署模式。 除了以目前虛擬設備為基礎的部署之外，新的以 Docker (容器) 為基礎的記錄收集器可以在內部部署和 Azure 中的 Windows 和 Ubuntu 電腦上安裝為套件。 使用 Docker 時，可自由修補和監視裝載電腦的客戶即擁有該裝載電腦。
 
 #### <a name="announcements"></a>宣告： 
 -   雲端應用程式目錄現在支援超過 15,000 個可探索的應用程式
 -   合規性：Cloud App Security 通過 Azure 的 SOC1/2/3 官方認證。 如需完整的認證清單，請參閱[合規性供應項目](https://www.microsoft.com/trustcenter/compliance/complianceofferings) \(英文\) 並篩選 Cloud App Security 的結果。
 
 #### <a name="other-improvements"></a>其他改進： 
--   **改進的剖析：**已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。
--   **預期的記錄格式：**Cloud Discovery 記錄的預期記錄格式現在提供 Syslog 格式和 FTP 格式的範例。
--   **記錄收集器上傳狀態：**您現在可以在入口網站中查看記錄收集器狀態，並使用入口網站內狀態通知和系統警示對錯誤進行更快速地疑難排解。
+-   **改進的剖析：** 已改進 Cloud Discovery 記錄剖析機制。 內部錯誤極不可能發生。
+-   **預期的記錄格式：** Cloud Discovery 記錄的預期記錄格式現在提供 Syslog 格式和 FTP 格式的範例。
+-   **記錄收集器上傳狀態：** 您現在可以在入口網站中查看記錄收集器狀態，並使用入口網站內狀態通知和系統警示對錯誤進行更快速地疑難排解。
 
 
 ### <a name="cloud-app-security-release-99"></a>Cloud App Security 版本 99 
