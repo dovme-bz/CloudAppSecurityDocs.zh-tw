@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 4c4a78501732282f7ff3885e0662afa05c161f0b
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746937"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -52,8 +53,6 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 1. 建立已指派使用者和應用程式的 Azure AD 條件式存取原則。
 2. 在條件式存取原則內的工作階段控制項下，選取 [Use Conditional Access App Control enforced restrictions] \(使用條件式存取應用程式控制強制的限制\)。   
 
-   ![Azure AD 條件式存取](./media/proxy-deploy-restrictions-aad.png)
-
 完成這項工作之後，請進入 Cloud App Security 入口網站並建立工作階段原則，來監視和控制工作階段的檔案下載。
 
 ### <a name="step-2-create-a-session-policy"></a>步驟 2：建立工作階段原則
@@ -62,17 +61,11 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 
 2. 在 [原則] 頁面中，按一下 [建立原則]，接著按一下 [工作階段原則]。
  
-   ![建立工作階段原則](./media/create-session-policy.png)
-
 3. 在 [建立工作階段原則] 頁面上，為您的原則提供名稱和描述。 例如，**封鎖未受管理裝置的 Salesforce 下載**。
 
 4. 指派 [原則嚴重性] 和 [類別]。
 
-   ![新的工作階段原則](./media/new-session-policy.png)
-
 5. 在 [工作階段控制類型] 下，選取 [控制檔案下載 (透過 DLP)]。 這能讓您監視使用者在 Salesforce 工作階段中執行的所有作業，並讓您即時控制封鎖與保護下載。
-
-   ![工作階段原則控制類型](./media/session-policy-control-type.png)
 
 6. 在 [符合下列所有條件的活動]  區段的 [活動來源] 下，選取篩選條件： 
     
@@ -98,21 +91,11 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
    - **分類標籤**：如果您使用 Azure 資訊保護分類標籤，並且想要根據特定的 Azure 資訊保護分類標籤篩選檔案。
    
    - 選取 [檔案名稱] 或 [檔案類型]，以根據這些項目套用限制。
- 
-     ![工作階段原則檔案篩選條件](./media/session-policy-file-filters.png)
-
 9. 啟用 [內容檢查]，以啟用內部 DLP 來掃描檔案中是否有敏感內容。 
-
-   ![工作階段原則內容檢查](./media/session-policy-content-inspection.png)
 
 10. 在 [動作] 下，選取 [封鎖]。 自訂您的使用者在無法下載檔案時將收到的封鎖訊息。  
 
-    ![工作階段原則動作](./media/session-policy-actions.png)
-
 11. 設定符合原則時想要收到的警示。 您可以設定限制，以免收到過多警示，還可以選取以電子郵件訊息、簡訊或這兩者來接收警示。
-
-    ![工作階段原則警示](./media/session-policy-alert.png)
-
 
 12. 按一下 [建立]  
  
@@ -123,11 +106,7 @@ Cloud App Security 工作階段原則可讓您根據裝置狀態進一步限制�
 
 2. 檔案應該會被封鎖，而您應該會收到在 [自訂封鎖訊息] 下所設定的訊息。 
 
-   ![封鎖下載訊息](./media/block-download-message.png)
-
 3. 在 Cloud App Security 入口網站中，按一下 [控制]，接著按一下 [原則]，然後按一下已建立的原則來檢視原則報告。 工作階段原則相符項目應該很快就會出現。 
- 
-   ![工作階段原則報告](./media/session-policy-report.png)
 
 4. 在原則報告中，您可以看到哪些登入已重新導向至 Microsoft Cloud App Security 進行工作階段控制，以及哪些檔案已從受監視的工作階段下載或封鎖。
 

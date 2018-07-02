@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251747"
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140749"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -64,7 +64,6 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 
 ### <a name="you-are-the-owner-of-your-data"></a>您是資料的擁有者
 - 在 Microsoft Cloud App Security 中，您的系統管理員可以從入口網站中使用搜尋列，檢視儲存在服務中的可識別的個人資料。
-- 
 - 系統管理員可以搜尋特定使用者的中繼資料或使用者的活動。 按一下實體即可開啟[**使用者及帳戶**](accounts.md)。 [使用者及帳戶] 頁面為您提供有關從連線的雲端應用程式中提取的實體相關詳細資料。 它也提供使用者的活動歷程記錄和與使用者相關的安全性警示。
 
 -   您的資料都屬於您，且您可隨時取消訂用帳戶，以及要求刪除自己的資料。 如果您不續約訂用帳戶，您的資料將會在[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) \(英文\) 中指定的時間表期間內刪除。
