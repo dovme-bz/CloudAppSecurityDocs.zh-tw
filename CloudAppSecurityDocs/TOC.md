@@ -55,6 +55,7 @@
 #### [產生資料管理報告](built-in-reports.md)
 ### [帳戶](accounts.md)
 ### [管理應用程式權限](manage-app-permissions.md)
+### [安全性設定](security-config.md)
 ### [監視應用程式](monitor-alerts.md)
 #### [管理警示](managing-alerts.md)
 ## [控制](control.md)
@@ -63,6 +64,7 @@
 ##### [Cloud Discovery 異常偵測原則](cloud-discovery-anomaly-detection-policy.md)
 #### [活動原則](user-activity-policies.md)
 #### [異常偵測原則](anomaly-detection-policy.md)
+#### [應用程式權限原則](app-permission-policy.md)
 #### [檔案原則](data-protection-policies.md)
 ##### 內容檢查
 ###### [內建內容檢查](content-inspection.md)
