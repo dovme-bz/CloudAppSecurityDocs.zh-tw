@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747029"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>使用 Microsoft Cloud App Security 條件式存取應用程式控制來保護應用程式
-
-> [!NOTE]
-> 這是預覽功能。
-
 
 >[!div class="step-by-step"]
 [下一步：部署條件式存取應用程式控制 »](proxy-deployment-aad.md)
@@ -44,12 +41,13 @@ ms.lasthandoff: 05/14/2018
 
 -   **保護下載**：不封鎖下載機密文件，但可要求加密下載以保護文件。 這樣可以在資料下載至不受信任的裝置時，確保文件受到保護並驗證使用者的存取權。 
 
--   **限制非企業網路的使用者工作階段**：使用者可以從不屬於公司網路的位置存取受保護的應用程式，但限制其存取，並封鎖或保護下載敏感性資料。
-
 -   **監視低度信任使用者工作階段**：當高風險的使用者登入應用程式時會受到監視，其在工作階段中的動作也會予以記錄。 您可以調查及分析使用者的行為，以了解未來應該在什麼位置及什麼情況下套用工作階段原則。 
 
 - **封鎖存取**：您可以完全封鎖來自不受控裝置或來自非企業網路的使用者，使其無法存取特定的應用程式。
 
+- **建立唯讀模式**：監視和封鎖自訂應用程式中活動，即可建立特定使用者之特定應用程式的唯讀模式。  
+
+- **限制非企業網路的使用者工作階段**：使用者可以從不屬於公司網路的位置存取受保護的應用程式，但限制其存取，並封鎖或保護下載敏感性資料。
 
 ### <a name="how-session-control-works"></a>工作階段控制如何運作
 
@@ -88,10 +86,10 @@ Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳�
 條件式存取應用程式控制目前支援在 Azure AD 中設定使用 SAML 單一登入的應用程式。 
 
 > [!NOTE]
-> - 條件式存取應用程式控制也支援設定使用識別提供者的應用程式，而不是設定使用私人預覽之 Azure AD 的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
+> - 條件式存取應用程式控制也支援設定使用 Azure AD 以外之識別提供者的應用程式。 如需此情節的詳細資訊，請將電子郵件傳送至 mcaspreview@microsoft.com。
 > - Office 365 應用程式不設定使用 SAML，所以目前不受支援。
 
-所有主要平台上的任何瀏覽器都能使用工作階段控制項 (目前不支援行動應用程式及桌面應用程式)。 因為是以 Azure AD 原生規格整合到 AD，所以可以支援所有在 Azure AD 中設定了 SAML 單一登入的應用程式，包括下列精選應用程式：
+所有主要平台上的任何瀏覽器都能使用工作階段控制項 (也會封鎖或允許行動應用程式和桌面應用程式)。 因為是以 Azure AD 原生規格整合到 AD，所以可以支援所有在 Azure AD 中設定了 SAML 單一登入的應用程式，包括下列精選應用程式：
 
 -   Salesforce
 
@@ -120,6 +118,8 @@ Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳�
 -   HighQ 
 
 -   Concur
+
+-   Tableau
 
 工作階段控制項將陸續支援更多的應用程式。 若您要使用的應用程式不在上列支援對象之中，您可以[將應用程式的詳細資料傳送給我們](mailto:casfeedback@microsoft.com)，並附上相關使用案例，我們會將該應用程式加入支援之列。
 

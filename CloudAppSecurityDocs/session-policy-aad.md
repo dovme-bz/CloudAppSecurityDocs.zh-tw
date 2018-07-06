@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,16 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 146426bca36b4026af80d711e42860f553aef971
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759858"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747012"
 ---
 *適用於：Microsoft Cloud App Security*
 
 # <a name="session-policies"></a>工作階段原則 
-
-> [!NOTE]
-> 這是預覽功能。
 
 
 >[!div class="step-by-step"]
@@ -50,7 +47,7 @@ Microsoft Cloud App Security 工作階段原則可讓您執行即時工作階段
 - [Azure AD 條件式存取原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Microsoft Cloud App Security，如下所述。
 
 > [!NOTE]
-> - 工作階段原則也支援使用識別提供者所設定的應用程式，而不是私人預覽之 Azure AD 所設定的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
+> - 工作階段原則也支援設定使用 Azure AD 以外之識別提供者的應用程式。 如需此情節的詳細資訊，請將電子郵件傳送至 mcaspreview@microsoft.com。
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>建立 Azure AD 條件式存取原則
 
@@ -63,8 +60,6 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 2. 選取 [工作階段] 刀鋒視窗的 [Use Conditional Access App Control enforced restrictions] \(使用條件式存取應用程式控制強制的限制\)，將使用者路由至 Microsoft Cloud App Security。
 
-   ![條件式存取應用程式控制會限制 Azure AD 條件式存取](./media/proxy-deploy-restrictions-aad.png)
-
 ## <a name="create-a-cloud-app-security-session-policy"></a>建立 Cloud App Security 工作階段原則 
 
 若要建立新的工作階段原則，請遵循此程序︰
@@ -72,23 +67,17 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 1. 在入口網站中，選取後面跟著 [原則] 的 [控制]。
 2. 在 [原則] 頁面中，按一下 [建立原則]，然後選取 [工作階段原則]。  
 
-   ![建立工作階段原則](./media/create-session-policy.png)
-
 3. 在 [工作階段原則] 視窗中，指派原則的名稱，例如「封鎖下載 Box 行銷使用者機密文件」。
-
-   ![新的工作階段原則](./media/new-session-policy.png)
 
 4. 在 [工作階段控制項類型] 欄位中： 
 
    1. 如果您只想要依使用者監視活動，請選取 [僅監視]。 這會建立 [僅監視] 原則，為您選取的應用程式下載所有登入、啟發式下載項目及活動類型。
 
    2. 如果您想要監視使用者活動並採取其他動作 (例如封鎖或保護使用者下載項目)，請選取 [控制檔案下載 (透過 DLP)]。
-
-      ![工作階段原則控制類型](./media/session-policy-control-type.png)
    
    3. 選取 [封鎖活動] 以封鎖特定活動，您可以使用 [活動類型] 篩選來選取要封鎖的活動。 所選取應用程式的所有活動都會受到監視 (並在活動記錄中回報)。 如果您選取 [封鎖] 動作，則會封鎖您選取的特定活動，如果您選取 [測試] 動作並開啟警示，則會針對您選取的特定活動發出警示。
 
-1. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
+5. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
 
    - **裝置標記**：用以篩選識別受管理的裝置。
 
@@ -97,13 +86,10 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
    - **IP 位址**：用這個篩選依 IP 位址篩選，或使用之前指派的 IP 位址標記篩選。 
 
    - **使用者代理程式標記**：用以篩選啟用啟發學習法，以識別行動裝置及桌面應用程式。 此篩選可設定為等於或不等於**原生用戶端**，應該分別對每個雲端應用程式的行動裝置版和桌面應用程式版進行測試。
-         
-       ![原生用戶端支援](./media/user-agent-tag.png)
-
+       
+ 
      >[!NOTE]
-     >工作階段原則不支援行動裝置及桌面應用程式。 請務必測試工作階段原則，確定它們不會干擾行動裝置及桌面應用程式的功能。 如有必要，在工作階段原則中排除行動裝置及桌面應用程式。
-
-     ![工作階段原則活動來源](./media/session-policy-activity-filters.png)
+     >工作階段原則不支援行動裝置及桌面應用程式。 透過建立存取原則，也可以封鎖或允許行動應用程式和桌面應用程式。
 
 6. 如果已選取 [控制檔案下載 (透過 DLP)] 選項：
 
@@ -114,14 +100,9 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
       - **檔案名稱** - 使用此篩選將原則套用至特定的檔案。
 
       - **檔案類型** - 使用此篩選將原則套用至特定的檔案類型，例如，封鎖下載所有的 .xls 檔案。
-
-        ![工作階段原則檔案篩選](./media/session-policy-file-filters.png)
-
-        
+       
    2. 在 [內容檢查] 區段中，設定是否啟用 DLP 引擎掃描文件及檔案內容。
  
-      ![工作階段原則內容檢查](./media/session-policy-content-inspection.png)
-
    3. 在 [動作] 下選取下列其中一個選項： 
 
       - **測試 (監視所有活動)**：設定此動作，根據您設定的原則篩選明確允許下載。
@@ -130,18 +111,12 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
       - **保護 (將分類標籤套用至下載及監視所有活動)**：這只有在您於 [工作階段原則] 下選取 [控制檔案下載 (透過 DLP)] 時才能使用。 如果您的組織使用 Azure 資訊保護，您可以設定 [動作]，將您在 Azure 資訊保護中設定的分類標籤套用到檔案。 如需詳細資訊，請參閱[保護下載的運作方式](#protect-download)。
 
-        ![工作階段原則動作](./media/session-policy-actions.png)
-
-7. 您可以 [Create an alert for each matching event with the policy's severity] (使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
-
-   ![工作階段原則警示](./media/session-policy-alert.png)
+7. 您可以 [Create an alert for each matching event with the policy's severity] \(使用原則嚴重性為每個相符的事件建立警示)，然後設定警示限制，選取要以電子郵件和/或來發送警示。
 
 
 ## 監視所有活動 <a name="monitor-session"></a>
 
 當您建立工作階段原則時，每個符合原則的使用者工作階段都會重新導向至工作階段控制，而不是直接導向至應用程式。 使用者會看到監視通知，知道他們的工作階段受到監視。
-
-   ![工作階段監視通知](./media/session-monitoring-notice.png)
 
 如果您不想通知使用者受到監視，您可以停用通知訊息。
 
@@ -149,14 +124,9 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
 2. 然後，在 [條件式存取應用程式控制] 下，選取 [使用者監視] 並取消選取 [通知使用者] 核取方塊。
 
-    ![停用工作階段監視通知](./media/disable-session-monitoring-notice.png)
-
 為了讓使用者留在工作階段中，條件式存取應用程式控制會使用 Microsoft Cloud App Security URL 取代應用程式工作階段內所有相關的 URL、Java 指令碼和 Cookie。 例如：如果應用程式傳回的頁面包含以 myapp.com 結尾的網域連結，條件式存取應用程式控制就會使用以類似 myapp.com.cas.ms 結尾的網域來取代這些連結。 這樣 Microsoft Cloud App Security 就可以監視整個工作階段。
 
 條件式存取應用程式控制會記錄每個經它路由的使用者工作階段流量記錄。 流量記錄包含時間、IP、使用者代理程式、前往過的 URL，以及上傳和下載的位元組數。 這些記錄會予以分析，一份稱為 **Cloud App Security 條件式存取應用程式控制**的持續報表會新增至 Cloud Discovery 儀表板中的 Cloud Discovery 報表清單。
-
-![條件式存取應用程式控制報表](./media/proxy-report.png)
-
 
 匯出這些記錄：
 
@@ -177,6 +147,8 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 ## 封鎖特定活動 <a name="block-activities"></a>
 
 當 [封鎖活動] 設定為 [活動類型] 時，您可以選取要在特定應用程式中封鎖的特定活動。 所選取應用程式的所有活動都會受到監視 (並在活動記錄中回報)，而且如果您選取 [封鎖] 動作，則會封鎖您選取的特定活動，如果您選取 [測試] 動作並開啟警示，則會針對您選取的特定活動發出警示。
+
+此外，您可以使用 [Block specific activities] \(封鎖特定活動\) 篩選，並將它套用至組織中的特定群組，以建立組織的完整唯讀模式。
 
 ## 在下載時保護檔案 <a name="protect-download"></a>
 選取 [封鎖活動] 以封鎖特定活動，您可以使用 [活動類型] 篩選來選取要封鎖的活動。 所選取應用程式的所有活動都會受到監視 (並在活動記錄中回報)。 如果您選取 [封鎖] 動作，則會封鎖您選取的特定活動，如果您選取 [測試] 動作並開啟警示，則會針對您選取的特定活動發出警示。
