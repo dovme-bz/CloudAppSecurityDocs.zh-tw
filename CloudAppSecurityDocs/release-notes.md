@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251849"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747046"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -26,19 +26,45 @@ ms.locfileid: "35251849"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
 
+## <a name="cloud-app-security-release-126"></a>Cloud App Security 版本 126
+
+發行日期：2018 年 6 月 24 日
+
+-   **條件式存取應用程式控制已正式運作**<br>Microsoft Cloud App Security 的條件式存取應用程式控制 (反向 Proxy) 現已正式運作，可供任何 SAML 應用程式使用。 條件式存取應用程式控制直接與您的 Azure AD 條件式存取原則整合，以**即時監視及控制您使用者的工作階段**，同時讓他們提高產能。 從首次預覽功能起，就提供許多功能和改善，包括： 
+    -   除了為瀏覽器流量建立工作階段原則之外，還有建立[存取原則](access-policy-aad.md)的功能，可管理原生用戶端對相同應用程式的存取。
+    -   簡化了應用程式上架程序，以支援組織中的自訂 SAML 應用程式。
+    -   作為 Azure 全球網路的一部分，已改進整合和介面，以為世界各地的使用者提供無縫體驗。
+ 
+
+-   **使用 Microsoft 資料分類服務檢查內容已正式運作**<br>Microsoft Cloud App Security 與 Microsoft 資料分類服務的整合現已正式運作。 這項整合可讓您原生利用 Microsoft 資料分類服務，以分類雲端應用程式中的檔案。 如需詳細資訊，請參閱 [Microsoft 資料分類服務整合](dcs-inspection.md)。
+
+- **Cloud Discovery 執行報告**<br>Microsoft Cloud App Security 正逐步推出產生 Cloud Discovery 執行 PDF 報告的功能。 此報告概述在您組織中找到的影子 IT 使用，特別說明整體使用上和主要類別中前幾名的應用程式和使用者，並著重影子 IT 對組織造成的風險。 此外，其亦提供建議清單，說明如何改進和控制組織中影子 IT 的可見度。 使用此報告可確保移除潛在風險和威脅，以及確保您的組織保持安全。
+
+-   **惡意程式碼偵測**<br>我們正逐漸推出惡意程式碼偵測功能，這可**自動偵測您雲端儲存體中的惡意檔案**，不論檔案類型為何。 Microsoft Cloud App Security 使用 Microsoft 的威脅情報辨識出某些檔案是否與已知的惡意程式碼攻擊有關，或是否可能為惡意檔案。 如需詳細資訊，請參閱[異常偵測原則](anomaly-detection-policy.md)。
+ 
+-   **可疑活動的自動化補救**<br>您現在可以為異常偵測原則觸發的可疑工作階段設定自動補救動作。 這項增強功能可讓您在缺口發生時，立即收到警示，並**自動套用管理動作**，例如將使用者暫時停權。 如需詳細資訊，請參閱[異常偵測原則](anomaly-detection-policy.md#adp-automated-gov)。 
+ 
+-   **Azure 的安全性設定評定**<br>Microsoft Cloud App Security 正逐步推出取得您 Azure 環境安全性設定評定的功能，以及提供遺失設定和安全性控制的建議。 例如，它可讓您知道您是否缺少系統管理使用者的 MFA。 如需詳細資訊，請參閱[雲端安全性狀態管理整合](security-config.md)。  
+  
+-   **自動偵測具風險的 OAuth 應用程式**<br>除了連線到您環境之 OAuth 應用程式的現有調查，Microsoft Cloud App Security 亦在逐步推出設定自動化通知的功能，以讓您知道 OAuth 應用程式何時符合特定準則。 例如，您可在應用程式需要高權限層級，並已獲 50 位以上的使用者授權時，自動收到警示。 如需詳細資訊，請參閱[應用程式權限原則](app-permission-policy.md)。
+ 
+-   **受控安全性服務提供者管理 (MSSP) 支援**<br>Microsoft Cloud App Security 現可提供較好的 MSSP 管理體驗。 您現在可將外部使用者設定為系統管理員，並予以指派 [Microsoft Cloud App Security 中目前可用的任何角色](manage-admins.md)。 此外，若要讓 MSSP 跨多個客戶租用戶提供服務，具有多個租用戶存取權的系統管理員現在可以在入口網站內輕鬆切換租用戶。 如需管理系統管理員的資訊，請參閱[管理系統管理員](manage-admins.md)。
+  
+-   **與外部 DLP 整合已正式運作**<br>Microsoft Cloud App Security 可讓您[運用協力廠商分類系統中的現有投資](icap-stunnel.md) (例如資料外洩防護 (DLP) 解決方案)，且可讓您使用環境中執行的現有部署，掃描雲端應用程式的內容。 如需詳細資訊，請參閱[外部 DLP 整合](icap-stunnel.md)。
+
+
 ## <a name="cloud-app-security-release-125"></a>Cloud App Security 版本 125
 
 發行日期：2018 年 6 月 10 日
 
 
-### <a name="new-investigation-capability-by-top-users"></a>針對排名前幾位使用者的新調查功能： 
+- **新的調查功能 (依前幾名使用者)：**<br>
 Microsoft Cloud App Security 在儀表板上新增了新的調查功能小工具，可根據開啟威脅偵測警示的數目來顯示排名在前幾位的使用者。 這個調查小工具可讓您將威脅調查專注於擁有最大可疑工作階段數目的使用者。
 
-### <a name="support-for-aws-s3-buckets"></a>支援 AWS S3 貯體：
+- **AWS S3 儲存貯體的支援：**<br>
 Microsoft Cloud App Security 現在可以偵測 AWS S3 貯體及其共用層級。 如此對於可公開存取的 AWS 貯體可提供警示與可見度。 這也讓您可根據貯體來建立原則，以及套用自動治理。 此外，還有稱為**可公開存取的 S3 貯體 (AWS)** 的新原則範本，可用來輕鬆地建立原則來治理您的 AWS 儲存體。 為了啟用這些新功能，請務必如[連線 AWS](connect-aws-to-microsoft-cloud-app-security.md) 中所述來新增新的權限，以確認更新了連線到 AWS 的應用程式。
 
-### <a name="admin-privileges-based-on-user-groups"></a>以使用者群組為基礎的管理員權限：
-您現在可以根據使用者群組，以設定 Microsoft Cloud App Security 管理員的系統管理權限。 例如，您可以僅針對在德國的使用者，將特定的使用者設定為系統管理員。 這樣只有該使用者能夠針對使用者群組 [德國 - 所有使用者] 以檢視和修改 Microsoft Cloud App Security 中的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
+- **依使用者群組設定的系統管理權限**：您現在可以根據使用者群組設定 Microsoft Cloud App Security 系統管理員的系統管理權限。 例如，您可以僅針對在德國的使用者，將特定的使用者設定為系統管理員。 這樣只有該使用者能夠針對使用者群組 [德國 - 所有使用者] 以檢視和修改 Microsoft Cloud App Security 中的資訊。 如需詳細資訊，請參閱[管理管理員存取權](manage-admins.md)。
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security 版本 124

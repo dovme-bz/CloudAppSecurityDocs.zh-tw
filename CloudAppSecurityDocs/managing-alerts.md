@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746971"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -41,28 +42,24 @@ ms.lasthandoff: 04/23/2018
 
    有三種類型的違規，您必須在調查警示時處理︰  
 
-   #### <a name="serious-violations"></a>嚴重違規
-   嚴重違規需要立即回應。
+   - **嚴重違規**<br>
+     嚴重違規需要立即回應。 <br>
+     範例：<br>
+     若是可疑的活動警示，在使用者變更其密碼前，建議您先將帳戶暫時停權。  
 
-       Examples:  
+     若發生資料外洩，建議您限制權限或隔離檔案。  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     若探索到新的應用程式，建議您在 Proxy 或防火牆上封鎖服務的存取。  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **可疑的違規**<br>
+     可疑違規需要進一步調查。  <br>
+     您可以連絡使用者或使用者的管理員以了解活動性質。 <br>  
+     保持活動開啟，直到有更多的資訊為止。  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **授權的違規或異常行為**<br>
+     授權違規或異常行為可能源於合法使用。  
 
-   #### <a name="questionable-violations"></a>可疑的違規
-   可疑違規需要進一步調查。  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### <a name="authorized-violations-or-anomalous-behavior"></a>授權的違規或異常行為
-   授權違規或異常行為可能源於合法使用。  
-
-       Dismiss the alert.  
+     關閉警示。  
 
 3. 當您完成此程序時，請將警示標示為已解決。  
 

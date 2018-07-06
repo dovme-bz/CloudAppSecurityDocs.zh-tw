@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/13/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
-ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
+ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746995"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -55,7 +56,9 @@ Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者
 **非經常性國家/地區的活動**
 - 這項偵測會考量過去的活動位置來判斷新的和非經常性的位置。 異常偵測引擎會儲存組織中使用者先前使用的位置資訊。 若活動發生自使用者或組織中任何使用者最近未前往或從未前往過的位置，則會觸發警示。 
 
-
+**惡意程式碼偵測**
+- 這項偵測會識別您雲端儲存體中的惡意檔案，不論這些檔案的來源是您的 Microsoft 應用程式或協力廠商應用程式。 Microsoft Cloud App Security 使用 Microsoft 的威脅情報辨識出某些檔案是否與已知的惡意程式碼攻擊有關，以及是否可能為惡意檔案。 根據預設停用這項內建原則。 並非每個檔案皆經過掃描，會使用啟發學習法尋找具有潛在風險的檔案。 在偵測到檔案後，您可以查看**受感染檔案**的清單。 按一下檔案選單中的惡意程式碼檔案名稱，以開啟惡意程式碼報告，內有感染該檔案的該類惡意程式碼資訊。
+    
 **匿名 IP 位址的活動**
 - 這項偵測會識別使用者透過已識別為匿名 Proxy IP 位址的 IP 位址來活動。 想隱藏裝置 IP 位址的人會使用這類 Proxy，並可能用於惡意用途。 這項偵測利用機器學習演算法減少「誤判」，例如組織中使用者普遍使用的誤標 IP 位址。
 
@@ -86,6 +89,15 @@ Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者
 **多次失敗的登入嘗試**
 - 此偵測依據學習到的基準，識別在單一工作階段中多次嘗試登入失敗的使用者，這可能表示缺口嘗試。 
 
+## 啟用自動化的管理<a name="adp-automated-gov"></a>
+
+您可以在異常偵測原則所產生的警示上，啟用自動化的補救動作。 
+
+1. 在 [原則] 頁面中按一下偵測原則的名稱。
+2. 在開啟的 [編輯異常偵測原則] 視窗中，於 [管理] 下設定您要用於每個連線的應用程式或所有應用程式的補救動作。 
+3. 按一下 [更新]。
+
+ 
 ## <a name="scope-anomaly-detection-policies"></a>設定異常偵測原則範圍
 
 每個異常偵測原則都可獨立設定範圍，如此就可以只套用到您要在原則中包含與排除的使用者和群組。
@@ -107,14 +119,13 @@ Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者
 
    ![異常偵測警示 1](./media/anomaly-alert-user1.png)
    ![異常偵測警示 1](./media/anomaly-alert-user2.png)
-
  
 2. 這可讓您了解使用者所執行的可疑活動為何，並對於帳戶是否遭到入侵更具信心。 例如，多次登入失敗的警示確實可疑，且可能表示潛在的暴力密碼破解攻擊，但也可能是應用程式設定錯誤，導致良性的真肯定警示。 不過，如果您看到多次登入失敗的警示加上其他可疑的活動，則代表帳戶很可能遭到入侵。 在下列範例中，您可以看到**多次失敗登入嘗試**警示之後接著是**來自 TOR IP 位址的活動**和**不可能的移動活動**，後兩者都是很強的入侵指標 (IOC)。 如果還有疑慮，那麼您可以看到相同使用者執行**大量下載活動**，這通常是攻擊者執行資料外洩的指標。 
 
    ![異常偵測警示 1](./media/anomaly-alert-user3.png)
    ![異常偵測警示 1](./media/anomaly-alert-user4.png)
 
- 
+3.  若檔案受惡意程式碼感染，您可以在偵測到檔案後，查看 [受感染檔案] 的清單。 按一下檔案選單中的惡意程式碼檔案名稱，以開啟惡意程式碼報告，內有感染該檔案的該類惡意程式碼資訊。 
 
 
   

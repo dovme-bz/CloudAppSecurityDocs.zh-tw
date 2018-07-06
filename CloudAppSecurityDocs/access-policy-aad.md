@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746910"
 ---
 *適用於：Microsoft Cloud App Security*
 
 # <a name="access-policies"></a>存取原則 
 
-> [!NOTE]
-> 這是預覽功能。
 
 
 >[!div class="step-by-step"]
@@ -44,7 +43,7 @@ Microsoft Cloud App Security 的存取原則可以根據使用者、位置、裝
 - [Azure AD 條件式存取原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Microsoft Cloud App Security，如下所述。
 
 > [!NOTE]
-> - 存取原則也支援使用識別提供者所設定的應用程式，而不是私人預覽之 Azure AD 所設定的應用程式。 如需私人預覽的詳細資訊，請傳送電子郵件至 mcaspreview@microsoft.com。
+> - 存取原則也支援設定使用 Azure AD 以外之識別提供者的應用程式。 如需詳細資訊，傳送電子郵件至 mcaspreview@microsoft.com。
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>建立 Azure AD 條件式存取原則
 
@@ -56,9 +55,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
    > 這個原則只會影響已[部署條件式存取應用程式控制](proxy-deployment-aad.md)的應用程式。
 
 2. 選取 [工作階段] 刀鋒視窗的 [Use Conditional Access App Control enforced restrictions] \(使用條件式存取應用程式控制強制的限制\)，將使用者路由至 Microsoft Cloud App Security。
-
-   ![條件式存取應用程式控制會限制 Azure AD 條件式存取](./media/proxy-deploy-restrictions-aad.png)
-
+ 
 ## <a name="create-a-cloud-app-security-access-policy"></a>建立 Cloud App Security 存取原則 
 
 若要建立新的存取原則，請遵循此程序︰
@@ -66,11 +63,7 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 1. 在入口網站中，選取後面跟著 [原則] 的 [控制]。
 2. 在 [原則] 頁面中，按一下 [建立原則]，然後選取 [存取原則]。  
 
-   ![建立存取原則](./media/access-policy-menu.png)
-
 3. 在 [存取原則] 視窗中指派原則名稱，例如「封鎖不受控裝置的存取」。
-
-   ![新增存取原則](./media/access-policy-screen.png)
 
 4. 在 [Activities matching all of the following] \(符合下列所有條件的活動) 區段的 [活動來源] 下，選取要套用至原則的其他活動篩選。 這些會包含下列選項︰ 
      
@@ -82,8 +75,6 @@ Azure Active Directory 條件式存取原則和 Cloud App Security 工作階段�
 
    - **使用者代理程式標記**：用以篩選啟用啟發學習法，以識別行動裝置及桌面應用程式。 此篩選可設定為等於或不等於**原生用戶端**，應該分別對每個雲端應用程式的行動裝置版和桌面應用程式版進行測試。
   
-       ![原生用戶端支援](./media/user-agent-tag.png)
-
 5. 在 [動作] 下選取下列其中一個選項： 
 
     - **允許**：設定此動作，根據您設定的原則篩選明確允許存取。

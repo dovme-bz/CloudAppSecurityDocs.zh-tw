@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,16 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759976"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746954"
 ---
 *適用於：Microsoft Cloud App Security*
 
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>為 Azure AD 應用程式部署條件式存取應用程式控制
-
-> [!NOTE]
-> 這是預覽功能。
-
-
 
 >[!div class="step-by-step"]
 [« 上一篇：條件式存取應用程式控制簡介](proxy-intro-aad.md)<br>
@@ -76,7 +71,7 @@ ms.locfileid: "34759976"
    > [!NOTE]
    > 如果應用程式未出現在 Cloud App Security 應用程式目錄中，則會連同登入 URL 顯示在此對話方塊中無法辨識的應用程式下。 針對這些應用程式按一下 + 符號時，便能夠建議將應用程式新增至目錄。 在應用程式位於目錄中之後，請再次執行這些步驟來部署應用程式。 
 
-6. 在條件式存取應用程式控制的應用程式資料表中，查看 [可用的控制項] 資料行，並確認 Azure AD 條件式存取和工作階段控制項都會出現。 <br></br>如果應用程式中未出現工作階段控制項，這表示工作階段控制項還無法用於該特定應用程式，您將改為看到 [要求工作階段控制項] 連結。 請按一下該連結以開啟對話方塊，並要求將應用程式上架到工作階段控制項。 在條件式存取應用程式控制的公開預覽期間，上架程序將由 Microsoft Cloud App Security 小組與您一起執行。
+6. 在條件式存取應用程式控制的應用程式資料表中，查看 [可用的控制項] 資料行，並確認 Azure AD 條件式存取和工作階段控制項都會出現。 <br></br>如果應用程式中未出現工作階段控制項，這表示工作階段控制項還無法用於該特定應用程式，您將改為看到 [要求工作階段控制項] 連結。 請按一下該連結以開啟對話方塊，並要求將應用程式上架到工作階段控制項。 在此案例中，上架程序將由 Microsoft Cloud App Security 小組與您一起執行。
   
    ![要求工作階段控制項](./media/proxy-view-new-apps.png)
 
