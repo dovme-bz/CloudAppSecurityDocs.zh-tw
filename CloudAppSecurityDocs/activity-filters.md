@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 75731e401111286d3760163e512b623d6e85fdf2
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34559071"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340017"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -51,12 +51,18 @@ Microsoft Cloud App Security 可讓您從連接的應用程式看見所有活動
 ### <a name="working-with-the-activity-drawer"></a>使用 [活動] 下拉式清單
 
 您可以檢視各項活動的詳細資訊，方法是在活動記錄中按一下活動本身。 如此即開啟 [活動] 下拉式清單，其中可為每個活動提供下列額外動作和深入解析：
-    - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
-    - 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
-    - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
-    - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
-    - 位置：按一下位置用 Bing 地圖服務檢視位置。
-    - IP 位址類別與標記：按一下 IP 標記以檢視在此活動中找到的 IP 標記清單。 您接著可以依據符合此標記的所有活動進行篩選。    
+
+   - 相符原則：按一下 [相符原則] 連結以查看此活動符合的原則清單。
+
+   - 檢視原始資料︰按一下 [檢視原始資料] 以查看從應用程式收到的實際資料。
+
+   - 使用者：按一下使用者檢視活動執行使用者的使用者頁面。 
+
+   - 裝置類型：按一下裝置類型檢視未經處理的使用者代理程式資料。 
+
+   - 位置：按一下位置用 Bing 地圖服務檢視位置。
+
+   - IP 位址類別與標記：按一下 IP 標記以檢視在此活動中找到的 IP 標記清單。 您接著可以依據符合此標記的所有活動進行篩選。    
 
  隱藏式活動選單中的欄位提供您可能想要從該隱藏式選單中直接執行的額外活動和向下切入的內容連結。 例如，如果您將游標移到 IP 位址類別旁邊，您可以使用 [新增至篩選] 圖示 ![新增至篩選](./media/add-to-filter-icon.png)，立即將 IP 位址新增至目前頁面的篩選中。 您也可以使用快顯的 [設定] 齒輪圖示 ![設定圖示](./media/contextual-settings-icon.png)，直接抵達修改其中一個欄位設定所需的設定頁面，例如**使用者群組**。
 
