@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 146426bca36b4026af80d711e42860f553aef971
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: ef45ee81fced76dd3ff619aa8d42edf60b90e954
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747012"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340034"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -42,7 +42,7 @@ Microsoft Cloud App Security 工作階段原則可讓您執行即時工作階段
 
 ## <a name="prerequisites-to-using-session-policies"></a>使用工作階段原則的必要條件
 
-- Azure AD Premium P2 授權
+- Azure AD Premium P1 授權
 - 相關的應用程式應該要[部署條件式存取應用程式控制](proxy-deployment-aad.md)
 - [Azure AD 條件式存取原則](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)應已就位，可將使用者重新導向至 Microsoft Cloud App Security，如下所述。
 

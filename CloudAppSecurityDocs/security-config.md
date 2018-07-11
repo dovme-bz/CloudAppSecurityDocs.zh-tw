@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0d21df4cac9ca31207b94061d5bb18ec857668ac
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5d95b5b1e97eb1758c8f62b238ef1bdbb9f8a9c
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140766"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339942"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -36,7 +36,7 @@ Azure AD 全域管理員角色預設未提供 Azure 訂用帳戶存取權。 因
 
 在 Microsoft Cloud App Security 中啟用安全性設定建議：
 
-1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">取得 Azure 資訊安全中心的整個租用戶可見度</a>，方法是將所有訂用帳戶的讀者角色授與您自己，以及您想要授與此頁面存取權的所有其他 Microsoft Cloud App Security 管理員，以及在 Azure 資訊安全中心內指派根管理群組的這個角色，並評估 Azure AD 全域管理員授與 Azure 訂用帳戶存取權。 
+1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">取得 Azure 資訊安全中心的整個租用戶可見度</a>。 這個流程包含將所有訂用帳戶的讀者角色授與您自己，以及想要授與此頁面存取權的所有其他 Microsoft Cloud App Security 管理員，以及在 Azure 資訊安全中心內指派根管理群組的這個角色，並提高 Azure AD 全域管理員權限以授與 Azure 訂用帳戶存取權。 
 
    > [!NOTE]
    > 本文描述成為安全性系統管理員的程序。 為了讓此整合運作，您需要的最小權限是讀者。

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebba40c8f04dd644711a172fcf150761db3e11cc
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: a1a9455681106c066888cf29c83971914e35babb
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259743"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340000"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -28,6 +28,9 @@ ms.locfileid: "35259743"
 
 Microsoft Cloud App Security 讓您能夠以原生方式利用 Microsoft 資料分類服務，以便對雲端應用程式中的檔案進行分類。
 Microsoft 資料分類服務在 Office 365、Azure 資訊保護和 Microsoft Cloud App Security 中提供統一的資訊保護體驗，並允許您將資料分類工作擴充到受 Microsoft Cloud App Security 保護的協力廠商雲端應用程序，從而充分利用您對多個應用程式所做出的決策，並使其遍及更多的應用程式。
+
+>[!NOTE]
+> 此功能目前只適用於美國和歐洲 (法國除外)。
 
 在為 Microsoft Cloud App Security 中的檔案建立資料洩漏防護原則時，您將自動會有設定**檢查方法**以使用 **Microsoft 資料分類服務**的選項，而無需額外設定。
 

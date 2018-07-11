@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,24 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bec87e3db09ee14320371cfbffba0d3d9a2cd55a
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747046"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843518"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+
+## <a name="cloud-app-security-release-127"></a>Cloud App Security 版本 127
+
+發行日期：2018 年 7 月 8 日
+
+- 您目前可以在 [活動記錄] 中查看 Office 365 的一般活動，而在 [活動原則] 中則可以過濾 Office 365 活動以尋找**未指定**活動。 檢閱這些活動可讓您針對 Cloud App Security 中尚未依類型分類的已執行活動，調查活動的相關資訊，且可以使用這些活動來傳送要求給 Cloud App Security 小組，以根據這些活動來建立新的活動類型。 
 
 ## <a name="cloud-app-security-release-126"></a>Cloud App Security 版本 126
 
@@ -36,7 +42,7 @@ ms.locfileid: "36747046"
     -   作為 Azure 全球網路的一部分，已改進整合和介面，以為世界各地的使用者提供無縫體驗。
  
 
--   **使用 Microsoft 資料分類服務檢查內容已正式運作**<br>Microsoft Cloud App Security 與 Microsoft 資料分類服務的整合現已正式運作。 這項整合可讓您原生利用 Microsoft 資料分類服務，以分類雲端應用程式中的檔案。 如需詳細資訊，請參閱 [Microsoft 資料分類服務整合](dcs-inspection.md)。
+-   **使用 Microsoft 資料分類服務檢查內容已正式運作**<br>Microsoft Cloud App Security 與 Microsoft 資料分類服務的整合現已正式運作。 這項整合可讓您原生利用 Microsoft 資料分類服務，以分類雲端應用程式中的檔案。 如需詳細資訊，請參閱 [Microsoft 資料分類服務整合](dcs-inspection.md)。 此功能目前只適用於美國和歐洲 (法國除外)。
 
 - **Cloud Discovery 執行報告**<br>Microsoft Cloud App Security 正逐步推出產生 Cloud Discovery 執行 PDF 報告的功能。 此報告概述在您組織中找到的影子 IT 使用，特別說明整體使用上和主要類別中前幾名的應用程式和使用者，並著重影子 IT 對組織造成的風險。 此外，其亦提供建議清單，說明如何改進和控制組織中影子 IT 的可見度。 使用此報告可確保移除潛在風險和威脅，以及確保您的組織保持安全。
 
