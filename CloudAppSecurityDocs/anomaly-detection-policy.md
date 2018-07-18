@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: b0662b428a902c28f1908e6e978e3256aa45f6af
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36746995"
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063923"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Microsoft Cloud App Security 的異常偵測原則提供立即可用的使用者
 
 
 **非經常性國家/地區的活動**
-- 這項偵測會考量過去的活動位置來判斷新的和非經常性的位置。 異常偵測引擎會儲存組織中使用者先前使用的位置資訊。 若活動發生自使用者或組織中任何使用者最近未前往或從未前往過的位置，則會觸發警示。 
+- 這項偵測會考量過去的活動位置來判斷新的和非經常性的位置。 異常偵測引擎會儲存組織中使用者先前使用的位置資訊。 當活動發生自組織中任何使用者最近都未前往或未曾前往的位置時，會觸發警示。 
 
 **惡意程式碼偵測**
 - 這項偵測會識別您雲端儲存體中的惡意檔案，不論這些檔案的來源是您的 Microsoft 應用程式或協力廠商應用程式。 Microsoft Cloud App Security 使用 Microsoft 的威脅情報辨識出某些檔案是否與已知的惡意程式碼攻擊有關，以及是否可能為惡意檔案。 根據預設停用這項內建原則。 並非每個檔案皆經過掃描，會使用啟發學習法尋找具有潛在風險的檔案。 在偵測到檔案後，您可以查看**受感染檔案**的清單。 按一下檔案選單中的惡意程式碼檔案名稱，以開啟惡意程式碼報告，內有感染該檔案的該類惡意程式碼資訊。
