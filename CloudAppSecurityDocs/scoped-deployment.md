@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568657"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175412"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security 可讓您限定部署的範圍，就能只監視特
      
      ![包括規則](./media/include-rule.png)
 
-4. 若要設定從監視中排除特定群組，請在 [排除] 標籤上按一下加號![圖示](./media/plus-icon.png)。 <br>在 [建立新包含規則] 對話方塊中，設定下列參數：
+4. 若要設定從監視中排除特定群組，請在 [排除] 標籤上按一下加號![圖示](./media/plus-icon.png)。 <br>在 [建立新排除規則] 對話方塊中，設定下列參數：
 
     1. 在 [類型規則名稱] 下，為該規則指定一個描述性名稱。
     在 [選取使用者群組] 下，選取您不想要使用 Cloud App Security 監視的所有群組。
