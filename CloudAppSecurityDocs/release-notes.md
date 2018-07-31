@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
-ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
+ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
+ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843518"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39220638"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+## <a name="cloud-app-security-release-128"></a>Cloud App Security 版本 128
+
+發行日期：2018 年 7 月 22日
+
+-   **多個應用程式之間的應用程式權限動作**<br>
+若是已授與應用程式權限的應用程式，您現已可利用單一動作，禁止或核准多個應用程式。 例如，您可檢閱已由您組織中使用者授與權限的所有應用程式，選取您要禁止的所有應用程式，然後按一下禁止應用程式，來撤銷所有授與的同意，且不再允許使用者對這些應用程式授與權限。  如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
+-   **Azure 應用程式強化支援**<br>
+我們現正對 Azure 逐步推出一項功能，能夠在 Azure 應用程式 (內外部應用程式皆適用) 執行使用者帳戶活動時，偵測應用程式。 這使您得以建立警示原則，在應用程式執行未預期與未經授權的活動時向您發出警示。 如需詳細資訊，請參閱[將 Azure 連線至 Microsoft Cloud App Security](connect-azure-to-microsoft-cloud-app-security.md)。
+-   **更新為新款 GDPR 敏感類型的資料分類引擎**<br>
+[Cloud App Security 資料分類服務](dcs-inspection.md)已對我們的資料分類引擎，新增了新的 GDPR 敏感類型，以供您偵測檔案中的 GDPR 相關內容。
+-   **雲端應用程式目錄的更新**<br>
+雲端應用程式目錄現已包含可協助您管理資料隱私權與擁有權合規性 (包括 GDPR 整備程度) 的法律風險類別 (同時還有一般、安全性與合規性)。
+為協助評定每項雲端應用程式的 GDPR 整備程度，新款風險類別會包含雲端服務的 GDPR 整備程度說明，以及每項 GDPR 架構控制的狀態。
+請注意，隨著這項改善措施的進行，下列風險屬性已從其他風險類別移至法律類別：
+     - DMCA
+     - 資料擁有權
+     - 資料保留原則
+
+     此外，新的風險類別會分別計分，您如此即可依據您的喜好設定與優先順序，設定加權分數。 如需詳細資訊，請參閱[風險分數](risk-score.md)。
+
+-   **新建議的查詢：GDPR 整備程度** <br>
+現有新的建議查詢，可讓您能找出探索到 GDPR 已就緒的應用程式。 因為 GDPR 近期成為安全性管理的首要任務，所以此查詢有助於輕鬆地找出 GDPR 就緒的應用程式，並藉由評定未經評定之風險，來降低威脅。
 
 
 ## <a name="cloud-app-security-release-127"></a>Cloud App Security 版本 127
