@@ -16,7 +16,7 @@
 ### [使用者群組](user-groups.md)
 ### [限定範圍的部署](scoped-deployment.md)
 ### [IP 標籤和範圍](ip-tags.md)
-## [部署 Cloud Discovery](set-up-cloud-discovery.md)
+## [設定 Cloud Discovery](set-up-cloud-discovery.md)
 ### [建立 Cloud Discovery 快照集報告](create-snapshot-cloud-discovery-reports.md)
 ### [設定自動記錄上傳以進行連續報告](discovery-docker.md)
 #### [內部部署 Ubuntu 與 RHEL 上的 Docker](discovery-docker-ubuntu.md)
