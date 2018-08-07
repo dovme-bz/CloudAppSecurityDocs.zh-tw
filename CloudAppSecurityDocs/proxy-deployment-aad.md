@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/4/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c16e44132ec7047e5f1624907c184a0e03c6bf73
-ms.sourcegitcommit: 2862ebeb9e886bea16e62eb87dfdace638cf67bb
+ms.openlocfilehash: 082128a4a2b1130c14b2af770327f0f2bb956e4f
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/04/2018
-ms.locfileid: "37799156"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518256"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -31,10 +31,19 @@ ms.locfileid: "37799156"
 
 請遵循下列步驟，將 Azure AD 應用程式設定為由 Microsoft Cloud App Security 條件式存取應用程式控制進行控制。
 
+**步驟 1：[移至 Azure AD 入口網站並為應用程式建立條件式存取原則，然後將工作階段路由傳送到 Cloud App Security](#add-azure-ad)。**
+
+**步驟 2：[以範圍已限制為應用程式內之原則的使用者登入](#sign-in-scoped)。**
+
+**步驟 3：[返回 Cloud App Security 入口網站並選取橫幅通知以新增應用程式](#banner-notification)。**
+
+**步驟 4：在 Cloud App Security 中為應用程式[建立存取原則](access-policy-aad.md)或[建立工作階段原則](session-policy-aad.md)。**
+
+
 > [!NOTE]
 > 若要為 Azure AD 應用程式部署條件式存取應用程式控制，您必須具備有效的 [Azure AD Premium P1 的授權](https://docs.microsoft.com/azure/active-directory/license-users-groups)。
 
-## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>步驟 1：在 Cloud App Security 中新增 Azure AD 應用程式  
+## 步驟 1：在 Cloud App Security 中新增 Azure AD 應用程式<a name="add-azure-ad"></a>  
 
 1. 建立 Azure AD 條件式存取 TEST 原則。
 
@@ -53,29 +62,32 @@ ms.locfileid: "37799156"
       > [!NOTE]
       >請確定條件式存取應用程式控制支援您選擇的應用程式。 條件式存取應用程式控制支援在 Azure AD 中設定使用 SAML 單一登入的應用程式。 例如，Office 365 應用程式不設定使用 SAML，所以目前不受支援。
 
+## 步驟 2：以範圍已限制為應用程式內之原則的使用者登入<a name="sign-in-scoped"></a>
 
-2. 在您建立原則之後，使用原則中設定的使用者，登入原則中設定的每個應用程式。 請務必先登出現有的工作階段。
+在您建立原則之後，使用原則中設定的使用者，登入原則中設定的每個應用程式。 請務必先登出現有的工作階段。
 
-3. 在 Cloud App Security 入口網站中，移至 [設定] 齒輪，然後選擇 [Conditional Access App Control] \(條件式存取應用程式控制\)。 
+## 步驟 3：返回 Cloud App Security 入口網站並選取橫幅通知以新增應用程式<a name="banner-notification"></a>
+
+1. 在 Cloud App Security 入口網站中，移至 [設定] 齒輪，然後選擇 [Conditional Access App Control] \(條件式存取應用程式控制\)。 
     
      ![Proxy 功能表](./media/proxy-menu.png)
 
-4. 您應該會看到一則訊息，告知您條件式存取應用程式控制探索到新的 Azure AD 應用程式。 按一下 [檢視新的應用程式] 連結。
+2. 您應該會看到一則訊息，告知您條件式存取應用程式控制探索到新的 Azure AD 應用程式。 按一下 [檢視新的應用程式] 連結。
 
    ![條件式存取應用程式控制檢視新的應用程式](./media/proxy-view-new-apps.png)
 
-5. 在開啟的對話方塊中，您可以看到在上一個步驟中登入的所有應用程式。 對於每個應用程式，請按一下 + 符號，然後按一下 [新增]。
+3. 在開啟的對話方塊中，您可以看到在上一個步驟中登入的所有應用程式。 對於每個應用程式，請按一下 + 符號，然後按一下 [新增]。
 
    ![條件式存取應用程式控制新增應用程式](./media/proxy-new-app.png)
 
    > [!NOTE]
    > 如果應用程式未出現在 Cloud App Security 應用程式目錄中，則會連同登入 URL 顯示在此對話方塊中無法辨識的應用程式下。 針對這些應用程式按一下 + 符號時，便能夠建議將應用程式新增至目錄。 在應用程式位於目錄中之後，請再次執行這些步驟來部署應用程式。 
 
-6. 在條件式存取應用程式控制的應用程式資料表中，查看 [可用的控制項] 資料行，並確認 Azure AD 條件式存取和工作階段控制項都會出現。 <br></br>如果應用程式中未出現工作階段控制項，這表示工作階段控制項還無法用於該特定應用程式，您將改為看到 [要求工作階段控制項] 連結。 請按一下該連結以開啟對話方塊，並要求將應用程式上架到工作階段控制項。 在此案例中，上架程序將由 Microsoft Cloud App Security 小組與您一起執行。
+4. 在條件式存取應用程式控制的應用程式資料表中，查看 [可用的控制項] 資料行，並確認 Azure AD 條件式存取和工作階段控制項都會出現。 <br></br>如果應用程式中未出現工作階段控制項，這表示工作階段控制項還無法用於該特定應用程式，您將改為看到 [要求工作階段控制項] 連結。 請按一下該連結以開啟對話方塊，並要求將應用程式上架到工作階段控制項。 在此案例中，上架程序將由 Microsoft Cloud App Security 小組與您一起執行。
   
    ![要求工作階段控制項](./media/proxy-view-new-apps.png)
 
-7. 選用 - 使用用戶端憑證識別裝置：
+5. 選用 - 使用用戶端憑證識別裝置：
 
    1. 移至 [設定] 齒輪，然後選擇 [裝置識別]。
 
@@ -88,7 +100,7 @@ ms.locfileid: "37799156"
       > [!NOTE]
       >如果工作階段符合使用有效用戶端憑證篩選條件的原則，則只會向使用者要求憑證。 
 
-## <a name="step-2-test-the-deployment"></a>步驟 2：測試部署
+## <a name="test-the-deployment"></a>測試部署
 
 1. 首先，登出任何現有的工作階段。 接著，使用符合 Azure AD 所設定之原則的使用者，嘗試登入已順利部署的每個應用程式。 
 

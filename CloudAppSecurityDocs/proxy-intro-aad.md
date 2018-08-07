@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 8/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747029"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518154"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -120,6 +120,12 @@ Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳�
 -   Concur
 
 -   Tableau
+
+-  Dropbox
+
+-  Egnyte
+
+-  GitHub
 
 工作階段控制項將陸續支援更多的應用程式。 若您要使用的應用程式不在上列支援對象之中，您可以[將應用程式的詳細資料傳送給我們](mailto:casfeedback@microsoft.com)，並附上相關使用案例，我們會將該應用程式加入支援之列。
 

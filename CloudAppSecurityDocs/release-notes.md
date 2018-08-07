@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/24/2018
+ms.date: 8/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,26 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
-ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
+ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
+ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39220638"
+ms.lasthandoff: 08/05/2018
+ms.locfileid: "39518171"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
+
+
+
+## <a name="cloud-app-security-release-129"></a>Cloud App Security 版本 129
+
+發行日期：2018 年 7 月 22日
+
+- **新的異常偵測原則 - 可疑電子郵件規則**<br>已新增異常偵測原則，以偵測可疑的可疑電子郵件轉寄規則，例如使用者否建立會將所有電子郵件複本轉寄到外部地址的收件匣規則。 
+- 此版本包括多個問題的修正與改進。 
 
 ## <a name="cloud-app-security-release-128"></a>Cloud App Security 版本 128
 
