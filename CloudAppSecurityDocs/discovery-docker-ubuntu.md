@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c644b68a625a1c67c8e071fda975c12847f60
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 9c01b8780bd0e177dc20bf407a924f2648bae6e6
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140800"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519086"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -71,6 +71,11 @@ ms.locfileid: "37140800"
     >與安全傳輸通訊協定 (FTPS 及 Syslog – TLS) 整合通常需要額外的設定或防火牆/Proxy。
 
    f. 為記錄檔可用來偵測網路流量的每個防火牆和 Proxy 重複這個程序。
+    > [!NOTE]
+    >建議您為每部網路裝置設定專屬的資料來源，以讓您：
+    <br>- 分別監視每部裝置的狀態，以供調查之用。
+    <br>- 如果各裝置分別供不同的使用者區段使用，則可探索每部裝置的 Shadow IT Discovery。
+
 
 3. 移至上方的 [記錄收集器] 索引標籤。
 

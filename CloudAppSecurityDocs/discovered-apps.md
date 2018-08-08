@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519052"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -62,6 +63,14 @@ Cloud Discovery 讓您更加深入了解組織的雲端使用方式，並透過�
 不過只有包含目標 URL 資料的防火牆與 Proxy 才支援此功能。 請在[支援的防火牆和 Proxy](set-up-cloud-discovery.md#supported-firewalls-and-proxies) 查看支援的設備清單。
 
  ![子網域資訊](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>產生 Cloud Discovery 執行報告
+
+要取得影子 IT 在組織中使用情形的概覽，最好的辦法是產生 Cloud Discovery 執行報告。 這份報告會找出最高的潛在風險，並協助您規劃工作流程以降低風險，並在風險解決之前加以管控。
+
+產生 Cloud Discovery 執行報告： 
+
+從 Cloud Discovery 儀表板按一下功能表右上角的三個點，然後選取 [產生 Cloud Discovery 執行報告]。
 
 ## <a name="exclude-entities"></a>排除實體  
 如有雜訊特別多且無關的系統使用者或 IP 位址或不相干的應用程式，您可能想要從已經分析的 Cloud Discovery 資料中排除它們的資料。 例如，您可能想要排除源自 127.0.0.1 或本機主機的所有資訊。  
