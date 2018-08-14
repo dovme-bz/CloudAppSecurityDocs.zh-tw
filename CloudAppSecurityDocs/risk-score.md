@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6820e8340a7316f826ff437f168b3db8cc5ec773
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 30e23682d99613d1bed0fa64f766bf668b60793d
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519171"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653242"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -56,7 +56,7 @@ ms.locfileid: "39519171"
 - **一般風險因素**：可讓您搜尋一般風險因素，例如消費者歡迎程度、資料中心地區設定等。
 - **風險分數**：可讓您依風險分數篩選應用程式，以便專注在只檢閱高風險的應用程式。
 - **安全性風險因素**：可讓您根據特定安全措施 (例如待用資料加密、多重要素驗證等) 進行篩選。
-- **法務**：可讓您依據所有適用規定及原則進行篩選，以確保應用程式使用者的資料保護和隱私權，例如 GDPR、DMCA 及資料保留原則。
+- **法務風險因素**：讓您根據所有適用法規與原則進行篩選，以確保應用程式使用者的資料保護與隱私權，例如 GDPR、DMCA 與資料保留原則。
  
 ## <a name="suggesting-a-change"></a>建議變更
 
@@ -96,6 +96,8 @@ Cloud Discovery 提供供整個環境使用之雲端應用程式可信度及可�
 -   **安全性** - 安全性類別會考量探索到的應用程式所用之資料實體安全性的所有處理標準。 這包括多重要素驗證、加密、資料分類和資料擁有權等欄位。  
   
 -   **相容性** - 此類別可顯示生產應用程式的公司支持哪些常見的法規標準最佳做法。 規格清單包含 HIPAA、CSA 和 PCI-DSS 等標準。  
+
+-  **法務**：此類別顯示有哪些應用程式具有哪些適用法規與原則可確保應用程式使用者的資料保護與隱私權，例如 GDPR、DMCA 與資料保留原則。
   
 每個類別都由許多特定的屬性組成。 根據 Cloud App Security 的評分演算法，每個屬性會獲得 0 到 10 的初始分數，視值而定。 True/False 值分別會得到 10 或 0，而連續的屬性，例如網域使用期限，會得到範圍內的特定值。 每個屬性的分數會根據類別中所有其他現有欄位加權，以建立類別的子分數。 如果您遇到未計分的應用程式，通常表示應用程式的內容為未知，因此不予計分。  
   

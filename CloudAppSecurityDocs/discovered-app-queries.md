@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: a2b5ec778ef7e9cd5968353b247f117f3019d3be
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519001"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653276"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ ms.locfileid: "39519001"
 - **風險分數**：可讓您依風險分數篩選應用程式，以便專注在只檢閱高風險的應用程式。 您也可以覆寫 Cloud App Security 所設定的風險分數。 如需詳細資訊，請參閱[使用風險分數](risk-score.md)。
 - **安全性風險因素**：可讓您根據特定安全措施 (例如待用資料加密、多重要素驗證等) 進行篩選。
 - **使用量**：可讓您根據此應用程式的使用量統計資料進行篩選，例如具有小於或大於指定**資料上傳**數目的應用程式，以及具有大於或小於指定**使用者**數目的應用程式。
-- **法務**：可讓您依據所有適用規定及原則進行篩選，以確保應用程式使用者的資料保護和隱私權，例如 GDPR、DMCA 及資料保留原則。
+- **法務法務風險因素**：讓您根據所有適用法規與原則進行篩選，以確保應用程式使用者的資料保護與隱私權，例如 GDPR 就緒的雲端應用程式、DMCA 與資料保留原則。
 
 ### <a name="creating-and-managing-custom-app-tags"></a>建立及管理自訂應用程式標籤
 
@@ -91,7 +91,7 @@ Cloud App Security 也會提供您**建議的查詢**，讓您儲存經常使用
 
  - 具有弱式加密的企業雲端應用程式 - 會篩選所有探索到的應用程式，只顯示有風險的應用程式，因為它們不會加密待用資料，而且不支援任何加密通訊協定。
 
-- GDPR 就緒：篩選您探索到的所有應用程式，只顯示 GDPR 就緒的應用程式。 因為 GDPR 合規性是最高優先事項，所以此查詢有助於輕鬆地找出 GDPR 就緒的應用程式，並藉由評定未經評定的風險來降低威脅。
+- GDPR 就緒雲端應用程式：篩選您探索到的所有應用程式，只顯示 GDPR 就緒的應用程式。 因為 GDPR 合規性是最高優先事項，所以此查詢有助於輕鬆地找出 GDPR 就緒的應用程式，並藉由評定未經評定的風險來降低威脅。
  
 ![查詢探索到的應用程式](./media/queries-discovered-apps.png)
 
