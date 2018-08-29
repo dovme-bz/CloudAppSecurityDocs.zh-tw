@@ -22,6 +22,7 @@
 #### [內部部署 Ubuntu 與 RHEL 上的 Docker](discovery-docker-ubuntu.md)
 #### [Ubuntu 上的 Docker (Azure)](discovery-docker-ubuntu-azure.md)
 #### [使用虛擬設備 - 已淘汰](configure-automatic-log-upload-for-continuous-reports.md)
+### [與 Zscaler 整合](zscaler-integration.md)
 ### [使用自訂記錄檔剖析器](custom-log-parser.md)
 ### [Cloud Discovery 擴充](cloud-discovery-aad-enrichment.md)
 ### [匿名 Cloud Discovery 資料](cloud-discovery-anonymizer.md)
