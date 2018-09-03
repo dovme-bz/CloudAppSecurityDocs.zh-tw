@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/5/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94b44acb3335df4c1dceaa59308faa9fba20806e
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 4bb0a02b9577470ae35fb79d4cc74b1c6ad48d66
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518154"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016709"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -91,41 +91,25 @@ Azure AD 條件式存取可以直接將相容且加入網域的裝置資訊傳�
 
 所有主要平台上的任何瀏覽器都能使用工作階段控制項 (也會封鎖或允許行動應用程式和桌面應用程式)。 因為是以 Azure AD 原生規格整合到 AD，所以可以支援所有在 Azure AD 中設定了 SAML 單一登入的應用程式，包括下列精選應用程式：
 
--   Salesforce
+- AWS
+- 方塊
+- Concur
+- CornerStone on Demand
+- DocuSign
+- Dropbox
+- Egnyte
+- G Suite
+- GitHub
+- HighQ
+- JIRA/Confluence
+- Salesforce
+- ServiceNow
+- Slack
+- Tableau
+- Workday
+- Workiva
+- Workplace by Facebook
 
--   方塊
-
--   G Suite
-
--   Workday
-
--   Slack
-
--   Workplace by Facebook
-
--   ServiceNow
-
--   JIRA/Confluence
-
--   AWS
-
--   Workiva
-
--   CornerStone on Demand
-
--   DocuSign
-
--   HighQ 
-
--   Concur
-
--   Tableau
-
--  Dropbox
-
--  Egnyte
-
--  GitHub
 
 工作階段控制項將陸續支援更多的應用程式。 若您要使用的應用程式不在上列支援對象之中，您可以[將應用程式的詳細資料傳送給我們](mailto:casfeedback@microsoft.com)，並附上相關使用案例，我們會將該應用程式加入支援之列。
 

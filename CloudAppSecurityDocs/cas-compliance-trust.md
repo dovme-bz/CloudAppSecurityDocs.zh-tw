@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 68/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 2c0535c3c2fceec521383d00e828072c4e9ad1ff
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140749"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016959"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security 符合許多國際和業界特定合規性標準，
 |![SOC 標誌](./media/soc-logo.png)|SOC 3|Microsoft 雲端服務符合運作安全性的服務組織控制 (Service Organization Controls) 標準。|
 |![G-Cloud 標誌](./media/g-cloud.png)|英國 G-Cloud|皇冠商業服務 (Crown Commercial Service) 已將 Microsoft 雲端服務分類更新為 Government Cloud v6。|
 
-如需詳細資訊，請前往 [Microsoft 合規性供應項目](https://servicetrust.microsoft.com) 並選取 [Cloud App Security]。  
+如需詳細資訊，請前往 [Microsoft 合規性供應項目](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings) 並選取 [Cloud App Security]。  
 
 ## <a name="privacy"></a>私密性
 
