@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259482"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016984"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ ms.locfileid: "35259482"
 
 針對 G Suite 和 Salesforce，您可以撤銷應用程式的權限，或通知使用者應完成此動作。 
 
-1. 在 [應用程式權限] 頁面上，按一下應用程式資料列結尾的三個點，然後選取 [通知使用者]。 根據預設，使用者會收到通知，如下所示：「您已授權應用程式 Adallom Google Protector 存取您的 G Suite 帳戶。*此應用程式與您組織的安全性原則衝突。請重新考慮提供或撤銷在 G Suite 帳戶中為此應用程式所提供的權限。若要撤銷應用程式存取權，請前往： https://security.google.com/settings/security/permissions?hl=en&pli=1 選取該應用程式，然後在右功能表列上，按一下 [撤銷存取權]*。 您可以自訂所傳送的訊息。
+1. 在 [應用程式權限] 頁面上，按一下應用程式列結尾的三個點，然後選取 [通知使用者]。 根據預設，使用者會收到通知，如下所示：*「您已授權應用程式 Adallom Google Protector 存取您的 G Suite 帳戶。此應用程式與您組織的安全性原則衝突。請重新考慮提供或撤銷在 G Suite 帳戶中為此應用程式所提供的權限。若要撤銷應用程式存取權，請前往： https://security.google.com/settings/security/permissions?hl=en&pli=1 選取該應用程式，然後在右功能表列上，按一下 [撤銷存取權]*。 您可以自訂所傳送的訊息。
 2. 您也可以撤銷使用者使用應用程式的權限，方法是按一下資料表中應用程式資料列結尾的圖示，然後選取 [撤銷應用程式]。 
 
    ![撤銷應用程式](./media/revoke-app.png)
@@ -92,7 +92,15 @@ ms.locfileid: "35259482"
 
 - 選擇位於篩選旁的**移除篩選**圖示，可移除篩選。
 
+## <a name="send-feedback"></a>傳送意見反應
 
+若在您組織中探索到的 OAuth 應用程式似乎為惡意應用程式，您可以傳送意見反應給 Cloud App Security 團隊，讓我們知道問題。 這個新的功能可讓您成為我們安全性社群的一部分，並加強 OAuth 應用程式風險分數與分析。
+1. 在 [應用程式權限] 頁面上，按一下應用程式資料列結尾的三個點，然後選取 [回報應用程式]。  
+
+   ![回報應用程式](./media/report-app.png)
+2. 在 [回報此應用程式] 畫面中，您可以選取將應用程式回報為惡意應用程式或回報 Cloud App Security 感知應用程式的一些其他問題，例如 **Incorrect publisher** 或 **Incorrect permissions**。 您提交的資料將用來更新應用程式的風險分數與有關應用程式的其他分析。
+
+ 
 ## <a name="see-also"></a>另請參閱  
 [使用原則來控制雲端應用程式](control-cloud-apps-with-policies.md)   
 

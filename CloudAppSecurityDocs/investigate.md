@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016905"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -87,9 +88,7 @@ ms.lasthandoff: 04/23/2018
     
     -   您也可以向下切入使用者的帳戶，方法是按一下使用者帳戶資料列結尾的齒輪並選取要採取的動作，例如 [暫停使用者] 或 [移除使用者的共同作業]。 如果使用者是從 Azure Active Directory 匯入，您也可以按一下 [Azure AD 帳戶設定] 輕鬆存取進階使用者管理功能，例如群組管理、MFA、有關使用者登入的詳細資訊，以及封鎖登入的能力。
 
-4.  請移至 [調查]，然後選取一個應用程式。 應用程式儀表板隨即開啟，並提供資訊及深入見解。 您可以使用上方的索引標籤檢查下列項目︰  
-
-     ![應用程式儀表板](./media/investigate-app.png "調查應用程式")  
+4.  移至 [調查]，它後面接著 [連接的應用程式]，然後選取應用程式。 應用程式儀表板隨即開啟，並提供資訊及深入見解。 您可以使用上方的索引標籤來檢查︰  
 
     -   您的使用者使用何種裝置連接到應用程式？  
 
@@ -104,6 +103,8 @@ ms.lasthandoff: 04/23/2018
     -   它們有權存取允許的層級嗎？  
 
     -   有多少使用者部署了它們？ 這些應用程式有多平常？  
+ 
+    ![應用程式儀表板](./media/investigate-app.png "調查應用程式")  
 
 5.  請移至 [Cloud Discovery 儀表板] 並檢查下列項目︰  
 

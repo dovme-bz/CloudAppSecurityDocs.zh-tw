@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 537f95a46164678e921b5f6b4644d864bea24316
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 1131a736fa630e9507427267fc9865723d5eaf82
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340068"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017049"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -39,6 +39,8 @@ ms.locfileid: "37340068"
    您可依據 [警示類型] 或 [嚴重性] 來篩選警示，以便優先處理最重要的警示。  
 
    選取特定警示。 視警示類型而定，您可在解決警示前查看各種可採取的動作。  
+   
+   您可以根據應用程式來篩選 - 列出的應用程式是 Cloud App Security 偵測到其活動的應用程式。
 
    有三種類型的違規，您必須在調查警示時處理︰  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8fe064b9955e0b2b5db5d40f0450c4af63d352b3
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017001"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -44,9 +45,7 @@ ms.lasthandoff: 04/23/2018
 5. 按一下 [API] 下方的 [Go to APIs overview] \(移至 API 概觀)。  
   
      ![google3](./media/google3.png "google3")  
-  
-6. 停用 [API] 下列出的所有 API。  
-      
+   
 7. 按一下 [程式庫] 啟用下列 API (如果 [Popular APIs]\(熱門 API) 清單未列出 API，請使用搜尋列)：  
      
    -   管理 SDK  
@@ -66,7 +65,7 @@ ms.lasthandoff: 04/23/2018
 
 8. 針對每個 API 按一下 [啟用]。
      ![啟用 Google APPI](./media/google-api.png "google-api")  
-9. 您應該會有 5 個**啟用的 API**，請務必停用任何其他 API：
+9. 請確定您已啟用下列 API：
   
      ![Google 啟用的 API](./media/google5.png "google5")  
   
