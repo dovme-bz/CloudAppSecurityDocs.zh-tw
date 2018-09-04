@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519103"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017032"
 ---
 *適用於：Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
+
+## <a name="cloud-app-security-release-130"></a>Cloud App Security 130 版
+
+發行日期：2018 年 8 月22 日
+
+
+- **新功能表列**<br>
+為了跨 Microsoft 365 提供更一致的系統管理體驗並讓您更輕鬆地在 Microsoft 安全性解決方案之間轉移，Cloud App Security 入口網站功能表列已移至畫面的左邊。 這個一致的瀏覽體驗可協助您在從一個 Microsoft 安全性入口網站移至另一個時，找到您自己的位置。。
+
+- **影響 OAuth 應用程式分數**<br>
+若在您組織中探索到的 OAuth 應用程式似乎為惡意應用程式，您現在可以傳送意見反應給 Cloud App Security 團隊，讓我們知道問題。 這個新的功能可讓您成為我們安全性社群的一部分，並加強 OAuth 應用程式風險分數與分析。 如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
+
+- **新的 Cloud Discovery 剖析器**<br>
+Cloud Discovery 剖析器現在支援 iboss Secure Cloud Gateway 與 Sophos XG。
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security 版本 129
