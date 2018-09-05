@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: c966c33a1ed31c1e5981600750760493133c8493
+ms.sourcegitcommit: 9ae2e002db44ed8a808351cec5eda305e4c0bd92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43017032"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486446"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -26,13 +26,23 @@ ms.locfileid: "43017032"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security 的新功能
 
 
+## <a name="cloud-app-security-release-131"></a>Cloud App Security 131 版
+
+發行日期：2018 年 9 月 2 日
+
+- **自動撤銷具風險之 OAuth 應用程式的權限**<br>
+您現在可以透過撤銷對 Office、Google 或 Salesforce 上之 OAuth 應用程式的權限，進而控制您的應用程式能夠存取哪些 OAuth 應用程式。 在建立**應用程式權限原則**時，您現在已可設定原則來撤銷應用程式的權限。 
+
+- **Cloud Discovery 新增內建剖析器支援**<br>Cloud Discovery 現在支援 Forcepoint Web Security Cloud 記錄格式。
+
+ 
 ## <a name="cloud-app-security-release-130"></a>Cloud App Security 130 版
 
 發行日期：2018 年 8 月22 日
 
 
 - **新功能表列**<br>
-為了跨 Microsoft 365 提供更一致的系統管理體驗並讓您更輕鬆地在 Microsoft 安全性解決方案之間轉移，Cloud App Security 入口網站功能表列已移至畫面的左邊。 這個一致的瀏覽體驗可協助您在從一個 Microsoft 安全性入口網站移至另一個時，找到您自己的位置。。
+為了跨 Microsoft 365 提供更一致的系統管理體驗並讓您更輕鬆地在 Microsoft 安全性解決方案之間轉移，Cloud App Security 入口網站功能表列已移至畫面的左邊。 這個一致的瀏覽體驗可協助您在從一個 Microsoft 安全性入口網站移至另一個時，找到您自己的位置。
 
 - **影響 OAuth 應用程式分數**<br>
 若在您組織中探索到的 OAuth 應用程式似乎為惡意應用程式，您現在可以傳送意見反應給 Cloud App Security 團隊，讓我們知道問題。 這個新的功能可讓您成為我們安全性社群的一部分，並加強 OAuth 應用程式風險分數與分析。 如需詳細資訊，請參閱[管理應用程式權限](manage-app-permissions.md)。
