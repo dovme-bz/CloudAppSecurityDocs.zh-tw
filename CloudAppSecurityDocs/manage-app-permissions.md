@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 8/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: bc91dadaacc00accdc95f6e6cabe65e4508eccf9
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016984"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144018"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ ms.locfileid: "43016984"
 
 針對 G Suite 和 Salesforce，您可以撤銷應用程式的權限，或通知使用者應完成此動作。 
 
-1. 在 [應用程式權限] 頁面上，按一下應用程式列結尾的三個點，然後選取 [通知使用者]。 根據預設，使用者會收到通知，如下所示：*「您已授權應用程式 Adallom Google Protector 存取您的 G Suite 帳戶。此應用程式與您組織的安全性原則衝突。請重新考慮提供或撤銷在 G Suite 帳戶中為此應用程式所提供的權限。若要撤銷應用程式存取權，請前往： https://security.google.com/settings/security/permissions?hl=en&pli=1 選取該應用程式，然後在右功能表列上，按一下 [撤銷存取權]*。 您可以自訂所傳送的訊息。
+1. 在 [應用程式權限] 頁面上，按一下應用程式列結尾的三個點，然後選取 [通知使用者]。 根據預設，使用者會收到通知，如下所示：「您已授權應用程式 Adallom Google Protector 存取您的 G Suite 帳戶。*此應用程式與您組織的安全性原則衝突。請重新考慮提供或撤銷在 G Suite 帳戶中為此應用程式所提供的權限。若要撤銷應用程式存取權，請前往： https://security.google.com/settings/security/permissions?hl=en&pli=1 選取該應用程式，然後在右功能表列上，按一下 [撤銷存取權]*。 您可以自訂所傳送的訊息。
 2. 您也可以撤銷使用者使用應用程式的權限，方法是按一下資料表中應用程式資料列結尾的圖示，然後選取 [撤銷應用程式]。 
 
    ![撤銷應用程式](./media/revoke-app.png)

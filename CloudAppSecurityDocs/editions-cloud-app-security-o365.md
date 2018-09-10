@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 8/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6a25560de126aa0a18e9050d2f4f5695e19b880b
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016888"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142891"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security 與 Office 365 Cloud App Security 之間的差異為何？
 
@@ -37,7 +37,7 @@ Office 365 Cloud App Security 是 Microsoft Cloud App Security 的子集，能�
 
 |功能|功能|Microsoft Cloud App Security|Office 365 雲端 App 安全性|
 |----|----|----|----|
-|Cloud Discovery|探索到的應用程式 |16,000 個以上的雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
+|雲端探索|探索到的應用程式 |16,000 個以上的雲端應用程式  |750 多種雲端應用程式具有類似 Office 365 的功能|
 ||探索分析的部署|手動與自動上傳記錄檔|手動上傳記錄檔|
 ||記錄匿名保護使用者隱私|是||
 ||存取完整的雲端應用程式目錄|是||
