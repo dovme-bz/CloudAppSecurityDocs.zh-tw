@@ -6,18 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e7c8f640a054ba8e5bc2ad999bd73a6604eb4d0
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 52a18f28382ffefca7785419fb67e8b0f2de66df
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143238"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -46,9 +47,9 @@ Microsoft Cloud App Security 的內容檢查原則會利用 RegEx 進行模式�
   
 -   不允許的數量詞：*、+、{n,}  
   
-     而不是 * 與 {0,9}  
+     從 * 改為使用 {0,9}  
   
-     而不是 + 與 {1,9}  
+     從 + 改為使用 {1,9}  
   
 -   不允許反向參考：\\<數字\> 或 \k\<名稱>  
   

@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773088"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144035"
 ---
 *適用於：Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ ms.locfileid: "31773088"
    1. 原始檔案會移至您設定的系統管理隔離資料夾。
    2. 原始檔案會遭到刪除。
    3. 標記檔案會上傳到原始檔案位置。
-
+      
       ![隔離標記](./media/quarantine-tombstone.png)
-
+      
    4. 使用者只能存取標記，他們可以在其中讀取 IT 部門所提供的自訂指引，以及用於連絡 IT 部門釋放檔案的相互關聯識別碼。
 
 4. 當您收到已隔離檔案的警示時，請調查 Cloud App Security [警示] 頁面中的檔案：
-
+   
    ![隔離警示](./media/quarantine-alerts.png)
- 
+   
 5. 此外在 [原則報告] 的 [已隔離] 索引標籤上：
-
+   
    ![隔離報告](./media/quarantine-report.png)
     
 6. 隔離檔案之後，請使用下列程序來修復威脅情況：
-       
+    
     1. 檢查 SharePoint Online 上隔離資料夾中的檔案。
-    3. 您也可以檢視稽核記錄檔，以深入探討檔案內容。
-    4. 如果找到的檔案違反公司原則，請執行組織的事件回應 (IR) 程序。
-    5. 如果找到的檔案無害，您可以還原隔離的檔案，此時會釋放原始檔案 (也就是複製回原始位置)、刪除標記，而且使用者可以存取檔案。
+    2. 您也可以檢視稽核記錄檔，以深入探討檔案內容。
+    3. 如果找到的檔案違反公司原則，請執行組織的事件回應 (IR) 程序。
+    4. 如果找到的檔案無害，您可以還原隔離的檔案，此時會釋放原始檔案 (也就是複製回原始位置)、刪除標記，而且使用者可以存取檔案。
+       
        ![隔離還原](./media/quarantine-restore.png)
+       
 7. 在您驗證原則順利執行之後，您可以使用原則中的自動化治理動作以避免未來發生外洩情形，並在符合原則時自動套用系統管理隔離。
 
 > [!NOTE]
